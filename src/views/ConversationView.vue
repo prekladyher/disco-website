@@ -4,7 +4,7 @@ import { useRoute } from "vue-router";
 import { fetchConversation } from "../composables/fetchConversation";
 
 const route = useRoute();
-const { data: conversation } = fetchConversation(route.params.id);
+const { data: conversation } = fetchConversation(parseInt(route.params.id as string, 10));
 </script>
 
 <template>

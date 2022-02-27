@@ -1,15 +1,18 @@
 <script setup lang="ts">
-import { ref, unref } from "@vue/reactivity";
-import { computed } from "@vue/runtime-core";
+import type { Edges, EventHandlers, Layouts, Node, Nodes, UserConfigs } from "v-network-graph";
+import { ref } from "@vue/reactivity";
+import DialogueGraphTooltip from "./DialogueGraphTooltip.vue";
+import type { ConversationModel } from "../composables/fetchConversation";
+import type { PropType } from "vue";
 
 const { conversation } = defineProps({
-  conversation: { 
-    type: Object,
-    required: true 
+  conversation: {
+    type: Object as PropType<ConversationModel>,
+    required: true
   }
 });
 
-const configs = {
+const configs: UserConfigs = {
   view: {
     scalingObjects: true,
     fit: true,
@@ -28,45 +31,51 @@ const configs = {
   }
 };
 
-const nodes = Object.fromEntries(conversation.entries.map(entry => {
-  const node = {
-    name: "" + entry.id,
+const nodes: Nodes = {};
+for (let entry of conversation.entriesById.values()) {
+  nodes[entry.id] = {
+    name: entry.fields.Title || entry.id,
+    ...entry
+  };
+}
+
+const layouts: Layouts = { nodes: {} };
+for (let entry of conversation.entriesById.values()) {
+  layouts.nodes[entry.id] = {
     x: entry.canvasRect.x,
     y: entry.canvasRect.y,
-    ...entry,
   };
-  return [entry.id, node];
-}));
+};
 
-const layouts = ref({ nodes });
+const edges: Edges = {};
+for (let [id, link] of conversation.linksById.entries()) {
+  if (!link.external) {
+    edges[id] = {
+      source: "" + link.originDialogueID,
+      target: "" + link.destinationDialogueID,
+      ...link
+    };
+  }
+}
 
-const edges = Object.fromEntries(Object.values(conversation.linksById)
-  .flat()
-  .filter(link => !link.external)
-  .map(link => [
-    `${link.originDialogueID}_${link.id}`, 
-    { source: link.originDialogueID, target: link.destinationDialogueID, ...link }
-  ]));
+const currentNode = ref<Node>();
 
-const currentNode = ref();
-
-const eventHandlers = {
+const eventHandlers: EventHandlers = {
   "node:pointerover": ({ node }) => {
     currentNode.value = nodes[node];
   },
   "node:pointerout": _ => {
     currentNode.value = undefined;
   },
-}
+};
 </script>
 
 <template>
-  <VNetworkGraph
-    ref="graph"
+  <v-network-graph
     :configs="configs"
     :nodes="nodes"
-    :edges="edges"
     :layouts="layouts"
+    :edges="edges"
     :event-handlers="eventHandlers"
   />
   <DialogueGraphTooltip :node="currentNode" />

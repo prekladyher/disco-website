@@ -1,14 +1,15 @@
 import { ref } from "vue";
+import type { DialogueDatabase } from "./databaseTypes";
 
-function createIndex(list, resolveKey) {
-  return Object.fromEntries(list.map(item => [resolveKey(item), item]));
+function createIndex<T, R>(list: T[], resolveKey: (item: T) => R) {
+  return new Map(list.map(item => [resolveKey(item), item]));
 }
 
 export function fetchData() {
-  const data = ref(null);
+  const data = ref<DialogueDatabase|null>(null);
   const error = ref(null);
 
-  function doFetch(type) {
+  function doFetch(type: string) {
     return fetch(`/database/${type}.json`).then(res => res.json());
   }
 
@@ -19,18 +20,12 @@ export function fetchData() {
     doFetch("variables")
   ]).then(([actors, conversations, items, variables]) => {
     data.value = {
-      actors, 
-      actorsById: createIndex(it, it => it.id),
-      conversations,
-      conversationsById: createIndex(it, it => it.id),
-      items,
-      itemsById: createIndex(it, it => it.id),
-      variables,
-      variablesByName: createIndex(it, it => it.fields.Name),
+      actorsById: createIndex(actors, it => it.id),
+      conversationsById: createIndex(conversations, it => it.id),
+      itemsById: createIndex(items, it => it.id),
+      variablesByName: createIndex(variables, it => it.fields.Name),
     };
   });
-
-  doFetch()
 
   return { data, error };
 }

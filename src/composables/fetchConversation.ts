@@ -1,30 +1,33 @@
-import { isRef, ref, unref } from "vue";
+import { isRef, ref, unref, watchEffect } from "vue";
+import type { ConversationType, DialogueLinkType, DialogueEntryType } from "./databaseTypes";
 
-export function defineConversation(data) {
-  const id = data.id;
-  const fields = data.fields;
-  const entries = data.dialogueEntries;
-
-  const entryById = Object.fromEntries(data.dialogueEntries
-    .map(entry => {
-      return [entry.id, entry];
-    }));
-
-  const linksById = Object.fromEntries(data.dialogueEntries
-    .map(entry => [
-      entry.id,
-      (entry.outgoingLinks || []).map((link, idx) => ({
-        id: idx,
-        external: link.destinationConversationID !== id,
-        ...link 
-      }))
-    ]));
-
-  return { id, fields, entries, entryById, linksById };
+export interface ConversationModel {
+  id: number,
+  fields: Record<string, any>,
+  entriesById: Map<number, DialogueEntryType>
+  linksById: Map<string, DialogueLinkType>
 }
 
-export function fetchConversation(id) {
-  const data = ref(null);
+export function defineConversation(data: ConversationType): ConversationModel {
+  const id = data.id;
+  const fields = data.fields;
+  const entries = data.dialogueEntries || [];
+
+  const entriesById = new Map(entries.map(entry => [entry.id, entry]));
+
+  const linksById = new Map(entries.map(entry => {
+    return (entry.outgoingLinks || []).map((link, idx) => ({
+      id: `${entry.id}_${idx}`,
+      external: link.destinationConversationID !== id,
+      ...link
+    }));
+  }).flat().map(link => [link.id, link]));
+
+  return { id, fields, entriesById, linksById };
+}
+
+export function fetchConversation(id: number) {
+  const data = ref<ConversationModel|null>(null);
   const error = ref(null);
 
   function doFetch() {
