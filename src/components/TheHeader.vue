@@ -1,11 +1,11 @@
 <script setup lang="ts">
+import IconHome from "./IconHome.vue";
 </script>
 
 <template>
   <header>
     <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/conversations/666">Conversation</RouterLink>
+      <router-link to="/"><IconHome /></router-link>
     </nav>
   </header>
 </template>
@@ -21,5 +21,8 @@ header {
 
 a {
   margin-left: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  height: 24px;
 }
 </style>

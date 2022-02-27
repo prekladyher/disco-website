@@ -1,5 +1,5 @@
 import { isRef, ref, unref, watchEffect } from "vue";
-import type { ConversationType, DialogueLinkType, DialogueEntryType } from "./databaseTypes";
+import type { ConversationType, DialogueLinkType, DialogueEntryType } from "../stores/types";
 
 export interface ConversationModel {
   id: number,
@@ -27,23 +27,7 @@ export function defineConversation(data: ConversationType): ConversationModel {
 }
 
 export function fetchConversation(id: number) {
-  const data = ref<ConversationModel|null>(null);
-  const error = ref(null);
-
-  function doFetch() {
-    data.value = null;
-    error.value = null;
-    fetch(`${import.meta.env.BASE_URL}/database/conversations/${unref(id)}.json`)
+  return fetch(`${import.meta.env.BASE_URL}/database/conversations/${unref(id)}.json`)
       .then(res => res.json())
-      .then(json => data.value = defineConversation(json[0]))
-      .catch(err => error.value = err);
-  }
-
-  if (isRef(id)) {
-    watchEffect(doFetch)
-  } else {
-    doFetch()
-  }
-
-  return { data, error };
+      .then(json => defineConversation(json[0]))
 }
