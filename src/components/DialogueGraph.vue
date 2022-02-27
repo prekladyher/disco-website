@@ -1,7 +1,6 @@
-<script setup>
+<script setup lang="ts">
 import { ref, unref } from "@vue/reactivity";
 import { computed } from "@vue/runtime-core";
-import DialogueGraphTooltip from "./DialogueGraphTooltip.vue";
 
 const { conversation } = defineProps({
   conversation: { 

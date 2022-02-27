@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import DialogueGraph from "../components/DialogueGraph.vue";
 import { useRoute } from "vue-router";
 import { fetchConversation } from "../composables/fetchConversation";
