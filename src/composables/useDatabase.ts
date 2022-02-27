@@ -10,7 +10,7 @@ export function fetchData() {
   const error = ref(null);
 
   function doFetch(type: string) {
-    return fetch(`/database/${type}.json`).then(res => res.json());
+    return fetch(`${import.meta.env.BASE_URL}/database/${type}.json`).then(res => res.json());
   }
 
   Promise.all([

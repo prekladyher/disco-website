@@ -1,0 +1,26 @@
+name: deploy
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '17'
+        cache: 'npm'
+    - run: npm install
+    - run: npm run build
+    - run: |
+        git config --global user.name 'prekladyher'
+        git config --global user.email 'prekladyher@users.noreply.github.com'
+        cd dist
+        git init && git checkout -b main
+        git add -A
+        git commit -m 'deploy'
+        git push -f https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/prekladyher/disco-website.git main:gh-pages
