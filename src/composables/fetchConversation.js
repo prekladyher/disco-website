@@ -30,7 +30,7 @@ export function fetchConversation(id) {
   function doFetch() {
     data.value = null;
     error.value = null;
-    fetch(`/database/${unref(id)}.json`)
+    fetch(`/database/conversations/${unref(id)}.json`)
       .then(res => res.json())
       .then(json => data.value = defineConversation(json[0]))
       .catch(err => error.value = err);

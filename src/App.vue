@@ -1,13 +1,9 @@
 <script setup>
+import TheHeader from './components/TheHeader.vue';
 </script>
 
 <template>
-  <header>
-    <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/conversations/666">Conversation</RouterLink>
-    </nav>
-  </header>
+  <TheHeader />
   <RouterView />
 </template>
 
@@ -15,13 +11,18 @@
 @import "@/assets/base.css";
 @import "v-network-graph/lib/style.css";
 
+a {
+  color: #ff5252;
+}
+
 #app {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2em auto;
+  grid-template-rows: 3rem auto;
   height: 100vh;
 }
-#app > * {
+
+#app > main {
   overflow: hidden;
 }
 </style>
