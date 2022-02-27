@@ -1,0 +1,465 @@
+[
+  {
+    "id": 532,
+    "fields": {
+      "Title": "CANAL / WORKER barks",
+      "Articy Id": "0x0100002F0000EF44",
+      "Description": "Barks for workers loitering by the canal after fixing the water lock.",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100002F0000EF44",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 532,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 532,
+            "originDialogueID": 0,
+            "destinationConversationID": 532,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100002F0000EF47",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100004000002CCE"
+        },
+        "conversationID": 532,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 532,
+            "originDialogueID": 1,
+            "destinationConversationID": 532,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 532,
+            "originDialogueID": 1,
+            "destinationConversationID": 532,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 532,
+            "originDialogueID": 1,
+            "destinationConversationID": 532,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 532,
+            "originDialogueID": 1,
+            "destinationConversationID": 532,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 532,
+            "originDialogueID": 1,
+            "destinationConversationID": 532,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 532,
+            "originDialogueID": 1,
+            "destinationConversationID": 532,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 532,
+            "originDialogueID": 1,
+            "destinationConversationID": 532,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 532,
+            "originDialogueID": 1,
+            "destinationConversationID": 532,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Canal Crew: \"\"Let's run out the clock. Lunch is...\"",
+          "Dialogue Text": "\"Let's run out the clock. Lunch is at 14 anyway.\"",
+          "Articy Id": "0x0100004000002CCE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "87",
+          "Conversant": "0",
+          "InputId": "0x0100002F0000EF47",
+          "OutputId": "0x0100002F0000EF54"
+        },
+        "conversationID": 532,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "DayCount() == 3  and  Variable[\"canal.lever_waterlock_closed\"] == true",
+        "userScript": "SetVariableValue(\"canal.know_water_lock_fixed\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 502,
+          "y": 992.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Canal Crew: \"\"Hey, let the police flick the swit...\"",
+          "Dialogue Text": "\"Hey, let the police flick the switch!\"",
+          "Articy Id": "0x0100006B00007DD7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "87",
+          "Conversant": "0",
+          "InputId": "0x0100002F0000EF47",
+          "OutputId": "0x0100002F0000EF54"
+        },
+        "conversationID": 532,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "DayCount() == 3  and  Variable[\"canal.lever_waterlock_closed\"] == false",
+        "userScript": "SetVariableValue(\"canal.know_water_lock_fixed\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 498,
+          "y": 278,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Canal Crew: \"\"So... where's the next broken wate...\"",
+          "Dialogue Text": "\"So... where's the next broken water lock?\"",
+          "Articy Id": "0x0100002F0000EF55",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "87",
+          "Conversant": "0",
+          "InputId": "0x0100002F0000EF47",
+          "OutputId": "0x0100002F0000EF54"
+        },
+        "conversationID": 532,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "DayCount() == 3",
+        "userScript": "SetVariableValue(\"canal.know_water_lock_fixed\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 500.0000305175781,
+          "y": 523,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Canal Crew: \"\"Good job, boys. Now who wants to f...\"",
+          "Dialogue Text": "\"Good job, boys. Now who wants to flick it?\"",
+          "Articy Id": "0x0100002F0000EF5A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "87",
+          "Conversant": "0",
+          "InputId": "0x0100002F0000EF47",
+          "OutputId": "0x0100002F0000EF54"
+        },
+        "conversationID": 532,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "DayCount() == 3  and  Variable[\"canal.lever_waterlock_closed\"] == false",
+        "userScript": "SetVariableValue(\"canal.know_water_lock_fixed\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 500.0000305175781,
+          "y": 28.999998092651367,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Canal Crew: \"\"Morning, officer.\"\"",
+          "Dialogue Text": "\"Morning, officer.\"",
+          "Articy Id": "0x0100004000002CC5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "87",
+          "Conversant": "0",
+          "InputId": "0x0100002F0000EF47",
+          "OutputId": "0x0100002F0000EF54"
+        },
+        "conversationID": 532,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "DayCount() == 3  and  IsMorning()",
+        "userScript": "SetVariableValue(\"canal.know_water_lock_fixed\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 511,
+          "y": -667,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Canal Crew: \"\"Guess we're done here.\"\"",
+          "Dialogue Text": "\"Guess we're done here.\"",
+          "Articy Id": "0x0100008900003FD8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "87",
+          "Conversant": "0",
+          "InputId": "0x0100002F0000EF47",
+          "OutputId": "0x0100002F0000EF54"
+        },
+        "conversationID": 532,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "DayCount() == 3  and  Variable[\"canal.lever_waterlock_closed\"] == true",
+        "userScript": "SetVariableValue(\"canal.know_water_lock_fixed\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 502,
+          "y": 762,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Canal Crew: \"\"Good day, officer.\"\"",
+          "Dialogue Text": "\"Good day, officer.\"",
+          "Articy Id": "0x0100002F0000EF50",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "87",
+          "Conversant": "0",
+          "InputId": "0x0100002F0000EF47",
+          "OutputId": "0x0100002F0000EF54"
+        },
+        "conversationID": 532,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "DayCount() == 3  and  IsAfternoon()",
+        "userScript": "SetVariableValue(\"canal.know_water_lock_fixed\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 506,
+          "y": -437,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Canal Crew: \"\"Fixin' the world one water lock at...\"",
+          "Dialogue Text": "\"Fixin' the world one water lock at a time.\"",
+          "Articy Id": "0x0100002F0000EF5F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "87",
+          "Conversant": "0",
+          "InputId": "0x0100002F0000EF47",
+          "OutputId": "0x0100002F0000EF54"
+        },
+        "conversationID": 532,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "DayCount() == 3",
+        "userScript": "SetVariableValue(\"canal.know_water_lock_fixed\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 505.0000305175781,
+          "y": -203,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

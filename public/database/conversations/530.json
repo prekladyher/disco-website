@@ -1,0 +1,3084 @@
+[
+  {
+    "id": 530,
+    "fields": {
+      "Title": "THOUGHT / HONOUR",
+      "Articy Id": "0x0100002F0000EE49",
+      "AlternateOrbText": "",
+      "CheckType": "19",
+      "Condition": "Variable[\"character.honourable_thought_done\"] == false",
+      "Description": "Authority discusses how you are... The rarest of police officers",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "2",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100002F0000EE49",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 0,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100002F0000EEA4",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100005A000000F8"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 1,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Authority: \"Honourable One, you have accumulate...\"",
+          "Dialogue Text": "Honourable One, you have accumulated a substantial amount of honour points on your life-path. You are a man most virtuous.",
+          "Articy Id": "0x0100005A000000F8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "InputId": "0x0100002F0000EEA4",
+          "OutputId": "0x0100006400009E98"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 2,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 530,
+            "originDialogueID": 2,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 64,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 530,
+            "originDialogueID": 2,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"character.honourable_thought_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 150,
+          "y": 100,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "You: \"\"I am honouring myself, lieutenant.\"\"",
+          "Dialogue Text": "\"I am honouring myself, lieutenant.\"",
+          "Articy Id": "0x0100006400009F1A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009F64",
+          "InputId": "0x0100006400009F04"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 3,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4000.000244140625,
+          "y": -700,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "youbringhonour",
+          "Articy Id": "0x0100002F0000EE7D",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x0100002F0000EE5A",
+          "InputId": "0x0100006400009EA2"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 4,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 44,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 530,
+            "originDialogueID": 4,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 530,
+            "originDialogueID": 4,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 530,
+            "originDialogueID": 4,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 53,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1350,
+          "y": 175,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Authority: \"Living in the name of virtue and do...\"",
+          "Dialogue Text": "Living in the name of virtue and doing noble deeds while expecting nothing in return is not *archaic*. How can you even think that?",
+          "Articy Id": "0x0100005A000138B4",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "OutputId": "0x0100005A000138BB",
+          "InputId": "0x0100005A000138A6"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 5,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1928,
+          "y": -664,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Authority: \"Yes. Your deeds have spoken for you...\"",
+          "Dialogue Text": "Yes. Your deeds have spoken for you, Honourable One, but to fully drape one's self in an eternal cloak of honour a ritual must be completed. A *Rite of Honour*...",
+          "Articy Id": "0x0100005A000138D1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009EB4",
+          "InputId": "0x010000060001B3DE"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 6,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 65,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1900.0001220703125,
+          "y": 75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Authority: \"Good. That was a lie most honourabl...\"",
+          "Dialogue Text": "Good. That was a lie most honourable. Sometimes we must hide the truth from those who wouldn't understand it. The Less-Honoured Ones.",
+          "Articy Id": "0x0100006400009F3D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009F10",
+          "InputId": "0x0100006400009F4D"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 7,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4600,
+          "y": 25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "You: \"Hold your horses! This is a mistake...\"",
+          "Dialogue Text": "Hold your horses! This is a mistake. Honour is meaningless to me. [Discard thought.]",
+          "Articy Id": "0x0100006400009E98",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005A000138AD",
+          "OutputId": "0x0100006B0000A16D"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 8,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 58,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 452,
+          "y": 336,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Authority: \"People will be in awe, admiring a p...\"",
+          "Dialogue Text": "People will be in awe, admiring a police officer most honourable in a sacred ritual of uttermost righteousness.",
+          "Articy Id": "0x0100006400009EEB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009ED1",
+          "InputId": "0x0100006400009ED8"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 9,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 530,
+            "originDialogueID": 9,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 56,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3400.000244140625,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Authority: \"The lieutenant is a noble man, but...\"",
+          "Dialogue Text": "The lieutenant is a noble man, but he does not *know* honour like you and I do. Best not to waste time trying to explain. Lead by example.",
+          "Articy Id": "0x0100006400009F80",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009F10",
+          "InputId": "0x0100006400009F71"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 10,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5200,
+          "y": -725,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Authority: \"Go forth and commit even more honou...\"",
+          "Dialogue Text": "Go forth and commit even more honourable deeds. And should your resolve ever waiver, remember The Rite of Honour. It will always cleanse a man's soul...",
+          "Articy Id": "0x0100005A000000FE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009F45",
+          "InputId": "0x0100006400009F10"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 11,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3975.000244140625,
+          "y": 425.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "Authority: \"No, no, no! You see, you're putting...\"",
+          "Dialogue Text": "No, no, no! You see, you're putting the needs of *others* above *yours*. *You* get nothing in return -- not even praise. You always get the short, *noble* end of the stick...",
+          "Articy Id": "0x0100005A00013936",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "OutputId": "0x0100005A0001393D",
+          "InputId": "0x0100005A0001392D"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 12,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2822,
+          "y": -528,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Authority: \"Congratulations, Honourable One! Yo...\"",
+          "Dialogue Text": "Congratulations, Honourable One! You have become a member of a noble faculty. A man kneels, an Honour Cop rises...",
+          "Articy Id": "0x0100006400009F10",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "InputId": "0x0100006400009EFE",
+          "OutputId": "0x0100005A000000FE"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 13,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3700.000244140625,
+          "y": 463.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Authority: \"Selflessness forms the basis for th...\"",
+          "Dialogue Text": "Selflessness forms the basis for the warrior code. An ageless code, as fit for nomadic Iilmaraan tribes traversing the vast Red Plateau in Provincia Gurdi as it is for your neighbourhood postman.",
+          "Articy Id": "0x0100005A000138BB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "InputId": "0x0100005A000138B4",
+          "OutputId": "0x0100005A0001392D"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 14,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 55,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 530,
+            "originDialogueID": 14,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2225,
+          "y": -675,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "You: \"\"Nothing, you wouldn't understand....\"",
+          "Dialogue Text": "\"Nothing, you wouldn't understand. It's an honour thing.\"",
+          "Articy Id": "0x0100006400009F21",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009F55",
+          "InputId": "0x0100006400009F04"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 15,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 59,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4000.000244140625,
+          "y": -325,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "You: \"Wait, there were honour points?\"",
+          "Dialogue Text": "Wait, there were honour points?",
+          "Articy Id": "0x0100005A0001389A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005A000000F8",
+          "OutputId": "0x0100005A000138AD"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 16,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 61,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 450.0000305175781,
+          "y": -150,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "You: \"My honour is my life.\"",
+          "Dialogue Text": "My honour is my life.",
+          "Articy Id": "0x0100005A0001389F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100002F0000EE7D",
+          "OutputId": "0x0100005A000138D1"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 17,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsTHCPresent(\"revacholian_nationhood\") == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1625.9998779296875,
+          "y": -110.99999237060547,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Authority: \"Then they will witness honour so gr...\"",
+          "Dialogue Text": "Then they will witness honour so great it seems nigh impossible a single man can contain it. They will admire you, Honourable One.",
+          "Articy Id": "0x0100006400009EF2",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009ED1",
+          "InputId": "0x0100006400009EDD"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 18,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 530,
+            "originDialogueID": 18,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 56,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3400.000244140625,
+          "y": -250.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "IsExterior()",
+          "Articy Id": "0x0100006400009F64",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100006400009F1A"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 19,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 530,
+            "originDialogueID": 19,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4300,
+          "y": -650,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "IsExterior()",
+          "Articy Id": "0x0100006400009F64",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009F6A"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 20,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsExterior()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2795,
+          "y": -422.4999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "!(IsExterior())",
+          "Articy Id": "0x0100006400009F64",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009F78"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 21,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 42,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsExterior()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2795,
+          "y": -422.4999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Authority: \"Mhmh-mhmh, you are like a wondering...\"",
+          "Dialogue Text": "Mhmh-mhmh, you are like a wondering knight-monk setting right the wrongs of the world you come upon.",
+          "Articy Id": "0x0100006400009FA8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009FB4",
+          "InputId": "0x0100005A00013927"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 22,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2825,
+          "y": -750,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "You: \"My honour is my life. It's what sep...\"",
+          "Dialogue Text": "My honour is my life. It's what separates me from the treacherous wömen.",
+          "Articy Id": "0x010000060001B3DE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100002F0000EE7D",
+          "OutputId": "0x0100005A000138D1"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 23,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsTHCPresent(\"revacholian_nationhood\") == true",
+        "userScript": "ReputationGrows(\"revacholian_nationhood\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1610.9998779296875,
+          "y": 166,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "Authority: \"Honour comes from deep within you a...\"",
+          "Dialogue Text": "Honour comes from deep within you and to truly know oneself, to *know* one's honour, one must reach deep within oneself and *touch* one's honour...",
+          "Articy Id": "0x0100006400009EBC",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "OutputId": "0x010000060001B3E6",
+          "InputId": "0x0100006400009EB4"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 24,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2483,
+          "y": 81,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"The big deal?\" The lieutenant roll...\"",
+          "Dialogue Text": "\"The big deal?\" The lieutenant rolls his eyes. \"I guess we really do come from different upbringings...\"",
+          "Articy Id": "0x0100006400009F36",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009F3D",
+          "InputId": "0x0100006400009F2F"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 25,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4300,
+          "y": 200,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "You: \"Okay...\"",
+          "Dialogue Text": "Okay...",
+          "Articy Id": "0x010000060001B3E6",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100006400009EBC",
+          "OutputId": "0x0100006400009EC3"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 26,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 51,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2532,
+          "y": -158,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"I can see that, but do you have to...\"",
+          "Dialogue Text": "\"I can see that, but do you have to do it where everyone can see you?\" He looks shocked.",
+          "Articy Id": "0x0100006400009F6A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x0100006400009F64",
+          "OutputId": "0x0100006400009F71"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 27,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 60,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4600,
+          "y": -825,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "Authority: \"You brought much shame on your fami...\"",
+          "Dialogue Text": "You brought much shame on your family today. Your name will forever be tarnished by this most shameful of deeds. Be forever banished, Shameful One!",
+          "Articy Id": "0x0100002F0000EE72",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "OutputId": "0x0100002F0000EE74",
+          "InputId": "0x0100006400009EAA"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"character.honourable_thought_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3100,
+          "y": 750,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "You: \"This honour thing feels overwhelmin...\"",
+          "Dialogue Text": "This honour thing feels overwhelming. Maybe I should open my heart to it?",
+          "Articy Id": "0x0100005A00013891",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100002F0000EE88",
+          "InputId": "0x0100002F0000EE60"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 29,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2500,
+          "y": 500.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "You: \"What? I don't know... just like tha...\"",
+          "Dialogue Text": "What? I don't know... just like that? Outside? What about people?",
+          "Articy Id": "0x0100006400009ED8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009EEB",
+          "InputId": "0x0100006400009EC3"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 30,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsExterior() == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3100,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "Authority: \"You're right. The lieutenant, altho...\"",
+          "Dialogue Text": "You're right. The lieutenant, although a noble man, does not understand honour like you do. Best not to waste time trying to explain. Lead by example.",
+          "Articy Id": "0x0100006400009F5C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009F10",
+          "InputId": "0x0100006400009F55"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 31,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4600,
+          "y": -364,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "Authority: \"Don't think about it too much! Just...\"",
+          "Dialogue Text": "Don't think about it too much! Just say it -- are you ready to get knee-deep in honour?",
+          "Articy Id": "0x0100005A0001393D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "InputId": "0x0100005A00013936",
+          "OutputId": "0x0100006400009FAF"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 32,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3119,
+          "y": -513,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "Jump to: [youbringhonour]",
+          "Articy Id": "0x0100006400009FAF",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100006400009FB4"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 33,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3425.000244140625,
+          "y": -600,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "Authority: \"You are on the fast track to becomi...\"",
+          "Dialogue Text": "You are on the fast track to becoming one of the rarest, most revered of all police officers -- an honour cop.",
+          "Articy Id": "0x0100006400009EA2",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "OutputId": "0x0100002F0000EE7D",
+          "InputId": "0x0100005A000138DF"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 34,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1033,
+          "y": 99,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Title": "Authority: \"Are you ready to drink deep from th...\"",
+          "Dialogue Text": "Are you ready to drink deep from the cup of honour?",
+          "Articy Id": "0x0100006400009FB4",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "InputId": "0x0100006400009FA8",
+          "OutputId": "0x0100006400009FAF"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 35,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3125,
+          "y": -750,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "Authority: \"Good. You feel its presence. Now yo...\"",
+          "Dialogue Text": "Good. You feel its presence. Now you are ready for the *Rite of Honour*.",
+          "Articy Id": "0x0100002F0000EE88",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "InputId": "0x0100005A00013891",
+          "OutputId": "0x0100006400009EB4"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 36,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 65,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2800,
+          "y": 501,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "You: \"You're not hearing me. I'm not some...\"",
+          "Dialogue Text": "You're not hearing me. I'm not some creepy honour-lover. Period.",
+          "Articy Id": "0x0100005A0001388C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009EAA",
+          "InputId": "0x0100002F0000EE60"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 37,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 62,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"character.honourable_volition_save\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2500,
+          "y": 747,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "Authority: \"Oh, the modesty on this one. Anothe...\"",
+          "Dialogue Text": "Oh, the modesty on this one. Another 10 honour points for you, sir!",
+          "Articy Id": "0x0100005A000138DF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009EA2",
+          "InputId": "0x0100005A000138D7"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 38,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 750,
+          "y": 100,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Title": "You: \"It sounds rather arrogant, a secret...\"",
+          "Dialogue Text": "It sounds rather arrogant, a secretive self-regard.",
+          "Articy Id": "0x0100005A0001392D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005A000138BB",
+          "OutputId": "0x0100005A00013936"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 39,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2530,
+          "y": -511,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Title": "Authority: \"It is an honour to serve with you,...\"",
+          "Dialogue Text": "It is an honour to serve with you, Honour Cop!",
+          "Articy Id": "0x0100006400009F45",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "InputId": "0x0100005A000000FE",
+          "OutputId": "0x0100002F0000EE74"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "GainThought(\"honour\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4275,
+          "y": 450.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "You: \"\"Scratching my ass. What's the big...\"",
+          "Dialogue Text": "\"Scratching my ass. What's the big deal?\"",
+          "Articy Id": "0x0100006400009F2F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009F36",
+          "InputId": "0x0100006400009F04"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 41,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4000.000244140625,
+          "y": 200,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Well... uh... don't!\" The lieutena...\"",
+          "Dialogue Text": "\"Well... uh... don't!\" The lieutenant looks truly shocked.",
+          "Articy Id": "0x0100006400009F78",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x0100006400009F64",
+          "OutputId": "0x0100006400009F71"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 42,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 60,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4600,
+          "y": -600,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Title": "Half Light: \"No! You're not a snivelling shit-he...\"",
+          "Dialogue Text": "No! You're not a snivelling shit-heel chasing imaginary karma-coupons! Not for this, nor the afterlife! Fuck this honour shit!",
+          "Articy Id": "0x0100002F0000EE60",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "414",
+          "Conversant": "0",
+          "OutputId": "0x0100005A0001388C",
+          "InputId": "0x0100002F0000EE66"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 43,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 530,
+            "originDialogueID": 43,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"character.honourable_volition_save\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2194,
+          "y": 608,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 44,
+        "fields": {
+          "Title": "You: \"Isn't honour sort of an archaic con...\"",
+          "Dialogue Text": "Isn't honour sort of an archaic concept?",
+          "Articy Id": "0x0100005A000138A6",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100002F0000EE7D",
+          "OutputId": "0x0100005A000138B4"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 44,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1630.9998779296875,
+          "y": -651,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 45,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100006400009EFE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100006400009ECA"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 45,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 46,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 530,
+            "originDialogueID": 45,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3400.000244140625,
+          "y": 275,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 46,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100006400009EFE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009F04"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 46,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2210,
+          "y": 178.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 47,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x0100006400009EFE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009F10"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 47,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2210,
+          "y": 178.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 48,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"WHAT ARE YOU DOING?!\" The lieutena...\"",
+          "Dialogue Text": "\"WHAT ARE YOU DOING?!\" The lieutenant jumps away from you.",
+          "Articy Id": "0x0100006400009F04",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x0100006400009EFE",
+          "OutputId": "0x0100006400009F2F"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 48,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 530,
+            "originDialogueID": 48,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 530,
+            "originDialogueID": 48,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 57,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 530,
+            "originDialogueID": 48,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "ReputationLowers(\"kim\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3700.000244140625,
+          "y": -75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 49,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Then why are you elbow deep in you...\"",
+          "Dialogue Text": "\"Then why are you elbow deep in your pants like...\" He suddenly stops as if realizing he doesn't want to hear the answer. \"Never mind, officer. Carry on.\"",
+          "Articy Id": "0x0100006400009F4D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x0100006400009F3D",
+          "InputId": "0x0100006400009F28"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 49,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4300,
+          "y": -100,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 51,
+        "fields": {
+          "Title": "Authority: \"You need to bring the thumb of your...\"",
+          "Dialogue Text": "You need to bring the thumb of your right hand -- your sword hand -- to your rectum and stick it in there to form the Arch of Honours.",
+          "Articy Id": "0x0100006400009EC3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "InputId": "0x010000060001B3E6",
+          "OutputId": "0x0100006400009ED1"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 51,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 63,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 530,
+            "originDialogueID": 51,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 530,
+            "originDialogueID": 51,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 530,
+            "originDialogueID": 51,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 56,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2756,
+          "y": 89,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 52,
+        "fields": {
+          "Title": "You: \"All I ever wanted was to live with...\"",
+          "Dialogue Text": "All I ever wanted was to live with dignity -- to die with honour. (Stick your thumb in your ass.)",
+          "Articy Id": "0x0100006400009ECA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100006400009EC3",
+          "OutputId": "0x0100006400009EFE"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 52,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3100,
+          "y": 225.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 53,
+        "fields": {
+          "Title": "You: \"I don't want this. I really don't c...\"",
+          "Dialogue Text": "I don't want this. I really don't care about honour... at all.",
+          "Articy Id": "0x0100002F0000EE5A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100002F0000EE7D",
+          "OutputId": "0x0100002F0000EE66"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 53,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 54,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1599,
+          "y": 617,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 54,
+        "fields": {
+          "Title": "Authority: \"Ah... ahhh. You continue to display...\"",
+          "Dialogue Text": "Ah... ahhh. You continue to display such humility. This is to be admired! Refusing praise for your personal integrity is most honourable indeed.",
+          "Articy Id": "0x0100002F0000EE66",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "InputId": "0x0100002F0000EE5A",
+          "OutputId": "0x0100002F0000EE60"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 54,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 43,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1900.0001220703125,
+          "y": 605,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 55,
+        "fields": {
+          "Title": "You: \"A warrior code, you say... I do fee...\"",
+          "Dialogue Text": "A warrior code, you say... I do feel like a warrior. This whole thing is beginning to sound very *me*.",
+          "Articy Id": "0x0100005A00013927",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005A000138BB",
+          "OutputId": "0x0100006400009FA8"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 55,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2525,
+          "y": -750,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 56,
+        "fields": {
+          "Title": "You: \"You're crazy if you think I'm just...\"",
+          "Dialogue Text": "You're crazy if you think I'm just going to stick a finger in my ass! NO WAY!",
+          "Articy Id": "0x0100006400009ED1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100006400009EC3",
+          "OutputId": "0x0100006400009EAA"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 56,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 62,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3100,
+          "y": 450.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 57,
+        "fields": {
+          "Title": "You: \"\"Who, me? Nothing. I'm doing nothin...\"",
+          "Dialogue Text": "\"Who, me? Nothing. I'm doing nothing, Kim.\"",
+          "Articy Id": "0x0100006400009F28",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100006400009F04",
+          "OutputId": "0x0100006400009F4D"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 57,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 49,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4005.000244140625,
+          "y": -92,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 58,
+        "fields": {
+          "Title": "Authority: \"Meaningless?! Vulgar knave, how dar...\"",
+          "Dialogue Text": "Meaningless?! Vulgar knave, how dare you besmirch the honour of honour points... It hurts the eyes to look upon filth like you. Begone.",
+          "Articy Id": "0x0100006B0000A16D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "InputId": "0x0100006400009E98",
+          "OutputId": "0x0100002F0000EE72"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 58,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 750,
+          "y": 325,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 59,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Really? It seems more like a perso...\"",
+          "Dialogue Text": "\"Really? It seems more like a personal hygiene thing.\" He leans even more away from you. \"But let's not delve deeper.\"",
+          "Articy Id": "0x0100006400009F55",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x0100006400009F21",
+          "OutputId": "0x0100006400009F5C"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 59,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4298,
+          "y": -350,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 60,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Have you no self control?\" Then re...\"",
+          "Dialogue Text": "\"Have you no self control?\" Then realizing the naivete of the question he looks at the ground. \"Please spare me this sight.\"",
+          "Articy Id": "0x0100006400009F71",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x0100006400009F78",
+          "OutputId": "0x0100006400009F80"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 60,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4900,
+          "y": -725,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 61,
+        "fields": {
+          "Title": "Authority: \"Of course there were honour points....\"",
+          "Dialogue Text": "Of course there were honour points. Did you think no one was paying attention to all of your honourable deeds, Honourable One?",
+          "Articy Id": "0x0100005A000138AD",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "InputId": "0x0100005A0001389A",
+          "OutputId": "0x0100006400009E98"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 61,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 64,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 530,
+            "originDialogueID": 61,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 749,
+          "y": -168,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 62,
+        "fields": {
+          "Title": "Authority: \"Most dishonourable are those who ha...\"",
+          "Dialogue Text": "Most dishonourable are those who have known honour, carried honour in their hearts, and then disowned honour. They are the *honourfallen*...",
+          "Articy Id": "0x0100006400009EAA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "InputId": "0x0100006400009ED1",
+          "OutputId": "0x0100002F0000EE72"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 62,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2802,
+          "y": 732,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 63,
+        "fields": {
+          "Title": "You: \"What? What if someone comes and *se...\"",
+          "Dialogue Text": "What? What if someone comes and *sees* me?",
+          "Articy Id": "0x0100006400009EDD",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100006400009EC3",
+          "OutputId": "0x0100006400009EF2"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 63,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsExterior() == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3099,
+          "y": -235.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 64,
+        "fields": {
+          "Title": "You: \"I only try my best. It's the most a...\"",
+          "Dialogue Text": "I only try my best. It's the most any of us can do.",
+          "Articy Id": "0x0100005A000138D7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005A000138AD",
+          "OutputId": "0x0100005A000138DF"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 64,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 450.0000305175781,
+          "y": 100,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 65,
+        "fields": {
+          "Title": "Authority: \"Even among the honourable only the...\"",
+          "Dialogue Text": "Even among the honourable only the most dignified are deemed worthy -- but you, oh honourable one, have excelled... in honour.",
+          "Articy Id": "0x0100006400009EB4",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "406",
+          "Conversant": "0",
+          "InputId": "0x0100002F0000EE88",
+          "OutputId": "0x0100006400009EBC"
+        },
+        "conversationID": 530,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 530,
+            "originDialogueID": 65,
+            "destinationConversationID": 530,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2199,
+          "y": 84,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

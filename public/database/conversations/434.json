@@ -1,0 +1,674 @@
+[
+  {
+    "id": 434,
+    "fields": {
+      "Title": "PLAZA ORB / get a drink",
+      "Articy Id": "0x0100002B00004C37",
+      "AlternateOrbText": "",
+      "CheckType": "16",
+      "Condition": "DayCount() == 1  and  Variable[\"plaza.orb_taredrunk_done\"] == false  and  Variable[\"character.habit_alcohol\"] == false",
+      "Description": "Start drinking (Electrochem).",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Near the tare drunk that appears on day 1.",
+      "Difficulty": "3",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100002B00004C37",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 434,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 434,
+            "originDialogueID": 0,
+            "destinationConversationID": 434,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100002B00004C38",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100002B00004C58"
+        },
+        "conversationID": 434,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 434,
+            "originDialogueID": 1,
+            "destinationConversationID": 434,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Electrochemistry: \"Yeah, wildo, time to get a drinking...\"",
+          "Dialogue Text": "Yeah, wildo, time to get a drinking problem so massive that even stars collapse around it. Become an alcoholic!",
+          "Articy Id": "0x0100002B00005119",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "413",
+          "Conversant": "0",
+          "OutputId": "0x0100002B0000511D",
+          "InputId": "0x0100002B0000510C"
+        },
+        "conversationID": 434,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "GainTask(\"TASK.get_a_drink\");\nSetVariableValue(\"plaza.orb_taredrunk_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2025.0001220703125,
+          "y": -175,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "You: \"Wait... what is happening?\"",
+          "Dialogue Text": "Wait... what is happening?",
+          "Articy Id": "0x0100002B00037BA5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100002B00037BAC",
+          "InputId": "0x0100002B00005144"
+        },
+        "conversationID": 434,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 434,
+            "originDialogueID": 3,
+            "destinationConversationID": 434,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 875.0000610351562,
+          "y": -150,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Electrochemistry: \"Look at that lucky boozer there, th...\"",
+          "Dialogue Text": "Look at that lucky boozer there, the heaviest drinker on the planet! Look at his liquor-abusing excuse of a face -- those swollen bug-eyes, that muttering mouth.",
+          "Articy Id": "0x0100002B00004C58",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "413",
+          "Conversant": "0",
+          "InputId": "0x0100002B00004C38",
+          "OutputId": "0x0100002B00005144"
+        },
+        "conversationID": 434,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 434,
+            "originDialogueID": 4,
+            "destinationConversationID": 434,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 225.00001525878906,
+          "y": 75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "You: \"No, I don't want a *sip* of that. [...\"",
+          "Dialogue Text": "No, I don't want a *sip* of that. [Discard thought.]",
+          "Articy Id": "0x0100002B00004C5E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100002B00005120",
+          "InputId": "0x0100002B00005144"
+        },
+        "conversationID": 434,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 434,
+            "originDialogueID": 5,
+            "destinationConversationID": 434,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"plaza.orb_taredrunk_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 875.0000610351562,
+          "y": 375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Electrochemistry: \"That old rummy here brings back som...\"",
+          "Dialogue Text": "That old rummy here brings back some good memories. Remember how great that piss in your pants used to feel? Warm and cosy, just the way you like it. Time to get yourself another drink and soak those pants for *good*!",
+          "Articy Id": "0x0100002B00037BAC",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "413",
+          "Conversant": "0",
+          "InputId": "0x0100002B00037BA5",
+          "OutputId": "0x0100002B00037BB3"
+        },
+        "conversationID": 434,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 434,
+            "originDialogueID": 6,
+            "destinationConversationID": 434,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1175,
+          "y": -175,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "You: \"You betcha! I was born to drink. A...\"",
+          "Dialogue Text": "You betcha! I was born to drink. A new day, a new bottle!",
+          "Articy Id": "0x0100002B0000510C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100002B00005119",
+          "InputId": "0x0100002B00037BB3"
+        },
+        "conversationID": 434,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 434,
+            "originDialogueID": 7,
+            "destinationConversationID": 434,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1720.0001220703125,
+          "y": -175,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Untitled hub",
+          "Articy Id": "0x0100002B00037BB3",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100002B00005105",
+          "OutputId": "0x0100002B00005112"
+        },
+        "conversationID": 434,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 434,
+            "originDialogueID": 9,
+            "destinationConversationID": 434,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 434,
+            "originDialogueID": 9,
+            "destinationConversationID": 434,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1475,
+          "y": 50,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Electrochemistry: \"Then you should run for it, rascal....\"",
+          "Dialogue Text": "Then you should run for it, rascal. Become a modern hunter, tame that nasty urge inside of your guts. Reward your electrochemistry!",
+          "Articy Id": "0x0100002B00005105",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "413",
+          "Conversant": "0",
+          "OutputId": "0x0100002B00037BB3",
+          "InputId": "0x0100002B000050C7"
+        },
+        "conversationID": 434,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 434,
+            "originDialogueID": 10,
+            "destinationConversationID": 434,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1175,
+          "y": 100,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Electrochemistry: \"And while you're there, maybe you s...\"",
+          "Dialogue Text": "And while you're there, maybe you should hop by the Anonymous Alcoholics as well. You *lamo*.",
+          "Articy Id": "0x0100002B00005120",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "413",
+          "Conversant": "0",
+          "InputId": "0x0100002B00005112",
+          "OutputId": "0x0100002B0000511D"
+        },
+        "conversationID": 434,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"plaza.orb_taredrunk_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2025.0001220703125,
+          "y": 100,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "You: \"Fuck, I don't know... maybe I shoul...\"",
+          "Dialogue Text": "Fuck, I don't know... maybe I shouldn't rush head-first into bad habits? I'll leave that alcohol be for now.",
+          "Articy Id": "0x0100002B00005112",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100002B00037BB3",
+          "OutputId": "0x0100002B00005120"
+        },
+        "conversationID": 434,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 434,
+            "originDialogueID": 12,
+            "destinationConversationID": 434,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1720.0001220703125,
+          "y": 100,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "You: \"I'd like more than a sip. I'd abuse...\"",
+          "Dialogue Text": "I'd like more than a sip. I'd abuse *the devil itself* out of that liquor.",
+          "Articy Id": "0x0100002B000050C7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100002B00005105",
+          "InputId": "0x0100002B00005144"
+        },
+        "conversationID": 434,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 434,
+            "originDialogueID": 13,
+            "destinationConversationID": 434,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 872,
+          "y": 125.00000762939453,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Electrochemistry: \"I wonder how many litres of sheer a...\"",
+          "Dialogue Text": "I wonder how many litres of sheer alcohol has he consumed today? I bet you'd like a sip of that. Give it a real taste of your manly mouth.",
+          "Articy Id": "0x0100002B00005144",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "413",
+          "Conversant": "0",
+          "InputId": "0x0100002B00004C58",
+          "OutputId": "0x0100002B00004C5E"
+        },
+        "conversationID": 434,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 434,
+            "originDialogueID": 14,
+            "destinationConversationID": 434,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 434,
+            "originDialogueID": 14,
+            "destinationConversationID": 434,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 434,
+            "originDialogueID": 14,
+            "destinationConversationID": 434,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 525,
+          "y": 105.00000762939453,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

@@ -1,0 +1,1046 @@
+[
+  {
+    "id": 1234,
+    "fields": {
+      "Title": "GARYS APARTMENT ORB / revacholian flag2",
+      "Articy Id": "0x0100008200021909",
+      "AlternateOrbText": "",
+      "CheckType": "2",
+      "Condition": "Variable[\"backyard.garysapartment_clicked_the_glag_orb\"] == true  and  Variable[\"backyard.garyapartment_flag_dialogue_seen\"] == false",
+      "Description": "Flag of Revachol the Suzerain.",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "1",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100008200021909",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 0,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100008200021A39",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100008200021A42"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 1,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Encyclopedia: \"The flag accepts your honourable sa...\"",
+          "Dialogue Text": "The flag accepts your honourable salute with quiet dignity.",
+          "Articy Id": "0x0100008200021AB0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "399",
+          "Conversant": "0",
+          "OutputId": "0x0100008200021A55",
+          "InputId": "0x0100008200021AB7"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"backyard.garyapartment_flag_dialogue_seen\", true) ;\nXPPicoSetBool(\"XP.garyapartment_flag_bowed\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1880.9998779296875,
+          "y": 2452,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100008200021AB7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100008200021A97"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 3,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 3,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1614,
+          "y": 2386,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100008200021AB7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100008200021ABE"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 4,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1049.0999755859375,
+          "y": 1550.89990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x0100008200021AB7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100008200021AB0"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 5,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1049.0999755859375,
+          "y": 1550.89990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "You: \"\"Lieutenant -- the old flag of the...\"",
+          "Dialogue Text": "\"Lieutenant -- the old flag of the Suzerain.\" (Point)",
+          "Articy Id": "0x0100008200021A91",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100008200021A83",
+          "InputId": "0x0100008200021A8B"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 6,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1343,
+          "y": 1927,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Esprit de Corps: \"It is not my flag, he thinks -- my...\"",
+          "Dialogue Text": "It is not my flag, he thinks -- my flag is the signal blue of the Zone of Control.",
+          "Articy Id": "0x010000060001B5CA",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "408",
+          "Conversant": "0",
+          "OutputId": "0x0100008200021A55",
+          "InputId": "0x0100008200021ABE"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2249,
+          "y": 2222,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Encyclopedia: \"The flag doesn't seem to mind, it's...\"",
+          "Dialogue Text": "The flag doesn't seem to mind, it's just a colourful fabric with a sun sewn onto it. Like all feudal flags, it looks like a children's drawing.",
+          "Articy Id": "0x0100000700000333",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "399",
+          "Conversant": "0",
+          "OutputId": "0x0100008200021A55",
+          "InputId": "0x0100008200021A9C"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"backyard.garyapartment_flag_dialogue_seen\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1590,
+          "y": 2758,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "You: \"What's the Sevenfold Sun Miracle?\"",
+          "Dialogue Text": "What's the Sevenfold Sun Miracle?",
+          "Articy Id": "0x0100008200021A63",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100008200021A6B",
+          "InputId": "0x0100008200021A5C"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 9,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 466,
+          "y": 2328,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "You: \"That's good to know. [Discard thoug...\"",
+          "Dialogue Text": "That's good to know. [Discard thought.]",
+          "Articy Id": "0x0100008200021A51",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100008200021A55",
+          "InputId": "0x0100008200021A42"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -90,
+          "y": 2757,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "You: \"What's with the sun?\"",
+          "Dialogue Text": "What's with the sun?",
+          "Articy Id": "0x0100008200021A4B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100008200021A5C",
+          "InputId": "0x0100008200021A42"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 11,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -80,
+          "y": 2342,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "Encyclopedia: \"It's an optical atmospheric anomaly...\"",
+          "Dialogue Text": "It's an optical atmospheric anomaly the first settlers saw. Happens in cold weather: six small suns around the big one. This complex halo-phenomena is how old Revachol got its flag.",
+          "Articy Id": "0x0100008200021A6B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "399",
+          "Conversant": "0",
+          "InputId": "0x0100008200021A63",
+          "OutputId": "0x010000060001B5C0"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 12,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 744,
+          "y": 2320,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Inland Empire: \"It is but one of the many strange *...\"",
+          "Dialogue Text": "It is but one of the many strange *optic-atmospheric* phenomenon on this wondrous archipelago. You're sure you once saw sundogs -- in your youth. And blue flares....",
+          "Articy Id": "0x010000060001B5C0",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "3",
+          "Actor": "404",
+          "Conversant": "0",
+          "InputId": "0x0100008200021A6B",
+          "OutputId": "0x0100008200021A8B"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 13,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 780,
+          "y": 2605,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Encyclopedia: \"This isn't just one sun, but there...\"",
+          "Dialogue Text": "This isn't just one sun, but there are little suns dancing around the big sun. This is the Sevenfold Sun Miracle.",
+          "Articy Id": "0x0100008200021A5C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "399",
+          "Conversant": "0",
+          "InputId": "0x0100008200021A4B",
+          "OutputId": "0x0100008200021A51"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 14,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 14,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 184,
+          "y": 2328,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"The lieutenant does not bow to the...\"",
+          "Dialogue Text": "The lieutenant does not bow to the flag -- it accepts your salute with quiet dignity.",
+          "Articy Id": "0x0100008200021ABE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x0100008200021AB7",
+          "OutputId": "0x010000060001B5CA"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 15,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"backyard.garyapartment_flag_dialogue_seen\", true) ;\nXPPicoSetBool(\"XP.garyapartment_flag_bowed\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1885.0001220703125,
+          "y": 2213,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "Encyclopedia: \"This is the flag of Revachol the Su...\"",
+          "Dialogue Text": "This is the flag of Revachol the Suzerainty.",
+          "Articy Id": "0x0100008200021A42",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "399",
+          "Conversant": "0",
+          "InputId": "0x0100008200021A39",
+          "OutputId": "0x0100008200021A51"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 17,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 17,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"backyard.garyapartment_flag_dialogue_seen\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -430.0000305175781,
+          "y": 2583,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Untitled hub",
+          "Articy Id": "0x0100008200021A8B",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x010000060001B5C0",
+          "OutputId": "0x0100008200021A9C"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 18,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 18,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 18,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1087,
+          "y": 2407,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "You: \"Don't bow to the flag. [Finish thou...\"",
+          "Dialogue Text": "Don't bow to the flag. [Finish thought.]",
+          "Articy Id": "0x0100008200021A9C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008200021AA5",
+          "OutputId": "0x0100000700000333"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 19,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1313,
+          "y": 2760,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Rhetoric: \"By 'old fashioned' he means 'very r...\"",
+          "Dialogue Text": "By 'old fashioned' he means 'very right wing'.",
+          "Articy Id": "0x0100008200021AA5",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "400",
+          "Conversant": "0",
+          "OutputId": "0x0100008200021A9C",
+          "InputId": "0x0100008200021A83"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 20,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 20,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1910.9998779296875,
+          "y": 1923,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Mhm.\" He looks around the apartmen...\"",
+          "Dialogue Text": "\"Mhm.\" He looks around the apartment. \"The tenant is an *old fashioned* guy.\"",
+          "Articy Id": "0x0100008200021A83",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x0100008200021A91",
+          "OutputId": "0x0100008200021AA5"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 21,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1620.9998779296875,
+          "y": 1915.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "You: \"Bow down before the flag. [Finish t...\"",
+          "Dialogue Text": "Bow down before the flag. [Finish thought.]",
+          "Articy Id": "0x0100008200021A97",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008200021AA5",
+          "OutputId": "0x0100008200021AB7"
+        },
+        "conversationID": 1234,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1234,
+            "originDialogueID": 22,
+            "destinationConversationID": 1234,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "ReputationGrows(\"revacholian_nationhood\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1324,
+          "y": 2337,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

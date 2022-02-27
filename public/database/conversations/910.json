@@ -1,0 +1,597 @@
+[
+  {
+    "id": 910,
+    "fields": {
+      "Title": "APT ORB / foreclosed apt logic",
+      "Articy Id": "0x010000570001D9FF",
+      "AlternateOrbText": "",
+      "CheckType": "1",
+      "Condition": "Variable[\"apt.foreclosed_apt_table_orb_clicked\"] == true  and  Variable[\"apt.foreclosed_apt_orb_clicked\"] == true  and  Variable[\"apt.orb_foreclosed_apt_logic_done\"] == false",
+      "Description": "Logic wonders what happened in this apartment.",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "2",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000570001D9FF",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 910,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 910,
+            "originDialogueID": 0,
+            "destinationConversationID": 910,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x010000570001DA00",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x010000570001E0B2"
+        },
+        "conversationID": 910,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 910,
+            "originDialogueID": 1,
+            "destinationConversationID": 910,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Logic: \"What happened here?\"",
+          "Dialogue Text": "What happened here?",
+          "Articy Id": "0x010000570001E0B2",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "398",
+          "Conversant": "0",
+          "InputId": "0x010000570001DA00",
+          "OutputId": "0x010000570001E175"
+        },
+        "conversationID": 910,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 910,
+            "originDialogueID": 2,
+            "destinationConversationID": 910,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 910,
+            "originDialogueID": 2,
+            "destinationConversationID": 910,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 910,
+            "originDialogueID": 2,
+            "destinationConversationID": 910,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"apt.foreclosed_apt_orb_clicked\", true) ;\nSetVariableValue(\"apt.orb_foreclosed_apt_logic_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 246.99998474121094,
+          "y": 473.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "You: \"You can't foreclose on an apartment...\"",
+          "Dialogue Text": "You can't foreclose on an apartment with a hole in the wall.",
+          "Articy Id": "0x010000570001E16F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000570001E2F8",
+          "OutputId": "0x010000570001E17E"
+        },
+        "conversationID": 910,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 910,
+            "originDialogueID": 3,
+            "destinationConversationID": 910,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 785,
+          "y": 339,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "You: \"This looks so sad...\"",
+          "Dialogue Text": "This looks so sad...",
+          "Articy Id": "0x010000570001E2EA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000570001E0B2",
+          "OutputId": "0x010000570001E2F2"
+        },
+        "conversationID": 910,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 910,
+            "originDialogueID": 4,
+            "destinationConversationID": 910,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 778,
+          "y": 887.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "You: \"There's always a little something i...\"",
+          "Dialogue Text": "There's always a little something in the fridge.",
+          "Articy Id": "0x010000570001E2E2",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000570001E307",
+          "InputId": "0x010000570001E17E"
+        },
+        "conversationID": 910,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 910,
+            "originDialogueID": 5,
+            "destinationConversationID": 910,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1383,
+          "y": 475.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Logic: \"Put your emotions aside. Try to foc...\"",
+          "Dialogue Text": "Put your emotions aside. Try to focus on abstract, impersonal things.",
+          "Articy Id": "0x010000570001E2F2",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "398",
+          "Conversant": "0",
+          "InputId": "0x010000570001E2EA",
+          "OutputId": "0x010000570001E2F8"
+        },
+        "conversationID": 910,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 910,
+            "originDialogueID": 6,
+            "destinationConversationID": 910,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "DamageVolition(1)",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1064,
+          "y": 887.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Inland Empire: \"But this reeks of sadness!\"",
+          "Dialogue Text": "But this reeks of sadness!",
+          "Articy Id": "0x010000570001E2F8",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "404",
+          "Conversant": "0",
+          "InputId": "0x010000570001E2F2",
+          "OutputId": "0x010000570001E175"
+        },
+        "conversationID": 910,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 910,
+            "originDialogueID": 7,
+            "destinationConversationID": 910,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 910,
+            "originDialogueID": 7,
+            "destinationConversationID": 910,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1351,
+          "y": 887.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "You: \"Except the stuff in the fridge.\"",
+          "Dialogue Text": "Except the stuff in the fridge.",
+          "Articy Id": "0x010000570001E2DC",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000570001E307",
+          "InputId": "0x010000570001E17E"
+        },
+        "conversationID": 910,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 910,
+            "originDialogueID": 8,
+            "destinationConversationID": 910,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1388,
+          "y": 238,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Logic: \"Indeed!\"",
+          "Dialogue Text": "Indeed!",
+          "Articy Id": "0x010000570001E307",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "398",
+          "Conversant": "0",
+          "InputId": "0x010000570001E2DC",
+          "OutputId": "0x010000570001E179"
+        },
+        "conversationID": 910,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"apt.foreclosed_apt_orb_clicked\", true) ;\nSetVariableValue(\"apt.orb_foreclosed_apt_logic_done\", true) ;\nXPPicoSetBool(\"XP.foreclosed_logic_hole_wall\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1675.0001220703125,
+          "y": 350,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "You: \"[Discard thought.]\"",
+          "Dialogue Text": "[Discard thought.]",
+          "Articy Id": "0x010000570001E175",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000570001E2F8",
+          "OutputId": "0x010000570001E179"
+        },
+        "conversationID": 910,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"apt.orb_foreclosed_apt_logic_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 765,
+          "y": 1459,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Logic: \"It will still be accessible through...\"",
+          "Dialogue Text": "It will still be accessible through the apartment next to it. That one didn't have a door... Sadly, nothing of great value remains here.",
+          "Articy Id": "0x010000570001E17E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "398",
+          "Conversant": "0",
+          "InputId": "0x010000570001E16F",
+          "OutputId": "0x010000570001E2E2"
+        },
+        "conversationID": 910,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 910,
+            "originDialogueID": 11,
+            "destinationConversationID": 910,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 910,
+            "originDialogueID": 11,
+            "destinationConversationID": 910,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"apt.foreclosed_apt_orb_clicked\", true) ;\nSetVariableValue(\"apt.orb_foreclosed_apt_logic_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1076,
+          "y": 330,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

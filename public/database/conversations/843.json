@@ -1,0 +1,289 @@
+[
+  {
+    "id": 843,
+    "fields": {
+      "Title": "CANAL / MAN ON WATER LOCK barks",
+      "Articy Id": "0x0100004D00003A43",
+      "Description": "Barks for the Man on Water Lock.",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100004D00003A43",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 843,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 843,
+            "originDialogueID": 0,
+            "destinationConversationID": 843,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100004D00003A46",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100004D00003B83"
+        },
+        "conversationID": 843,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 843,
+            "originDialogueID": 1,
+            "destinationConversationID": 843,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 843,
+            "originDialogueID": 1,
+            "destinationConversationID": 843,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 843,
+            "originDialogueID": 1,
+            "destinationConversationID": 843,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 843,
+            "originDialogueID": 1,
+            "destinationConversationID": 843,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Man on water lock: \"\"That butter sign is a write-off fo...\"",
+          "Dialogue Text": "\"That butter sign is a write-off for sure.\"",
+          "Articy Id": "0x0100004D00003B83",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "85",
+          "Conversant": "0",
+          "InputId": "0x0100004D00003A46",
+          "OutputId": "0x0100004D00003A5A"
+        },
+        "conversationID": 843,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"canal.water_lock_greeting_done\"] == false  and  DayCount() < 3",
+        "userScript": "SetVariableValue(\"canal.water_lock_buddy\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 679,
+          "y": 1386,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Man on water lock: \"\"Barry! Can you hear me, buddy?\"\"",
+          "Dialogue Text": "\"Barry! Can you hear me, buddy?\"",
+          "Articy Id": "0x0100004D00003A56",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "85",
+          "Conversant": "0",
+          "InputId": "0x0100004D00003A46",
+          "OutputId": "0x0100004D00003A5A"
+        },
+        "conversationID": 843,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"canal.water_lock_greeting_done\"] == false  and  DayCount() < 3",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 675,
+          "y": 650,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Man on water lock: \"\"My friend Barry is stuck on the ot...\"",
+          "Dialogue Text": "\"My friend Barry is stuck on the other side.\"",
+          "Articy Id": "0x0100004D00003A5D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "85",
+          "Conversant": "0",
+          "InputId": "0x0100004D00003A46",
+          "OutputId": "0x0100004D00003A5A"
+        },
+        "conversationID": 843,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"canal.water_lock_greeting_done\"] == false  and  DayCount() < 3",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 675,
+          "y": 900.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Man on water lock: \"\"Can't believe no one's coming to f...\"",
+          "Dialogue Text": "\"Can't believe no one's coming to fix this till Wednesday...\"",
+          "Articy Id": "0x010000070001999E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "85",
+          "Conversant": "0",
+          "InputId": "0x0100004D00003A46",
+          "OutputId": "0x0100004D00003A5A"
+        },
+        "conversationID": 843,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"canal.water_lock_greeting_done\"] == false  and  DayCount() < 3",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 674,
+          "y": 1138,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

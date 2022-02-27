@@ -1,0 +1,1459 @@
+[
+  {
+    "id": 1110,
+    "fields": {
+      "Title": "WHIRLING F1 / EXIT DOOR",
+      "Articy Id": "0x0100006B00001683",
+      "OnUse": "",
+      "OverrideDialogueCondition": "Variable[\"whirling.kimintro_done\"] == true  and  Variable[\"whirling.cuno_exit_lock\"] == false",
+      "AlternateOrbText": "",
+      "CheckType": "15",
+      "Condition": "",
+      "Description": "this is a crazy-ass exit-from-whirling door, god dammit.",
+      "Instruction": "",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100006B00001683",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 0,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100006B000016B3",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100006B00001684"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 1,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Variable[\"whirling.cuno_exit_seen_once\"]",
+          "Articy Id": "0x0100000400015FE1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100000400015FED"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 2,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 2,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 640,
+          "y": 138,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Variable[\"whirling.cuno_exit_seen_once\"]",
+          "Articy Id": "0x0100000400015FE1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"whirling.cuno_exit_seen_once\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 416,
+          "y": 89.69999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "!(Variable[\"whirling.cuno_exit_seen_once\"])",
+          "Articy Id": "0x0100000400015FE1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100000400016004"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 4,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"whirling.cuno_exit_seen_once\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 416,
+          "y": 89.69999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "IsCunoInParty()",
+          "Articy Id": "0x0100006B00001684",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100006B000016B3"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 5,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 5,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 350,
+          "y": 625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "IsCunoInParty()",
+          "Articy Id": "0x0100006B00001684",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100000400015FED"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 6,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsCunoInParty()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 227.49998474121094,
+          "y": 406.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "!(IsCunoInParty())",
+          "Articy Id": "0x0100006B00001684",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100006B00001689"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 7,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsCunoInParty()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 227.49998474121094,
+          "y": 406.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Cuno: \"\"Hold up, piggo. There's something...\"",
+          "Dialogue Text": "\"Hold up, piggo. There's something you gotta understand about the Cuno first.\" He drags his sleeve across his nose. \"Cuno's gotta protect the Cuno name.\"",
+          "Articy Id": "0x0100000400016004",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "InputId": "0x0100000400015FE1",
+          "OutputId": "0x010000040001600A"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 8,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.cuno_exit_seen_once\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 802,
+          "y": 231,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Cuno: \"\"Listen up, pig! Cuno's gonna scram...\"",
+          "Dialogue Text": "\"Listen up, pig! Cuno's gonna scram now.\" He rubs his hands together.",
+          "Articy Id": "0x0100000400016019",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "OutputId": "0x010000040001601F",
+          "InputId": "0x010000040001600F"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 9,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.cuno_exit_lock\", false) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 865.0000610351562,
+          "y": -485.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Variable[\"TASK.investigate_sea_fortress\"]",
+          "Articy Id": "0x0100000400015FED",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100006B00001684"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 10,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 10,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 313,
+          "y": -39,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Variable[\"TASK.investigate_sea_fortress\"]",
+          "Articy Id": "0x0100000400015FED",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000040001600F"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 11,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"TASK.investigate_sea_fortress\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 203.4499969482422,
+          "y": -25.349998474121094,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "!(Variable[\"TASK.investigate_sea_fortress\"])",
+          "Articy Id": "0x0100000400015FED",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100000400015FE1"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 12,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"TASK.investigate_sea_fortress\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 203.4499969482422,
+          "y": -25.349998474121094,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Tutorial Agent: \"Cuno will rejoin your party later.\"",
+          "Dialogue Text": "Cuno will rejoin your party later.",
+          "Articy Id": "0x010000060001C2BA",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "color": "1",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Actor": "354",
+          "Conversant": "0",
+          "OutputId": "0x010000040001602E",
+          "InputId": "0x01000051000097AC"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1862,
+          "y": -441,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "Variable[\"whirling.cuno_exit_seen_once\"]",
+          "Articy Id": "0x010000040001600F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100000400015FED"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 15,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 15,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 508,
+          "y": -330,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "Variable[\"whirling.cuno_exit_seen_once\"]",
+          "Articy Id": "0x010000040001600F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100000400016019"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 16,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"whirling.cuno_exit_seen_once\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 330.1999816894531,
+          "y": -214.49998474121094,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "!(Variable[\"whirling.cuno_exit_seen_once\"])",
+          "Articy Id": "0x010000040001600F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100006B0000168F"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 17,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"whirling.cuno_exit_seen_once\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 330.1999816894531,
+          "y": -214.49998474121094,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"As you approach the door leading ou...\"",
+          "Dialogue Text": "As you approach the door leading out of the hostel, the bespectacled man in an orange bomber jacket turns to you:",
+          "Articy Id": "0x0100006B000016A0",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "TravelTo(Kim Kitsuragi, KimTurnLoc, 0, true, true)@1;",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"is_female\": false,\n  \"short_description\": \"\",\n  \"long_description\": \"\",\n  \"color\": 1\n}",
+          "Actor": "395",
+          "Conversant": "0"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 728.4615478515625,
+          "y": 1117.6923828125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "Variable[\"tc.turn_off_tutorial_node\"]",
+          "Articy Id": "0x01000051000097AC",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000040001601F"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 19,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 19,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1507,
+          "y": -340,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Variable[\"tc.turn_off_tutorial_node\"]",
+          "Articy Id": "0x01000051000097AC",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"tc.turn_off_tutorial_node\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 979.5499877929688,
+          "y": -220.99998474121094,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "!(Variable[\"tc.turn_off_tutorial_node\"])",
+          "Articy Id": "0x01000051000097AC",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000060001C2BA"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 21,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"tc.turn_off_tutorial_node\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 979.5499877929688,
+          "y": -220.99998474121094,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Variable[\"whirling.kimintro_done\"]",
+          "Articy Id": "0x0100006B00001689",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100006B00001684"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 22,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 22,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 675,
+          "y": 850.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "Variable[\"whirling.kimintro_done\"]",
+          "Articy Id": "0x0100006B00001689",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"whirling.kimintro_done\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 438.7499694824219,
+          "y": 552.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "!(Variable[\"whirling.kimintro_done\"])",
+          "Articy Id": "0x0100006B00001689",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "kwbpntb9pgoag9g0"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 24,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"whirling.kimintro_done\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 438.7499694824219,
+          "y": 552.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "Cuno: \"\"So yeah -- see you on the seafort...\"",
+          "Dialogue Text": "\"So yeah -- see you on the seafort island. Try not to get shot or drunk again. Cuno's counting on your ass.\"",
+          "Articy Id": "0x0100006B00001695",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "OutputId": "0x01000051000097AC",
+          "InputId": "0x0100006B0000168F"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 25,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "RemoveCunoWaitAtFort()",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1187,
+          "y": -243,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Cuno: \"\"See you on the seafort island -- t...\"",
+          "Dialogue Text": "\"See you on the seafort island -- try not to get shot again or drunk or shit. Cuno's counting on you.\"",
+          "Articy Id": "0x010000040001601F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "InputId": "0x0100000400016019",
+          "OutputId": "0x01000051000097AC"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 26,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "RemoveCunoWaitAtFort()",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1167,
+          "y": -483,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Cuno: \"\"The gimps out there ain't gonna th...\"",
+          "Dialogue Text": "\"The gimps out there ain't gonna think we a thing. Cuno will follow you, but don't expect anything *extra* okay, pig? Cuno's silent, like a fucking vegetable.\"",
+          "Articy Id": "0x010000040001600A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "InputId": "0x0100000400016004",
+          "OutputId": "0x010000040001602A"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 27,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.cuno_exit_lock\", false) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1107,
+          "y": 244,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "Jump to: [Esprit de Corps: \"If an assault were launched on this...\"]",
+          "Articy Id": "0x0100006B000016A7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100006B000016AB"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 28,
+            "destinationConversationID": 12,
+            "destinationDialogueID": 162,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1552.3077392578125,
+          "y": 971.5385131835938,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "As you approach the door leading out of the hostel, the bespectacled man in an orange bomber jacket turns to you:",
+          "Articy Id": "kwbpntb9pgoag9g0",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"is_female\": false,\n  \"short_description\": \"\",\n  \"long_description\": \"\",\n  \"color\": 1\n}",
+          "Condition1": "IsHardcoreModeActive()  and  WasGameBeatenInHardcoreMode()",
+          "Alternate1": "As you approach the door leading out of the hostel, the bespectacled man in a black bomber jacket turns to you:",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x0100006B00001689",
+          "OutputId": "0x0100006B000016AB"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 29,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 985.3846435546875,
+          "y": 891.5385131835938,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "Cuno: \"\"And don't forget about that bitch'...\"",
+          "Dialogue Text": "\"And don't forget about that bitch's window. Scope that shit. Cop Cuno's telling you, that's the break in the case.\"",
+          "Articy Id": "0x010000040001602A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "InputId": "0x010000040001600A",
+          "OutputId": "0x010000040001602E"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1435,
+          "y": 251.99998474121094,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Excuse me... I think you may be th...\"",
+          "Dialogue Text": "\"Excuse me... I think you may be the person I've been waiting for.\" He narrows his eyes and extends his hand in greeting.",
+          "Articy Id": "0x0100006B000016AB",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "FocusCamera(cam_kim_interrupts);TravelTo(Kim Kitsuragi, KimEngageLoc);TravelTo(Tequila Sunset, TequEngageLoc);",
+          "AlwaysPlayVoice": "True",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "kwbpntb9pgoag9g0",
+          "OutputId": "0x0100006B000016A7"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 31,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1275,
+          "y": 900.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "Cuno: \"\"Cuno's gonna scram now.\" He rubs h...\"",
+          "Dialogue Text": "\"Cuno's gonna scram now.\" He rubs his hands together. \"Can't be seen with pigs. Can't shit on Cuno's good name.\"",
+          "Articy Id": "0x0100006B0000168F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "InputId": "0x010000040001600F",
+          "OutputId": "0x0100006B00001695"
+        },
+        "conversationID": 1110,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1110,
+            "originDialogueID": 32,
+            "destinationConversationID": 1110,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.cuno_exit_lock\", false) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 887,
+          "y": -243,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

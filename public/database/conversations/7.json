@@ -1,0 +1,4290 @@
+[
+  {
+    "id": 7,
+    "fields": {
+      "Title": "Stage directions test dialogue",
+      "Articy Id": "0x010000030000008F",
+      "Description": "",
+      "Actor": "38",
+      "Conversant": "396"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000030000008F",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 0,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100000300000092",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100000600016DED"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 1,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 55,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 1,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 1,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 78,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 1,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Physical Instrument: \"You didn't shut him down. Your fat...\"",
+          "Dialogue Text": "You didn't shut him down. Your fat fist didn't meet its target. Instead, it pulled you down with it.",
+          "Articy Id": "0x01000003000004CE",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "SetTriggerAnimation(Cuno,CunoPunchFail); SetTriggerAnimation(Tequila Sunset, PunchCunoF, false, true); HideActualHeld(); BanishInterface(true); BanishInterface(false)@7; LuaRun(DamageEndurance(1))@7; Release();",
+          "Actor": "410",
+          "Conversant": "38",
+          "OutputId": "0x010000130000002F",
+          "InputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"yard.cuno_fist_fail\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3030,
+          "y": -840.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "You: \"Very Difficult 15\"",
+          "Dialogue Text": "Very Difficult 15",
+          "Articy Id": "0x01000003000005B6",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold();",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x01000000000004FC",
+          "FlagName": "yard.cuno_redcheck_blast_cuno_in_the_face",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000400000B11",
+          "DifficultyRed": "12",
+          "modifier1": "",
+          "variable1": "",
+          "tooltip1": "",
+          "modifier2": "",
+          "variable2": "",
+          "tooltip2": "",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000005B6-FORK",
+          "InputId": "0x01000003000004C8"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 3,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 760,
+          "y": -1615.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x01000003000005B6-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x01000003000005B6"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 4,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 4,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 836.923095703125,
+          "y": -1539.0767822265625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x01000003000005B6-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 5,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 544,
+          "y": -1000.39990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"])",
+          "Articy Id": "0x01000003000005B6-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 6,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 544,
+          "y": -1000.39990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Smoker on the Balcony: \"I would often go there / To the tin...\"",
+          "Dialogue Text": "I would often go there / To the tiny church there / The smallest church in Saint-Saëns / Though it once was larger\n\nHow the rill may rest there / Down through the mist there / Toward the seven sisters / Toward those pale cliffs there\n\nI would often stay there / In there tiny yard there / I have been so glad here / Looking forward to the past here\n\nBut now you are alone /None of this matters at all",
+          "Articy Id": "0x0100000600016DF4",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "7",
+          "Conversant": "38",
+          "OutputId": "0x010000130000002F",
+          "InputId": "0x0100000600016DED"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1431,
+          "y": 51,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Jump to: [Kim Kitsuragi: \"\"I will escort you to the motor car...\"]",
+          "Articy Id": "0x010000030000042A",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000030000042E"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 8,
+            "destinationConversationID": 688,
+            "destinationDialogueID": 109,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1205,
+          "y": -861,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "You: \"Difficult 13\"",
+          "Dialogue Text": "Difficult 13",
+          "Articy Id": "0x01000003000005A2",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold();",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x01000000000004FC",
+          "FlagName": "yard.cuno_redcheck_blast_cuno_in_the_face",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000400000B11",
+          "DifficultyRed": "11",
+          "modifier1": "",
+          "variable1": "",
+          "tooltip1": "",
+          "modifier2": "",
+          "variable2": "",
+          "tooltip2": "",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000005A2-FORK",
+          "InputId": "0x01000003000004C8"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 9,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1026,
+          "y": -1753,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x01000003000005A2-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x01000003000005A2"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 10,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 10,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1102.923095703125,
+          "y": -1676.076904296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x01000003000005A2-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 11,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 716.8999633789062,
+          "y": -1089.449951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"])",
+          "Articy Id": "0x01000003000005A2-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 12,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 716.8999633789062,
+          "y": -1089.449951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "You: \"Trivial 6\"",
+          "Dialogue Text": "Trivial 6",
+          "Articy Id": "0x010000030000058E",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold();",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x01000000000004FC",
+          "FlagName": "yard.cuno_redcheck_blast_cuno_in_the_face",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000400000B11",
+          "DifficultyRed": "0",
+          "modifier1": "",
+          "variable1": "",
+          "tooltip1": "",
+          "modifier2": "",
+          "variable2": "",
+          "tooltip2": "",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x010000030000058E-FORK",
+          "InputId": "0x01000003000004C8"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 13,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 770,
+          "y": -2306,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x010000030000058E-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x010000030000058E"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 14,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 14,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 846.923095703125,
+          "y": -2229.076904296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x010000030000058E-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 15,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 550.5,
+          "y": -1448.89990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"])",
+          "Articy Id": "0x010000030000058E-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 16,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 550.5,
+          "y": -1448.89990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "You: \"Impossible 20\"",
+          "Dialogue Text": "Impossible 20",
+          "Articy Id": "0x01000003000005E8",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold();",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x01000000000004FC",
+          "FlagName": "yard.cuno_redcheck_blast_cuno_in_the_face",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000400000B11",
+          "DifficultyRed": "7",
+          "modifier1": "",
+          "variable1": "",
+          "tooltip1": "",
+          "modifier2": "",
+          "variable2": "",
+          "tooltip2": "",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000005E8-FORK",
+          "InputId": "0x01000003000004C8"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 17,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1309,
+          "y": -1178,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x01000003000005E8-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x01000003000005E8"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 18,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 18,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1385.923095703125,
+          "y": -1101.076904296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x01000003000005E8-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 19,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 900.8499755859375,
+          "y": -715.699951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"])",
+          "Articy Id": "0x01000003000005E8-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 20,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 900.8499755859375,
+          "y": -715.699951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "You: \"Challenging 12\"",
+          "Dialogue Text": "Challenging 12",
+          "Articy Id": "0x0100000300000584",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold();",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x01000000000004FC",
+          "FlagName": "yard.cuno_redcheck_blast_cuno_in_the_face",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000400000B11",
+          "DifficultyRed": "3",
+          "modifier1": "",
+          "variable1": "",
+          "tooltip1": "",
+          "modifier2": "",
+          "variable2": "",
+          "tooltip2": "",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x0100000300000584-FORK",
+          "InputId": "0x01000003000004C8"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 22,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 763,
+          "y": -1845.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x0100000300000584-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x0100000300000584"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 23,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 23,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 839.9230346679688,
+          "y": -1769.0767822265625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x0100000300000584-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 24,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 545.949951171875,
+          "y": -1149.89990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"])",
+          "Articy Id": "0x0100000300000584-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 25,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 545.949951171875,
+          "y": -1149.89990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "You: \"Easy 7\"",
+          "Dialogue Text": "Easy 7",
+          "Articy Id": "0x0100000300000598",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold();",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x01000000000004FC",
+          "FlagName": "yard.cuno_redcheck_blast_cuno_in_the_face",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000400000B11",
+          "DifficultyRed": "8",
+          "modifier1": "",
+          "variable1": "",
+          "tooltip1": "",
+          "modifier2": "",
+          "variable2": "",
+          "tooltip2": "",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x0100000300000598-FORK",
+          "InputId": "0x01000003000004C8"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 26,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1022.9999389648438,
+          "y": -2211,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x0100000300000598-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x0100000300000598"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 27,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 27,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1099.923095703125,
+          "y": -2134.076904296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x0100000300000598-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 28,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 714.949951171875,
+          "y": -1387.14990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"])",
+          "Articy Id": "0x0100000300000598-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 29,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 714.949951171875,
+          "y": -1387.14990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "You: \"More Damage!\"",
+          "Dialogue Text": "More Damage!",
+          "Articy Id": "0x0100001300000025",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x0100001300000001",
+          "InputId": "0x010000130000001E"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 30,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 78,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1967,
+          "y": -457,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "You: \"\"JUMP.\"\"",
+          "Dialogue Text": "\"JUMP.\"",
+          "Articy Id": "0x010000030000042E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x0100000300000092",
+          "OutputId": "0x010000030000042A"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 31,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 548,
+          "y": -881,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "You: \"Very Difficult 16\"",
+          "Dialogue Text": "Very Difficult 16",
+          "Articy Id": "0x01000003000005C0",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold();",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x01000000000004FC",
+          "FlagName": "yard.cuno_redcheck_blast_cuno_in_the_face",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000400000B11",
+          "DifficultyRed": "5",
+          "modifier1": "",
+          "variable1": "",
+          "tooltip1": "",
+          "modifier2": "",
+          "variable2": "",
+          "tooltip2": "",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000005C0-FORK",
+          "InputId": "0x01000003000004C8"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 32,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1026,
+          "y": -1517,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x01000003000005C0-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x01000003000005C0"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 33,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 33,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1102.923095703125,
+          "y": -1440.076904296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x01000003000005C0-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 34,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 716.8999633789062,
+          "y": -936.0499877929688,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"])",
+          "Articy Id": "0x01000003000005C0-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 35,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 716.8999633789062,
+          "y": -936.0499877929688,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "You: \"Heroic 17\"",
+          "Dialogue Text": "Heroic 17",
+          "Articy Id": "0x01000003000005CA",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold();",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x01000000000004FC",
+          "FlagName": "yard.cuno_redcheck_blast_cuno_in_the_face",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000400000B11",
+          "DifficultyRed": "13",
+          "modifier1": "",
+          "variable1": "",
+          "tooltip1": "",
+          "modifier2": "",
+          "variable2": "",
+          "tooltip2": "",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000005CA-FORK",
+          "InputId": "0x01000003000004C8"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 36,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1307,
+          "y": -1432,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x01000003000005CA-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x01000003000005CA"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 37,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 37,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1383.923095703125,
+          "y": -1355.076904296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x01000003000005CA-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 38,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 899.5499877929688,
+          "y": -880.7999877929688,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"])",
+          "Articy Id": "0x01000003000005CA-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 39,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 899.5499877929688,
+          "y": -880.7999877929688,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Title": "You: \"Impossible 19\"",
+          "Dialogue Text": "Impossible 19",
+          "Articy Id": "0x01000003000005DE",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold();",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x01000000000004FC",
+          "FlagName": "yard.cuno_redcheck_blast_cuno_in_the_face",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000400000B11",
+          "DifficultyRed": "14",
+          "modifier1": "",
+          "variable1": "",
+          "tooltip1": "",
+          "modifier2": "",
+          "variable2": "",
+          "tooltip2": "",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000005DE-FORK",
+          "InputId": "0x01000003000004C8"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 40,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1033,
+          "y": -1271,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x01000003000005DE-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x01000003000005DE"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 41,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 42,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 41,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 43,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1109.923095703125,
+          "y": -1194.076904296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x01000003000005DE-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 42,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 721.449951171875,
+          "y": -776.1499633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"])",
+          "Articy Id": "0x01000003000005DE-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 43,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 721.449951171875,
+          "y": -776.1499633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 44,
+        "fields": {
+          "Title": "You: \"Difficult 14\"",
+          "Dialogue Text": "Difficult 14",
+          "Articy Id": "0x01000003000005AC",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold();",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x01000000000004FC",
+          "FlagName": "yard.cuno_redcheck_blast_cuno_in_the_face",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000400000B11",
+          "DifficultyRed": "4",
+          "modifier1": "",
+          "variable1": "",
+          "tooltip1": "",
+          "modifier2": "",
+          "variable2": "",
+          "tooltip2": "",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000005AC-FORK",
+          "InputId": "0x01000003000004C8"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 44,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1306,
+          "y": -1660.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 45,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x01000003000005AC-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x01000003000005AC"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 45,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 46,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 45,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1382.923095703125,
+          "y": -1584.0767822265625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 46,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x01000003000005AC-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 46,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 898.8999633789062,
+          "y": -1029.64990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 47,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"])",
+          "Articy Id": "0x01000003000005AC-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 47,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 898.8999633789062,
+          "y": -1029.64990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 48,
+        "fields": {
+          "Title": "You: \"Heroic 18\"",
+          "Dialogue Text": "Heroic 18",
+          "Articy Id": "0x01000003000005D4",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold();",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x01000000000004FC",
+          "FlagName": "yard.cuno_redcheck_blast_cuno_in_the_face",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000400000B11",
+          "DifficultyRed": "6",
+          "modifier1": "",
+          "variable1": "",
+          "tooltip1": "",
+          "modifier2": "",
+          "variable2": "",
+          "tooltip2": "",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000005D4-FORK",
+          "InputId": "0x01000003000004C8"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 48,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 49,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 758,
+          "y": -1350,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 49,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x01000003000005D4-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x01000003000005D4"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 49,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 50,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 49,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 51,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 834.9230346679688,
+          "y": -1273.076904296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 50,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x01000003000005D4-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 50,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 542.699951171875,
+          "y": -827.4999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 51,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"])",
+          "Articy Id": "0x01000003000005D4-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 51,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 542.699951171875,
+          "y": -827.4999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 52,
+        "fields": {
+          "Title": "You: \"Test formatting for poem\"",
+          "Dialogue Text": "Test formatting for poem",
+          "Articy Id": "0x0100000600016DED",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x0100000300000092",
+          "OutputId": "0x0100000600016DF4"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 52,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1125,
+          "y": 142,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 53,
+        "fields": {
+          "Title": "Cuno: \"1 dmg to endurance\"",
+          "Dialogue Text": "1 dmg to endurance",
+          "Articy Id": "0x0100001300000007",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "38",
+          "OutputId": "0x010000130000001E",
+          "InputId": "0x0100001300000001"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 53,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 60,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "DamageEndurance(1)",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1089,
+          "y": -503,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 54,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"1 dmg to volition\"",
+          "Dialogue Text": "1 dmg to volition",
+          "Articy Id": "0x010000130000000C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "38",
+          "OutputId": "0x010000130000001E",
+          "InputId": "0x0100001300000001"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 54,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 60,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "DamageVolition(1)",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1090,
+          "y": -236,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 55,
+        "fields": {
+          "Title": "You: \"Check tester\"",
+          "Dialogue Text": "Check tester",
+          "Articy Id": "0x01000003000004C8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x0100000300000092",
+          "OutputId": "0x01000003000005E8"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 55,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 55,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 55,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 56,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 55,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 73,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 55,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 69,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 55,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 61,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 55,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 55,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 55,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 44,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 55,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 55,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 55,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 55,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 55,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 55,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 62.999996185302734,
+          "y": -1645.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 56,
+        "fields": {
+          "Title": "You: \"Easy 8\"",
+          "Dialogue Text": "Easy 8",
+          "Articy Id": "0x0100000300000526",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold();",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x01000000000004FC",
+          "FlagName": "yard.cuno_redcheck_blast_cuno_in_the_face",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000400000B11",
+          "DifficultyRed": "1",
+          "modifier1": "",
+          "variable1": "",
+          "tooltip1": "",
+          "modifier2": "",
+          "variable2": "",
+          "tooltip2": "",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x01000003000004C8",
+          "OutputId": "0x0100000300000526-FORK"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 56,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 57,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1298,
+          "y": -2116,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 57,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x0100000300000526-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x0100000300000526"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 57,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 58,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 57,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 59,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1374.923095703125,
+          "y": -2039.076904296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 58,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x0100000300000526-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 58,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 893.699951171875,
+          "y": -1325.39990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 59,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"])",
+          "Articy Id": "0x0100000300000526-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 59,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 893.699951171875,
+          "y": -1325.39990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 60,
+        "fields": {
+          "Title": "Untitled hub",
+          "Articy Id": "0x010000130000001E",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x010000130000000C",
+          "OutputId": "0x010000130000002B"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 60,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 60,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 65,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1615.9998779296875,
+          "y": -241,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 61,
+        "fields": {
+          "Title": "You: \"Challenging 11\"",
+          "Dialogue Text": "Challenging 11",
+          "Articy Id": "0x010000030000057A",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold();",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x01000000000004FC",
+          "FlagName": "yard.cuno_redcheck_blast_cuno_in_the_face",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000400000B11",
+          "DifficultyRed": "10",
+          "modifier1": "",
+          "variable1": "",
+          "tooltip1": "",
+          "modifier2": "",
+          "variable2": "",
+          "tooltip2": "",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x01000003000004C8",
+          "OutputId": "0x010000030000057A-FORK"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 61,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 62,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1307,
+          "y": -1884,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 62,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x010000030000057A-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x010000030000057A"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 62,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 63,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 62,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 64,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1383.923095703125,
+          "y": -1807.076904296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 63,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x010000030000057A-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 63,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 899.5499877929688,
+          "y": -1174.5999755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 64,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"])",
+          "Articy Id": "0x010000030000057A-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 64,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 899.5499877929688,
+          "y": -1174.5999755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 65,
+        "fields": {
+          "Title": "Smoker on the Balcony: \"[Leave] I'm done.\"",
+          "Dialogue Text": "[Leave] I'm done.",
+          "Articy Id": "0x010000130000002B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "7",
+          "Conversant": "38",
+          "InputId": "0x010000130000001E",
+          "OutputId": "0x010000130000002F"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1965.9998779296875,
+          "y": -194,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 66,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x01000003000004D5",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x0100000300000566-FORK"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 66,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 67,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 66,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 68,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2631,
+          "y": -1135,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 67,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x01000003000004D5",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004DA"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 67,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 77,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1710.14990234375,
+          "y": -737.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 68,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"])",
+          "Articy Id": "0x01000003000004D5",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004CE"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 68,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1710.14990234375,
+          "y": -737.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 69,
+        "fields": {
+          "Title": "You: \"Normal 10\"",
+          "Dialogue Text": "Normal 10",
+          "Articy Id": "0x0100000300000570",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold();",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x01000000000004FC",
+          "FlagName": "yard.cuno_redcheck_blast_cuno_in_the_face",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000400000B11",
+          "DifficultyRed": "2",
+          "modifier1": "",
+          "variable1": "",
+          "tooltip1": "",
+          "modifier2": "",
+          "variable2": "",
+          "tooltip2": "",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x01000003000004C8",
+          "OutputId": "0x0100000300000570-FORK"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 69,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 70,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1027,
+          "y": -1978,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 70,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x0100000300000570-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x0100000300000570"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 70,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 71,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 70,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 72,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1103.923095703125,
+          "y": -1901.076904296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 71,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x0100000300000570-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 71,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 717.5499877929688,
+          "y": -1235.699951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 72,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"])",
+          "Articy Id": "0x0100000300000570-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 72,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 717.5499877929688,
+          "y": -1235.699951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 73,
+        "fields": {
+          "Title": "You: \"Normal 9\"",
+          "Dialogue Text": "Normal 9",
+          "Articy Id": "0x0100000300000566",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold();",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x01000000000004FC",
+          "FlagName": "yard.cuno_redcheck_blast_cuno_in_the_face",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000400000B11",
+          "DifficultyRed": "9",
+          "modifier1": "",
+          "variable1": "",
+          "tooltip1": "",
+          "modifier2": "",
+          "variable2": "",
+          "tooltip2": "",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x01000003000004C8",
+          "OutputId": "0x0100000300000566-FORK"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 73,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 74,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 755,
+          "y": -2075,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 74,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x0100000300000566-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x0100000300000566"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 74,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 75,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 74,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 76,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 831.923095703125,
+          "y": -1998.0770263671875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 75,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+          "Articy Id": "0x0100000300000566-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 75,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 540.75,
+          "y": -1298.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 76,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"])",
+          "Articy Id": "0x0100000300000566-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "38",
+          "OutputId": "0x01000003000004D5"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 76,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_redcheck_blast_cuno_in_the_face\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 540.75,
+          "y": -1298.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 77,
+        "fields": {
+          "Title": "Physical Instrument: \"Thump! That blow connects surprisin...\"",
+          "Dialogue Text": "Thump! That blow connects surprisingly well. Your knuckles tingle.",
+          "Articy Id": "0x01000003000004DA",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "SetTriggerAnimation(Cuno,CunoPunchSuccess)@4.1; SetTriggerAnimation(Tequila Sunset, PunchCunoS); HideActualHeld(); BanishInterface(true); BanishInterface(false)@7; Release();",
+          "Actor": "410",
+          "Conversant": "38",
+          "InputId": "0x01000003000004D5",
+          "OutputId": "0x010000130000002F"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"yard.cuno_punched_cuno\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3033,
+          "y": -1064,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 78,
+        "fields": {
+          "Title": "You: \"Deal damage...\"",
+          "Dialogue Text": "Deal damage...",
+          "Articy Id": "0x0100001300000001",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "38",
+          "InputId": "0x0100001300000025",
+          "OutputId": "0x010000130000000C"
+        },
+        "conversationID": 7,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 7,
+            "originDialogueID": 78,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 53,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 7,
+            "originDialogueID": 78,
+            "destinationConversationID": 7,
+            "destinationDialogueID": 54,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 584,
+          "y": -363,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

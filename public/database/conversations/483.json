@@ -1,0 +1,1630 @@
+[
+  {
+    "id": 483,
+    "fields": {
+      "Title": "BOOKSTORE / COCKATOO",
+      "Articy Id": "0x0100002F00003553",
+      "OnUse": "",
+      "OverrideDialogueCondition": "CheckItem(\"book_cockatoo\") == true",
+      "AlternateOrbText": "",
+      "CheckType": "15",
+      "Condition": "Variable[\"TASK.find_your_heraldic_bird\"] == true",
+      "Description": "From A to Zrieek! Guide to a Well-Behaved Cockatoo. (Helen)",
+      "Instruction": "",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "396",
+      "Conversant": "142"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100002F00003553",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 0,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100002F00003556",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100002F0000DA4C"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 1,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "bookhub",
+          "Articy Id": "0x0100002F0000DA7E",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x0100002F0000DAA5",
+          "InputId": "0x0100002F0000DA4C"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 2,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 483,
+            "originDialogueID": 2,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 483,
+            "originDialogueID": 2,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 483,
+            "originDialogueID": 2,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 483,
+            "originDialogueID": 2,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1550,
+          "y": 325,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100006B00001B0E",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "142",
+          "Conversant": "396",
+          "InputId": "0x0100006B00001B1D"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 3,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 483,
+            "originDialogueID": 3,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2700,
+          "y": 1175,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100006B00001B0E",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "142",
+          "Conversant": "396",
+          "OutputId": "0x0100006B00001B33"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 4,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1754.9998779296875,
+          "y": 763.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x0100006B00001B0E",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "142",
+          "Conversant": "396",
+          "OutputId": "0x0100006B00001B29"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 5,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1754.9998779296875,
+          "y": 763.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "From A to Zrieek! A Guide To a Well-Behaved Cockatoo: \"Turns out that there are so many di...\"",
+          "Dialogue Text": "Turns out that there are so many different cockatoo species, and they all have behavioural problems.",
+          "Articy Id": "0x0100002F0000DA6E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "142",
+          "Conversant": "396",
+          "OutputId": "0x010000060001CA6C",
+          "InputId": "0x0100002F0000DA5C"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 6,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2100,
+          "y": -150,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "You: \"\"I want to buy the guide to cockato...\"",
+          "Dialogue Text": "\"I want to buy the guide to cockatoos.\"",
+          "Articy Id": "0x0100002F0000DA9F",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "ClickCost": "399",
+          "HiddenNotEnough": "False",
+          "CostOnce": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Actor": "396",
+          "Conversant": "142",
+          "InputId": "0x0100002F0000DA7E",
+          "OutputId": "0x0100002F0000DAB0"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 7,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "CheckItem(\"book_cockatoo\") == false  and  Variable[\"doomed.book_buy_cockatoo\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1800.0001220703125,
+          "y": 375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "You: \"Flip through the pages.\"",
+          "Dialogue Text": "Flip through the pages.",
+          "Articy Id": "0x0100002F0000DA5C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "142",
+          "InputId": "0x0100002F0000DA7E",
+          "OutputId": "0x0100002F0000DA6E"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 8,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1800.0001220703125,
+          "y": -150,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"The lieutenant coughs sharply, then...\"",
+          "Dialogue Text": "The lieutenant coughs sharply, then whispers: \"Do we really need to do this? I think not.\"",
+          "Articy Id": "0x0100006B00001B33",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100006B00001B0E",
+          "OutputId": "0x0100006B00001B19"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 9,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3000,
+          "y": 1000.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Jump to: [bookhub]",
+          "Articy Id": "0x0100005A00011C05",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100002F0000DA68"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 10,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2384,
+          "y": 119,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Interfacing: \"Slowly, you move your hand toward t...\"",
+          "Dialogue Text": "Slowly, you move your hand toward the tome of cockatoos. Before you reach the book, you're interrupted:",
+          "Articy Id": "0x0100006B00001B1D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "418",
+          "Conversant": "396",
+          "OutputId": "0x0100006B00001B0E",
+          "InputId": "0x0100006B00001B09"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 11,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2400,
+          "y": 1125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "Composure: \"You don't have behavioural problems...\"",
+          "Dialogue Text": "You don't have behavioural problems. That's garbage. You're cool.",
+          "Articy Id": "0x010000060001CA6C",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "419",
+          "Conversant": "396",
+          "InputId": "0x0100002F0000DA6E",
+          "OutputId": "0x0100005A00011C0A"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 12,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2417,
+          "y": -154,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "You: \"\"What about this guide to cockatoos...\"",
+          "Dialogue Text": "\"What about this guide to cockatoos, storekeeper?\"",
+          "Articy Id": "0x0100002F0000DA62",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "142",
+          "InputId": "0x0100002F0000DA7E",
+          "OutputId": "0x0100002F0000DA68"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 13,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"doomed.book_buy_cockatoo\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1800.0001220703125,
+          "y": 100,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "Tutorial Agent: \"You've acquired an interactable ite...\"",
+          "Dialogue Text": "You've acquired an interactable item. Investigate this item further by going to the INTERACT tab in your INVENTORY.",
+          "Articy Id": "0x0100005300025B1F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "354",
+          "Conversant": "396",
+          "OutputId": "0x0100002F0000DAA7",
+          "InputId": "0x0100005300025B1A"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"character.interactable_tutorial_seen\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2687,
+          "y": 487,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "You: \"Steal the guide to cockatoos.\"",
+          "Dialogue Text": "Steal the guide to cockatoos.",
+          "Articy Id": "0x0100000400015EE2",
+          "DialogueEntryType": "DialogueFragment",
+          "Forced": "False",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x0000000000000000",
+          "FlagName": "doomed.book_cockatoo_wc_stealing",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000A00000036",
+          "DifficultyWhite": "2",
+          "modifier1": "1",
+          "variable1": "Variable[\"doomed.bookstore_curtains_opened\"] == true",
+          "tooltip1": "Angry storekeeper stare-down.",
+          "modifier2": "",
+          "variable2": "",
+          "tooltip2": "",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "142",
+          "InputId": "0x0100002F0000DA7E",
+          "OutputId": "0x0100000400015EE2-FORK"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 16,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "CheckItem(\"book_cockatoo\") == false  and  Variable[\"doomed.book_buy_cockatoo\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1805.0001220703125,
+          "y": 723,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "Variable[\"doomed.book_cockatoo_wc_stealing\"]",
+          "Articy Id": "0x0100000400015EE2-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "142",
+          "InputId": "0x0100000400015EE2"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 17,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 483,
+            "originDialogueID": 17,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1881.923095703125,
+          "y": 799.9230346679688,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Variable[\"doomed.book_cockatoo_wc_stealing\"]",
+          "Articy Id": "0x0100000400015EE2-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "142",
+          "OutputId": "0x0100006B00001B09"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 18,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.book_cockatoo_wc_stealing\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1223.25,
+          "y": 519.949951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "!(Variable[\"doomed.book_cockatoo_wc_stealing\"])",
+          "Articy Id": "0x0100000400015EE2-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "142",
+          "OutputId": "0x0100006B00001B09"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 19,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"doomed.book_cockatoo_wc_stealing\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1223.25,
+          "y": 519.949951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Plaisance: \"\"Oh, a nature enthusiast! Good choi...\"",
+          "Dialogue Text": "\"Oh, a nature enthusiast! Good choice. I *knew* it was a good idea to keep that around...\"",
+          "Articy Id": "0x0100002F0000DAB0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "17",
+          "Conversant": "396",
+          "InputId": "0x0100002F0000DA9F",
+          "OutputId": "0x0100005300025B1A"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 20,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "GainItem(\"book_cockatoo\");\nSetVariableValue(\"doomed.book_cockatoo_got\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2100,
+          "y": 375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "Plaisance: \"\"Sir, no touching the merchandise....\"",
+          "Dialogue Text": "\"Sir, no touching the merchandise. People like their books pristine, not handled by god knows who.\"",
+          "Articy Id": "0x0100006B00001B29",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "17",
+          "Conversant": "396",
+          "InputId": "0x0100006B00001B0E",
+          "OutputId": "0x0100006B00001B19"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 21,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3000,
+          "y": 1250,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Variable[\"doomed.book_cockatoo_wc_stealing\"]",
+          "Articy Id": "0x0100006B00001B09",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "142",
+          "Conversant": "396",
+          "InputId": "0x0100000400015EE2-FORK"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 22,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 483,
+            "originDialogueID": 22,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2100,
+          "y": 1000.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "Variable[\"doomed.book_cockatoo_wc_stealing\"]",
+          "Articy Id": "0x0100006B00001B09",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "142",
+          "Conversant": "396",
+          "OutputId": "0x0100006B00001B13"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 23,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.book_cockatoo_wc_stealing\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1365,
+          "y": 650,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "!(Variable[\"doomed.book_cockatoo_wc_stealing\"])",
+          "Articy Id": "0x0100006B00001B09",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "142",
+          "Conversant": "396",
+          "OutputId": "0x0100006B00001B1D"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 24,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"doomed.book_cockatoo_wc_stealing\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1365,
+          "y": 650,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "Jump to: [bookhub]",
+          "Articy Id": "0x0100006B00001B19",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100006B00001B29"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 25,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3300,
+          "y": 1150,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Interfacing: \"It's quite a challenge, but eventua...\"",
+          "Dialogue Text": "It's quite a challenge, but eventually the guide to cockatoos is yours. Splendid effort!",
+          "Articy Id": "0x0100006B00001B23",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "418",
+          "Conversant": "396",
+          "OutputId": "0x0100005300025B1A",
+          "InputId": "0x0100006B00001B13"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 26,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "GainItem(\"book_cockatoo\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2686,
+          "y": 786,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Plaisance: \"\"It's a must-have if you own a cock...\"",
+          "Dialogue Text": "\"It's a must-have if you own a cockatoo. I've heard they're quite capricious.\"",
+          "Articy Id": "0x0100002F0000DA68",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "17",
+          "Conversant": "396",
+          "InputId": "0x0100002F0000DA62",
+          "OutputId": "0x0100005A00011C05"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 27,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2100,
+          "y": 100,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "From A to Zrieek! A Guide To a Well-Behaved Cockatoo: \"A sulphur-crested cockatoo sits on...\"",
+          "Dialogue Text": "A sulphur-crested cockatoo sits on the cover, its beak slightly open. It looks as if the bird is calling out the book title: \"From A to Zrieek! A Guide To A Well-Behaved Cockatoo.\"",
+          "Articy Id": "0x0100002F0000DA4C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "142",
+          "Conversant": "396",
+          "InputId": "0x0100002F00003556",
+          "OutputId": "0x0100002F0000DA7E"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 28,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1201,
+          "y": 241,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "Variable[\"tc.turn_off_tutorial_node\"]  or  Variable[\"character.interactable_tutorial_seen\"]",
+          "Articy Id": "0x0100005300025B1A",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "142",
+          "Conversant": "396",
+          "InputId": "0x0100006B00001B23"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 29,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 483,
+            "originDialogueID": 29,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2403,
+          "y": 425.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "Variable[\"tc.turn_off_tutorial_node\"]  or  Variable[\"character.interactable_tutorial_seen\"]",
+          "Articy Id": "0x0100005300025B1A",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "142",
+          "Conversant": "396"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"tc.turn_off_tutorial_node\"]  or  Variable[\"character.interactable_tutorial_seen\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1561.949951171875,
+          "y": 276.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "!(Variable[\"tc.turn_off_tutorial_node\"]  or  Variable[\"character.interactable_tutorial_seen\"])",
+          "Articy Id": "0x0100005300025B1A",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "142",
+          "Conversant": "396",
+          "OutputId": "0x0100005300025B1F"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 31,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"tc.turn_off_tutorial_node\"]  or  Variable[\"character.interactable_tutorial_seen\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1561.949951171875,
+          "y": 276.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "Jump to: [bookhub]",
+          "Articy Id": "0x0100005A00011C0A",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000060001CA6C"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 32,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2816,
+          "y": -118,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "You: \"[Leave.]\"",
+          "Dialogue Text": "[Leave.]",
+          "Articy Id": "0x0100002F0000DAA5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "142",
+          "InputId": "0x0100002F0000DA7E",
+          "OutputId": "0x0100002F0000DAA7"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1800.0001220703125,
+          "y": 1450,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "Interfacing: \"You wait for the storekeeper to be...\"",
+          "Dialogue Text": "You wait for the storekeeper to be distracted. When she's not looking, you haul the tome of cockatoos into your pocket.",
+          "Articy Id": "0x0100006B00001B13",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "418",
+          "Conversant": "396",
+          "InputId": "0x0100006B00001B09",
+          "OutputId": "0x0100006B00001B23"
+        },
+        "conversationID": 483,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 483,
+            "originDialogueID": 34,
+            "destinationConversationID": 483,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"doomed.book_cockatoo_got\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2400,
+          "y": 775,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

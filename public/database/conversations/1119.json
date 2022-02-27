@@ -1,0 +1,390 @@
+[
+  {
+    "id": 1119,
+    "fields": {
+      "Title": "LAIR ORB / wearing revolutionary hat",
+      "Articy Id": "0x0100006B000025F1",
+      "AlternateOrbText": "",
+      "CheckType": "3",
+      "Condition": "CheckEquipped(\"hat_revolutionary\")  and  Variable[\"boardwalk.orb_revolutionary_hat_equippage_done\"] == false",
+      "Description": "Putting the hat on gives a one time +1 to Mazovian Socio-Economics, you communist failure.",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100006B000025F1",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1119,
+            "originDialogueID": 0,
+            "destinationConversationID": 1119,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100006B000025F4",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100006B00002602"
+        },
+        "conversationID": 1119,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1119,
+            "originDialogueID": 1,
+            "destinationConversationID": 1119,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "You: \"This is an *ushanka*, right? (Pat t...\"",
+          "Dialogue Text": "This is an *ushanka*, right? (Pat the hat.)",
+          "Articy Id": "0x0100001600009B3F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100006B00002608",
+          "InputId": "0x0100006B00002602"
+        },
+        "conversationID": 1119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1119,
+            "originDialogueID": 2,
+            "destinationConversationID": 1119,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 545,
+          "y": 385,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Rhetoric: \"Kras Mazov would have worn this ush...\"",
+          "Dialogue Text": "Kras Mazov would have worn this ushanka. Mazov knew where to cook those thoughts, that's why it bears a Mazovian logo.",
+          "Articy Id": "0x0100006B00002608",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "400",
+          "Conversant": "0",
+          "InputId": "0x0100001600009B3F",
+          "OutputId": "0x0100006B0000260D"
+        },
+        "conversationID": 1119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1119,
+            "originDialogueID": 3,
+            "destinationConversationID": 1119,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 825,
+          "y": 375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Rhetoric: \"Glory to the Revolution, comrade! W...\"",
+          "Dialogue Text": "Glory to the Revolution, comrade! Whether you like it or not, wearing this hat has made you more communist.",
+          "Articy Id": "0x0100006B0000260D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "400",
+          "Conversant": "0",
+          "InputId": "0x0100006B00002608",
+          "OutputId": "0x0100006B0000260F"
+        },
+        "conversationID": 1119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "ReputationGrows(\"communist\");\nSetVariableValue(\"boardwalk.orb_revolutionary_hat_equippage_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1106,
+          "y": 387,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Rhetoric: \"This hat is so soft, so warm. It wr...\"",
+          "Dialogue Text": "This hat is so soft, so warm. It wraps around your head... and your mind tingles with all manner of socio-economic theory.",
+          "Articy Id": "0x0100006B00002602",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "400",
+          "Conversant": "0",
+          "InputId": "0x0100006B000025F4",
+          "OutputId": "0x0100001600009B45"
+        },
+        "conversationID": 1119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1119,
+            "originDialogueID": 5,
+            "destinationConversationID": 1119,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1119,
+            "originDialogueID": 5,
+            "destinationConversationID": 1119,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 229,
+          "y": 378,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "You: \"Oops, it's a fashion faux pas! [Dis...\"",
+          "Dialogue Text": "Oops, it's a fashion faux pas! [Discard the thought -- and the hat.]",
+          "Articy Id": "0x0100001600009B45",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100006B00002602",
+          "OutputId": "0x01000021000009F1"
+        },
+        "conversationID": 1119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1119,
+            "originDialogueID": 7,
+            "destinationConversationID": 1119,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.orb_revolutionary_hat_equippage_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 555,
+          "y": 693,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Rhetoric: \"Let's hope no one saw you wearing t...\"",
+          "Dialogue Text": "Let's hope no one saw you wearing that outrageously communist hat.",
+          "Articy Id": "0x01000021000009F1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "400",
+          "Conversant": "0",
+          "InputId": "0x0100001600009B45",
+          "OutputId": "0x0100006B0000260F"
+        },
+        "conversationID": 1119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "LoseItem(\"hat_revolutionary\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 837,
+          "y": 695,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

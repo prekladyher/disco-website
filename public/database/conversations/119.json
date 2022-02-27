@@ -1,0 +1,919 @@
+[
+  {
+    "id": 119,
+    "fields": {
+      "Title": "LAIR ORB / wiresinglass",
+      "Articy Id": "0x0100000400015281",
+      "AlternateOrbText": "",
+      "CheckType": "21",
+      "Condition": "Variable[\"boardwalk.glass_interfacing_done\"] == false  and  Variable[\"boardwalk.orb_panes_clicked\"]",
+      "Description": "A brief convo with Interfacing about the times they made computer parts with glass",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "9",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100000400015281",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 119,
+            "originDialogueID": 0,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100000400015284",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x010000040001528A"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 119,
+            "originDialogueID": 1,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Interfacing: \"The 'how' was a closely guarded sec...\"",
+          "Dialogue Text": "The 'how' was a closely guarded secret. Something that was locked in safes and human heads across the river where they were manufactured. As to why? Your fingers don't know.",
+          "Articy Id": "0x01000004000152BC",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "418",
+          "Conversant": "0",
+          "OutputId": "0x010000060001E694",
+          "InputId": "0x01000004000152B4"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 119,
+            "originDialogueID": 3,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "XPPicoSetBool(\"XP.glass_how_and_why\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2004,
+          "y": -97,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "You: \"[Discard thought.]\"",
+          "Dialogue Text": "[Discard thought.]",
+          "Articy Id": "0x0100000400015296",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000040001529A",
+          "InputId": "0x010000040001528A"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 670,
+          "y": 697,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "You: \"\"So this is all that remains of Fel...\"",
+          "Dialogue Text": "\"So this is all that remains of Feld R&D?\"",
+          "Articy Id": "0x0100000600014F17",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100000600014F26",
+          "InputId": "0x01000004000152D2"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 119,
+            "originDialogueID": 5,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"tc.feld_electrical\"]  and  Variable[\"boardwalk.asked_kim_about_panes_of_glass\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1698,
+          "y": 463,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Inland Empire: \"All you will find here is pain.\"",
+          "Dialogue Text": "All you will find here is pain.",
+          "Articy Id": "0x0100000600014F35",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "404",
+          "Conversant": "0",
+          "OutputId": "0x01000004000152DB",
+          "InputId": "0x0100000600014F2E"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 119,
+            "originDialogueID": 6,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2276,
+          "y": 697,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Encyclopedia: \"The 'why' is easy -- because they h...\"",
+          "Dialogue Text": "The 'why' is easy -- because they hadn't come up with modern silicon-based systems yet. For vitreous-cast filament memories, though, these seem incredibly advanced.",
+          "Articy Id": "0x010000060001E694",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "399",
+          "Conversant": "0",
+          "InputId": "0x01000004000152BC",
+          "OutputId": "0x01000004000152DB"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 119,
+            "originDialogueID": 7,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2324,
+          "y": -100,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Interfacing: \"Yes. Filament memories. From the ti...\"",
+          "Dialogue Text": "Yes. Filament memories. From the time when wires were cast in glass; slides with an inlaid nervous system.",
+          "Articy Id": "0x01000004000152A0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "418",
+          "Conversant": "0",
+          "OutputId": "0x01000004000152D2",
+          "InputId": "0x0100000400015291"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 119,
+            "originDialogueID": 8,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1032,
+          "y": 211.99998474121094,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "You: \"\"Hey Kim, look -- old cybernetics.\"\"",
+          "Dialogue Text": "\"Hey Kim, look -- old cybernetics.\"",
+          "Articy Id": "0x01000004000152AF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x01000004000152CB",
+          "InputId": "0x01000004000152D2"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 119,
+            "originDialogueID": 9,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1704,
+          "y": 216,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Jump to: [Untitled hub]",
+          "Articy Id": "0x01000004000152DB",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100000600014F26"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 119,
+            "originDialogueID": 10,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2671,
+          "y": 178,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Interfacing: \"This isn't just glass -- these are...\"",
+          "Dialogue Text": "This isn't just glass -- these are old computation components.",
+          "Articy Id": "0x010000040001528A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "418",
+          "Conversant": "0",
+          "InputId": "0x0100000400015284",
+          "OutputId": "0x0100000400015296"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 119,
+            "originDialogueID": 11,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 119,
+            "originDialogueID": 11,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.glass_interfacing_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 375,
+          "y": 453.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "You: \"How'd they do that? And why?\"",
+          "Dialogue Text": "How'd they do that? And why?",
+          "Articy Id": "0x01000004000152B4",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x01000004000152BC",
+          "InputId": "0x01000004000152D2"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 119,
+            "originDialogueID": 12,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1705.9998779296875,
+          "y": -74,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "You: \"These are computer components?\"",
+          "Dialogue Text": "These are computer components?",
+          "Articy Id": "0x0100000400015291",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000040001528A",
+          "OutputId": "0x01000004000152A0"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 119,
+            "originDialogueID": 13,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 697,
+          "y": 209,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "You: \"\"Could this be part of the Feld Pla...\"",
+          "Dialogue Text": "\"Could this be part of the Feld Playback Experiment?\"",
+          "Articy Id": "0x0100000600014F1E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100000600014F2E",
+          "InputId": "0x01000004000152D2"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 119,
+            "originDialogueID": 14,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"tc.feld_tape_computer\"]  and  Variable[\"boardwalk.asked_kim_about_panes_of_glass\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1700.0001220703125,
+          "y": 706,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "You: \"[Finish thought.]\"",
+          "Dialogue Text": "[Finish thought.]",
+          "Articy Id": "0x01000004000152A7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000040001529A",
+          "InputId": "0x01000004000152D2"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1697,
+          "y": 947.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"The lieutenant tilts his head, watc...\"",
+          "Dialogue Text": "The lieutenant tilts his head, watching the light glimmer on the glass. \"So it is. I think these used to form a single system, slotted in the wall.\"",
+          "Articy Id": "0x01000004000152CB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x01000004000152AF",
+          "OutputId": "0x01000004000152DB"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 119,
+            "originDialogueID": 16,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.asked_kim_about_panes_of_glass\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1990.0001220703125,
+          "y": 194,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "Untitled hub",
+          "Articy Id": "0x01000004000152D2",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x01000004000152A0",
+          "OutputId": "0x01000004000152A7"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 119,
+            "originDialogueID": 17,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 119,
+            "originDialogueID": 17,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 119,
+            "originDialogueID": 17,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 119,
+            "originDialogueID": 17,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 119,
+            "originDialogueID": 17,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1377,
+          "y": 283,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"He nods. \"The rest of the building...\"",
+          "Dialogue Text": "He nods. \"The rest of the building seems to have been picked clean.\"",
+          "Articy Id": "0x0100000600014F26",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x0100000600014F17",
+          "OutputId": "0x01000004000152DB"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 119,
+            "originDialogueID": 18,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1990.9998779296875,
+          "y": 462,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"These? No. These are old filament...\"",
+          "Dialogue Text": "\"These? No. These are old filament memories. I hope you're not expecting to find that device here -- you will be disappointed.\"",
+          "Articy Id": "0x0100000600014F2E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x0100000600014F1E",
+          "OutputId": "0x0100000600014F35"
+        },
+        "conversationID": 119,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 119,
+            "originDialogueID": 19,
+            "destinationConversationID": 119,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1977,
+          "y": 694,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

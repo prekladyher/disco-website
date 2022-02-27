@@ -1,0 +1,289 @@
+[
+  {
+    "id": 37,
+    "fields": {
+      "Title": "YARD / CUNO barks",
+      "Articy Id": "0x0100000400009C0E",
+      "Description": "Cuno throws stones and sometimes responds to Cunoesse",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100000400009C0E",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 37,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 37,
+            "originDialogueID": 0,
+            "destinationConversationID": 37,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100000400009C24",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x010000810000630A"
+        },
+        "conversationID": 37,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 37,
+            "originDialogueID": 1,
+            "destinationConversationID": 37,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 37,
+            "originDialogueID": 1,
+            "destinationConversationID": 37,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 37,
+            "originDialogueID": 1,
+            "destinationConversationID": 37,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 37,
+            "originDialogueID": 1,
+            "destinationConversationID": 37,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Cuno: \"\"Fucker shit himself.\"\"",
+          "Dialogue Text": "\"Fucker shit himself.\"",
+          "Articy Id": "0x0100000400009C16",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "InputId": "0x0100000400009C24",
+          "OutputId": "0x0100000400009C11"
+        },
+        "conversationID": 37,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"yard.cunoesse_barks_shit\"]  and  Variable[\"TASK.get_the_dead_body_down_from_the_tree_done\"] == false",
+        "userScript": "SetVariableValue(\"yard.cunoesse_barks_shit\", false) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 110.99999237060547,
+          "y": 308,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Cuno: \"\"Cuno's got this.\"\"",
+          "Dialogue Text": "\"Cuno's got this.\"",
+          "Articy Id": "0x0100000400009C0F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "InputId": "0x0100000400009C24",
+          "OutputId": "0x0100000400009C11"
+        },
+        "conversationID": 37,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"yard.cunoesse_barks_dick\"]  and  Variable[\"TASK.get_the_dead_body_down_from_the_tree_done\"] == false",
+        "userScript": "SetVariableValue(\"yard.cunoesse_barks_dick\", false) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 110.99999237060547,
+          "y": 57.999996185302734,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Cuno: \"\"Cuno knows how to fucking throw!\"\"",
+          "Dialogue Text": "\"Cuno knows how to fucking throw!\"",
+          "Articy Id": "0x0100000400009C1D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "InputId": "0x0100000400009C24",
+          "OutputId": "0x0100000400009C11"
+        },
+        "conversationID": 37,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"yard.cunoesse_barks_rake\"]  and  Variable[\"TASK.get_the_dead_body_down_from_the_tree_done\"] == false",
+        "userScript": "SetVariableValue(\"yard.cunoesse_barks_rake\", false) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 110.99999237060547,
+          "y": 558,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Cuno: \"\"Over here, baconator! Time for lau...\"",
+          "Dialogue Text": "\"Over here, baconator! Time for launch.\"",
+          "Articy Id": "0x010000810000630A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "InputId": "0x0100000400009C24",
+          "OutputId": "0x0100000400009C11"
+        },
+        "conversationID": 37,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"yard.cunoesse_barks_throw\"]  and  Variable[\"TASK.get_the_dead_body_down_from_the_tree_done\"] == false",
+        "userScript": "SetVariableValue(\"yard.cunoesse_barks_throw\", false) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 100,
+          "y": 825,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

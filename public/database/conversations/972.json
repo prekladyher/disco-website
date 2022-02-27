@@ -1,0 +1,5400 @@
+[
+  {
+    "id": 972,
+    "fields": {
+      "Title": "BOARDWALK / LADDER",
+      "Articy Id": "0x010000580000BEF6",
+      "OnUse": "",
+      "OverrideDialogueCondition": "",
+      "AlternateOrbText": "",
+      "CheckType": "15",
+      "Condition": "Variable[\"TASK.climb_ladder\"]  and  Variable[\"TASK.climb_ladder_done\"] == false",
+      "Description": "Savoir Faire White Check to climb up.",
+      "Instruction": "",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "396",
+      "Conversant": "303"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000580000BEF6",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 0,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x010000580000BEF7",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x010000070001AEC3"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 1,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"That's not how physics work, detec...\"",
+          "Dialogue Text": "\"That's not how physics work, detective. And even if it were -- wouldn't you need some kind of apparatus? A teleportation field or...\"",
+          "Articy Id": "0x0100000600014C93",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014C9B",
+          "InputId": "0x0100000600014C8C"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 2,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.ladder_apparatus_mentioned\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3654,
+          "y": -912.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Variable[\"boardwalk.ladder_climbing_vs_teleport\"]",
+          "Articy Id": "0x0100000600014E40",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "InputId": "0x010000580000C7CE"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 3,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 3,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 957,
+          "y": 405,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Variable[\"boardwalk.ladder_climbing_vs_teleport\"]",
+          "Articy Id": "0x0100000600014E40",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x010000580000C7DA"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 4,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 98,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.ladder_climbing_vs_teleport\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 622.0499877929688,
+          "y": 263.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "!(Variable[\"boardwalk.ladder_climbing_vs_teleport\"])",
+          "Articy Id": "0x0100000600014E40",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014E46"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 5,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"boardwalk.ladder_climbing_vs_teleport\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 622.0499877929688,
+          "y": 263.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Feld Ladder: \"In addition, the first rung is goin...\"",
+          "Dialogue Text": "In addition, the first rung is going to be *tough* to reach. It's, what, three metres above ground, and you're -- 180...?",
+          "Articy Id": "0x010000160000998C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x010000160000999B",
+          "InputId": "0x0100007100002AA5"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 6,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 64,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 6,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 108,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2512,
+          "y": -1468,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "You: \"Assess the situation.\"",
+          "Dialogue Text": "Assess the situation.",
+          "Articy Id": "0x0100007100002A9F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "303",
+          "OutputId": "0x0100007100002AA5",
+          "InputId": "0x010000580000C7E0"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 7,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 113,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.ladder_situation_assessed\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1919,
+          "y": -1463,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Trant Heidelstam: \"\"Oh my god! I can't believe it!\"\"",
+          "Dialogue Text": "\"Oh my god! I can't believe it!\"",
+          "Articy Id": "0x0100008900000B25",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "TravelTo(Tequila Sunset, TeqOnFeldLoc, 2)",
+          "Actor": "390",
+          "Conversant": "396",
+          "OutputId": "0x0100008900000B2C",
+          "InputId": "0x0100001600009A43"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 8,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3825.000244140625,
+          "y": 550,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Rhetoric: \"Even if it isn't -- no one told you...\"",
+          "Dialogue Text": "Even if it isn't -- no one told you.",
+          "Articy Id": "0x0100000600014C7A",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "11",
+          "Actor": "400",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014C80",
+          "InputId": "0x0100008900000ABA"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 9,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.ladder_rhet_teleportation\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2730,
+          "y": -650,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Okay, well. That's impressive, but...\"",
+          "Dialogue Text": "\"Okay, well. That's impressive, but...\"",
+          "Articy Id": "0x0100000600014E50",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "TravelTo(Tequila Sunset, TeqOnFeldLoc, 2)",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100008900000B2C",
+          "InputId": "0x0100001600009A43"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 10,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3824,
+          "y": 293,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Feld Ladder: \"The rusty ladder leads to the rooft...\"",
+          "Dialogue Text": "The rusty ladder leads to the rooftop.",
+          "Articy Id": "0x010000070001AECA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x010000580000C7E0",
+          "InputId": "0x010000070001AEC3"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 11,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 107,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 359,
+          "y": 539,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "You: \"\"Kim, it isn't happening! I'm not t...\"",
+          "Dialogue Text": "\"Kim, it isn't happening! I'm not teleporting.\"",
+          "Articy Id": "0x0100001600009A14",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "303",
+          "OutputId": "0x0100001600009A1D",
+          "InputId": "0x0100001600009A05"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 12,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3639,
+          "y": 2169,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Variable[\"boardwalk.ladder_teleport_white_failed_twice\"]",
+          "Articy Id": "0x0100000600014E38",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "InputId": "0x010000580000C819"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 13,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 13,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2313,
+          "y": 1217,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Variable[\"boardwalk.ladder_teleport_white_failed_twice\"]",
+          "Articy Id": "0x0100000600014E38",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014E6C"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 14,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 72,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.ladder_teleport_white_failed_twice\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1503.449951171875,
+          "y": 791.0499877929688,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "!(Variable[\"boardwalk.ladder_teleport_white_failed_twice\"])",
+          "Articy Id": "0x0100000600014E38",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014E2E"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 15,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 90,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"boardwalk.ladder_teleport_white_failed_twice\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1503.449951171875,
+          "y": 791.0499877929688,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"You know, for the record, you didn...\"",
+          "Dialogue Text": "\"You know, for the record, you didn't teleport there. You just climbed the ladder with your eyes closed...\"",
+          "Articy Id": "0x0100000600014E92",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100008900000B5E",
+          "InputId": "0x0100001600009A53"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 16,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4969,
+          "y": 522,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "Variable[\"boardwalk.ladder_hub_reached\"]",
+          "Articy Id": "0x010000070001AEC3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "InputId": "0x010000580000BEF7"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 17,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 17,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5,
+          "y": 361,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Variable[\"boardwalk.ladder_hub_reached\"]",
+          "Articy Id": "0x010000070001AEC3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x010000070001AECA"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 18,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.ladder_hub_reached\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3.25,
+          "y": 234.64999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "!(Variable[\"boardwalk.ladder_hub_reached\"])",
+          "Articy Id": "0x010000070001AEC3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x010000580000C7C8"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 19,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 94,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"boardwalk.ladder_hub_reached\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3.25,
+          "y": 234.64999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Savoir Faire: \"What if you were to do something mo...\"",
+          "Dialogue Text": "What if you were to do something more *subtle*?",
+          "Articy Id": "0x01000016000099B1",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "417",
+          "Conversant": "396",
+          "OutputId": "0x01000016000099B8",
+          "InputId": "0x01000016000099AA"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 20,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3463,
+          "y": -1485,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "Savoir Faire: \"*BAM*! You find yourself on the roo...\"",
+          "Dialogue Text": "*BAM*! You find yourself on the roof... having mastered the art of physical displacement.",
+          "Articy Id": "0x0100008900000B2C",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "AudioPlay(boardwalk/ladder/teleport-02,1);SemiBlack(false)@1;PostFX(whiteblink, true)@1;AmbientVolume(1)@0.9;",
+          "Actor": "417",
+          "Conversant": "396",
+          "InputId": "0x0100000600014E50",
+          "OutputId": "0x0100001600009A4C"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 21,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 102,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4125,
+          "y": 550,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Untitled hub",
+          "Articy Id": "0x0100000600014C80",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100000600014C7A",
+          "OutputId": "0x010000580000C7ED"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 22,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 22,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 75,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 22,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 58,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 22,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 88,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3022,
+          "y": -574,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"He looks at you, eyes wide with fei...\"",
+          "Dialogue Text": "He looks at you, eyes wide with feigned surprise. \"You're not? Please don't try to *climb* the building, we'll get in another way.\"",
+          "Articy Id": "0x0100001600009A1D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100001600009A14",
+          "OutputId": "0x0100000600014E27"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 23,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 62,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3931,
+          "y": 2154,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "You: \"Don't say the stupid thing.\"",
+          "Dialogue Text": "Don't say the stupid thing.",
+          "Articy Id": "0x0100001600009A24",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "303",
+          "OutputId": "0x0100001600009A2B",
+          "InputId": "0x0100001600009A05"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 24,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 101,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3633,
+          "y": 2450,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "You: \"You're not ready to do this yet. [L...\"",
+          "Dialogue Text": "You're not ready to do this yet. [Leave.]",
+          "Articy Id": "0x010000580000C7F9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "303",
+          "OutputId": "0x010000580000C7FD",
+          "InputId": "0x010000580000C7E0"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1479,
+          "y": 3113,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"This really has nothing to do with...\"",
+          "Dialogue Text": "\"This really has nothing to do with... adventure. We're dealing with basic physics here.\"",
+          "Articy Id": "0x0100008900000ACE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x010000580000C7ED",
+          "InputId": "0x0100008900000AC1"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 26,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 88,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3664,
+          "y": -658,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Perception (Hearing): \"The wind at the top of the building...\"",
+          "Dialogue Text": "The wind at the top of the building starts howling loudly, blowing away the lieutenant's voice... faintly you hear...",
+          "Articy Id": "0x0100008900000B5E",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "1",
+          "Actor": "422",
+          "Conversant": "396",
+          "InputId": "0x010000060001E689",
+          "OutputId": "0x0100008900000B73"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 27,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 68,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5501,
+          "y": 564,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "Jump to: [You: \"\"It won't hurt to try.\"\"]",
+          "Articy Id": "0x0100000600014CB1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100000600014CAA"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 28,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 88,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4916,
+          "y": -701,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "Esprit de Corps: \"You shouldn't attempt to climb this...\"",
+          "Dialogue Text": "You shouldn't attempt to climb this ladder without the lieutenant here. What if you fall and need to be rushed to the hospital?",
+          "Articy Id": "0x0100000600014E46",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "0",
+          "Actor": "408",
+          "Conversant": "396",
+          "InputId": "0x0100000600014E40",
+          "OutputId": "0x010000580000C7E0"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 29,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 107,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1253,
+          "y": 488,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "Inland Empire: \"ASTRAL PROJECTION! Be *open-minded*...\"",
+          "Dialogue Text": "ASTRAL PROJECTION! Be *open-minded* about this.",
+          "Articy Id": "0x01000016000099BF",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "404",
+          "Conversant": "396",
+          "OutputId": "0x01000016000099C6",
+          "InputId": "0x0100000600014CB9"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 30,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4359,
+          "y": -1487,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "You: \"\"It is a thing for *me*. I can't *r...\"",
+          "Dialogue Text": "\"It is a thing for *me*. I can't *remember* it's not a thing.\"",
+          "Articy Id": "0x0100000600014C8C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "303",
+          "InputId": "0x0100000600014C80",
+          "OutputId": "0x0100000600014C93"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 31,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.ladder_rhet_teleportation\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3369,
+          "y": -907.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "Rhetoric: \"He *did*, he totally said something...\"",
+          "Dialogue Text": "He *did*, he totally said something about the apparatus, god damn it...",
+          "Articy Id": "0x0100000600014E20",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "400",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014E27",
+          "InputId": "0x0100001600009A34"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 32,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 62,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4221,
+          "y": 1895.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "Conceptualization: \"What if you were to *re-conceptuali...\"",
+          "Dialogue Text": "What if you were to *re-conceptualize* climbing the ladder?",
+          "Articy Id": "0x01000016000099B8",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "397",
+          "Conversant": "396",
+          "InputId": "0x01000016000099B1",
+          "OutputId": "0x0100000600014CB9"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 33,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 61,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3766.999755859375,
+          "y": -1484,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Title": "IsHourBetween(8, 19)",
+          "Articy Id": "0x0100000600014E5E",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "InputId": "0x0100007100002AE3"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 35,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 35,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4196,
+          "y": 1575,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "IsHourBetween(8, 19)",
+          "Articy Id": "0x0100000600014E5E",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x010000580000C83E"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 36,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 42,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsHourBetween(8, 19)",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2727.39990234375,
+          "y": 1023.7499389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "!(IsHourBetween(8, 19))",
+          "Articy Id": "0x0100000600014E5E",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014E64"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 37,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 69,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsHourBetween(8, 19)) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2727.39990234375,
+          "y": 1023.7499389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "Savoir Faire: \"No -- not like a regular person. Li...\"",
+          "Dialogue Text": "No -- not like a regular person. Like a phase spider.",
+          "Articy Id": "0x010000060001E689",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "3",
+          "Actor": "417",
+          "Conversant": "396",
+          "OutputId": "0x0100008900000B5E",
+          "InputId": "0x0100008900000B40"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 38,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5268,
+          "y": 263,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Teleportation apparatus? I don't r...\"",
+          "Dialogue Text": "\"Teleportation apparatus? I don't remember mentioning anything about teleportation apparatus. Please don't try to *climb* the building, we'll get in another way.\"",
+          "Articy Id": "0x0100001600009A34",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014E20",
+          "InputId": "0x0100001600009A0B"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 39,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3931.999755859375,
+          "y": 1875.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Title": "Savoir Faire: \"Yes. Teleportation is completely no...\"",
+          "Dialogue Text": "Yes. Teleportation is completely not a thing. Perhaps if you were to, instead, climb the ladder with your eyes closed? This way it's less scary.",
+          "Articy Id": "0x010000580000C82C",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "MusicPlay(silence,90);AmbientVolume(0)@2;SemiBlack(true,2);",
+          "Actor": "417",
+          "Conversant": "396",
+          "OutputId": "0x010000580000C832",
+          "InputId": "0x0100000600014E2E"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 40,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 109,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.ladder_teleport_white_failed_twice\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2708,
+          "y": 1523,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "Trant Heidelstam: \"\"Teleportation, Mikael. It's... gen...\"",
+          "Dialogue Text": "\"Teleportation, Mikael. It's... generally thought impossible.\"",
+          "Articy Id": "0x0100000600014CAA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "390",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014CB1",
+          "InputId": "0x0100000600014CA3"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 41,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4630,
+          "y": -734,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Title": "Trant Heidelstam: \"\"Officer, be careful! Officer!\"\"",
+          "Dialogue Text": "\"Officer, be careful! Officer!\"",
+          "Articy Id": "0x010000580000C83E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "390",
+          "Conversant": "396",
+          "InputId": "0x0100000600014E5E",
+          "OutputId": "0x0100006B00005FE9"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 42,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 54,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4526,
+          "y": 1413,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Title": "You: \"Grab the second rung.\"",
+          "Dialogue Text": "Grab the second rung.",
+          "Articy Id": "0x0100007100002AEC",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "AudioPlay(boardwalk/ladder/fail-02,1)@0.3;",
+          "Actor": "396",
+          "Conversant": "303",
+          "OutputId": "0x0100007100002AE3",
+          "InputId": "0x010000580000C838"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 43,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 99,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3606,
+          "y": 1535,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 44,
+        "fields": {
+          "Title": "You: \"Teleport to the roof.\"",
+          "Dialogue Text": "Teleport to the roof.",
+          "Articy Id": "0x0100008900000AEE",
+          "DialogueEntryType": "DialogueFragment",
+          "Forced": "False",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x0000000000000000",
+          "FlagName": "boardwalk.feld_ladder_savoir_wc",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000A00000032",
+          "DifficultyWhite": "3",
+          "modifier1": "-2",
+          "variable1": "Variable[\"coast.trant_lomanthang\"]",
+          "tooltip1": "Inspired by Lo Manthang.",
+          "modifier2": "-2",
+          "variable2": "Variable[\"church.tiago_greeting_done\"]",
+          "tooltip2": "Saw Tiago climbing.",
+          "modifier3": "-1",
+          "variable3": "IsTHCCookingOrFixed(\"remote_viewer\")",
+          "tooltip3": "Remote Viewer bonus!",
+          "modifier4": "-1",
+          "variable4": "IsTHCCookingOrFixed(\"coach_physical_instrument\")",
+          "tooltip4": "Do it for Coach Physical!",
+          "modifier5": "-1",
+          "variable5": "CheckItem(\"superstar_dice\")",
+          "tooltip5": "The Magnetic Dice Set.",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "303",
+          "OutputId": "0x0100008900000AEE-FORK",
+          "InputId": "0x010000580000C7E0"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 44,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()  and  Variable[\"boardwalk.ladder_climbing_vs_teleport\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2002,
+          "y": 849,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 45,
+        "fields": {
+          "Title": "Variable[\"boardwalk.feld_ladder_savoir_wc\"]",
+          "Articy Id": "0x0100008900000AEE-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "303",
+          "InputId": "0x0100008900000AEE"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 45,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 46,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 45,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2078.923095703125,
+          "y": 925.923095703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 46,
+        "fields": {
+          "Title": "Variable[\"boardwalk.feld_ladder_savoir_wc\"]",
+          "Articy Id": "0x0100008900000AEE-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "303",
+          "OutputId": "0x010000580000C819"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 46,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 103,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.feld_ladder_savoir_wc\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1351.2999267578125,
+          "y": 601.8499755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 47,
+        "fields": {
+          "Title": "!(Variable[\"boardwalk.feld_ladder_savoir_wc\"])",
+          "Articy Id": "0x0100008900000AEE-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "303",
+          "OutputId": "0x010000580000C819"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 47,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 103,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"boardwalk.feld_ladder_savoir_wc\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1351.2999267578125,
+          "y": 601.8499755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 48,
+        "fields": {
+          "Title": "IsHourBetween(8, 19)  and  Variable[\"TASK.locate_ruby_on_the_coast_done\"] == false",
+          "Articy Id": "0x0100000600014C9B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "InputId": "0x0100008900000ADA"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 48,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 49,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 48,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 50,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4021,
+          "y": -617,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 49,
+        "fields": {
+          "Title": "IsHourBetween(8, 19)  and  Variable[\"TASK.locate_ruby_on_the_coast_done\"] == false",
+          "Articy Id": "0x0100000600014C9B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014CA3"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 49,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 56,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsHourBetween(8, 19)  and  Variable[\"TASK.locate_ruby_on_the_coast_done\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2613.64990234375,
+          "y": -401.04998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 50,
+        "fields": {
+          "Title": "!(IsHourBetween(8, 19)  and  Variable[\"TASK.locate_ruby_on_the_coast_done\"] == false)",
+          "Articy Id": "0x0100000600014C9B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x010000580000C7ED"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 50,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 88,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsHourBetween(8, 19)  and  Variable[\"TASK.locate_ruby_on_the_coast_done\"] == false) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2613.64990234375,
+          "y": -401.04998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 51,
+        "fields": {
+          "Title": "Physical Instrument: \"Hear that? You're old. That's why y...\"",
+          "Dialogue Text": "Hear that? You're old. That's why you can't do it. Old and feeble. A let-down. A failure.",
+          "Articy Id": "0x0100000600014EAA",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "410",
+          "Conversant": "396",
+          "OutputId": "0x010000580000C869",
+          "InputId": "0x0100000600014E80"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 51,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 53,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 6044,
+          "y": 1528,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 52,
+        "fields": {
+          "Title": "Pain Threshold: \"Yeah... Because falling from that h...\"",
+          "Dialogue Text": "Yeah... Because falling from that height seems, well -- SPLAT! So don't do that. Just, you know...",
+          "Articy Id": "0x01000016000099C6",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "3",
+          "Actor": "412",
+          "Conversant": "396",
+          "InputId": "0x01000016000099BF",
+          "OutputId": "0x0100000600014C74"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 52,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 60,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4660,
+          "y": -1485,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 53,
+        "fields": {
+          "Title": "Jump to: [feldladdermainhub]",
+          "Articy Id": "0x010000580000C869",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100000600014EAA"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 53,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 107,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 6341,
+          "y": 1560,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 54,
+        "fields": {
+          "Title": "Pain Threshold: \"Brace yourself!\"",
+          "Dialogue Text": "Brace yourself!",
+          "Articy Id": "0x0100006B00005FE9",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "3",
+          "Actor": "412",
+          "Conversant": "396",
+          "InputId": "0x0100000600014E64",
+          "OutputId": "0x0100006B00005FF5"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 54,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 78,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.feld_ladder_painth_block\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4821,
+          "y": 1525,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 55,
+        "fields": {
+          "Title": "You: \"\"I did it, Kim! I teleported!\"\"",
+          "Dialogue Text": "\"I did it, Kim! I teleported!\"",
+          "Articy Id": "0x0100008900000B39",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "303",
+          "OutputId": "0x0100008900000B40",
+          "InputId": "0x0100001600009A4C"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 55,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 59,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4687,
+          "y": 263,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 56,
+        "fields": {
+          "Title": "Mikael Heidelstam: \"\"What are they talking about?\" the...\"",
+          "Dialogue Text": "\"What are they talking about?\" the kid behind you whispers, asking his father.",
+          "Articy Id": "0x0100000600014CA3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "124",
+          "Conversant": "396",
+          "InputId": "0x0100000600014C9B",
+          "OutputId": "0x0100000600014CAA"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 56,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4354,
+          "y": -725,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 57,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Yeah, that doesn't look good at al...\"",
+          "Dialogue Text": "\"Yeah, that doesn't look good at all.\"",
+          "Articy Id": "0x010000580000C7D4",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x010000580000C7E0",
+          "InputId": "0x010000580000C7CE"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 57,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 107,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1260,
+          "y": -3,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 58,
+        "fields": {
+          "Title": "You: \"\"Teleportation *is* a thing. Just n...\"",
+          "Dialogue Text": "\"Teleportation *is* a thing. Just needs a bit of concentration...\"",
+          "Articy Id": "0x0100008900000AC6",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "303",
+          "InputId": "0x0100000600014C80",
+          "OutputId": "0x0100008900000ADA"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 58,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 83,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.ladder_rhet_teleportation\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3365.000244140625,
+          "y": -418.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 59,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"I just *saw* you climb the ladder,...\"",
+          "Dialogue Text": "\"I just *saw* you climb the ladder,\" the lieutenant shouts from below. \"You just climbed it, like a regular person.\"",
+          "Articy Id": "0x0100008900000B40",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100008900000B39",
+          "OutputId": "0x010000060001E689"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 59,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4974,
+          "y": 250.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 60,
+        "fields": {
+          "Title": "Jump to: [feldladdermainhub]",
+          "Articy Id": "0x0100000600014C74",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x01000016000099C6"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 60,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 107,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4957,
+          "y": -1457,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 61,
+        "fields": {
+          "Title": "Rhetoric: \"Yes -- climbing it would be too *ex...\"",
+          "Dialogue Text": "Yes -- climbing it would be too *expensive*. The animations your body needs to make, interacting with the ladder, are beyond your capabilities at this moment in your career.",
+          "Articy Id": "0x0100000600014CB9",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "6",
+          "Actor": "400",
+          "Conversant": "396",
+          "InputId": "0x01000016000099B8",
+          "OutputId": "0x01000016000099BF"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 61,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4045.000244140625,
+          "y": -1504,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 62,
+        "fields": {
+          "Title": "Jump to: [feldladdermainhub]",
+          "Articy Id": "0x0100000600014E27",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100001600009A2B"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 62,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 107,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4282,
+          "y": 2256,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 63,
+        "fields": {
+          "Title": "Jump to: [feldladdermainhub]",
+          "Articy Id": "0x0100000600014E73",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100000600014E6C"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 63,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 107,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2989,
+          "y": 1163,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 64,
+        "fields": {
+          "Title": "You: \"One-eighty seems about right.\"",
+          "Dialogue Text": "One-eighty seems about right.",
+          "Articy Id": "0x0100001600009995",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "303",
+          "InputId": "0x010000160000998C",
+          "OutputId": "0x01000016000099AA"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 64,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 110,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2848,
+          "y": -1590.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 65,
+        "fields": {
+          "Title": "Perception (Hearing): \"Because you're just standing there...\"",
+          "Dialogue Text": "Because you're just standing there squeezing your buttocks and nothing is happening.",
+          "Articy Id": "0x01000016000099FE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "422",
+          "Conversant": "396",
+          "OutputId": "0x0100001600009A05",
+          "InputId": "0x01000016000099F7"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 65,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 84,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "DamageVolition(1)",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3060,
+          "y": 1945.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 66,
+        "fields": {
+          "Title": "You: \"Don't gloat. Just stand there like...\"",
+          "Dialogue Text": "Don't gloat. Just stand there like a Samaran master.",
+          "Articy Id": "0x0100001600009A53",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "303",
+          "OutputId": "0x0100000600014E92",
+          "InputId": "0x0100001600009A4C"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 66,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4680,
+          "y": 542,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 67,
+        "fields": {
+          "Title": "You: \"\"What if I don't climb? What if I j...\"",
+          "Dialogue Text": "\"What if I don't climb? What if I just... *teleport*?\"",
+          "Articy Id": "0x0100008900000AB3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "303",
+          "OutputId": "0x0100008900000ABA",
+          "InputId": "0x010000580000C7E0"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 67,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 82,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()  and  Variable[\"boardwalk.ladder_situation_assessed\"]",
+        "userScript": "SetVariableValue(\"boardwalk.ladder_climbing_vs_teleport\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2141,
+          "y": -661,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 68,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Never mind... find a way to let me...\"",
+          "Dialogue Text": "\"Never mind... find a way to let me in when you get inside! Don't go adventuring without backup, especially if we think the suspect may be hiding here.\"",
+          "Articy Id": "0x0100008900000B73",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100008900000B5E",
+          "OutputId": "0x0100006B0000674D"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 68,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 81,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "FinishTask(\"TASK.climb_ladder_done\");\nGainTask(\"TASK.go_down_get_kim\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5788,
+          "y": 540,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 69,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Careful...\"\"",
+          "Dialogue Text": "\"Careful...\"",
+          "Articy Id": "0x0100000600014E64",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100000600014E5E",
+          "OutputId": "0x0100006B00005FE9"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 69,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 54,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4517,
+          "y": 1650.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 70,
+        "fields": {
+          "Title": "You: \"Why?\"",
+          "Dialogue Text": "Why?",
+          "Articy Id": "0x01000016000099F7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "303",
+          "OutputId": "0x01000016000099FE",
+          "InputId": "0x01000016000099EA"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 70,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 65,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2769,
+          "y": 1959,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 71,
+        "fields": {
+          "Title": "Feld Ladder: \"The ladder gleams arrogantly with w...\"",
+          "Dialogue Text": "The ladder gleams arrogantly with what remains of its metallic lustre as you hit the barrel and tumble onto the ground.",
+          "Articy Id": "0x010000580000C844",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "AudioPlay(boardwalk/ladder/fail-03,1)@0.3;PostFX(redflash)@0.9;SemiBlack(false)@0.9;PostFX(camshake,true)@0.9;MusicPriorityReset()@2.5;AmbientVolume(1)@2;",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014E80",
+          "InputId": "0x0100006B00005FF5"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 71,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 77,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "DamageEndurance(1)",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5403,
+          "y": 1658,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 72,
+        "fields": {
+          "Title": "Savoir Faire: \"It's not happening. You simply do n...\"",
+          "Dialogue Text": "It's not happening. You simply do not have the mind-over-matter athletic capacity to pull it off at this time.",
+          "Articy Id": "0x0100000600014E6C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "417",
+          "Conversant": "396",
+          "InputId": "0x0100000600014E38",
+          "OutputId": "0x0100000600014E73"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 72,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 63,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2722,
+          "y": 1123,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 73,
+        "fields": {
+          "Title": "Savoir Faire: \"On second thought, maybe teleportat...\"",
+          "Dialogue Text": "On second thought, maybe teleportation isn't a thing.",
+          "Articy Id": "0x01000016000099EA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "417",
+          "Conversant": "396",
+          "OutputId": "0x01000016000099F7",
+          "InputId": "0x0100000600014E2E"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 73,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 70,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.ladder_teleport_white_failed_once\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2471,
+          "y": 1949,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 74,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Oh yes. It could hurt. A lot.\"\"",
+          "Dialogue Text": "\"Oh yes. It could hurt. A lot.\"",
+          "Articy Id": "0x010000580000C80C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x010000580000C812",
+          "InputId": "0x010000580000C7ED"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 74,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 111,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3663,
+          "y": -168,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 75,
+        "fields": {
+          "Title": "You: \"\"C'mon, Kim. Where's your adventuro...\"",
+          "Dialogue Text": "\"C'mon, Kim. Where's your adventurous spirit?\"",
+          "Articy Id": "0x0100008900000AC1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "303",
+          "InputId": "0x0100000600014C80",
+          "OutputId": "0x0100008900000ACE"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 75,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3364,
+          "y": -658,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 76,
+        "fields": {
+          "Title": "Savoir Faire: \"All you need to do is close your ey...\"",
+          "Dialogue Text": "All you need to do is close your eyes and concentrate. Darkness *enfolds* you. You can *feel* the distance between the bench and the first rung of the ladder. All you need to is...",
+          "Articy Id": "0x0100008900000B05",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "MusicPlay(silence,90);SemiBlack(true,3);AmbientVolume(0)@3;",
+          "Actor": "417",
+          "Conversant": "396",
+          "OutputId": "0x0100008900000B0C",
+          "InputId": "0x010000580000C819"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 76,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 115,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.feld_ladder_climb_succeeded\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2629,
+          "y": 538,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 77,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Enough of that now, officer...\" Th...\"",
+          "Dialogue Text": "\"Enough of that now, officer...\" The lieutenant pats you on the back. \"There has got to be a better, more *age-appropriate* way in.\"",
+          "Articy Id": "0x0100000600014E80",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100006B00005FFB",
+          "OutputId": "0x0100000600014EAA"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 77,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 51,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5747,
+          "y": 1519,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 78,
+        "fields": {
+          "Title": "Variable[\"boardwalk.feld_ladder_painth_block\"]",
+          "Articy Id": "0x0100006B00005FF5",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "InputId": "0x0100006B00005FE9"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 78,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 79,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 78,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 80,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5101,
+          "y": 1575,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 79,
+        "fields": {
+          "Title": "Variable[\"boardwalk.feld_ladder_painth_block\"]",
+          "Articy Id": "0x0100006B00005FF5",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x0100006B00005FFB"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 79,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 112,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.feld_ladder_painth_block\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3315.64990234375,
+          "y": 1023.7499389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 80,
+        "fields": {
+          "Title": "!(Variable[\"boardwalk.feld_ladder_painth_block\"])",
+          "Articy Id": "0x0100006B00005FF5",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x010000580000C844"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 80,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 71,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"boardwalk.feld_ladder_painth_block\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3315.64990234375,
+          "y": 1023.7499389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 81,
+        "fields": {
+          "Title": "RemoveKitsuragiWaitAtLair();\n",
+          "Articy Id": "0x0100006B0000674D",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Instruction",
+          "Actor": "303",
+          "Conversant": "396",
+          "InputId": "0x0100008900000B73",
+          "OutputId": "0x010000580000C7FD"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "RemoveKitsuragiWaitAtLair();\n;\n",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 6206,
+          "y": 505.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 82,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Teleportation is not a thing.\" The...\"",
+          "Dialogue Text": "\"Teleportation is not a thing.\" The lieutenant stares at you, stone-faced.",
+          "Articy Id": "0x0100008900000ABA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100008900000AB3",
+          "OutputId": "0x0100000600014C7A"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 82,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2431,
+          "y": -660,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 83,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Okay, let's say teleportation is a...\"",
+          "Dialogue Text": "\"Okay, let's say teleportation is a thing. Wouldn't you need some kind of... scientific apparatus to create a teleportation field? You can't just do it without apparatus.\"",
+          "Articy Id": "0x0100008900000ADA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100008900000AC6",
+          "OutputId": "0x0100000600014C9B"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 83,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.ladder_apparatus_mentioned\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3664,
+          "y": -433,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 84,
+        "fields": {
+          "Title": "Untitled hub",
+          "Articy Id": "0x0100001600009A05",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x01000016000099FE",
+          "OutputId": "0x0100001600009A24"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 84,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 100,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 84,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 84,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3354,
+          "y": 2039,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 85,
+        "fields": {
+          "Title": "IsHourBetween(8, 19)",
+          "Articy Id": "0x0100001600009A43",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "InputId": "0x0100008900000B1E"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 85,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 86,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 85,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 87,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3521,
+          "y": 599,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 86,
+        "fields": {
+          "Title": "IsHourBetween(8, 19)",
+          "Articy Id": "0x0100001600009A43",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x0100008900000B25"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 86,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsHourBetween(8, 19)",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2288.64990234375,
+          "y": 389.3499755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 87,
+        "fields": {
+          "Title": "!(IsHourBetween(8, 19))",
+          "Articy Id": "0x0100001600009A43",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014E50"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 87,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsHourBetween(8, 19)) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2288.64990234375,
+          "y": 389.3499755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 88,
+        "fields": {
+          "Title": "You: \"\"It won't hurt to try.\"\"",
+          "Dialogue Text": "\"It won't hurt to try.\"",
+          "Articy Id": "0x010000580000C7ED",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "303",
+          "InputId": "0x0100000600014C9B",
+          "OutputId": "0x010000580000C80C"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 88,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 74,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3363,
+          "y": -168,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 89,
+        "fields": {
+          "Title": "Savoir Faire: \"*ZOOT*! *ZAP*! *POW*! *CRINKLE*! It...\"",
+          "Dialogue Text": "*ZOOT*! *ZAP*! *POW*! *CRINKLE*! It's like magic, you feel yourself disappear, your atoms fading out of existence...",
+          "Articy Id": "0x0100008900000B1E",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "FocusCamera(FeldRoofCam);AudioPlay(boardwalk/ladder/teleport-01,1)@0.4;",
+          "Actor": "417",
+          "Conversant": "396",
+          "OutputId": "0x0100001600009A43",
+          "InputId": "0x0100008900000B0C"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 89,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 85,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3235,
+          "y": 551,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 90,
+        "fields": {
+          "Title": "Variable[\"boardwalk.ladder_teleport_white_failed_once\"]",
+          "Articy Id": "0x0100000600014E2E",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "InputId": "0x0100000600014E38"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 90,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 91,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 90,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 92,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2304,
+          "y": 1427,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 91,
+        "fields": {
+          "Title": "Variable[\"boardwalk.ladder_teleport_white_failed_once\"]",
+          "Articy Id": "0x0100000600014E2E",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x010000580000C82C"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 91,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.ladder_teleport_white_failed_once\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1497.5999755859375,
+          "y": 927.5499877929688,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 92,
+        "fields": {
+          "Title": "!(Variable[\"boardwalk.ladder_teleport_white_failed_once\"])",
+          "Articy Id": "0x0100000600014E2E",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x01000016000099EA"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 92,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 73,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"boardwalk.ladder_teleport_white_failed_once\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1497.5999755859375,
+          "y": 927.5499877929688,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 93,
+        "fields": {
+          "Title": "Feld Ladder: \"Okay. But, still -- the roof is col...\"",
+          "Dialogue Text": "Okay. But, still -- the roof is collapsing and the wind gets pretty brutal up there. Dismounting from the ladder is going to be *hard*. Perhaps if you were to... *not* climb the ladder? Instead...",
+          "Articy Id": "0x01000016000099A3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x01000016000099B1",
+          "InputId": "0x010000160000999B"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 93,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3130,
+          "y": -1328,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 94,
+        "fields": {
+          "Title": "Feld Ladder: \"A rusty ladder leads to the rooftop...\"",
+          "Dialogue Text": "A rusty ladder leads to the rooftop. Some of the rungs are missing.",
+          "Articy Id": "0x010000580000C7C8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "303",
+          "Conversant": "396",
+          "InputId": "0x010000070001AEC3",
+          "OutputId": "0x010000580000C7CE"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 94,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 95,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 354,
+          "y": 138,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 95,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x010000580000C7CE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "InputId": "0x010000580000C7C8"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 95,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 96,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 95,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 97,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 654,
+          "y": 188,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 96,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x010000580000C7CE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x010000580000C7D4"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 96,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 57,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 425.0999755859375,
+          "y": 122.19999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 97,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x010000580000C7CE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014E40"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 97,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 425.0999755859375,
+          "y": 122.19999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 98,
+        "fields": {
+          "Title": "Esprit de Corps: \"You shouldn't attempt to get to the...\"",
+          "Dialogue Text": "You shouldn't attempt to get to the roof without the lieutenant here. What if you fall and need to be rushed to the hospital?",
+          "Articy Id": "0x010000580000C7DA",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "0",
+          "Actor": "408",
+          "Conversant": "396",
+          "InputId": "0x0100000600014E40",
+          "OutputId": "0x010000580000C7E0"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 98,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 107,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1260,
+          "y": 221.99998474121094,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 99,
+        "fields": {
+          "Title": "Feld Ladder: \"Your fingers slip from the rung...\"",
+          "Dialogue Text": "Your fingers slip from the rung...",
+          "Articy Id": "0x0100007100002AE3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "303",
+          "Conversant": "396",
+          "InputId": "0x0100007100002AEC",
+          "OutputId": "0x0100000600014E5E"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 99,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3906,
+          "y": 1535,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 100,
+        "fields": {
+          "Title": "You: \"\"Kim, do you know where I could *ge...\"",
+          "Dialogue Text": "\"Kim, do you know where I could *get* that teleportation apparatus?\"",
+          "Articy Id": "0x0100001600009A0B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "303",
+          "InputId": "0x0100001600009A05",
+          "OutputId": "0x0100001600009A34"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 100,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.ladder_apparatus_mentioned\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3636,
+          "y": 1895.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 101,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"The lieutenant looks at you with th...\"",
+          "Dialogue Text": "The lieutenant looks at you with that 'I-know-you're-thinking-the-stupid-thing' look -- as you grow tired of clenching your buttocks and give up.",
+          "Articy Id": "0x0100001600009A2B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100001600009A24",
+          "OutputId": "0x0100000600014E27"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 101,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 62,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3933,
+          "y": 2433,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 102,
+        "fields": {
+          "Title": "Untitled hub (02)",
+          "Articy Id": "0x0100001600009A4C",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100008900000B2C",
+          "OutputId": "0x0100001600009A53"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 102,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 55,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 102,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4408,
+          "y": 622,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 103,
+        "fields": {
+          "Title": "Variable[\"boardwalk.feld_ladder_savoir_wc\"]",
+          "Articy Id": "0x010000580000C819",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "InputId": "0x0100008900000AEE-FORK"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 103,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 104,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 103,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 105,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2300,
+          "y": 900.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 104,
+        "fields": {
+          "Title": "Variable[\"boardwalk.feld_ladder_savoir_wc\"]",
+          "Articy Id": "0x010000580000C819",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x0100008900000B05"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 104,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 76,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.feld_ladder_savoir_wc\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1495,
+          "y": 585,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 105,
+        "fields": {
+          "Title": "!(Variable[\"boardwalk.feld_ladder_savoir_wc\"])",
+          "Articy Id": "0x010000580000C819",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014E38"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 105,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"boardwalk.feld_ladder_savoir_wc\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1495,
+          "y": 585,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 106,
+        "fields": {
+          "Title": "Feld Ladder: \"It doesn't crumble in your hand, as...\"",
+          "Dialogue Text": "It doesn't crumble in your hand, as one might expect. In fact, it doesn't even bend.",
+          "Articy Id": "0x010000580000C838",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "303",
+          "Conversant": "396",
+          "OutputId": "0x0100007100002AEC",
+          "InputId": "0x010000580000C832"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 106,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 43,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.feld_ladder_tried_first_rung\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3306,
+          "y": 1535,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 107,
+        "fields": {
+          "Title": "feldladdermainhub",
+          "Articy Id": "0x010000580000C7E0",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x010000580000C7DA",
+          "OutputId": "0x010000580000C7F9"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 107,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 107,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 67,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 107,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 44,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 972,
+            "originDialogueID": 107,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.ladder_hub_reached\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1575,
+          "y": 310,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 108,
+        "fields": {
+          "Title": "You: \"One-ninety. I'm a giant.\"",
+          "Dialogue Text": "One-ninety. I'm a giant.",
+          "Articy Id": "0x010000160000999B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "303",
+          "InputId": "0x010000160000998C",
+          "OutputId": "0x01000016000099A3"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 108,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 93,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2843,
+          "y": -1311,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 109,
+        "fields": {
+          "Title": "You: \"Grab the first rung.\"",
+          "Dialogue Text": "Grab the first rung.",
+          "Articy Id": "0x010000580000C832",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "AudioPlay(boardwalk/ladder/fail-01,1)@0.3;",
+          "Actor": "396",
+          "Conversant": "303",
+          "InputId": "0x010000580000C82C",
+          "OutputId": "0x010000580000C838"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 109,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 106,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3006,
+          "y": 1535,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 110,
+        "fields": {
+          "Title": "Feld Ladder: \"Not to mention that the roof is col...\"",
+          "Dialogue Text": "Not to mention that the roof is collapsing and the wind gets pretty brutal up there. Dismounting from the ladder is going to be *hard*. Perhaps if you were to... *not* climb the ladder? Instead...",
+          "Articy Id": "0x01000016000099AA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "303",
+          "Conversant": "396",
+          "InputId": "0x0100001600009995",
+          "OutputId": "0x01000016000099B1"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 110,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3134,
+          "y": -1622,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 111,
+        "fields": {
+          "Title": "Authority: \"He is restraining himself from usin...\"",
+          "Dialogue Text": "He is restraining himself from using a parental tone with you right now.",
+          "Articy Id": "0x010000580000C812",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "406",
+          "Conversant": "396",
+          "InputId": "0x010000580000C80C",
+          "OutputId": "0x0100008900000AD5"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 111,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 114,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3963,
+          "y": -168,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 112,
+        "fields": {
+          "Title": "Feld Ladder: \"The ladder gleams arrogantly with w...\"",
+          "Dialogue Text": "The ladder gleams arrogantly with what remains of its metallic lustre as you hit the barrel and tumble onto the ground.",
+          "Articy Id": "0x0100006B00005FFB",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "AudioPlay(boardwalk/ladder/fail-03,1)@0.3;PostFX(redflash)@0.9;SemiBlack(false)@0.9;PostFX(camshake,true)@0.9;MusicPriorityReset()@2.5;AmbientVolume(1)@2;",
+          "Actor": "303",
+          "Conversant": "396",
+          "InputId": "0x0100006B00005FF5",
+          "OutputId": "0x0100000600014E80"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 112,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 77,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5403,
+          "y": 1358,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 113,
+        "fields": {
+          "Title": "Feld Ladder: \"The distances between the remaining...\"",
+          "Dialogue Text": "The distances between the remaining rungs are rather *wide*. You'd have to use the mounting brackets. However, they seem corroded and the peeling rust is razor-sharp.",
+          "Articy Id": "0x0100007100002AA5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "303",
+          "Conversant": "396",
+          "InputId": "0x0100007100002A9F",
+          "OutputId": "0x010000160000998C"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 113,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2203,
+          "y": -1484,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 114,
+        "fields": {
+          "Title": "Jump to: [feldladdermainhub]",
+          "Articy Id": "0x0100008900000AD5",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000580000C812"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 114,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 107,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4254,
+          "y": -144,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 115,
+        "fields": {
+          "Title": "You: \"Do it.\"",
+          "Dialogue Text": "Do it.",
+          "Articy Id": "0x0100008900000B0C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "303",
+          "InputId": "0x0100008900000B05",
+          "OutputId": "0x0100008900000B1E"
+        },
+        "conversationID": 972,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 972,
+            "originDialogueID": 115,
+            "destinationConversationID": 972,
+            "destinationDialogueID": 89,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2926,
+          "y": 559,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

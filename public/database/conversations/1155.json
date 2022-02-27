@@ -1,0 +1,1497 @@
+[
+  {
+    "id": 1155,
+    "fields": {
+      "Title": "THOUGHT / SUICIDE COP",
+      "Articy Id": "0x0100007100000538",
+      "AlternateOrbText": "",
+      "CheckType": "13",
+      "Condition": "Variable[\"character.suicide_cop_done\"] == false",
+      "Description": "For when the thought is FIXED. Logic tries to get you to kill yourself if you have a gun and bullets, and tells you you're stupid if you don't.",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "2",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100007100000538",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 0,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x010000710000053B",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x01000071000006CD"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 1,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "You: \"Hmm... maybe I should. Yes. (Look a...\"",
+          "Dialogue Text": "Hmm... maybe I should. Yes. (Look at the gun and start thinking about it.)",
+          "Articy Id": "0x01000006000199A9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x01000006000199B1",
+          "InputId": "0x01000071000008D1"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 2,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"character.suicide_has_gunandbullets\"]",
+        "userScript": "ReputationGrows(\"suicide_cop\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1668,
+          "y": 1012,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Pain Threshold: \"Sounds like you're the Suicide Cop!...\"",
+          "Dialogue Text": "Sounds like you're the Suicide Cop! With his finger on the *eject* button. Ready to let go of this life! But guess what?",
+          "Articy Id": "0x01000071000006E6",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "0",
+          "OutputId": "0x01000071000008D8",
+          "InputId": "0x01000071000006C7"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 3,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 475.0000305175781,
+          "y": 1040,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "You: \"No. It's a sign that I want to live...\"",
+          "Dialogue Text": "No. It's a sign that I want to live. (Refuse.)",
+          "Articy Id": "0x01000071000008BF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100007100000964",
+          "InputId": "0x01000071000008D1"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 4,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1667,
+          "y": 1318,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Pain Threshold: \"Oh yes. It would be so sweet to tas...\"",
+          "Dialogue Text": "Oh yes. It would be so sweet to taste the barrel once more. That sour metal...  maybe there *is* a way? Not yet. But stick with it -- keep going dark, and it'll finally *click*.",
+          "Articy Id": "0x0100007100000950",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "0",
+          "OutputId": "0x0100007100000954",
+          "InputId": "0x010000710000094A"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"character.suicide_cop_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1979,
+          "y": 559,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Pain Threshold: \"You idiot! You don't have a gun or...\"",
+          "Dialogue Text": "You idiot! You don't have a gun or any bullets!",
+          "Articy Id": "0x01000071000008DF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "0",
+          "OutputId": "0x010000710000097E",
+          "InputId": "0x01000071000006EC"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 6,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 766,
+          "y": 1301,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "CheckItem(\"bullet\")",
+          "Articy Id": "0x01000071000006D3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x01000071000006CD"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 7,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 7,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 175,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "CheckItem(\"bullet\")",
+          "Articy Id": "0x01000071000006D3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x01000071000006DA"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 8,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "CheckItem(\"bullet\")",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 113.74999237060547,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "!(CheckItem(\"bullet\"))",
+          "Articy Id": "0x01000071000006D3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x01000071000006E0"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 9,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(CheckItem(\"bullet\")) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 113.74999237060547,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Pain Threshold: \"Sounds like you're the Suicide Cop!...\"",
+          "Dialogue Text": "Sounds like you're the Suicide Cop! With his finger on the *eject* button. Ready to let go of this life! But guess what?",
+          "Articy Id": "0x01000071000006E0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "0",
+          "InputId": "0x01000071000006D3",
+          "OutputId": "0x01000071000008B2"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 10,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 475.0000305175781,
+          "y": 790,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Pain Threshold: \"You idiot! You've got the bullet, b...\"",
+          "Dialogue Text": "You idiot! You've got the bullet, but no gun!",
+          "Articy Id": "0x01000071000008D8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "0",
+          "InputId": "0x01000071000006E6",
+          "OutputId": "0x010000710000097E"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 11,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 764,
+          "y": 1052,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "Composure: \"You've made such a big show out of...\"",
+          "Dialogue Text": "You've made such a big show out of it too. You feel like everyone basically *expects* you to do it now.",
+          "Articy Id": "0x010000710000097E",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "419",
+          "Conversant": "0",
+          "InputId": "0x01000071000008B2",
+          "OutputId": "0x010000060001998D"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 12,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1075,
+          "y": 1040,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Pain Threshold: \"Sounds like you're a potential Suic...\"",
+          "Dialogue Text": "Sounds like you're a potential Suicide Cop! With his finger on the *eject* button. Ready to let go of this life! Guess what?",
+          "Articy Id": "0x01000071000006DA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "0",
+          "InputId": "0x01000071000006D3",
+          "OutputId": "0x0100009400000C40"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 14,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"character.suicide_has_gunandbullets\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 400,
+          "y": -425.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "Pain Threshold: \"Oh yes. It would be so sweet to tas...\"",
+          "Dialogue Text": "Oh yes. It would be so sweet to taste the barrel once more. That sour metal...  Oh, but not yet. But stick with it -- keep going dark, and it'll finally *click*.",
+          "Articy Id": "0x01000006000199B1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "0",
+          "InputId": "0x01000006000199A9",
+          "OutputId": "0x0100007100000954"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"character.suicide_cop_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1955.9998779296875,
+          "y": 992,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "Pain Threshold: \"You idiot! You don't have any bulle...\"",
+          "Dialogue Text": "You idiot! You don't have any bullets!",
+          "Articy Id": "0x01000071000008B2",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "0",
+          "InputId": "0x01000071000006E0",
+          "OutputId": "0x010000710000097E"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 16,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 765,
+          "y": 802,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "CheckItem(\"gun_villiers\")  or  CheckItem(\"gun_ruby\")",
+          "Articy Id": "0x01000071000006CD",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000710000053B"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 17,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 17,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -450.0000305175781,
+          "y": 700,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "CheckItem(\"gun_villiers\")  or  CheckItem(\"gun_ruby\")",
+          "Articy Id": "0x01000071000006CD",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x01000071000006D3"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 18,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "CheckItem(\"gun_villiers\")  or  CheckItem(\"gun_ruby\")",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -292.5,
+          "y": 454.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "!(CheckItem(\"gun_villiers\")  or  CheckItem(\"gun_ruby\"))",
+          "Articy Id": "0x01000071000006CD",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x01000071000006C7"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 19,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(CheckItem(\"gun_villiers\")  or  CheckItem(\"gun_ruby\")) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -292.5,
+          "y": 454.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Pain Threshold: \"Fine. Keep up the charade another d...\"",
+          "Dialogue Text": "Fine. Keep up the charade another day. This could have been so liberating, but you cling to the case, to your partner, to the world... it's pitiful.",
+          "Articy Id": "0x0100007100000964",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "0",
+          "InputId": "0x01000071000008BF",
+          "OutputId": "0x0100007100000954"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"character.suicide_cop_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1967,
+          "y": 1293,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "You: \"Suicide Cop *does* have a ring to i...\"",
+          "Dialogue Text": "Suicide Cop *does* have a ring to it. I should think about it -- but only a little.",
+          "Articy Id": "0x01000006000199B8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100007100000950",
+          "InputId": "0x01000071000008D1"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 21,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"character.suicide_has_gunandbullets\"] == false",
+        "userScript": "ReputationGrows(\"suicide_cop\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1653,
+          "y": 724,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Jump to: [Composure: \"You've made such a big show out of...\"]",
+          "Articy Id": "0x01000006000199A4",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100009400000C46"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 22,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1245,
+          "y": -380,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "Pain Threshold: \"One bullet should do the trick. You...\"",
+          "Dialogue Text": "One bullet should do the trick. You have the gun... and you have the bullet.",
+          "Articy Id": "0x0100009400000C46",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "0",
+          "OutputId": "0x01000006000199A4",
+          "InputId": "0x0100009400000C40"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 23,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 970.0000610351562,
+          "y": -425.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "You: \"What's that?\"",
+          "Dialogue Text": "What's that?",
+          "Articy Id": "0x0100009400000C40",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x01000071000006DA",
+          "OutputId": "0x0100009400000C46"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 24,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 689,
+          "y": -413.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "CheckItem(\"bullet\")",
+          "Articy Id": "0x01000071000006C7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x01000071000006CD"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 25,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 25,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 175,
+          "y": 1240,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "CheckItem(\"bullet\")",
+          "Articy Id": "0x01000071000006C7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x01000071000006E6"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 26,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "CheckItem(\"bullet\")",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 113.74999237060547,
+          "y": 806,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "!(CheckItem(\"bullet\"))",
+          "Articy Id": "0x01000071000006C7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x01000071000006EC"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 27,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(CheckItem(\"bullet\")) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 113.74999237060547,
+          "y": 806,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "Volition: \"What is this? You're not ready to d...\"",
+          "Dialogue Text": "What is this? You're not ready to die, this is garbage.",
+          "Articy Id": "0x010000060001998D",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "1",
+          "Actor": "405",
+          "Conversant": "0",
+          "InputId": "0x010000710000097E",
+          "OutputId": "0x0100000600019994"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 28,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"character.suicide_cop_half\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1081,
+          "y": 802.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "Authority: \"It *would* be the honourable thing...\"",
+          "Dialogue Text": "It *would* be the honourable thing to do. It would really show them. Show her too.",
+          "Articy Id": "0x0100000600019994",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "1",
+          "Actor": "406",
+          "Conversant": "0",
+          "InputId": "0x010000060001998D",
+          "OutputId": "0x01000071000008D1"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 29,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1097,
+          "y": 569,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "Pain Threshold: \"Sounds like you're the Suicide Cop!...\"",
+          "Dialogue Text": "Sounds like you're the Suicide Cop! With his finger on the *eject* button. Ready to let go of this life! But guess what?",
+          "Articy Id": "0x01000071000006EC",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "0",
+          "InputId": "0x01000071000006C7",
+          "OutputId": "0x01000071000008DF"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 30,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 475.0000305175781,
+          "y": 1290,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "You: \"What a pity. Because that's totally...\"",
+          "Dialogue Text": "What a pity. Because that's totally *me*. Suicide Cop.",
+          "Articy Id": "0x010000710000094A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100007100000950",
+          "InputId": "0x01000071000008D1"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 31,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"character.suicide_has_gunandbullets\"] == false",
+        "userScript": "ReputationGrows(\"suicide_cop\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1649,
+          "y": 463.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "no_bulletz",
+          "Articy Id": "0x01000071000008D1",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100000600019994",
+          "OutputId": "0x01000071000008BF"
+        },
+        "conversationID": 1155,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 32,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 32,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 32,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1155,
+            "originDialogueID": 32,
+            "destinationConversationID": 1155,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1375,
+          "y": 1115,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]
