@@ -1,10 +1,18 @@
 <script setup lang="ts">
-import { ref } from "@vue/reactivity";
+import { ref, watch } from 'vue';
 
-const { node } = defineProps({
+const props = defineProps({
   node: {
     type: Object
   }
+});
+
+const text = ref("");
+
+watch(() => props.node, node => {
+  text.value = node ?
+    JSON.stringify({ ...node, outgoingLinks: undefined }, null, "  ") :
+    "";
 });
 </script>
 
@@ -12,9 +20,9 @@ const { node } = defineProps({
   <div
     ref="tooltip"
     class="tooltip"
-    v-if="node"
+    v-if="text"
   >
-    <pre>{{ JSON.stringify(node.fields, null, "  ") }}</pre>
+    <pre>{{ text }}</pre>
   </div>
 </template>
 
@@ -25,7 +33,6 @@ const { node } = defineProps({
   border-radius: 5px;
   border: 1px solid black;
   pointer-events: none;
-  font-size: 12px;
   top: 10px;
   right: 10px;
   max-width: 80vw;
@@ -33,5 +40,7 @@ const { node } = defineProps({
 pre {
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: 10px;
+  line-height: 1;
 }
 </style>

@@ -2,8 +2,8 @@
 import type { Edges, EventHandlers, Layouts, Node, Nodes, UserConfigs } from "v-network-graph";
 import { ref } from "@vue/reactivity";
 import DialogueGraphTooltip from "./DialogueGraphTooltip.vue";
-import type { ConversationModel } from "../composables/fetchConversation";
 import type { PropType } from "vue";
+import type { ConversationModel } from "@/composables/fetchConversation";
 
 const { conversation } = defineProps({
   conversation: {
@@ -34,7 +34,7 @@ const configs: UserConfigs = {
 const nodes: Nodes = {};
 for (let entry of conversation.entriesById.values()) {
   nodes[entry.id] = {
-    name: entry.fields.Title || entry.id,
+    name: entry.fields.Title || ("" + entry.id),
     ...entry
   };
 }
