@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { useDatabase } from '@/stores/database';
+import { useDatabaseStore } from "@/stores/database";
+import { storeToRefs } from "pinia";
 
-const { database } = useDatabase();
+const { database } = storeToRefs(useDatabaseStore());
 </script>
 
 <template>

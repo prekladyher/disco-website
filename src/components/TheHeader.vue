@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { useConversation } from "@/stores/conversation";
+import { useConversationStore } from "@/stores/conversation";
 import { storeToRefs } from "pinia";
 import IconHome from "./IconHome.vue";
 
-const { conversation, loading } = storeToRefs(useConversation());
+const { conversation, loading } = storeToRefs(useConversationStore());
 </script>
 
 <template>

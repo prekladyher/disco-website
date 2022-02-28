@@ -3,7 +3,7 @@ import type { Edges, EventHandlers, Layouts, Node, Nodes, UserConfigs } from "v-
 import { ref } from "@vue/reactivity";
 import DialogueGraphTooltip from "./DialogueGraphTooltip.vue";
 import type { PropType } from "vue";
-import type { ConversationModel } from "@/composables/fetchConversation";
+import type { ConversationModel } from "@/stores/conversation";
 
 const { conversation } = defineProps({
   conversation: {

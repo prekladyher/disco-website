@@ -2,12 +2,12 @@
 import DialogueGraph from "../components/DialogueGraph.vue";
 import { useRoute } from "vue-router";
 import { watch } from "vue";
-import { useConversation } from "@/stores/conversation";
+import { useConversationStore } from "@/stores/conversation";
 import { storeToRefs } from "pinia";
 
 const route = useRoute();
 
-const conversationStore = useConversation();
+const conversationStore = useConversationStore();
 const { conversation } = storeToRefs(conversationStore);
 
 watch(() => route.params.id, (id) => {
