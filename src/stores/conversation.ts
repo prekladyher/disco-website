@@ -19,7 +19,6 @@ export function defineConversation(data: ConversationType): ConversationModel {
   const linksById = new Map(entries.map(entry => {
     return (entry.outgoingLinks || []).map((link, idx) => ({
       id: `${entry.id}_${idx}`,
-      external: link.destinationConversationID !== id,
       ...link
     }));
   }).flat().map(link => [link.id, link]));

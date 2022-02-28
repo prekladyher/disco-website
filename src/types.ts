@@ -14,7 +14,9 @@ export interface ConversationType {
 export interface DialogueEntryType {
   id: number,
   fields: Record<string, any>,
+  conversationID: number,
   outgoingLinks?: DialogueLinkType[],
+  conditionsString: string,
   canvasRect: {
     x: number,
     y: number,
@@ -25,14 +27,12 @@ export interface DialogueEntryType {
 }
 
 export interface DialogueLinkType {
-  id?: string, // computed
   originConversationID: number,
   originDialogueID: number,
   destinationConversationID: number,
   destinationDialogueID: number,
   isConnector?: number,
-  priority?: number,
-  external?: boolean // computed
+  priority?: number
 }
 
 export interface ItemType {
