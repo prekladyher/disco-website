@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import DialogueGraph from "../components/DialogueGraph.vue";
+import DialogueGraph from "../components/DialogueGraph";
 import { useRoute } from "vue-router";
 import { watch } from "vue";
 import { useConversationStore } from "@/stores/conversation";

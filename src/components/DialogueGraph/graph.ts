@@ -1,5 +1,6 @@
-import type { ConversationModel } from "./stores/conversation";
-import type { DialogueEntryType } from "./types";
+import type { Edges, Layouts, Nodes } from "v-network-graph";
+import type { ConversationModel } from "../../stores/conversation";
+import type { DialogueEntryType } from "../../types";
 
 /**
  * Determine if the given dialogue entry should be visible in the graph.
@@ -53,4 +54,50 @@ export function resolveEdges(conversation: ConversationModel, originId: number):
     }
   }
   return paths;
+}
+
+export interface GraphModel {
+  nodes: Nodes,
+  edges: Edges,
+  layouts: Layouts
+}
+
+/**
+ * Define graph nodes and edges.
+ */
+export function defineGraph(conversation: ConversationModel): GraphModel {
+  const nodes: Nodes = {};
+  const edges: Edges = {};
+  for (let entry of conversation.entriesById.values()) {
+    if (!isEntryVisible(entry)) {
+      continue; // ignore invisible entries
+    }
+    nodes[entry.id] = {
+      name: entry.fields.Title || ("" + entry.id),
+      ...entry
+    };
+    for (let path of resolveEdges(conversation, entry.id)) {
+      edges[entry.id + "_" + path.map(it => it.id).join("_")] = {
+        source: "" + entry.id,
+        target: "" + path[path.length - 1].id,
+        path: path
+      };
+    }
+  }
+  
+  const layouts: Layouts = { nodes: {} };
+  for (let entry of conversation.entriesById.values()) {
+    let { x, y } = entry.canvasRect;
+    // Fix unpositionined (START) nodes
+    if (x === 0 && y === 0) {
+      const targets = resolveEdges(conversation, entry.id).map(path => path[path.length - 1]);
+      if (targets.length) {
+        x = Math.min(...targets.map(it => it.canvasRect.x)) - 300;
+        y = targets.map(it => it.canvasRect.y).reduce((acc, it) => acc + it) / targets.length;
+      }
+    }
+    layouts.nodes[entry.id] = { x, y };
+  };
+
+  return { nodes, edges, layouts };
 }
