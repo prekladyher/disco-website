@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import type { ConversationModel } from "@/stores/conversation";
 import { useDialogueGraphStore } from "@/stores/dialogueGraph";
+import type { DialogueEntryType } from "@/types";
 import { ref } from "@vue/reactivity";
 import { storeToRefs } from "pinia";
-import type { EventHandlers, Node, VNetworkGraphInstance } from "v-network-graph";
-import { watch, type PropType } from "vue";
+import type { EventHandlers, VNetworkGraphInstance } from "v-network-graph";
+import { reactive, watch, type PropType } from "vue";
 import DialogueGraphTooltip from "../DialogueGraphTooltip.vue";
 import { configs } from "./config";
 
@@ -23,15 +24,26 @@ watch(() => props.conversation, conversation => {
 const { debug, nodes, edges, layouts } = storeToRefs(dialogueGraphStore);
 
 const nodeGraph = ref<VNetworkGraphInstance>();
+const eventHandlers: EventHandlers = reactive({});
 
-const currentNode = ref<Node>();
-const eventHandlers: EventHandlers = {
-  "node:pointerover": event => {
-    currentNode.value = nodeGraph.value?.nodes[event.node];
-  },
-  "node:pointerout": _ => {
-    currentNode.value = undefined;
-  },
+const hoverEntries = ref<DialogueEntryType[]>([]);
+eventHandlers["node:pointerover"] = event => {
+  if (debug.value) {
+    const entry = props.conversation.entriesById.get(+event.node);
+    hoverEntries.value = entry ? [entry] : [];
+  }
+};
+eventHandlers["node:pointerout"] = event => {
+  hoverEntries.value = [];
+};
+eventHandlers["edge:pointerover"] = event => {
+  if (debug.value) {
+    const entryIds = event.edges[0].split("_").slice(1, -1);
+    hoverEntries.value = entryIds.map(id => props.conversation.entriesById.get(+id)) as DialogueEntryType[];
+  }
+};
+eventHandlers["edge:pointerout"] = event => {
+  hoverEntries.value = [];
 };
 </script>
 
@@ -43,8 +55,18 @@ const eventHandlers: EventHandlers = {
     :layouts="layouts"
     :edges="edges"
     :event-handlers="eventHandlers"
+  >
+    <template #edge-label="{ edge, ...slotProps }">
+      <v-edge-label
+        :text="edge.label"
+        v-bind="slotProps"
+      />
+    </template>
+  </v-network-graph>
+  <DialogueGraphTooltip
+    v-if="debug"
+    :entries="hoverEntries"
   />
-  <DialogueGraphTooltip v-if="debug" :node="currentNode" />
 </template>
 
 <style scoped>

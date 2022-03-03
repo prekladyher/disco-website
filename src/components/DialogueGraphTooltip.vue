@@ -1,18 +1,20 @@
 <script setup lang="ts">
+import type { DialogueEntryType } from "@/types";
 import { ref, watch } from "vue";
 
-const props = defineProps({
-  node: {
-    type: Object
-  }
-});
+const props = defineProps<{
+  entries: DialogueEntryType[]
+}>();
 
 const text = ref("");
 
-watch(() => props.node, node => {
-  text.value = node ?
-    JSON.stringify({ ...node, outgoingLinks: undefined }, null, "  ") :
-    "";
+watch(() => props.entries, entries => {
+  if (!entries.length) {
+    text.value = "";
+  } else {
+    const filtered = entries.map(it => ({ ...it, outgoingLinks: undefined }));
+    text.value = JSON.stringify(filtered, null, "  ");
+  }
 });
 </script>
 

@@ -1,6 +1,6 @@
 import type { DialogueEntryType } from "@/types";
 import { defineStore } from "pinia";
-import type { Edges, Layouts, Nodes } from "v-network-graph";
+import type { Edge, Edges, Layouts, Node, Nodes } from "v-network-graph";
 import type { ConversationModel } from "./conversation";
 
 /**
@@ -73,6 +73,7 @@ export function resolveEdges(conversation: ConversationModel, originId: number):
     };
     for (let path of resolveEdges(conversation, entry.id)) {
       edges[entry.id + "_" + path.map(it => it.id).join("_")] = {
+        label: "" + (path.length - 1 || ""),
         source: "" + entry.id,
         target: "" + path[path.length - 1].id,
         path: path
@@ -106,7 +107,8 @@ export const useDialogueGraphStore = defineStore({
       edges: {} as Edges,
       layouts: {
         nodes: {}
-      } as Layouts
+      } as Layouts,
+      selected: null as Node|Edge|null
     };
   },
   actions: {
@@ -114,6 +116,7 @@ export const useDialogueGraphStore = defineStore({
       Object.keys(this.nodes).forEach(id => delete this.nodes[id]);
       Object.keys(this.edges).forEach(id => delete this.edges[id]);
       Object.keys(this.layouts.nodes).forEach(id => delete this.layouts.nodes[id]);
+      this.selected = null;
       if (conversation) {
         const graphModel = defineGraph(conversation);
         Object.assign(this.nodes, graphModel.nodes);
