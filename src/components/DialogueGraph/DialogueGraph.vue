@@ -20,7 +20,8 @@ watch(() => props.conversation, conversation => {
   dialogueGraphStore.load(conversation);
 }, { immediate: true });
 
-const { nodes, edges, layouts } = storeToRefs(dialogueGraphStore);
+const { debug, nodes, edges, layouts } = storeToRefs(dialogueGraphStore);
+
 const nodeGraph = ref<VNetworkGraphInstance>();
 
 const currentNode = ref<Node>();
@@ -43,7 +44,7 @@ const eventHandlers: EventHandlers = {
     :edges="edges"
     :event-handlers="eventHandlers"
   />
-  <DialogueGraphTooltip :node="currentNode" />
+  <DialogueGraphTooltip v-if="debug" :node="currentNode" />
 </template>
 
 <style scoped>

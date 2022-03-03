@@ -101,6 +101,7 @@ export const useDialogueGraphStore = defineStore({
   id: "dialogueGraph",
   state: () => {
     return {
+      debug: false,
       nodes: {} as Nodes,
       edges: {} as Edges,
       layouts: {
