@@ -1,11 +1,12 @@
+import type { DialogueEntryType } from "@/types";
+import { defineStore } from "pinia";
 import type { Edges, Layouts, Nodes } from "v-network-graph";
-import type { ConversationModel } from "../../stores/conversation";
-import type { DialogueEntryType } from "../../types";
+import type { ConversationModel } from "./conversation";
 
 /**
  * Determine if the given dialogue entry should be visible in the graph.
  */
-export function isEntryVisible(entry: DialogueEntryType) {
+ export function isEntryVisible(entry: DialogueEntryType) {
   // Ignore untyped START input entries
   if (entry.fields.DialogueEntryType === undefined) {
     return entry.fields.Title !== "input";
@@ -56,16 +57,10 @@ export function resolveEdges(conversation: ConversationModel, originId: number):
   return paths;
 }
 
-export interface GraphModel {
-  nodes: Nodes,
-  edges: Edges,
-  layouts: Layouts
-}
-
 /**
  * Define graph nodes and edges.
  */
-export function defineGraph(conversation: ConversationModel): GraphModel {
+ export function defineGraph(conversation: ConversationModel) {
   const nodes: Nodes = {};
   const edges: Edges = {};
   for (let entry of conversation.entriesById.values()) {
@@ -101,3 +96,29 @@ export function defineGraph(conversation: ConversationModel): GraphModel {
 
   return { nodes, edges, layouts };
 }
+
+export const useDialogueGraphStore = defineStore({
+  id: "dialogueGraph",
+  state: () => {
+    return {
+      nodes: {} as Nodes,
+      edges: {} as Edges,
+      layouts: {
+        nodes: {}
+      } as Layouts
+    };
+  },
+  actions: {
+    load(conversation: ConversationModel) {
+      Object.keys(this.nodes).forEach(id => delete this.nodes[id]);
+      Object.keys(this.edges).forEach(id => delete this.edges[id]);
+      Object.keys(this.layouts.nodes).forEach(id => delete this.layouts.nodes[id]);
+      if (conversation) {
+        const graphModel = defineGraph(conversation);
+        Object.assign(this.nodes, graphModel.nodes);
+        Object.assign(this.edges, graphModel.edges);
+        Object.assign(this.layouts.nodes, graphModel.layouts.nodes);
+      }
+    }
+  }
+});

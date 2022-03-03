@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import type { VNetworkGraphInstance, EventHandlers, Node, UserConfigs, Nodes, Edges, Layouts } from "v-network-graph";
-import { ref } from "@vue/reactivity";
-import DialogueGraphTooltip from "../DialogueGraphTooltip.vue";
 import type { ConversationModel } from "@/stores/conversation";
-import { defineGraph, type GraphModel } from "./graph";
+import { useDialogueGraphStore } from "@/stores/dialogueGraph";
+import { ref } from "@vue/reactivity";
+import { storeToRefs } from "pinia";
+import type { EventHandlers, Node, VNetworkGraphInstance } from "v-network-graph";
+import { watch, type PropType } from "vue";
+import DialogueGraphTooltip from "../DialogueGraphTooltip.vue";
 import { configs } from "./config";
-import { reactive, watch, type PropType } from "vue";
 
 const props = defineProps({
   conversation: {
@@ -14,21 +15,12 @@ const props = defineProps({
   }
 });
 
-const nodes = reactive<Nodes>({});
-const edges = reactive<Edges>({});
-const layouts = reactive<Layouts>({ nodes: {} });
+const dialogueGraphStore = useDialogueGraphStore();
 watch(() => props.conversation, conversation => {
-  Object.keys(nodes).forEach(id => delete nodes[id]);
-  Object.keys(edges).forEach(id => delete edges[id]);
-  Object.keys(layouts.nodes).forEach(id => delete layouts.nodes[id]);
-  if (conversation) {
-    const graphModel = defineGraph(conversation);
-    Object.assign(nodes, graphModel.nodes);
-    Object.assign(edges, graphModel.edges);
-    Object.assign(layouts.nodes, graphModel.layouts.nodes);
-  }
+  dialogueGraphStore.load(conversation);
 }, { immediate: true });
 
+const { nodes, edges, layouts } = storeToRefs(dialogueGraphStore);
 const nodeGraph = ref<VNetworkGraphInstance>();
 
 const currentNode = ref<Node>();
