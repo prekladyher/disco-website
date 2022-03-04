@@ -11,10 +11,6 @@ import TheHeader from "./components/TheHeader.vue";
 @import "@/assets/base.css";
 @import "v-network-graph/lib/style.css";
 
-a {
-  color: #ff5252;
-}
-
 #app {
   display: grid;
   grid-template-columns: 1fr;
@@ -22,7 +18,7 @@ a {
   height: 100vh;
 }
 
-#app > main {
+#app > main.fixed {
   overflow: hidden;
 }
 </style>

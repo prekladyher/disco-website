@@ -4,7 +4,7 @@ import { useDialogueGraphStore } from "@/stores/dialogueGraph";
 import type { DialogueEntryType } from "@/types";
 import { ref } from "@vue/reactivity";
 import { storeToRefs } from "pinia";
-import type { EventHandlers, VNetworkGraphInstance } from "v-network-graph";
+import type { EventHandlers, FixablePosition, Node, Point, VNetworkGraphInstance } from "v-network-graph";
 import { reactive, watch, type PropType } from "vue";
 import DialogueGraphTooltip from "../DialogueGraphTooltip.vue";
 import { configs } from "./config";
@@ -27,29 +27,49 @@ const nodeGraph = ref<VNetworkGraphInstance>();
 const eventHandlers: EventHandlers = reactive({});
 
 const hoverEntries = ref<DialogueEntryType[]>([]);
-eventHandlers["node:pointerover"] = event => {
+eventHandlers["node:pointerover"] = ({ node }) => {
   if (debug.value) {
-    const entry = props.conversation.entriesById.get(+event.node);
+    const entry = props.conversation.entriesById.get(+node);
     hoverEntries.value = entry ? [entry] : [];
   }
 };
-eventHandlers["node:pointerout"] = event => {
+eventHandlers["node:pointerout"] = ({}) => {
   hoverEntries.value = [];
 };
-eventHandlers["edge:pointerover"] = event => {
+eventHandlers["edge:pointerover"] = ({ edges }) => {
   if (debug.value) {
-    const entryIds = event.edges[0].split("_").slice(1, -1);
+    const entryIds = edges[0].split("_").slice(1, -1);
     hoverEntries.value = entryIds.map(id => props.conversation.entriesById.get(+id)) as DialogueEntryType[];
   }
 };
-eventHandlers["edge:pointerout"] = event => {
+eventHandlers["edge:pointerout"] = ({}) => {
   hoverEntries.value = [];
+};
+
+const zoomLevel = ref(0.75)
+
+eventHandlers["node:click"] = ({ node }) => {
+  const graph = nodeGraph.value;
+  if (!graph || !graph.layouts?.nodes?.[node]) {
+    return;
+  }
+  const { x, y } = graph.layouts.nodes[node] as FixablePosition;
+  const sizes = graph.getSizes();
+  const focusPoint = graph.translateFromDomToSvgCoordinates({
+    x: sizes.width / 4,
+    y: sizes.height / 2
+  });
+  graph.panBy({
+    x: zoomLevel.value * (focusPoint.x - x),
+    y: zoomLevel.value * (focusPoint.y - y)
+  });
 };
 </script>
 
 <template>
   <v-network-graph
     ref="nodeGraph"
+    v-model:zoom-level="zoomLevel"
     :configs="configs"
     :nodes="nodes"
     :layouts="layouts"
