@@ -27,9 +27,8 @@ const NODE_STYLE: RecursivePartial<NodeConfig> = {
 export const configs = defineConfigs({
   view: {
     scalingObjects: true,
-    fit: true,
     minZoomLevel: 0.05,
-    maxZoomLevel: 3
+    maxZoomLevel: 3,
   },
   node: {
     selectable: 1,
@@ -45,9 +44,9 @@ export const configs = defineConfigs({
     },
     focusring: {
       visible: true,
-      width: 3,
+      width: 5,
       padding: 3,
-      color: "#da1a00",
+      color: "#ed1a00",
       dasharray: "4"
     },
     label: {
@@ -61,7 +60,7 @@ export const configs = defineConfigs({
       width: 3
     },
     selected: {
-      color: "#da1a00",
+      color: "#ed1a00",
       animate: true,
       animationSpeed: 10,
       width: 5

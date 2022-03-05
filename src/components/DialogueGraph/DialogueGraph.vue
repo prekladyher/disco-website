@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import type { ConversationModel } from "@/stores/conversation";
-import { useDialogueGraphStore } from "@/stores/dialogueGraph";
-import type { DialogueEntryType } from "@/types";
+import { findStartEntry, useDialogueGraphStore } from "@/stores/dialogueGraph";
 import { ref } from "@vue/reactivity";
 import { storeToRefs } from "pinia";
-import type { EventHandlers, FixablePosition, Node, Point, VNetworkGraphInstance } from "v-network-graph";
+import type { EventHandlers, VNetworkGraphInstance } from "v-network-graph";
 import { reactive, watch, type PropType } from "vue";
 import DialogueGraphTooltip from "../DialogueGraphTooltip.vue";
 import { configs } from "./config";
+import { useDebugTooltip } from "./debug";
+import { focusNodeAsync } from "./utils";
 
 const props = defineProps({
   conversation: {
@@ -17,59 +18,49 @@ const props = defineProps({
 });
 
 const dialogueGraphStore = useDialogueGraphStore();
-watch(() => props.conversation, conversation => {
-  dialogueGraphStore.load(conversation);
-}, { immediate: true });
-
-const { debug, nodes, edges, layouts } = storeToRefs(dialogueGraphStore);
+const { loading, debug, nodes, edges, layouts, zoomLevel } = storeToRefs(dialogueGraphStore);
 
 const nodeGraph = ref<VNetworkGraphInstance>();
 const eventHandlers: EventHandlers = reactive({});
 
-const hoverEntries = ref<DialogueEntryType[]>([]);
-eventHandlers["node:pointerover"] = ({ node }) => {
-  if (debug.value) {
-    const entry = props.conversation.entriesById.get(+node);
-    hoverEntries.value = entry ? [entry] : [];
-  }
+const { entries: hoverEntries, handlers: hoverHandlers } = useDebugTooltip();
+Object.assign(eventHandlers, hoverHandlers);
+
+const selectedNodes = ref<string[]>([]);
+const selectedEdges = ref<string[]>([]);
+
+eventHandlers["node:select"] = (ids) => {
+  dialogueGraphStore.focusNode(ids?.[0] || null);
 };
-eventHandlers["node:pointerout"] = ({}) => {
-  hoverEntries.value = [];
+eventHandlers["edge:select"] = (ids) => {
+  dialogueGraphStore.focusEdge(ids?.[0] || null);
 };
-eventHandlers["edge:pointerover"] = ({ edges }) => {
-  if (debug.value) {
-    const entryIds = edges[0].split("_").slice(1, -1);
-    hoverEntries.value = entryIds.map(id => props.conversation.entriesById.get(+id)) as DialogueEntryType[];
-  }
+eventHandlers["view:load"] = () => {
+  focusNodeAsync(nodeGraph.value, selectedNodes.value?.[0]);
 };
-eventHandlers["edge:pointerout"] = ({}) => {
-  hoverEntries.value = [];
+eventHandlers["view:pan"] = () => {
+  console.log("PAN");
 };
 
-const zoomLevel = ref(0.75)
-
-eventHandlers["node:click"] = ({ node }) => {
-  const graph = nodeGraph.value;
-  if (!graph || !graph.layouts?.nodes?.[node]) {
-    return;
+watch(props, async ({ conversation }) => {
+  loading.value = true;
+  dialogueGraphStore.loadConversation(conversation);
+  if (props.conversation) {
+    selectedNodes.value = ["" + findStartEntry(props.conversation).id];
+    selectedEdges.value = [];
   }
-  const { x, y } = graph.layouts.nodes[node] as FixablePosition;
-  const sizes = graph.getSizes();
-  const focusPoint = graph.translateFromDomToSvgCoordinates({
-    x: sizes.width / 4,
-    y: sizes.height / 2
-  });
-  graph.panBy({
-    x: zoomLevel.value * (focusPoint.x - x),
-    y: zoomLevel.value * (focusPoint.y - y)
-  });
-};
+  await focusNodeAsync(nodeGraph.value, selectedNodes.value?.[0]);
+  loading.value = false;
+}, { immediate: true });
 </script>
 
 <template>
   <v-network-graph
+    :class="{ loaded: !loading }"
     ref="nodeGraph"
     v-model:zoom-level="zoomLevel"
+    v-model:selected-nodes="selectedNodes"
+    v-model:selected-edges="selectedEdges"
     :configs="configs"
     :nodes="nodes"
     :layouts="layouts"

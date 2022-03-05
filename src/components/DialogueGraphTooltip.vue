@@ -8,7 +8,7 @@ const props = defineProps<{
 
 const text = ref("");
 
-watch(() => props.entries, entries => {
+watch(props, ({ entries }) => {
   if (!entries.length) {
     text.value = "";
   } else {

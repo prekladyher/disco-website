@@ -13,7 +13,7 @@ const { debug } = storeToRefs(useDialogueGraphStore());
   <header>
     <nav>
       <router-link to="/"><IconHome class="icon" /></router-link>
-      <div v-if="conversation" class="title">
+      <div v-if="conversation && !loading" class="title">
         {{ conversation.fields.Title }}
       </div>
       <div v-if="loading" class="loading">

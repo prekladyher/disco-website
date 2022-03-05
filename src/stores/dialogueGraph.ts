@@ -1,6 +1,6 @@
 import type { DialogueEntryType } from "@/types";
 import { defineStore } from "pinia";
-import type { Edge, Edges, Layouts, Node, Nodes } from "v-network-graph";
+import type { Edges, Layouts, Nodes } from "v-network-graph";
 import type { ConversationModel } from "./conversation";
 
 /**
@@ -98,31 +98,60 @@ export function resolveEdges(conversation: ConversationModel, originId: number):
   return { nodes, edges, layouts };
 }
 
+/**
+ * Find valid conversation start entry.
+ */
+export function findStartEntry(conversation: ConversationModel): DialogueEntryType {
+  const validStart = resolveEdges(conversation, 0).length > 0;
+  if (validStart || conversation.entriesById.size <= 2) {
+     // start node is valid or the only option
+    return conversation.entriesById.get(0) as DialogueEntryType;
+  }
+  // return leftmost entry
+  return Array.from(conversation.entriesById.values())
+    .filter(entry => entry.id !== 0 && isEntryVisible(entry))
+    .reduce((result, entry) => {
+      return result.canvasRect.x < entry.canvasRect.x ? result : entry;
+    });
+}
+
 export const useDialogueGraphStore = defineStore({
   id: "dialogueGraph",
   state: () => {
     return {
+      loading: false,
       debug: false,
       nodes: {} as Nodes,
       edges: {} as Edges,
       layouts: {
         nodes: {}
       } as Layouts,
-      selected: null as Node|Edge|null
+      zoomLevel: 0.75,
+      target: {
+        node: null as string|null,
+        edge: null as string|null
+      }
     };
   },
   actions: {
-    load(conversation: ConversationModel) {
+    loadConversation(conversation: ConversationModel) {
       Object.keys(this.nodes).forEach(id => delete this.nodes[id]);
       Object.keys(this.edges).forEach(id => delete this.edges[id]);
       Object.keys(this.layouts.nodes).forEach(id => delete this.layouts.nodes[id]);
-      this.selected = null;
+      this.target = { node: null, edge: null };
+      this.zoomLevel = 0.75;
       if (conversation) {
         const graphModel = defineGraph(conversation);
         Object.assign(this.nodes, graphModel.nodes);
         Object.assign(this.edges, graphModel.edges);
         Object.assign(this.layouts.nodes, graphModel.layouts.nodes);
       }
+    },
+    focusNode(target: string|null) {
+      this.target.node = target;
+    },
+    focusEdge(target: string|null) {
+      this.target.edge = target;
     }
   }
 });

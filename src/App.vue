@@ -21,4 +21,12 @@ import TheHeader from "./components/TheHeader.vue";
 #app > main.fixed {
   overflow: hidden;
 }
+
+.v-network-graph {
+  opacity: 0;
+}
+.v-network-graph.loaded {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
 </style>
