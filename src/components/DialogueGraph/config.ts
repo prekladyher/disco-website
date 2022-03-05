@@ -32,6 +32,7 @@ export const configs = defineConfigs({
   },
   node: {
     selectable: 1,
+    draggable: false,
     normal: {
       ...NODE_STYLE.normal
     },

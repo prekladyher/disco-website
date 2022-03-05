@@ -4,7 +4,6 @@ import type { FixablePosition, VNetworkGraphInstance } from "v-network-graph";
 import type { Ref } from "vue";
 
 export function focusNode(graph: VNetworkGraphInstance|undefined, id: string|undefined) {
-  console.log("FOCUSING", id);
   if (!graph || !id || !graph.layouts?.nodes?.[id]) {
     return;
   }

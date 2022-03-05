@@ -134,7 +134,7 @@ export const useDialogueGraphStore = defineStore({
     };
   },
   actions: {
-    loadConversation(conversation: ConversationModel) {
+    loadConversation(conversation?: ConversationModel) {
       Object.keys(this.nodes).forEach(id => delete this.nodes[id]);
       Object.keys(this.edges).forEach(id => delete this.edges[id]);
       Object.keys(this.layouts.nodes).forEach(id => delete this.layouts.nodes[id]);

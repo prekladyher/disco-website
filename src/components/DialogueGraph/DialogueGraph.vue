@@ -12,8 +12,7 @@ import { focusNodeAsync } from "./utils";
 
 const props = defineProps({
   conversation: {
-    type: Object as PropType<ConversationModel>,
-    required: true
+    type: Object as PropType<ConversationModel>
   }
 });
 
@@ -35,21 +34,15 @@ eventHandlers["node:select"] = (ids) => {
 eventHandlers["edge:select"] = (ids) => {
   dialogueGraphStore.focusEdge(ids?.[0] || null);
 };
-eventHandlers["view:load"] = () => {
-  focusNodeAsync(nodeGraph.value, selectedNodes.value?.[0]);
-};
-eventHandlers["view:pan"] = () => {
-  console.log("PAN");
-};
 
 watch(props, async ({ conversation }) => {
   loading.value = true;
   dialogueGraphStore.loadConversation(conversation);
-  if (props.conversation) {
-    selectedNodes.value = ["" + findStartEntry(props.conversation).id];
+  if (conversation) {
+    selectedNodes.value = ["" + findStartEntry(conversation).id];
     selectedEdges.value = [];
+    await focusNodeAsync(nodeGraph.value, selectedNodes.value?.[0]);
   }
-  await focusNodeAsync(nodeGraph.value, selectedNodes.value?.[0]);
   loading.value = false;
 }, { immediate: true });
 </script>

@@ -17,7 +17,7 @@ watch(() => route.params.id, (id) => {
 
 <template>
   <main class="fixed">
-    <DialogueGraph v-if="conversation" :conversation="conversation" />
+    <DialogueGraph :conversation="conversation" />
   </main>
 </template>
 

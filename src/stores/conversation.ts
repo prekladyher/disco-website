@@ -37,14 +37,14 @@ export const useConversationStore = defineStore({
   state: () => {
     return {
       loading: false,
-      conversation: null as ConversationModel|null
+      conversation: undefined as ConversationModel|undefined
     };
   },
   actions: {
     async load(id: number|null) {
       this.loading = true;
       try {
-        this.conversation = id ? await fetchConversation(id) : null;
+        this.conversation = id ? await fetchConversation(id) : undefined;
       } finally {
         this.loading = false
       }
