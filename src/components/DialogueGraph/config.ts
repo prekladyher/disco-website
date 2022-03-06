@@ -1,6 +1,5 @@
 import { defineConfigs, type Node, type NodeConfig } from "v-network-graph";
 import type { RecursivePartial } from "v-network-graph/lib/common/common";
-import type { SvgPanZoomInstance } from "v-network-graph/lib/modules/svg-pan-zoom-ex";
 
 function getNodeColor(node: any) {
   switch (node?.fields?.DialogueEntryType) {

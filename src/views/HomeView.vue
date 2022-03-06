@@ -7,21 +7,18 @@ const { database } = storeToRefs(useDatabaseStore());
 
 <template>
   <main>
-    <div class="list-wrapper">
-      <ul v-if="database">
-        <li v-for="[id, conversation] in database.conversationsById">
-          <router-link :to="`/conversations/${id}`">
-            {{id}} &ndash; {{ conversation.fields.Title }}
-          </router-link>
-        </li>
-      </ul>
-    </div>
+    <ul v-if="database">
+      <li v-for="[id, conversation] in database.conversationsById">
+        <router-link :to="`/conversations/${id}`">
+          {{id}} &ndash; {{ conversation.fields.Title }}
+        </router-link>
+      </li>
+    </ul>
   </main>
 </template>
 
 <style scoped>
-.list-wrapper {
-  max-height: 100%;
+main {
   overflow-y: scroll;
 }
 ul {

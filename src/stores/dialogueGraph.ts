@@ -128,8 +128,8 @@ export const useDialogueGraphStore = defineStore({
       } as Layouts,
       zoomLevel: 0.75,
       target: {
-        node: null as string|null,
-        edge: null as string|null
+        node: undefined as string|undefined,
+        edge: undefined as string|undefined
       }
     };
   },
@@ -138,7 +138,7 @@ export const useDialogueGraphStore = defineStore({
       Object.keys(this.nodes).forEach(id => delete this.nodes[id]);
       Object.keys(this.edges).forEach(id => delete this.edges[id]);
       Object.keys(this.layouts.nodes).forEach(id => delete this.layouts.nodes[id]);
-      this.target = { node: null, edge: null };
+      this.target = { node: undefined, edge: undefined };
       this.zoomLevel = 0.75;
       if (conversation) {
         const graphModel = defineGraph(conversation);
@@ -146,12 +146,6 @@ export const useDialogueGraphStore = defineStore({
         Object.assign(this.edges, graphModel.edges);
         Object.assign(this.layouts.nodes, graphModel.layouts.nodes);
       }
-    },
-    focusNode(target: string|null) {
-      this.target.node = target;
-    },
-    focusEdge(target: string|null) {
-      this.target.edge = target;
     }
   }
 });

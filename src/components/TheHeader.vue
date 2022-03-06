@@ -2,7 +2,6 @@
 import { useConversationStore } from "@/stores/conversation";
 import { useDialogueGraphStore } from "@/stores/dialogueGraph";
 import { storeToRefs } from "pinia";
-import { watch } from "vue";
 import IconHome from "./IconHome.vue";
 
 const { conversation, loading } = storeToRefs(useConversationStore());
@@ -39,6 +38,7 @@ nav {
   background: var(--vt-c-black-soft);
   color: var(--vt-c-white);
   height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
 }
 
 nav > * {

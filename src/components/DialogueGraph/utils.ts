@@ -1,7 +1,4 @@
-import { useConversationStore } from "@/stores/conversation";
-import { findStartEntry } from "@/stores/dialogueGraph";
 import type { FixablePosition, VNetworkGraphInstance } from "v-network-graph";
-import type { Ref } from "vue";
 
 export function focusNode(graph: VNetworkGraphInstance|undefined, id: string|undefined) {
   if (!graph || !id || !graph.layouts?.nodes?.[id]) {

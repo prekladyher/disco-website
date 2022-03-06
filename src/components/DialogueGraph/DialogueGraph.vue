@@ -4,10 +4,8 @@ import { findStartEntry, useDialogueGraphStore } from "@/stores/dialogueGraph";
 import { ref } from "@vue/reactivity";
 import { storeToRefs } from "pinia";
 import type { EventHandlers, VNetworkGraphInstance } from "v-network-graph";
-import { reactive, watch, type PropType } from "vue";
-import DialogueGraphTooltip from "../DialogueGraphTooltip.vue";
+import { reactive, toRaw, watch, type PropType } from "vue";
 import { configs } from "./config";
-import { useDebugTooltip } from "./debug";
 import { focusNodeAsync } from "./utils";
 
 const props = defineProps({
@@ -17,63 +15,65 @@ const props = defineProps({
 });
 
 const dialogueGraphStore = useDialogueGraphStore();
-const { loading, debug, nodes, edges, layouts, zoomLevel } = storeToRefs(dialogueGraphStore);
+const { loading, nodes, edges, layouts, zoomLevel } = storeToRefs(dialogueGraphStore);
 
 const nodeGraph = ref<VNetworkGraphInstance>();
-const eventHandlers: EventHandlers = reactive({});
-
-const { entries: hoverEntries, handlers: hoverHandlers } = useDebugTooltip();
-Object.assign(eventHandlers, hoverHandlers);
 
 const selectedNodes = ref<string[]>([]);
 const selectedEdges = ref<string[]>([]);
 
+const eventHandlers: EventHandlers = reactive({});
 eventHandlers["node:select"] = (ids) => {
-  dialogueGraphStore.focusNode(ids?.[0] || null);
+  dialogueGraphStore.target.node = ids?.[0];
 };
 eventHandlers["edge:select"] = (ids) => {
-  dialogueGraphStore.focusEdge(ids?.[0] || null);
+  dialogueGraphStore.target.edge = ids?.[0];
 };
 
-watch(props, async ({ conversation }) => {
+watch(() => props.conversation, async conversation => {
   loading.value = true;
+  selectedNodes.value = [];
+  selectedEdges.value = [];
   dialogueGraphStore.loadConversation(conversation);
   if (conversation) {
-    selectedNodes.value = ["" + findStartEntry(conversation).id];
+    const startEntry = findStartEntry(conversation);
+    await focusNodeAsync(nodeGraph.value, "" + startEntry.id);
+    selectedNodes.value = ["" + startEntry.id];
     selectedEdges.value = [];
-    await focusNodeAsync(nodeGraph.value, selectedNodes.value?.[0]);
   }
   loading.value = false;
 }, { immediate: true });
 </script>
 
 <template>
-  <v-network-graph
-    :class="{ loaded: !loading }"
-    ref="nodeGraph"
-    v-model:zoom-level="zoomLevel"
-    v-model:selected-nodes="selectedNodes"
-    v-model:selected-edges="selectedEdges"
-    :configs="configs"
-    :nodes="nodes"
-    :layouts="layouts"
-    :edges="edges"
-    :event-handlers="eventHandlers"
-  >
-    <template #edge-label="{ edge, ...slotProps }">
-      <v-edge-label
-        :text="edge.label"
-        v-bind="slotProps"
-      />
-    </template>
-  </v-network-graph>
-  <DialogueGraphTooltip
-    v-if="debug"
-    :entries="hoverEntries"
-  />
+  <section class="wrapper">
+    <v-network-graph
+      :class="{ loaded: !loading }"
+      ref="nodeGraph"
+      v-model:zoom-level="zoomLevel"
+      v-model:selected-nodes="selectedNodes"
+      v-model:selected-edges="selectedEdges"
+      :configs="configs"
+      :nodes="nodes"
+      :layouts="layouts"
+      :edges="edges"
+      :event-handlers="eventHandlers"
+    >
+      <template #edge-label="{ edge, ...slotProps }">
+        <v-edge-label
+          :text="edge.label"
+          v-bind="slotProps"
+        />
+      </template>
+    </v-network-graph>
+  </section>
 </template>
 
 <style scoped>
+.wrapper {
+  min-height: 180px;
+  overflow: hidden;
+}
 .tooltip {
   position: absolute;
   background: rgba(255, 255, 255, 0.9);

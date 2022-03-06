@@ -29,10 +29,9 @@ export function fetchDatabase(): Promise<DialogueDatabase> {
 export const useDatabaseStore = defineStore({
   id: "database",
   state: () => {
-    const loading = ref(false);
     const database = ref<DialogueDatabase|null>(null);
 
-    fetchDatabase().then(result => {
+    const loading = fetchDatabase().then(result => {
       database.value = result;
     });
 
@@ -42,4 +41,3 @@ export const useDatabaseStore = defineStore({
     };
   }
 });
-

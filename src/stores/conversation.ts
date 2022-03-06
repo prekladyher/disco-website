@@ -41,7 +41,7 @@ export const useConversationStore = defineStore({
     };
   },
   actions: {
-    async load(id: number|null) {
+    async loadConversation(id: number|null) {
       this.loading = true;
       try {
         this.conversation = id ? await fetchConversation(id) : undefined;
