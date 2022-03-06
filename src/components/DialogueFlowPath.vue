@@ -32,7 +32,7 @@ watch(() => props.path, path => {
 .path-entry {
   border: 1px solid #222;
   padding: 4px 3px;
-  margin-top: 5px;
+  flex: 1;
 }
 .steps {
   line-height: 1;

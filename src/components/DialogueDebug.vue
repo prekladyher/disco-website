@@ -19,7 +19,6 @@ function renderText(entryIds: string[]): string {
     .map(id => conversation.entriesById.get(+id))
     .filter(entry => !!entry) as DialogueEntryType[];
   return entries
-    .map(it => ({ ...it, outgoingLinks: undefined }))
     .map(it => JSON.stringify(it, null, "  "))
     .join("\n");
 }

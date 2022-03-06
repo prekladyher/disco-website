@@ -28,6 +28,7 @@ export const configs = defineConfigs({
     scalingObjects: true,
     minZoomLevel: 0.05,
     maxZoomLevel: 3,
+    doubleClickZoomEnabled: false
   },
   node: {
     selectable: 1,

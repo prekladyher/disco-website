@@ -4,9 +4,11 @@ import { useDialogueGraphStore } from "@/stores/dialogueGraph";
 import type { DialogueEntryType } from "@/types";
 import { storeToRefs } from "pinia";
 import { ref, watch } from "vue";
+import { useRoute } from "vue-router";
 import DialogueFlowEntry from "../DialogueFlowEntry.vue";
 import DialogueFlowPath from "../DialogueFlowPath.vue";
-import type { DialoguePathType } from "./types";
+import IconNext from "../IconNext.vue";
+import type { DialoguePathType, DialogueStepType } from "./types";
 import { resolvePaths } from "./utils";
 
 const { conversation } = storeToRefs(useConversationStore());
@@ -32,13 +34,27 @@ function updateFlow() {
   }
 }
 
+const route = useRoute();
+function createLink(step: DialogueStepType) {
+  return {
+    name: "conversation",
+    params: {
+      id: step.link.conversationId
+    },
+    query: {
+      entryId: step.link.entryId
+    }
+  }
+}
+
 watch(target, updateFlow, { deep: true });
 </script>
 
 <template>
   <section class="dialogue-flow">
     <DialogueFlowEntry v-if="entry" :entry="entry" />
-    <div v-for="path in paths">
+    <div v-for="path in paths" class="flow-path">
+      <router-link :to="createLink(path.destination)" class="flow-next"><IconNext /></router-link>
       <DialogueFlowPath :path="path" />
     </div>
   </section>
@@ -47,5 +63,20 @@ watch(target, updateFlow, { deep: true });
 <style scoped>
 .dialogue-flow {
   padding: 10px;
+}
+.flow-path {
+  display: flex;
+  margin-top: 5px;
+  gap: 5px;
+}
+.flow-next {
+  background: #4978aa;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.flow-next:hover {
+  background: #6892be;
 }
 </style>

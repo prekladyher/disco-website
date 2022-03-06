@@ -10,6 +10,7 @@ const router = createRouter({
       component: HomeView
     },
     {
+      name: "conversation",
       path: "/conversations/:id(\\d+)",
       component: ConversationView
     }

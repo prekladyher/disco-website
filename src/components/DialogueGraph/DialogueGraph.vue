@@ -4,7 +4,8 @@ import { findStartEntry, useDialogueGraphStore } from "@/stores/dialogueGraph";
 import { ref } from "@vue/reactivity";
 import { storeToRefs } from "pinia";
 import type { EventHandlers, VNetworkGraphInstance } from "v-network-graph";
-import { reactive, toRaw, watch, type PropType } from "vue";
+import { reactive, watch, type PropType } from "vue";
+import { useRouter } from "vue-router";
 import { configs } from "./config";
 import { focusNodeAsync } from "./utils";
 
@@ -30,19 +31,33 @@ eventHandlers["edge:select"] = (ids) => {
   dialogueGraphStore.target.edge = ids?.[0];
 };
 
+const router = useRouter();
+async function gotoNode(id: string) {
+  await focusNodeAsync(nodeGraph.value, "" + id);
+  selectedNodes.value = ["" + id];
+  selectedEdges.value = [];
+}
+
 watch(() => props.conversation, async conversation => {
   loading.value = true;
   selectedNodes.value = [];
   selectedEdges.value = [];
   dialogueGraphStore.loadConversation(conversation);
   if (conversation) {
-    const startEntry = findStartEntry(conversation);
-    await focusNodeAsync(nodeGraph.value, "" + startEntry.id);
-    selectedNodes.value = ["" + startEntry.id];
-    selectedEdges.value = [];
+    let focusId = router.currentRoute.value.query.entryId;
+    if (typeof focusId !== "string" || !nodes.value[focusId]) {
+      focusId = "" + findStartEntry(conversation).id;
+    }
+    await gotoNode(focusId); 
   }
   loading.value = false;
 }, { immediate: true });
+
+watch(() => router.currentRoute.value.query.entryId, async entryId => {
+  if (typeof entryId === "string" && nodes.value[entryId]) {
+    await gotoNode(entryId);
+  }
+});
 </script>
 
 <template>
