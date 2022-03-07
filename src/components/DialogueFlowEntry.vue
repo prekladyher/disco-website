@@ -23,10 +23,10 @@ watch(() => props.entry, entry => {
     </div>
     <div class="content">
       <div class="steps">
-        <code class="badge badge-priority" title="priority">
+        <code class="badge badge-priority" title="entry priority">
           {{ entry.conditionPriority }}
         </code>
-        <code v-if="entry.conditionsString" class="badge badge-condition" title="condition">
+        <code v-if="entry.conditionsString" class="badge badge-condition" title="entry condition">
           {{ entry.conditionsString }}
         </code>
         <!-- annotation type entry -->
@@ -38,12 +38,26 @@ watch(() => props.entry, entry => {
         </code>
         <!-- /annotation type entry -->
       </div>
-      <div v-if="entry.fields['Dialogue Text']" class="entry-text">
+      <div v-if="entry.fields['Dialogue Text']" class="entry-text" tooltip="dialogue text">
         {{ entry.fields['Dialogue Text'] }}
       </div>
       <div v-if="entry.fields.DialogueEntryType !== 'DialogueFragment'" class="badge" title="title">
         {{ entry.fields.Title }}
       </div>
+      <!-- alternate text -->
+      <template v-for="idx in [1, 2, 3, 4]">
+        <div v-if="entry.fields?.['Alternate' + idx]" class="alternate">
+          <div class="steps">
+            <code class="badge badge-condition" title="alternate condition">
+              {{ entry.fields?.['Condition' + idx] }}
+            </code>
+          </div>
+          <div class="entry-text" title="alternate text">
+            {{ entry.fields?.['Alternate' + idx] }}
+          </div>
+        </div>
+      </template>
+      <!-- /alternate text -->
       <code v-if="entry.userScript" class="badge badge-script" title="script">
         {{ entry.userScript }}
       </code>
@@ -63,7 +77,7 @@ watch(() => props.entry, entry => {
   flex-basis: 12rem;
   align-self: stretch;
   padding: 0 5px;
-  background: #222;
+  background: #222222;
   border-radius: 5px
 }
 .actor {
@@ -72,6 +86,13 @@ watch(() => props.entry, entry => {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 3px;
+}
+
+.alternate {
   display: flex;
   flex-direction: column;
   gap: 3px;
