@@ -48,7 +48,7 @@ watch(() => props.conversation, async conversation => {
     if (typeof focusId !== "string" || !nodes.value[focusId]) {
       focusId = "" + findStartEntry(conversation).id;
     }
-    await gotoNode(focusId); 
+    await gotoNode(focusId);
   }
   loading.value = false;
 }, { immediate: true });

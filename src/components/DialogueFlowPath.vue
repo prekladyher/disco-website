@@ -17,36 +17,33 @@ watch(() => props.path, path => {
 
 <template>
   <div class="path-entry">
-    <div class="steps" v-if="path.steps.length">
-      <div v-for="step in path.steps">
-        <code class="code">
-          {{ step.entry?.fields.Title }}
+    <div v-if="path.steps.length" class="steps">
+      <code v-if="path.steps.length" class="badge badge-priority" title="priority">
+        {{ path.steps[0]?.entry?.conditionPriority }}
+      </code>
+      <template v-for="step in path.steps">
+        <code v-if="step.entry?.conditionsString" class="badge badge-condition" title="condition">
+          {{ step.entry?.conditionsString }}
         </code>
-      </div>
+        <code v-if="step.entry?.userScript" class="badge badge-script" title="script">
+          {{ step.entry?.userScript }}
+        </code>
+      </template>
     </div>
     <DialogueFlowEntry v-if="path.destination.entry" :entry="path.destination.entry" />
   </div>
 </template>
 
 <style scoped>
+@import "@/assets/flow.css";
+
 .path-entry {
   border: 1px solid #222;
   padding: 4px 3px;
   flex: 1;
 }
-.steps {
-  line-height: 1;
-  font-size: 12px;
-  display: flex;
-  margin-bottom: 4px;
-  flex-wrap: wrap;
-  gap: 3px;
-}
-.code {
-  font-size: 12px;
-  background: black;
-  line-height: 16px;
-  padding: 2px 5px;
-  border-radius: 4px;
+
+.path-entry > .steps {
+  margin-bottom: 3px;
 }
 </style>

@@ -19,26 +19,41 @@ watch(() => props.entry, entry => {
 <template>
   <div class="flow-entry">
     <div class="header">
-      <span v-if="actor" class="actor">{{ actor?.fields.Name }}</span>
+      <span v-if="actor" class="actor" :title="actor?.fields?.Description">{{ actor?.fields.Name }}</span>
     </div>
     <div class="content">
       <div class="steps">
-        <code class="code">
+        <code class="badge badge-priority" title="priority">
           {{ entry.conditionPriority }}
         </code>
-        <code class="code" v-if="entry.conditionsString">{{ entry.conditionsString }}</code>
+        <code v-if="entry.conditionsString" class="badge badge-condition" title="condition">
+          {{ entry.conditionsString }}
+        </code>
+        <!-- annotation type entry -->
+        <code v-if="entry.fields?.annotation_title" class="badge" title="annotation title">
+          {{ entry.fields?.annotation_title }}
+        </code>
+        <code v-if="entry.fields?.annotation_text" class="badge" title="annotation text">
+          {{ entry.fields?.annotation_text }}
+        </code>
+        <!-- /annotation type entry -->
       </div>
-      <div class="text" v-if="entry.fields['Dialogue Text']">
+      <div v-if="entry.fields['Dialogue Text']" class="entry-text">
         {{ entry.fields['Dialogue Text'] }}
       </div>
-      <div class="code" v-if="entry.fields.DialogueEntryType !== 'DialogueFragment'">
+      <div v-if="entry.fields.DialogueEntryType !== 'DialogueFragment'" class="badge" title="title">
         {{ entry.fields.Title }}
       </div>
+      <code v-if="entry.userScript" class="badge badge-script" title="script">
+        {{ entry.userScript }}
+      </code>
     </div>
   </div>
 </template>
 
 <style scoped>
+@import "@/assets/flow.css";
+
 .flow-entry {
   display: flex;
   gap: 3px;
@@ -56,24 +71,9 @@ watch(() => props.entry, entry => {
   color: #f4af04;
 }
 
-.steps {
+.content {
   display: flex;
-  gap: 3px 3px;
-}
-.content > * + * {
-  margin-top: 3px;
-}
-.code {
-  font-size: 12px;
-  background: black;
-  line-height: 16px;
-  padding: 2px 5px;
-  border-radius: 4px;
-}
-.text {
-  background: #222;
-  border-radius: 5px;
-  font-style: italic;
-  padding: 2px 5px 4px 5px;
+  flex-direction: column;
+  gap: 3px;
 }
 </style>
