@@ -48,7 +48,7 @@ function defineNode(entry: DialogueEntryType): NodeType {
  * Define graph edges from the given dialogue entry.
  */
 function defineEdges(conversation: ConversationModel, entry: DialogueEntryType, origin: DialogueEntryType): Record<string, EdgeType> {
-  if (!entry.outgoingLinks) {
+  if (!entry.outgoingLinks || entry.fields?.DialogueEntryType === "Jump") {
     return {};
   }
   // Resolve child output links
