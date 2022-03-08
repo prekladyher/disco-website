@@ -2,7 +2,7 @@ import { defineConfigs, type Node, type NodeConfig } from "v-network-graph";
 import type { RecursivePartial } from "v-network-graph/lib/common/common";
 
 function getNodeColor(node: any) {
-  switch (node?.fields?.DialogueEntryType) {
+  switch (node.type) {
     case "Hub": return "#333333";
     case "DialogueFragment": return "#44aa66";
     case "Fork": return "#666666";
@@ -14,7 +14,7 @@ function getNodeColor(node: any) {
 
 const NODE_STYLE: RecursivePartial<NodeConfig> = {
   normal: {
-    type: (node: Node) => node?.fields?.DialogueEntryType ? "rect" : "circle",
+    type: (node: Node) => node.type ? "rect" : "circle",
     radius: 35,
     width: 70,
     height: 70,
@@ -47,8 +47,7 @@ export const configs = defineConfigs({
       visible: true,
       width: 5,
       padding: 3,
-      color: "#ed1a00",
-      dasharray: "4"
+      color: "#ed1a00"
     },
     label: {
       fontSize: 15

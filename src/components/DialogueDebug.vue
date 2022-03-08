@@ -1,51 +1,22 @@
 <script setup lang="ts">
 import { useConversationStore } from "@/stores/conversation";
-import { useDialogueGraphStore } from "@/stores/dialogueGraph";
-import type { DialogueEntryType } from "@/types";
 import { storeToRefs } from "pinia";
 import { ref, watch } from "vue";
 
-const conversationStore = useConversationStore();
-const { debug, target } = storeToRefs(useDialogueGraphStore());
+const { debug, currentEntry } = storeToRefs(useConversationStore());
 
 const debugText = ref("");
 
-function renderText(entryIds: string[]): string {
-  const conversation = conversationStore.conversation;
-  if (!conversation) {
-    return "";
-  }
-  const entries = entryIds
-    .map(id => conversation.entriesById.get(+id))
-    .filter(entry => !!entry) as DialogueEntryType[];
-  return entries
-    .map(it => JSON.stringify(it, null, "  "))
-    .join("\n");
-}
-
-function updateText() {
-  const { node, edge } = target.value;
-  if (node) {
-    debugText.value = renderText([node]);
-  } else if (edge) {
-    debugText.value = renderText(edge.split("_").slice(1, -1));
-  } else {
+function updateText(){
+  if (!currentEntry.value || !debug.value) {
     debugText.value = "";
+  } else {
+    debugText.value = JSON.stringify(currentEntry.value, null, "  ");
   }
 }
 
-watch(target, () => {
-  if (debug.value) {
-    updateText();
-  }
-}, { deep: true });
-watch(debug, (debug) => {
-  if (debug) {
-    updateText();
-  } else {
-    debugText.value = "";
-  }
-}, { immediate: true });
+watch(currentEntry, updateText);
+watch(debug, updateText, { immediate: true });
 </script>
 
 <template>

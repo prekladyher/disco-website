@@ -1,118 +1,120 @@
-import type { DialogueEntryType } from "@/types";
+import type { DialogueEntryType, DialogueLinkType } from "@/types";
 import { defineStore } from "pinia";
-import type { Edges, Layouts, Nodes } from "v-network-graph";
+import type { Layouts } from "v-network-graph";
 import type { ConversationModel } from "./conversation";
 
-/**
- * Determine if the given dialogue entry should be visible in the graph.
- */
- export function isEntryVisible(entry: DialogueEntryType) {
-  // Ignore untyped START input entries
-  if (entry.fields.DialogueEntryType === undefined) {
-    return entry.fields.Title !== "input";
-  }
-  // Always show terminal entries
-  if (!entry.outgoingLinks) {
-    return true;
-  }
-  // Render entries with external links
-  if (entry.outgoingLinks.some(link => link.originConversationID !== link.destinationConversationID)) {
-    return true;
-  }
-  // Ignore internal FORK conditions
-  return (entry.fields.DialogueEntryType !== "Fork" || !entry.conditionsString);
+export interface NodeType {
+  id: string,
+  type: string,
+  name: string,
+  parent: boolean,
+  external: boolean
+}
+
+export interface EdgeType {
+  id: string,
+  source: string,
+  target: string
+}
+
+function isParentEntry(entry: DialogueEntryType): boolean {
+  return entry.id === 0 || entry.fields?.DialogueEntryType === "Fork" && entry.fields?.InputId;
+}
+
+function isChildEntry(entry: DialogueEntryType): boolean {
+  return entry.id === 1 && entry.fields?.Title === "input"
+    || entry.fields?.DialogueEntryType === "Fork" && !entry.fields?.InputId;
+}
+
+function isInternalLink(link: DialogueLinkType): boolean {
+  return link.destinationConversationID === link.originConversationID;
 }
 
 /**
- * Resolve graph edges from the given dialogue entry.
+ * Define graph node based on the given dialogue entry.
  */
-export function resolveEdges(conversation: ConversationModel, originId: number): DialogueEntryType[][] {
-  const origin = conversation.entriesById.get(originId);
-  if (!origin?.outgoingLinks) {
-    return []; // No outgoing links defined
+function defineNode(entry: DialogueEntryType): NodeType {
+  const fields = entry.fields;
+  return {
+    id: "" + entry.id,
+    type: fields.DialogueEntryType,
+    name: fields.Title || fields.annotation_title || fields.annotation_text || "",
+    parent: isParentEntry(entry),
+    external: entry.outgoingLinks?.some(it => it.destinationConversationID !== entry.conversationID) || false
+  };
+}
+
+/**
+ * Define graph edges from the given dialogue entry.
+ */
+function defineEdges(conversation: ConversationModel, entry: DialogueEntryType, origin: DialogueEntryType): Record<string, EdgeType> {
+  if (!entry.outgoingLinks) {
+    return {};
   }
-  if (origin.fields.DialogueEntryType === "Jump") {
-    return []; // JUMP links are not rendered
+  // Resolve child output links
+  if (isParentEntry(entry)) {
+    const edges = entry.outgoingLinks
+      .filter(isInternalLink)
+      .map(link => conversation.entriesById.get(link.destinationDialogueID))
+      .map(output => output ? defineEdges(conversation, output, entry) : {});
+    return Object.assign({}, ...edges);
   }
-  const paths: DialogueEntryType[][] = [];
-  for (let link of origin.outgoingLinks) {
-    // External links can not be represented as edges
-    if (link.originConversationID !== link.destinationConversationID) {
-      continue;
-    }
-    // Get destination dialogue entry
-    const destination = conversation.entriesById.get(link.destinationDialogueID);
-    if (!destination) {
-      throw new Error(`Invalid link destination: ${JSON.stringify(link)}`);
-    }
-    // Resolve paths through invisible entries
-    if (!isEntryVisible(destination)) {
-      for (let subpath of resolveEdges(conversation, destination.id)) {
-        paths.push([destination, ...subpath]);
-      }
-    } else {
-      paths.push([destination]);
-    }
+  // Resolve standard entry
+  const edges = entry.outgoingLinks.map((link, idx) => ({ idx, link }))
+    .filter(({ link }) => isInternalLink(link))
+    .map(({ idx, link }) => {
+      return {
+        id: link.originDialogueID + "_" + idx,
+        source: "" + origin.id,
+        target: "" + link.destinationDialogueID
+      };
+    });
+  return Object.fromEntries(edges.map(edge => [edge.id, edge]));
+}
+
+function fixStartPosition(conversation: ConversationModel) {
+  const targets = conversation.entriesById.get(1)?.outgoingLinks
+    ?.filter(isInternalLink)
+    ?.map(link => conversation.entriesById.get(link.destinationDialogueID))
+    ?.filter((entry): entry is DialogueEntryType => !!entry) || [];
+  if (!targets.length) {
+    return { x: 0, y: 0 };
   }
-  return paths;
+  const x = Math.min(...targets.map(it => it.canvasRect.x)) - 300;
+  const y = targets.map(it => it.canvasRect.y).reduce((acc, it) => acc + it) / targets.length;
+  return { x, y };
 }
 
 /**
  * Define graph nodes and edges.
  */
  export function defineGraph(conversation: ConversationModel) {
-  const nodes: Nodes = {};
-  const edges: Edges = {};
-  for (let entry of conversation.entriesById.values()) {
-    if (!isEntryVisible(entry)) {
-      continue; // ignore invisible entries
-    }
-    nodes[entry.id] = {
-      name: entry.fields.Title || ("" + entry.id),
-      ...entry
-    };
-    for (let path of resolveEdges(conversation, entry.id)) {
-      edges[entry.id + "_" + path.map(it => it.id).join("_")] = {
-        label: "" + (path.length - 1 || ""),
-        source: "" + entry.id,
-        target: "" + path[path.length - 1].id,
-        path: path
-      };
-    }
-  }
-  
+  const nodes: Record<string, NodeType> = {};
+  const edges: Record<string, EdgeType> = {};
+
+  // Get valid entries for nodes
+  const entries = Array.from(conversation.entriesById.values())
+    .filter(entry => !isChildEntry(entry));
+
+  // Define nodes and edges
+  entries.forEach(entry => {
+    nodes[entry.id] = defineNode(entry);
+    Object.assign(edges, defineEdges(conversation, entry, entry));
+  });
+
+  // Define node positions
   const layouts: Layouts = { nodes: {} };
-  for (let entry of conversation.entriesById.values()) {
-    let { x, y } = entry.canvasRect;
-    // Fix unpositionined (START) nodes
-    if (x === 0 && y === 0) {
-      const targets = resolveEdges(conversation, entry.id).map(path => path[path.length - 1]);
-      if (targets.length) {
-        x = Math.min(...targets.map(it => it.canvasRect.x)) - 300;
-        y = targets.map(it => it.canvasRect.y).reduce((acc, it) => acc + it) / targets.length;
-      }
+  entries.forEach(entry => {
+    let position = {
+      x: entry.canvasRect.x,
+      y: entry.canvasRect.y
+    };
+    if (entry.id === 0 && position.x === 0 && position.y === 0) {
+      position = { ...fixStartPosition(conversation) };
     }
-    layouts.nodes[entry.id] = { x, y };
-  };
-
+    layouts.nodes[entry.id] = position;
+  });
   return { nodes, edges, layouts };
-}
-
-/**
- * Find valid conversation start entry.
- */
-export function findStartEntry(conversation: ConversationModel): DialogueEntryType {
-  const validStart = resolveEdges(conversation, 0).length > 0;
-  if (validStart || conversation.entriesById.size <= 2) {
-     // start node is valid or the only option
-    return conversation.entriesById.get(0) as DialogueEntryType;
-  }
-  // return leftmost entry
-  return Array.from(conversation.entriesById.values())
-    .filter(entry => entry.id !== 0 && isEntryVisible(entry))
-    .reduce((result, entry) => {
-      return result.canvasRect.x < entry.canvasRect.x ? result : entry;
-    });
 }
 
 export const useDialogueGraphStore = defineStore({
@@ -120,17 +122,12 @@ export const useDialogueGraphStore = defineStore({
   state: () => {
     return {
       loading: false,
-      debug: false,
-      nodes: {} as Nodes,
-      edges: {} as Edges,
+      nodes: {} as Record<string, NodeType>,
+      edges: {} as Record<string, EdgeType>,
       layouts: {
         nodes: {}
       } as Layouts,
-      zoomLevel: 0.75,
-      target: {
-        node: undefined as string|undefined,
-        edge: undefined as string|undefined
-      }
+      zoomLevel: 0.75
     };
   },
   actions: {
@@ -138,7 +135,6 @@ export const useDialogueGraphStore = defineStore({
       Object.keys(this.nodes).forEach(id => delete this.nodes[id]);
       Object.keys(this.edges).forEach(id => delete this.edges[id]);
       Object.keys(this.layouts.nodes).forEach(id => delete this.layouts.nodes[id]);
-      this.target = { node: undefined, edge: undefined };
       this.zoomLevel = 0.75;
       if (conversation) {
         const graphModel = defineGraph(conversation);

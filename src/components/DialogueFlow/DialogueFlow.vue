@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useConversationStore } from "@/stores/conversation";
-import { useDialogueGraphStore } from "@/stores/dialogueGraph";
 import type { DialogueEntryType } from "@/types";
 import { storeToRefs } from "pinia";
 import { ref, watch } from "vue";
@@ -11,28 +10,10 @@ import IconNext from "../IconNext.vue";
 import type { DialoguePathType, DialogueStepType } from "./types";
 import { resolvePaths } from "./utils";
 
-const { conversation } = storeToRefs(useConversationStore());
-const { target } = storeToRefs(useDialogueGraphStore());
+const { conversation, currentEntry } = storeToRefs(useConversationStore());
 
 const entry = ref<DialogueEntryType>();
 const paths = ref<DialoguePathType[]>([]);
-
-function updateFlow() {
-  const { node, edge } = target.value;
-  if (!node && !edge || !conversation.value) {
-    entry.value = undefined;
-    paths.value = [];
-  } else {
-    if (node) {
-      entry.value = conversation.value?.entriesById.get(+node);
-    } else if (edge) {
-      entry.value = conversation.value?.entriesById.get(+edge.split("_")[1]);
-    }
-    if (entry.value) {
-      paths.value = resolvePaths(conversation.value, entry.value.id);
-    }
-  }
-}
 
 const route = useRoute();
 function createLink(step: DialogueStepType) {
@@ -47,7 +28,14 @@ function createLink(step: DialogueStepType) {
   }
 }
 
-watch(target, updateFlow, { deep: true });
+watch(currentEntry, () => {
+  entry.value = currentEntry.value;
+  if (conversation.value && entry.value) {
+    paths.value = resolvePaths(conversation.value, entry.value.id);
+  } else {
+    paths.value = [];
+  }
+});
 </script>
 
 <template>

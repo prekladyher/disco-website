@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import type { ConversationModel } from "@/stores/conversation";
-import { findStartEntry, useDialogueGraphStore } from "@/stores/dialogueGraph";
+import { useDialogueGraphStore } from "@/stores/dialogueGraph";
 import { ref } from "@vue/reactivity";
 import { storeToRefs } from "pinia";
 import type { EventHandlers, VNetworkGraphInstance } from "v-network-graph";
 import { reactive, watch, type PropType } from "vue";
 import { useRouter } from "vue-router";
 import { configs } from "./config";
-import { focusNodeAsync } from "./utils";
+import { focusNodeAsync, updateCurrentEntry } from "./utils";
 
 const props = defineProps({
   conversation: {
@@ -24,17 +24,13 @@ const selectedNodes = ref<string[]>([]);
 const selectedEdges = ref<string[]>([]);
 
 const eventHandlers: EventHandlers = reactive({});
-eventHandlers["node:select"] = (ids) => {
-  dialogueGraphStore.target.node = ids?.[0];
-};
-eventHandlers["edge:select"] = (ids) => {
-  dialogueGraphStore.target.edge = ids?.[0];
-};
+eventHandlers["node:select"] = () => updateCurrentEntry(selectedNodes, selectedEdges);
+eventHandlers["edge:select"] = () => updateCurrentEntry(selectedNodes, selectedEdges);
 
 const router = useRouter();
 async function gotoNode(id: string) {
-  await focusNodeAsync(nodeGraph.value, "" + id);
-  selectedNodes.value = ["" + id];
+  await focusNodeAsync(nodeGraph.value, id);
+  selectedNodes.value = [id];
   selectedEdges.value = [];
 }
 
@@ -43,13 +39,11 @@ watch(() => props.conversation, async conversation => {
   selectedNodes.value = [];
   selectedEdges.value = [];
   dialogueGraphStore.loadConversation(conversation);
-  if (conversation) {
-    let focusId = router.currentRoute.value.query.entryId;
-    if (typeof focusId !== "string" || !nodes.value[focusId]) {
-      focusId = "" + findStartEntry(conversation).id;
-    }
+  const focusId = router.currentRoute.value.query.entryId;
+  if (typeof focusId === "string" && nodes.value[focusId]) {
     await gotoNode(focusId);
   }
+
   loading.value = false;
 }, { immediate: true });
 
@@ -88,12 +82,5 @@ watch(() => router.currentRoute.value.query.entryId, async entryId => {
 .wrapper {
   min-height: 180px;
   overflow: hidden;
-}
-.tooltip {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 5px;
-  border: 1px solid black;
-  font-size: 12px;
 }
 </style>

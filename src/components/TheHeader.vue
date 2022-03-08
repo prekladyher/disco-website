@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import { useConversationStore } from "@/stores/conversation";
-import { useDialogueGraphStore } from "@/stores/dialogueGraph";
 import { storeToRefs } from "pinia";
 import IconHome from "./IconHome.vue";
 
 const { conversation, loading } = storeToRefs(useConversationStore());
-const { debug } = storeToRefs(useDialogueGraphStore());
+const { debug } = storeToRefs(useConversationStore());
 </script>
 
 <template>
