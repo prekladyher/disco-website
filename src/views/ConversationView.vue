@@ -6,7 +6,7 @@ import { watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import DialogueDebug from "../components/DialogueDebug.vue";
 import DialogueGraph from "../components/DialogueGraph";
-import DialoguePane from "../components/DialoguePane.vue";
+import DialogueFlow from "../components/DialogueFlow/DialogueFlow.vue";
 
 const router = useRouter();
 const route = useRoute();
@@ -26,7 +26,9 @@ watch(() => route.params.id, async id => {
 <template>
   <main>
     <DialogueGraph :conversation="conversation" />
-    <DialoguePane />
+    <section class="dialogue-pane">
+      <DialogueFlow />
+    </section>
   </main>
   <DialogueDebug />
 </template>
@@ -37,5 +39,21 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   overflow-y: scroll;
+}
+.dialogue-pane {
+  color: #eeeeee;
+  background: #333333;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px -1px 2px;
+  min-height: 300px;
+  height: max-content;
+}
+.dialogue-pane::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("/logo.png") center center no-repeat;
+  filter: grayscale() opacity(0.1);
 }
 </style>
