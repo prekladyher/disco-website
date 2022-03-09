@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ConversationModel } from "@/stores/conversation";
+import { useConversationStore, type ConversationModel } from "@/stores/conversation";
 import { useDialogueGraphStore } from "@/stores/dialogueGraph";
 import { ref } from "@vue/reactivity";
 import { storeToRefs } from "pinia";
@@ -14,6 +14,8 @@ const props = defineProps({
     type: Object as PropType<ConversationModel>
   }
 });
+
+const { currentEntry } = storeToRefs(useConversationStore());
 
 const dialogueGraphStore = useDialogueGraphStore();
 const { loading, nodes, edges, layouts, zoomLevel } = storeToRefs(dialogueGraphStore);
@@ -34,23 +36,27 @@ async function gotoNode(id: string) {
   selectedEdges.value = [];
 }
 
+async function syncCurrentEntry() {
+  if (!currentEntry.value || dialogueGraphStore.id !== currentEntry.value.conversationID) {
+    return; // no entry or incorrect graph loaded
+  }
+  const nodeId = "" + currentEntry.value.id;
+  if (nodes.value[nodeId] && selectedNodes.value.indexOf(nodeId) < 0) {
+    await gotoNode(nodeId);
+  }
+}
+
 watch(() => props.conversation, async conversation => {
   loading.value = true;
   selectedNodes.value = [];
   selectedEdges.value = [];
   dialogueGraphStore.loadConversation(conversation);
-  const focusId = router.currentRoute.value.query.entryId;
-  if (typeof focusId === "string" && nodes.value[focusId]) {
-    await gotoNode(focusId);
-  }
-
+  await syncCurrentEntry();
   loading.value = false;
 }, { immediate: true });
 
-watch(() => router.currentRoute.value.query.entryId, async entryId => {
-  if (typeof entryId === "string" && nodes.value[entryId]) {
-    await gotoNode(entryId);
-  }
+watch(currentEntry, async () => {
+  await syncCurrentEntry();
 });
 </script>
 

@@ -7,18 +7,36 @@ import { useRoute, useRouter } from "vue-router";
 import DialogueDebug from "../components/DialogueDebug.vue";
 import DialogueGraph from "../components/DialogueGraph";
 import DialogueFlow from "../components/DialogueFlow/DialogueFlow.vue";
+import DialogueSearch from "../components/DialogueSearch";
 
 const router = useRouter();
 const route = useRoute();
 
 const conversationStore = useConversationStore();
-const { conversation } = storeToRefs(conversationStore);
+const { conversation, currentEntry } = storeToRefs(conversationStore);
 
-watch(() => route.params.id, async id => {
+function syncCurrentEntry() {
+  const entryId = route.query.entryId;
+  if (typeof entryId !== "string" || !/^[0-9]+$/.test(entryId)) {
+    return; // missing or invalid entryId parameter
+  }
+  if (currentEntry.value && currentEntry.value.id === +entryId) {
+    return; // entry already synced
+  }
+  currentEntry.value = conversation.value?.entriesById.get(+entryId);
+}
+
+watch(() => [route.params.id, route.query.entryId], async ([id, entryId]) => {
   await useDatabaseStore().loading;
-  await conversationStore.loadConversation(id ? +id : null);
-  if (conversation.value && typeof route.query.entryId !== "string") {
+  if (!id) {
+    await conversationStore.loadConversation(null);
+  } else if (conversationStore.conversation?.id !== +id) {
+    await conversationStore.loadConversation(+id);
+  }
+  if (conversation.value && typeof entryId !== "string") {
     router.replace({ ...route, query: { entryId: findStartEntry(conversation.value).id }})
+  } else {
+    syncCurrentEntry();
   }
 }, { immediate: true });
 </script>
@@ -30,6 +48,7 @@ watch(() => route.params.id, async id => {
       <DialogueFlow />
     </section>
   </main>
+  <DialogueSearch />
   <DialogueDebug />
 </template>
 

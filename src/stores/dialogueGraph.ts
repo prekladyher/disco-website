@@ -122,6 +122,7 @@ export const useDialogueGraphStore = defineStore({
   state: () => {
     return {
       loading: false,
+      id: undefined as number|undefined,
       nodes: {} as Record<string, NodeType>,
       edges: {} as Record<string, EdgeType>,
       layouts: {
@@ -132,11 +133,13 @@ export const useDialogueGraphStore = defineStore({
   },
   actions: {
     loadConversation(conversation?: ConversationModel) {
+      this.id = undefined;
       Object.keys(this.nodes).forEach(id => delete this.nodes[id]);
       Object.keys(this.edges).forEach(id => delete this.edges[id]);
       Object.keys(this.layouts.nodes).forEach(id => delete this.layouts.nodes[id]);
       this.zoomLevel = 0.75;
       if (conversation) {
+        this.id = conversation.id;
         const graphModel = defineGraph(conversation);
         Object.assign(this.nodes, graphModel.nodes);
         Object.assign(this.edges, graphModel.edges);
