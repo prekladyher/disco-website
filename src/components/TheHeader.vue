@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import { IconHome } from "@/components/icons";
 import { useConversationStore } from "@/stores/conversation";
 import { storeToRefs } from "pinia";
-import IconHome from "./IconHome.vue";
 
 const { conversation, loading } = storeToRefs(useConversationStore());
 const { debug } = storeToRefs(useConversationStore());

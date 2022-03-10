@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { useConversationStore, findStartEntry } from "@/stores/conversation";
+import DialogueDebug from "@/components/DialogueDebug.vue";
+import DialogueSearch from "@/components/DialogueSearch.vue";
+import DialogueFlow from "@/components/flow/DialogueFlow.vue";
+import DialogueGraph from "@/components/graph/DialogueGraph.vue";
+import { findStartEntry, useConversationStore } from "@/stores/conversation";
 import { useDatabaseStore } from "@/stores/database";
 import { storeToRefs } from "pinia";
 import { watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
-import DialogueDebug from "../components/DialogueDebug.vue";
-import DialogueGraph from "../components/DialogueGraph";
-import DialogueFlow from "../components/DialogueFlow/DialogueFlow.vue";
-import DialogueSearch from "../components/DialogueSearch";
 
 const router = useRouter();
 const route = useRoute();

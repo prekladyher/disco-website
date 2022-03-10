@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import { useConversationStore, type ConversationModel } from "@/stores/conversation";
 import { useDialogueGraphStore } from "@/stores/dialogueGraph";
-import { ref } from "@vue/reactivity";
 import { storeToRefs } from "pinia";
 import type { EventHandlers, VNetworkGraphInstance } from "v-network-graph";
-import { reactive, watch, type PropType } from "vue";
-import { useRouter } from "vue-router";
+import { reactive, ref, watch, type PropType } from "vue";
 import { configs } from "./config";
 import { focusNodeAsync, updateCurrentEntry } from "./utils";
 
@@ -29,7 +27,6 @@ const eventHandlers: EventHandlers = reactive({});
 eventHandlers["node:select"] = () => updateCurrentEntry(selectedNodes, selectedEdges);
 eventHandlers["edge:select"] = () => updateCurrentEntry(selectedNodes, selectedEdges);
 
-const router = useRouter();
 async function gotoNode(id: string) {
   await focusNodeAsync(nodeGraph.value, id);
   selectedNodes.value = [id];

@@ -1,12 +1,9 @@
 <script setup lang="ts">
+import { IconClose, IconDown, IconSearch, IconUp } from "@/components/icons";
 import { useConversationStore } from "@/stores/conversation";
 import type { DialogueEntryType } from "@/types";
 import { storeToRefs } from "pinia";
 import { ref, watch } from "vue";
-import IconClose from "../IconClose.vue";
-import IconDown from "../IconDown.vue";
-import IconSearch from "../IconSearch.vue";
-import IconUp from "../IconUp.vue";
 
 const SEARCH_FIELDS = [
   "Articy Id",
@@ -107,8 +104,9 @@ watch(searchText, () => {
           ref="searchInput"
           v-model="searchText"
           placeholder="enter search text"
-          @keyup.enter.exact="nextMatch"
-          @keyup.enter.shift="prevMatch"
+          @keypress.enter.exact="nextMatch"
+          @keypress.enter.shift="prevMatch"
+          @keydown.esc="searchActive = false"
         >
         <button class="search-icon" :disabled="!searchResult.length" @click="prevMatch()">
           <IconUp />
