@@ -101,31 +101,31 @@ watch(searchText, () => {
       <IconSearch v-if="!searchActive" />
       <IconClose v-if="searchActive" />
     </a>
-    <div class="search-form" v-if="searchActive">
-      <input
-        ref="searchInput"
-        v-model="searchText"
-        placeholder="enter search text"
-        @keyup.enter.exact="nextMatch"
-        @keyup.enter.shift="prevMatch"
-      >
-    </div>
-    <div class="search-form" v-if="searchActive">
-      <button class="search-icon" :disabled="!searchResult.length" @click="prevMatch()">
-        <IconUp />
-      </button>
-      <button class="search-icon" :disabled="!searchResult.length" @click="nextMatch()">
-        <IconDown />
-      </button>
-    </div>
-    <div class="search-result" v-if="searchActive">
-      <template v-if="searchDebounce">
-        ? / ?
-      </template>
-      <template v-if="!searchDebounce">
-        {{ resultPosition + 1 }} / {{ searchResult.length }}
-      </template>
-    </div>
+    <Transition>
+      <div class="search-form" v-if="searchActive">
+        <input
+          ref="searchInput"
+          v-model="searchText"
+          placeholder="enter search text"
+          @keyup.enter.exact="nextMatch"
+          @keyup.enter.shift="prevMatch"
+        >
+        <button class="search-icon" :disabled="!searchResult.length" @click="prevMatch()">
+          <IconUp />
+        </button>
+        <button class="search-icon" :disabled="!searchResult.length" @click="nextMatch()">
+          <IconDown />
+        </button>
+        <div class="search-result">
+          <template v-if="searchDebounce">
+            ? / ?
+          </template>
+          <template v-if="!searchDebounce">
+            {{ resultPosition + 1 }} / {{ searchResult.length }}
+          </template>
+        </div>
+      </div>
+    </Transition>
   </div>
 </template>
 
@@ -173,11 +173,26 @@ button.search-icon[disabled] {
 
 .search-form {
   display: flex;
+  transition: all 200ms ease;
+  transition-property: max-width;
+  overflow: hidden;
+}
+
+.search-form.v-enter-active,
+.search-form.v-leave-active {
+  max-width: calc(200px + 64px + 50px);
+}
+
+.search-form.v-enter-from,
+.search-form.v-leave-to {
+  max-width: 0;
 }
 
 .search-form input {
+  width: 200px;
   border: 0;
   padding: 0 5px;
+  outline: none;
 }
 
 .search-result {
@@ -187,5 +202,6 @@ button.search-icon[disabled] {
   color: #888888;
   text-align: right;
   min-width: 50px;
+  white-space: nowrap;
 }
 </style>
