@@ -8,6 +8,7 @@ export interface NodeType {
   type: string,
   name: string,
   parent: boolean,
+  selected: boolean,
   external: boolean
 }
 
@@ -40,6 +41,7 @@ function defineNode(entry: DialogueEntryType): NodeType {
     type: fields.DialogueEntryType,
     name: fields.Title || fields.annotation_title || fields.annotation_text || "",
     parent: isParentEntry(entry),
+    selected: false,
     external: entry.outgoingLinks?.some(it => it.destinationConversationID !== entry.conversationID) || false
   };
 }

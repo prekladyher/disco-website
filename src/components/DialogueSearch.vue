@@ -94,7 +94,7 @@ watch(searchText, () => {
 
 <template>
   <div class="search-wrapper" :class="{ active: searchActive }">
-    <a class="search-icon" @click="toggleSearch()">
+    <a class="action-icon" @click="toggleSearch()">
       <IconSearch v-if="!searchActive" />
       <IconClose v-if="searchActive" />
     </a>
@@ -108,10 +108,10 @@ watch(searchText, () => {
           @keypress.enter.shift="prevMatch"
           @keydown.esc="searchActive = false"
         >
-        <button class="search-icon" :disabled="!searchResult.length" @click="prevMatch()">
+        <button class="action-icon" :disabled="!searchResult.length" @click="prevMatch()">
           <IconUp />
         </button>
-        <button class="search-icon" :disabled="!searchResult.length" @click="nextMatch()">
+        <button class="action-icon" :disabled="!searchResult.length" @click="nextMatch()">
           <IconDown />
         </button>
         <div class="search-result">
@@ -131,12 +131,12 @@ watch(searchText, () => {
 .search-wrapper {
   position: absolute;
   display: flex;
-  top: 60px;
+  top: 12px;
   left: 12px;
   gap: 5px;
   align-items: stretch;
   border: 2px solid #cccccc;
-  border-radius: 32px;
+  border-radius: 18px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 2px;
   background: white;
 }
@@ -144,7 +144,7 @@ watch(searchText, () => {
   border-radius: 32px 0 0 32px;
 }
 
-.search-icon {
+.action-icon {
   display: flex;
   height: 32px;
   width: 32px;
@@ -153,19 +153,19 @@ watch(searchText, () => {
   cursor: pointer;
 }
 
-button.search-icon {
+button.action-icon {
   background: none;
   border: none;
   color: #4978aa;
 }
 
-button.search-icon:hover:not([disabled]) {
+button.action-icon:hover:not([disabled]) {
   background: none;
   border: none;
   color: #6892be;
 }
 
-button.search-icon[disabled] {
+button.action-icon[disabled] {
   color: #888888;
 }
 

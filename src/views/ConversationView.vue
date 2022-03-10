@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import DialogueDebug from "@/components/DialogueDebug.vue";
+import DialogueMinimap from "@/components/DialogueMinimap.vue";
 import DialogueSearch from "@/components/DialogueSearch.vue";
 import DialogueFlow from "@/components/flow/DialogueFlow.vue";
 import DialogueGraph from "@/components/graph/DialogueGraph.vue";
@@ -39,6 +40,13 @@ watch(() => [route.params.id, route.query.entryId], async ([id, entryId]) => {
     syncCurrentEntry();
   }
 }, { immediate: true });
+
+watch(currentEntry, entry => {
+  const entryId = route.query.entryId;
+  if (entry && entryId !== "" + entry.id) {
+    router.push({ ...route, query: { entryId: entry.id }});
+  }
+});
 </script>
 
 <template>
@@ -47,8 +55,9 @@ watch(() => [route.params.id, route.query.entryId], async ([id, entryId]) => {
     <section class="dialogue-pane">
       <DialogueFlow />
     </section>
+    <DialogueMinimap />
+    <DialogueSearch />
   </main>
-  <DialogueSearch />
   <DialogueDebug />
 </template>
 

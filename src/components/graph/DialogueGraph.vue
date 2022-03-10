@@ -38,8 +38,11 @@ async function syncCurrentEntry() {
     return; // no entry or incorrect graph loaded
   }
   const nodeId = "" + currentEntry.value.id;
-  if (nodes.value[nodeId] && selectedNodes.value.indexOf(nodeId) < 0) {
-    await gotoNode(nodeId);
+  if (nodes.value[nodeId]) {
+    nodes.value[nodeId].selected = true;
+    if (selectedNodes.value.indexOf(nodeId) < 0) {
+      await gotoNode(nodeId); // external navigation
+    }
   }
 }
 
@@ -52,7 +55,10 @@ watch(() => props.conversation, async conversation => {
   loading.value = false;
 }, { immediate: true });
 
-watch(currentEntry, async () => {
+watch(currentEntry, async (newEntry, oldEntry) => {
+  if (oldEntry !== undefined && nodes.value[oldEntry.id]) {
+    nodes.value[oldEntry.id].selected = false;
+  }
   await syncCurrentEntry();
 });
 </script>
@@ -71,12 +77,6 @@ watch(currentEntry, async () => {
       :edges="edges"
       :event-handlers="eventHandlers"
     >
-      <template #edge-label="{ edge, ...slotProps }">
-        <v-edge-label
-          :text="edge.label"
-          v-bind="slotProps"
-        />
-      </template>
     </v-network-graph>
   </section>
 </template>
