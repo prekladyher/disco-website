@@ -85,10 +85,10 @@ const searchDebounce = ref(false);
 let debounceId = 0;
 watch(searchText, () => {
   if (debounceId) {
-    clearTimeout(0);
+    clearTimeout(debounceId);
   }
   searchDebounce.value = true;
-  setTimeout(() => {
+  debounceId = setTimeout(() => {
     searchDebounce.value = false;
     performSearch();
   }, 500);
