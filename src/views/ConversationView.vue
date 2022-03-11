@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import DialogueDebug from "@/components/DialogueDebug.vue";
-import DialogueMinimap from "@/components/DialogueMinimap.vue";
+import DialogueMinimap from "@/components/minimap/DialogueMinimap.vue";
 import DialogueSearch from "@/components/DialogueSearch.vue";
 import DialogueFlow from "@/components/flow/DialogueFlow.vue";
 import DialogueGraph from "@/components/graph/DialogueGraph.vue";

@@ -2,14 +2,15 @@
 import { useConversationStore } from "@/stores/conversation";
 import { useDialogueGraphStore } from "@/stores/dialogueGraph";
 import { storeToRefs } from "pinia";
-import { defineConfigs, type VNetworkGraphInstance } from "v-network-graph";
+import type { VNetworkGraphInstance } from "v-network-graph";
 import { ref, watch } from "vue";
-import IconClose from "./icons/IconClose.vue";
-import IconMap from "./icons/IconMap.vue";
+import IconClose from "../icons/IconClose.vue";
+import IconMap from "../icons/IconMap.vue";
+import { configs } from "./config";
 
 const { nodes, edges, layouts } = storeToRefs(useDialogueGraphStore());
 
-const graph = ref<VNetworkGraphInstance>();
+const minimap = ref<VNetworkGraphInstance>();
 
 const { conversation } = storeToRefs(useConversationStore());
 
@@ -19,50 +20,11 @@ watch(conversation, () => {
     clearTimeout()
   }
   loadTimer.value = setTimeout(() => {
-    graph.value?.panToCenter();
-    graph.value?.fitToContents();
+    minimap.value?.panToCenter();
+    minimap.value?.fitToContents();
     loadTimer.value = 0;
   });
 }, { immediate: true });
-
-const configs = defineConfigs({
-  view: {
-    fit: true,
-    panEnabled: false,
-    zoomEnabled: false,
-    maxZoomLevel: 1,
-    minZoomLevel: 0.001,
-    doubleClickZoomEnabled: false
-  },
-  node: {
-    selectable: 0,
-    draggable: false,
-    normal: {
-      radius: node => node.selected ? 4 : 1,
-      color: node => node.selected ? "#ee0000" : "#666666",
-    },
-    label: {
-      visible: false
-    },
-    zOrder: {
-      enabled: true,
-      zIndex: node => node.selected ? 1 : 0
-    }
-  },
-  edge: {
-    selectable: 0,
-    margin: 1,
-    summarize: false,
-    normal: {
-      width: 1,
-      color: "#999999"
-    },
-    hover: {
-      width: 1,
-      color: "#999999"
-    },
-  }
-});
 
 const minimapActive = ref(false);
 function toggleMinimap() {
@@ -75,7 +37,7 @@ function toggleMinimap() {
     <div class="minimap">
       <v-network-graph
         v-if="minimapActive"
-        ref="graph"
+        ref="minimap"
         :class="{ loaded: loadTimer === 0 }"
         :configs="configs"
         :nodes="nodes"
