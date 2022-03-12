@@ -19,6 +19,9 @@ const { conversation } = storeToRefs(conversationStore);
 const searchActive = ref(false);
 function toggleSearch() {
   searchActive.value = !searchActive.value;
+  if (!searchActive.value) {
+    searchText.value = ""; // reset search on deactivation
+  }
 }
 
 const searchInput = ref<HTMLElement>();
