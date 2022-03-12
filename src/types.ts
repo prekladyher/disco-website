@@ -2,9 +2,28 @@
 export type BooleanFieldType = "True" | "False";
 
 export type NumberFieldType = `${number}`;
+
 export interface ActorType {
   id: number,
-  fields: Record<string, any>,
+  fields: {
+    /** Actor's official name. */
+    "Name"?: string,
+    "IsPlayer"?: BooleanFieldType,
+    "IsNPC"?: BooleanFieldType,
+    "IsFemale"?: BooleanFieldType,
+    "Pictures"?: string,
+    /** Short description for basic character actor. */
+    "Description"?: string,
+    "character_short_name"?: string,
+    "character_alternative_name"?: string,
+    /** Short description for skill actor representation. */
+    "short_description"?: string,
+    /** Long description for skill actor representation. */
+    "LongDescription"?: string,
+    "color"?: NumberFieldType,
+    "Articy Id"?: string,
+    [key: string]: any
+  },
   [key: string]: any
 }
 
@@ -190,12 +209,50 @@ export interface DialogueLinkType {
 
 export interface ItemType {
   id: number,
-  fields: Record<string, any>,
+  fields: {
+    // "Name"?: string,
+    // "Is Item"?: string,
+    // "Description"?: string,
+    // "character_short_name"?: string,
+    // "description"?: string,
+    // "Cursed"?: string,
+    // "IsItem"?: string,
+    // "fixtureBonus"?: string,
+    // "requirement"?: string,
+    // "bonus"?: string,
+    // "conversation"?: string,
+    // "timeLeft"?: string,
+    // "thoughtType"?: string,
+    // "isThought"?: string,
+    // "fixtureDescription"?: string,
+    // "Articy Id"?: string,
+    // "autoequip"?: string,
+    // "cursed"?: string,
+    // "itemType"?: string,
+    // "isSubstance"?: string,
+    // "stackName"?: string,
+    // "sound"?: string,
+    // "isConsumable"?: string,
+    // "itemGroup"?: string,
+    // "equipOrb"?: string,
+    // "itemValue"?: string,
+    // "MediumTextValue"?: string,
+    // "multipleAllowed"?: string,
+    // "Tooltip"?: string,
+    // "alternativeEquipOrb"?: string,
+    // "character_alternative_nam"?: string,
+    [key: string]: any
+  },
 }
 
 export interface VariableType {
   id: number,
-  fields: Record<string, any>,
+  fields: {
+    // "Name"?: string
+    // "Initial Value"?: string
+    // "Description"?: string
+    [key: string]: any
+  },
 }
 
 export interface DialogueDatabase {
