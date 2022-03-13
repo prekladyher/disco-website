@@ -5,7 +5,7 @@ import type { ConversationModel } from "./conversation";
 
 export interface NodeType {
   id: string,
-  type: string,
+  type?: string,
   name: string,
   parent: boolean,
   selected: boolean,
@@ -19,7 +19,7 @@ export interface EdgeType {
 }
 
 function isParentEntry(entry: DialogueEntryType): boolean {
-  return entry.id === 0 || entry.fields?.DialogueEntryType === "Fork" && entry.fields?.InputId;
+  return entry.id === 0 || entry.fields?.DialogueEntryType === "Fork" && !!entry.fields?.InputId;
 }
 
 function isChildEntry(entry: DialogueEntryType): boolean {
