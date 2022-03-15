@@ -1,6 +1,6 @@
 import type { DialogueEntryType, DialogueLinkType } from "@/types";
 import { defineStore } from "pinia";
-import type { Layouts } from "v-network-graph";
+import type { Layouts, VNetworkGraphInstance } from "v-network-graph";
 import type { ConversationModel } from "./conversation";
 
 export interface NodeType {
@@ -16,6 +16,13 @@ export interface EdgeType {
   id: string,
   source: string,
   target: string
+}
+
+export interface ViewBox {
+  x: number,
+  y: number,
+  width: number,
+  height: number
 }
 
 function isParentEntry(entry: DialogueEntryType): boolean {
@@ -130,7 +137,8 @@ export const useDialogueGraphStore = defineStore({
       layouts: {
         nodes: {}
       } as Layouts,
-      zoomLevel: 0.75
+      zoomLevel: 0.75,
+      viewBox: undefined as ViewBox|undefined,
     };
   },
   actions: {
@@ -146,6 +154,19 @@ export const useDialogueGraphStore = defineStore({
         Object.assign(this.nodes, graphModel.nodes);
         Object.assign(this.edges, graphModel.edges);
         Object.assign(this.layouts.nodes, graphModel.layouts.nodes);
+      }
+    },
+    updateViewBox(graph: VNetworkGraphInstance|undefined) {
+      if (!graph || !graph.svgPanZoom) {
+        this.viewBox = undefined;
+      } else {
+        const viewArea = graph.svgPanZoom.getViewArea();
+        this.viewBox = {
+          x: -viewArea.box.left,
+          y: -viewArea.box.top,
+          width: viewArea.box.right - viewArea.box.left,
+          height: viewArea.box.bottom - viewArea.box.top
+        };
       }
     }
   }

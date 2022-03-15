@@ -1,4 +1,5 @@
 import { useConversationStore } from "@/stores/conversation";
+import { useDialogueGraphStore } from "@/stores/dialogueGraph";
 import type { FixablePosition, VNetworkGraphInstance } from "v-network-graph";
 import type { Ref } from "vue";
 
@@ -39,4 +40,18 @@ export function updateCurrentEntry(nodes: Ref<string[]>, edges: Ref<string[]>) {
   } else if (!edges.value.length && !nodes.value.length) {
     conversationStore.updateCurrentEntry(undefined);
   }
+}
+
+export function useUpdateViewBox(nodeGraph: Ref<VNetworkGraphInstance|undefined>, delay = 0) {
+  const dialogueGraphStore = useDialogueGraphStore();
+  let debounceId = 0;
+  return () => {
+    if (debounceId) {
+      clearTimeout(debounceId);
+    }
+    debounceId = setTimeout(() => {
+      dialogueGraphStore.updateViewBox(nodeGraph.value)
+      debounceId = 0;
+    }, delay);
+  };
 }

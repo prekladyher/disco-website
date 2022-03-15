@@ -5,7 +5,7 @@ import { storeToRefs } from "pinia";
 import type { EventHandlers, VNetworkGraphInstance } from "v-network-graph";
 import { reactive, ref, watch, type PropType } from "vue";
 import { configs } from "./config";
-import { focusNodeAsync, updateCurrentEntry } from "./utils";
+import { focusNodeAsync, updateCurrentEntry, useUpdateViewBox } from "./utils";
 
 const props = defineProps({
   conversation: {
@@ -20,12 +20,20 @@ const { loading, nodes, edges, layouts, zoomLevel } = storeToRefs(dialogueGraphS
 
 const nodeGraph = ref<VNetworkGraphInstance>();
 
+defineExpose({
+  nodeGraph
+});
+
 const selectedNodes = ref<string[]>([]);
 const selectedEdges = ref<string[]>([]);
+
+const updateViewBox = useUpdateViewBox(nodeGraph, 0);
 
 const eventHandlers: EventHandlers = reactive({});
 eventHandlers["node:select"] = () => updateCurrentEntry(selectedNodes, selectedEdges);
 eventHandlers["edge:select"] = () => updateCurrentEntry(selectedNodes, selectedEdges);
+eventHandlers["view:pan"] = updateViewBox;
+eventHandlers["view:zoom"] = updateViewBox;
 
 async function gotoNode(id: string) {
   await focusNodeAsync(nodeGraph.value, id);

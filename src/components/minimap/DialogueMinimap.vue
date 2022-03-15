@@ -2,15 +2,60 @@
 import { useConversationStore } from "@/stores/conversation";
 import { useDialogueGraphStore } from "@/stores/dialogueGraph";
 import { storeToRefs } from "pinia";
-import type { VNetworkGraphInstance } from "v-network-graph";
+import type { EventHandlers, Layers, VNetworkGraphInstance } from "v-network-graph";
 import { ref, watch } from "vue";
+import type DialogueGraph from "../graph/DialogueGraph.vue";
 import IconClose from "../icons/IconClose.vue";
 import IconMap from "../icons/IconMap.vue";
 import { configs } from "./config";
+import { getViewportPath } from "./utils";
 
-const { nodes, edges, layouts } = storeToRefs(useDialogueGraphStore());
 
+const props = defineProps<{
+  graph: InstanceType<typeof DialogueGraph>|null
+}>();
+
+const { nodes, edges, layouts, viewBox } = storeToRefs(useDialogueGraphStore());
+
+const wrapper = ref<Element>();
 const minimap = ref<VNetworkGraphInstance>();
+
+const viewport = ref<string>("");
+function updateViewport() {
+  if (!viewBox.value || !minimap.value) {
+    return;
+  }
+  viewport.value = getViewportPath(viewBox.value, minimap.value);
+}
+watch(viewBox, updateViewport);
+
+function handleClick({ event }: { event: MouseEvent }) {
+  if (!wrapper.value || !minimap.value || !props.graph?.nodeGraph) {
+    return;
+  }
+  const offset = wrapper.value.getBoundingClientRect();
+  const coords = minimap.value?.translateFromDomToSvgCoordinates({
+    x: event.pageX - offset.left,
+    y: event.pageY - offset.top
+  });
+  const nodeGraph = props.graph.nodeGraph;
+  const focusPoint = nodeGraph.translateFromDomToSvgCoordinates({
+    x: nodeGraph.getSizes().width / 2,
+    y: nodeGraph.getSizes().height / 2
+  });
+  props.graph.nodeGraph.panBy({
+    x: (focusPoint.x - coords.x) * nodeGraph.zoomLevel,
+    y: (focusPoint.y - coords.y) * nodeGraph.zoomLevel
+  });
+}
+
+const eventHandlers: EventHandlers = {
+  "view:click": handleClick,
+  "node:click": handleClick,
+  "edge:click": handleClick,
+  "path:click": handleClick,
+  "view:fit": updateViewport
+};
 
 const { conversation } = storeToRefs(useConversationStore());
 
@@ -30,11 +75,16 @@ const minimapActive = ref(false);
 function toggleMinimap() {
   minimapActive.value = !minimapActive.value;
 }
+
+const zoomLevel = ref(1);
+const layers: Layers = {
+  viewport: "paths"
+};
 </script>
 
 <template>
   <div class="minimap-wrapper" :class="{ active: minimapActive }">
-    <div class="minimap">
+    <div class="minimap" ref="wrapper">
       <v-network-graph
         v-if="minimapActive"
         ref="minimap"
@@ -43,7 +93,17 @@ function toggleMinimap() {
         :nodes="nodes"
         :layouts="layouts"
         :edges="edges"
+        :event-handlers="eventHandlers"
+        :layers="layers"
+        :zoom-level="zoomLevel"
       >
+        <template #viewport>
+          <path
+            fill="#000000"
+            fill-opacity="0.15"
+            :d="viewport"
+          />
+        </template>
       </v-network-graph>
     </div>
     <a class="action-icon" @click="toggleMinimap()">

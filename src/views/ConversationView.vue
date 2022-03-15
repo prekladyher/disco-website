@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import DialogueDebug from "@/components/DialogueDebug.vue";
-import DialogueMinimap from "@/components/minimap/DialogueMinimap.vue";
 import DialogueSearch from "@/components/DialogueSearch.vue";
 import DialogueFlow from "@/components/flow/DialogueFlow.vue";
 import DialogueGraph from "@/components/graph/DialogueGraph.vue";
+import DialogueMinimap from "@/components/minimap/DialogueMinimap.vue";
 import { findStartEntry, useConversationStore } from "@/stores/conversation";
 import { useDatabaseStore } from "@/stores/database";
 import { storeToRefs } from "pinia";
-import { watch } from "vue";
+import { ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 
 const router = useRouter();
@@ -15,6 +15,8 @@ const route = useRoute();
 
 const conversationStore = useConversationStore();
 const { conversation, currentEntry } = storeToRefs(conversationStore);
+
+const dialogueGraph = ref<InstanceType<typeof DialogueGraph>|null>(null);
 
 function syncCurrentEntry() {
   const entryId = route.query.entryId;
@@ -51,11 +53,16 @@ watch(currentEntry, entry => {
 
 <template>
   <main>
-    <DialogueGraph :conversation="conversation" />
+    <DialogueGraph
+      ref="dialogueGraph"
+      :conversation="conversation"
+    />
     <section class="dialogue-pane">
       <DialogueFlow />
     </section>
-    <DialogueMinimap />
+    <DialogueMinimap
+      :graph="dialogueGraph"
+    />
     <DialogueSearch />
   </main>
   <DialogueDebug />
