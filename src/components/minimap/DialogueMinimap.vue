@@ -3,12 +3,12 @@ import { useConversationStore } from "@/stores/conversation";
 import { useDialogueGraphStore } from "@/stores/dialogueGraph";
 import { storeToRefs } from "pinia";
 import type { EventHandlers, Layers, VNetworkGraphInstance } from "v-network-graph";
-import { ref, watch } from "vue";
+import { computed, reactive, ref, watch } from "vue";
 import type DialogueGraph from "../graph/DialogueGraph.vue";
 import IconClose from "../icons/IconClose.vue";
 import IconMap from "../icons/IconMap.vue";
 import { configs } from "./config";
-import { getViewportPath } from "./utils";
+import { getViewportPath, useViewportMove } from "./utils";
 
 
 const props = defineProps<{
@@ -20,41 +20,29 @@ const { nodes, edges, layouts, viewBox } = storeToRefs(useDialogueGraphStore());
 const wrapper = ref<Element>();
 const minimap = ref<VNetworkGraphInstance>();
 
-const viewport = ref<string>("");
+const viewport = reactive({
+  backdrop: "",
+  viewport: ""
+});
 function updateViewport() {
   if (!viewBox.value || !minimap.value) {
     return;
   }
-  viewport.value = getViewportPath(viewBox.value, minimap.value);
+  Object.assign(viewport, getViewportPath(viewBox.value, minimap.value));
 }
 watch(viewBox, updateViewport);
 
-function handleClick({ event }: { event: MouseEvent }) {
-  if (!wrapper.value || !minimap.value || !props.graph?.nodeGraph) {
-    return;
-  }
-  const offset = wrapper.value.getBoundingClientRect();
-  const coords = minimap.value?.translateFromDomToSvgCoordinates({
-    x: event.pageX - offset.left,
-    y: event.pageY - offset.top
-  });
-  const nodeGraph = props.graph.nodeGraph;
-  const focusPoint = nodeGraph.translateFromDomToSvgCoordinates({
-    x: nodeGraph.getSizes().width / 2,
-    y: nodeGraph.getSizes().height / 2
-  });
-  props.graph.nodeGraph.panBy({
-    x: (focusPoint.x - coords.x) * nodeGraph.zoomLevel,
-    y: (focusPoint.y - coords.y) * nodeGraph.zoomLevel
-  });
-}
+const { handleMove } = useViewportMove(
+    wrapper,
+    minimap,
+    computed(() => props.graph?.nodeGraph ));
+watch(wrapper, (element) => {
+  element?.addEventListener("pointermove", handleMove);
+  element?.addEventListener("pointerdown", handleMove);
+});
 
 const eventHandlers: EventHandlers = {
-  "view:click": handleClick,
-  "node:click": handleClick,
-  "edge:click": handleClick,
-  "path:click": handleClick,
-  "view:fit": updateViewport
+  "view:fit": updateViewport,
 };
 
 const { conversation } = storeToRefs(useConversationStore());
@@ -62,7 +50,7 @@ const { conversation } = storeToRefs(useConversationStore());
 const loadTimer = ref(0);
 watch(conversation, () => {
   if (loadTimer.value) {
-    clearTimeout()
+    clearTimeout(loadTimer.value);
   }
   loadTimer.value = setTimeout(() => {
     minimap.value?.panToCenter();
@@ -100,8 +88,13 @@ const layers: Layers = {
         <template #viewport>
           <path
             fill="#000000"
-            fill-opacity="0.15"
-            :d="viewport"
+            fill-opacity="0.3"
+            pointer-events="all"
+            :d="viewport.viewport"
+          />
+          <path
+            fill-opacity="0"
+            :d="viewport.backdrop"
           />
         </template>
       </v-network-graph>

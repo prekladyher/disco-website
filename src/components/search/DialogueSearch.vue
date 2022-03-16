@@ -2,6 +2,7 @@
 import { IconClose, IconDown, IconSearch, IconUp } from "@/components/icons";
 import { useConversationStore } from "@/stores/conversation";
 import type { DialogueEntryType } from "@/types";
+import { debounce } from "@/utils";
 import { storeToRefs } from "pinia";
 import { ref, watch } from "vue";
 
@@ -17,8 +18,8 @@ const conversationStore = useConversationStore();
 const { conversation } = storeToRefs(conversationStore);
 
 const searchActive = ref(false);
-function toggleSearch() {
-  searchActive.value = !searchActive.value;
+function toggleSearch(activate?: boolean) {
+  searchActive.value = activate !== undefined ? activate : !searchActive.value;
   if (!searchActive.value) {
     searchText.value = ""; // reset search on deactivation
   }
@@ -81,18 +82,8 @@ function prevMatch() {
   resultPosition.value = (resultPosition.value + searchResult.value.length - 1) % searchResult.value.length;
 }
 
-const searchDebounce = ref(false);
-let debounceId = 0;
-watch(searchText, () => {
-  if (debounceId) {
-    clearTimeout(debounceId);
-  }
-  searchDebounce.value = true;
-  debounceId = setTimeout(() => {
-    searchDebounce.value = false;
-    performSearch();
-  }, 500);
-});
+const { handler: handleSearch, pending: searchDebounce } = debounce(performSearch, 500);
+watch (searchText, handleSearch);
 </script>
 
 <template>
@@ -109,7 +100,7 @@ watch(searchText, () => {
           placeholder="enter search text"
           @keypress.enter.exact="nextMatch"
           @keypress.enter.shift="prevMatch"
-          @keydown.esc="searchActive = false"
+          @keydown.esc="toggleSearch(false)"
         >
         <button class="action-icon" :disabled="!searchResult.length" @click="prevMatch()">
           <IconUp />

@@ -61,9 +61,8 @@ export const configs = defineConfigs({
     },
     selected: {
       color: "#ed1a00",
-      animate: true,
-      animationSpeed: 10,
-      width: 5
+      dasharray: "none",
+      width: 4
     },
     hover: {
       color: "#666666"

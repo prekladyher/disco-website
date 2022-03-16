@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import DialogueDebug from "@/components/DialogueDebug.vue";
-import DialogueSearch from "@/components/DialogueSearch.vue";
 import DialogueFlow from "@/components/flow/DialogueFlow.vue";
 import DialogueGraph from "@/components/graph/DialogueGraph.vue";
 import DialogueMinimap from "@/components/minimap/DialogueMinimap.vue";
+import DialogueSearch from "@/components/search/DialogueSearch.vue";
 import { findStartEntry, useConversationStore } from "@/stores/conversation";
 import { useDatabaseStore } from "@/stores/database";
 import { storeToRefs } from "pinia";

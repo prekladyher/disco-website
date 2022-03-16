@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { useConversationStore, type ConversationModel } from "@/stores/conversation";
 import { useDialogueGraphStore } from "@/stores/dialogueGraph";
+import { debounce } from "@/utils";
 import { storeToRefs } from "pinia";
 import type { EventHandlers, VNetworkGraphInstance } from "v-network-graph";
 import { reactive, ref, watch, type PropType } from "vue";
 import { configs } from "./config";
-import { focusNodeAsync, updateCurrentEntry, useUpdateViewBox } from "./utils";
+import { focusNodeAsync, updateCurrentEntry } from "./utils";
 
 const props = defineProps({
   conversation: {
@@ -27,11 +28,11 @@ defineExpose({
 const selectedNodes = ref<string[]>([]);
 const selectedEdges = ref<string[]>([]);
 
-const updateViewBox = useUpdateViewBox(nodeGraph, 0);
-
 const eventHandlers: EventHandlers = reactive({});
 eventHandlers["node:select"] = () => updateCurrentEntry(selectedNodes, selectedEdges);
 eventHandlers["edge:select"] = () => updateCurrentEntry(selectedNodes, selectedEdges);
+
+const { handler: updateViewBox } = debounce(() => dialogueGraphStore.updateViewBox(nodeGraph.value));
 eventHandlers["view:pan"] = updateViewBox;
 eventHandlers["view:zoom"] = updateViewBox;
 
@@ -48,8 +49,9 @@ async function syncCurrentEntry() {
   const nodeId = "" + currentEntry.value.id;
   if (nodes.value[nodeId]) {
     nodes.value[nodeId].selected = true;
-    if (selectedNodes.value.indexOf(nodeId) < 0) {
-      await gotoNode(nodeId); // external navigation
+    // don't focus when already selected (focus only for external event)
+    if (selectedNodes.value.indexOf(nodeId) < 0 && !selectedEdges.value?.[0]?.startsWith(nodeId + "_")) {
+      await gotoNode(nodeId);
     }
   }
 }
