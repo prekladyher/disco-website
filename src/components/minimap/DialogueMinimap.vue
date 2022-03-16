@@ -32,13 +32,18 @@ function updateViewport() {
 }
 watch(viewBox, updateViewport);
 
+const moving = ref(false);
 const { handleMove } = useViewportMove(
     wrapper,
     minimap,
     computed(() => props.graph?.nodeGraph ));
 watch(wrapper, (element) => {
-  element?.addEventListener("pointermove", handleMove);
-  element?.addEventListener("pointerdown", handleMove);
+  element?.addEventListener("pointermove", event => moving.value && handleMove(event));
+  element?.addEventListener("pointerdown", (event) => {
+    moving.value = true;
+    handleMove(event);
+  });
+  element?.addEventListener("pointerout", () => moving.value = false);
 });
 
 const eventHandlers: EventHandlers = {
@@ -64,7 +69,6 @@ function toggleMinimap() {
   minimapActive.value = !minimapActive.value;
 }
 
-const zoomLevel = ref(1);
 const layers: Layers = {
   viewport: "paths"
 };
@@ -74,7 +78,6 @@ const layers: Layers = {
   <div class="minimap-wrapper" :class="{ active: minimapActive }">
     <div class="minimap" ref="wrapper">
       <v-network-graph
-        v-if="minimapActive"
         ref="minimap"
         :class="{ loaded: loadTimer === 0 }"
         :configs="configs"
@@ -83,12 +86,11 @@ const layers: Layers = {
         :edges="edges"
         :event-handlers="eventHandlers"
         :layers="layers"
-        :zoom-level="zoomLevel"
       >
         <template #viewport>
           <path
-            fill="#000000"
-            fill-opacity="0.3"
+            fill="#eeeeee"
+            fill-opacity="0.7"
             pointer-events="all"
             :d="viewport.viewport"
           />
@@ -127,6 +129,14 @@ const layers: Layers = {
   height: auto;
   aspect-ratio: 16 / 9;
   max-width: 80vw;
+}
+
+.minimap > .v-network-graph {
+  opacity: 0;
+}
+
+.active > .minimap > .v-network-graph {
+  opacity: 1;
 }
 
 .minimap {
