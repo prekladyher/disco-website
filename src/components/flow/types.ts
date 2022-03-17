@@ -9,6 +9,7 @@ export interface DialogueStepType {
 }
 
 export interface DialoguePathType {
+  origin: DialogueEntryType,
   destination: DialogueStepType
   steps: DialogueStepType[]
 }

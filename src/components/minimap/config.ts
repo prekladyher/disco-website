@@ -36,5 +36,12 @@ export const configs = defineConfigs({
       width: 1,
       color: "#999999"
     },
+  },
+  path: {
+    visible: true,
+    normal: {
+      color: "#ee0000",
+      width: 2
+    }
   }
 });

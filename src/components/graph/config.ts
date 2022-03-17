@@ -72,5 +72,15 @@ export const configs = defineConfigs({
         type: "arrow",
       }
     }
+  },
+  path: {
+    visible: true,
+    curveInNode: true,
+    end: "edgeOfNode",
+    normal: {
+      color: "#ff0000aa",
+      animate: true,
+      dasharray: ""
+    }
   }
 });

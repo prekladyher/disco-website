@@ -68,7 +68,8 @@ export const useConversationStore = defineStore({
       loading: false,
       debug: false,
       conversation: undefined as ConversationModel|undefined,
-      currentEntry: undefined as DialogueEntryType|undefined
+      currentEntry: undefined as DialogueEntryType|undefined,
+      activePath: [] as DialogueEntryType[]
     };
   },
   actions: {
@@ -77,12 +78,16 @@ export const useConversationStore = defineStore({
       try {
         this.conversation = id ? await fetchConversation(id) : undefined;
         this.currentEntry = undefined;
+        this.activePath = [];
       } finally {
         this.loading = false
       }
     },
     updateCurrentEntry(entry: DialogueEntryType|undefined) {
       this.currentEntry = entry;
+    },
+    updateActivePath(path: DialogueEntryType[]) {
+      this.activePath = path;
     }
   }
 });

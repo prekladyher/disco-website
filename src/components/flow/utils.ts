@@ -44,10 +44,18 @@ export function resolvePaths(conversation: ConversationModel, originId: number):
     // Resolve path through non-destination entries
     if (step.entry && !isDestinationEntry(step.entry)) {
       for (let subpath of resolvePaths(conversation, step.entry.id)) {
-        paths.push({ destination: subpath.destination, steps: [step, ...subpath.steps] });
+        paths.push({
+          origin: origin,
+          destination: subpath.destination,
+          steps: [step, ...subpath.steps]
+        });
       }
     } else {
-      paths.push({ destination: step, steps: [] });
+      paths.push({
+        origin: origin,
+        destination: step,
+        steps: []
+      });
     }
   }
   return paths;

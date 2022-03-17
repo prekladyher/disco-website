@@ -1,6 +1,6 @@
 import type { DialogueEntryType, DialogueLinkType } from "@/types";
 import { defineStore } from "pinia";
-import type { Layouts, VNetworkGraphInstance } from "v-network-graph";
+import type { Layouts, Path, VNetworkGraphInstance } from "v-network-graph";
 import type { ConversationModel } from "./conversation";
 
 export interface NodeType {
@@ -126,6 +126,25 @@ function fixStartPosition(conversation: ConversationModel) {
   return { nodes, edges, layouts };
 }
 
+/**
+ * Define graph path for the given dialogue entry path.
+ */
+export function definePath(entries: DialogueEntryType[]): Path {
+  const edgeIds = [];
+  for (let i = 0; i < entries.length - 1; i++) {
+    const entry = entries[i];
+    if (isParentEntry(entry)) {
+      continue; // parents don't have outgoing links
+    }
+    const nextIdx = entry.outgoingLinks?.findIndex(it => {
+      return it.destinationConversationID == entry.conversationID
+          && it.destinationDialogueID == entries[i + 1].id;
+    });
+    edgeIds.push(`${entry.id}_${nextIdx}`);
+  }
+  return { edges: edgeIds };
+}
+
 export const useDialogueGraphStore = defineStore({
   id: "dialogueGraph",
   state: () => {
@@ -137,6 +156,7 @@ export const useDialogueGraphStore = defineStore({
       layouts: {
         nodes: {}
       } as Layouts,
+      paths: {} as Record<string, Path>,
       zoomLevel: 0.75,
       viewBox: undefined as ViewBox|undefined,
     };

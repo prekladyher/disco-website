@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useConversationStore, type ConversationModel } from "@/stores/conversation";
-import { useDialogueGraphStore } from "@/stores/dialogueGraph";
+import { definePath, useDialogueGraphStore } from "@/stores/dialogueGraph";
 import { debounce } from "@/utils";
 import { storeToRefs } from "pinia";
 import type { EventHandlers, VNetworkGraphInstance } from "v-network-graph";
@@ -14,10 +14,10 @@ const props = defineProps({
   }
 });
 
-const { currentEntry } = storeToRefs(useConversationStore());
+const { currentEntry, activePath } = storeToRefs(useConversationStore());
 
 const dialogueGraphStore = useDialogueGraphStore();
-const { loading, nodes, edges, layouts, zoomLevel } = storeToRefs(dialogueGraphStore);
+const { loading, nodes, edges, paths, layouts, zoomLevel } = storeToRefs(dialogueGraphStore);
 
 const nodeGraph = ref<VNetworkGraphInstance>();
 
@@ -71,6 +71,14 @@ watch(currentEntry, async (newEntry, oldEntry) => {
   }
   await syncCurrentEntry();
 });
+
+watch(activePath, entries => {
+  if (!entries.length) {
+    delete paths.value.highlight;
+  } else {
+    paths.value.highlight = definePath(entries);
+  }
+});
 </script>
 
 <template>
@@ -85,6 +93,7 @@ watch(currentEntry, async (newEntry, oldEntry) => {
       :nodes="nodes"
       :layouts="layouts"
       :edges="edges"
+      :paths="paths"
       :event-handlers="eventHandlers"
     >
     </v-network-graph>

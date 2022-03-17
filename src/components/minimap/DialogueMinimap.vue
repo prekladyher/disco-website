@@ -15,7 +15,7 @@ const props = defineProps<{
   graph: InstanceType<typeof DialogueGraph>|null
 }>();
 
-const { nodes, edges, layouts, viewBox } = storeToRefs(useDialogueGraphStore());
+const { nodes, edges, paths, layouts, viewBox } = storeToRefs(useDialogueGraphStore());
 
 const wrapper = ref<Element>();
 const minimap = ref<VNetworkGraphInstance>();
@@ -34,9 +34,10 @@ watch(viewBox, updateViewport);
 
 const moving = ref(false);
 const { handleMove } = useViewportMove(
-    wrapper,
-    minimap,
-    computed(() => props.graph?.nodeGraph ));
+  wrapper,
+  minimap,
+  computed(() => props.graph?.nodeGraph )
+);
 watch(wrapper, (element) => {
   element?.addEventListener("pointermove", event => moving.value && handleMove(event));
   element?.addEventListener("pointerdown", (event) => {
@@ -84,6 +85,7 @@ const layers: Layers = {
         :nodes="nodes"
         :layouts="layouts"
         :edges="edges"
+        :paths="paths"
         :event-handlers="eventHandlers"
         :layers="layers"
       >
