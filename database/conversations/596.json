@@ -1,0 +1,176 @@
+[
+  {
+    "id": 596,
+    "fields": {
+      "Title": "Pay for damages",
+      "Articy Id": "0x01000031000067CB",
+      "cancel_condition_main": "Variable[\"TASK.pay_for_the_damages_cancelled\"]",
+      "Description": "You need to pay for the damages you caused in the Whirling-in-Rags, or you won't have a place to stay tonight. Ask around for money and be careful with your spending. If you're unsure how much you owe, ask Garte.",
+      "display_condition_main": "Variable[\"TASK.pay_for_the_damages\"] == true",
+      "done_condition_main": "Variable[\"TASK.pay_for_the_damages_done\"] == true",
+      "task_reward": "4",
+      "task_timed": "False",
+      "Actor": "0",
+      "Conversant": "0",
+      "cancel_subtask_01": "Variable[\"TASK.ask_money_from_station_cancelled\"]",
+      "display_subtask_01": "Variable[\"TASK.ask_money_from_station\"]",
+      "done_subtask_01": "Variable[\"TASK.ask_money_from_station_done\"]",
+      "subtask_title_01": "Ask your station for additional funds.",
+      "timed_subtask_01": "False",
+      "cancel_subtask_02": "Variable[\"TASK.talk_to_cafeteria_manager_about_damages_cancelled\"]",
+      "display_subtask_02": "Variable[\"TASK.talk_to_cafeteria_manager_about_damages\"]",
+      "done_subtask_02": "Variable[\"TASK.talk_to_cafeteria_manager_about_damages_done\"]",
+      "subtask_title_02": "Try negotiating with cafeteria manager.",
+      "timed_subtask_02": "False",
+      "cancel_subtask_03": "Variable[\"TASK.help_kim_with_money_plan_cancelled\"]",
+      "display_subtask_03": "Variable[\"TASK.help_kim_with_money_plan\"]",
+      "done_subtask_03": "Variable[\"TASK.help_kim_with_money_plan_done\"]",
+      "subtask_title_03": "Kim has offered to help -- go to his motor carriage in front of the Whirling.",
+      "timed_subtask_03": "False",
+      "cancel_subtask_04": "Variable[\"TASK.take_spinners_to_pawnshop_cancelled\"]",
+      "display_subtask_04": "Variable[\"TASK.take_spinners_to_pawnshop\"]",
+      "done_subtask_04": "Variable[\"TASK.take_spinners_to_pawnshop_done\"]",
+      "subtask_title_04": "Take spinner hubcaps to local pawnshop, south of the plaza.",
+      "timed_subtask_04": "False",
+      "cancel_subtask_05": "Variable[\"TASK.return_to_garte_with_spinner_cash_cancelled\"]",
+      "display_subtask_05": "Variable[\"TASK.return_to_garte_with_spinner_cash\"]",
+      "done_subtask_05": "Variable[\"TASK.return_to_garte_with_spinner_cash_done\"]",
+      "subtask_title_05": "Return to Garte with spinner cash.",
+      "timed_subtask_05": "False",
+      "cancel_subtask_06": "",
+      "display_subtask_06": "",
+      "done_subtask_06": "",
+      "subtask_title_06": "",
+      "timed_subtask_06": "False",
+      "cancel_subtask_07": "",
+      "display_subtask_07": "",
+      "done_subtask_07": "",
+      "subtask_title_07": "",
+      "timed_subtask_07": "False",
+      "cancel_subtask_08": "",
+      "display_subtask_08": "",
+      "done_subtask_08": "",
+      "subtask_title_08": "",
+      "timed_subtask_08": "False",
+      "cancel_subtask_09": "",
+      "display_subtask_09": "",
+      "done_subtask_09": "",
+      "subtask_title_09": "",
+      "timed_subtask_09": "False",
+      "cancel_subtask_10": "",
+      "display_subtask_10": "",
+      "done_subtask_10": "",
+      "subtask_title_10": "",
+      "timed_subtask_10": "False",
+      "cancel_subtask_11": "",
+      "display_subtask_11": "",
+      "done_subtask_11": "",
+      "subtask_title_11": "",
+      "timed_subtask_11": "False",
+      "cancel_subtask_12": "",
+      "display_subtask_12": "",
+      "done_subtask_12": "",
+      "subtask_title_12": "",
+      "timed_subtask_12": "False"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x01000031000067CB",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 596,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 596,
+            "originDialogueID": 0,
+            "destinationConversationID": 596,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x01000031000067CE",
+          "Sequence": "Continue()",
+          "Actor": "0"
+        },
+        "conversationID": 596,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

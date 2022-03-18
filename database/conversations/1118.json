@@ -1,0 +1,434 @@
+[
+  {
+    "id": 1118,
+    "fields": {
+      "Title": "Flow – PLAZA ORB / wearing skullboy jackets",
+      "Articy Id": "0x0100006B000025C6",
+      "AlternateOrbText": "",
+      "CheckType": "18",
+      "Condition": "Variable[\"plaza.orb_skullboy_jackets_equippage_done\"] == false  and  Variable[\"plaza.jacket_suggestion_need_triggered\"] == false",
+      "Description": "This what happens when you put either of their jackets on, ya cool cad!",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100006B000025C6",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1118,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1118,
+            "originDialogueID": 0,
+            "destinationConversationID": 1118,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100006B000025C9",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100006B000025D3"
+        },
+        "conversationID": 1118,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1118,
+            "originDialogueID": 1,
+            "destinationConversationID": 1118,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Composure: \"You are very dangerous, my friend....\"",
+          "Dialogue Text": "You are very dangerous, my friend. Dangerous and cool. In fact, no one dares to say *a single thing* about the jacket. But believe me, they are all *very impressed*.",
+          "Articy Id": "0x0100006B000025D9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "419",
+          "Conversant": "0",
+          "OutputId": "0x0100006B000025DB",
+          "InputId": "0x010000060001B37B"
+        },
+        "conversationID": 1118,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"plaza.orb_skullboy_jackets_equippage_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 226.1538543701172,
+          "y": -22.307693481445312,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Composure: \"Oh no, believe me -- it will be *ev...\"",
+          "Dialogue Text": "Oh no, believe me -- it will be *everyone else* who's uncomfortable with it. You're safe. No one dares say a word -- unless they're, like, from your station and coming to *judge* you. But what are the chances of that happening?",
+          "Articy Id": "0x010000060001B38A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "419",
+          "Conversant": "0",
+          "OutputId": "0x0100006B000025DB",
+          "InputId": "0x010000060001B381"
+        },
+        "conversationID": 1118,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"plaza.orb_skullboy_jackets_equippage_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 217.69232177734375,
+          "y": 320.7692565917969,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Composure: \"You've finally made it haven't you?...\"",
+          "Dialogue Text": "You've finally made it haven't you? People point fingers at you and whisper to each other when you pass by, wondering to themselves:",
+          "Articy Id": "0x0100006B000025D3",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"short_description\": \"Straighten your back. Keep your poker face.\",\n  \"long_description\": \"COOL FOR: CARD PLAYERS. MILITARY FETISHISTS. COOL PEOPLE.\\n\\nComposure wants you to not crack: or, at least, it wants you to not crack in front of other people. It enables you to put up a strong front. It keeps your emotions hidden from the world and helps you to read the body language of others – to sense the cracks in their own composure. As well, it keeps you looking good while you do it. You’ll rock that disco outfit a lot more if you don’t slouch.\\n\\nAt high levels, Composure makes you tuck your gut in and maintain a stern expression. Even lying in bed, late night when no one else can see you, you’ll have to keep it up. You’ll never be able to stop. With low Composure, though, you’ll always be the first to crack. Every cop’s got a point when all that fear and rage comes spilling out – and the ones who unleash it don’t stay on the force much longer. Perhaps worse still, you won’t even make the ranks of Fashion Police.\",\n  \"color\": 5\n}",
+          "Actor": "419",
+          "Conversant": "0",
+          "InputId": "0x0100006B000025C9",
+          "OutputId": "0x0100006B00004779"
+        },
+        "conversationID": 1118,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1118,
+            "originDialogueID": 5,
+            "destinationConversationID": 1118,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -900.769287109375,
+          "y": 113.84616088867188,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Composure: \"\"Where did that man get such a cool...\"",
+          "Dialogue Text": "\"Where did that man get such a cool jacket? Did he receive it upon graduating the École normale supérieure de Bad-Assery? Is he *dangerous?*\"",
+          "Articy Id": "0x0100006B00004779",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "419",
+          "Conversant": "0",
+          "InputId": "0x0100006B000025D3",
+          "OutputId": "0x010000060001B375"
+        },
+        "conversationID": 1118,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1118,
+            "originDialogueID": 6,
+            "destinationConversationID": 1118,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -607.6923217773438,
+          "y": 113.84616088867188,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "You: \"Damn right I'm dangerous.\"",
+          "Dialogue Text": "Damn right I'm dangerous.",
+          "Articy Id": "0x010000060001B37B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100006B000025D9",
+          "InputId": "0x010000060001B375"
+        },
+        "conversationID": 1118,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1118,
+            "originDialogueID": 7,
+            "destinationConversationID": 1118,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -77.69231414794922,
+          "y": 3.076923131942749,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "You: \"Yeah -- a danger to *myself*. What...\"",
+          "Dialogue Text": "Yeah -- a danger to *myself*. What am I doing? This is insane.",
+          "Articy Id": "0x010000060001B381",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000060001B38A",
+          "InputId": "0x010000060001B375"
+        },
+        "conversationID": 1118,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1118,
+            "originDialogueID": 8,
+            "destinationConversationID": 1118,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -73.0769271850586,
+          "y": 354.6153869628906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Untitled hub (05)",
+          "Articy Id": "0x010000060001B375",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100006B00004779",
+          "OutputId": "0x010000060001B381"
+        },
+        "conversationID": 1118,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1118,
+            "originDialogueID": 9,
+            "destinationConversationID": 1118,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1118,
+            "originDialogueID": 9,
+            "destinationConversationID": 1118,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -313.8461608886719,
+          "y": 203.07693481445312,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

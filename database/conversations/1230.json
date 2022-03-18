@@ -1,0 +1,1053 @@
+[
+  {
+    "id": 1230,
+    "fields": {
+      "Title": "WALKWAY ORB / logic belt afterthought",
+      "Articy Id": "0x010000820001F6C3",
+      "AlternateOrbText": "",
+      "CheckType": "1",
+      "Condition": "Variable[\"cargo.containeryard_pil_of_cargo_belts_orb_sdeen\"] == true  and  Variable[\"cargo.containeryard_finish_the_pile_of_belts_thought\"] == false",
+      "Description": "",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000820001F6C3",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 0,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x010000820001F92D",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x010000820001F935"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 1,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Untitled hub",
+          "Articy Id": "0x010000820001F94C",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x010000820001F95F",
+          "InputId": "0x010000820001F93F"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 2,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 2,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 2,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1141,
+          "y": 423,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Encyclopedia: \"I knew it was a cargo lashing belt!\"",
+          "Dialogue Text": "I knew it was a cargo lashing belt!",
+          "Articy Id": "0x010000820001F98C",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "399",
+          "Conversant": "0",
+          "OutputId": "0x010000820001F94C",
+          "InputId": "0x010000820001F93F"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 3,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 865.0000610351562,
+          "y": 196,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"More ammo on our belt for the rema...\"",
+          "Dialogue Text": "\"More ammo on our belt for the remainder of the investigation. Good find, detective.\"",
+          "Articy Id": "0x010000060001863E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x010000820001F95F",
+          "InputId": "0x010000820001F976"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 4,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "ReputationGrows(\"kim\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2295,
+          "y": -226,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Logic: \"These are the same belts as the one...\"",
+          "Dialogue Text": "These are the same belts as the one the victim was hanged with.",
+          "Articy Id": "0x010000820001F935",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "398",
+          "Conversant": "0",
+          "InputId": "0x010000820001F92D",
+          "OutputId": "0x010000820001F93F"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 5,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 260,
+          "y": 323,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "You: \"\"Look, lieutenant. The same belts a...\"",
+          "Dialogue Text": "\"Look, lieutenant. The same belts as the one the victim was hanged with. Says *Vermillion* on the side...\"",
+          "Articy Id": "0x010000820001F953",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000820001F94C",
+          "OutputId": "0x010000820001F96F"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 6,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1383,
+          "y": -218,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "You: \"The same exact belts. Even the same...\"",
+          "Dialogue Text": "The same exact belts. Even the same writing...",
+          "Articy Id": "0x010000820001F959",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000820001F94C",
+          "OutputId": "0x010000820001F980"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 7,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere() == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1378,
+          "y": 348,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Logic: \"Indeed, it appears so. This is wher...\"",
+          "Dialogue Text": "Indeed, it appears so. This is where the belt came from.",
+          "Articy Id": "0x010000820001F994",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "398",
+          "Conversant": "0",
+          "OutputId": "0x010000820001F95F",
+          "InputId": "0x010000820001F980"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 8,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "XPPicoSetBool(\"XP.cargo_belt_spotted_same\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1950.9998779296875,
+          "y": 453,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"You're right.\" The lieutenant look...\"",
+          "Dialogue Text": "\"You're right.\" The lieutenant looks at the pile. \"This certainly confirms the theory that the belt must've come from inside the harbour.\"",
+          "Articy Id": "0x010000820001F967",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x010000060001863E",
+          "InputId": "0x010000820001F96F"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 9,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "XPPicoSetBool(\"XP.cargo_belt_spotted_same\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1925.9998779296875,
+          "y": -119,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Variable[\"yard.hanged_encyclo_cargo_belt_airships\"]",
+          "Articy Id": "0x010000820001F93F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000820001F935"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 10,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 10,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 545,
+          "y": 374,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Variable[\"yard.hanged_encyclo_cargo_belt_airships\"]",
+          "Articy Id": "0x010000820001F93F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000820001F98C"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 11,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.hanged_encyclo_cargo_belt_airships\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 354.25,
+          "y": 243.09999084472656,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "!(Variable[\"yard.hanged_encyclo_cargo_belt_airships\"])",
+          "Articy Id": "0x010000820001F93F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000820001F94C"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 12,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.hanged_encyclo_cargo_belt_airships\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 354.25,
+          "y": 243.09999084472656,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Variable[\"whirling.harides_titus_said_they_took_the_belt\"]",
+          "Articy Id": "0x010000820001F980",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000820001F959"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 13,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 13,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1672,
+          "y": 401,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Variable[\"whirling.harides_titus_said_they_took_the_belt\"]",
+          "Articy Id": "0x010000820001F980",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000820001F986"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 14,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"whirling.harides_titus_said_they_took_the_belt\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1086.7999267578125,
+          "y": 260.6499938964844,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "!(Variable[\"whirling.harides_titus_said_they_took_the_belt\"])",
+          "Articy Id": "0x010000820001F980",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000820001F994"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 15,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"whirling.harides_titus_said_they_took_the_belt\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1086.7999267578125,
+          "y": 260.6499938964844,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "Variable[\"whirling.harides_titus_said_they_took_the_belt\"]",
+          "Articy Id": "0x010000820001F96F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000820001F953"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 16,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 16,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1658,
+          "y": -163,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "Variable[\"whirling.harides_titus_said_they_took_the_belt\"]",
+          "Articy Id": "0x010000820001F96F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000820001F976"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 17,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"whirling.harides_titus_said_they_took_the_belt\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1077.699951171875,
+          "y": -105.94999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "!(Variable[\"whirling.harides_titus_said_they_took_the_belt\"])",
+          "Articy Id": "0x010000820001F96F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000820001F967"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 18,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"whirling.harides_titus_said_they_took_the_belt\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1077.699951171875,
+          "y": -105.94999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"You're right. This is probably whe...\"",
+          "Dialogue Text": "\"You're right. This is probably where Titus and his men got the belt.\" The lieutenant looks at the pile.",
+          "Articy Id": "0x010000820001F976",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x010000820001F96F",
+          "OutputId": "0x010000060001863E"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 19,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "XPPicoSetBool(\"XP.cargo_belt_spotted_same\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1925.9998779296875,
+          "y": -350,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Logic: \"Yes, this confirms Titus's story.\"",
+          "Dialogue Text": "Yes, this confirms Titus's story.",
+          "Articy Id": "0x010000820001F986",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "398",
+          "Conversant": "0",
+          "InputId": "0x010000820001F980",
+          "OutputId": "0x010000820001F95F"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1230,
+            "originDialogueID": 20,
+            "destinationConversationID": 1230,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "XPPicoSetBool(\"XP.cargo_belt_spotted_same\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1950.0001220703125,
+          "y": 245.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "You: \"[Finish thought.]\"",
+          "Dialogue Text": "[Finish thought.]",
+          "Articy Id": "0x010000820001F95F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000820001F986",
+          "OutputId": "0x010000820001F963"
+        },
+        "conversationID": 1230,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"cargo.containeryard_finish_the_pile_of_belts_thought\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1441,
+          "y": 927,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

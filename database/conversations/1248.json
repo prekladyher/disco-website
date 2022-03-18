@@ -1,0 +1,612 @@
+[
+  {
+    "id": 1248,
+    "fields": {
+      "Title": "VILLAGE ORB / spirit necktie",
+      "Articy Id": "0x01000089000015B6",
+      "AlternateOrbText": "",
+      "CheckType": "7",
+      "Condition": "IsHourBetween(8, 1)  and  Variable[\"whirling.necktie_personified\"]  and  CheckEquipped(\"neck_tie\")  and  Variable[\"village.rosemary_necktie\"] == false  and  Variable[\"village.orb_necktie_bottle_done\"] == false  and  CheckItem(\"blue_medicinal_spirit\") == false  and  Variable[\"TASK.report_to_the_tribunal_done\"] == false",
+      "Description": "horrific necktie reacting to the bottle and urging you to buy it because otherwise buying the medicial spirit lacks foreshadowing and is too missable.",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area: Village / Union of Moribund Alcoholics\nDetails: The medicinal spirit bottle.\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x01000089000015B6",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1248,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1248,
+            "originDialogueID": 0,
+            "destinationConversationID": 1248,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x01000089000015B9",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100007800013273"
+        },
+        "conversationID": 1248,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1248,
+            "originDialogueID": 1,
+            "destinationConversationID": 1248,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "You: \"[Discard thought.]\"",
+          "Dialogue Text": "[Discard thought.]",
+          "Articy Id": "0x0100007800013295",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100007800013297",
+          "InputId": "0x01000089000015BD"
+        },
+        "conversationID": 1248,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"village.orb_necktie_bottle_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -215.00001525878906,
+          "y": 716,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Horrific Necktie: \"That bottle, *bratan*! Just look at...\"",
+          "Dialogue Text": "That bottle, *bratan*! Just look at that bottle!",
+          "Articy Id": "0x01000089000015BD",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "True",
+          "Actor": "231",
+          "Conversant": "0",
+          "OutputId": "0x0100007800013295",
+          "InputId": "0x0100007800013273"
+        },
+        "conversationID": 1248,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1248,
+            "originDialogueID": 3,
+            "destinationConversationID": 1248,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1248,
+            "originDialogueID": 3,
+            "destinationConversationID": 1248,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1248,
+            "originDialogueID": 3,
+            "destinationConversationID": 1248,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1248,
+            "originDialogueID": 3,
+            "destinationConversationID": 1248,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -591,
+          "y": 334,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Inland Empire: \"You stop mid-step and put your hand...\"",
+          "Dialogue Text": "You stop mid-step and put your hand on the garish necktie.",
+          "Articy Id": "0x0100007800013273",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "404",
+          "Conversant": "0",
+          "InputId": "0x01000089000015B9",
+          "OutputId": "0x01000089000015BD"
+        },
+        "conversationID": 1248,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1248,
+            "originDialogueID": 5,
+            "destinationConversationID": 1248,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -867.9999389648438,
+          "y": 327,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "You: \"Okay. Cool. What do I do next?\"",
+          "Dialogue Text": "Okay. Cool. What do I do next?",
+          "Articy Id": "0x010000780001328F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100007800013282",
+          "OutputId": "0x01000078000132A2"
+        },
+        "conversationID": 1248,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1248,
+            "originDialogueID": 6,
+            "destinationConversationID": 1248,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -219,
+          "y": 456,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "You: \"Where? Bottle? What?\"",
+          "Dialogue Text": "Where? Bottle? What?",
+          "Articy Id": "0x010000780001326D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x01000089000015BD",
+          "OutputId": "0x010000780001327B"
+        },
+        "conversationID": 1248,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1248,
+            "originDialogueID": 7,
+            "destinationConversationID": 1248,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -231.99998474121094,
+          "y": -49,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Horrific Necktie: \"You *should* care. I'm getting a *v...\"",
+          "Dialogue Text": "You *should* care. I'm getting a *very* special vibe from that bottle. Please go talk to him. I need to look at it closer...",
+          "Articy Id": "0x01000078000132A8",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "True",
+          "Condition1": "IsTHCPresent(\"the_waste_land_of_reality\")",
+          "Alternate1": "This isn't even *about* that. This is about so much more than regular alcohol. Please go talk to him. See what it's about. I'm *drawn* to it.",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "231",
+          "Conversant": "0",
+          "OutputId": "0x0100007800013297",
+          "InputId": "0x0100007800013265"
+        },
+        "conversationID": 1248,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"village.orb_necktie_bottle_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 54,
+          "y": 206.99998474121094,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Electrochemistry: \"It's hard to know what exactly your...\"",
+          "Dialogue Text": "It's hard to know what exactly your vivid interior is speaking of here, but I'm guessing it's got a lot of alcohol in it.",
+          "Articy Id": "0x0100007800013282",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "413",
+          "Conversant": "0",
+          "OutputId": "0x010000780001328F",
+          "InputId": "0x010000780001327B"
+        },
+        "conversationID": 1248,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1248,
+            "originDialogueID": 9,
+            "destinationConversationID": 1248,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1248,
+            "originDialogueID": 9,
+            "destinationConversationID": 1248,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 370,
+          "y": -43,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "You: \"I really don't care about any bottl...\"",
+          "Dialogue Text": "I really don't care about any bottle. I don't want to look at it.",
+          "Articy Id": "0x0100007800013265",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "IsTHCPresent(\"the_waste_land_of_reality\")",
+          "Alternate1": "Hey, I'm trying to stay sober here!",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100007800013282",
+          "OutputId": "0x01000078000132A8"
+        },
+        "conversationID": 1248,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1248,
+            "originDialogueID": 10,
+            "destinationConversationID": 1248,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -233,
+          "y": 200,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Rosemary: \"In this drunk's hand -- on the pipe...\"",
+          "Dialogue Text": "In this drunk's hand -- on the pipe there. Glowing blue, a mysterious, otherworldly blue. Filled to the brim with holy mysteries!",
+          "Articy Id": "0x010000780001327B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "99",
+          "Conversant": "0",
+          "InputId": "0x010000780001326D",
+          "OutputId": "0x0100007800013282"
+        },
+        "conversationID": 1248,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1248,
+            "originDialogueID": 11,
+            "destinationConversationID": 1248,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 68,
+          "y": -52,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "Horrific Necktie: \"Oh I think this is about so much *m...\"",
+          "Dialogue Text": "Oh I think this is about so much *more* than cool. Please go talk to him. See what it's about. I'm *drawn* to it.",
+          "Articy Id": "0x01000078000132A2",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "True",
+          "Actor": "231",
+          "Conversant": "0",
+          "InputId": "0x010000780001328F",
+          "OutputId": "0x0100007800013297"
+        },
+        "conversationID": 1248,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"village.orb_necktie_bottle_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 62.999996185302734,
+          "y": 445.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

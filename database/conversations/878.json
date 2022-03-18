@@ -1,0 +1,639 @@
+[
+  {
+    "id": 878,
+    "fields": {
+      "Title": "THOUGHT / THE DESTROYER",
+      "Articy Id": "0x010000570000B3CD",
+      "AlternateOrbText": "",
+      "CheckType": "12",
+      "Condition": "Variable[\"character.destroyer_thought_done\"] == false  and  Variable[\"reputation.the_destroyer\"] >= 3",
+      "Description": "Pain Threshold turns you into THE DESTROYER! (a thought for punching and not taking damage). Anti-Object Task Force.",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "1",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000570000B3CD",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 878,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 878,
+            "originDialogueID": 0,
+            "destinationConversationID": 878,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x010000570000B425",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100009400000CDF"
+        },
+        "conversationID": 878,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 878,
+            "originDialogueID": 1,
+            "destinationConversationID": 878,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Pain Threshold: \"You are *The Destroyer*, the bane o...\"",
+          "Dialogue Text": "You are *The Destroyer*, the bane of inanimate matter.",
+          "Articy Id": "0x010000570000B3CE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "0",
+          "OutputId": "0x010000570000B3D4",
+          "InputId": "0x0100009400000CDF"
+        },
+        "conversationID": 878,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 878,
+            "originDialogueID": 2,
+            "destinationConversationID": 878,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 550,
+          "y": 375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Pain Threshold: \"Bent metal, broken glass... your pa...\"",
+          "Dialogue Text": "Bent metal, broken glass... your path lies strewn with the broken forms of everyday objects...",
+          "Articy Id": "0x0100009400000CDF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "0",
+          "InputId": "0x010000570000B425",
+          "OutputId": "0x010000570000B3CE"
+        },
+        "conversationID": 878,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 878,
+            "originDialogueID": 3,
+            "destinationConversationID": 878,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 263,
+          "y": 371,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "destroyer hub",
+          "Articy Id": "0x010000570000B3D4",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x010000570000B3CE",
+          "OutputId": "0x010000570000B3E8"
+        },
+        "conversationID": 878,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 878,
+            "originDialogueID": 4,
+            "destinationConversationID": 878,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 878,
+            "originDialogueID": 4,
+            "destinationConversationID": 878,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 878,
+            "originDialogueID": 4,
+            "destinationConversationID": 878,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 850.0000610351562,
+          "y": 450.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "You: \"No, I'm just a disempowered individ...\"",
+          "Dialogue Text": "No, I'm just a disempowered individual trying to take my disempowerment out on everyday objects.",
+          "Articy Id": "0x010000570000B3E1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000570000B3D4",
+          "OutputId": "0x010000570000B3F8"
+        },
+        "conversationID": 878,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 878,
+            "originDialogueID": 5,
+            "destinationConversationID": 878,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1105,
+          "y": 375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "You: \"Gaze upon me, stuff, and despair!\"",
+          "Dialogue Text": "Gaze upon me, stuff, and despair!",
+          "Articy Id": "0x010000570000B3DA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000570000B3D4",
+          "OutputId": "0x010000570000B3F0"
+        },
+        "conversationID": 878,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 878,
+            "originDialogueID": 6,
+            "destinationConversationID": 878,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1100,
+          "y": 150,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Pain Threshold: \"You're right, that's definitely not...\"",
+          "Dialogue Text": "You're right, that's definitely not the behaviour of a destroyer at all. That's just severe anger-management problems and a disregard for property rights.",
+          "Articy Id": "0x010000570000B41B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "0",
+          "OutputId": "0x010000570000B3F2",
+          "InputId": "0x010000570000B407"
+        },
+        "conversationID": 878,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"character.destroyer_thought_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2000.0001220703125,
+          "y": 500.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "You: \"Yeah, I rip shit apart.\"",
+          "Dialogue Text": "Yeah, I rip shit apart.",
+          "Articy Id": "0x010000570000B3E8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000570000B3D4",
+          "OutputId": "0x010000570000B3F0"
+        },
+        "conversationID": 878,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 878,
+            "originDialogueID": 8,
+            "destinationConversationID": 878,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1100,
+          "y": 600,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Pain Threshold: \"Look! There's a discarded milk cart...\"",
+          "Dialogue Text": "Look! There's a discarded milk carton on the floor. Why don't you destroy that, too?",
+          "Articy Id": "0x010000570000B3F8",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "IsOutside()",
+          "Alternate1": "Look! There's a discarded milk carton on the ground. Why don't you destroy that, too?\n",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "412",
+          "Conversant": "0",
+          "InputId": "0x010000570000B3E1",
+          "OutputId": "0x010000570000B407"
+        },
+        "conversationID": 878,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 878,
+            "originDialogueID": 9,
+            "destinationConversationID": 878,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 878,
+            "originDialogueID": 9,
+            "destinationConversationID": 878,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1400,
+          "y": 377,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "You: \"No, I actually feel sorry for the t...\"",
+          "Dialogue Text": "No, I actually feel sorry for the things I've destroyed. (I'm sorry, milk carton.)",
+          "Articy Id": "0x010000570000B407",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000570000B3F8",
+          "OutputId": "0x010000570000B41B"
+        },
+        "conversationID": 878,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 878,
+            "originDialogueID": 10,
+            "destinationConversationID": 878,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"doomed.thought_destroyer_didnt_take_it\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1695.0001220703125,
+          "y": 518,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "You: \"Good idea. Fuck you, milk carton, t...\"",
+          "Dialogue Text": "Good idea. Fuck you, milk carton, this is all *your* fault!",
+          "Articy Id": "0x010000570000B40E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000570000B3F8",
+          "OutputId": "0x010000570000B3F0"
+        },
+        "conversationID": 878,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 878,
+            "originDialogueID": 11,
+            "destinationConversationID": 878,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1699,
+          "y": 275,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Pain Threshold: \"Kudos.\"",
+          "Dialogue Text": "Kudos.",
+          "Articy Id": "0x010000570000B3F0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "0",
+          "InputId": "0x010000570000B40E",
+          "OutputId": "0x010000570000B3F2"
+        },
+        "conversationID": 878,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "GainThought(\"the_destroyer\");\nSetVariableValue(\"character.destroyer_thought_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2000.0001220703125,
+          "y": 275,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

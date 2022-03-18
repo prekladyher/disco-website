@@ -1,0 +1,434 @@
+[
+  {
+    "id": 1376,
+    "fields": {
+      "Title": "WALKWAY ORB / walkwaycoat",
+      "Articy Id": "0x0100008F000028D4",
+      "AlternateOrbText": "",
+      "CheckType": "14",
+      "Condition": "Variable[\"doomed.orb_shivers_coatquest_two_done\"] == true  and  Variable[\"cargo.orb_shivers_coatquest_three_done\"] == false",
+      "Description": "This is the third Shivers in the coat quest. It is a challenging orb.",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "3",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100008F000028D4",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1376,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1376,
+            "originDialogueID": 0,
+            "destinationConversationID": 1376,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100008F000028D7",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100008F000028DB"
+        },
+        "conversationID": 1376,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1376,
+            "originDialogueID": 1,
+            "destinationConversationID": 1376,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "You: \"GET OUT OF MY HEAD!\"",
+          "Dialogue Text": "GET OUT OF MY HEAD!",
+          "Articy Id": "0x0100008F000028ED",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100008F000028FF",
+          "InputId": "0x0100008F000028DB"
+        },
+        "conversationID": 1376,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1376,
+            "originDialogueID": 2,
+            "destinationConversationID": 1376,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 750,
+          "y": 525,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Shivers: \"It is harder and harder to reach yo...\"",
+          "Dialogue Text": "It is harder and harder to reach you... I am not sure how well you'll hear me...",
+          "Articy Id": "0x0100008F000028DB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "411",
+          "Conversant": "0",
+          "InputId": "0x0100008F000028D7",
+          "OutputId": "0x0100008F000028ED"
+        },
+        "conversationID": 1376,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1376,
+            "originDialogueID": 3,
+            "destinationConversationID": 1376,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1376,
+            "originDialogueID": 3,
+            "destinationConversationID": 1376,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1376,
+            "originDialogueID": 3,
+            "destinationConversationID": 1376,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"cargo.orb_shivers_coatquest_three_done\", true) ;\nFinishTask(\"TASK.find_voice_in_harbour_done\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 450.0000305175781,
+          "y": 300,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Shivers: \"Listen within the flower of home… I...\"",
+          "Dialogue Text": "Listen within the flower of home… I am lost... Please....",
+          "Articy Id": "0x0100008F000028F3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "411",
+          "Conversant": "0",
+          "OutputId": "0x0100008F000028F7",
+          "InputId": "0x0100008F000028E1"
+        },
+        "conversationID": 1376,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "GainTask(\"TASK.find_voice_in_whirling\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1050,
+          "y": 75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Shivers: \"Forgive me... I only want reunion.....\"",
+          "Dialogue Text": "Forgive me... I only want reunion... I am struggling to know where... Listen within the flower of home… Please...",
+          "Articy Id": "0x0100008F000028FF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "411",
+          "Conversant": "0",
+          "InputId": "0x0100008F000028ED",
+          "OutputId": "0x0100008F000028F7"
+        },
+        "conversationID": 1376,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "GainTask(\"TASK.find_voice_in_whirling\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1050,
+          "y": 525,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Shivers: \"I am lost and unfound... Listen wit...\"",
+          "Dialogue Text": "I am lost and unfound... Listen within the flower of home…",
+          "Articy Id": "0x0100008F000028F9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "411",
+          "Conversant": "0",
+          "OutputId": "0x0100008F000028F7",
+          "InputId": "0x0100008F000028E7"
+        },
+        "conversationID": 1376,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "GainTask(\"TASK.find_voice_in_whirling\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1050,
+          "y": 300,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "You: \"Please, I want to help you! Where m...\"",
+          "Dialogue Text": "Please, I want to help you! Where must I go next?",
+          "Articy Id": "0x0100008F000028E1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008F000028DB",
+          "OutputId": "0x0100008F000028F3"
+        },
+        "conversationID": 1376,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1376,
+            "originDialogueID": 8,
+            "destinationConversationID": 1376,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 750,
+          "y": 75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "You: \"Can't you just tell me where you ar...\"",
+          "Dialogue Text": "Can't you just tell me where you are? Or what you are?",
+          "Articy Id": "0x0100008F000028E7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008F000028DB",
+          "OutputId": "0x0100008F000028F9"
+        },
+        "conversationID": 1376,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1376,
+            "originDialogueID": 9,
+            "destinationConversationID": 1376,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 750,
+          "y": 300,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

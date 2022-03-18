@@ -1,0 +1,434 @@
+[
+  {
+    "id": 1374,
+    "fields": {
+      "Title": "PLAZA ORB / plazatilecoat",
+      "Articy Id": "0x0100008F00002858",
+      "AlternateOrbText": "",
+      "CheckType": "14",
+      "Condition": "Variable[\"plaza.orb_shivers_coatquest_done\"] == true  and  IsHourBetween(8, 24)",
+      "Description": "This Shivers initiates the coat quest. It is an Easy check.",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "14",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100008F00002858",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1374,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1374,
+            "originDialogueID": 0,
+            "destinationConversationID": 1374,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100008F0000285B",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100008F0000285F"
+        },
+        "conversationID": 1374,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1374,
+            "originDialogueID": 1,
+            "destinationConversationID": 1374,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Shivers: \"I am so glad… I have no time... The...\"",
+          "Dialogue Text": "I am so glad… I have no time... The place of many words, before the one so much like yourself... Try to hear me there...",
+          "Articy Id": "0x0100008F00002877",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "411",
+          "Conversant": "0",
+          "OutputId": "0x0100008F0000287B",
+          "InputId": "0x0100008F00002865"
+        },
+        "conversationID": 1374,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "GainTask(\"TASK.track_down_the_voice\");\nGainTask(\"TASK.find_voice_in_bookshop\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1025,
+          "y": 200,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Shivers: \"I am what has always been here for...\"",
+          "Dialogue Text": "I am what has always been here for you… Please... The place of many words, before the one so much like yourself... Try to hear me there...",
+          "Articy Id": "0x0100008F0000287D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "411",
+          "Conversant": "0",
+          "OutputId": "0x0100008F0000287B",
+          "InputId": "0x0100008F0000286B"
+        },
+        "conversationID": 1374,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "GainTask(\"TASK.track_down_the_voice\");\nGainTask(\"TASK.find_voice_in_bookshop\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1025,
+          "y": 451,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Shivers: \"I am here... Please, listen... It w...\"",
+          "Dialogue Text": "I am here... Please, listen... It will be hard to hear me…",
+          "Articy Id": "0x0100008F0000285F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "411",
+          "Conversant": "0",
+          "InputId": "0x0100008F0000285B",
+          "OutputId": "0x0100008F00002871"
+        },
+        "conversationID": 1374,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1374,
+            "originDialogueID": 4,
+            "destinationConversationID": 1374,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1374,
+            "originDialogueID": 4,
+            "destinationConversationID": 1374,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1374,
+            "originDialogueID": 4,
+            "destinationConversationID": 1374,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"plaza.orb_shivers_coatquest_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 425.0000305175781,
+          "y": 450.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "You: \"I hear you! Please, talk to me! Wha...\"",
+          "Dialogue Text": "I hear you! Please, talk to me! What do you want?",
+          "Articy Id": "0x0100008F00002865",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008F0000285F",
+          "OutputId": "0x0100008F00002877"
+        },
+        "conversationID": 1374,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1374,
+            "originDialogueID": 5,
+            "destinationConversationID": 1374,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 725,
+          "y": 225.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "You: \"Who are you?\"",
+          "Dialogue Text": "Who are you?",
+          "Articy Id": "0x0100008F0000286B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008F0000285F",
+          "OutputId": "0x0100008F0000287D"
+        },
+        "conversationID": 1374,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1374,
+            "originDialogueID": 6,
+            "destinationConversationID": 1374,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 725,
+          "y": 450.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "You: \"Oh, no. No, no. Whatever you are, I...\"",
+          "Dialogue Text": "Oh, no. No, no. Whatever you are, I don't want you in my head.",
+          "Articy Id": "0x0100008F00002871",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008F0000285F",
+          "OutputId": "0x0100008F00002883"
+        },
+        "conversationID": 1374,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1374,
+            "originDialogueID": 7,
+            "destinationConversationID": 1374,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 725,
+          "y": 700,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Shivers: \"Forgive me... I have no other way t...\"",
+          "Dialogue Text": "Forgive me... I have no other way to reach you... Please -- the place of many words, before the one so much like yourself... Try to hear me there...",
+          "Articy Id": "0x0100008F00002883",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "411",
+          "Conversant": "0",
+          "InputId": "0x0100008F00002871",
+          "OutputId": "0x0100008F0000287B"
+        },
+        "conversationID": 1374,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "GainTask(\"TASK.track_down_the_voice\");\nGainTask(\"TASK.find_voice_in_bookshop\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1025,
+          "y": 700,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

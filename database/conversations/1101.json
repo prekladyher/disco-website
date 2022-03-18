@@ -1,0 +1,508 @@
+[
+  {
+    "id": 1101,
+    "fields": {
+      "Title": "WHIRLING F1 / Alain barks post tribunal",
+      "Articy Id": "0x010000640000B1F1",
+      "Description": "barks of Alain as Titus did not get shot",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000640000B1F1",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1101,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1101,
+            "originDialogueID": 0,
+            "destinationConversationID": 1101,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x010000640000B1F2",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100004000002F14"
+        },
+        "conversationID": 1101,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1101,
+            "originDialogueID": 1,
+            "destinationConversationID": 1101,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1101,
+            "originDialogueID": 1,
+            "destinationConversationID": 1101,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1101,
+            "originDialogueID": 1,
+            "destinationConversationID": 1101,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1101,
+            "originDialogueID": 1,
+            "destinationConversationID": 1101,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1101,
+            "originDialogueID": 1,
+            "destinationConversationID": 1101,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Alain: \"\"The Hardie boys are *unfuckable* n...\"",
+          "Dialogue Text": "\"The Hardie boys are *unfuckable* now.\"",
+          "Articy Id": "0x0100004000002F0E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "109",
+          "Conversant": "0",
+          "InputId": "0x010000640000B1F2",
+          "OutputId": "0x010000640000B22D"
+        },
+        "conversationID": 1101,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"plaza.tribunal_hardie_shot\"] == false  and  Variable[\"plaza.tribunal_saw_death_dream\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1200,
+          "y": 619,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Alain: \"\"I envy Theo. To go out in the twil...\"",
+          "Dialogue Text": "\"I envy Theo. To go out in the twilight of your life in a blaze of glory...\"",
+          "Articy Id": "0x010000640000B235",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "109",
+          "Conversant": "0",
+          "OutputId": "0x010000640000B22D"
+        },
+        "conversationID": 1101,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1490,
+          "y": 407,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Alain: \"\"We could take over the entire city.\"\"",
+          "Dialogue Text": "\"We could take over the entire city.\"",
+          "Articy Id": "0x0100004000002F14",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "109",
+          "Conversant": "0",
+          "InputId": "0x010000640000B1F2",
+          "OutputId": "0x010000640000B22D"
+        },
+        "conversationID": 1101,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"plaza.tribunal_hardie_shot\"] == false  and  Variable[\"plaza.tribunal_saw_death_dream\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1198,
+          "y": 861,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Alain: \"\"... no worse than the bangers on B...\"",
+          "Dialogue Text": "\"... no worse than the bangers on Boogie Street.\"",
+          "Articy Id": "0x0100004000002EF6",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "109",
+          "Conversant": "0",
+          "InputId": "0x010000640000B1F2",
+          "OutputId": "0x010000640000B22D"
+        },
+        "conversationID": 1101,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"plaza.tribunal_hardie_shot\"] == false  and  Variable[\"plaza.tribunal_saw_death_dream\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1187,
+          "y": -52,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Alain: \"\"Theo went like he lived -- fast an...\"",
+          "Dialogue Text": "\"Theo went like he lived -- fast and hard. Tough old man.\"",
+          "Articy Id": "0x0100004000002F08",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "109",
+          "Conversant": "0",
+          "InputId": "0x010000640000B1F2",
+          "OutputId": "0x010000640000B22D"
+        },
+        "conversationID": 1101,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"plaza.tribunal_hardie_shot\"] == false  and  Variable[\"plaza.tribunal_saw_death_dream\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1193,
+          "y": 398.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Alain: \"\"*This* is gonna make a hell of a s...\"",
+          "Dialogue Text": "\"*This* is gonna make a hell of a sad tattoo...\"",
+          "Articy Id": "0x0100004000002F02",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "109",
+          "Conversant": "0",
+          "InputId": "0x010000640000B1F2",
+          "OutputId": "0x010000640000B22D"
+        },
+        "conversationID": 1101,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"plaza.tribunal_hardie_shot\"] == false  and  Variable[\"plaza.tribunal_saw_death_dream\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1193,
+          "y": 155,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Alain: \"\"The Hardie boys are *unfuckable* n...\"",
+          "Dialogue Text": "\"The Hardie boys are *unfuckable* now. We could take over the isola.\"",
+          "Articy Id": "0x010000640000B23B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "109",
+          "Conversant": "0",
+          "OutputId": "0x010000640000B22D"
+        },
+        "conversationID": 1101,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1490,
+          "y": 632,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Alain: \"\"*This* is gonna make a hell of a s...\"",
+          "Dialogue Text": "\"*This* is gonna make a hell of a sad tattoo...\"",
+          "Articy Id": "0x010000640000B22F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "109",
+          "Conversant": "0",
+          "OutputId": "0x010000640000B22D"
+        },
+        "conversationID": 1101,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1490,
+          "y": 182,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Alain: \"\"Think the mercs were bad? Should'v...\"",
+          "Dialogue Text": "\"Think the mercs were bad? Should've seen the bangers down on Boogie Street...\"",
+          "Articy Id": "0x010000640000B229",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "109",
+          "Conversant": "0",
+          "OutputId": "0x010000640000B22D"
+        },
+        "conversationID": 1101,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1490,
+          "y": -43,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "Alain: \"\"Death ain't sad -- theirs was glor...\"",
+          "Dialogue Text": "\"Death ain't sad -- theirs was glorious. Hope mine will be dignified like that...\"",
+          "Articy Id": "0x010000640000B241",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "109",
+          "Conversant": "0",
+          "OutputId": "0x010000640000B22D"
+        },
+        "conversationID": 1101,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1490,
+          "y": 857,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

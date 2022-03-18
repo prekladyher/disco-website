@@ -1,0 +1,2911 @@
+[
+  {
+    "id": 42,
+    "fields": {
+      "Title": "WHIRLING F2 / BROKEN WINDOW VISCAL",
+      "Articy Id": "0x010000040000C508",
+      "OnUse": "",
+      "OverrideDialogueCondition": "",
+      "AlternateOrbText": "",
+      "CheckType": "15",
+      "Condition": "Variable[\"TASK.report_to_the_tribunal_done\"] == false",
+      "Description": "A medium Viscal sees the shards are facing outwards.",
+      "Instruction": "",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "1",
+      "Actor": "396",
+      "Conversant": "204"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000040000C508",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 0,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x010000040000C50B",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x010000040000C50E"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 1,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 56,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "CheckItem(\"shoes_snakeskin_left\")",
+          "Articy Id": "0x010000040000C4D6",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "204",
+          "Conversant": "396",
+          "InputId": "0x0100008900000A87"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 2,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 42,
+            "originDialogueID": 2,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 650,
+          "y": 1050,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "CheckItem(\"shoes_snakeskin_left\")",
+          "Articy Id": "0x010000040000C4D6",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "204",
+          "Conversant": "396",
+          "OutputId": "0x010000040000C4C3"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 3,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 55,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "CheckItem(\"shoes_snakeskin_left\")",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 422.4999694824219,
+          "y": 682.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "!(CheckItem(\"shoes_snakeskin_left\"))",
+          "Articy Id": "0x010000040000C4D6",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "204",
+          "Conversant": "396",
+          "OutputId": "0x010000040000C4CF"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 4,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(CheckItem(\"shoes_snakeskin_left\")) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 422.4999694824219,
+          "y": 682.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Visual Calculus: \"Something you've done before.\"",
+          "Dialogue Text": "Something you've done before.",
+          "Articy Id": "0x010000040000C4DF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "OutputId": "0x010000040000C4C9",
+          "InputId": "0x010000040000C469"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 5,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -46,
+          "y": 700,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Visual Calculus: \"You mean someone else took your sho...\"",
+          "Dialogue Text": "You mean someone else took your shoe off and smashed the window with it?",
+          "Articy Id": "0x010000580001B841",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "OutputId": "0x010000580001B83B",
+          "InputId": "0x010000580001B847"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 6,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.viscal_window_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1575,
+          "y": -675,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Jump to: [broaken_window]",
+          "Articy Id": "0x010000040000C549",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000580001B81C"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 7,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2129,
+          "y": 423,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Visual Calculus: \"What do you mean *assess the damage...\"",
+          "Dialogue Text": "What do you mean *assess the damage*? How would you do that? What are you even trying to do?",
+          "Articy Id": "0x010000040000C55E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "OutputId": "0x010000040000C565",
+          "InputId": "0x010000040000C556"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 8,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1905.9998779296875,
+          "y": 1291,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Logic: \"This person also *forced* the drink...\"",
+          "Dialogue Text": "This person also *forced* the drinks on you.",
+          "Articy Id": "0x010000040000C457",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "398",
+          "Conversant": "396",
+          "OutputId": "0x010000040000C57B",
+          "InputId": "0x010000040000C48A"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 9,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 42,
+            "originDialogueID": 9,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 50,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.broken_window_logic_was_you\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2400,
+          "y": 700,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "You: \"[Leave.]\"",
+          "Dialogue Text": "[Leave.]",
+          "Articy Id": "0x010000040000C52A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "204",
+          "OutputId": "0x010000040000C52E",
+          "InputId": "0x010000040000C539"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2525,
+          "y": 1475,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Visual Calculus: \"Congratulations, you smashed the wi...\"",
+          "Dialogue Text": "Congratulations, you smashed the window with your own shoe.",
+          "Articy Id": "0x010000580001B834",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "OutputId": "0x010000580001B85E",
+          "InputId": "0x010000580001B82D"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 11,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 42,
+            "originDialogueID": 11,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 42,
+            "originDialogueID": 11,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 54,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.viscal_window_has_deduced_shoe\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 975.0000610351562,
+          "y": -475.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "You: \"I'm sure I had a good reason for it...\"",
+          "Dialogue Text": "I'm sure I had a good reason for it. Maybe I was trying to hit someone?",
+          "Articy Id": "0x010000580001B857",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "204",
+          "InputId": "0x010000580001B83B",
+          "OutputId": "0x010000580001B864"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 12,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 59,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1349,
+          "y": -299,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Visual Calculus: \"A fine web of scarring covers the b...\"",
+          "Dialogue Text": "A fine web of scarring covers the back of your right hand, but none of it is recent.",
+          "Articy Id": "0x010000040000C49D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "OutputId": "0x010000040000C475",
+          "InputId": "0x010000040000C4E5"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 13,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1300,
+          "y": 825,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Visual Calculus: \"Like the green shoe that's on the h...\"",
+          "Dialogue Text": "Like the green shoe that's on the hat rack in the corner, which -- coincidentally -- is missing its friend.",
+          "Articy Id": "0x010000040000C4CF",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "FocusCamera(WindowViscalShoe);",
+          "Actor": "402",
+          "Conversant": "396",
+          "InputId": "0x010000040000C4D6",
+          "OutputId": "0x010000040000C45D"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 14,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 950.0000610351562,
+          "y": 1175,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "HideVisCalAfterConversation(\"TempVisCal\");\nHideVisCalAfterConversation(\"viscal-window-2\")",
+          "Articy Id": "0x0100007F00000007",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Instruction",
+          "Actor": "204",
+          "Conversant": "396",
+          "OutputId": "0x010000040000C52E",
+          "InputId": "0x010000580001B87B"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "HideVisCalAfterConversation(\"TempVisCal\");\nHideVisCalAfterConversation(\"viscal-window-2\");\n",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2425,
+          "y": -49,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "CheckItem(\"shoes_snakeskin\")",
+          "Articy Id": "0x010000580001B826",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "204",
+          "Conversant": "396",
+          "InputId": "0x010000040000C4BD"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 16,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 42,
+            "originDialogueID": 16,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 233,
+          "y": 1012,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "CheckItem(\"shoes_snakeskin\")",
+          "Articy Id": "0x010000580001B826",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "204",
+          "Conversant": "396",
+          "OutputId": "0x010000580001B82D"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 17,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "CheckItem(\"shoes_snakeskin\")",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 151.4499969482422,
+          "y": 657.7999877929688,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "!(CheckItem(\"shoes_snakeskin\"))",
+          "Articy Id": "0x010000580001B826",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "204",
+          "Conversant": "396",
+          "OutputId": "0x0100008900000A87"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 18,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 51,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(CheckItem(\"shoes_snakeskin\")) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 151.4499969482422,
+          "y": 657.7999877929688,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "You: \"What did this then?\"",
+          "Dialogue Text": "What did this then?",
+          "Articy Id": "0x010000040000C475",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "204",
+          "InputId": "0x010000040000C49D",
+          "OutputId": "0x010000040000C4B1"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 19,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1000.0000610351562,
+          "y": 825,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Visual Calculus: \"More likely a projectile than a hel...\"",
+          "Dialogue Text": "More likely a projectile than a held object. There are no fragments on the floor from pulling a tool back in after impact.",
+          "Articy Id": "0x010000040000C4B1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "InputId": "0x010000040000C475",
+          "OutputId": "0x010000040000C4C9"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 20,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 58,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 42,
+            "originDialogueID": 20,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -700,
+          "y": 822,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "You: \"Assess the damage.\"",
+          "Dialogue Text": "Assess the damage.",
+          "Articy Id": "0x010000040000C54F",
+          "DialogueEntryType": "DialogueFragment",
+          "Forced": "False",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x0000000000000000",
+          "FlagName": "whirling.viscal_window_viscal_success",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000A0000001E",
+          "DifficultyWhite": "9",
+          "modifier1": "-1",
+          "variable1": "Variable[\"TASK.pay_for_the_damages_done\"]",
+          "tooltip1": "Has been here a while.",
+          "modifier2": "-1",
+          "variable2": "Variable[\"whirling.lights_are_on\"]",
+          "tooltip2": "The lights are on!",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "204",
+          "OutputId": "0x010000040000C54F-FORK",
+          "InputId": "0x010000040000C539"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 21,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2522,
+          "y": 1075,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Variable[\"whirling.viscal_window_viscal_success\"]",
+          "Articy Id": "0x010000040000C54F-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "204",
+          "InputId": "0x010000040000C54F"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 22,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 42,
+            "originDialogueID": 22,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2445.076904296875,
+          "y": 1151.923095703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "Variable[\"whirling.viscal_window_viscal_success\"]",
+          "Articy Id": "0x010000040000C54F-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "204",
+          "OutputId": "0x010000040000C556"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 23,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"whirling.viscal_window_viscal_success\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1589.2999267578125,
+          "y": 748.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "!(Variable[\"whirling.viscal_window_viscal_success\"])",
+          "Articy Id": "0x010000040000C54F-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "204",
+          "OutputId": "0x010000040000C556"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 24,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"whirling.viscal_window_viscal_success\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1589.2999267578125,
+          "y": 748.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "You: \"I should go and get that shoe.\"",
+          "Dialogue Text": "I should go and get that shoe.",
+          "Articy Id": "0x010000040000C581",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "204",
+          "InputId": "0x010000040000C573",
+          "OutputId": "0x010000040000C591"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 25,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.viscal_window_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1800.0001220703125,
+          "y": 1025,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "You: \"Look out.\"",
+          "Dialogue Text": "Look out.",
+          "Articy Id": "0x010000040000C51E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "204",
+          "OutputId": "0x010000580001B81C",
+          "InputId": "0x010000040000C539"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 26,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 43,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2729,
+          "y": 398,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "Visual Calculus: \"You mean someone else took your sho...\"",
+          "Dialogue Text": "You mean someone else took your shoe off and smashed the window with it?",
+          "Articy Id": "0x010000040000C48A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "OutputId": "0x010000040000C457",
+          "InputId": "0x010000040000C47D"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 28,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2100,
+          "y": 700,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "Jump to: [broaken_window]",
+          "Articy Id": "0x010000040000C565",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000040000C55E"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 29,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1593,
+          "y": 1317,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "Visual Calculus: \"The shoe you found out on the balco...\"",
+          "Dialogue Text": "The shoe you found out on the balcony fits the hole almost as well as your foot. It would have also been heavy enough, if thrown with force.",
+          "Articy Id": "0x010000580001B82D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "InputId": "0x010000580001B826",
+          "OutputId": "0x010000580001B834"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 30,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 675,
+          "y": -475.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "Visual Calculus: \"Congratulations, you smashed the wi...\"",
+          "Dialogue Text": "Congratulations, you smashed the window with your own shoe. Now you only have one. If you're lucky you can still find the other on the balcony outside. The door to it should be outside your room.",
+          "Articy Id": "0x010000040000C45D",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "FocusCamera(WindowViscalPanel);",
+          "Actor": "402",
+          "Conversant": "396",
+          "InputId": "0x010000040000C4CF",
+          "OutputId": "0x010000040000C573"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 31,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.viscal_window_has_deduced_shoe\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1250,
+          "y": 1150,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "Visual Calculus: \"The shards face outward. Whatever b...\"",
+          "Dialogue Text": "The shards face outward. Whatever broke this window came from the inside.",
+          "Articy Id": "0x010000040000C497",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "FocusCamera(WindowViscalPanel);",
+          "Actor": "402",
+          "Conversant": "396",
+          "OutputId": "0x010000040000C4E5",
+          "InputId": "0x010000040000C556"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 32,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "ShowVisCal(\"TempVisCal\");\nShowVisCal(\"viscal-window-2\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1900.0001220703125,
+          "y": 825,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "You: \"Did I break it with my own hands? (...\"",
+          "Dialogue Text": "Did I break it with my own hands? (Look at them.)",
+          "Articy Id": "0x010000040000C4E5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "204",
+          "InputId": "0x010000040000C497",
+          "OutputId": "0x010000040000C49D"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 33,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1600,
+          "y": 825,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "Logic: \"This person also *forced* the drink...\"",
+          "Dialogue Text": "This person also *forced* the drinks on you.",
+          "Articy Id": "0x010000580001B83B",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "398",
+          "Conversant": "396",
+          "InputId": "0x010000580001B841",
+          "OutputId": "0x010000580001B85E"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 34,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 42,
+            "originDialogueID": 34,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 54,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.broken_window_logic_was_you\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1875.0001220703125,
+          "y": -680,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Title": "Broken Window: \"A cool wind gushes in. Your toes cu...\"",
+          "Dialogue Text": "A cool wind gushes in. Your toes curl up from the cold.",
+          "Articy Id": "0x010000040000C591",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "204",
+          "Conversant": "396",
+          "InputId": "0x010000040000C581",
+          "OutputId": "0x010000040000C52E"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "GainTask(\"TASK.find_your_other_shoe\");\nHideVisCalAfterConversation(\"TempVisCal\");\nHideVisCalAfterConversation(\"viscal-window-2\");\nXPPicoSetBool(\"XP.window_move_on\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2100,
+          "y": 1025,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "You: \"Maybe it wasn't me?\"",
+          "Dialogue Text": "Maybe it wasn't me?",
+          "Articy Id": "0x010000580001B847",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "204",
+          "InputId": "0x010000580001B834",
+          "OutputId": "0x010000580001B841"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 36,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.broken_window_maybe_not_me\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1275,
+          "y": -675,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "You: \"Maybe it wasn't me?\"",
+          "Dialogue Text": "Maybe it wasn't me?",
+          "Articy Id": "0x010000040000C47D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "204",
+          "OutputId": "0x010000040000C48A",
+          "InputId": "0x010000040000C573"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 37,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.broken_window_maybe_not_me\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1800.0001220703125,
+          "y": 700,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "You: \"Assess the size of the impact.\"",
+          "Dialogue Text": "Assess the size of the impact.",
+          "Articy Id": "0x010000040000C4C9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "204",
+          "InputId": "0x010000040000C4B1",
+          "OutputId": "0x010000040000C4BD"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 38,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 46,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -350,
+          "y": 975.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Title": "find_shoe_task_hub",
+          "Articy Id": "0x010000040000C573",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x010000580001B883",
+          "OutputId": "0x010000040000C57B"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 39,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 42,
+            "originDialogueID": 39,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 42,
+            "originDialogueID": 39,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 50,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1550,
+          "y": 1100,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Title": "Variable[\"whirling.viscal_window_viscal_success\"]",
+          "Articy Id": "0x010000040000C556",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "204",
+          "Conversant": "396",
+          "InputId": "0x010000040000C54F-FORK"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 40,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 42,
+            "originDialogueID": 40,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 42,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2244,
+          "y": 1128,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "Variable[\"whirling.viscal_window_viscal_success\"]",
+          "Articy Id": "0x010000040000C556",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "204",
+          "Conversant": "396",
+          "OutputId": "0x010000040000C497"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 41,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"whirling.viscal_window_viscal_success\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1458.5999755859375,
+          "y": 733.199951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Title": "!(Variable[\"whirling.viscal_window_viscal_success\"])",
+          "Articy Id": "0x010000040000C556",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "204",
+          "Conversant": "396",
+          "OutputId": "0x010000040000C55E"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 42,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"whirling.viscal_window_viscal_success\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1458.5999755859375,
+          "y": 733.199951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Title": "Broken Window: \"The morning light hurts your eyes....\"",
+          "Dialogue Text": "The morning light hurts your eyes. It's hazy, but you see the ocean and some war-torn buildings...",
+          "Articy Id": "0x010000580001B81C",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "IsNighttime()",
+          "Alternate1": "You see some lights shimmering outside, but it's difficult to make out the outlines of the buildings below -- dark phantoms with many tiny eyes chaotically arranged and not looking at you.",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "204",
+          "Conversant": "396",
+          "InputId": "0x010000040000C51E",
+          "OutputId": "0x010000040000C549"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 43,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"plaza.rene_noticed_war_damage\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2429,
+          "y": 398,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 44,
+        "fields": {
+          "Title": "Inland Empire: \"Or maybe you were trying to smash y...\"",
+          "Dialogue Text": "Or maybe you were trying to smash your own reflection in the windowpane?",
+          "Articy Id": "0x010000580001B86B",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "404",
+          "Conversant": "396",
+          "OutputId": "0x0100007F00000007",
+          "InputId": "0x010000580001B864"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 44,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1949,
+          "y": -299,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 45,
+        "fields": {
+          "Title": "broaken_window",
+          "Articy Id": "0x010000040000C539",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x010000040000C52A",
+          "InputId": "0x010000040000C50E"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 45,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 42,
+            "originDialogueID": 45,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 42,
+            "originDialogueID": 45,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2775,
+          "y": 1150,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 46,
+        "fields": {
+          "Title": "Visual Calculus: \"It is too large for a bullet yet to...\"",
+          "Dialogue Text": "It is too large for a bullet yet too small for a piece of furniture. You're looking for something heavy and larger than your fist.",
+          "Articy Id": "0x010000040000C4BD",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "InputId": "0x010000040000C4C9",
+          "OutputId": "0x010000580001B826"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 46,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -50,
+          "y": 950.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 47,
+        "fields": {
+          "Title": "Broken Window: \"The window agrees. Its cracked smil...\"",
+          "Dialogue Text": "The window agrees. Its cracked smile is cold and sparkly.",
+          "Articy Id": "0x010000040000C589",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "204",
+          "Conversant": "396",
+          "OutputId": "0x010000040000C52E",
+          "InputId": "0x010000040000C57B"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "HideVisCalAfterConversation(\"TempVisCal\");\nHideVisCalAfterConversation(\"viscal-window-2\");\nXPPicoSetBool(\"XP.window_move_on\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2100,
+          "y": 1275,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 48,
+        "fields": {
+          "Title": "Pain Threshold: \"Not that it will keep you warm at n...\"",
+          "Dialogue Text": "Not that it will keep you warm at night. Brrr.",
+          "Articy Id": "0x010000580001B87B",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "1",
+          "Actor": "412",
+          "Conversant": "396",
+          "OutputId": "0x0100007F00000007",
+          "InputId": "0x010000580001B874"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 48,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1949,
+          "y": -74,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 49,
+        "fields": {
+          "Title": "Visual Calculus: \"Congratulations, you smashed the wi...\"",
+          "Dialogue Text": "Congratulations, you smashed the window with your own shoe.",
+          "Articy Id": "0x0100008900000A94",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "FocusCamera(WindowViscalPanel);",
+          "Actor": "402",
+          "Conversant": "396",
+          "OutputId": "0x010000040000C573",
+          "InputId": "0x0100008900000A8E"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 49,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.viscal_window_has_deduced_shoe\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1250,
+          "y": 525,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 50,
+        "fields": {
+          "Title": "You: \"I don't need it. I don't need *anyo...\"",
+          "Dialogue Text": "I don't need it. I don't need *anyone*.",
+          "Articy Id": "0x010000040000C57B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "204",
+          "InputId": "0x010000040000C573",
+          "OutputId": "0x010000040000C589"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 50,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.viscal_window_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1800.0001220703125,
+          "y": 1275,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 51,
+        "fields": {
+          "Title": "CheckItem(\"shoes_snakeskin_right\")",
+          "Articy Id": "0x0100008900000A87",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "204",
+          "Conversant": "396",
+          "InputId": "0x010000580001B826"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 51,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 42,
+            "originDialogueID": 51,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 53,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 650,
+          "y": 725,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 52,
+        "fields": {
+          "Title": "CheckItem(\"shoes_snakeskin_right\")",
+          "Articy Id": "0x0100008900000A87",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "204",
+          "Conversant": "396",
+          "OutputId": "0x0100008900000A8E"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 52,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 61,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "CheckItem(\"shoes_snakeskin_right\")",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 422.4999694824219,
+          "y": 471.2499694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 53,
+        "fields": {
+          "Title": "!(CheckItem(\"shoes_snakeskin_right\"))",
+          "Articy Id": "0x0100008900000A87",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "204",
+          "Conversant": "396",
+          "OutputId": "0x010000040000C4D6"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 53,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(CheckItem(\"shoes_snakeskin_right\")) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 422.4999694824219,
+          "y": 471.2499694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 54,
+        "fields": {
+          "Title": "You: \"What a stupid thing to do.\"",
+          "Dialogue Text": "What a stupid thing to do.",
+          "Articy Id": "0x010000580001B85E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "204",
+          "InputId": "0x010000580001B83B",
+          "OutputId": "0x010000580001B874"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 54,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 60,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1349,
+          "y": -74,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 55,
+        "fields": {
+          "Title": "Visual Calculus: \"The single green shoe you found fit...\"",
+          "Dialogue Text": "The single green shoe you found fits the hole almost as well as your foot. It would have also been heavy enough, if thrown with force.",
+          "Articy Id": "0x010000040000C4C3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "InputId": "0x010000040000C4D6",
+          "OutputId": "0x010000580001B883"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 55,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 57,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 950.0000610351562,
+          "y": 850.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 56,
+        "fields": {
+          "Title": "Broken Window: \"The window stands broken in its fra...\"",
+          "Dialogue Text": "The window stands broken in its frame. Cold wind blows in.",
+          "Articy Id": "0x010000040000C50E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "204",
+          "Conversant": "396",
+          "InputId": "0x010000040000C50B",
+          "OutputId": "0x010000040000C539"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 56,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -3075,
+          "y": 1075,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 57,
+        "fields": {
+          "Title": "Visual Calculus: \"Congratulations, you smashed the wi...\"",
+          "Dialogue Text": "Congratulations, you smashed the window with your own shoe. Now you only have one. If you're lucky, you can still find the other on the balcony outside. The door to it should be outside your room.",
+          "Articy Id": "0x010000580001B883",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "IsNighttime()",
+          "Alternate1": "Congratulations, you smashed the window with your own shoe. That's why you only have one. If you're lucky, you might still find the other on the balcony outside. The door to it should be outside your room.",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "402",
+          "Conversant": "396",
+          "InputId": "0x010000040000C4C3",
+          "OutputId": "0x010000040000C573"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 57,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.viscal_window_has_deduced_shoe\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1250,
+          "y": 825,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 58,
+        "fields": {
+          "Title": "You: \"Wait, what am I doing?\"",
+          "Dialogue Text": "Wait, what am I doing?",
+          "Articy Id": "0x010000040000C469",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "204",
+          "InputId": "0x010000040000C4B1",
+          "OutputId": "0x010000040000C4DF"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 58,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -352,
+          "y": 700,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 59,
+        "fields": {
+          "Title": "Visual Calculus: \"And maybe, just maybe, you succeede...\"",
+          "Dialogue Text": "And maybe, just maybe, you succeeded. We'll never know.",
+          "Articy Id": "0x010000580001B864",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "InputId": "0x010000580001B857",
+          "OutputId": "0x010000580001B86B"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 59,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 44,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.viscal_window_done\", true) ;\nXPPicoSetBool(\"XP.window_shoe_smashed\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1649,
+          "y": -299,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 60,
+        "fields": {
+          "Title": "Visual Calculus: \"Pretty much. But, hey, at least you...\"",
+          "Dialogue Text": "Pretty much. But, hey, at least you found your shoe.",
+          "Articy Id": "0x010000580001B874",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "InputId": "0x010000580001B85E",
+          "OutputId": "0x010000580001B87B"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 60,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.viscal_window_done\", true) ;\nXPPicoSetBool(\"XP.window_shoe_smashed\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1649,
+          "y": -74,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 61,
+        "fields": {
+          "Title": "Visual Calculus: \"The shoe you found out on the balco...\"",
+          "Dialogue Text": "The shoe you found out on the balcony fits the hole almost as well as your foot. It's similar to the green shoe that's on the hat rack in the corner, which -- coincidentally -- is missing its friend.",
+          "Articy Id": "0x0100008900000A8E",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "FocusCamera(WindowViscalShoe);",
+          "Actor": "402",
+          "Conversant": "396",
+          "InputId": "0x0100008900000A87",
+          "OutputId": "0x0100008900000A94"
+        },
+        "conversationID": 42,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 42,
+            "originDialogueID": 61,
+            "destinationConversationID": 42,
+            "destinationDialogueID": 49,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 950.0000610351562,
+          "y": 500.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

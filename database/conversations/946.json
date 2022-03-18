@@ -1,0 +1,245 @@
+[
+  {
+    "id": 946,
+    "fields": {
+      "Title": "WESTCOAST / MORELL barks",
+      "Articy Id": "0x0100005800002DB7",
+      "Description": "Morell checks to see if Gary is doing something useful.",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100005800002DB7",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 946,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 946,
+            "originDialogueID": 0,
+            "destinationConversationID": 946,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100005800002DBA",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100005800002E08"
+        },
+        "conversationID": 946,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 946,
+            "originDialogueID": 1,
+            "destinationConversationID": 946,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 946,
+            "originDialogueID": 1,
+            "destinationConversationID": 946,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 946,
+            "originDialogueID": 1,
+            "destinationConversationID": 946,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Morell, the Cryptozoologist: \"\"Gary, what are you doing there?\"\"",
+          "Dialogue Text": "\"Gary, what are you doing there?\"",
+          "Articy Id": "0x0100005800002E01",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "384",
+          "Conversant": "0",
+          "InputId": "0x0100005800002DBA",
+          "OutputId": "0x0100005800002DFE"
+        },
+        "conversationID": 946,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"coast.gary_hello\"] == false  and  Variable[\"coast.morell_met\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 975.0000610351562,
+          "y": 125.00000762939453,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Morell, the Cryptozoologist: \"\"How about rekindling that camp fir...\"",
+          "Dialogue Text": "\"How about rekindling that camp fire so we can dry off?\"",
+          "Articy Id": "0x0100005800002DFA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "384",
+          "Conversant": "0",
+          "InputId": "0x0100005800002DBA",
+          "OutputId": "0x0100005800002DFE"
+        },
+        "conversationID": 946,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"coast.gary_hello\"] == false  and  Variable[\"coast.morell_met\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 975.0000610351562,
+          "y": 375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Morell, the Cryptozoologist: \"\"Don't you remember that method I s...\"",
+          "Dialogue Text": "\"Don't you remember that method I showed you back in... never mind.\"",
+          "Articy Id": "0x0100005800002E08",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "384",
+          "Conversant": "0",
+          "InputId": "0x0100005800002DBA",
+          "OutputId": "0x0100005800002DFE"
+        },
+        "conversationID": 946,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"coast.gary_hello\"] == false  and  Variable[\"coast.morell_met\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 975.0000610351562,
+          "y": 625,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

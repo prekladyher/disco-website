@@ -1,0 +1,2580 @@
+[
+  {
+    "id": 1498,
+    "fields": {
+      "Title": "Helen - EasterEggs / Flow – WHIRLING / KIM DOOR",
+      "Articy Id": "zq36uckabuyqrblk",
+      "condition": "gates.IsDayFrom(3)  and  gates.IsHourBetween(21,4)  and  Variable[\"whirling.kimdoor_reached_knocking_hub\"] == false  and  instructions.TimeSinceKimWentToSleep() >= 15",
+      "Description": "Knocking on Kim's door.",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "zq36uckabuyqrblk",
+          "Sequence": "Continue()",
+          "InputId": "le4e5eqamq7qh6se"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 0,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "ny53nixceaewnuv1",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "2kee3ugz12zmp430"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 1,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Variable[\"TASK.find_murder_weapon_done\"]",
+          "Articy Id": "xndetd_l7mj2b5vu",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "quipsuo3lzojgtyv"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 2,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 2,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1419.2308349609375,
+          "y": -185.38462829589844,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Variable[\"TASK.find_murder_weapon_done\"]",
+          "Articy Id": "xndetd_l7mj2b5vu",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "b4h56ml4k1r91onm"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 3,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"TASK.find_murder_weapon_done\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 922.5,
+          "y": -120.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "!(Variable[\"TASK.find_murder_weapon_done\"])",
+          "Articy Id": "xndetd_l7mj2b5vu",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "s0m8q5d648w0gher"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 4,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 44,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"TASK.find_murder_weapon_done\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 922.5,
+          "y": -120.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Your hear the sound of a drawer closing followed by the shuffling of feet.",
+          "Articy Id": "ka7hasw8nb4fkzr2",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "260",
+          "Conversant": "0",
+          "OutputId": "zwbtqnu3rncqyrkp",
+          "InputId": "k63bx_abnv1hxg04"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 5,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3172.307861328125,
+          "y": -183.07693481445312,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Where is he? Isn't it party o'clock?",
+          "Articy Id": "pv87dnbh863p5up6",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"short_description\": \"Go to party planet. Love and be loved by drugs.\",\n  \"long_description\": \"COOL FOR: HIGH-FLIERS. PARTY ENTHUSIASTS. COPS WHO NEED LIGHTNING.\\n\\nElectrochemistry is the animal within you, the beast longing to be unleashed to indulge and enjoy. It enables you to take drugs with fewer negative side-effects. It also enables you to better investigate lurid matters – if you need to understand a chemical breakdown, or talk to someone blasted out of their mind, or understand sexual dynamics, Electrochemistry is there to guide you.\\n\\nAt high levels, Electrochemistry makes you a man of unrestrained pleasure – an unrepentant lothario who leers at people with a bottle of speed and a plastic bendy straw in either hand. But with a low Electrochemistry, you’ll be too innocent to be effective. Without a working knowledge of drugs and sex, the city will be difficult to understand.\",\n  \"color\": 4\n}",
+          "DifficultyPass": "2",
+          "Actor": "413",
+          "Conversant": "0",
+          "OutputId": "dkmvy99hs4070l66",
+          "InputId": "ouns9ny0r27zx8u0"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 6,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetFlag(\"whirling.kimdoor_electrochem_party\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1090.769287109375,
+          "y": 97.69231414794922,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Variable[\"TASK.perform_field_autopsy_done\"]",
+          "Articy Id": "quipsuo3lzojgtyv",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "dkmvy99hs4070l66"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 7,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 7,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1403.84619140625,
+          "y": 12.307692527770996,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Variable[\"TASK.perform_field_autopsy_done\"]",
+          "Articy Id": "quipsuo3lzojgtyv",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "xndetd_l7mj2b5vu"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 8,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"TASK.perform_field_autopsy_done\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 912.5,
+          "y": 8,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "!(Variable[\"TASK.perform_field_autopsy_done\"])",
+          "Articy Id": "quipsuo3lzojgtyv",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "ixqj2fc9_eh_ngtj"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 9,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"TASK.perform_field_autopsy_done\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 912.5,
+          "y": 8,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Your hear the sound of a drawer closing followed by the shuffling of feet.",
+          "Articy Id": "kr1x1feslar62lk2",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "260",
+          "Conversant": "0",
+          "OutputId": "r0yvxpln3i7mzcpx",
+          "InputId": "3zfnvu2khxkhjucr"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 10,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3169.23095703125,
+          "y": -531.5384521484375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "\"Do you wanna go for a midnight drive, to clear our heads?\"",
+          "Articy Id": "t4xqu039rgnxzi6q",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "e_ez2p0f3g5txayk",
+          "InputId": "h5j1h69rqal4gzws"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 11,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"whirling.kimdoor_interfacing_drive\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4386.92333984375,
+          "y": 271.5384826660156,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "\"Very funny. What do you want?\"",
+          "Articy Id": "0sbuh5lwjvdgkf_h",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"is_female\": false,\n  \"short_description\": \"\",\n  \"long_description\": \"\",\n  \"color\": 1\n}",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "h5j1h69rqal4gzws",
+          "InputId": "jkol44kw0c0vcyau"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 12,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4733.84619140625,
+          "y": -966.923095703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "\"Isn't it always party time with you?\"",
+          "Articy Id": "1smz6dafpzbnh6ta",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"is_female\": false,\n  \"short_description\": \"\",\n  \"long_description\": \"\",\n  \"color\": 1\n}",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0btbrhv3f9p0ee79",
+          "InputId": "uwv5etro43m9ibpg"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 13,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4721.53857421875,
+          "y": -568.4615478515625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "\"It's party time.\"",
+          "Articy Id": "uwv5etro43m9ibpg",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "1smz6dafpzbnh6ta",
+          "InputId": "h5j1h69rqal4gzws"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 14,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"whirling.kimdoor_electrochem_party\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4407.6923828125,
+          "y": -566.923095703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Anything to not face the hanged disco man yet...",
+          "Articy Id": "whb1sp6k38vg6dwq",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"short_description\": \"Hunches and gut feelings. Dreams in waking life.\",\n  \"long_description\": \"COOL FOR: DREAMERS. PARA-NATURAL INVESTIGATORS. MENTAL CREATORS.\\n\\nInland Empire is the unfiltered wellspring of imagination, emotion, and foreboding. It enables you to grope your way through invisible dimensions of reality, gaining insight into that which sight can’t see. What’s really going? What do these enigmatic riddles mean for the world-fate?\\n\\nAt high levels, Inland Empire animates the inanimate. You’ll have conversations with your clothing, conversations that may change the course of the investigation if you’re not thrown in the loony bin first. With low Inland Empire, however, you’ll be void of imagination – and character. And then how will you shape the cosmos?\",\n  \"color\": 3\n}",
+          "DifficultyPass": "2",
+          "Actor": "404",
+          "Conversant": "0",
+          "OutputId": "_brb6ku1qsn9aj5n",
+          "InputId": "b4h56ml4k1r91onm"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 15,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 46,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetFlag(\"whirling.kimdoor_inland_hanged_man\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2368.461669921875,
+          "y": -39.230770111083984,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "You're going to have to figure this one out on your own.",
+          "Articy Id": "0btbrhv3f9p0ee79",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"short_description\": \"Connect to Station 41. Understand cop culture.\",\n  \"long_description\": \"COOL FOR: COPS. COP-AFICIONADOS. PRETEND-COPS.\\n\\nEsprit de Corps is the very spirit of policing: the cop-geist. It enables you to understand your blue-souled sisters and brothers – not only by picking up subtle signals from your partner, but by witnessing flash-sideways scenes as they play out in your precinct.\\n\\nAt high levels, you’ll be the very heart of the police force: not only willing and able but obliged to take a bullet for your partner. However, without Esprit de Corps you’ll be flying blind, unable to understand discreet remarks colleagues make in high-stakes situations; remarks that might just save your life.\",\n  \"color\": 3\n}",
+          "DifficultyPass": "2",
+          "Actor": "408",
+          "Conversant": "0",
+          "InputId": "_kmodtvd89st9l74",
+          "OutputId": "6xcbaa4yol3t8c3f"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 16,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5084.61572265625,
+          "y": -429.23077392578125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "\"Well, I don't know either. You should get some rest.\"",
+          "Articy Id": "2wws7zuwoo9vv56p",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "xic5nycau3n8v6nt",
+          "InputId": "7c5swn83zgm23mvg"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 17,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 54,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4699.23095703125,
+          "y": 508.4615478515625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Is *he* not worried that you might have missed something in the autopsy?",
+          "Articy Id": "ixqj2fc9_eh_ngtj",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"short_description\": \"Wield raw intellectual power. Deduce the world.\",\n  \"long_description\": \"COOL FOR: ANALYSTS. PURE RATIONALISTS. OBVIOUSLY LOGICIANS.\\n\\nLogic urges you to analyze the living daylights out of the case. It enables you to piece evidence together, detect inconsistencies in statements, and impress everyone with your astonishing conclusions. It's the bread and butter of many a detective.\\n\\nAt high levels, Logic will be able to solve even the most complicated puzzle. You will be very proud, and thus susceptible to intellectual flattery; for those blinded by their own brilliance often miss important clues. With low levels of Logic, you’re going to have a hard time solving even the simplest puzzle. Even if you find the pieces, good luck putting them together.\",\n  \"color\": 2\n}",
+          "DifficultyPass": "2",
+          "Actor": "398",
+          "Conversant": "0",
+          "InputId": "quipsuo3lzojgtyv",
+          "OutputId": "b4h56ml4k1r91onm"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 18,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetFlag(\"whirling.kimdoor_logic_autopsy\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1706.923095703125,
+          "y": 189.23077392578125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "final hub",
+          "Articy Id": "h5j1h69rqal4gzws",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "sg7ivgdqhkh21vci",
+          "OutputId": "7c5swn83zgm23mvg"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 19,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 53,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 19,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 19,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 19,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 19,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 19,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 19,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4123.0771484375,
+          "y": -304.6153869628906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "\"Bad dreams?\"",
+          "Articy Id": "hlk7ay3m_851ap1m",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "_kmodtvd89st9l74",
+          "InputId": "flakrpc2qjhrl_zt"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 20,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4723.84619140625,
+          "y": -11.538461685180664,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Is *he* not worried that you didn't get the body down?",
+          "Articy Id": "zmus490u0ipqebro",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"short_description\": \"Wield raw intellectual power. Deduce the world.\",\n  \"long_description\": \"COOL FOR: ANALYSTS. PURE RATIONALISTS. OBVIOUSLY LOGICIANS.\\n\\nLogic urges you to analyze the living daylights out of the case. It enables you to piece evidence together, detect inconsistencies in statements, and impress everyone with your astonishing conclusions. It's the bread and butter of many a detective.\\n\\nAt high levels, Logic will be able to solve even the most complicated puzzle. You will be very proud, and thus susceptible to intellectual flattery; for those blinded by their own brilliance often miss important clues. With low levels of Logic, you’re going to have a hard time solving even the simplest puzzle. Even if you find the pieces, good luck putting them together.\",\n  \"color\": 2\n}",
+          "DifficultyPass": "2",
+          "Actor": "398",
+          "Conversant": "0",
+          "OutputId": "b4h56ml4k1r91onm",
+          "InputId": "dkmvy99hs4070l66"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 21,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetFlag(\"whirling.kimdoor_logic_body_taken_down\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1705.3846435546875,
+          "y": 415.3846435546875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "\"Yes, that's a good idea. Let's do it in the morning. You know, when we're not sleeping.\"",
+          "Articy Id": "_byonf8a49rvqibx",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"is_female\": false,\n  \"short_description\": \"\",\n  \"long_description\": \"\",\n  \"color\": 1\n}",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "xic5nycau3n8v6nt",
+          "InputId": "ael4734twoaf4z1w"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 22,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 54,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4722.30810546875,
+          "y": -302.3077087402344,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "\"To clear our heads from what, *sleep*?\"",
+          "Articy Id": "e_ez2p0f3g5txayk",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "t4xqu039rgnxzi6q",
+          "OutputId": "xic5nycau3n8v6nt"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 23,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 54,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4709.23095703125,
+          "y": 271.5384826660156,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "\"I don't know, Kim.\"",
+          "Articy Id": "7c5swn83zgm23mvg",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "h5j1h69rqal4gzws",
+          "OutputId": "2wws7zuwoo9vv56p"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 24,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4375.384765625,
+          "y": 510.7692565917969,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "Variable[\"TASK.get_the_dead_body_down_from_the_tree_done\"]",
+          "Articy Id": "dkmvy99hs4070l66",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "pv87dnbh863p5up6"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 25,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 25,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1383.84619140625,
+          "y": 323.0769348144531,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Variable[\"TASK.get_the_dead_body_down_from_the_tree_done\"]",
+          "Articy Id": "dkmvy99hs4070l66",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "quipsuo3lzojgtyv"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 26,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"TASK.get_the_dead_body_down_from_the_tree_done\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 899.5,
+          "y": 210,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "!(Variable[\"TASK.get_the_dead_body_down_from_the_tree_done\"])",
+          "Articy Id": "dkmvy99hs4070l66",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "zmus490u0ipqebro"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 27,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"TASK.get_the_dead_body_down_from_the_tree_done\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 899.5,
+          "y": 210,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Knock.",
+          "Articy Id": "q0mchm176fufczbt",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "AudioPlay(whirling_f2/klaasje_door/knock-knock-06,1)",
+          "dialog_stage_directions": "",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "r7g5cci8kqe0lpzb",
+          "InputId": "2kee3ugz12zmp430"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 28,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "FlagNotSet(\"whirling.kimdoor_reached_knocking_hub\")",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 458.4615478515625,
+          "y": -269.23077392578125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "\"What is it, officer?\" The lieutenant's voice sounds tired.",
+          "Articy Id": "zwbtqnu3rncqyrkp",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"is_female\": false,\n  \"short_description\": \"\",\n  \"long_description\": \"\",\n  \"color\": 1\n}",
+          "Condition1": "Variable[\"tc.name_full_harrier\"]",
+          "Alternate1": "\"What is it, Harry? What time is it?\" The lieutenant's voice sounds tired.",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "ka7hasw8nb4fkzr2",
+          "OutputId": "h5j1h69rqal4gzws"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 29,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3506.923095703125,
+          "y": -177.69232177734375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "The lieutenant's door is closed.",
+          "Articy Id": "2kee3ugz12zmp430",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "260",
+          "Conversant": "0",
+          "InputId": "ny53nixceaewnuv1",
+          "OutputId": "3wbme678i0i9vmm0"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 30,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 30,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 78.46154022216797,
+          "y": -51.5384635925293,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Still no response.",
+          "Articy Id": "ouns9ny0r27zx8u0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "260",
+          "Conversant": "0",
+          "OutputId": "pv87dnbh863p5up6",
+          "InputId": "9e_ftggoawpklks9"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 31,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 746.923095703125,
+          "y": 100,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "\"You'll get used to them, I promise. Sometimes it helps to go for a short walk.\"",
+          "Articy Id": "_kmodtvd89st9l74",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "hlk7ay3m_851ap1m",
+          "OutputId": "0btbrhv3f9p0ee79"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 32,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5046.15380859375,
+          "y": -13.84615421295166,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "\"I wanted to go over the case again.\"",
+          "Articy Id": "ael4734twoaf4z1w",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "h5j1h69rqal4gzws",
+          "OutputId": "_byonf8a49rvqibx"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 33,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"whirling.kimdoor_logic_weapon\"]  or  Variable[\"whirling.kimdoor_logic_autopsy\"]  or  Variable[\"whirling.kimdoor_logic_body_taken_down\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4407.6923828125,
+          "y": -300.7692565917969,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "I should stop bothering Kim. [Leave.]",
+          "Articy Id": "s62lo_ee9sg5lzcg",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "_vj2vapxfjkmav8s",
+          "InputId": "_brb6ku1qsn9aj5n"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2855.384765625,
+          "y": 160,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "\"Is that you, detective?\"",
+          "Articy Id": "r0yvxpln3i7mzcpx",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"is_female\": false,\n  \"short_description\": \"\",\n  \"long_description\": \"\",\n  \"color\": 1\n}",
+          "Condition1": "Variable[\"tc.name_full_harrier\"]",
+          "Alternate1": "\"Is that you, Harry? What time is it?\"",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "kr1x1feslar62lk2",
+          "OutputId": "sg7ivgdqhkh21vci"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 35,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 50,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3497.6923828125,
+          "y": -528.4615478515625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "\"Good night, detective.\"",
+          "Articy Id": "6xcbaa4yol3t8c3f",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"is_female\": false,\n  \"short_description\": \"\",\n  \"long_description\": \"\",\n  \"color\": 1\n}",
+          "Condition1": "Variable[\"tc.name_full_harrier\"]",
+          "Alternate1": "\"Good night, Harry.\"",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "xic5nycau3n8v6nt",
+          "OutputId": "_vj2vapxfjkmav8s"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetFlag(\"whirling.kim_bothered_at_night\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 6082.30810546875,
+          "y": 103.0769271850586,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Your hear the sound of a drawer closing followed by the shuffling of feet.",
+          "Articy Id": "netvs23wreq6wg94",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "260",
+          "Conversant": "0",
+          "OutputId": "q3fwugiag9ebbtwr",
+          "InputId": "jh7njea86b0vytn_"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 37,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3172.307861328125,
+          "y": -809.2307739257812,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "\"Yes, what is it? What time is it?\"",
+          "Articy Id": "q3fwugiag9ebbtwr",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"is_female\": false,\n  \"short_description\": \"\",\n  \"long_description\": \"\",\n  \"color\": 1\n}",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "netvs23wreq6wg94",
+          "OutputId": "h5j1h69rqal4gzws"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 38,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3502.307861328125,
+          "y": -813.84619140625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "[Leave.]",
+          "Articy Id": "3wbme678i0i9vmm0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "b317tlcje2o81eua",
+          "OutputId": "_vj2vapxfjkmav8s"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 447.69232177734375,
+          "y": 443.8461608886719,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "No response.",
+          "Articy Id": "r7g5cci8kqe0lpzb",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "260",
+          "Conversant": "0",
+          "InputId": "q0mchm176fufczbt",
+          "OutputId": "b317tlcje2o81eua"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 40,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 767.6923217773438,
+          "y": -269.23077392578125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Tap out the tune Kim whistled on the swing set.",
+          "Articy Id": "3zfnvu2khxkhjucr",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "AudioPlay(whirling_f2/klaasje_door/knock-knock-06,1);",
+          "dialog_stage_directions": "",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "kr1x1feslar62lk2",
+          "InputId": "_brb6ku1qsn9aj5n"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 41,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"XP.kim_joins_you_in_whispering_the_seaside_tune\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2857.6923828125,
+          "y": -529.2307739257812,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Knock again, as before.",
+          "Articy Id": "jh7njea86b0vytn_",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "AudioPlay(whirling_f2/klaasje_door/knock-knock-07,1);",
+          "dialog_stage_directions": "",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "netvs23wreq6wg94",
+          "InputId": "_brb6ku1qsn9aj5n"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 43,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2859.23095703125,
+          "y": -809.2307739257812,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 44,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Is *he* not worried that you haven't found the murder weapon yet?",
+          "Articy Id": "s0m8q5d648w0gher",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"short_description\": \"Wield raw intellectual power. Deduce the world.\",\n  \"long_description\": \"COOL FOR: ANALYSTS. PURE RATIONALISTS. OBVIOUSLY LOGICIANS.\\n\\nLogic urges you to analyze the living daylights out of the case. It enables you to piece evidence together, detect inconsistencies in statements, and impress everyone with your astonishing conclusions. It's the bread and butter of many a detective.\\n\\nAt high levels, Logic will be able to solve even the most complicated puzzle. You will be very proud, and thus susceptible to intellectual flattery; for those blinded by their own brilliance often miss important clues. With low levels of Logic, you’re going to have a hard time solving even the simplest puzzle. Even if you find the pieces, good luck putting them together.\",\n  \"color\": 2\n}",
+          "DifficultyPass": "2",
+          "Actor": "398",
+          "Conversant": "0",
+          "InputId": "xndetd_l7mj2b5vu",
+          "OutputId": "b4h56ml4k1r91onm"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 44,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetFlag(\"whirling.kimdoor_logic_weapon\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1714.615478515625,
+          "y": -40.76923370361328,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 45,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "\"It's Garte, the barkeep.\"",
+          "Articy Id": "58len5q17pp_4_h8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "h5j1h69rqal4gzws",
+          "OutputId": "0sbuh5lwjvdgkf_h"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 45,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"whirling.kimdoor_drama_thou_art_garte\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4393.84619140625,
+          "y": -854.6154174804688,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 46,
+        "fields": {
+          "Title": "knocking hub",
+          "Articy Id": "_brb6ku1qsn9aj5n",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "whb1sp6k38vg6dwq",
+          "OutputId": "s62lo_ee9sg5lzcg"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 46,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 43,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 46,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 46,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 49,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 46,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetFlag(\"whirling.kimdoor_reached_knocking_hub\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2544.615478515625,
+          "y": -200.7692413330078,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 47,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "What are you doing?",
+          "Articy Id": "b317tlcje2o81eua",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"short_description\": \"Hold yourself together. Keep your Morale up.\",\n  \"long_description\": \"COOL FOR: SANE PEOPLE. WELL-ADJUSTED COPS. THE NON-SUICIDIAL.\\n\\nVolition urges you to be a good guy – to others and to yourself. It enables you to resist temptation: be it in a bottle, between a pair of legs, or at the end of an iron barrel which promises oblivion. Volition gives you the will to finish the investigation, improving your Morale – one of the two health pools in the game.\\n\\nAt high levels, Volition makes you hyper-sane. When you’re about to get funky, it keeps you normal. It’s a bit of a party-pooper. At low levels, however, you’ll have little Morale. Without it, you’ll be a profoundly unstable cop, falling apart at the seams as you make irreversible mistakes.\",\n  \"color\": 3\n}",
+          "DifficultyPass": "2",
+          "Actor": "405",
+          "Conversant": "0",
+          "InputId": "r7g5cci8kqe0lpzb",
+          "OutputId": "3wbme678i0i9vmm0"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 47,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 51,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 47,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1088.4615478515625,
+          "y": -273.0769348144531,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 48,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Doesn't he want to go for a little drive?",
+          "Articy Id": "b4h56ml4k1r91onm",
+          "DialogueEntryType": "DialogueFragment",
+          "character_alternative_name": "",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"short_description\": \"Master machines. Pick locks and pockets.\",\n  \"long_description\": \"COOL FOR: MACHINISTS. TINKERERS. INSTRUMENT PLAYERS.\\n\\nInterfacing wants you to connect to machines: to use and improve them, because that makes you a better human organism. It enables you to understand interactions with machines – be that how to repair the motor of a Kineema motor carriage, how to analyze the way a suspect used a pen, or how to re-figure electrical circuits. It even lets you steal keys off a keyring without being noticed.\\n\\nAt high levels, Interfacing will isolate you from society – why bother with people when you can talk to machines? And why bother with things like money when you can just pocket that display sandwich? At low levels, however, you will have a crucial part of the world cut off from you. People use machines to commit crimes all the time – if you can’t understand how a crime was accomplished, how can you solve it?\",\n  \"color\": 5\n}",
+          "DifficultyPass": "2",
+          "Actor": "418",
+          "Conversant": "0",
+          "InputId": "s0m8q5d648w0gher",
+          "OutputId": "whb1sp6k38vg6dwq"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 48,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetFlag(\"whirling.kimdoor_interfacing_drive\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2050.769287109375,
+          "y": -38.46154022216797,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 49,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Bang on the door.",
+          "Articy Id": "k63bx_abnv1hxg04",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "AudioPlay(whirling_f2/klaasje_door/knock-knock-03,1);",
+          "dialog_stage_directions": "",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "_brb6ku1qsn9aj5n",
+          "OutputId": "ka7hasw8nb4fkzr2"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 49,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2851.53857421875,
+          "y": -186.92308044433594,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 50,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "No, thou art Garte.",
+          "Articy Id": "sg7ivgdqhkh21vci",
+          "DialogueEntryType": "DialogueFragment",
+          "character_alternative_name": "",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"short_description\": \"Play the actor. Lie – and detect lies.\",\n  \"long_description\": \"COOL FOR: UNDERCOVER COPS. THESPIANS OF THE STAGE. PSYCHOPATHS.\\n\\nDrama urges you to treat the world as a stage – and on it, to perform. It enables you to lie, to concoct the most elaborate and wonderful stories; to take on ingenious personas and perform acts of stagecraft in an entertaining amalgam of fourberie and deceit! As well, it enables you to see through would-be actors and their false antics. If they lie, you’ll know. Immediately.\\n\\nAt high levels, Drama may render you an insufferable thespian – one prone to hysterics and bouts of paranoia; for to know the world is a stage is to know that Truth is a Vanity. However, with low Drama you cannot lie – or discern when others lie. And a cop who can't do either is a cop who's soon going to be lying six feet under.\",\n  \"color\": 2\n}",
+          "DifficultyPass": "2",
+          "Actor": "401",
+          "Conversant": "0",
+          "InputId": "r0yvxpln3i7mzcpx",
+          "OutputId": "h5j1h69rqal4gzws"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 50,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetFlag(\"whirling.kimdoor_drama_thou_art_garte\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3813.84619140625,
+          "y": -536.1538696289062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 51,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Knock again.",
+          "Articy Id": "9e_ftggoawpklks9",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "AudioPlay(whirling_f2/klaasje_door/knock-knock-07, 1)",
+          "dialog_stage_directions": "",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "b317tlcje2o81eua",
+          "OutputId": "ouns9ny0r27zx8u0"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 51,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 436.923095703125,
+          "y": 96.15384674072266,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 52,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "\"I'm... not ready to go to sleep yet.\"",
+          "Articy Id": "flakrpc2qjhrl_zt",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "h5j1h69rqal4gzws",
+          "OutputId": "hlk7ay3m_851ap1m"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 52,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"whirling.kimdoor_inland_hanged_man\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4413.84619140625,
+          "y": -12.307692527770996,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 53,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "\"It is I, Garte, Manager of this Faire Cafeterium.\"",
+          "Articy Id": "jkol44kw0c0vcyau",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "h5j1h69rqal4gzws",
+          "OutputId": "0sbuh5lwjvdgkf_h"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 53,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"whirling.kimdoor_drama_thou_art_garte\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4396.92333984375,
+          "y": -1085.3846435546875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 54,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Sleep is what he needs most right now.",
+          "Articy Id": "xic5nycau3n8v6nt",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"short_description\": \"Connect to Station 41. Understand cop culture.\",\n  \"long_description\": \"COOL FOR: COPS. COP-AFICIONADOS. PRETEND-COPS.\\n\\nEsprit de Corps is the very spirit of policing: the cop-geist. It enables you to understand your blue-souled sisters and brothers – not only by picking up subtle signals from your partner, but by witnessing flash-sideways scenes as they play out in your precinct.\\n\\nAt high levels, you’ll be the very heart of the police force: not only willing and able but obliged to take a bullet for your partner. However, without Esprit de Corps you’ll be flying blind, unable to understand discreet remarks colleagues make in high-stakes situations; remarks that might just save your life.\",\n  \"color\": 3\n}",
+          "DifficultyPass": "2",
+          "Actor": "408",
+          "Conversant": "0",
+          "InputId": "e_ez2p0f3g5txayk",
+          "OutputId": "6xcbaa4yol3t8c3f"
+        },
+        "conversationID": 1498,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1498,
+            "originDialogueID": 54,
+            "destinationConversationID": 1498,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5051.53857421875,
+          "y": 247.69232177734375,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

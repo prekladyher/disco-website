@@ -1,0 +1,585 @@
+[
+  {
+    "id": 1003,
+    "fields": {
+      "Title": "DOOMED F2 ORB / conceptstream",
+      "Articy Id": "0x0100005A00002D05",
+      "AlternateOrbText": "",
+      "CheckType": "5",
+      "Condition": "Variable[\"doomed.seen_blades\"] == true  and  Variable[\"doomed.seen_skis\"] == true  and  Variable[\"doomed.orb_slipstream_thought_done\"] == false",
+      "Description": "Slipstream conceptualizing",
+      "Instruction": "SetVariableValue(\"doomed.seen_slipstream_dialogue\", true) --[[ Variable[ ]]",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "2",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100005A00002D05",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1003,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1003,
+            "originDialogueID": 0,
+            "destinationConversationID": 1003,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100005A00002D08",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100005700021FD4"
+        },
+        "conversationID": 1003,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1003,
+            "originDialogueID": 1,
+            "destinationConversationID": 1003,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Conceptualization: \"Looks like someone tried to *reconc...\"",
+          "Dialogue Text": "Looks like someone tried to *reconceptualize* their business here.",
+          "Articy Id": "0x0100005700021FD4",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "397",
+          "Conversant": "0",
+          "InputId": "0x0100005A00002D08",
+          "OutputId": "0x0100005700021FE3"
+        },
+        "conversationID": 1003,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1003,
+            "originDialogueID": 2,
+            "destinationConversationID": 1003,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1003,
+            "originDialogueID": 2,
+            "destinationConversationID": 1003,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 575,
+          "y": 350,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "You: \"But the question is -- which did th...\"",
+          "Dialogue Text": "But the question is -- which did they start with, and which did they pivot to?",
+          "Articy Id": "0x0100007000005CAE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100007000005CB4",
+          "InputId": "0x0100005700021FEC"
+        },
+        "conversationID": 1003,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1003,
+            "originDialogueID": 4,
+            "destinationConversationID": 1003,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1475,
+          "y": -50,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Conceptualization: \"Look: The skis and rotor blades bot...\"",
+          "Dialogue Text": "Look: The skis and rotor blades both bear the same \"Slipstream\" logo. It seems likely that they started out making one, failed to turn a profit, and then pivoted to producing the other.",
+          "Articy Id": "0x0100005700021FEC",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "397",
+          "Conversant": "0",
+          "OutputId": "0x0100005700021FFF",
+          "InputId": "0x0100005700021FDD"
+        },
+        "conversationID": 1003,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1003,
+            "originDialogueID": 5,
+            "destinationConversationID": 1003,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1003,
+            "originDialogueID": 5,
+            "destinationConversationID": 1003,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1003,
+            "originDialogueID": 5,
+            "destinationConversationID": 1003,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1175,
+          "y": 200,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Conceptualization: \"That's a good question.\"",
+          "Dialogue Text": "That's a good question.",
+          "Articy Id": "0x0100007000005CB4",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "397",
+          "Conversant": "0",
+          "InputId": "0x0100007000005CAE",
+          "OutputId": "0x0100005700021FFF"
+        },
+        "conversationID": 1003,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1003,
+            "originDialogueID": 6,
+            "destinationConversationID": 1003,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1003,
+            "originDialogueID": 6,
+            "destinationConversationID": 1003,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1775.0001220703125,
+          "y": -50,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "You: \"What a strange leap of imagination....\"",
+          "Dialogue Text": "What a strange leap of imagination... And yet they still failed. How sad. [Finish thought.]",
+          "Articy Id": "0x0100005700021FF3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100007000005CB4",
+          "OutputId": "0x010000570002200F"
+        },
+        "conversationID": 1003,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1003,
+            "originDialogueID": 7,
+            "destinationConversationID": 1003,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1475,
+          "y": 200,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Conceptualization: \"Reality is ruthless.\"",
+          "Dialogue Text": "Reality is ruthless.",
+          "Articy Id": "0x010000570002200F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "397",
+          "Conversant": "0",
+          "InputId": "0x0100005700021FF3",
+          "OutputId": "0x0100005700021FE7"
+        },
+        "conversationID": 1003,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"doomed.orb_slipstream_thought_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1775.0001220703125,
+          "y": 200,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "You: \"I don't get it.\"",
+          "Dialogue Text": "I don't get it.",
+          "Articy Id": "0x0100005700021FDD",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005700021FD4",
+          "OutputId": "0x0100005700021FEC"
+        },
+        "conversationID": 1003,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1003,
+            "originDialogueID": 9,
+            "destinationConversationID": 1003,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 875.0000610351562,
+          "y": 225.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "You: \"[Discard the thought.]\"",
+          "Dialogue Text": "[Discard the thought.]",
+          "Articy Id": "0x0100005700021FE3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005700021FD4",
+          "OutputId": "0x0100005700021FE7"
+        },
+        "conversationID": 1003,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"doomed.orb_slipstream_thought_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 874,
+          "y": 472,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "You: \"That's just speculation. We don't k...\"",
+          "Dialogue Text": "That's just speculation. We don't know anything for sure. [Finish thought.]",
+          "Articy Id": "0x0100005700021FFF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100007000005CB4",
+          "OutputId": "0x0100005700022006"
+        },
+        "conversationID": 1003,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1003,
+            "originDialogueID": 11,
+            "destinationConversationID": 1003,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1475,
+          "y": 450.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "Conceptualization: \"Not quite. You *do* know that there...\"",
+          "Dialogue Text": "Not quite. You *do* know that there's something unusual about this company's business model...",
+          "Articy Id": "0x0100005700022006",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "397",
+          "Conversant": "0",
+          "InputId": "0x0100005700021FFF",
+          "OutputId": "0x0100005700021FE7"
+        },
+        "conversationID": 1003,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"doomed.orb_slipstream_thought_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1774,
+          "y": 450.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

@@ -1,0 +1,2375 @@
+[
+  {
+    "id": 1066,
+    "fields": {
+      "Title": "INVENTORY / BAD ROMANCE",
+      "Articy Id": "0x0100005A00012F25",
+      "OnUse": "",
+      "OverrideDialogueCondition": "",
+      "AlternateOrbText": "",
+      "CheckType": "15",
+      "Condition": "",
+      "Description": "Excrutiating Love Story book. Graad-y black-and-white-rainbow book. Ends with lensgrinder in somewhere. \"Sixteen Days in Coldest April.\" something thought it was a romance book, but its misplaced.",
+      "Instruction": "",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100005A00012F25",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 0,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100005A00012F28",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100007B00001CE1"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 1,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Sixteen Days of Coldest April: \"Their happiness is fleeting. A crue...\"",
+          "Dialogue Text": "Their happiness is fleeting. A cruel jest. The absurdity of the state totally crushes them and they end up betraying each other. She becomes an official for \"the regime\" and he, a lens-grinder in Ferdydyrke. The end.",
+          "Articy Id": "0x01000041000001F2",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "190",
+          "Conversant": "0",
+          "OutputId": "0x0100007B00001D21"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "DamageVolition(1);\nDamageEndurance(1);\nPassTime()",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5272,
+          "y": -1377,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Variable[\"inventory.coldest_pt_fired\"]",
+          "Articy Id": "0x0100005300018096",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100006B00000DED"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 3,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 3,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 7176,
+          "y": -112,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Variable[\"inventory.coldest_pt_fired\"]",
+          "Articy Id": "0x0100005300018096",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100004100000319"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 4,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"inventory.coldest_pt_fired\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4664.39990234375,
+          "y": -72.79999542236328,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "!(Variable[\"inventory.coldest_pt_fired\"])",
+          "Articy Id": "0x0100005300018096",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000530001809D"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 5,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"inventory.coldest_pt_fired\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4664.39990234375,
+          "y": -72.79999542236328,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "coldesthub",
+          "Articy Id": "0x0100007B00001CF5",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x0100007B00001D1F",
+          "InputId": "0x0100007B00001CEC"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 6,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 50,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 6,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 6,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"inventory.coldest_firsthub_reached\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2382,
+          "y": 331,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Sixteen Days of Coldest April: \"It would physically hurt you to kee...\"",
+          "Dialogue Text": "It would physically hurt you to keep reading. Are you sure?",
+          "Articy Id": "0x0100004100000311",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "190",
+          "Conversant": "0",
+          "OutputId": "0x01000041000001D1",
+          "InputId": "0x010000530001808C"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 7,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 51,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"character.books_read_counter\", Variable[\"character.books_read_counter\"] + once(1)) ",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4153,
+          "y": 33,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "You: \"What happens next?\"",
+          "Dialogue Text": "What happens next?",
+          "Articy Id": "0x010000530001808C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100004100000311",
+          "InputId": "0x010000530001807F"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 8,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3859,
+          "y": 60.000003814697266,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Inland Empire: \"They *would* do that in Graad.\"",
+          "Dialogue Text": "They *would* do that in Graad.",
+          "Articy Id": "0x0100007B00001D02",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "404",
+          "Conversant": "0",
+          "OutputId": "0x0100007B00001D11",
+          "InputId": "0x0100007B00001CFC"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 9,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 43,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1178,
+          "y": 502,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Sixteen Days of Coldest April: \"The back cover is dominated by a bl...\"",
+          "Dialogue Text": "The back cover is dominated by a black-and-white photograph of the author...",
+          "Articy Id": "0x0100007B00001D27",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "190",
+          "Conversant": "0",
+          "OutputId": "0x0100004100000309",
+          "InputId": "0x0100007B00001D0A"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 10,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2973,
+          "y": -541,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Sixteen Days of Coldest April: \"In your hands you hold 'Sixteen Day...\"",
+          "Dialogue Text": "In your hands you hold 'Sixteen Days of Coldest April', by Yekartina Dahl. The cover image shows a row of concrete apartments, above which span a black-and-white rainbow.",
+          "Articy Id": "0x0100007B00001CE6",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "190",
+          "Conversant": "0",
+          "OutputId": "0x0100004100000301",
+          "InputId": "0x0100007B00001CE1"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 11,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 322,
+          "y": 482,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "You: \"Start reading.\"",
+          "Dialogue Text": "Start reading.",
+          "Articy Id": "0x0100007B00001D4A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100007B00001CF5",
+          "OutputId": "0x0100007B00001D51"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 12,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2681,
+          "y": 59,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Sixteen Days of Coldest April: \"In cold, detached prose, the author...\"",
+          "Dialogue Text": "In cold, detached prose, the author describes a scene from one of the Yugo-Graad Riots in the Twenties. Youths overturn motor carriages and set trash cans ablaze while heavily armoured guardsmen dash in and disperse them in a flurry of baton blows...",
+          "Articy Id": "0x0100007B00001D51",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "190",
+          "Conversant": "0",
+          "InputId": "0x0100007B00001D4A",
+          "OutputId": "0x0100007B00001D5F"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 13,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "PassTime()",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2978,
+          "y": 20,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Jump to: [coldesthub]",
+          "Articy Id": "0x010000530001809D",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100004100000319"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 14,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 7540.00048828125,
+          "y": -20,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "You: \"And the woman?\"",
+          "Dialogue Text": "And the woman?",
+          "Articy Id": "0x0100006B00000DE4",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100006B00000DB6",
+          "InputId": "0x0100006B00000DDD"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 15,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5684,
+          "y": -157,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "Encyclopedia: \"The Yugo-Graad Riots took place fro...\"",
+          "Dialogue Text": "The Yugo-Graad Riots took place from '27 to '29, fuelled by ethnic unrest and the state's repressive tactics. These events are often seen as marking the end of a brief period of liberalization known as the Yugo-Graad Spring. Like all such periods, it is frequently memorialised in art and literature.",
+          "Articy Id": "0x0100007B00001D5F",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "399",
+          "Conversant": "0",
+          "InputId": "0x0100007B00001D51",
+          "OutputId": "0x010000530001807F"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 16,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3266.999755859375,
+          "y": 18,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "Sixteen Days of Coldest April: \"He toils through the daily drudgery...\"",
+          "Dialogue Text": "He toils through the daily drudgery at the Lenka Polyfabricate. Happiness and fulfilment have eluded him his whole life, and in the end... he has nothing to do but dedicate himself to the craft.",
+          "Articy Id": "0x0100006B00000DDD",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "190",
+          "Conversant": "0",
+          "OutputId": "0x0100006B00000DE4",
+          "InputId": "0x0100006B00000ACF"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 17,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5384,
+          "y": -182,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Sixteen Days of Coldest April: \"As life leaves their remains betwee...\"",
+          "Dialogue Text": "As life leaves their remains between the soiled sheets, their final thoughts are filled with regret.",
+          "Articy Id": "0x0100006B00000DED",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "190",
+          "Conversant": "0",
+          "OutputId": "0x0100005300018096",
+          "InputId": "0x0100006B00000DFB"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 18,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "PassTime()",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 6878,
+          "y": -157,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "You: \"Read ten more pages...\"",
+          "Dialogue Text": "Read ten more pages...",
+          "Articy Id": "0x01000041000001D8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100006B00000ACF",
+          "InputId": "0x01000041000001D1"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 19,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4771,
+          "y": -156,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Sixteen Days of Coldest April: \"As ethnic tensions run wild, a pair...\"",
+          "Dialogue Text": "As ethnic tensions run wild, a pair of young lovers meet each other on the street. Somehow, in the middle of all the chaos, they manage to lock arms and look into each other's eyes.",
+          "Articy Id": "0x010000530001807F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "190",
+          "Conversant": "0",
+          "InputId": "0x0100007B00001D5F",
+          "OutputId": "0x010000530001808C"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 20,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3576,
+          "y": 34,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "Sixteen Days of Coldest April: \"They go through a brief and somewha...\"",
+          "Dialogue Text": "They go through a brief and somewhat awkward love affair, and in the end they betray each other and succumb to the absurdity of Graadian life. The man becomes a lens-grinder, completely abandoning his former existence...",
+          "Articy Id": "0x0100006B00000ACF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "190",
+          "Conversant": "0",
+          "InputId": "0x01000041000001D8",
+          "OutputId": "0x0100006B00000DDD"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 21,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "DamageVolition(1);\nDamageEndurance(1);\nPassTime()",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5084,
+          "y": -182,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Sixteen Days of Coldest April: \"She can't be much older than her mi...\"",
+          "Dialogue Text": "She can't be much older than her mid-30s in this photograph, and yet from this cover the eyes of a sad, old woman stare back at you.",
+          "Articy Id": "0x0100007B00001D2E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "190",
+          "Conversant": "0",
+          "OutputId": "0x0100007B00001D35",
+          "InputId": "0x0100004100000309"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 22,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3569,
+          "y": -552,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "You: \"What does she look like?\"",
+          "Dialogue Text": "What does she look like?",
+          "Articy Id": "0x0100004100000309",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100007B00001D27",
+          "OutputId": "0x0100007B00001D2E"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 23,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3276,
+          "y": -550,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "Jump to: [coldesthub]",
+          "Articy Id": "0x0100007B00001D35",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100007B00001D2E"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 24,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3861,
+          "y": -506,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "You: \"That doesn't sound too bad...\"",
+          "Dialogue Text": "That doesn't sound too bad...",
+          "Articy Id": "0x0100005300018086",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100007B00001D21"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4800,
+          "y": -743,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Shelf of Romance Stories: \"At the beginning of the book, ethni...\"",
+          "Dialogue Text": "At the beginning of the book, ethnic unrest has taken Yugo-Graad by storm. Windows and mailboxes are smashed, motor carriages turned over and set on fire...",
+          "Articy Id": "0x0100006B00000ABB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "278",
+          "Conversant": "0",
+          "OutputId": "0x0100006B00000AC9"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 26,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5096,
+          "y": -975.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Shelf of Romance Stories: \"Black smoke hangs above cobblestone...\"",
+          "Dialogue Text": "Black smoke hangs above cobblestones speckled with droplets of reddish-grey blood. Militant guardsmen, decked in heavy armour, have been called in to control the riots...",
+          "Articy Id": "0x0100006B00000AC9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "278",
+          "Conversant": "0",
+          "InputId": "0x0100006B00000ABB",
+          "OutputId": "0x0100006B00000DBF"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 27,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5382,
+          "y": -980.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "You: \"Why can't I put this book away?!\"",
+          "Dialogue Text": "Why can't I put this book away?!",
+          "Articy Id": "0x0100006B00000E03",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100006B00000DED",
+          "InputId": "0x0100006B00000DD7"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 28,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 6583.99951171875,
+          "y": -57,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "Pain Threshold: \"Good stuff. You fucking *loved* thi...\"",
+          "Dialogue Text": "Good stuff. You fucking *loved* this.",
+          "Articy Id": "0x0100004100000319",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "0",
+          "InputId": "0x0100005300018096",
+          "OutputId": "0x010000530001809D"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 29,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 7468,
+          "y": -258,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "Shelf of Romance Stories: \"As ethnic tensions run wild, a pair...\"",
+          "Dialogue Text": "As ethnic tensions run wild, a pair of young lovers meet each other on the street. Somehow, in the middle of all the chaos, they manage to lock arms and look into each other's eyes.",
+          "Articy Id": "0x0100006B00000DBF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "278",
+          "Conversant": "0",
+          "InputId": "0x0100006B00000AC9",
+          "OutputId": "0x0100006B00000DCE"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 30,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 42,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 30,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 44,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5682,
+          "y": -980.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "Jump to: [coldesthub]",
+          "Articy Id": "0x01000041000001EC",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x01000041000001E5"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 31,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5425,
+          "y": 236.99998474121094,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "You: \"Feels heavy.\"",
+          "Dialogue Text": "Feels heavy.",
+          "Articy Id": "0x0100004100000301",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100007B00001CE6",
+          "OutputId": "0x0100007B00001CFC"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 32,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 606,
+          "y": 503.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "Sixteen Days of Coldest April: \"She spends the next several decades...\"",
+          "Dialogue Text": "She spends the next several decades standing at a conveyor in a Sosnovor fish processing plant. The smell of fish guts slowly seeps into her hair and skin... as every single one of her dreams dies, one by one.",
+          "Articy Id": "0x0100006B00000DB6",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "190",
+          "Conversant": "0",
+          "InputId": "0x0100006B00000DE4",
+          "OutputId": "0x0100006B00000DD7"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 33,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5984,
+          "y": -182,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "Sixteen Days of Coldest April: \"Indeed. The book is *unusually* hea...\"",
+          "Dialogue Text": "Indeed. The book is *unusually* heavy in your hands, as though the cover were lined with lead...",
+          "Articy Id": "0x0100007B00001CFC",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "190",
+          "Conversant": "0",
+          "InputId": "0x0100004100000301",
+          "OutputId": "0x0100007B00001D02"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 34,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 894,
+          "y": 480.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Title": "Sixteen Days of Coldest April: \"You flip through the book. The page...\"",
+          "Dialogue Text": "You flip through the book. The pages are thinner than you realized, and the type quite small and tightly set. It's nearly 600 pages long.",
+          "Articy Id": "0x0100007B00001D3A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "190",
+          "Conversant": "0",
+          "OutputId": "0x0100007B00001D41",
+          "InputId": "0x0100007B00001D11"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 35,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1748,
+          "y": 482,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "Sixteen Days of Coldest April: \"In excruciating detail, the author...\"",
+          "Dialogue Text": "In excruciating detail, the author describes the socio-economic conditions that have brought the people of Yugo-Graad into the streets -- centuries of humiliations and despair. And then, during these riots, two young people meet...",
+          "Articy Id": "0x0100007B00001D58",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "190",
+          "Conversant": "0",
+          "OutputId": "0x0100007B00001D21"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4705,
+          "y": -1054,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "Sixteen Days of Coldest April: \"You've made the right life choices...\"",
+          "Dialogue Text": "You've made the right life choices today, sir.",
+          "Articy Id": "0x01000041000001E5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "190",
+          "Conversant": "0",
+          "OutputId": "0x01000041000001EC",
+          "InputId": "0x01000041000001DE"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 37,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "XPPicoSetBool(\"XP.did_not_subject_yourself_to_graad_realism\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5070,
+          "y": 189,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "You: \"[Put the book away.]\"",
+          "Dialogue Text": "[Put the book away.]",
+          "Articy Id": "0x0100007B00001D1F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100007B00001CF5",
+          "OutputId": "0x0100007B00001D21"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2699,
+          "y": 744,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Title": "Conceptualization: \"Real art is dense and difficult. If...\"",
+          "Dialogue Text": "Real art is dense and difficult. If it didn't feel like you had to wrestle a suicidal bear to get through it, you weren't really reading.",
+          "Articy Id": "0x0100007B00001D41",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "397",
+          "Conversant": "0",
+          "InputId": "0x0100007B00001D3A",
+          "OutputId": "0x0100007B00001CF5"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 40,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2035.0001220703125,
+          "y": 493,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "Sixteen Days of Coldest April: \"You stare at the now-familiar black...\"",
+          "Dialogue Text": "You stare at the now-familiar black-and-white rainbow. The book feels heavy in your hands.",
+          "Articy Id": "0x0100007B00001CEC",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "190",
+          "Conversant": "0",
+          "OutputId": "0x0100007B00001CF5",
+          "InputId": "0x0100007B00001CE1"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 41,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 600,
+          "y": 92,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Title": "You: \"That doesn't sound too bad...\"",
+          "Dialogue Text": "That doesn't sound too bad...",
+          "Articy Id": "0x0100006B00000DC7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100006B00000DBF",
+          "OutputId": "0x0100007B00001D21"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5982,
+          "y": -1080,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Title": "You: \"How long is this book, anyway?\"",
+          "Dialogue Text": "How long is this book, anyway?",
+          "Articy Id": "0x0100007B00001D11",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100007B00001D02",
+          "OutputId": "0x0100007B00001D3A"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 43,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1462,
+          "y": 503,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 44,
+        "fields": {
+          "Title": "You: \"What happens next?\"",
+          "Dialogue Text": "What happens next?",
+          "Articy Id": "0x0100006B00000DCE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100006B00000DBF",
+          "OutputId": "0x0100007B00001D21"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5982,
+          "y": -855.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 45,
+        "fields": {
+          "Title": "You: \"No. I won't subject myself to Graad...\"",
+          "Dialogue Text": "No. I won't subject myself to Graadian realism.",
+          "Articy Id": "0x01000041000001DE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x01000041000001E5",
+          "InputId": "0x01000041000001D1"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 45,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4775,
+          "y": 210.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 46,
+        "fields": {
+          "Title": "You: \"This is terrible...\"",
+          "Dialogue Text": "This is terrible...",
+          "Articy Id": "0x0100006B00000DFB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100006B00000DED",
+          "InputId": "0x0100006B00000DD7"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 46,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 6583.99951171875,
+          "y": -282,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 47,
+        "fields": {
+          "Title": "Variable[\"inventory.coldest_firsthub_reached\"]",
+          "Articy Id": "0x0100007B00001CE1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005A00012F28"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 47,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 47,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 49,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 303,
+          "y": 288,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 48,
+        "fields": {
+          "Title": "Variable[\"inventory.coldest_firsthub_reached\"]",
+          "Articy Id": "0x0100007B00001CE1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100007B00001CEC"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 48,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"inventory.coldest_firsthub_reached\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 196.9499969482422,
+          "y": 187.1999969482422,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 49,
+        "fields": {
+          "Title": "!(Variable[\"inventory.coldest_firsthub_reached\"])",
+          "Articy Id": "0x0100007B00001CE1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100007B00001CE6"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 49,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"inventory.coldest_firsthub_reached\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 196.9499969482422,
+          "y": 187.1999969482422,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 50,
+        "fields": {
+          "Title": "You: \"Look at the back cover.\"",
+          "Dialogue Text": "Look at the back cover.",
+          "Articy Id": "0x0100007B00001D0A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100007B00001CF5",
+          "OutputId": "0x0100007B00001D27"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 50,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2688,
+          "y": -520,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 51,
+        "fields": {
+          "Title": "Pain Threshold: \"Fuck it. Do it. It can't be worse t...\"",
+          "Dialogue Text": "Fuck it. Do it. It can't be worse than what you've already felt.",
+          "Articy Id": "0x01000041000001D1",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "10",
+          "Actor": "412",
+          "Conversant": "0",
+          "InputId": "0x0100004100000311",
+          "OutputId": "0x01000041000001DE"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 51,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 51,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"inventory.coldest_pt_fired\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4445,
+          "y": 57.999996185302734,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 52,
+        "fields": {
+          "Title": "Sixteen Days of Coldest April: \"The memory of their short time spen...\"",
+          "Dialogue Text": "The memory of their short time spent together tortures the former lovers ceaselessly, until the end of their days... Years pass in solitude, their bodies growing ever more decrepit.",
+          "Articy Id": "0x0100006B00000DD7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "190",
+          "Conversant": "0",
+          "InputId": "0x0100006B00000DB6",
+          "OutputId": "0x0100006B00000E03"
+        },
+        "conversationID": 1066,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 52,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 46,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1066,
+            "originDialogueID": 52,
+            "destinationConversationID": 1066,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 6284,
+          "y": -182,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

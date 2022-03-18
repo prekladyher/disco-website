@@ -1,0 +1,2503 @@
+[
+  {
+    "id": 942,
+    "fields": {
+      "Title": "INVENTORY / COCKATOO",
+      "Articy Id": "0x0100005700022984",
+      "OnUse": "",
+      "OverrideDialogueCondition": "",
+      "AlternateOrbText": "",
+      "CheckType": "15",
+      "Condition": "",
+      "Description": "From A to Zrieek! Guide to a Well-Behaved Cockatoo. After you have bought it. (Helen)",
+      "Instruction": "",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100005700022984",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 0,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100005700022BEA",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100005700022BD5"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 1,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "You: \"Okay. What more?\"",
+          "Dialogue Text": "Okay. What more?",
+          "Articy Id": "0x010000060001CA74",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100005700022BDB",
+          "InputId": "0x0100005700022BD5"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 2,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 60.000003814697266,
+          "y": -2390,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "You: \"Honestly, this bird does sound a bi...\"",
+          "Dialogue Text": "Honestly, this bird does sound a bit like me...",
+          "Articy Id": "0x0100005700022AF3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100005700022B18",
+          "InputId": "0x01000057000229DE"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 3,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"plaza.working_chose_cockatoo\"] == false  and   Variable[\"inventory.book_cockatoos_funeral_read\"] == true  and  Variable[\"inventory.book_cockatoos_bangbang_read\"] == true  and  Variable[\"inventory.book_cockatoos_majestic_read\"] == true",
+        "userScript": "PassTime()",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1100,
+          "y": -1675.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "choose cockatoo hub",
+          "Articy Id": "0x0100005700022B51",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x0100005700022B5B",
+          "InputId": "0x0100005700022B18"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 4,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 942,
+            "originDialogueID": 4,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 51,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 942,
+            "originDialogueID": 4,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 942,
+            "originDialogueID": 4,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 942,
+            "originDialogueID": 4,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"character.books_read_counter\", Variable[\"character.books_read_counter\"] + once(1)) ",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1700.0001220703125,
+          "y": -1600,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Jump to: [readininventoryhub]",
+          "Articy Id": "0x0100005700022BB1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000060001CA7C"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 5,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2030.9998779296875,
+          "y": -2687,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "You: \"But what if I am just a *fuckupatoo...\"",
+          "Dialogue Text": "But what if I am just a *fuckupatoo* -- a fuck-up *and* a cockatoo?!",
+          "Articy Id": "0x0100005700022B31",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005700022B51",
+          "OutputId": "0x0100005700022B3B"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 6,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "ReputationGrows(\"sorry_cop\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1950.0001220703125,
+          "y": -1125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "You: \"Who would ever want a chatty compan...\"",
+          "Dialogue Text": "Who would ever want a chatty companion?! I want someone who knows how to *listen*.",
+          "Articy Id": "0x0100005700022B8C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100005700022B94",
+          "InputId": "0x0100005700022AEB"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 7,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1700.0001220703125,
+          "y": -3275,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Inland Empire: \"Cool.\"",
+          "Dialogue Text": "Cool.",
+          "Articy Id": "0x010000060001CA7C",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "404",
+          "Conversant": "0",
+          "OutputId": "0x0100005700022BB1",
+          "InputId": "0x0100005700022AD8"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 8,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1700.9998779296875,
+          "y": -2709,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "From A to Zrieek! A Guide To a Well-Behaved Cockatoo: \"You're right, cockatoos are magnifi...\"",
+          "Dialogue Text": "You're right, cockatoos are magnificent creatures. They love to perform, cuddle and show off, and will even scream for *fun* -- often as loud as up to *135* decibels!",
+          "Articy Id": "0x0100005700022AFD",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "142",
+          "Conversant": "0",
+          "OutputId": "0x0100005700022B04",
+          "InputId": "0x0100005700022ADF"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 9,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1400,
+          "y": -3051,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "You: \"I could handle that... It would be...\"",
+          "Dialogue Text": "I could handle that... It would be nice to have someone to talk to when feeling lonely.",
+          "Articy Id": "0x0100005700022B0B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100005700022B94",
+          "InputId": "0x0100005700022AEB"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 10,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1700.0001220703125,
+          "y": -3500.000244140625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "SetVariableValue(\"plaza.working_chose_apocalypse_cockatoo\", true) --[[ Variable[ ]]",
+          "Articy Id": "0x0100005700022B49",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Instruction",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005700022B7A",
+          "InputId": "0x0100005700022B25"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 11,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 43,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"plaza.working_chose_apocalypse_cockatoo\", true) --[[ Variable[ ]];",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2250,
+          "y": -1575,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "You: \"Read about the most common bang-ban...\"",
+          "Dialogue Text": "Read about the most common bang-bang cockatoo.",
+          "Articy Id": "0x0100005700022AD2",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100005700022BC9",
+          "InputId": "0x01000057000229DE"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 12,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"inventory.book_cockatoos_bangbang_read\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1100,
+          "y": -2050,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "From A to Zrieek! A Guide To a Well-Behaved Cockatoo: \"In the words of poet-explorer Sir J...\"",
+          "Dialogue Text": "In the words of poet-explorer Sir James Fournier: \"Few birds more enliven the monotonous hues of the verdant forest than this big, bold and beautiful species.\"",
+          "Articy Id": "0x0100005700022BC0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "142",
+          "Conversant": "0",
+          "OutputId": "0x010000060001CA84",
+          "InputId": "0x0100005700022BBA"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 13,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "PassTime()",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1687,
+          "y": -2407,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Half Light: \"The *bang* is for all the scary thi...\"",
+          "Dialogue Text": "The *bang* is for all the scary things in the world... that may happen at any time.",
+          "Articy Id": "0x010000060001CA8C",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "3",
+          "Actor": "414",
+          "Conversant": "0",
+          "OutputId": "0x0100005700022BD0",
+          "InputId": "0x0100005700022BC9"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 14,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1677,
+          "y": -2087,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "SetVariableValue(\"plaza.working_chose_sorry_cockatoo\", true) --[[ Variable[ ]]",
+          "Articy Id": "0x0100005700022B3B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Instruction",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005700022B31",
+          "OutputId": "0x0100005700022B3F"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 15,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"plaza.working_chose_sorry_cockatoo\", true) --[[ Variable[ ]];",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2250,
+          "y": -1075,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "You: \"I have to take some time to think a...\"",
+          "Dialogue Text": "I have to take some time to think about it.",
+          "Articy Id": "0x0100005700022B5B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005700022B51",
+          "OutputId": "0x0100005700022B62"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 16,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 42,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1950.0001220703125,
+          "y": -875.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "You: \"[Put the book away.]\"",
+          "Dialogue Text": "[Put the book away.]",
+          "Articy Id": "0x01000057000229D8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x01000057000229DA",
+          "InputId": "0x01000057000229DE"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1100,
+          "y": -1375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "You: \"Read about the funeral cockatoo.\"",
+          "Dialogue Text": "Read about the funeral cockatoo.",
+          "Articy Id": "0x01000057000229E3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100005700022AD8",
+          "InputId": "0x01000057000229DE"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 18,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"inventory.book_cockatoos_funeral_read\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1100,
+          "y": -2715,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "Perception (Hearing): \"Ouch. That must hurt.\"",
+          "Dialogue Text": "Ouch. That must hurt.",
+          "Articy Id": "0x0100005700022B04",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "422",
+          "Conversant": "0",
+          "InputId": "0x0100005700022AFD",
+          "OutputId": "0x0100005700022BA9"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 19,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1700.0001220703125,
+          "y": -3025,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "From A to Zrieek! A Guide To a Well-Behaved Cockatoo: \"This book talks about the delicate...\"",
+          "Dialogue Text": "This book talks about the delicate nature of 'toos, as well as introducing some of the most popular species among the bird enthusiasts: the funeral cockatoo, the Major Majestic cockatoo, and the most common bang-bang cockatoo. It's colourfully illustrated.",
+          "Articy Id": "0x0100005700022BDB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "142",
+          "Conversant": "0",
+          "InputId": "0x010000060001CA74",
+          "OutputId": "0x01000057000229DE"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 20,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 346,
+          "y": -2427,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "Jump to: [readininventoryhub]",
+          "Articy Id": "0x01000057000229EB",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100001F00000582"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 21,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2586,
+          "y": -2998,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Jump to: [readininventoryhub]",
+          "Articy Id": "0x0100005700022BB6",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000060001CA84"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 22,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2278,
+          "y": -2354,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "Jump to: [readininventoryhub]",
+          "Articy Id": "0x0100005700022B69",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100005700022B62"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 23,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2550,
+          "y": -850.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "From A to Zrieek! A Guide To a Well-Behaved Cockatoo: \"Pet owners also report moodiness, l...\"",
+          "Dialogue Text": "Pet owners also report moodiness, loudness and hostility as reoccurring issues. If left unsatisfied cockatoos may scream non-stop, pluck their feathers or become aggressive.",
+          "Articy Id": "0x0100005700022B94",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "142",
+          "Conversant": "0",
+          "InputId": "0x0100005700022B0B",
+          "OutputId": "0x0100005700022B9C"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 24,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 53,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "PassTime()",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2000.0001220703125,
+          "y": -3400.000244140625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "From A to Zrieek! A Guide To a Well-Behaved Cockatoo: \"A cockatoo is a parrot with an erec...\"",
+          "Dialogue Text": "A cockatoo is a parrot with an erectile crest, found on the Semenine islands and in southern Face-à-la-Mer. Known for their intelligence and general precociousness, cockatoos are popular birds in aviculture; however, they often exhibit various behavioural issues.",
+          "Articy Id": "0x0100005700022BD5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "142",
+          "Conversant": "0",
+          "InputId": "0x0100005700022BEA",
+          "OutputId": "0x010000060001CA74"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 25,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -225.00001525878906,
+          "y": -2426,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "You: \"Yes, but there has to be something...\"",
+          "Dialogue Text": "Yes, but there has to be something *great* about cockatoos as well.",
+          "Articy Id": "0x0100005700022ADF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100005700022AFD",
+          "InputId": "0x01000057000229DE"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 26,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"inventory.book_cockatoo_problems_read\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1100,
+          "y": -3025,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "You: \"The grey and common bang-bang, that...\"",
+          "Dialogue Text": "The grey and common bang-bang, that's me.",
+          "Articy Id": "0x0100005700022B1F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005700022B51",
+          "OutputId": "0x0100005700022B37"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 27,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "ReputationGrows(\"boring_cop\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1954,
+          "y": -1875.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "You: \"Isn't that obvious?! Major Majestic...\"",
+          "Dialogue Text": "Isn't that obvious?! Major Majestic, here I come!",
+          "Articy Id": "0x0100005700022B2B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005700022B51",
+          "OutputId": "0x0100005700022B45"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 28,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 50,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "ReputationGrows(\"superstar_cop\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1950.0001220703125,
+          "y": -1375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "SetVariableValue(\"plaza.working_chose_serious_cockatoo\", true) --[[ Variable[ ]]",
+          "Articy Id": "0x0100005700022B37",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Instruction",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005700022B1F",
+          "OutputId": "0x0100005700022B84"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 29,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 44,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"plaza.working_chose_serious_cockatoo\", true) --[[ Variable[ ]];",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2250,
+          "y": -1825.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "From A to Zrieek! A Guide To a Well-Behaved Cockatoo: \"Perhaps the most *impressive* of al...\"",
+          "Dialogue Text": "Perhaps the most *impressive* of all the species, the endangered Major Majestic cockatoo is often described as the most flamboyant bird in the jungle, its pink-coloured wings and flowing crest embellishing its proud and *bumptious* nature.",
+          "Articy Id": "0x0100005700022BBA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "142",
+          "Conversant": "0",
+          "OutputId": "0x0100005700022BC0",
+          "InputId": "0x0100005700022ACC"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 30,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1400,
+          "y": -2425,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "From A to Zrieek! A Guide To a Well-Behaved Cockatoo: \"Despite its *banging* name, the ban...\"",
+          "Dialogue Text": "Despite its *banging* name, the bang-bang cockatoo is actually the shyest of the species. Common in almost all Semenese forests, as well as zoos and homes all over the world, its plumage is mainly grey and white. The Semenese name *bang-bang* is thought to be of onomatopoeic origins.",
+          "Articy Id": "0x0100005700022BC9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "142",
+          "Conversant": "0",
+          "InputId": "0x0100005700022AD2",
+          "OutputId": "0x010000060001CA8C"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 31,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1400,
+          "y": -2100,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "Jump to: [readininventoryhub]",
+          "Articy Id": "0x0100005700022BA4",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100005700022B11"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 32,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2878,
+          "y": -3346.999755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "Perception (Sight): \"It must be glorious to behold. Dark...\"",
+          "Dialogue Text": "It must be glorious to behold. Dark pink and snow white.",
+          "Articy Id": "0x010000060001CA84",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "10",
+          "Actor": "424",
+          "Conversant": "0",
+          "InputId": "0x0100005700022BC0",
+          "OutputId": "0x0100005700022BB6"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 33,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1989,
+          "y": -2373,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Title": "From A to Zrieek! A Guide To a Well-Behaved Cockatoo: \"Yes, but all those cockatoo species...\"",
+          "Dialogue Text": "Yes, but all those cockatoo species are so different! Which one are you?",
+          "Articy Id": "0x0100005700022B18",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "142",
+          "Conversant": "0",
+          "InputId": "0x0100005700022AF3",
+          "OutputId": "0x0100005700022B51"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 35,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1389,
+          "y": -1669,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "From A to Zrieek! A Guide To a Well-Behaved Cockatoo: \"You're right, you're majesty embodi...\"",
+          "Dialogue Text": "You're right, you're majesty embodied. This big beautiful bird belongs on your heraldry!",
+          "Articy Id": "0x0100005700022B74",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "142",
+          "Conversant": "0",
+          "OutputId": "0x0100005700022B6E",
+          "InputId": "0x0100005700022B45"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 36,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 46,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"plaza.working_chose_cockatoo\", true) ;\nFinishTask(\"TASK.find_your_heraldic_bird_done\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2550,
+          "y": -1375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "Jump to: [readininventoryhub]",
+          "Articy Id": "0x0100005700022BD0",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000060001CA8C"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 37,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2116,
+          "y": -2045.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "Drama: \"Performing? Yesss, birdie!\"",
+          "Dialogue Text": "Performing? Yesss, birdie!",
+          "Articy Id": "0x0100001F00000582",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "401",
+          "Conversant": "0",
+          "OutputId": "0x01000057000229EB",
+          "InputId": "0x0100005700022BA9"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 38,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2291,
+          "y": -3028,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Title": "You: \"Read about the Major Majestic cocka...\"",
+          "Dialogue Text": "Read about the Major Majestic cockatoo.",
+          "Articy Id": "0x0100005700022ACC",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100005700022BBA",
+          "InputId": "0x01000057000229DE"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 39,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"inventory.book_cockatoos_majestic_read\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1100,
+          "y": -2400,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Title": "Logic: \"Not great for the neighbours.\"",
+          "Dialogue Text": "Not great for the neighbours.",
+          "Articy Id": "0x0100005700022BA9",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "398",
+          "Conversant": "0",
+          "InputId": "0x0100005700022B04",
+          "OutputId": "0x0100001F00000582"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 40,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2000.0001220703125,
+          "y": -3025,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "From A to Zrieek! A Guide To a Well-Behaved Cockatoo: \"It is not recommended to get a cock...\"",
+          "Dialogue Text": "It is not recommended to get a cockatoo if you're not able to cook them food every day. And give them the full care that they need. These birds will never understand that you have a life of your own.",
+          "Articy Id": "0x0100005700022B11",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "142",
+          "Conversant": "0",
+          "OutputId": "0x0100005700022BA4",
+          "InputId": "0x0100005700022B9C"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 41,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"inventory.book_cockatoo_problems_read\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2584,
+          "y": -3401,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Title": "From A to Zrieek! A Guide To a Well-Behaved Cockatoo: \"Understandable. Choosing your heral...\"",
+          "Dialogue Text": "Understandable. Choosing your heraldic bird isn't a trivial question.",
+          "Articy Id": "0x0100005700022B62",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "142",
+          "Conversant": "0",
+          "InputId": "0x0100005700022B5B",
+          "OutputId": "0x0100005700022B69"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 42,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2250,
+          "y": -875.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Title": "From A to Zrieek! A Guide To a Well-Behaved Cockatoo: \"You're right, you're *Psittacus fun...\"",
+          "Dialogue Text": "You're right, you're *Psittacus funereus* embodied. This ominous bird belongs on your heraldry!",
+          "Articy Id": "0x0100005700022B7A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "142",
+          "Conversant": "0",
+          "InputId": "0x0100005700022B49",
+          "OutputId": "0x0100005700022B6E"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 43,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 46,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"plaza.working_chose_cockatoo\", true) ;\nFinishTask(\"TASK.find_your_heraldic_bird_done\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2550,
+          "y": -1625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 44,
+        "fields": {
+          "Title": "From A to Zrieek! A Guide To a Well-Behaved Cockatoo: \"You're right, you're the mediocrity...\"",
+          "Dialogue Text": "You're right, you're the mediocrity embodied. This unsung bird belongs on your heraldry!",
+          "Articy Id": "0x0100005700022B84",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "142",
+          "Conversant": "0",
+          "InputId": "0x0100005700022B37",
+          "OutputId": "0x0100005700022B6E"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 44,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 46,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"plaza.working_chose_cockatoo\", true) ;\nFinishTask(\"TASK.find_your_heraldic_bird_done\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2550,
+          "y": -1875.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 45,
+        "fields": {
+          "Title": "From A to Zrieek! A Guide To a Well-Behaved Cockatoo: \"This is a yellow-tailed black cocka...\"",
+          "Dialogue Text": "This is a yellow-tailed black cockatoo. Its specific name *Psittacus funereus* relates to its dark and sombre plumage. This bird looks as if dressed for a funeral, 24/7. There is something indisputably ominous about it.",
+          "Articy Id": "0x0100005700022AD8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "142",
+          "Conversant": "0",
+          "InputId": "0x01000057000229E3",
+          "OutputId": "0x010000060001CA7C"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 45,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1400,
+          "y": -2750,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 46,
+        "fields": {
+          "Title": "Jump to: [readininventoryhub]",
+          "Articy Id": "0x0100005700022B6E",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100005700022B3F"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 46,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2850,
+          "y": -1475,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 47,
+        "fields": {
+          "Title": "readininventoryhub",
+          "Articy Id": "0x01000057000229DE",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100005700022BDB",
+          "OutputId": "0x01000057000229D8"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 47,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 942,
+            "originDialogueID": 47,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 942,
+            "originDialogueID": 47,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 942,
+            "originDialogueID": 47,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 942,
+            "originDialogueID": 47,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 942,
+            "originDialogueID": 47,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 942,
+            "originDialogueID": 47,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 650,
+          "y": -2325,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 48,
+        "fields": {
+          "Title": "You: \"Alright, what problems do these bir...\"",
+          "Dialogue Text": "Alright, what problems do these birds have?",
+          "Articy Id": "0x0100005700022AE5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x01000057000229DE",
+          "OutputId": "0x0100005700022AEB"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 48,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 49,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1100,
+          "y": -3400.000244140625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 49,
+        "fields": {
+          "Title": "From A to Zrieek! A Guide To a Well-Behaved Cockatoo: \"Where to even begin? All cockatoos...\"",
+          "Dialogue Text": "Where to even begin? All cockatoos are known for their needy natures, requiring attention for at least two full hours a day. They love to talk, and have been described as 'loveable clowns who just don't know how to wrap up'.",
+          "Articy Id": "0x0100005700022AEB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "142",
+          "Conversant": "0",
+          "InputId": "0x0100005700022AE5",
+          "OutputId": "0x0100005700022B8C"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 49,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 942,
+            "originDialogueID": 49,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1400,
+          "y": -3425.000244140625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 50,
+        "fields": {
+          "Title": "SetVariableValue(\"plaza.working_chose_superstar_cockatoo\", true) --[[ Variable[ ]]",
+          "Articy Id": "0x0100005700022B45",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Instruction",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005700022B2B",
+          "OutputId": "0x0100005700022B74"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 50,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"plaza.working_chose_superstar_cockatoo\", true) --[[ Variable[ ]];",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2250,
+          "y": -1325,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 51,
+        "fields": {
+          "Title": "You: \"Only the funeral cockatoo in its da...\"",
+          "Dialogue Text": "Only the funeral cockatoo in its darkness can truly grasp the depths of my doom-laden soul.",
+          "Articy Id": "0x0100005700022B25",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005700022B51",
+          "OutputId": "0x0100005700022B49"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 51,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "ReputationGrows(\"apocalypse_cop\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1950.0001220703125,
+          "y": -1625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 52,
+        "fields": {
+          "Title": "From A to Zrieek! A Guide To a Well-Behaved Cockatoo: \"You're right, you're a fuckatoo emb...\"",
+          "Dialogue Text": "You're right, you're a fuckatoo embodied. This sorry-ass bird belongs on your heraldry! It probably doesn't even have feathers and only screams.",
+          "Articy Id": "0x0100005700022B3F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "142",
+          "Conversant": "0",
+          "InputId": "0x0100005700022B3B",
+          "OutputId": "0x0100005700022B6E"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 52,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 46,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"plaza.working_chose_cockatoo\", true) ;\nFinishTask(\"TASK.find_your_heraldic_bird_done\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2550,
+          "y": -1125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 53,
+        "fields": {
+          "Title": "You: \"Right. That's pretty bad. Anything...\"",
+          "Dialogue Text": "Right. That's pretty bad. Anything else?",
+          "Articy Id": "0x0100005700022B9C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005700022B94",
+          "OutputId": "0x0100005700022B11"
+        },
+        "conversationID": 942,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 942,
+            "originDialogueID": 53,
+            "destinationConversationID": 942,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2300,
+          "y": -3375.000244140625,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

@@ -1,0 +1,245 @@
+[
+  {
+    "id": 89,
+    "fields": {
+      "Title": "SEAFORT / CUNO FUEL barks",
+      "Articy Id": "0x0100000400014B57",
+      "Description": "Cuno reacts to fuel empty if task is on w/ BARK",
+      "Actor": "5",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100000400014B57",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 89,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 89,
+            "originDialogueID": 0,
+            "destinationConversationID": 89,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100000400014B5A",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x010000060000E98B"
+        },
+        "conversationID": 89,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 89,
+            "originDialogueID": 1,
+            "destinationConversationID": 89,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 89,
+            "originDialogueID": 1,
+            "destinationConversationID": 89,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 89,
+            "originDialogueID": 1,
+            "destinationConversationID": 89,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Cuno: \"\"Got the fucking fuel, yeah.\"\"",
+          "Dialogue Text": "\"Got the fucking fuel, yeah.\"",
+          "Articy Id": "0x010000060000E98B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "InputId": "0x0100000400014B5A",
+          "OutputId": "0x0100000400014B68"
+        },
+        "conversationID": 89,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "CheckItem(\"fuel_canister_lum\")  and  Variable[\"seafort.kim_or_cuno_fuel_remark_heard\"] == false",
+        "userScript": "SetVariableValue(\"seafort.kim_or_cuno_fuel_remark_heard\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 562,
+          "y": 872.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Cuno: \"\"Fuckin'... May bells everywhere.\"\"",
+          "Dialogue Text": "\"Fuckin'... May bells everywhere.\"",
+          "Articy Id": "0x0100000400014B66",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "InputId": "0x0100000400014B5A",
+          "OutputId": "0x0100000400014B68"
+        },
+        "conversationID": 89,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"seafort.sense_kim_reacts_to_may_bells\"]",
+        "userScript": "SetVariableValue(\"seafort.sense_kim_reacts_to_may_bells\", false) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 562,
+          "y": 633,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Cuno: \"\"Empty... Gotta look elsewhere, pig...\"",
+          "Dialogue Text": "\"Empty... Gotta look elsewhere, piggo.\"",
+          "Articy Id": "0x0100000400014B6C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "InputId": "0x0100000400014B5A",
+          "OutputId": "0x0100000400014B68"
+        },
+        "conversationID": 89,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"seafort.sense_barell_empty\"]",
+        "userScript": "SetVariableValue(\"seafort.sense_barell_empty\", false) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 562,
+          "y": 408,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

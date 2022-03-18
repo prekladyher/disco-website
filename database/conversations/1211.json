@@ -1,0 +1,6476 @@
+[
+  {
+    "id": 1211,
+    "fields": {
+      "Title": "YARD / CUNO LOCUSTS",
+      "Articy Id": "0x01000082000071FE",
+      "Description": "Cuno's City of Locusts related content.\n* Futile.\n* I've been to shack and clicked on it.",
+      "Actor": "396",
+      "Conversant": "395"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x01000082000071FE",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 0,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100008200007201",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100008100005B86"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 1,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 87,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 1,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 111,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Inland Empire: \"So it wasn't the phasmid... a wave...\"",
+          "Dialogue Text": "So it wasn't the phasmid... a wave of disappointment washes over you.",
+          "Articy Id": "0x010000060001EFA0",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "404",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005BAC",
+          "InputId": "0x0100008100005B86"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 2,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 97,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"yard.cuno_inland_disappointed\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -5746,
+          "y": 3246,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_rage_city_heard\"]",
+          "Articy Id": "0x0100001200000B06",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100008100005BD8"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 3,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 3,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -3960.000244140625,
+          "y": 3051,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_rage_city_heard\"]",
+          "Articy Id": "0x0100001200000B06",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005BDF"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 4,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 101,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_rage_city_heard\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2574,
+          "y": 1983.14990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_rage_city_heard\"])",
+          "Articy Id": "0x0100001200000B06",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005C0D"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 5,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 103,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_rage_city_heard\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2574,
+          "y": 1983.14990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Cuno: \"\"Yeah. Locust City -- City of Rage,...\"",
+          "Dialogue Text": "\"Yeah. Locust City -- City of Rage, City of Lights...\"",
+          "Articy Id": "0x0100008100005C1A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "OutputId": "0x010000820000985C",
+          "InputId": "0x0100008100005BF0"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 6,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 51,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2969,
+          "y": 2821,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "You: \"\"What are you, some kind of *artist...\"",
+          "Dialogue Text": "\"What are you, some kind of *artist* now?\"",
+          "Articy Id": "0x0100008100005C58",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "OutputId": "0x0100008100005C7C",
+          "InputId": "0x0100008100005C4C"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 7,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 73,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1802,
+          "y": 2860,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "You: \"\"Oh c'mon, no one is coming to take...\"",
+          "Dialogue Text": "\"Oh c'mon, no one is coming to take you away.\"",
+          "Articy Id": "0x0100008100005CD1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "OutputId": "0x0100008100005CD8",
+          "InputId": "0x010000060001793B"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 8,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 69,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"XP.befriend_the_cuno\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1306,
+          "y": 2754,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Untitled hub (06)",
+          "Articy Id": "0x0100008100005CDF",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x0100008100005D26",
+          "InputId": "0x0100008100005CFB"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 9,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 58,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 9,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 9,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 9,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 60,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3121,
+          "y": 2913,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Cuno: \"\"It don't mean anything. It's shit....\"",
+          "Dialogue Text": "\"It don't mean anything. It's shit. Cuno just likes to focus. Cuno likes to concentrate on shit, build shit when he's zipping hard. Fuck...\" He turns his face up to the heavens.",
+          "Articy Id": "0x0100008100005D09",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "Variable[\"auto.is_snowing\"]",
+          "Alternate1": "\"It don't mean anything. It's shit. Cuno just likes to focus. Cuno likes to concentrate on shit, build shit when he's zipping hard. Fuck...\" He turns his burning face up to the falling snow.",
+          "Condition2": "Variable[\"auto.is_raining\"]",
+          "Alternate2": "\"It don't mean anything. It's shit. Cuno just likes to focus. Cuno likes to concentrate on shit, build shit when he's zipping hard. Fuck...\" He turns his burning face up to the falling rain.",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "5",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005D54",
+          "InputId": "0x0100008100005CE5"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 10,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 132,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3753,
+          "y": 2711,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Cunoesse: \"\"Oh god, Cuno, NO!\" The little one...\"",
+          "Dialogue Text": "\"Oh god, Cuno, NO!\" The little one behind the fence takes her hat off. \"It's gonna happen now! They're gonna make you *lame*.\"",
+          "Articy Id": "0x0100008200007BCF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "6",
+          "Conversant": "396",
+          "OutputId": "0x0100008200007C0C",
+          "InputId": "0x0100008200007BC0"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 11,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "XPTinySetBool(\"XP.cuno_lame\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -922,
+          "y": 1247,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "Rhetoric: \"This is what he sometimes does when...\"",
+          "Dialogue Text": "This is what he sometimes does when things get tense.",
+          "Articy Id": "0x0100008200009867",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "400",
+          "Conversant": "396",
+          "OutputId": "0x0100001200000721",
+          "InputId": "0x010000820000986D"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 12,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 134,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 12,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 354,
+          "y": 2424,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Cunoesse: \"\"I don't believe you!\" She disappea...\"",
+          "Dialogue Text": "\"I don't believe you!\" She disappears entirely behind the fence.",
+          "Articy Id": "0x010000820000989F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "6",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005CF3",
+          "InputId": "0x0100008200009892"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 13,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 59,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1590.9998779296875,
+          "y": 2972,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Perception (Sight): \"There's a suspicious shack in the e...\"",
+          "Dialogue Text": "There's a suspicious shack in the eastern corner of the yard...",
+          "Articy Id": "0x010000060001792D",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "1",
+          "Actor": "424",
+          "Conversant": "396",
+          "OutputId": "0x0100008200007383",
+          "InputId": "0x01000029000017E8"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 14,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 108,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"yard.cuno_perc_helps_with_eternite\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2093,
+          "y": 1735.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "You: \"\"I was really hoping it would be th...\"",
+          "Dialogue Text": "\"I was really hoping it would be the reed-phasmid that ate the locusts. Not you, Cuno.“",
+          "Articy Id": "0x010000060001EF93",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "OutputId": "0x010000060001EF99",
+          "InputId": "0x0100008100005BAC"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 15,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 118,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_inland_disappointed\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -4807,
+          "y": 2689,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "You: \"\"What's going to happen to the locu...\"",
+          "Dialogue Text": "\"What's going to happen to the locusts?\" (Nod toward the shack.)",
+          "Articy Id": "0x0100008100005D03",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x0100008100005CDF",
+          "OutputId": "0x0100008100005D1E"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 16,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3465.000244140625,
+          "y": 3016,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "You: \"\"The Insulindian phasmid.\"\"",
+          "Dialogue Text": "\"The Insulindian phasmid.\"",
+          "Articy Id": "0x0100008100005D32",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "OutputId": "0x0100008100005D38",
+          "InputId": "0x0100008100005D2C"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 17,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 50,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4056.999755859375,
+          "y": 3155,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Rhetoric: \"He recognizes the name.\"",
+          "Dialogue Text": "He recognizes the name.",
+          "Articy Id": "0x0100008100005D3E",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "1",
+          "Actor": "400",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005D4B",
+          "InputId": "0x0100008100005D38"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 18,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 105,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"yard.cuno_locusts_shivers_know\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4623,
+          "y": 3130,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "Cunoesse: \"\"Deny everything, Cuno! You need to...\"",
+          "Dialogue Text": "\"Deny everything, Cuno! You need to lawyer up!\"",
+          "Articy Id": "0x0100008200007B76",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "6",
+          "Conversant": "396",
+          "OutputId": "0x0100002900001802",
+          "InputId": "0x0100008200007B5C"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 19,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 81,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -3325,
+          "y": 1425,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_been_opened_the_shack_door\"]  or  Variable[\"XP.befriend_the_cuno\"]",
+          "Articy Id": "0x0100008200007BF1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100008200007C0C"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 20,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 20,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -354,
+          "y": 1311,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_been_opened_the_shack_door\"]  or  Variable[\"XP.befriend_the_cuno\"]",
+          "Articy Id": "0x0100008200007BF1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100008200007BF8"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 21,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_been_opened_the_shack_door\"]  or  Variable[\"XP.befriend_the_cuno\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -230.09999084472656,
+          "y": 852.1499633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_been_opened_the_shack_door\"]  or  Variable[\"XP.befriend_the_cuno\"])",
+          "Articy Id": "0x0100008200007BF1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x01000029000017DF"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 22,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 57,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_been_opened_the_shack_door\"]  or  Variable[\"XP.befriend_the_cuno\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -230.09999084472656,
+          "y": 852.1499633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "You: \"\"I have to ask -- what does the Cit...\"",
+          "Dialogue Text": "\"I have to ask -- what does the City of Locusts *mean*?\"",
+          "Articy Id": "0x0100008100005CE5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x0100008100005CDF",
+          "OutputId": "0x0100008100005D09"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 23,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3465.000244140625,
+          "y": 2733,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "Cuno: \"\"Cuno's gonna let the fucking locus...\"",
+          "Dialogue Text": "\"Cuno's gonna let the fucking locusts die.\"",
+          "Articy Id": "0x0100008100005D1E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x0100008100005D03",
+          "OutputId": "0x01000082000098A8"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 24,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 112,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3764,
+          "y": 3015,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "You: \"\"Wait, you know what the Insulindia...\"",
+          "Dialogue Text": "\"Wait, you know what the Insulindian phasmid is?\"",
+          "Articy Id": "0x0100008100005D68",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "OutputId": "0x0100008100005D6F",
+          "InputId": "0x0100008100005D4B"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 25,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 61,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4962,
+          "y": 2812,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Authority: \"Use this momentary confusion to tak...\"",
+          "Dialogue Text": "Use this momentary confusion to take *control* of the situation.",
+          "Articy Id": "0x0100008100005DA8",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "406",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005CFB",
+          "InputId": "0x0100008100005CF3"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 26,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 75,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2485,
+          "y": 2829,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Conceptualization: \"But it's *not* lame! There's a real...\"",
+          "Dialogue Text": "But it's *not* lame! There's a real *tension* there... \"City of Rage\"...",
+          "Articy Id": "0x0100008200007BE1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "397",
+          "Conversant": "396",
+          "OutputId": "0x01000029000017DF",
+          "InputId": "0x0100008200007BC6"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 27,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 57,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -927.9999389648438,
+          "y": 1563,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "Rhetoric: \"Did he just say *I*? Cuno usually c...\"",
+          "Dialogue Text": "Did he just say *I*? Cuno usually calls Cuno Cuno.",
+          "Articy Id": "0x0100008200009833",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "400",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005C83",
+          "InputId": "0x01000029000017F8"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 28,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 129,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"yard.cuno_rhetoric_i\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1194,
+          "y": 2859,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "Cuno: \"\"You don't have a brain for this sh...\"",
+          "Dialogue Text": "\"You don't have a brain for this shit, no one has the brain to take Cuno's shit.\"",
+          "Articy Id": "0x0100008200009843",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "OutputId": "0x010000820000984A",
+          "InputId": "0x010000820000983C"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 29,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 96,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1492,
+          "y": 3183,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "Composure: \"As you leave, you notice his usual...\"",
+          "Dialogue Text": "As you leave, you notice his usual rooster-like swaying posture has changed, slowed down. Like clockwork unwinding.",
+          "Articy Id": "0x01000082000098D0",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "3",
+          "Actor": "419",
+          "Conversant": "396",
+          "OutputId": "0x01000082000098D9",
+          "InputId": "0x0100008100005D87"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 30,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 125,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5570,
+          "y": 2938,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "Variable[\"TASK.ask_cuno_about_missing_locusts\"]  and  Variable[\"TASK.ask_cuno_about_missing_locusts_done\"] == false",
+          "Articy Id": "0x010000020000164A",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100008100005D10"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 31,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 31,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4028,
+          "y": 2475,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "Variable[\"TASK.ask_cuno_about_missing_locusts\"]  and  Variable[\"TASK.ask_cuno_about_missing_locusts_done\"] == false",
+          "Articy Id": "0x010000020000164A",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100000200001651"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 32,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"TASK.ask_cuno_about_missing_locusts\"]  and  Variable[\"TASK.ask_cuno_about_missing_locusts_done\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2618.199951171875,
+          "y": 1608.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "!(Variable[\"TASK.ask_cuno_about_missing_locusts\"]  and  Variable[\"TASK.ask_cuno_about_missing_locusts_done\"] == false)",
+          "Articy Id": "0x010000020000164A",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005D17"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 33,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"TASK.ask_cuno_about_missing_locusts\"]  and  Variable[\"TASK.ask_cuno_about_missing_locusts_done\"] == false) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2618.199951171875,
+          "y": 1608.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "Cunoesse: \"The girl forces herself to watch ag...\"",
+          "Dialogue Text": "The girl forces herself to watch again, the corners of her eyes twitching from discomfort.",
+          "Articy Id": "0x0100008100005C44",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "6",
+          "Conversant": "396",
+          "OutputId": "0x010000820000982B",
+          "InputId": "0x010000820000985C"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 34,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2562,
+          "y": 3096,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Title": "Cunoesse: \"The girl's face appears again above...\"",
+          "Dialogue Text": "The girl's face appears again above the fence, just long enough to make eye contact with Cuno.",
+          "Articy Id": "0x0100008100005D17",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "6",
+          "Conversant": "396",
+          "InputId": "0x0100000200001651",
+          "OutputId": "0x0100008100005D5D"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 35,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 44,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4479,
+          "y": 2464,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "Empathy: \"She sounds like she's about to cry...\"",
+          "Dialogue Text": "She sounds like she's about to cry out of disappointment at Cuno's newfound lameness.",
+          "Articy Id": "0x0100008200007B4E",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "403",
+          "Conversant": "396",
+          "OutputId": "0x0100008200007B6A",
+          "InputId": "0x0100008200007B41"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 36,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 70,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 36,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 88,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 36,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -3935.000244140625,
+          "y": 1425,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "You: \"\"You kids are in trouble.\"\"",
+          "Dialogue Text": "\"You kids are in trouble.\"",
+          "Articy Id": "0x0100008200007B6A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x0100008200007B4E",
+          "OutputId": "0x0100008200007B76"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 37,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -3625.000244140625,
+          "y": 1650,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "Reaction Speed: \"There's definitely something going...\"",
+          "Dialogue Text": "There's definitely something going on here. You should check out Cuno's shack, the one with the pig's head.",
+          "Articy Id": "0x0100008200007BF8",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "1",
+          "Actor": "416",
+          "Conversant": "396",
+          "InputId": "0x0100008200007BF1",
+          "OutputId": "0x0100008200007BDD"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 38,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 117,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -54,
+          "y": 1245,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Title": "Cuno: \"\"They're not pets.\" Sounds like you...\"",
+          "Dialogue Text": "\"They're not pets.\" Sounds like you've offended him. \"Don't you know what locusts *are*, when they come out of the fucking sky? Fuckin' *descend* and shit.\"",
+          "Articy Id": "0x0100008100005C23",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005C2A",
+          "InputId": "0x0100008100005BC0"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 39,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 72,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -4473,
+          "y": 3538,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Title": "Cuno: \"\"Shut up, C!\"\"",
+          "Dialogue Text": "\"Shut up, C!\"",
+          "Articy Id": "0x0100008200007B3B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "OutputId": "0x0100008200007B41",
+          "InputId": "0x0100008200007B33"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 40,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 64,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -4525,
+          "y": 1425,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "You: \"\"You should listen to your friend,...\"",
+          "Dialogue Text": "\"You should listen to your friend, Cuno. Art's lame as hell.\"",
+          "Articy Id": "0x0100001200000721",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x0100008100005C83",
+          "OutputId": "0x010000120000072A"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 41,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 68,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -557,
+          "y": 2967,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Title": "Cuno: \"\"You stop! It's like they're *night...\"",
+          "Dialogue Text": "\"You stop! It's like they're *night*. Locusts are like this *huge shadow*...\"",
+          "Articy Id": "0x0100008100005C38",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005BDF",
+          "InputId": "0x0100001200000713"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 42,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 101,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -3656,
+          "y": 3291,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Title": "Cuno: \"\"Cuno made Cuno. Cuno says whatever...\"",
+          "Dialogue Text": "\"Cuno made Cuno. Cuno says whatever the fuck he wants! There are no *rules* here, pig.\" He steps closer...",
+          "Articy Id": "0x0100008100005C9D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "OutputId": "0x010000820000986D",
+          "InputId": "0x0100008100005C8A"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 43,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 71,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -275,
+          "y": 2421,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 44,
+        "fields": {
+          "Title": "Conceptualization: \"She doesn't know whether to be glad...\"",
+          "Dialogue Text": "She doesn't know whether to be glad because Cuno's finally convinced of the lameness... or  *more* worried, because of his continued use of the first-person singular. Cuno is Cuno. Not *I*.",
+          "Articy Id": "0x0100008100005D5D",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "3",
+          "Actor": "397",
+          "Conversant": "396",
+          "InputId": "0x0100008100005D17",
+          "OutputId": "0x01000082000098A8"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 44,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 112,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4762,
+          "y": 2450,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 45,
+        "fields": {
+          "Title": "Pain Threshold: \"The lameness is causing her physica...\"",
+          "Dialogue Text": "The lameness is causing her physical pain. The damage may be permanent.",
+          "Articy Id": "0x010000820000982B",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "10",
+          "Actor": "412",
+          "Conversant": "396",
+          "InputId": "0x0100008100005C44",
+          "OutputId": "0x0100008100005C4C"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 45,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 115,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2254,
+          "y": 3099,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 46,
+        "fields": {
+          "Title": "Cuno: \"\"Cuno made himself into Cuno. Cuno...\"",
+          "Dialogue Text": "\"Cuno made himself into Cuno. Cuno can make himself into *anything*. Cuno can make himself into a *pig* if he wants, Cuno can make himself into a f****t. Cuno doesn't give a shit.\"",
+          "Articy Id": "0x0100008200009877",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005CBD",
+          "InputId": "0x0100008100005CB6"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 46,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 135,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 346,
+          "y": 2840,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 47,
+        "fields": {
+          "Title": "FinishTask(\"TASK.ask_cuno_about_missing_locusts_done\")--[[ Variable[ ]]",
+          "Articy Id": "0x0100000200001651",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Instruction",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x010000020000164A",
+          "OutputId": "0x0100008100005D17"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 47,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "FinishTask(\"TASK.ask_cuno_about_missing_locusts_done\")--[[ Variable[ ]];",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4337,
+          "y": 2271,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 48,
+        "fields": {
+          "Title": "Suggestion: \"So that's what this is about.\"",
+          "Dialogue Text": "So that's what this is about.",
+          "Articy Id": "0x010000060001793B",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "407",
+          "Conversant": "396",
+          "OutputId": "0x0100008200009882",
+          "InputId": "0x0100008100005CCB"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 48,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 136,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 48,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 48,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 48,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 67,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 931,
+          "y": 3096,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 49,
+        "fields": {
+          "Title": "Cunoesse: \"\"Cuno, the pig wants to *help* you....\"",
+          "Dialogue Text": "\"Cuno, the pig wants to *help* you...\" she moans. \"That's how lame it is. Please just don't say you're --\"",
+          "Articy Id": "0x0100008100005C6E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "6",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005C75",
+          "InputId": "0x0100008100005C5E"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 49,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 102,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1495,
+          "y": 2621,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 50,
+        "fields": {
+          "Title": "Cuno: \"\"Huh...\" he mutters to himself.\"",
+          "Dialogue Text": "\"Huh...\" he mutters to himself.",
+          "Articy Id": "0x0100008100005D38",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x0100008100005D32",
+          "OutputId": "0x0100008100005D3E"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 50,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4341,
+          "y": 3154,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 51,
+        "fields": {
+          "Title": "Conceptualization: \"There's a tug-of-war over the name...\"",
+          "Dialogue Text": "There's a tug-of-war over the name of his fantastical city. It's almost too big for his imagination.",
+          "Articy Id": "0x010000820000985C",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "397",
+          "Conversant": "396",
+          "InputId": "0x0100008100005C0D",
+          "OutputId": "0x0100008100005C44"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 51,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2854,
+          "y": 3093,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 52,
+        "fields": {
+          "Title": "You: \"\"Me and Cuno have discussed this. I...\"",
+          "Dialogue Text": "\"Me and Cuno have discussed this. I promised I won't do that.\"",
+          "Articy Id": "0x0100008200009892",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x010000060001793B",
+          "OutputId": "0x010000820000989F"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 52,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"XP.befriend_the_cuno\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1302,
+          "y": 2970,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 53,
+        "fields": {
+          "Title": "You: \"\"None of your business.\" [Leave.]\"",
+          "Dialogue Text": "\"None of your business.\" [Leave.]",
+          "Articy Id": "0x01000082000098C6",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "OutputId": "0x0100001200000738",
+          "InputId": "0x0100008100005D2C"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 53,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 119,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4059,
+          "y": 3401.999755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 54,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_rage_city_heard\"]",
+          "Articy Id": "0x0100001200000713",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100008100005C2A"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 54,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 55,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 54,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 56,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -4173,
+          "y": 3399,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 55,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_rage_city_heard\"]",
+          "Articy Id": "0x0100001200000713",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005C38"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 55,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 42,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_rage_city_heard\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2712.449951171875,
+          "y": 2209.349853515625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 56,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_rage_city_heard\"])",
+          "Articy Id": "0x0100001200000713",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005C0D"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 56,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 103,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_rage_city_heard\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2712.449951171875,
+          "y": 2209.349853515625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 57,
+        "fields": {
+          "Title": "Reaction Speed: \"There's definitely something going...\"",
+          "Dialogue Text": "There's definitely something going on here. Maybe he's got them stashed somewhere nearby, in some hidden place?",
+          "Articy Id": "0x01000029000017DF",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "1",
+          "Actor": "416",
+          "Conversant": "396",
+          "InputId": "0x0100008200007BE1",
+          "OutputId": "0x0100008200007BDD"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 57,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 117,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -624,
+          "y": 1564,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 58,
+        "fields": {
+          "Title": "You: \"\"I need you to stop taking locusts...\"",
+          "Dialogue Text": "\"I need you to stop taking locusts from the traps. The cryptozoologists are trying to find something very important. Those locusts are bait.\"",
+          "Articy Id": "0x0100008100005CEC",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x0100008100005CDF",
+          "OutputId": "0x0100008100005D10"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 58,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 130,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3465.000244140625,
+          "y": 2413,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 59,
+        "fields": {
+          "Title": "Cuno: \"For once, the boy is lost for words...\"",
+          "Dialogue Text": "For once, the boy is lost for words. He's turned completely red now, with splotches of white beginning to appear across his face.",
+          "Articy Id": "0x0100008100005CF3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x0100008100005CD8",
+          "OutputId": "0x0100008100005DA8"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 59,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2200,
+          "y": 2828,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 60,
+        "fields": {
+          "Title": "You: \"\"Okay, now that that's settled, I'd...\"",
+          "Dialogue Text": "\"Okay, now that that's settled, I'd better be off.\" (Conclude.)",
+          "Articy Id": "0x0100008100005D26",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x0100008100005CDF",
+          "OutputId": "0x0100008100005D2C"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 60,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 131,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_locusts_no_more\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3465.000244140625,
+          "y": 3263,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 61,
+        "fields": {
+          "Title": "Cuno: \"\"Bitches think Cuno doesn't *know*...\"",
+          "Dialogue Text": "\"Bitches think Cuno doesn't *know* shit...\" he says angrily. \"The fuck outta here, Cuno's tired of this shit.\"",
+          "Articy Id": "0x0100008100005D6F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x0100008100005D68",
+          "OutputId": "0x01000082000098D0"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 61,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5262,
+          "y": 2812,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 62,
+        "fields": {
+          "Title": "lame_rage_art",
+          "Articy Id": "0x0100008200007BA4",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x0100008200007BC6",
+          "InputId": "0x0100008200007B9D"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 62,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 122,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 62,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 65,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1506,
+          "y": 1435,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 63,
+        "fields": {
+          "Title": "Reaction Speed: \"There's definitely something going...\"",
+          "Dialogue Text": "There's definitely something going on here. Remember his pigs' head shack? You should check it out.",
+          "Articy Id": "0x0100008200007BAC",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "1",
+          "Actor": "416",
+          "Conversant": "396",
+          "OutputId": "0x0100008200007383",
+          "InputId": "0x0100008200007BB4"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 63,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 108,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2425,
+          "y": 1475,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 64,
+        "fields": {
+          "Title": "Cunoesse: \"\"Now they're gonna take you to lame...\"",
+          "Dialogue Text": "\"Now they're gonna take you to lame-prison!\"",
+          "Articy Id": "0x0100008200007B41",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "6",
+          "Conversant": "396",
+          "InputId": "0x0100008200007B3B",
+          "OutputId": "0x0100008200007B4E"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 64,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -4225,
+          "y": 1425,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 65,
+        "fields": {
+          "Title": "You: \"No, I don't want to talk to the kid...\"",
+          "Dialogue Text": "No, I don't want to talk to the kid about lame stuff.",
+          "Articy Id": "0x0100008200007BC6",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x0100008200007BA4",
+          "OutputId": "0x0100008200007BE1"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 65,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_conze_lame_rage_city\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1219,
+          "y": 1574,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 66,
+        "fields": {
+          "Title": "Cuno: \"\"Stop it, C! No one's gonna make an...\"",
+          "Dialogue Text": "\"Stop it, C! No one's gonna make anyone lame. Cuno's got this under control.\"",
+          "Articy Id": "0x0100008200007C0C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x0100008200007BCF",
+          "OutputId": "0x0100008200007BF1"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 66,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -648,
+          "y": 1259,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 67,
+        "fields": {
+          "Title": "You: \"Say nothing.\"",
+          "Dialogue Text": "Say nothing.",
+          "Articy Id": "0x0100008200009882",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x010000060001793B",
+          "OutputId": "0x0100008100005CD8"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 67,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 69,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1307,
+          "y": 3190,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 68,
+        "fields": {
+          "Title": "Cunoesse: \"\"ARRRRGH, CUNO! It's so lame even t...\"",
+          "Dialogue Text": "\"ARRRRGH, CUNO! It's so lame even the *pig* knows it's lame. Please, stop!\"",
+          "Articy Id": "0x010000120000072A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "6",
+          "Conversant": "396",
+          "InputId": "0x0100001200000721",
+          "OutputId": "0x0100008100005CB6"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 68,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 104,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -281,
+          "y": 2966,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 69,
+        "fields": {
+          "Title": "Cunoesse: \"Without a word she disappears entir...\"",
+          "Dialogue Text": "Without a word she disappears entirely behind the fence.",
+          "Articy Id": "0x0100008100005CD8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "6",
+          "Conversant": "396",
+          "InputId": "0x0100008100005DA0",
+          "OutputId": "0x0100008100005CF3"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 69,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 59,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1898,
+          "y": 2842,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 70,
+        "fields": {
+          "Title": "You: \"\"What's this about?\"\"",
+          "Dialogue Text": "\"What's this about?\"",
+          "Articy Id": "0x0100008200007B63",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x0100008200007B4E",
+          "OutputId": "0x0100008200007B76"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 70,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -3625.000244140625,
+          "y": 1200,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 71,
+        "fields": {
+          "Title": "Cuno: \"\"I fucking say 'I' when I wanna and...\"",
+          "Dialogue Text": "\"I fucking say 'I' when I wanna and 'Cuno' when I wanna. Cuno's free. Cuno's free to fucking *die*, bitch.\"",
+          "Articy Id": "0x010000820000986D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x0100008100005C9D",
+          "OutputId": "0x0100008200009867"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 71,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 38,
+          "y": 2428,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 72,
+        "fields": {
+          "Title": "Cunoesse: \"\"Stooooop!\" she wails from behind t...\"",
+          "Dialogue Text": "\"Stooooop!\" she wails from behind the fence, then covers her face with her hands.",
+          "Articy Id": "0x0100008100005C2A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "6",
+          "Conversant": "396",
+          "InputId": "0x0100008100005C23",
+          "OutputId": "0x0100001200000713"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 72,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 54,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -4173,
+          "y": 3538,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 73,
+        "fields": {
+          "Title": "Cuno: \"\"Maybe I *am*,\" he says, looking yo...\"",
+          "Dialogue Text": "\"Maybe I *am*,\" he says, looking you straight in the eye...",
+          "Articy Id": "0x0100008100005C7C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x0100008100005C58",
+          "OutputId": "0x0100008200009833"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 73,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1502,
+          "y": 2860,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 74,
+        "fields": {
+          "Title": "Perception (Hearing): \"In it, you hear snow melting, dripp...\"",
+          "Dialogue Text": "In it, you hear snow melting, dripping from the eaves. Someone closing a window.",
+          "Articy Id": "0x0100008100005CCB",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "10",
+          "Actor": "422",
+          "Conversant": "396",
+          "OutputId": "0x010000060001793B",
+          "InputId": "0x0100008100005CBD"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 74,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 949,
+          "y": 2855,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 75,
+        "fields": {
+          "Title": "Rhetoric: \"You got him. Now convince him to le...\"",
+          "Dialogue Text": "You got him. Now convince him to leave the cryptozoologists' traps alone.",
+          "Articy Id": "0x0100008100005CFB",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "10",
+          "Actor": "400",
+          "Conversant": "396",
+          "InputId": "0x0100008100005DA8",
+          "OutputId": "0x0100008100005CDF"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 75,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2801,
+          "y": 2830,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 76,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_rage_city_heard\"]",
+          "Articy Id": "0x0100008200007B86",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x010000290000180B"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 76,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 77,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 76,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 78,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2739,
+          "y": 1366,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 77,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_rage_city_heard\"]",
+          "Articy Id": "0x0100008200007B86",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100008200007B8E"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 77,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 79,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_rage_city_heard\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1780.3499755859375,
+          "y": 887.8999633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 78,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_rage_city_heard\"])",
+          "Articy Id": "0x0100008200007B86",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100008200007BB4"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 78,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 93,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_rage_city_heard\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1780.3499755859375,
+          "y": 887.8999633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 79,
+        "fields": {
+          "Title": "Conceptualization: \"*Lame...* That rings some bells......\"",
+          "Dialogue Text": "*Lame...* That rings some bells... Could this be connected to Night City -- a.k.a. the *City of Rage*?",
+          "Articy Id": "0x0100008200007B8E",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "1",
+          "Actor": "397",
+          "Conversant": "396",
+          "InputId": "0x0100008200007B86",
+          "OutputId": "0x0100008200007B97"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 79,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 90,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"yard.cuno_conze_lame_rage_city\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2425,
+          "y": 1250,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 80,
+        "fields": {
+          "Title": "Reaction Speed: \"There's definitely something going...\"",
+          "Dialogue Text": "There's definitely something going on here. Maybe he's got them stashed somewhere nearby, in some hidden place?",
+          "Articy Id": "0x01000029000017E8",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "1",
+          "Actor": "416",
+          "Conversant": "396",
+          "OutputId": "0x010000060001792D",
+          "InputId": "0x0100008200007BB4"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 80,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2435,
+          "y": 1729,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 81,
+        "fields": {
+          "Title": "Variable[\"TASK.ask_cuno_about_missing_locusts\"]",
+          "Articy Id": "0x0100002900001802",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100008200007B76"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 81,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 82,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 81,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 83,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -3331,
+          "y": 1269,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 82,
+        "fields": {
+          "Title": "Variable[\"TASK.ask_cuno_about_missing_locusts\"]",
+          "Articy Id": "0x0100002900001802",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x010000290000180B"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 82,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 126,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"TASK.ask_cuno_about_missing_locusts\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2165.14990234375,
+          "y": 824.8499755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 83,
+        "fields": {
+          "Title": "!(Variable[\"TASK.ask_cuno_about_missing_locusts\"])",
+          "Articy Id": "0x0100002900001802",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100008200007B7F"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 83,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 89,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"TASK.ask_cuno_about_missing_locusts\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2165.14990234375,
+          "y": 824.8499755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 84,
+        "fields": {
+          "Title": "You: \"\"Why steal locusts? Couldn't you fi...\"",
+          "Dialogue Text": "\"Why steal locusts? Couldn't you find some other pets?\"",
+          "Articy Id": "0x0100008100005BC0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "OutputId": "0x0100008100005C23",
+          "InputId": "0x010000060001EF99"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 84,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -4771,
+          "y": 3548,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 85,
+        "fields": {
+          "Title": "You: \"\"City of Rage sounds like a cool pl...\"",
+          "Dialogue Text": "\"City of Rage sounds like a cool place.\"",
+          "Articy Id": "0x0100008100005C5E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "OutputId": "0x0100008100005C6E",
+          "InputId": "0x0100008100005C4C"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 85,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 49,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1785.9998779296875,
+          "y": 2621,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 86,
+        "fields": {
+          "Title": "Cuno: \"\"The fuck outta here...\" he says, n...\"",
+          "Dialogue Text": "\"The fuck outta here...\" he says, not entirely convinced of himself. \"Cuno's tired of this shit.\"",
+          "Articy Id": "0x0100008100005D87",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "OutputId": "0x01000082000098D0",
+          "InputId": "0x0100008100005D81"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 86,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5262,
+          "y": 3062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 87,
+        "fields": {
+          "Title": "Cuno: \"\"No. Cuno doesn't give a fuck about...\"",
+          "Dialogue Text": "\"No. Cuno doesn't give a fuck about bugs.\"",
+          "Articy Id": "0x0100008200007B2C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x0100008200007201",
+          "OutputId": "0x0100000600017925"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 87,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 133,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -5125,
+          "y": 1425,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 88,
+        "fields": {
+          "Title": "You: \"\"Now hold on, no one is lame here.....\"",
+          "Dialogue Text": "\"Now hold on, no one is lame here... just tell me what happened?\"",
+          "Articy Id": "0x0100008200007B5C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x0100008200007B4E",
+          "OutputId": "0x0100008200007B76"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 88,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -3625.000244140625,
+          "y": 1425,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 89,
+        "fields": {
+          "Title": "Cuno: \"\"Cuno's not gonna say anything with...\"",
+          "Dialogue Text": "\"Cuno's not gonna say anything without his lawyer present.\"",
+          "Articy Id": "0x0100008200007B7F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x0100002900001802",
+          "OutputId": "0x0100008200007B86"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 89,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 76,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"yard.cuno_locusts_said_doesnt_know\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -3042,
+          "y": 1427,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 90,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_conze_lame_rage_city\"]",
+          "Articy Id": "0x0100008200007B97",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100008200007B8E"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 90,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 91,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 90,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 92,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2139,
+          "y": 1299,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 91,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_conze_lame_rage_city\"]",
+          "Articy Id": "0x0100008200007B97",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100008200007B9D"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 91,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 137,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_conze_lame_rage_city\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1390.3499755859375,
+          "y": 844.3499755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 92,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_conze_lame_rage_city\"])",
+          "Articy Id": "0x0100008200007B97",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100008200007BA4"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 92,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 62,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_conze_lame_rage_city\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1390.3499755859375,
+          "y": 844.3499755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 93,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_been_opened_the_shack_door\"]",
+          "Articy Id": "0x0100008200007BB4",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100008200007B86"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 93,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 94,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 93,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 95,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2731,
+          "y": 1667,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 94,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_been_opened_the_shack_door\"]",
+          "Articy Id": "0x0100008200007BB4",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100008200007BAC"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 94,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 63,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_been_opened_the_shack_door\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1775.14990234375,
+          "y": 1083.5499267578125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 95,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_been_opened_the_shack_door\"])",
+          "Articy Id": "0x0100008200007BB4",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x01000029000017E8"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 95,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 80,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_been_opened_the_shack_door\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1775.14990234375,
+          "y": 1083.5499267578125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 96,
+        "fields": {
+          "Title": "Cunoesse: \"\"It's because of the lame, Cuno!\"\"",
+          "Dialogue Text": "\"It's because of the lame, Cuno!\"",
+          "Articy Id": "0x010000820000984A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "6",
+          "Conversant": "396",
+          "InputId": "0x0100008200009843",
+          "OutputId": "0x01000029000017F8"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 96,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 110,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1206,
+          "y": 3173,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 97,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_locusts_said_doesnt_know\"]",
+          "Articy Id": "0x0100008100005BAC",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x010000060001EFA0"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 97,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 98,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 97,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 99,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -5451,
+          "y": 3300,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 98,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_locusts_said_doesnt_know\"]",
+          "Articy Id": "0x0100008100005BAC",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005BC0"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 98,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 98,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 127,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 98,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 84,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_locusts_said_doesnt_know\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -3543.14990234375,
+          "y": 2145,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 99,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_locusts_said_doesnt_know\"])",
+          "Articy Id": "0x0100008100005BAC",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005BC0"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 99,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 99,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 84,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_locusts_said_doesnt_know\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -3543.14990234375,
+          "y": 2145,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 100,
+        "fields": {
+          "Title": "Cunoesse: \"\"Stoooooop!\" she wails from behind...\"",
+          "Dialogue Text": "\"Stoooooop!\" she wails from behind the fence, then buries her face in her hands.",
+          "Articy Id": "0x0100008100005BD8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "6",
+          "Conversant": "396",
+          "OutputId": "0x0100001200000B06",
+          "InputId": "0x0100008100005BD1"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 100,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -4240,
+          "y": 2987,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 101,
+        "fields": {
+          "Title": "Logic: \"Locusts coming down like a shadow.....\"",
+          "Dialogue Text": "Locusts coming down like a shadow... This must be the *Night City* he mentioned when you asked him where he's been.",
+          "Articy Id": "0x0100008100005BDF",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "0",
+          "Actor": "398",
+          "Conversant": "396",
+          "InputId": "0x0100008100005C38",
+          "OutputId": "0x0100008100005BF0"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 101,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 114,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 101,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 128,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"yard.cuno_locusts_logic_darkness_night\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -3619,
+          "y": 2818,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 102,
+        "fields": {
+          "Title": "Cuno: \"\"An *artist*?\" He pushes his chest...\"",
+          "Dialogue Text": "\"An *artist*?\" He pushes his chest out. \"Maybe I *am* an artist? You hear that everyone, I'm a fucking *artist* now.\"",
+          "Articy Id": "0x0100008100005C75",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x0100008100005C6E",
+          "OutputId": "0x0100008200009833"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 102,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1219,
+          "y": 2615,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 103,
+        "fields": {
+          "Title": "Cuno: \"\"You stop! It's like they're fuckin...\"",
+          "Dialogue Text": "\"You stop! It's like they're fucking *night*. Locust City, Night City. City of Rage...\"",
+          "Articy Id": "0x0100008100005C0D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x0100001200000713",
+          "OutputId": "0x010000820000985C"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 103,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 51,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -3666,
+          "y": 3531.999755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 104,
+        "fields": {
+          "Title": "Cuno: \"\"Yo, fuck you, C. Cuno can be what...\"",
+          "Dialogue Text": "\"Yo, fuck you, C. Cuno can be what Cuno wants to be. Cuno's his own man, Cuno's *free*!\" He tears at the buttons of his shirt, trying to rip them open. They don't give way.",
+          "Articy Id": "0x0100008100005CB6",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x0100008100005CAE",
+          "OutputId": "0x0100008200009877"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 104,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 46,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 27,
+          "y": 2838,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 105,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_locusts_shivers_know\"]",
+          "Articy Id": "0x0100008100005D4B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100008100005D3E"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 105,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 106,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 105,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 107,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4648,
+          "y": 2993,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 106,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_locusts_shivers_know\"]",
+          "Articy Id": "0x0100008100005D4B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005D81"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 106,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 106,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 121,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_locusts_shivers_know\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3021.199951171875,
+          "y": 1945.449951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 107,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_locusts_shivers_know\"])",
+          "Articy Id": "0x0100008100005D4B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005D81"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 107,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 121,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_locusts_shivers_know\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3021.199951171875,
+          "y": 1945.449951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 108,
+        "fields": {
+          "Title": "Jump to: [CUNO MAIN HUB]",
+          "Articy Id": "0x0100008200007383",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100008200007BAC"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 108,
+            "destinationConversationID": 603,
+            "destinationDialogueID": 438,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1720.9998779296875,
+          "y": 1644,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 109,
+        "fields": {
+          "Title": "Cunoesse: \"\"Oh my god.\" The little one seems d...\"",
+          "Dialogue Text": "\"Oh my god.\" The little one seems distraught. \"I told you that shit is lame!\"",
+          "Articy Id": "0x0100008200007B33",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "6",
+          "Conversant": "396",
+          "OutputId": "0x0100008200007B3B",
+          "InputId": "0x0100000600017925"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 109,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -4825,
+          "y": 1425,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 110,
+        "fields": {
+          "Title": "Cuno: \"\"I am who I am, C, fuck you!\"\"",
+          "Dialogue Text": "\"I am who I am, C, fuck you!\"",
+          "Articy Id": "0x01000029000017F8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x010000820000984A",
+          "OutputId": "0x0100008200009833"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 110,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -939,
+          "y": 3185,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 111,
+        "fields": {
+          "Title": "Cuno: \"\"Yeah,\" he says slowly, meeting you...\"",
+          "Dialogue Text": "\"Yeah,\" he says slowly, meeting your gaze with sullen defiance. \"Cuno took the bugs. So what?\"",
+          "Articy Id": "0x0100008100005B86",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x0100008200007201",
+          "OutputId": "0x010000060001EFA0"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 111,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -6027,
+          "y": 3231,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 112,
+        "fields": {
+          "Title": "Jump to: [Untitled hub (06)]",
+          "Articy Id": "0x01000082000098A8",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100008100005D54"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 112,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4380,
+          "y": 2755,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 114,
+        "fields": {
+          "Title": "You: \"(Point at the shack.) \"So that, in...\"",
+          "Dialogue Text": "(Point at the shack.) \"So that, in there, is Night City?\"",
+          "Articy Id": "0x0100008100005BEA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x0100008100005BDF",
+          "OutputId": "0x0100008100005C1A"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 114,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_locusts_logic_darkness_night\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -3266.999755859375,
+          "y": 2709,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 115,
+        "fields": {
+          "Title": "Untitled hub (04)",
+          "Articy Id": "0x0100008100005C4C",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x010000820000982B",
+          "OutputId": "0x010000820000983C"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 115,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 85,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 115,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 115,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 123,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2138,
+          "y": 2949,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 116,
+        "fields": {
+          "Title": "You: \"\"Hold on, did I hear you right? You...\"",
+          "Dialogue Text": "\"Hold on, did I hear you right? You said 'I'.\"",
+          "Articy Id": "0x0100008100005C8A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "OutputId": "0x0100008100005C9D",
+          "InputId": "0x0100008100005C83"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 116,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 43,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_rhetoric_i\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -562,
+          "y": 2428,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 117,
+        "fields": {
+          "Title": "Jump to: [CUNO MAIN HUB]",
+          "Articy Id": "0x0100008200007BDD",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x01000029000017DF"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 117,
+            "destinationConversationID": 603,
+            "destinationDialogueID": 438,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 91,
+          "y": 1595.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 118,
+        "fields": {
+          "Title": "Cuno: \"\"Yeah, well... Cuno's all you got,...\"",
+          "Dialogue Text": "\"Yeah, well... Cuno's all you got, bitch.\"",
+          "Articy Id": "0x010000060001EF99",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x010000060001EF93",
+          "OutputId": "0x0100008100005BC0"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 118,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 127,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 118,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 84,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -4505,
+          "y": 2663,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 119,
+        "fields": {
+          "Title": "Cuno: \"\"Yeah, whatever.\"\"",
+          "Dialogue Text": "\"Yeah, whatever.\"",
+          "Articy Id": "0x0100001200000738",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x01000082000098C6",
+          "OutputId": "0x01000082000098DD"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4344,
+          "y": 3398,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 120,
+        "fields": {
+          "Title": "Cunoesse: \"\"OH MY GOD, CUNO! He's gonna make y...\"",
+          "Dialogue Text": "\"OH MY GOD, CUNO! He's gonna make you totally lame in, like, three seconds! Don't let him, Cuno!\"",
+          "Articy Id": "0x0100008100005CAE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "6",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005CB6",
+          "InputId": "0x0100008100005C96"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 120,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 104,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -276,
+          "y": 2737,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 121,
+        "fields": {
+          "Title": "You: \"\"Later, Cuno.\"\"",
+          "Dialogue Text": "\"Later, Cuno.\"",
+          "Articy Id": "0x0100008100005D81",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x0100008100005D4B",
+          "OutputId": "0x0100008100005D87"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 121,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 86,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4962,
+          "y": 3062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 122,
+        "fields": {
+          "Title": "You: \"\"Cuno is this about... Rage City?\"\"",
+          "Dialogue Text": "\"Cuno is this about... Rage City?\"",
+          "Articy Id": "0x0100008200007BC0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x0100008200007BA4",
+          "OutputId": "0x0100008200007BCF"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 122,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1219,
+          "y": 1257,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 123,
+        "fields": {
+          "Title": "You: \"\"Whatever, kids, I just wanted to a...\"",
+          "Dialogue Text": "\"Whatever, kids, I just wanted to ask...\"",
+          "Articy Id": "0x010000820000983C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x0100008100005C4C",
+          "OutputId": "0x0100008200009843"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 123,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1785.0001220703125,
+          "y": 3188,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 124,
+        "fields": {
+          "Title": "Cuno: \"\"It's not Bug Town, it's the *City...\"",
+          "Dialogue Text": "\"It's not Bug Town, it's the *City of Locusts*,\" he says, enunciating every syllable. \"Locusts aren't just bug-shit. They come out of the sky like a fucking shadow. Shit *descends*.\"",
+          "Articy Id": "0x0100008100005BD1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "OutputId": "0x0100008100005BD8",
+          "InputId": "0x0100008100005BA5"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 124,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 100,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -4516,
+          "y": 2981,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 125,
+        "fields": {
+          "Title": "Empathy: \"There's silence between the two chi...\"",
+          "Dialogue Text": "There's silence between the two children. They're not saying anything to each other nor looking in each other's direction.",
+          "Articy Id": "0x01000082000098D9",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "403",
+          "Conversant": "396",
+          "InputId": "0x01000082000098D0",
+          "OutputId": "0x01000082000098DD"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5874,
+          "y": 2938,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 126,
+        "fields": {
+          "Title": "Cuno: \"\"Cuno's not gonna say anything with...\"",
+          "Dialogue Text": "\"Cuno's not gonna say anything without his lawyer present.\"",
+          "Articy Id": "0x010000290000180B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x0100002900001802",
+          "OutputId": "0x0100008200007B86"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 126,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 76,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"yard.cuno_locusts_said_doesnt_know\", true) ;\nFinishTask(\"TASK.ask_cuno_about_missing_locusts_done\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -3040,
+          "y": 1093,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 127,
+        "fields": {
+          "Title": "You: \"\"You say you don't *give a fuck abo...\"",
+          "Dialogue Text": "\"You say you don't *give a fuck about bugs*, then you go and build a whole bug town.\"",
+          "Articy Id": "0x0100008100005BA5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x010000060001EF99",
+          "OutputId": "0x0100008100005BD1"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 127,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 124,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -4813,
+          "y": 2986,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 128,
+        "fields": {
+          "Title": "You: \"\"So this is the city you kept talki...\"",
+          "Dialogue Text": "\"So this is the city you kept talking about.\"",
+          "Articy Id": "0x0100008100005BF0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x0100008100005BDF",
+          "OutputId": "0x0100008100005C1A"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 128,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_locusts_logic_darkness_night\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -3266.999755859375,
+          "y": 2959,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 129,
+        "fields": {
+          "Title": "Untitled hub (05)",
+          "Articy Id": "0x0100008100005C83",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100008200009833",
+          "OutputId": "0x0100001200000721"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 129,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 116,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 129,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 134,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 129,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -809,
+          "y": 2777,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 130,
+        "fields": {
+          "Title": "Cuno: \"\"I don't give a shit, I don't need...\"",
+          "Dialogue Text": "\"I don't give a shit, I don't need the locusts anyway. Shit is all lame now.\" He turns toward the fence. \"C was right.\"",
+          "Articy Id": "0x0100008100005D10",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x0100008100005CEC",
+          "OutputId": "0x010000020000164A"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 130,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"yard.cuno_locusts_no_more\", true) ;\nFinishTask(\"TASK.confront_cuno_about_locusts_done\");\nGainTask(\"TASK.report_to_cryptozoologists_2\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3746.999755859375,
+          "y": 2413,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 131,
+        "fields": {
+          "Title": "Cuno: \"\"The fuck are they trying to catch...\"",
+          "Dialogue Text": "\"The fuck are they trying to catch anyway?\" he asks before you leave. \"With the traps?\"",
+          "Articy Id": "0x0100008100005D2C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x0100008100005D26",
+          "OutputId": "0x01000082000098C6"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 131,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 131,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 53,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3765.000244140625,
+          "y": 3263,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 132,
+        "fields": {
+          "Title": "Cuno: \"\"Pig,\" he says finally, lowering hi...\"",
+          "Dialogue Text": "\"Pig,\" he says finally, lowering his gaze to meet yours, \"you really shouldn't have fucked with Cuno's city. Now it's all fucking lame.\"",
+          "Articy Id": "0x0100008100005D54",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "396",
+          "InputId": "0x0100008100005D09",
+          "OutputId": "0x01000082000098A8"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 132,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 112,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4041.999755859375,
+          "y": 2711,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 133,
+        "fields": {
+          "Title": "Rhetoric: \"So he knows locusts are bugs.\"",
+          "Dialogue Text": "So he knows locusts are bugs.",
+          "Articy Id": "0x0100000600017925",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "400",
+          "Conversant": "396",
+          "InputId": "0x0100008200007B2C",
+          "OutputId": "0x0100008200007B33"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 133,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 109,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -5019,
+          "y": 1137,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 134,
+        "fields": {
+          "Title": "You: \"\"That's great, Cuno. It's cool to m...\"",
+          "Dialogue Text": "\"That's great, Cuno. It's cool to make art.\"",
+          "Articy Id": "0x0100008100005C96",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "IsTHCPresent(\"art_cop\")",
+          "Alternate1": "(Nod.) \"Making art is a worthy calling. I'm something of an artist myself.\"",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x0100008100005C83",
+          "OutputId": "0x0100008100005CAE"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 134,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 120,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "ReputationGrows(\"art_cop\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -560,
+          "y": 2738,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 135,
+        "fields": {
+          "Title": "Cunoesse: \"\"Don't make yourself into a pig, Cu...\"",
+          "Dialogue Text": "\"Don't make yourself into a pig, Cuno. You'll have to take me away...\" A leaden silence fills the yard.",
+          "Articy Id": "0x0100008100005CBD",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "6",
+          "Conversant": "396",
+          "InputId": "0x0100008200009877",
+          "OutputId": "0x0100008100005CCB"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 135,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 74,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 668,
+          "y": 2841,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 136,
+        "fields": {
+          "Title": "You: \"\"That depends on the choices *you*...\"",
+          "Dialogue Text": "\"That depends on the choices *you* make, young girl.\"",
+          "Articy Id": "0x0100008100005DA0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x010000060001793B",
+          "OutputId": "0x0100008100005CD8"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 136,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 69,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1299,
+          "y": 2531,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 137,
+        "fields": {
+          "Title": "Physical Instrument: \"Yeah, that's pretty lame. Sounds li...\"",
+          "Dialogue Text": "Yeah, that's pretty lame. Sounds like art.",
+          "Articy Id": "0x0100008200007B9D",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "410",
+          "Conversant": "396",
+          "InputId": "0x0100008200007B97",
+          "OutputId": "0x0100008200007BA4"
+        },
+        "conversationID": 1211,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1211,
+            "originDialogueID": 137,
+            "destinationConversationID": 1211,
+            "destinationDialogueID": 62,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1790.9998779296875,
+          "y": 1176,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

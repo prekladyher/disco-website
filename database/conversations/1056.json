@@ -1,0 +1,2569 @@
+[
+  {
+    "id": 1056,
+    "fields": {
+      "Title": "DAYCHANGE / TEQUILA BED",
+      "Articy Id": "0x0100005A0001243A",
+      "OnUse": "",
+      "OverrideDialogueCondition": "",
+      "AlternateOrbText": "",
+      "CheckType": "15",
+      "Condition": "Variable[\"whirling.kimintro_hub_reached\"]",
+      "Description": "The dialogue between You and your bed. You can sleep, not sleep, read your ledger.",
+      "Instruction": "",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "396",
+      "Conversant": "239"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100005A0001243A",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 0,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100005A000125FA",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100005A00012585"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 1,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "You: \"Go to sleep.\"",
+          "Dialogue Text": "Go to sleep.",
+          "Articy Id": "0x01000005000033F1",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "MusicPlay(silence,90); SemiBlack(true,3); BanishHUD(true);",
+          "Actor": "396",
+          "Conversant": "239",
+          "OutputId": "0x0100005A00012574",
+          "InputId": "0x0100005A00012489"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 2,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"auto.daychange_can_sleep\"]  and  Variable[\"whirling.bed_day_1\"]  and  DayCount() == 5  and  IsKimHere() == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1321,
+          "y": -28.999998092651367,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Bed: \"The sheets feel at once coarse and...\"",
+          "Dialogue Text": "The sheets feel at once coarse and clammy against your skin. The bed sags beneath your weight as you stretch out and finally close your eyes...",
+          "Articy Id": "0x010000710000163A",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "HoldText(); LuaRun(CloseTequilaDoor());",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x010000030000028A",
+          "InputId": "0x0100007100001633"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 3,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.kim_took_away_body_day_2\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1925.0001220703125,
+          "y": -1156,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Variable[\"whirling.dreamtwo_open_case\"]",
+          "Articy Id": "0x0100005A000124BB",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "InputId": "0x01000021000023A7"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 4,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 4,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1189,
+          "y": 1094,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Variable[\"whirling.dreamtwo_open_case\"]",
+          "Articy Id": "0x0100005A000124BB",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x0100005A000124C1"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 5,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"whirling.dreamtwo_open_case\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -772.8499755859375,
+          "y": 711.0999755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "!(Variable[\"whirling.dreamtwo_open_case\"])",
+          "Articy Id": "0x0100005A000124BB",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x0100005A00012483"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 6,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"whirling.dreamtwo_open_case\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -772.8499755859375,
+          "y": 711.0999755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "You: \"Go to sleep.\"",
+          "Dialogue Text": "Go to sleep.",
+          "Articy Id": "0x0100005A0001256B",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "MusicPlay(silence,90); SemiBlack(true,3); BanishHUD(true);",
+          "Actor": "396",
+          "Conversant": "239",
+          "OutputId": "0x0100005A00012574",
+          "InputId": "0x0100005A00012489"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 7,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"auto.daychange_can_sleep\"]  and  Variable[\"whirling.bed_day_1\"]  and  DayCount() == 2  and  IsKimHere() == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1322,
+          "y": -701,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "You: \"Go to sleep.\"",
+          "Dialogue Text": "Go to sleep.",
+          "Articy Id": "0x0100000500003408",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "MusicPlay(silence,90); SemiBlack(true,3); BanishHUD(true);",
+          "Actor": "396",
+          "Conversant": "239",
+          "OutputId": "0x0100005A00012574",
+          "InputId": "0x0100005A00012489"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 8,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"auto.daychange_can_sleep\"]  and  Variable[\"whirling.bed_day_1\"]  and  DayCount() > 7  and  IsKimHere() == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1321,
+          "y": 627,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Bed: \"The bed is cold and not particularl...\"",
+          "Dialogue Text": "The bed is cold and not particularly inviting, but it's yours. The sheets look awful...",
+          "Articy Id": "0x0100005A00012483",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "239",
+          "Conversant": "396",
+          "InputId": "0x0100005A000124BB",
+          "OutputId": "0x010000060001A8FA"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 9,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "WhirlingBedWasUsed()",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -867,
+          "y": 1186,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "You: \"Go to sleep.\"",
+          "Dialogue Text": "Go to sleep.",
+          "Articy Id": "0x01000005000033F7",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "MusicPlay(silence,90); SemiBlack(true,3); BanishHUD(true);",
+          "Actor": "396",
+          "Conversant": "239",
+          "OutputId": "0x0100005A00012574",
+          "InputId": "0x0100005A00012489"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 10,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"auto.daychange_can_sleep\"]  and  Variable[\"whirling.bed_day_1\"]  and  DayCount() == 6  and  IsKimHere() == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1323,
+          "y": 195,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Bed: \"Across the room, the heating system...\"",
+          "Dialogue Text": "Across the room, the heating system hums its soft lullaby. The mattress feels soft and sheets warm. It only takes you moments for the world to fall away...",
+          "Articy Id": "0x0100005A00012595",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "IsDayFrom(5)",
+          "Alternate1": "The place feels almost like home now, quiet and dignified around you -- a new life by the seaside. You're incredibly tired. The darkness and warmth come fast. You're falling asleep...",
+          "Condition2": "IsDayFrom(4)",
+          "Alternate2": "The bed underneath you is soft, if lumpy. Waves wash the sand underneath the hut, then grow distant to your ear. In the quiet hum of the organic heater, you fall asleep...",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x0100002100001245",
+          "InputId": "0x0100005A00012574"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 11,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 54,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2136,
+          "y": -235.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Bed: \"And then sleep doesn't come.\"",
+          "Dialogue Text": "And then sleep doesn't come.",
+          "Articy Id": "0x010000030000028A",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "TotalBlack(true,3); ReleaseText()@3.1; LuaRun(EndDayWhirling())@3.1;",
+          "Actor": "239",
+          "Conversant": "396",
+          "InputId": "0x0100005A0001244E",
+          "OutputId": "0x0100005A00012449"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2510,
+          "y": -1017.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Bed: \"The window is fixed, the sheets are...\"",
+          "Dialogue Text": "The window is fixed, the sheets are new, it's easier to fall asleep than ever before...",
+          "Articy Id": "0x01000021000023B7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x010000210000124C",
+          "InputId": "0x01000021000023B1"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 14,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2135,
+          "y": 422,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "Variable[\"tc.turn_off_tutorial_node\"]",
+          "Articy Id": "0x01000051000096D6",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "InputId": "0x010000060001A8FA"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 15,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 15,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -533,
+          "y": 1238,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "Variable[\"tc.turn_off_tutorial_node\"]",
+          "Articy Id": "0x01000051000096D6",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x0100005A00012489"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 16,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"tc.turn_off_tutorial_node\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -346.4499816894531,
+          "y": 804.699951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "!(Variable[\"tc.turn_off_tutorial_node\"])",
+          "Articy Id": "0x01000051000096D6",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x010000210000187C"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 17,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 44,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"tc.turn_off_tutorial_node\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -346.4499816894531,
+          "y": 804.699951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "bedmainhub",
+          "Articy Id": "0x0100005A00012489",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x010000210000187C",
+          "OutputId": "0x0100005A00012447"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 18,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 18,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 18,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 18,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 49,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 18,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 18,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 18,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 43,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 18,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 18,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 775,
+          "y": 1175,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "Variable[\"yard.hanged_autopsy_finished_day_1\"]",
+          "Articy Id": "0x0100007100001633",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "InputId": "0x0100005A0001243B"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 19,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 19,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1625,
+          "y": -925.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Variable[\"yard.hanged_autopsy_finished_day_1\"]",
+          "Articy Id": "0x0100007100001633",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x010000710000163A"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 20,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.hanged_autopsy_finished_day_1\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1056.25,
+          "y": -601.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "!(Variable[\"yard.hanged_autopsy_finished_day_1\"])",
+          "Articy Id": "0x0100007100001633",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x0100005A0001244E"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 21,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.hanged_autopsy_finished_day_1\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1056.25,
+          "y": -601.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Variable[\"whirling.bed_tutorial_shown\"]",
+          "Articy Id": "0x010000060001A8FA",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "InputId": "0x01000021000023A0"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 22,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 22,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -530,
+          "y": 1098,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "Variable[\"whirling.bed_tutorial_shown\"]",
+          "Articy Id": "0x010000060001A8FA",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x0100005A00012489"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 23,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"whirling.bed_tutorial_shown\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -344.5,
+          "y": 713.699951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "!(Variable[\"whirling.bed_tutorial_shown\"])",
+          "Articy Id": "0x010000060001A8FA",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x01000051000096D6"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 24,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"whirling.bed_tutorial_shown\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -344.5,
+          "y": 713.699951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "Bed: \"...\"",
+          "Dialogue Text": "...",
+          "Articy Id": "0x010000210000124C",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "TotalBlack(true,3); ReleaseText()@3.1; LuaRun(EndDayWhirling())@3.1;",
+          "Actor": "239",
+          "Conversant": "396",
+          "InputId": "0x0100005A00012579",
+          "OutputId": "0x0100005A00012449"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "CloseTequilaDoor()",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2429,
+          "y": 173,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Variable[\"TASK.report_to_the_tribunal_done\"]",
+          "Articy Id": "0x01000021000023A7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "InputId": "0x0100005A00012585"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 26,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 26,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1415,
+          "y": 930.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Variable[\"TASK.report_to_the_tribunal_done\"]",
+          "Articy Id": "0x01000021000023A7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x01000021000023A0"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 27,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 50,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"TASK.report_to_the_tribunal_done\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -919.7499389648438,
+          "y": 604.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "!(Variable[\"TASK.report_to_the_tribunal_done\"])",
+          "Articy Id": "0x01000021000023A7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x0100005A000124BB"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 28,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"TASK.report_to_the_tribunal_done\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -919.7499389648438,
+          "y": 604.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "Bed: \"The sheets feel at once coarse and...\"",
+          "Dialogue Text": "The sheets feel at once coarse and clammy against your skin. The bed sags beneath your weight as you stretch out and finally close your eyes...",
+          "Articy Id": "0x0100005A0001244E",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "HoldText(); LuaRun(CloseTequilaDoor());",
+          "Actor": "239",
+          "Conversant": "396",
+          "InputId": "0x0100007100001633",
+          "OutputId": "0x010000030000028A"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 29,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1925.0001220703125,
+          "y": -825,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "You: \"Crawl in.\"",
+          "Dialogue Text": "Crawl in.",
+          "Articy Id": "0x0100005A0001243B",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "MusicPlay(silence,90); SemiBlack(true,3); BanishHUD(true);",
+          "Actor": "396",
+          "Conversant": "239",
+          "InputId": "0x0100005A00012489",
+          "OutputId": "0x0100007100001633"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 30,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"auto.daychange_can_sleep\"]  and  Variable[\"whirling.bed_day_1\"] == false  and  IsKimHere() == false",
+        "userScript": "SetVariableValue(\"whirling.bed_day_1\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1325,
+          "y": -975.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "Variable[\"auto.inside_shack\"]",
+          "Articy Id": "0x0100005A00012574",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "InputId": "0x01000005000033EB"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 31,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 31,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1835.9998779296875,
+          "y": -10,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "Variable[\"auto.inside_shack\"]",
+          "Articy Id": "0x0100005A00012574",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x0100005A00012595"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 32,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"auto.inside_shack\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1193.39990234375,
+          "y": -6.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "!(Variable[\"auto.inside_shack\"])",
+          "Articy Id": "0x0100005A00012574",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x01000021000023B1"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 33,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 51,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"auto.inside_shack\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1193.39990234375,
+          "y": -6.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "Variable[\"auto.inside_shack\"]",
+          "Articy Id": "0x0100005A00012585",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "InputId": "0x0100005A000125FA"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 34,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 34,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1575,
+          "y": 750,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Title": "Variable[\"auto.inside_shack\"]",
+          "Articy Id": "0x0100005A00012585",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x0100005A0001258A"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 35,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"auto.inside_shack\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1023.7499389648438,
+          "y": 487.4999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "!(Variable[\"auto.inside_shack\"])",
+          "Articy Id": "0x0100005A00012585",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x01000021000023A7"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 36,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"auto.inside_shack\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1023.7499389648438,
+          "y": 487.4999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "You: \"No time to rest yet. [Leave.]\"",
+          "Dialogue Text": "No time to rest yet. [Leave.]",
+          "Articy Id": "0x0100005A00012447",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "239",
+          "InputId": "0x0100005A00012489",
+          "OutputId": "0x0100005A00012449"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1325,
+          "y": 1325,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "Bed: \"The passage of time has not made th...\"",
+          "Dialogue Text": "The passage of time has not made the sheets any less coarse. The bed sags beneath your weight as you close your eyes and drift off into an uneasy sleep...",
+          "Articy Id": "0x0100005A00012579",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "IsDayFrom(5)",
+          "Alternate1": "The unchanged linens are only getting greasier and greasier every time you crawl among them. Like some wounded animal you close your eyes and ask for sleep. Just some hours of regular sleep, please...",
+          "Condition2": "IsDayFrom(4)",
+          "Alternate2": "The room behind your closed eyelids is familiar now. The only home you've ever known. Its darkness gathers. The last thing you hear is the wind blowing in through the broken window, then something comes: a kind of sleep...",
+          "Condition3": "IsDayFrom(3)",
+          "Alternate3": "It's not easy, but your bones are *so* tired from what feel like *weeks* of work on the case. You have to try. After what feels like hours, you feel you *might* be sleeping...",
+          "Condition4": "IsDayFrom(2)",
+          "Alternate4": "The bed is still cold from the wind blowing in from the broken window. The mattress creaks as you close your eyes and try your hardest to fall asleep...",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x010000210000124C",
+          "InputId": "0x01000021000023B1"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 38,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2135,
+          "y": 161,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Title": "Variable[\"auto.inside_shack\"]",
+          "Articy Id": "0x0100006B00003D02",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 39,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 39,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1061,
+          "y": -458.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Title": "Variable[\"auto.inside_shack\"]",
+          "Articy Id": "0x0100006B00003D02",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x0100006B00003D09"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 40,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 42,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"auto.inside_shack\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -689.6499633789062,
+          "y": -298.3499755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "!(Variable[\"auto.inside_shack\"])",
+          "Articy Id": "0x0100006B00003D02",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x0100006B00003CFA"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 41,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 46,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"auto.inside_shack\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -689.6499633789062,
+          "y": -298.3499755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Title": "Bed: \"Across the room, the heating system...\"",
+          "Dialogue Text": "Across the room, the heating system hums a soft lullaby. The mattress feels soft and sheets warm. After some time you fall into uneasy sleep...",
+          "Articy Id": "0x0100006B00003D09",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "TotalBlack(true,3); ReleaseText()@3.1; LuaRun(EndDayShack())@3.1;",
+          "Actor": "239",
+          "Conversant": "396",
+          "InputId": "0x0100006B00003D02",
+          "OutputId": "0x0100005A00012449"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -754,
+          "y": -735,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Title": "You: \"Go to sleep.\"",
+          "Dialogue Text": "Go to sleep.",
+          "Articy Id": "0x01000005000033FD",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "MusicPlay(silence,90); SemiBlack(true,3); BanishHUD(true);",
+          "Actor": "396",
+          "Conversant": "239",
+          "InputId": "0x0100005A00012489",
+          "OutputId": "0x0100005A00012574"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 43,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"auto.daychange_can_sleep\"]  and  Variable[\"whirling.bed_day_1\"]  and  DayCount() == 7  and  IsKimHere() == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1324,
+          "y": 413.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 44,
+        "fields": {
+          "Title": "Tutorial Agent: \"The option to go to sleep becomes a...\"",
+          "Dialogue Text": "The option to go to sleep becomes available every night after 21.00.",
+          "Articy Id": "0x010000210000187C",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "color": "1",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Actor": "354",
+          "Conversant": "396",
+          "InputId": "0x01000051000096D6",
+          "OutputId": "0x0100005A00012489"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 44,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.bed_tutorial_shown\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -211.99998474121094,
+          "y": 1308,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 45,
+        "fields": {
+          "Title": "Bed: \"The bed is comforting, if a bit run...\"",
+          "Dialogue Text": "The bed is comforting, if a bit run down. Still, you've earned a rest.",
+          "Articy Id": "0x0100005A0001258A",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "IsKimHere()",
+          "Alternate1": "The bed is alright. You could sleep here -- later, once night has come. To the sound of waves crashing outside... you've earned it.",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "239",
+          "Conversant": "396",
+          "InputId": "0x0100005A00012585",
+          "OutputId": "0x010000060001A8FA"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 45,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "ShackBedWasUsed()",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -860.0000610351562,
+          "y": 403.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 46,
+        "fields": {
+          "Title": "Bed: \"The day has not made the sheets any...\"",
+          "Dialogue Text": "The day has not made the sheets any less coarse. The bed sags beneath your weight as you close your eyes and fall into uneasy sleep...",
+          "Articy Id": "0x0100006B00003CFA",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "TotalBlack(true,3); ReleaseText()@3.1; LuaRun(EndDayWhirling())@3.1;",
+          "Actor": "239",
+          "Conversant": "396",
+          "InputId": "0x0100006B00003D02",
+          "OutputId": "0x0100005A00012449"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "CloseTequilaDoor();\nSetVariableValue(\"character.cheque_payment_counter\", Variable[\"character.cheque_payment_counter\"] + once(1)) ",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -761,
+          "y": -359,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 47,
+        "fields": {
+          "Title": "Bed: \"The bed is still cold from the brok...\"",
+          "Dialogue Text": "The bed is still cold from the broken window, and not too inviting. But it's yours. You've earned it.",
+          "Articy Id": "0x0100005A000124C1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "239",
+          "Conversant": "396",
+          "InputId": "0x0100005A000124BB",
+          "OutputId": "0x010000060001A8FA"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 47,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "WhirlingBedWasUsed()",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -867,
+          "y": 936,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 48,
+        "fields": {
+          "Title": "You: \"Go to sleep.\"",
+          "Dialogue Text": "Go to sleep.",
+          "Articy Id": "0x01000005000033E5",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "MusicPlay(silence,90); SemiBlack(true,3); BanishHUD(true);",
+          "Actor": "396",
+          "Conversant": "239",
+          "InputId": "0x0100005A00012489",
+          "OutputId": "0x0100005A00012574"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 48,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"auto.daychange_can_sleep\"]  and  Variable[\"whirling.bed_day_1\"]  and  DayCount() == 3  and  IsKimHere() == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1325,
+          "y": -483,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 49,
+        "fields": {
+          "Title": "You: \"Go to sleep.\"",
+          "Dialogue Text": "Go to sleep.",
+          "Articy Id": "0x01000005000033EB",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "MusicPlay(silence,90); SemiBlack(true,3); BanishHUD(true);",
+          "Actor": "396",
+          "Conversant": "239",
+          "InputId": "0x0100005A00012489",
+          "OutputId": "0x0100005A00012574"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 49,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"auto.daychange_can_sleep\"]  and  Variable[\"whirling.bed_day_1\"]  and  DayCount() == 4  and  IsKimHere() == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1323,
+          "y": -253,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 50,
+        "fields": {
+          "Title": "Bed: \"The bed's a little nicer now. You c...\"",
+          "Dialogue Text": "The bed's a little nicer now. You could get a good night's sleep here.",
+          "Articy Id": "0x01000021000023A0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "239",
+          "Conversant": "396",
+          "InputId": "0x01000021000023A7",
+          "OutputId": "0x010000060001A8FA"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 50,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "WhirlingBedWasUsed()",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -867.9999389648438,
+          "y": 682,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 51,
+        "fields": {
+          "Title": "Variable[\"TASK.report_to_the_tribunal_done\"]",
+          "Articy Id": "0x01000021000023B1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "InputId": "0x0100005A00012574"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 51,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 51,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 53,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1835.9998779296875,
+          "y": 408,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 52,
+        "fields": {
+          "Title": "Variable[\"TASK.report_to_the_tribunal_done\"]",
+          "Articy Id": "0x01000021000023B1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x01000021000023B7"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 52,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"TASK.report_to_the_tribunal_done\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1193.39990234375,
+          "y": 265.1999816894531,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 53,
+        "fields": {
+          "Title": "!(Variable[\"TASK.report_to_the_tribunal_done\"])",
+          "Articy Id": "0x01000021000023B1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "239",
+          "Conversant": "396",
+          "OutputId": "0x0100005A00012579"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1056,
+            "originDialogueID": 53,
+            "destinationConversationID": 1056,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"TASK.report_to_the_tribunal_done\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1193.39990234375,
+          "y": 265.1999816894531,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 54,
+        "fields": {
+          "Title": "Bed: \"...\"",
+          "Dialogue Text": "...",
+          "Articy Id": "0x0100002100001245",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "TotalBlack(true,3); ReleaseText()@3.1; LuaRun(EndDayShack())@3.1;",
+          "Actor": "239",
+          "Conversant": "396",
+          "InputId": "0x0100005A00012595",
+          "OutputId": "0x0100005A00012449"
+        },
+        "conversationID": 1056,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2432,
+          "y": -215.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

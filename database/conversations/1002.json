@@ -1,0 +1,592 @@
+[
+  {
+    "id": 1002,
+    "fields": {
+      "Title": "JAM ORB / fuckoffafterthought",
+      "Articy Id": "0x0100005A00002C93",
+      "AlternateOrbText": "",
+      "CheckType": "12",
+      "Condition": "Variable[\"jam.truckman_told_him_to_fuck_off\"] == true  and  Variable[\"jam.orb_fuckoff_done\"] == false",
+      "Description": "Afterthought dialogue if you told the lorry driver to fuck off.",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "10",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100005A00002C93",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1002,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1002,
+            "originDialogueID": 0,
+            "destinationConversationID": 1002,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100005A00002C96",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100005A00002CB2"
+        },
+        "conversationID": 1002,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1002,
+            "originDialogueID": 1,
+            "destinationConversationID": 1002,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "You: \"\"Kim, I think I should tell people...\"",
+          "Dialogue Text": "\"Kim, I think I should tell people to fuck off more often. It felt really good.\"",
+          "Articy Id": "0x0100005A00002CC0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100005A00002CCE",
+          "InputId": "0x0100005A00002CEB"
+        },
+        "conversationID": 1002,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1002,
+            "originDialogueID": 2,
+            "destinationConversationID": 1002,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 725,
+          "y": 150,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Authority: \"That means you should do it wheneve...\"",
+          "Dialogue Text": "That means you should do it whenever you feel like someone's disrespecting your authority.",
+          "Articy Id": "0x0100005A00002CDC",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "406",
+          "Conversant": "0",
+          "OutputId": "0x0100005A00002CC6",
+          "InputId": "0x0100005A00002CCE"
+        },
+        "conversationID": 1002,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1002,
+            "originDialogueID": 3,
+            "destinationConversationID": 1002,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1002,
+            "originDialogueID": 3,
+            "destinationConversationID": 1002,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1325,
+          "y": 155,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Volition: \"No, you shouldn't. You're an office...\"",
+          "Dialogue Text": "No, you shouldn't. You're an officer of the law.",
+          "Articy Id": "0x0100005A00002CEB",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "405",
+          "Conversant": "0",
+          "OutputId": "0x0100005A00002CC6",
+          "InputId": "0x0100005A00002CB2"
+        },
+        "conversationID": 1002,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1002,
+            "originDialogueID": 4,
+            "destinationConversationID": 1002,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1002,
+            "originDialogueID": 4,
+            "destinationConversationID": 1002,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1002,
+            "originDialogueID": 4,
+            "destinationConversationID": 1002,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 425.0000305175781,
+          "y": 475.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Half Light: \"That's the spirit!\"",
+          "Dialogue Text": "That's the spirit!",
+          "Articy Id": "0x01000070000009B5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "414",
+          "Conversant": "0",
+          "OutputId": "0x0100005A00002CF5",
+          "InputId": "0x0100005A00002CB9"
+        },
+        "conversationID": 1002,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1002,
+            "originDialogueID": 5,
+            "destinationConversationID": 1002,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "HealEndurance(1)",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1025,
+          "y": 475.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Not as a general rule, but that on...\"",
+          "Dialogue Text": "\"Not as a general rule, but that one was justified. Better to get the lay of the land before telling people to fuck off.\"",
+          "Articy Id": "0x0100005A00002CCE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x0100005A00002CC0",
+          "OutputId": "0x0100005A00002CDC"
+        },
+        "conversationID": 1002,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1002,
+            "originDialogueID": 6,
+            "destinationConversationID": 1002,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1025,
+          "y": 130,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Half Light: \"Never forget: The whole world's a w...\"",
+          "Dialogue Text": "Never forget: The whole world's a wooden house and you're a god damn flamethrower.",
+          "Articy Id": "0x0100005A00002CF5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "414",
+          "Conversant": "0",
+          "InputId": "0x01000070000009B5",
+          "OutputId": "0x0100005A00002CF9"
+        },
+        "conversationID": 1002,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"jam.orb_fuckoff_done\", true) ;\nXPPicoSetBool(\"XP.half_light_fuck_off\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1324,
+          "y": 471,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Half Light: \"Hey, I've got an idea on how to fix...\"",
+          "Dialogue Text": "Hey, I've got an idea on how to fix your style. Maybe you should just go fuck yourself? Yeah, ever thought of that?",
+          "Articy Id": "0x0100005A00002CFB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "414",
+          "Conversant": "0",
+          "OutputId": "0x0100005A00002CF9",
+          "InputId": "0x0100005A00002CC6"
+        },
+        "conversationID": 1002,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"jam.orb_fuckoff_done\", true) ;\nDamageVolition(1)--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1025,
+          "y": 719,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Half Light: \"Damn, that felt *good*. Your heart'...\"",
+          "Dialogue Text": "Damn, that felt *good*. Your heart's pounding nicely. You should tell people to fuck off more often.",
+          "Articy Id": "0x0100005A00002CB2",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "414",
+          "Conversant": "0",
+          "InputId": "0x0100005A00002C96",
+          "OutputId": "0x0100005A00002CEB"
+        },
+        "conversationID": 1002,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1002,
+            "originDialogueID": 10,
+            "destinationConversationID": 1002,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 113,
+          "y": 461,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "You: \"Fuck yeah, motherfuckers!\"",
+          "Dialogue Text": "Fuck yeah, motherfuckers!",
+          "Articy Id": "0x0100005A00002CB9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005A00002CEB",
+          "OutputId": "0x01000070000009B5"
+        },
+        "conversationID": 1002,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1002,
+            "originDialogueID": 11,
+            "destinationConversationID": 1002,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 725,
+          "y": 475.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "You: \"It's not really my style.\"",
+          "Dialogue Text": "It's not really my style.",
+          "Articy Id": "0x0100005A00002CC6",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005A00002CEB",
+          "OutputId": "0x0100005A00002CFB"
+        },
+        "conversationID": 1002,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1002,
+            "originDialogueID": 12,
+            "destinationConversationID": 1002,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 725,
+          "y": 725,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

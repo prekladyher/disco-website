@@ -1,0 +1,176 @@
+[
+  {
+    "id": 392,
+    "fields": {
+      "Title": "Inspect the traps",
+      "Articy Id": "0x01000016000090E3",
+      "cancel_condition_main": "Variable[\"TASK.inspect_traps_cancelled\"]",
+      "Description": "Check the traps for Morell the cryptozoologist, so he and his friend Gary can get some rest. There are four traps in total. After checking them all, return to Morell with the news.",
+      "display_condition_main": "Variable[\"TASK.inspect_traps\"]",
+      "done_condition_main": "Variable[\"TASK.inspect_traps_done\"]",
+      "task_reward": "2",
+      "task_timed": "False",
+      "Actor": "0",
+      "Conversant": "0",
+      "cancel_subtask_01": "Variable[\"TASK.trap_boathouses_cancelled\"]",
+      "display_subtask_01": "Variable[\"TASK.trap_boathouses\"]",
+      "done_subtask_01": "Variable[\"TASK.trap_boathouses_done\"]",
+      "subtask_title_01": "Check the trap near the boathouses, west of the Feld building.",
+      "timed_subtask_01": "False",
+      "cancel_subtask_02": "Variable[\"TASK.trap_morell_cancelled\"]",
+      "display_subtask_02": "Variable[\"TASK.trap_morell\"]",
+      "done_subtask_02": "Variable[\"TASK.trap_morell_done\"]",
+      "subtask_title_02": "Check the trap Morell just set up, in the cryptozoologist camp.",
+      "timed_subtask_02": "False",
+      "cancel_subtask_03": "Variable[\"TASK.trap_landsend_cancelled\"]",
+      "display_subtask_03": "Variable[\"TASK.trap_landsend\"]",
+      "done_subtask_03": "Variable[\"TASK.trap_landsend_done\"]",
+      "subtask_title_03": "Check the trap in Land's End, far northeast of the Feld building.",
+      "timed_subtask_03": "False",
+      "cancel_subtask_04": "Variable[\"TASK.trap_canal_cancelled\"]",
+      "display_subtask_04": "Variable[\"TASK.trap_canal\"]",
+      "done_subtask_04": "Variable[\"TASK.trap_canal_done\"]",
+      "subtask_title_04": "Check the trap near the canal you crossed, southeast of the village.",
+      "timed_subtask_04": "False",
+      "cancel_subtask_05": "Variable[\"TASK.report_to_cryptozoologists_1_cancelled\"]",
+      "display_subtask_05": "Variable[\"TASK.report_to_cryptozoologists_1\"]",
+      "done_subtask_05": "Variable[\"TASK.report_to_cryptozoologists_1_done\"]",
+      "subtask_title_05": "The last trap was empty! Return to Morell in the Whirling with the news.",
+      "timed_subtask_05": "False",
+      "cancel_subtask_06": "",
+      "display_subtask_06": "",
+      "done_subtask_06": "",
+      "subtask_title_06": "",
+      "timed_subtask_06": "False",
+      "cancel_subtask_07": "",
+      "display_subtask_07": "",
+      "done_subtask_07": "",
+      "subtask_title_07": "",
+      "timed_subtask_07": "False",
+      "cancel_subtask_08": "",
+      "display_subtask_08": "",
+      "done_subtask_08": "",
+      "subtask_title_08": "",
+      "timed_subtask_08": "False",
+      "cancel_subtask_09": "",
+      "display_subtask_09": "",
+      "done_subtask_09": "",
+      "subtask_title_09": "",
+      "timed_subtask_09": "False",
+      "cancel_subtask_10": "",
+      "display_subtask_10": "",
+      "done_subtask_10": "",
+      "subtask_title_10": "",
+      "timed_subtask_10": "False",
+      "cancel_subtask_11": "",
+      "display_subtask_11": "",
+      "done_subtask_11": "",
+      "subtask_title_11": "",
+      "timed_subtask_11": "False",
+      "cancel_subtask_12": "",
+      "display_subtask_12": "",
+      "done_subtask_12": "",
+      "subtask_title_12": "",
+      "timed_subtask_12": "False"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x01000016000090E3",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 392,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 392,
+            "originDialogueID": 0,
+            "destinationConversationID": 392,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x01000016000090E6",
+          "Sequence": "Continue()",
+          "Actor": "0"
+        },
+        "conversationID": 392,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

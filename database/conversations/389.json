@@ -1,0 +1,176 @@
+[
+  {
+    "id": 389,
+    "fields": {
+      "Title": "Where is the rest of the armour?",
+      "Articy Id": "0x0100001600008A31",
+      "cancel_condition_main": "Variable[\"TASK.ask_boy_about_armour_cancelled\"]",
+      "Description": "The hanged man's armour seems to be missing. Find out what happened to it. The kid throwing rocks at the corpse seems to be a good place to start. (Ask him about the body first.)",
+      "display_condition_main": "Variable[\"TASK.ask_boy_about_armour\"]",
+      "done_condition_main": "Variable[\"TASK.ask_boy_about_armour_done\"]",
+      "task_reward": "2",
+      "task_timed": "False",
+      "Actor": "0",
+      "Conversant": "0",
+      "cancel_subtask_01": "Variable[\"TASK.ask_cuno_about_the_armour_cancelled\"]",
+      "display_subtask_01": "Variable[\"TASK.ask_cuno_about_the_armour\"]",
+      "done_subtask_01": "Variable[\"TASK.ask_cuno_about_the_armour_done\"] == true",
+      "subtask_title_01": "Ask Cuno (the kid throwing rocks) what he knows.",
+      "timed_subtask_01": "False",
+      "cancel_subtask_02": "Variable[\"TASK.talk_to_manana_about_the_armour_cancelled\"]",
+      "display_subtask_02": "Variable[\"TASK.talk_to_manana_about_the_armour\"]",
+      "done_subtask_02": "Variable[\"TASK.talk_to_manana_about_the_armour_done\"]",
+      "subtask_title_02": "Go to the harbour gates, ask *the jolly Mesque* about the armour.",
+      "timed_subtask_02": "False",
+      "cancel_subtask_03": "Variable[\"TASK.return_to_cuno_from_manana_cancelled\"]",
+      "display_subtask_03": "Variable[\"TASK.return_to_cuno_from_manana\"]",
+      "done_subtask_03": "Variable[\"TASK.return_to_cuno_from_manana_done\"]",
+      "subtask_title_03": "Cuno lied to you. Return and confront him.",
+      "timed_subtask_03": "False",
+      "cancel_subtask_04": "",
+      "display_subtask_04": "",
+      "done_subtask_04": "",
+      "subtask_title_04": "",
+      "timed_subtask_04": "False",
+      "cancel_subtask_05": "",
+      "display_subtask_05": "",
+      "done_subtask_05": "",
+      "subtask_title_05": "",
+      "timed_subtask_05": "False",
+      "cancel_subtask_06": "",
+      "display_subtask_06": "",
+      "done_subtask_06": "",
+      "subtask_title_06": "",
+      "timed_subtask_06": "False",
+      "cancel_subtask_07": "",
+      "display_subtask_07": "",
+      "done_subtask_07": "",
+      "subtask_title_07": "",
+      "timed_subtask_07": "False",
+      "cancel_subtask_08": "",
+      "display_subtask_08": "",
+      "done_subtask_08": "",
+      "subtask_title_08": "",
+      "timed_subtask_08": "False",
+      "cancel_subtask_09": "",
+      "display_subtask_09": "",
+      "done_subtask_09": "",
+      "subtask_title_09": "",
+      "timed_subtask_09": "False",
+      "cancel_subtask_10": "",
+      "display_subtask_10": "",
+      "done_subtask_10": "",
+      "subtask_title_10": "",
+      "timed_subtask_10": "False",
+      "cancel_subtask_11": "",
+      "display_subtask_11": "",
+      "done_subtask_11": "",
+      "subtask_title_11": "",
+      "timed_subtask_11": "False",
+      "cancel_subtask_12": "",
+      "display_subtask_12": "",
+      "done_subtask_12": "",
+      "subtask_title_12": "",
+      "timed_subtask_12": "False"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100001600008A31",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 389,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 389,
+            "originDialogueID": 0,
+            "destinationConversationID": 389,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100001600008A34",
+          "Sequence": "Continue()",
+          "Actor": "0"
+        },
+        "conversationID": 389,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

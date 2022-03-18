@@ -1,0 +1,2065 @@
+[
+  {
+    "id": 604,
+    "fields": {
+      "Title": "YARD / PILE OF ETERNITE",
+      "Articy Id": "0x010000310000C8AB",
+      "OnUse": "",
+      "OverrideDialogueCondition": "",
+      "AlternateOrbText": "",
+      "CheckType": "15",
+      "Condition": "Variable[\"yard.cuno_been_opened_the_shack_door\"] == false",
+      "Description": "Someone has left some crumbly looking eternite panels leaning against this wall. Most suspicious.",
+      "Instruction": "",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "396",
+      "Conversant": "348"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000310000C8AB",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 0,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x010000310000C8F8",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100008F00000E20"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 1,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Variable[\"yard.shack_strange_feeling\"]",
+          "Articy Id": "0x0100002F000133B7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "348",
+          "Conversant": "396",
+          "InputId": "0x0100008200008658"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 2,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 604,
+            "originDialogueID": 2,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1790.0001220703125,
+          "y": -666,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Variable[\"yard.shack_strange_feeling\"]",
+          "Articy Id": "0x0100002F000133B7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "348",
+          "Conversant": "396",
+          "OutputId": "0x0100002F000133BF"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 3,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.shack_strange_feeling\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1163.5,
+          "y": -432.8999938964844,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "!(Variable[\"yard.shack_strange_feeling\"])",
+          "Articy Id": "0x0100002F000133B7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "348",
+          "Conversant": "396",
+          "OutputId": "0x0100008200008665"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 4,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.shack_strange_feeling\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1163.5,
+          "y": -432.8999938964844,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "You: \"What feeling?\"",
+          "Dialogue Text": "What feeling?",
+          "Articy Id": "0x010000820000860A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "348",
+          "OutputId": "0x010000820000861A",
+          "InputId": "0x01000082000085F3"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 5,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -315,
+          "y": -1016,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Variable[\"yard.shack_ency_eternite_dump\"]",
+          "Articy Id": "0x0100008900001CC7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "348",
+          "Conversant": "396",
+          "InputId": "0x0100008200008638"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 6,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 604,
+            "originDialogueID": 6,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2125,
+          "y": -1550,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Variable[\"yard.shack_ency_eternite_dump\"]",
+          "Articy Id": "0x0100008900001CC7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "348",
+          "Conversant": "396",
+          "OutputId": "0x0100008200008646"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 7,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.shack_ency_eternite_dump\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1381.25,
+          "y": -1007.4999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "!(Variable[\"yard.shack_ency_eternite_dump\"])",
+          "Articy Id": "0x0100008900001CC7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "348",
+          "Conversant": "396",
+          "OutputId": "0x010000820000863F"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 8,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.shack_ency_eternite_dump\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1381.25,
+          "y": -1007.4999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "You: \"[Leave.]\"",
+          "Dialogue Text": "[Leave.]",
+          "Articy Id": "0x0100008F00000E18",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "348",
+          "OutputId": "0x0100008F00000E1A",
+          "InputId": "0x0100008F00000E43"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2725,
+          "y": -500.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Pile of Eternite: \"An inconspicuous pile of the roofin...\"",
+          "Dialogue Text": "An inconspicuous pile of the roofing material, eternite.",
+          "Articy Id": "0x0100008F00000E20",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "Variable[\"XP.befriend_the_cuno\"]",
+          "Alternate1": "The pile of eternite looks stranger now that Cuno told you about his... pad.",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "348",
+          "Conversant": "396",
+          "InputId": "0x010000310000C8F8",
+          "OutputId": "0x0100008F00000E43"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 10,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -3275,
+          "y": -900.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Perception (Sight): \"There it is! You see a shabby littl...\"",
+          "Dialogue Text": "There it is! You see a shabby little door.",
+          "Articy Id": "0x01000082000086A5",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold();\nRelease()@3;\nHideActualHeld();\nBanishInterface(true)@1;\nFocusCamera(cam_cunodoor_start)@0.8;\nPlayAnimation(Tequila Sunset, GenericInteract)@2.2->Message(interact);\nPlayAnimation(Tequila Sunset, BackStep2)@Message(interact);\nPlayAnimation(Eternite_door,Eternite_fall)@Message(interact);\nFocusCamera(cam_cunodoor_end)@Message(interact);\nShowActualHeld()@6.5;\nLuaRun(SetAreaState(\"YARD_ETERNITE\",\"down\"))@10;\nLuaRun(XPPicoSetBool(\"XP.find_cunos_shack\"))@10;\nBanishInterface(false)@10;\nResetCamera(2)@9",
+          "Actor": "424",
+          "Conversant": "396",
+          "OutputId": "0x01000082000086D1",
+          "InputId": "0x01000082000086C9"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 11,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1475,
+          "y": -1075,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "Perception (Sight): \"It reveals no secrets at this time.\"",
+          "Dialogue Text": "It reveals no secrets at this time.",
+          "Articy Id": "0x0100002F000133BF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "424",
+          "Conversant": "396",
+          "InputId": "0x0100002F000133B7",
+          "OutputId": "0x0100008200008690"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 12,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1399,
+          "y": -385,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "You: \"Why am I looking at this pile of th...\"",
+          "Dialogue Text": "Why am I looking at this pile of the roofing material?",
+          "Articy Id": "0x0100008200008630",
+          "DialogueEntryType": "DialogueFragment",
+          "Forced": "False",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x0000000000000000",
+          "FlagName": "yard.cuno_shack_white_perc_sight",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000800000BBC",
+          "DifficultyWhite": "10",
+          "modifier1": "",
+          "variable1": "",
+          "tooltip1": "",
+          "modifier2": "-10",
+          "variable2": "Variable[\"XP.befriend_the_cuno\"]",
+          "tooltip2": "Cuno told you about his shack.",
+          "modifier3": "-2",
+          "variable3": "Variable[\"yard.cuno_inland_empire_glance_at_eternite_again_for_2_modifier\"] == true",
+          "tooltip3": "Inland Empire said come back.",
+          "modifier4": "-1",
+          "variable4": "Variable[\"yard.cuno_shak_door_modifier_drama_suggest_incpecting_the_roofing_material_again\"] == true",
+          "tooltip4": "Drama said take another look.",
+          "modifier5": "-1",
+          "variable5": "Variable[\"yard.cuno_perc_helps_with_eternite\"]",
+          "tooltip5": "Perception is suspicious.",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "348",
+          "OutputId": "0x0100008200008630-FORK",
+          "InputId": "0x0100008F00000E43"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 13,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2725,
+          "y": -900.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_shack_white_perc_sight\"]",
+          "Articy Id": "0x0100008200008630-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "348",
+          "InputId": "0x0100008200008630"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 14,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 604,
+            "originDialogueID": 14,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2648.076904296875,
+          "y": -823.0769653320312,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_shack_white_perc_sight\"]",
+          "Articy Id": "0x0100008200008630-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "348",
+          "OutputId": "0x0100008200008652"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 15,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_shack_white_perc_sight\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1721.2498779296875,
+          "y": -535,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_shack_white_perc_sight\"])",
+          "Articy Id": "0x0100008200008630-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "348",
+          "OutputId": "0x0100008200008652"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 16,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_shack_white_perc_sight\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1721.2498779296875,
+          "y": -535,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "Jump to: [Pile of Eternite: \"An inconspicuous pile of the roofin...\"]",
+          "Articy Id": "0x0100008900001369",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100008200008604"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 17,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -15.000000953674316,
+          "y": -766,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Inland Empire: \"Hard to say, it's gone now. Feeling...\"",
+          "Dialogue Text": "Hard to say, it's gone now. Feelings pass, you see. Especially the small ones.",
+          "Articy Id": "0x010000820000861A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "404",
+          "Conversant": "396",
+          "InputId": "0x010000820000860A",
+          "OutputId": "0x0100008200008699"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 18,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"yard.sense_feeling_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -15.000000953674316,
+          "y": -1016,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "Pile of Eternite: \"It's nothing. Someone just left som...\"",
+          "Dialogue Text": "It's nothing. Someone just left some roofing material slanted against an old shack.",
+          "Articy Id": "0x0100008200008638",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "348",
+          "Conversant": "396",
+          "OutputId": "0x0100008900001CC7",
+          "InputId": "0x010000820000862A"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 19,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2425,
+          "y": -1600,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Encyclopedia: \"Glad you asked. When junior researc...\"",
+          "Dialogue Text": "Glad you asked. When junior researcher Õlari Taal invented eternite in the Värtna Polytechnic Institute, some thirty odd years ago, he thought it would last forever -- hence the name eternite. Sadly the only lasting thing turned out to be the material's highly carcinogenic effect.",
+          "Articy Id": "0x010000820000863F",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "3",
+          "Actor": "399",
+          "Conversant": "396",
+          "InputId": "0x0100008900001CC7",
+          "OutputId": "0x0100008200008646"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 20,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"yard.shack_ency_eternite_dump\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1825.0001220703125,
+          "y": -1500,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "Conceptualization: \"Rhythmic pattern -- calms your mind...\"",
+          "Dialogue Text": "Rhythmic pattern -- calms your mind. Mammals like this stuff.",
+          "Articy Id": "0x0100008200008665",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "10",
+          "Actor": "397",
+          "Conversant": "396",
+          "InputId": "0x0100002F000133B7",
+          "OutputId": "0x010000820000867C"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 21,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "HealVolition(1)",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1465,
+          "y": -766,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "feeling_strange",
+          "Articy Id": "0x01000082000085F3",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x0100008200008604",
+          "InputId": "0x0100008200008684"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 22,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 604,
+            "originDialogueID": 22,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -565,
+          "y": -816,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_shack_white_perc_sight\"]",
+          "Articy Id": "0x0100008200008652",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "348",
+          "Conversant": "396",
+          "InputId": "0x0100008200008630-FORK"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 23,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 604,
+            "originDialogueID": 23,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2425,
+          "y": -850.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "Variable[\"yard.cuno_shack_white_perc_sight\"]",
+          "Articy Id": "0x0100008200008652",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "348",
+          "Conversant": "396",
+          "OutputId": "0x01000082000086B6"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 24,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_shack_white_perc_sight\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1576.25,
+          "y": -552.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "!(Variable[\"yard.cuno_shack_white_perc_sight\"])",
+          "Articy Id": "0x0100008200008652",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "348",
+          "Conversant": "396",
+          "OutputId": "0x0100008200008658"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 25,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 42,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.cuno_shack_white_perc_sight\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1576.25,
+          "y": -552.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Perception (Sight): \"Because there's a secret door hidde...\"",
+          "Dialogue Text": "Because there's a secret door hidden behind the panels of eternite. That's why they're *too* orderly.",
+          "Articy Id": "0x01000082000086B6",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "Variable[\"XP.befriend_the_cuno\"]",
+          "Alternate1": "Because unless Cuno lied, you should just be able to pull the panels aside.",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "424",
+          "Conversant": "396",
+          "InputId": "0x0100008200008652",
+          "OutputId": "0x01000082000086C9"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 26,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 43,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"yard.shack_door_wc_success\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2075,
+          "y": -1075,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x01000082000086D1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "348",
+          "Conversant": "396",
+          "InputId": "0x01000082000086A5"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 27,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 604,
+            "originDialogueID": 27,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1175,
+          "y": -1025,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x01000082000086D1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "348",
+          "Conversant": "396",
+          "OutputId": "0x01000082000086D7"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 28,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -763.75,
+          "y": -666.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x01000082000086D1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "348",
+          "Conversant": "396"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -763.75,
+          "y": -666.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "Jump to: [real eternite]",
+          "Articy Id": "0x0100008200008646",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000820000863F"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 30,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1525,
+          "y": -1600,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "You: \"What is this?\"",
+          "Dialogue Text": "What is this?",
+          "Articy Id": "0x010000820000862A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "348",
+          "OutputId": "0x0100008200008638",
+          "InputId": "0x0100008F00000E43"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 31,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2725,
+          "y": -1600,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"What is this, then? A tool shed?\"...\"",
+          "Dialogue Text": "\"What is this, then? A tool shed?\" He peeks inside. \"Let's investigate.\"",
+          "Articy Id": "0x01000082000086D7",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "Variable[\"XP.befriend_the_cuno\"]",
+          "Alternate1": "\"So this is the shack Cuno mentioned... Let's take a look inside, then.\"",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x01000082000086D1",
+          "OutputId": "0x0100008F00000E1A"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -875.0000610351562,
+          "y": -1175,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "Inland Empire: \"No, there's more to this. You get t...\"",
+          "Dialogue Text": "No, there's more to this. You get this strange *feeling*.",
+          "Articy Id": "0x010000820000867C",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "404",
+          "Conversant": "396",
+          "InputId": "0x0100008200008665",
+          "OutputId": "0x0100008200008684"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 33,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"yard.shack_strange_feeling\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1165,
+          "y": -766,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "Variable[\"yard.shack_strange_feeling\"]",
+          "Articy Id": "0x0100008200008684",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "348",
+          "Conversant": "396",
+          "InputId": "0x010000820000867C"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 34,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 604,
+            "originDialogueID": 34,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -865.0000610351562,
+          "y": -716,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Title": "Variable[\"yard.shack_strange_feeling\"]",
+          "Articy Id": "0x0100008200008684",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "348",
+          "Conversant": "396",
+          "OutputId": "0x01000082000085F3"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 35,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.shack_strange_feeling\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -562.25,
+          "y": -465.3999938964844,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "!(Variable[\"yard.shack_strange_feeling\"])",
+          "Articy Id": "0x0100008200008684",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "348",
+          "Conversant": "396",
+          "OutputId": "0x0100008200008690"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 36,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"yard.shack_strange_feeling\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -562.25,
+          "y": -465.3999938964844,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "Jump to: [real eternite]",
+          "Articy Id": "0x0100008200008699",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000820000861A"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 37,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 285,
+          "y": -991,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "Jump to: [real eternite]",
+          "Articy Id": "0x0100008200008690",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100008200008684"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 38,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -565,
+          "y": -616,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Title": "real eternite",
+          "Articy Id": "0x0100008F00000E43",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100008F00000E20",
+          "OutputId": "0x0100008F00000E18"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 40,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 604,
+            "originDialogueID": 40,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 604,
+            "originDialogueID": 40,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"yard.eternite_hub_reached\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2975,
+          "y": -825,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "You: \"Discard the feeling.\"",
+          "Dialogue Text": "Discard the feeling.",
+          "Articy Id": "0x0100008200008604",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "348",
+          "InputId": "0x01000082000085F3",
+          "OutputId": "0x0100008900001369"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 41,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -315,
+          "y": -791,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Title": "Perception (Sight): \"Because it's nice and orderly. Well...\"",
+          "Dialogue Text": "Because it's nice and orderly. Well laid pallet. Easy on the eyes.",
+          "Articy Id": "0x0100008200008658",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "424",
+          "Conversant": "396",
+          "InputId": "0x0100008200008652",
+          "OutputId": "0x0100002F000133B7"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 42,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2075,
+          "y": -750,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Title": "You: \"Pull the panels aside.\"",
+          "Dialogue Text": "Pull the panels aside.",
+          "Articy Id": "0x01000082000086C9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "348",
+          "InputId": "0x01000082000086B6",
+          "OutputId": "0x01000082000086A5"
+        },
+        "conversationID": 604,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 604,
+            "originDialogueID": 43,
+            "destinationConversationID": 604,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"yard.cuno_been_opened_the_shack_door\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1775.0001220703125,
+          "y": -1075,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

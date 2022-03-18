@@ -1,0 +1,390 @@
+[
+  {
+    "id": 1117,
+    "fields": {
+      "Title": "WALKWAY ORB / equipping carabineer jacket",
+      "Articy Id": "0x0100006B000025A8",
+      "AlternateOrbText": "",
+      "CheckType": "12",
+      "Condition": "CheckEquipped(\"jacket_carabineer\")  and  Variable[\"cargo.orb_carabineer_jacket_equippage_done\"] == false",
+      "Description": "putting jacket on +1 to revacholian nationhood you fascist man",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100006B000025A8",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1117,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1117,
+            "originDialogueID": 0,
+            "destinationConversationID": 1117,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100006B000025AB",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100006B000025AF"
+        },
+        "conversationID": 1117,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1117,
+            "originDialogueID": 1,
+            "destinationConversationID": 1117,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "You: \"Oops, I didn't mean to wear a natio...\"",
+          "Dialogue Text": "Oops, I didn't mean to wear a nationalist jacket. [Discard the thought -- and the jacket.]",
+          "Articy Id": "0x01000021000009E8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100002100000A03",
+          "InputId": "0x0100006B000025AF"
+        },
+        "conversationID": 1117,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1117,
+            "originDialogueID": 2,
+            "destinationConversationID": 1117,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"cargo.orb_carabineer_jacket_equippage_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 738,
+          "y": 599,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "You: \"Mixing? Does my blood *need* mixing...\"",
+          "Dialogue Text": "Mixing? Does my blood *need* mixing? Or is it good as it is?",
+          "Articy Id": "0x01000021000009E1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000820001F588",
+          "InputId": "0x0100006B000025AF"
+        },
+        "conversationID": 1117,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1117,
+            "originDialogueID": 3,
+            "destinationConversationID": 1117,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 749,
+          "y": 338,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Half Light: \"It's time to clean up the streets a...\"",
+          "Dialogue Text": "It's time to clean up the streets and restore the city to its former glory! Whether you like it or not, this jacket gives you serious nationalist cred.",
+          "Articy Id": "0x0100006B000025BB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "414",
+          "Conversant": "0",
+          "OutputId": "0x0100006B000025BD",
+          "InputId": "0x010000820001F588"
+        },
+        "conversationID": 1117,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"cargo.orb_carabineer_jacket_equippage_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1302,
+          "y": 335,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Half Light: \"Wow... this jacket makes you feel *...\"",
+          "Dialogue Text": "Wow... this jacket makes you feel *strong*. As if your blood is mixing with that of the venerable Filippian loyalists of old.",
+          "Articy Id": "0x0100006B000025AF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "414",
+          "Conversant": "0",
+          "InputId": "0x0100006B000025AB",
+          "OutputId": "0x01000021000009E8"
+        },
+        "conversationID": 1117,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1117,
+            "originDialogueID": 5,
+            "destinationConversationID": 1117,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1117,
+            "originDialogueID": 5,
+            "destinationConversationID": 1117,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 416,
+          "y": 457,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Half Light: \"Yes. Let's hope no one saw you wear...\"",
+          "Dialogue Text": "Yes. Let's hope no one saw you wearing that outrageously fascist jacket.",
+          "Articy Id": "0x0100002100000A03",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "414",
+          "Conversant": "0",
+          "InputId": "0x01000021000009E8",
+          "OutputId": "0x0100006B000025BD"
+        },
+        "conversationID": 1117,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "LoseItem(\"jacket_carabineer\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1019,
+          "y": 598,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Half Light: \"Apologies, you're right! The need f...\"",
+          "Dialogue Text": "Apologies, you're right! The need for a strong central government has always been clear to you. You're a true patriot of Revachol -- born to do it.",
+          "Articy Id": "0x010000820001F588",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "414",
+          "Conversant": "0",
+          "InputId": "0x01000021000009E1",
+          "OutputId": "0x0100006B000025BB"
+        },
+        "conversationID": 1117,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1117,
+            "originDialogueID": 7,
+            "destinationConversationID": 1117,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "ReputationGrows(\"revacholian_nationhood\");\n",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1022.9999389648438,
+          "y": 326,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

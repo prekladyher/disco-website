@@ -1,0 +1,1613 @@
+[
+  {
+    "id": 959,
+    "fields": {
+      "Title": "WHIRLING / BATHTUB",
+      "Articy Id": "0x010000580000852D",
+      "OnUse": "",
+      "OverrideDialogueCondition": "",
+      "AlternateOrbText": "",
+      "CheckType": "15",
+      "Condition": "Variable[\"TASK.wash_the_death_off\"] == true  and  Variable[\"TASK.wash_the_death_off_done\"] == false  and  Variable[\"TASK.pay_for_the_damages_done\"]  and  IsKimHere() == false",
+      "Description": "You can take a bath and wash that corpse stench off.",
+      "Instruction": "",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000580000852D",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 0,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100005800008530",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100005800008535"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 1,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Bathtub: \"This is not the cleanest bathtub in...\"",
+          "Dialogue Text": "This is not the cleanest bathtub in the world, but it's cleaner than you are right now.",
+          "Articy Id": "0x0100005800008535",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "296",
+          "Conversant": "0",
+          "InputId": "0x0100005800008530",
+          "OutputId": "0x0100005800008542"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 2,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 850.0000610351562,
+          "y": 550,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Savoir Faire: \"Hold it right there! Keep your head...\"",
+          "Dialogue Text": "Hold it right there! Keep your head above water, or you'll lose all those pheromones Morell sprayed on you.",
+          "Articy Id": "0x0100008100002333",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "0",
+          "Actor": "417",
+          "Conversant": "0",
+          "OutputId": "0x0100008100002341",
+          "InputId": "0x01000095000001D0"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 3,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3075,
+          "y": -150,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Variable[\"coast.morells_pheromone_spray\"]",
+          "Articy Id": "0x0100008100002339",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005800008606"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 4,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 959,
+            "originDialogueID": 4,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2625,
+          "y": 250.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Variable[\"coast.morells_pheromone_spray\"]",
+          "Articy Id": "0x0100008100002339",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x01000095000001D0"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 5,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"coast.morells_pheromone_spray\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1706.2498779296875,
+          "y": 162.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "!(Variable[\"coast.morells_pheromone_spray\"])",
+          "Articy Id": "0x0100008100002339",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000580000860F"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 6,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"coast.morells_pheromone_spray\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1706.2498779296875,
+          "y": 162.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "You: \"Run yourself a bath.\"",
+          "Dialogue Text": "Run yourself a bath.",
+          "Articy Id": "0x010000580000854A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100005800008558",
+          "InputId": "0x010000580000853C"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 7,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1700.0001220703125,
+          "y": 425.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "You: \"Leave the beer cans in.\"",
+          "Dialogue Text": "Leave the beer cans in.",
+          "Articy Id": "0x0100005800008657",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100005800008665",
+          "InputId": "0x01000058000086B3"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 8,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3700.000244140625,
+          "y": 525,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "You: \"Take the beer cans out.\"",
+          "Dialogue Text": "Take the beer cans out.",
+          "Articy Id": "0x0100005800008651",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000580000865F",
+          "InputId": "0x01000058000086B3"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 9,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3700.000244140625,
+          "y": 275,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Physical Instrument: \"What are you doing? You're not some...\"",
+          "Dialogue Text": "What are you doing? You're not some fat fish in a fucking aquarium. Time to get moving.",
+          "Articy Id": "0x010000580000869F",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "410",
+          "Conversant": "0",
+          "OutputId": "0x0100005800008689",
+          "InputId": "0x0100005800008699"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 10,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5450,
+          "y": 275,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "You: \"Get out. (Conclude.)\"",
+          "Dialogue Text": "Get out. (Conclude.)",
+          "Articy Id": "0x010000580000867E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100005800008692",
+          "InputId": "0x0100005800008689"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 11,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4850,
+          "y": 800,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "lingerhub",
+          "Articy Id": "0x0100005800008689",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x01000058000086C6",
+          "OutputId": "0x010000580000867E"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 12,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 959,
+            "originDialogueID": 12,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 959,
+            "originDialogueID": 12,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4600,
+          "y": 475.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Bathtub: \"The water line recedes as you stand...\"",
+          "Dialogue Text": "The water line recedes as you stand. You are cold now. Your clothes stick to your still moist skin.",
+          "Articy Id": "0x0100005800008692",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "HideOverlay()",
+          "Actor": "296",
+          "Conversant": "0",
+          "InputId": "0x010000580000867E",
+          "OutputId": "0x0100005800008554"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "FinishTask(\"TASK.wash_the_death_off_done\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5150,
+          "y": 800,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "You: \"I want to live forever with the cor...\"",
+          "Dialogue Text": "I want to live forever with the corpse smell. Memento mori and stuff. [Leave.]",
+          "Articy Id": "0x0100005800008550",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100005800008554",
+          "InputId": "0x010000580000853C"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1700.0001220703125,
+          "y": 675,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "Bathtub: \"Your fingers grow pale and are cove...\"",
+          "Dialogue Text": "Your fingers grow pale and are covered with tiny whorls as the water cools.",
+          "Articy Id": "0x0100005800008699",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "296",
+          "Conversant": "0",
+          "OutputId": "0x010000580000869F",
+          "InputId": "0x0100005800008678"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 15,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "HealEndurance(1)",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5150,
+          "y": 275,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "Perception (Smell): \"Ah, that soap scum smell. It smells...\"",
+          "Dialogue Text": "Ah, that soap scum smell. It smells like life. At least compared to you.",
+          "Articy Id": "0x0100005800008542",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "421",
+          "Conversant": "0",
+          "InputId": "0x0100005800008535",
+          "OutputId": "0x010000580000853C"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 16,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1150,
+          "y": 550,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "bathtubhub",
+          "Articy Id": "0x010000580000853C",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100005800008542",
+          "OutputId": "0x0100005800008550"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 18,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 959,
+            "originDialogueID": 18,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1450,
+          "y": 625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "You: \"I don't care. I just want to be eng...\"",
+          "Dialogue Text": "I don't care. I just want to be engulfed.",
+          "Articy Id": "0x0100008100002347",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x01000095000001D9",
+          "InputId": "0x0100008100002341"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 19,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.bath_washed_pheromones_off\", true) ;\nSetVariableValue(\"coast.morells_pheromone_spray\", false) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3611.999755859375,
+          "y": -275,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Conceptualization: \"Then -- houses along a narrow stree...\"",
+          "Dialogue Text": "Then -- houses along a narrow street. A video rental. Darkness on the planet's curvature.",
+          "Articy Id": "0x010000060001A8BE",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "1",
+          "Actor": "397",
+          "Conversant": "0",
+          "OutputId": "0x0100005800008689",
+          "InputId": "0x01000058000091CC"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 20,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5440,
+          "y": 507,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "Untitled hub",
+          "Articy Id": "0x0100008100002341",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100008100002333",
+          "OutputId": "0x010000810000234D"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 21,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 959,
+            "originDialogueID": 21,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3375.000244140625,
+          "y": -75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Bathtub: \"Now you are alone with your thought...\"",
+          "Dialogue Text": "Now you are alone with your thoughts in the tub. But it's easier than being alone with your thoughts outside the tub.",
+          "Articy Id": "0x010000580000865F",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "AudioPlay(whirling/bathtube/bathtube-washing-01,1)",
+          "Actor": "296",
+          "Conversant": "0",
+          "InputId": "0x0100005800008651",
+          "OutputId": "0x01000058000086C6"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 22,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4000.000244140625,
+          "y": 250.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "You: \"Linger in the tub a little.\"",
+          "Dialogue Text": "Linger in the tub a little.",
+          "Articy Id": "0x0100005800008678",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005800008689",
+          "OutputId": "0x0100005800008699"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 23,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4850,
+          "y": 275,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "Bathtub: \"The water doesn't feel particularly...\"",
+          "Dialogue Text": "The water doesn't feel particularly clean. A few beer cans are bobbing up and down along your flanks like sad duckies. You pause to think before letting your head go under.",
+          "Articy Id": "0x01000095000001D0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "296",
+          "Conversant": "0",
+          "InputId": "0x0100008100002339",
+          "OutputId": "0x0100008100002333"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 24,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2775,
+          "y": -175,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "Bathtub: \"The lukewarm water is comforting, l...\"",
+          "Dialogue Text": "The lukewarm water is comforting, like amniotic fluid.",
+          "Articy Id": "0x01000095000001D9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "296",
+          "Conversant": "0",
+          "InputId": "0x010000810000234D",
+          "OutputId": "0x01000058000086B3"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 25,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3950.000244140625,
+          "y": -150,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Bathtub: \"The cans continue to bob, as do you...\"",
+          "Dialogue Text": "The cans continue to bob, as do your thoughts, aimlessly splashing up against the sides of the tub.",
+          "Articy Id": "0x0100005800008665",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "AudioPlay(whirling/bathtube/bathtube-washing-01,1)",
+          "Actor": "296",
+          "Conversant": "0",
+          "InputId": "0x0100005800008657",
+          "OutputId": "0x01000058000086C6"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 26,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4000.000244140625,
+          "y": 525,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Inland Empire: \"You feel nice and lonely. And so, s...\"",
+          "Dialogue Text": "You feel nice and lonely. And so, so tired.",
+          "Articy Id": "0x01000058000086B3",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "404",
+          "Conversant": "0",
+          "InputId": "0x010000580000860F",
+          "OutputId": "0x0100005800008657"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 27,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 959,
+            "originDialogueID": 27,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3394,
+          "y": 422,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "You: \"Imagine something.\"",
+          "Dialogue Text": "Imagine something.",
+          "Articy Id": "0x01000058000091C5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005800008689",
+          "OutputId": "0x01000058000091CC"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 28,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4850,
+          "y": 500.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "You: \"Undress, close your eyes, and subme...\"",
+          "Dialogue Text": "Undress, close your eyes, and submerge.",
+          "Articy Id": "0x0100005800008606",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "FadeToBlack(false);",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100008100002339",
+          "InputId": "0x0100005800008558"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 29,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2300,
+          "y": 425.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "Bathtub: \"The water is only lukewarm, but sti...\"",
+          "Dialogue Text": "The water is only lukewarm, but still comforting, like amniotic fluid. A few beer cans are bobbing up and down along your flanks like sad duckies.",
+          "Articy Id": "0x010000580000860F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "296",
+          "Conversant": "0",
+          "InputId": "0x0100008100002339",
+          "OutputId": "0x01000058000086B3"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 30,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3097,
+          "y": 407,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "Bathtub: \"The bathtub slowly fills with water...\"",
+          "Dialogue Text": "The bathtub slowly fills with water. The water beckons.",
+          "Articy Id": "0x0100005800008558",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "AudioPlay(whirling/bathtube/bathtube-water-01,1)",
+          "Actor": "296",
+          "Conversant": "0",
+          "InputId": "0x010000580000854A",
+          "OutputId": "0x0100005800008606"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 31,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2000.0001220703125,
+          "y": 425.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "Electrochemistry: \"They're not even really thoughts. J...\"",
+          "Dialogue Text": "They're not even really thoughts. Just assorted sensations, none of them acute enough to focus on.",
+          "Articy Id": "0x01000058000086C6",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "413",
+          "Conversant": "0",
+          "InputId": "0x0100005800008665",
+          "OutputId": "0x0100005800008689"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 32,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4300,
+          "y": 400,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "Bathtub: \"You see the corpse. You can still s...\"",
+          "Dialogue Text": "You see the corpse. You can still smell the cadaver on you. It's going to take more than one bath to get rid of that stench.",
+          "Articy Id": "0x01000058000091CC",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "296",
+          "Conversant": "0",
+          "InputId": "0x01000058000091C5",
+          "OutputId": "0x010000060001A8BE"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 33,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5150,
+          "y": 500.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "You: \"Keep your head above water, just in...\"",
+          "Dialogue Text": "Keep your head above water, just in case.",
+          "Articy Id": "0x010000810000234D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008100002341",
+          "OutputId": "0x01000095000001D9"
+        },
+        "conversationID": 959,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 959,
+            "originDialogueID": 34,
+            "destinationConversationID": 959,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3611.999755859375,
+          "y": -25,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

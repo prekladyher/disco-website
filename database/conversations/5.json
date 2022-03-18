@@ -1,0 +1,1195 @@
+[
+  {
+    "id": 5,
+    "fields": {
+      "Title": "KIM SWITCH / flashlight",
+      "Articy Id": "0x010000010000037D",
+      "Description": "Fires when you remain in the dark with Kim",
+      "Actor": "396",
+      "Conversant": "395"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000010000037D",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 0,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100000100000380",
+          "Sequence": "Continue()",
+          "Actor": "0"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Variable[\"tc.turn_off_tutorial_node\"]",
+          "Articy Id": "0x01000051000097D8",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x010000120000009F"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 2,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 5,
+            "originDialogueID": 2,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1214,
+          "y": 774,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Variable[\"tc.turn_off_tutorial_node\"]",
+          "Articy Id": "0x01000051000097D8",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"tc.turn_off_tutorial_node\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 789.0999755859375,
+          "y": 503.0999755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "!(Variable[\"tc.turn_off_tutorial_node\"])",
+          "Articy Id": "0x01000051000097D8",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x01000021000016AC"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 4,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"tc.turn_off_tutorial_node\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 789.0999755859375,
+          "y": 503.0999755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"I'm sorry the fundamental laws of...\"",
+          "Dialogue Text": "\"I'm sorry the fundamental laws of the universe don't seem to agree with you, detective, but the fact remains that it's too dark to see in here without the flashlight...\"",
+          "Articy Id": "0x01000012000000D6",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x01000012000000DD",
+          "InputId": "0x01000012000000CE"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 5,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1834,
+          "y": 333,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "CheckItem(\"flashlight\")",
+          "Articy Id": "0x0100001200000091",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x01000001000003AA"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 7,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 5,
+            "originDialogueID": 7,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 345,
+          "y": 555,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "CheckItem(\"flashlight\")",
+          "Articy Id": "0x0100001200000091",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100000100000386"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 8,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "CheckItem(\"flashlight\")",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 224.24998474121094,
+          "y": 360.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "!(CheckItem(\"flashlight\"))",
+          "Articy Id": "0x0100001200000091",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100001200000097"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 9,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(CheckItem(\"flashlight\")) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 224.24998474121094,
+          "y": 360.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Right. Now let's get to it,\" the l...\"",
+          "Dialogue Text": "\"Right. Now let's get to it,\" the lieutenant nods.",
+          "Articy Id": "0x01000012000000C0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x01000051000097CF",
+          "InputId": "0x01000012000000C7"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 10,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1235,
+          "y": -44,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"I've got one in the Kineema's tool...\"",
+          "Dialogue Text": "\"I've got one in the Kineema's toolbox. We should go back for it before we continue. No sense in tripping around in the darkness.\"",
+          "Articy Id": "0x010000120000009F",
+          "DialogueEntryType": "DialogueFragment",
+          "Menu Text": "",
+          "AlwaysPlayVoice": "True",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x01000051000097D8",
+          "InputId": "0x0100001200000097"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 11,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 919,
+          "y": 703,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Yes,\" the lieutenant says. \"You mi...\"",
+          "Dialogue Text": "\"Yes,\" the lieutenant says. \"You might even call it a *feature* of the universe, that you need to *hold* tools to *use* them.\"",
+          "Articy Id": "0x01000012000000B9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x01000012000000CE",
+          "InputId": "0x01000012000000B2"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 12,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 5,
+            "originDialogueID": 12,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1234,
+          "y": 187,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"So come on. We've got work to do.\"\"",
+          "Dialogue Text": "\"So come on. We've got work to do.\"",
+          "Articy Id": "0x01000012000000DD",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x01000012000000D6",
+          "OutputId": "0x01000051000097CF"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 13,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2124,
+          "y": 341,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Tutorial Agent: \"Some areas are inaccessible without...\"",
+          "Dialogue Text": "Some areas are inaccessible without your FLASHLIGHT. After you’ve acquired it, go to your INVENTORY and equip it in a HELD slot to continue exploring.",
+          "Articy Id": "0x01000021000016AC",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "color": "1",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Actor": "354",
+          "Conversant": "396",
+          "InputId": "0x01000051000097D8",
+          "OutputId": "0x0100002100001699"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1527,
+          "y": 837.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "You: \"\"Fair point. Yes, totally obvious.\"\"",
+          "Dialogue Text": "\"Fair point. Yes, totally obvious.\"",
+          "Articy Id": "0x010000010000038E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "OutputId": "0x01000012000000C0",
+          "InputId": "0x0100000100000386"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 15,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 947.9999389648438,
+          "y": -44,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"And the flashlight works a lot bet...\"",
+          "Dialogue Text": "\"And the flashlight works a lot better if you *hold it in your hand*.\"",
+          "Articy Id": "0x0100000100000386",
+          "DialogueEntryType": "DialogueFragment",
+          "Menu Text": "",
+          "AlwaysPlayVoice": "True",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100001200000091",
+          "OutputId": "0x0100002100001695"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 16,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 5,
+            "originDialogueID": 16,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 5,
+            "originDialogueID": 16,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 651,
+          "y": 201.99998474121094,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "You: \"\"That makes so much sense.\"\"",
+          "Dialogue Text": "\"That makes so much sense.\"",
+          "Articy Id": "0x01000012000000C7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x01000012000000B9",
+          "OutputId": "0x01000012000000C0"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 17,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1548,
+          "y": 125.00000762939453,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "You: \"\"That makes no sense at all.\"\"",
+          "Dialogue Text": "\"That makes no sense at all.\"",
+          "Articy Id": "0x01000012000000CE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x01000012000000B9",
+          "OutputId": "0x01000012000000D6"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 18,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1546,
+          "y": 349,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "You: \"\"Got it, Kim, no need to rub it in....\"",
+          "Dialogue Text": "\"Got it, Kim, no need to rub it in.\" [Leave.]",
+          "Articy Id": "0x0100002100001695",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x0100000100000386",
+          "OutputId": "0x0100002100001699"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 947.9999389648438,
+          "y": 438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Tutorial Agent: \"Some areas are inaccessible without...\"",
+          "Dialogue Text": "Some areas are inaccessible without your FLASHLIGHT. After you’ve acquired it, go to your INVENTORY and equip it in a HELD slot to continue exploring.",
+          "Articy Id": "0x01000021000016A3",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "color": "1",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Actor": "354",
+          "Conversant": "396",
+          "OutputId": "0x0100002100001699",
+          "InputId": "0x01000051000097CF"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2128,
+          "y": -189,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "Variable[\"tc.turn_off_tutorial_node\"]",
+          "Articy Id": "0x01000051000097CF",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x01000012000000DD"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 21,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 5,
+            "originDialogueID": 21,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1770.0001220703125,
+          "y": -13,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Variable[\"tc.turn_off_tutorial_node\"]",
+          "Articy Id": "0x01000051000097CF",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"tc.turn_off_tutorial_node\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1150.5,
+          "y": -8.449999809265137,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "!(Variable[\"tc.turn_off_tutorial_node\"])",
+          "Articy Id": "0x01000051000097CF",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x01000021000016A3"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 23,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"tc.turn_off_tutorial_node\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1150.5,
+          "y": -8.449999809265137,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "You: \"\"Flashlights go *in* hand?\" (Stare...\"",
+          "Dialogue Text": "\"Flashlights go *in* hand?\" (Stare at your hand uncomprehendingly.)",
+          "Articy Id": "0x01000012000000B2",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "395",
+          "InputId": "0x0100000100000386",
+          "OutputId": "0x01000012000000B9"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 24,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 947.9999389648438,
+          "y": 194,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "kiminthedark",
+          "Articy Id": "0x01000001000003AA",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x0100001200000091"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 25,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 110.99999237060547,
+          "y": 581,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"This would be a lot easier with a...\"",
+          "Dialogue Text": "\"This would be a lot easier with a flashlight...\"",
+          "Articy Id": "0x0100001200000097",
+          "DialogueEntryType": "DialogueFragment",
+          "Menu Text": "",
+          "AlwaysPlayVoice": "True",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100001200000091",
+          "OutputId": "0x010000120000009F"
+        },
+        "conversationID": 5,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 5,
+            "originDialogueID": 26,
+            "destinationConversationID": 5,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 631,
+          "y": 708,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

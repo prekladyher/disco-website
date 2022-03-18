@@ -1,0 +1,3263 @@
+[
+  {
+    "id": 1071,
+    "fields": {
+      "Title": "INITIATION / SMOKING HABIT",
+      "Articy Id": "0x0100005A00013207",
+      "AlternateOrbText": "",
+      "CheckType": "10",
+      "Condition": "Variable[\"character.habit_smokes\"] == false  and  TotalHourCount() >= Variable[\"character.habit_smokes_postponed_deadline\"]",
+      "Description": "Global afterthought dialogue to pick up smoking.",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100005A00013207",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 0,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100005A000135CD",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100005A00013239"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 1,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "You: \"No. Throw it away at the last secon...\"",
+          "Dialogue Text": "No. Throw it away at the last second. [Ignore thought.]",
+          "Articy Id": "0x010000060000FD6C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000060000FD7C",
+          "InputId": "0x010000060000FD59"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 2,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3718,
+          "y": -1095,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Variable[\"whirling.sense_smoking_volition_withdrawal\"]",
+          "Articy Id": "0x0100000600018DD3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100000600018DCB"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 3,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 3,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4951,
+          "y": -1693,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Variable[\"whirling.sense_smoking_volition_withdrawal\"]",
+          "Articy Id": "0x0100000600018DD3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005A000133EB"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 4,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"whirling.sense_smoking_volition_withdrawal\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3218.14990234375,
+          "y": -1100.449951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "!(Variable[\"whirling.sense_smoking_volition_withdrawal\"])",
+          "Articy Id": "0x0100000600018DD3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100000600018DDA"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 5,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 57,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"whirling.sense_smoking_volition_withdrawal\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3218.14990234375,
+          "y": -1100.449951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Electrochemistry: \"You picked the best one! This soldi...\"",
+          "Dialogue Text": "You picked the best one! This soldier is fat and succulent. What are you waiting for? Light up -- re-become yourself!",
+          "Articy Id": "0x0100005A0001320E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "413",
+          "Conversant": "0",
+          "OutputId": "0x0100005A00013215",
+          "InputId": "0x010000060000FD32"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 6,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -684,
+          "y": -584,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Logic: \"Will they *always* be looking, thou...\"",
+          "Dialogue Text": "Will they *always* be looking, though? Because they might go to the toilet or you might be in a different...",
+          "Articy Id": "0x0100005A000132A4",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "398",
+          "Conversant": "0",
+          "OutputId": "0x0100005A000132AB",
+          "InputId": "0x0100005A0001322D"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 7,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"character.smoking_logic_wont_always_be_looking\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1103,
+          "y": -976,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "CheckHeldRightGroup(\"smokes\")",
+          "Articy Id": "0x01000003000007D0",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000060000FD66"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 8,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 8,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3988,
+          "y": -1369,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "CheckHeldRightGroup(\"smokes\")",
+          "Articy Id": "0x01000003000007D0",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000060000FD83"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 9,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "CheckHeldRightGroup(\"smokes\")",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2592.199951171875,
+          "y": -889.8499755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "!(CheckHeldRightGroup(\"smokes\"))",
+          "Articy Id": "0x01000003000007D0",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x01000003000007D5"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 10,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(CheckHeldRightGroup(\"smokes\")) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2592.199951171875,
+          "y": -889.8499755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Electrochemistry: \"Shut up. It's already happening...\"",
+          "Dialogue Text": "Shut up. It's already happening...",
+          "Articy Id": "0x010000060000FD52",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "413",
+          "Conversant": "0",
+          "OutputId": "0x010000060000FD59",
+          "InputId": "0x0100005A000132ED"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 11,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3114,
+          "y": -1672,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "You: \"What are the repercussions if I do...\"",
+          "Dialogue Text": "What are the repercussions if I do this?",
+          "Articy Id": "0x010000060000FD60",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000060000FD75",
+          "InputId": "0x010000060000FD59"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 12,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3731.999755859375,
+          "y": -1750.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "You: \"Dip that bad boy in the flame and b...\"",
+          "Dialogue Text": "Dip that bad boy in the flame and breathe in.",
+          "Articy Id": "0x010000060000FD66",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x01000003000007D0",
+          "InputId": "0x010000060000FD59"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 13,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3701.999755859375,
+          "y": -1418,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Volition: \"It only lets you concentrate becaus...\"",
+          "Dialogue Text": "It only lets you concentrate because you're in *nicotine withdrawal*. It only mitigates it's own...",
+          "Articy Id": "0x0100000600018DCB",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "405",
+          "Conversant": "0",
+          "OutputId": "0x0100000600018DD3",
+          "InputId": "0x0100000600018DC4"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 14,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.sense_smoking_volition_withdrawal\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4619,
+          "y": -1760.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "Variable[\"character.smoking_logic_wont_always_be_looking\"]",
+          "Articy Id": "0x0100005A000132AB",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005A000132A4"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 15,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 15,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1395,
+          "y": -931,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "Variable[\"character.smoking_logic_wont_always_be_looking\"]",
+          "Articy Id": "0x0100005A000132AB",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005A00013233"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 16,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 58,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"character.smoking_logic_wont_always_be_looking\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 906.7499389648438,
+          "y": -605.1499633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "!(Variable[\"character.smoking_logic_wont_always_be_looking\"])",
+          "Articy Id": "0x0100005A000132AB",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000060000FD48"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 17,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"character.smoking_logic_wont_always_be_looking\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 906.7499389648438,
+          "y": -605.1499633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Tutorial Agent: \"You've passed up your chance to sta...\"",
+          "Dialogue Text": "You've passed up your chance to start smoking CIGARETTES for now, but don't worry! The option to start smoking becomes available again in 3 hours.",
+          "Articy Id": "0x010000210000335B",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "color": "1",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Actor": "354",
+          "Conversant": "0",
+          "OutputId": "0x010000060000FD9A",
+          "InputId": "0x01000051000096CE"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1570,
+          "y": 211,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "Electrochemistry: \"Thick, warm smoke gets sucked down...\"",
+          "Dialogue Text": "Thick, warm smoke gets sucked down into your lungs. Immediately you feel a warm nostalgia fill your head, body *and* soul. A nostalgia for *yourself*, the man you were in your youth. Johnny Thundercop is back. And he's chill as balls.",
+          "Articy Id": "0x01000003000007D5",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "LuaRun(FinishTask(\"TASK.find_smokes_done\"))@8;\nLuaRun(FinishTask(\"TASK.find_smokes_done\"))@8",
+          "Actor": "413",
+          "Conversant": "0",
+          "InputId": "0x01000003000007D0",
+          "OutputId": "0x01000051000096C5"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 19,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"character.habit_smokes\", true) ;\nUseSubstanceInHand(\"left\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4269,
+          "y": -1175,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Electrochemistry: \"There it is, a brave little army in...\"",
+          "Dialogue Text": "There it is, a brave little army in your pocket. The First Smokes Platoon. Twenty brave souls standing in salute, ready to step into the fire for you, sir...",
+          "Articy Id": "0x0100005A00013239",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "413",
+          "Conversant": "0",
+          "InputId": "0x0100005A000135CD",
+          "OutputId": "0x010000060000FD38"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 20,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 20,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 44,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1317,
+          "y": -505.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "You: \"Light it up!\"",
+          "Dialogue Text": "Light it up!",
+          "Articy Id": "0x0100005A00013245",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000030000020F",
+          "InputId": "0x0100005A0001323F"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 21,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1173,
+          "y": -1410,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Jump to: [Electrochemistry: \"Already you regret it -- looking at...\"]",
+          "Articy Id": "0x010000060000FD7C",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000060000FD6C"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 22,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4013,
+          "y": -1065,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "Variable[\"tc.turn_off_tutorial_node\"]",
+          "Articy Id": "0x01000051000096C5",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000060000FD83"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 23,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 23,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4605,
+          "y": -1235,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "Variable[\"tc.turn_off_tutorial_node\"]",
+          "Articy Id": "0x01000051000096C5",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"tc.turn_off_tutorial_node\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2993.25,
+          "y": -802.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "!(Variable[\"tc.turn_off_tutorial_node\"])",
+          "Articy Id": "0x01000051000096C5",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000060000FD98"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 25,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 65,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"tc.turn_off_tutorial_node\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2993.25,
+          "y": -802.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Electrochemistry: \"Get a load of this rock and roll co...\"",
+          "Dialogue Text": "Get a load of this rock and roll cop here, people! Johnny Thundercop fishes a cheap lighter out of his pants. With a flick of the thumb there's fire, a primal satisfaction. Here we go...",
+          "Articy Id": "0x0100005A0001324B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "413",
+          "Conversant": "0",
+          "OutputId": "0x0100005A0001327C",
+          "InputId": "0x010000030000020F"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 26,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 49,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1835.9998779296875,
+          "y": -1548,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Variable[\"whirling.necktie_personified\"]  and  CheckEquipped(\"neck_tie\")",
+          "Articy Id": "0x0100005A00013290",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005A00013289"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 27,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 27,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1141,
+          "y": -566,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "Variable[\"whirling.necktie_personified\"]  and  CheckEquipped(\"neck_tie\")",
+          "Articy Id": "0x0100005A00013290",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005A00013295"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 28,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 63,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"whirling.necktie_personified\"]  and  CheckEquipped(\"neck_tie\")",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 741.6499633789062,
+          "y": -367.8999938964844,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "!(Variable[\"whirling.necktie_personified\"]  and  CheckEquipped(\"neck_tie\"))",
+          "Articy Id": "0x0100005A00013290",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000060000FD42"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 29,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 56,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"whirling.necktie_personified\"]  and  CheckEquipped(\"neck_tie\")) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 741.6499633789062,
+          "y": -367.8999938964844,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "CheckHeldRightGroup(\"smokes\")",
+          "Articy Id": "0x010000030000020F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005A00013245"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 30,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 30,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1499,
+          "y": -1360,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "CheckHeldRightGroup(\"smokes\")",
+          "Articy Id": "0x010000030000020F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005A0001324B"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 31,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "CheckHeldRightGroup(\"smokes\")",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 974.3499755859375,
+          "y": -883.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "!(CheckHeldRightGroup(\"smokes\"))",
+          "Articy Id": "0x010000030000020F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100000300000214"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 32,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 55,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(CheckHeldRightGroup(\"smokes\")) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 974.3499755859375,
+          "y": -883.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "Jump to: [SMOKEHUB]",
+          "Articy Id": "0x010000060000FD48",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100005A00013233"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 33,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 61,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1812,
+          "y": -785,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "Frittte clerk: \"\"Hey, you can't smoke in here.\" The...\"",
+          "Dialogue Text": "\"Hey, you can't smoke in here.\" The girl's voice betrays little interest or enthusiasm. She doesn't even look up when as she continues: \"Please don't fuck with Frittte.\"",
+          "Articy Id": "0x0100005A000132ED",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "71",
+          "Conversant": "0",
+          "OutputId": "0x010000060000FD52",
+          "InputId": "0x0100006B00008A37"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 34,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"gates.fritte_smoked_fuck\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2834,
+          "y": -1698,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Title": "Electrochemistry: \"Thick, warm smoke gets sucked down...\"",
+          "Dialogue Text": "Thick, warm smoke gets sucked down into your lungs. Immediately you feel a warm nostalgia fill your head, body *and* soul. A nostalgia for *yourself*, the man you were in your youth. Johnny Thundercop is back. And he's chill as balls.",
+          "Articy Id": "0x010000060000FD83",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "LuaRun(FinishTask(\"TASK.find_smokes_done\"))@8;\nLuaRun(FinishTask(\"TASK.find_smokes_done\"))@8",
+          "Actor": "413",
+          "Conversant": "0",
+          "InputId": "0x01000003000007D0",
+          "OutputId": "0x01000051000096C5"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 35,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"character.habit_smokes\", true) ;\nUseSubstanceInHand(\"right\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4270,
+          "y": -1460,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "Variable[\"tc.turn_off_tutorial_node\"]",
+          "Articy Id": "0x01000051000096CE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x01000089000030E4"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 36,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 36,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1207,
+          "y": 157,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "Variable[\"tc.turn_off_tutorial_node\"]",
+          "Articy Id": "0x01000051000096CE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"tc.turn_off_tutorial_node\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 784.5499877929688,
+          "y": 102.04999542236328,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "!(Variable[\"tc.turn_off_tutorial_node\"])",
+          "Articy Id": "0x01000051000096CE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000210000335B"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 38,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"tc.turn_off_tutorial_node\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 784.5499877929688,
+          "y": 102.04999542236328,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Title": "Electrochemistry: \"Already you regret it -- looking at...\"",
+          "Dialogue Text": "Already you regret it -- looking at the pack... But don't worry. You can come back to this later. The army of smokes is honourable and faithful to you. You have your entire *life* to return to it.",
+          "Articy Id": "0x01000089000030E4",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "413",
+          "Conversant": "0",
+          "OutputId": "0x01000051000096CE",
+          "InputId": "0x0100005A00013257"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 39,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "CancelTask(\"TASK.find_smokes_cancelled\");\nSetVariableValue(\"character.habit_smokes_postponed_deadline\", TotalHourCount() +3) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 890.0000610351562,
+          "y": 87,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Title": "Electrochemistry: \"Repercussions? There's a high risk...\"",
+          "Dialogue Text": "Repercussions? There's a high risk of GLORY? With a mild chance COOL *GENIUS*. Smoking makes you into an INTELLECTUAL, everybody knows that.",
+          "Articy Id": "0x010000060000FD75",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "413",
+          "Conversant": "0",
+          "InputId": "0x010000060000FD60",
+          "OutputId": "0x0100000600018DC4"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 40,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4021.999755859375,
+          "y": -1775.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "Variable[\"whirling.necktie_personified\"]  and  CheckEquipped(\"neck_tie\")",
+          "Articy Id": "0x0100005A00013215",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005A0001320E"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 41,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 42,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 41,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 43,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -390,
+          "y": -510.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Title": "Variable[\"whirling.necktie_personified\"]  and  CheckEquipped(\"neck_tie\")",
+          "Articy Id": "0x0100005A00013215",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005A0001321F"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 42,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 62,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"whirling.necktie_personified\"]  and  CheckEquipped(\"neck_tie\")",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -253.49998474121094,
+          "y": -331.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Title": "!(Variable[\"whirling.necktie_personified\"]  and  CheckEquipped(\"neck_tie\"))",
+          "Articy Id": "0x0100005A00013215",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005A0001323F"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 43,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 61,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"whirling.necktie_personified\"]  and  CheckEquipped(\"neck_tie\")) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -253.49998474121094,
+          "y": -331.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 44,
+        "fields": {
+          "Title": "You: \"I'm not going to do it. [Ignore tho...\"",
+          "Dialogue Text": "I'm not going to do it. [Ignore thought.]",
+          "Articy Id": "0x010000060000FD38",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005A00013239",
+          "OutputId": "0x01000089000030E4"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 44,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -962,
+          "y": -293,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 45,
+        "fields": {
+          "Title": "Logic: \"It *will* help you concentrate a bi...\"",
+          "Dialogue Text": "It *will* help you concentrate a bit, that much is true.",
+          "Articy Id": "0x0100000600018DC4",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "0",
+          "Actor": "398",
+          "Conversant": "0",
+          "InputId": "0x010000060000FD75",
+          "OutputId": "0x0100000600018DCB"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 45,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4334,
+          "y": -1748,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 46,
+        "fields": {
+          "Title": "You: \"I don't wanna light it right *now*,...\"",
+          "Dialogue Text": "I don't wanna light it right *now*, people are watching.",
+          "Articy Id": "0x0100005A00013227",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100005A0001322D",
+          "InputId": "0x0100005A0001323F"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 46,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 70,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 542,
+          "y": -984,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 47,
+        "fields": {
+          "Title": "You: \"Pull one out of the pack.\"",
+          "Dialogue Text": "Pull one out of the pack.",
+          "Articy Id": "0x010000060000FD32",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "AudioPlay(substance/cigarette_1,1)@0.3;",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005A00013239",
+          "OutputId": "0x0100005A0001320E"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 47,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -972.9999389648438,
+          "y": -576,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 48,
+        "fields": {
+          "Title": "Untitled hub (02)",
+          "Articy Id": "0x010000060000FD59",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100006B00008A32",
+          "OutputId": "0x010000060000FD6C"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 48,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 48,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 48,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3451,
+          "y": -1356,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 49,
+        "fields": {
+          "Title": "Perception (Sight): \"The lighter's dark green, disposabl...\"",
+          "Dialogue Text": "The lighter's dark green, disposable plastic. Safety's off -- in your case, the safety is *always* off.",
+          "Articy Id": "0x0100005A0001327C",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "424",
+          "Conversant": "0",
+          "InputId": "0x0100000300000214",
+          "OutputId": "0x0100006B00008A37"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 49,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2311,
+          "y": -1445,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 51,
+        "fields": {
+          "Title": "Idiot Doom Spiral: \"The man in the stinking tracksuit n...\"",
+          "Dialogue Text": "The man in the stinking tracksuit nods solemnly. \"Having a well-deserved break from your adventures. It's what we all need sometimes.\"",
+          "Articy Id": "0x0100005A000132F4",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "89",
+          "Conversant": "0",
+          "OutputId": "0x010000060000FD59",
+          "InputId": "0x0100006B00008A32"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 51,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3169,
+          "y": -1233,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 52,
+        "fields": {
+          "Title": "Variable[\"auto.smoke_fritte\"]",
+          "Articy Id": "0x0100006B00008A37",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005A0001327C"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 52,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 53,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 52,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 54,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2610,
+          "y": -1368,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 53,
+        "fields": {
+          "Title": "Variable[\"auto.smoke_fritte\"]",
+          "Articy Id": "0x0100006B00008A37",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005A000132ED"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 53,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"auto.smoke_fritte\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1696.4998779296875,
+          "y": -889.199951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 54,
+        "fields": {
+          "Title": "!(Variable[\"auto.smoke_fritte\"])",
+          "Articy Id": "0x0100006B00008A37",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100006B00008A32"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 54,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 67,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"auto.smoke_fritte\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1696.4998779296875,
+          "y": -889.199951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 55,
+        "fields": {
+          "Title": "Electrochemistry: \"Get a load of this rock and roll co...\"",
+          "Dialogue Text": "Get a load of this rock and roll cop here, people! Johnny Thundercop fishes a cheap lighter out of his pants. With a flick of the thumb there's fire, a primal satisfaction. Here we go...",
+          "Articy Id": "0x0100000300000214",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "413",
+          "Conversant": "0",
+          "InputId": "0x010000030000020F",
+          "OutputId": "0x0100005A0001327C"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 55,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 49,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1837,
+          "y": -1307,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 56,
+        "fields": {
+          "Title": "Jump to: [SMOKEHUB]",
+          "Articy Id": "0x010000060000FD42",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100005A00013295"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 56,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 61,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1476,
+          "y": -398.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 57,
+        "fields": {
+          "Title": "Jump to: [Untitled hub (02)]",
+          "Articy Id": "0x0100000600018DDA",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100005A000133EB"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 57,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5299,
+          "y": -1675.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 58,
+        "fields": {
+          "Title": "Electrochemistry: \"Shut up and light that shit! You wa...\"",
+          "Dialogue Text": "Shut up and light that shit! You wanna be an idiot for the rest of your life? This shit will give you the cool edge you need.",
+          "Articy Id": "0x0100005A00013233",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "413",
+          "Conversant": "0",
+          "InputId": "0x0100005A000132AB",
+          "OutputId": "0x010000060000FD48"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 58,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1705.9998779296875,
+          "y": -1063,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 59,
+        "fields": {
+          "Title": "You: \"I already had a heart attack. Maybe...\"",
+          "Dialogue Text": "I already had a heart attack. Maybe smokes are harmful?",
+          "Articy Id": "0x0100005A00013251",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100005A00013289",
+          "InputId": "0x0100005A0001323F"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 59,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 64,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"character.lifeline_heart_attack_tutorial_got\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 541,
+          "y": -616,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 60,
+        "fields": {
+          "Title": "You: \"Put it back in the pack. [Ignore th...\"",
+          "Dialogue Text": "Put it back in the pack. [Ignore thought.]",
+          "Articy Id": "0x0100005A00013257",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x01000089000030E4",
+          "InputId": "0x0100005A0001323F"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 60,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 577,
+          "y": 107,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 61,
+        "fields": {
+          "Title": "SMOKEHUB",
+          "Articy Id": "0x0100005A0001323F",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100005A0001321F",
+          "OutputId": "0x0100005A00013257"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 61,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 61,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 46,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 61,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 59,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 61,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 60,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -15.000000953674316,
+          "y": -515,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 62,
+        "fields": {
+          "Title": "Horrific Necktie: \"Oh yes, *bratan*! (The tie is shaki...\"",
+          "Dialogue Text": "Oh yes, *bratan*! (The tie is shaking around your neck excitedly.) Please light up. You *need* a trooper between your lips right now! Calm your shit down. Go to Pleasureland. Become a *genius*!",
+          "Articy Id": "0x0100005A0001321F",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "True",
+          "Actor": "231",
+          "Conversant": "0",
+          "InputId": "0x0100005A00013215",
+          "OutputId": "0x0100005A0001323F"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 62,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 61,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -375,
+          "y": -783,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 63,
+        "fields": {
+          "Title": "Horrific Necktie: \"Step into the light and be reborn i...\"",
+          "Dialogue Text": "Step into the light and be reborn in the cleansing flame, *bratan*!",
+          "Articy Id": "0x0100005A00013295",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "True",
+          "Actor": "231",
+          "Conversant": "0",
+          "InputId": "0x0100005A00013290",
+          "OutputId": "0x010000060000FD42"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 63,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 56,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1458,
+          "y": -695,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 64,
+        "fields": {
+          "Title": "Electrochemistry: \"No, what's *harmful* is fretting an...\"",
+          "Dialogue Text": "No, what's *harmful* is fretting and worrying. It's the *stress* that's wearing your ticker down. The smokes will soothe it. They're medicinal.",
+          "Articy Id": "0x0100005A00013289",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "413",
+          "Conversant": "0",
+          "InputId": "0x0100005A00013251",
+          "OutputId": "0x0100005A00013290"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 64,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 837.9999389648438,
+          "y": -617,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 65,
+        "fields": {
+          "Title": "Tutorial Agent: \"In the bottom right corner of the s...\"",
+          "Dialogue Text": "In the bottom right corner of the screen there's a CIGARETTES button! CIGARETTES give +1 to INTELLECT skills: Logic, Rhetoric, Conceptualization, Visual Calculus, Encyclopedia, and Drama. This is good before a White Check -- but damages your Health.",
+          "Articy Id": "0x010000060000FD98",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "color": "1",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Actor": "354",
+          "Conversant": "0",
+          "InputId": "0x01000051000096C5",
+          "OutputId": "0x010000060000FD9A"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4995,
+          "y": -1399,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 66,
+        "fields": {
+          "Title": "Electrochemistry: \"...bla bla bla. Boring. Light it up...\"",
+          "Dialogue Text": "...bla bla bla. Boring. Light it up!",
+          "Articy Id": "0x0100005A000133EB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "413",
+          "Conversant": "0",
+          "InputId": "0x0100000600018DD3",
+          "OutputId": "0x0100000600018DDA"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 66,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 57,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5020,
+          "y": -1965.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 67,
+        "fields": {
+          "Title": "Variable[\"auto.smoke_doomspiral\"]",
+          "Articy Id": "0x0100006B00008A32",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100006B00008A37"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 67,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 68,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 67,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 69,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2866,
+          "y": -1193,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 68,
+        "fields": {
+          "Title": "Variable[\"auto.smoke_doomspiral\"]",
+          "Articy Id": "0x0100006B00008A32",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005A000132F4"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 68,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 51,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"auto.smoke_doomspiral\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1862.89990234375,
+          "y": -775.449951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 69,
+        "fields": {
+          "Title": "!(Variable[\"auto.smoke_doomspiral\"])",
+          "Articy Id": "0x0100006B00008A32",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000060000FD59"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 69,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"auto.smoke_doomspiral\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1862.89990234375,
+          "y": -775.449951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 70,
+        "fields": {
+          "Title": "Electrochemistry: \"People are watching. What a pussy!...\"",
+          "Dialogue Text": "People are watching. What a pussy! People are *always* watching -- that's what makes it *cool*, now come on!",
+          "Articy Id": "0x0100005A0001322D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "413",
+          "Conversant": "0",
+          "InputId": "0x0100005A00013227",
+          "OutputId": "0x0100005A000132A4"
+        },
+        "conversationID": 1071,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1071,
+            "originDialogueID": 70,
+            "destinationConversationID": 1071,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 825,
+          "y": -987.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

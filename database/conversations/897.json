@@ -1,0 +1,1057 @@
+[
+  {
+    "id": 897,
+    "fields": {
+      "Title": "CHURCH / WATERBASINS",
+      "Articy Id": "0x010000570001CD13",
+      "OnUse": "",
+      "OverrideDialogueCondition": "",
+      "AlternateOrbText": "",
+      "CheckType": "15",
+      "Condition": "Variable[\"TASK.move_the_waterbowls\"] == true  and  Variable[\"TASK.move_the_waterbowls_done\"] == false  and  Variable[\"church.waterbowls_moved\"] == false",
+      "Description": "Waterbasin dialogue for solving the \"Move the waterbasins\" task.",
+      "Instruction": "",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000570001CD13",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 0,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x010000570001CD16",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x010000570001CD1C"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 1,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Variable[\"church.waterbowls_physinst_walk\"]  and  Variable[\"TASK.report_to_the_tribunal_done\"]",
+          "Articy Id": "0x0100002100002C1F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x01000021000028A7"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 2,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 897,
+            "originDialogueID": 2,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2345,
+          "y": 61,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Variable[\"church.waterbowls_physinst_walk\"]  and  Variable[\"TASK.report_to_the_tribunal_done\"]",
+          "Articy Id": "0x0100002100002C1F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100002100002C25"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 3,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"church.waterbowls_physinst_walk\"]  and  Variable[\"TASK.report_to_the_tribunal_done\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1524.25,
+          "y": 39.64999771118164,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "!(Variable[\"church.waterbowls_physinst_walk\"]  and  Variable[\"TASK.report_to_the_tribunal_done\"])",
+          "Articy Id": "0x0100002100002C1F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000570001CD51"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 4,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"church.waterbowls_physinst_walk\"]  and  Variable[\"TASK.report_to_the_tribunal_done\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1524.25,
+          "y": 39.64999771118164,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Water Bowls: \"It's awfully silent again, as if so...\"",
+          "Dialogue Text": "It's awfully silent again, as if someone turned off the entire world outside those walls. Water inside the bowls stands still.",
+          "Articy Id": "0x010000570001CD1C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "309",
+          "Conversant": "0",
+          "InputId": "0x010000570001CD16",
+          "OutputId": "0x010000570001CFAC"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 5,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -236.99998474121094,
+          "y": 245.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Soona, the Programmer: \"The lead programmer sends you an en...\"",
+          "Dialogue Text": "The lead programmer sends you an encouraging thumbs up from across the hall.",
+          "Articy Id": "0x010000570001CD72",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "387",
+          "Conversant": "0",
+          "OutputId": "0x01000021000028A7",
+          "InputId": "0x010000570001CD55"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 6,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"church.waterbowls_moved\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1769,
+          "y": 8,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Logic: \"This task is an insult to your ment...\"",
+          "Dialogue Text": "This task is an insult to your mental skills.",
+          "Articy Id": "0x010000570001CD7A",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "3",
+          "Actor": "398",
+          "Conversant": "0",
+          "OutputId": "0x010000570001CD51",
+          "InputId": "0x010000570001CD55"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 7,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "DamageVolition(1)",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1777,
+          "y": 268,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "You: \"Move the third bowl from the left t...\"",
+          "Dialogue Text": "Move the third bowl from the left two centimetres away.",
+          "Articy Id": "0x010000570001CD34",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000570001CD3A",
+          "InputId": "0x010000570001CD46"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 8,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 926,
+          "y": 15.000000953674316,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Variable[\"church.waterbasins_moved_one_basin\"] == true  and  Variable[\"church.waterbasins_moved_second_basin\"] == true",
+          "Articy Id": "0x010000570001CD55",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000570001CD3A"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 10,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 897,
+            "originDialogueID": 10,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1489,
+          "y": 211.99998474121094,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Variable[\"church.waterbasins_moved_one_basin\"] == true  and  Variable[\"church.waterbasins_moved_second_basin\"] == true",
+          "Articy Id": "0x010000570001CD55",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000570001CD72"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 11,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"church.waterbasins_moved_one_basin\"] == true  and  Variable[\"church.waterbasins_moved_second_basin\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 967.8499755859375,
+          "y": 137.79998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "!(Variable[\"church.waterbasins_moved_one_basin\"] == true  and  Variable[\"church.waterbasins_moved_second_basin\"] == true)",
+          "Articy Id": "0x010000570001CD55",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000570001CD7A"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 12,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"church.waterbasins_moved_one_basin\"] == true  and  Variable[\"church.waterbasins_moved_second_basin\"] == true) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 967.8499755859375,
+          "y": 137.79998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Pain Threshold: \"*And* your leg still hurts from the...\"",
+          "Dialogue Text": "*And* your leg still hurts from the tribunal.",
+          "Articy Id": "0x0100002100002C25",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "1",
+          "Actor": "412",
+          "Conversant": "0",
+          "InputId": "0x0100002100002C1F",
+          "OutputId": "0x010000570001CD51"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 13,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2645,
+          "y": 7,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "You: \"Move the fourth bowl from the left...\"",
+          "Dialogue Text": "Move the fourth bowl from the left five centimetres to the right.",
+          "Articy Id": "0x010000570001CD26",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000570001CD40",
+          "InputId": "0x010000570001CD46"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 14,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 925.0000610351562,
+          "y": 270,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "waterbasins hub",
+          "Articy Id": "0x010000570001CD46",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x010000570001CD2C",
+          "InputId": "0x010000570001CD62"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 15,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 897,
+            "originDialogueID": 15,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 897,
+            "originDialogueID": 15,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 670,
+          "y": 323,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "Jump to: [waterbasins hub]",
+          "Articy Id": "0x010000570001CD51",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100002100002C25"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 16,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2064,
+          "y": 298,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "Perception (Sight): \"Measurements have been marked down...\"",
+          "Dialogue Text": "Measurements have been marked down around the bowls, each chalk-drawn line representing a centimetre on the floor.",
+          "Articy Id": "0x010000570001CFAC",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "1",
+          "Actor": "424",
+          "Conversant": "0",
+          "InputId": "0x010000570001CD1C",
+          "OutputId": "0x010000570001CD62"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 17,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 62,
+          "y": 246,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Water Bowls: \"Some water spills out of the bowl,...\"",
+          "Dialogue Text": "Some water spills out of the bowl, wetting the floor.",
+          "Articy Id": "0x010000570001CD40",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "309",
+          "Conversant": "0",
+          "InputId": "0x010000570001CD26",
+          "OutputId": "0x010000570001CD55"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 18,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"church.waterbasins_moved_second_basin\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1212,
+          "y": 270,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "Physical Instrument: \"Time to run back! Or maybe walk, th...\"",
+          "Dialogue Text": "Time to run back! Or maybe walk, this *is* a sacred place after all...",
+          "Articy Id": "0x01000021000028A7",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "410",
+          "Conversant": "0",
+          "InputId": "0x010000570001CD72",
+          "OutputId": "0x0100002100002C1F"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 19,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"church.waterbowls_physinst_walk\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2053,
+          "y": 9,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Water Bowls: \"It moves like a ghost without creat...\"",
+          "Dialogue Text": "It moves like a ghost without creating a single trace of sound.",
+          "Articy Id": "0x010000570001CD3A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "309",
+          "Conversant": "0",
+          "InputId": "0x010000570001CD34",
+          "OutputId": "0x010000570001CD55"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 20,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"church.waterbasins_moved_one_basin\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1213,
+          "y": 15.000000953674316,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "Interfacing: \"Oh boy, this is going to be good.\"",
+          "Dialogue Text": "Oh boy, this is going to be good.",
+          "Articy Id": "0x010000570001CD62",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "10",
+          "Actor": "418",
+          "Conversant": "0",
+          "InputId": "0x010000570001CFAC",
+          "OutputId": "0x010000570001CD46"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 897,
+            "originDialogueID": 21,
+            "destinationConversationID": 897,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "HealVolition(1)",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 358,
+          "y": 250.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "You: \"[Leave.]\"",
+          "Dialogue Text": "[Leave.]",
+          "Articy Id": "0x010000570001CD2C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000570001CD46",
+          "OutputId": "0x010000570001CD30"
+        },
+        "conversationID": 897,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 925.0000610351562,
+          "y": 520,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

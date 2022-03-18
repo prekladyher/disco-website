@@ -1,0 +1,1919 @@
+[
+  {
+    "id": 1258,
+    "fields": {
+      "Title": "INVENTORY / FILTHY JACKET",
+      "Articy Id": "0x0100008900001BC0",
+      "OnUse": "",
+      "OverrideDialogueCondition": "",
+      "AlternateOrbText": "",
+      "CheckType": "15",
+      "Condition": "",
+      "Description": "an inventory interaction so you can't sell the filthy garbage because clothing items cannot be sold, oiii.",
+      "Instruction": "",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100008900001BC0",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 0,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100008900001BC3",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100008900001BE2"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 1,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "You: \"Why did I fondle the shit jacket ag...\"",
+          "Dialogue Text": "Why did I fondle the shit jacket again?",
+          "Articy Id": "0x0100000400015EA3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100000400015EA9",
+          "InputId": "0x0100008900001BE2"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 2,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"inventory.filthy_done\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 487,
+          "y": 201.99998474121094,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Filthy Jacket: \"As you hold it in your hands, it ma...\"",
+          "Dialogue Text": "As you hold it in your hands, it makes an uncomfortable crunching sound...",
+          "Articy Id": "0x0100008900001BE2",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "344",
+          "Conversant": "0",
+          "InputId": "0x0100008900001BC3",
+          "OutputId": "0x010000940000083F"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 3,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 3,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 3,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 175,
+          "y": 200,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "You: \"On second thought, let's *do* think...\"",
+          "Dialogue Text": "On second thought, let's *do* think about it.",
+          "Articy Id": "0x010000940000074C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100009400000736",
+          "InputId": "0x0100009400000744"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 4,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1975.0001220703125,
+          "y": -25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "You: \"What happened once someone put it o...\"",
+          "Dialogue Text": "What happened once someone put it on the railing?",
+          "Articy Id": "0x01000094000007C3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x01000094000007CB",
+          "InputId": "0x0100009400000775"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 5,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"inventory.filthy_viscal_prints\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3175,
+          "y": -75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Shivers: \"*SPLAT*. An explosion of white on a...\"",
+          "Dialogue Text": "*SPLAT*. An explosion of white on a man's shoe. A curse goes up, but the birds do not hear.",
+          "Articy Id": "0x01000094000007E4",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "411",
+          "Conversant": "0",
+          "OutputId": "0x0100009400000813",
+          "InputId": "0x01000094000007DE"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 6,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 6,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4975,
+          "y": -150,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Variable[\"inventory.filthy_shivers_seagulls\"]",
+          "Articy Id": "0x01000094000007EE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x01000094000007D8"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 7,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 7,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4075.000244140625,
+          "y": -25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Variable[\"inventory.filthy_shivers_seagulls\"]",
+          "Articy Id": "0x01000094000007EE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x01000094000007D2"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 8,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"inventory.filthy_shivers_seagulls\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2648.75,
+          "y": -16.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "!(Variable[\"inventory.filthy_shivers_seagulls\"])",
+          "Articy Id": "0x01000094000007EE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000940000080B"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 9,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"inventory.filthy_shivers_seagulls\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2648.75,
+          "y": -16.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Filthy Jacket: \"It's probably better that way.\"",
+          "Dialogue Text": "It's probably better that way.",
+          "Articy Id": "0x0100009400000822",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "344",
+          "Conversant": "0",
+          "OutputId": "0x0100008900001C12",
+          "InputId": "0x010000940000083F"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 797,
+          "y": 706,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Composure: \"What? No! Then it'll just be on you...\"",
+          "Dialogue Text": "What? No! Then it'll just be on your *pants*. This is a disaster. You'll never get the smell out.",
+          "Articy Id": "0x01000094000007AC",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "419",
+          "Conversant": "0",
+          "OutputId": "0x0100008900001C12",
+          "InputId": "0x01000094000007A5"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "DamageVolition(1)",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3175,
+          "y": -550,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "Filthy Jacket: \"Good choice. The less you think abo...\"",
+          "Dialogue Text": "Good choice. The less you think about the jacket, the better.",
+          "Articy Id": "0x0100009400000744",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "344",
+          "Conversant": "0",
+          "OutputId": "0x0100008900001C0E",
+          "InputId": "0x010000940000071E"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 12,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 12,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1675.0001220703125,
+          "y": 75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Filthy Jacket: \"It occurs to you that you're not ev...\"",
+          "Dialogue Text": "It occurs to you that you're not even *holding* the jacket itself, but rather the thick crust of jetsam and seagull shit that ensconces it.",
+          "Articy Id": "0x0100009400000736",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "344",
+          "Conversant": "0",
+          "InputId": "0x0100009400000718",
+          "OutputId": "0x0100009400000753"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 13,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"inventory.filthy_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1675.0001220703125,
+          "y": -375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "You: \"I feel like I really understand thi...\"",
+          "Dialogue Text": "I feel like I really understand this jacket now. [Put the jacket away.]",
+          "Articy Id": "0x0100009400000813",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x01000094000007E4",
+          "OutputId": "0x0100008900001C12"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5275,
+          "y": -25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "You: \"Why did I just spend all this time...\"",
+          "Dialogue Text": "Why did I just spend all this time thinking about seagull shit?",
+          "Articy Id": "0x0100009400000819",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x01000094000007E4",
+          "OutputId": "0x010000940000082A"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 15,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5275,
+          "y": -250.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "Filthy Jacket: \"There is no why.\"",
+          "Dialogue Text": "There is no why.",
+          "Articy Id": "0x0100000400015EA9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "344",
+          "Conversant": "0",
+          "InputId": "0x0100000400015EA3",
+          "OutputId": "0x0100000400015EB1"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 16,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 786,
+          "y": 201,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "Filthy Jacket: \"Somehow it was carried or dragged t...\"",
+          "Dialogue Text": "Somehow it was carried or dragged to the boardwalk, if not by human hands than perhaps the feral dogs that prowl the beaches at night...",
+          "Articy Id": "0x01000094000007B3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "344",
+          "Conversant": "0",
+          "OutputId": "0x0100009400000775",
+          "InputId": "0x0100009400000796"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 17,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2575,
+          "y": -200,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Composure: \"Some secrets are better left uncove...\"",
+          "Dialogue Text": "Some secrets are better left uncovered. Don't even try, seriously.",
+          "Articy Id": "0x0100008900001C02",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "419",
+          "Conversant": "0",
+          "OutputId": "0x010000940000071E",
+          "InputId": "0x0100009400000848"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 18,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 18,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1075,
+          "y": -125.00000762939453,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "You: \"Don't think about it.\"",
+          "Dialogue Text": "Don't think about it.",
+          "Articy Id": "0x010000940000071E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008900001C02",
+          "OutputId": "0x0100009400000744"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 19,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1375,
+          "y": 75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "You: \"Maybe if I wipe my hands on my pant...\"",
+          "Dialogue Text": "Maybe if I wipe my hands on my pants?",
+          "Articy Id": "0x01000094000007A5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x01000094000007AC",
+          "InputId": "0x010000940000079E"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 20,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2875,
+          "y": -550,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "You: \"Okay, but what's the crust *made* o...\"",
+          "Dialogue Text": "Okay, but what's the crust *made* of?",
+          "Articy Id": "0x0100009400000796",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x01000094000007B3",
+          "InputId": "0x0100009400000753"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 21,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"inventory.filthy_perception_smells\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2275,
+          "y": -175,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Composure: \"Now you're just flicking that shit...\"",
+          "Dialogue Text": "Now you're just flicking that shit everywhere! This is a disaster. You'll never get the smell out.",
+          "Articy Id": "0x01000094000007FB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "419",
+          "Conversant": "0",
+          "OutputId": "0x0100008900001C12",
+          "InputId": "0x01000094000007F5"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "DamageVolition(1)",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3175,
+          "y": -775,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "You: \"Man, how did this jacket get so dis...\"",
+          "Dialogue Text": "Man, how did this jacket get so disgusting?",
+          "Articy Id": "0x0100009400000839",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008900001BE2",
+          "OutputId": "0x0100009400000848"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 23,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"inventory.filthy_done\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 475.0000305175781,
+          "y": -125.00000762939453,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "You: \"Think about it.\"",
+          "Dialogue Text": "Think about it.",
+          "Articy Id": "0x0100009400000718",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008900001C02",
+          "OutputId": "0x0100009400000736"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 24,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1375,
+          "y": -350,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "Shivers: \"They are like the bombardiers of th...\"",
+          "Dialogue Text": "They are like the bombardiers of the aerostatic brigades, gliding above a *target-rich environment*...",
+          "Articy Id": "0x01000094000007D2",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "411",
+          "Conversant": "0",
+          "InputId": "0x01000094000007EE",
+          "OutputId": "0x01000094000007DE"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 25,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4375,
+          "y": -150,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "You: \"Gross.\"",
+          "Dialogue Text": "Gross.",
+          "Articy Id": "0x0100009400000790",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000940000079E",
+          "InputId": "0x0100009400000753"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 26,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2275,
+          "y": -775,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "You: \"Ew, ew, ew! (Flick your hands.)\"",
+          "Dialogue Text": "Ew, ew, ew! (Flick your hands.)",
+          "Articy Id": "0x01000094000007F5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x01000094000007FB",
+          "InputId": "0x010000940000079E"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 27,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2875,
+          "y": -775,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "Filthy Jacket: \"The crust is hard. This jacket spen...\"",
+          "Dialogue Text": "The crust is hard. This jacket spent at least a day baking in the sun. Who knows what happened to it then?",
+          "Articy Id": "0x01000094000007CB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "344",
+          "Conversant": "0",
+          "InputId": "0x01000094000007C3",
+          "OutputId": "0x01000094000007D8"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 28,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3475.000244140625,
+          "y": -75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "Shivers: \"All of a sudden, the bomb bay doors...\"",
+          "Dialogue Text": "All of a sudden, the bomb bay doors open, and their white glittering payload rushes to the ground...",
+          "Articy Id": "0x01000094000007DE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "411",
+          "Conversant": "0",
+          "InputId": "0x01000094000007D2",
+          "OutputId": "0x01000094000007E4"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 29,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4675,
+          "y": -150,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "Shivers: \"Somewhere, high above the city, a p...\"",
+          "Dialogue Text": "Somewhere, high above the city, a pair of seagulls trace loops through the air...",
+          "Articy Id": "0x01000094000007D8",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "411",
+          "Conversant": "0",
+          "InputId": "0x01000094000007CB",
+          "OutputId": "0x01000094000007EE"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 30,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"inventory.filthy_shivers_seagulls\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3775.000244140625,
+          "y": -75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "You: \"[Put the filthy jacket away.]\"",
+          "Dialogue Text": "[Put the filthy jacket away.]",
+          "Articy Id": "0x0100008900001C0E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100009400000744",
+          "OutputId": "0x0100008900001C12"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1975.0001220703125,
+          "y": 200,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "You: \"Let's not think about that right no...\"",
+          "Dialogue Text": "Let's not think about that right now. [Put the filthy jacket away.]",
+          "Articy Id": "0x010000940000083F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008900001BE2",
+          "OutputId": "0x0100009400000822"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 32,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 498.9999694824219,
+          "y": 706,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "You: \"Let's just put it away then.\"",
+          "Dialogue Text": "Let's just put it away then.",
+          "Articy Id": "0x0100000400015EB1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100000400015EA9",
+          "OutputId": "0x0100008900001C12"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1076,
+          "y": 201.99998474121094,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "You: \"Okay, that's pretty disgusting. I'v...\"",
+          "Dialogue Text": "Okay, that's pretty disgusting. I've had enough.",
+          "Articy Id": "0x01000094000007BD",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000940000079E",
+          "InputId": "0x0100009400000775"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 34,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3175,
+          "y": -300,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "You: \"I'm just going to pretend I didn't...\"",
+          "Dialogue Text": "I'm just going to pretend I didn't think about any of this.",
+          "Articy Id": "0x010000940000080B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x01000094000007EE",
+          "OutputId": "0x010000940000082A"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 36,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4375,
+          "y": 75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "Composure: \"It's too late! You've already thoug...\"",
+          "Dialogue Text": "It's too late! You've already thought about it. And now your hands are covered in muck!",
+          "Articy Id": "0x010000940000082A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "419",
+          "Conversant": "0",
+          "InputId": "0x010000940000080B",
+          "OutputId": "0x01000094000007A5"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 37,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 37,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2575,
+          "y": -550,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "Filthy Jacket: \"It's a sordid, filthy tale, not for...\"",
+          "Dialogue Text": "It's a sordid, filthy tale, not for the weak. Are you sure you can stomach it?",
+          "Articy Id": "0x0100009400000848",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "344",
+          "Conversant": "0",
+          "InputId": "0x0100009400000839",
+          "OutputId": "0x0100008900001C02"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 38,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 773,
+          "y": -125.00000762939453,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Title": "Perception (Smell): \"It smells like a dead sea creature,...\"",
+          "Dialogue Text": "It smells like a dead sea creature, tangled in grey strands of seaweed. It must have spent quite some time in the water before the tide deposited it ashore...",
+          "Articy Id": "0x0100009400000753",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "421",
+          "Conversant": "0",
+          "InputId": "0x0100009400000736",
+          "OutputId": "0x0100009400000796"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 39,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 39,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"inventory.filthy_perception_smells\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1975.0001220703125,
+          "y": -397,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Title": "Visual Calculus: \"The faint impressions of many footp...\"",
+          "Dialogue Text": "The faint impressions of many footprints are also present, though it's impossible to tell what kind or how many. Suffice to say, the jacket spent some time on the ground before someone draped it over the railing...",
+          "Articy Id": "0x0100009400000775",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "402",
+          "Conversant": "0",
+          "InputId": "0x01000094000007B3",
+          "OutputId": "0x01000094000007C3"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 40,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 40,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"inventory.filthy_viscal_prints\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2875,
+          "y": -200,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "Composure: \"Why, why did you think about it? Lo...\"",
+          "Dialogue Text": "Why, why did you think about it? Look at your hands -- They're covered in muck!",
+          "Articy Id": "0x010000940000079E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "419",
+          "Conversant": "0",
+          "InputId": "0x01000094000007BD",
+          "OutputId": "0x01000094000007A5"
+        },
+        "conversationID": 1258,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 41,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1258,
+            "originDialogueID": 41,
+            "destinationConversationID": 1258,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2575,
+          "y": -775,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

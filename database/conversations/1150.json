@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1150,
+    "fields": {
+      "Title": "COAL ORB / labourer jeans equipped",
+      "Articy Id": "0x0100006B00009DD4",
+      "AlternateOrbText": "",
+      "CheckType": "21",
+      "Condition": "Variable[\"apt.orb_chewing_gum_jeans_done\"] == false",
+      "Description": "putting on the labourer pants make orb appear, similar to your own pants at beginning of game; in order to find gum wrapper in pocket",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100006B00009DD4",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1150,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1150,
+            "originDialogueID": 0,
+            "destinationConversationID": 1150,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100006B00009DD7",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100006B00009DEE"
+        },
+        "conversationID": 1150,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1150,
+            "originDialogueID": 1,
+            "destinationConversationID": 1150,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Interfacing: \"Hey! It's a chewing gum wrapper. It...\"",
+          "Dialogue Text": "Hey! It's a chewing gum wrapper. It reminds you of the fruity juice of apricots. You should inspect it closer if you have time. Something about the wrapper's texture is familiar...",
+          "Articy Id": "0x0100006B00009E01",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "418",
+          "Conversant": "0",
+          "OutputId": "0x010000060001BB71",
+          "InputId": "0x0100006B00009DFB"
+        },
+        "conversationID": 1150,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1150,
+            "originDialogueID": 2,
+            "destinationConversationID": 1150,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"apt.orb_chewing_gum_jeans_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1213,
+          "y": 406,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "You: \"Take the item out.\"",
+          "Dialogue Text": "Take the item out.",
+          "Articy Id": "0x0100006B00009DFB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100006B00009E01",
+          "InputId": "0x0100006B00009DEE"
+        },
+        "conversationID": 1150,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1150,
+            "originDialogueID": 3,
+            "destinationConversationID": 1150,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "GainItem(\"gum_wrapper\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 925.0000610351562,
+          "y": 425.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Pain Threshold: \"*Not* familiar in a good way, you m...\"",
+          "Dialogue Text": "*Not* familiar in a good way, you might say. There's pain in there somewhere...",
+          "Articy Id": "0x010000060001BB71",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "412",
+          "Conversant": "0",
+          "InputId": "0x0100006B00009E01",
+          "OutputId": "0x0100006B00009E14"
+        },
+        "conversationID": 1150,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1150,
+            "originDialogueID": 4,
+            "destinationConversationID": 1150,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1527,
+          "y": 382,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Encyclopedia: \"By the way, the raw materials were...\"",
+          "Dialogue Text": "By the way, the raw materials were most likely exported from Siigay (the Apricot Suzerainty) and processed in Sur-La-Clef into the apricot-flavoured chewing gum loved by kids of today -- and yesterday. Hmm. Something about it *is* familiar... And not only to your fingers.",
+          "Articy Id": "0x0100006B00009E14",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "399",
+          "Conversant": "0",
+          "InputId": "0x010000060001BB71",
+          "OutputId": "0x0100006B00009E18"
+        },
+        "conversationID": 1150,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1840.9998779296875,
+          "y": 386,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Interfacing: \"The pockets of these new jeans are...\"",
+          "Dialogue Text": "The pockets of these new jeans are perfect for sticking your hand into. Makes you look cool, calm, and collected. As your hand enters the pocket, your fingers brush against something... soft, yet crinkly.",
+          "Articy Id": "0x0100006B00009DEE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "418",
+          "Conversant": "0",
+          "InputId": "0x0100006B00009DD7",
+          "OutputId": "0x0100006B00009DFB"
+        },
+        "conversationID": 1150,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1150,
+            "originDialogueID": 7,
+            "destinationConversationID": 1150,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 625,
+          "y": 400,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

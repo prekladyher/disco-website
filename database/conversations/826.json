@@ -1,0 +1,4109 @@
+[
+  {
+    "id": 826,
+    "fields": {
+      "Title": "CANAL / SAMARAN BUTTER SIGN VISCAL",
+      "Articy Id": "0x0100004D000023DC",
+      "OnUse": "",
+      "OverrideDialogueCondition": "",
+      "AlternateOrbText": "",
+      "CheckType": "15",
+      "Condition": "Variable[\"jam.orb_butter_sign_unlocked\"] == true",
+      "Description": "You find tire tracks indicating that a car leapt over the canal.",
+      "Instruction": "",
+      "Placement": "Area: the wrecked Samaran Butter sign \nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "396",
+      "Conversant": "265"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100004D000023DC",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 0,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100004D000023DF",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100005A00001436"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 1,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Jump to: [vehiclehub]",
+          "Articy Id": "0x0100000600017376",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000060001735E"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 2,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3740.000244140625,
+          "y": 2022,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Variable[\"plaza.tracks_viscal_wc_success_done\"]",
+          "Articy Id": "0x0100002F0001007B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "InputId": "0x0100004D00003A18"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 3,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 3,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1850.0001220703125,
+          "y": 900.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Variable[\"plaza.tracks_viscal_wc_success_done\"]",
+          "Articy Id": "0x0100002F0001007B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "OutputId": "0x01000007000097F8"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 4,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 68,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"plaza.tracks_viscal_wc_success_done\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1202.5,
+          "y": 585,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "!(Variable[\"plaza.tracks_viscal_wc_success_done\"])",
+          "Articy Id": "0x0100002F0001007B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "OutputId": "0x0100004D00003A25"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 5,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 79,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"plaza.tracks_viscal_wc_success_done\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1202.5,
+          "y": 585,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "butterhub",
+          "Articy Id": "0x0100004D000039CF",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x0100004D00003BAE",
+          "InputId": "0x0100000600017589"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 6,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 59,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 6,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 6,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 303,
+          "y": 1135,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Jump to: [butterhub]",
+          "Articy Id": "0x0100004D000039F4",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100004D000039E9"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 7,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2462,
+          "y": 61,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "You: \"Look at the sign.\"",
+          "Dialogue Text": "Look at the sign.",
+          "Articy Id": "0x0100004D00003A3D",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "FocusCamera(SamaranViscal4);",
+          "Actor": "396",
+          "Conversant": "265",
+          "OutputId": "0x0100004D00003C29",
+          "InputId": "0x0100004D00003A25"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 8,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 60,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2965,
+          "y": 1020.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100005A00007E6B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "InputId": "0x0100004D00003BEF"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 9,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 9,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3298,
+          "y": 2631,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100005A00007E6B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "OutputId": "0x010000060001734E"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 10,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2143.699951171875,
+          "y": 1710.14990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x0100005A00007E6B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2143.699951171875,
+          "y": 1710.14990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "You: \"Look at the roof of the shack.\"",
+          "Dialogue Text": "Look at the roof of the shack.",
+          "Articy Id": "0x0100004D00003A31",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "FocusCamera(SamaranViscal1);",
+          "Actor": "396",
+          "Conversant": "265",
+          "OutputId": "0x0100004D00003C15",
+          "InputId": "0x0100004D00003A25"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 12,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2965,
+          "y": 245.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Conceptualization: \"The SAMARAN BUTTER billboard still...\"",
+          "Dialogue Text": "The SAMARAN BUTTER billboard still looks freshly painted, suggesting it took the plunge recently.",
+          "Articy Id": "0x0100004D000038D7",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "397",
+          "Conversant": "396",
+          "OutputId": "0x0100004D00004896",
+          "InputId": "0x0100000700009814"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 13,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 85,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"canal.samaran_vis_calc_concept_recent\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3856.999755859375,
+          "y": 884,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Visual Calculus: \"Judging by the size of the impact a...\"",
+          "Dialogue Text": "Judging by the size of the impact and the parallel lines of burnt rubber, the cause was probably a motor vehicle.",
+          "Articy Id": "0x0100004D00003A18",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "FocusCamera(SamaranViscal00)@1;",
+          "Actor": "402",
+          "Conversant": "396",
+          "OutputId": "0x0100002F0001007B",
+          "InputId": "0x0100004D00003A0C"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 14,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"canal.samaran_vis_calc_wc_success\", true) ;\nShowVisCal(\"VisCal-SamaranButter\")--[[ Variable[ ]];",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1569,
+          "y": 847.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "You: \"Look at the broken posts.\"",
+          "Dialogue Text": "Look at the broken posts.",
+          "Articy Id": "0x0100004D00003A37",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "FocusCamera(SamaranViscal3);",
+          "Actor": "396",
+          "Conversant": "265",
+          "OutputId": "0x0100004D00003C23",
+          "InputId": "0x0100004D00003A25"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 15,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 50,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2967,
+          "y": 756,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "Variable[\"canal.samaran_vis_calc_wc_success\"]",
+          "Articy Id": "0x0100005A00001436",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "InputId": "0x0100004D000023DF"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 16,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 16,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -423.9999694824219,
+          "y": 944,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "Variable[\"canal.samaran_vis_calc_wc_success\"]",
+          "Articy Id": "0x0100005A00001436",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "OutputId": "0x0100005A0000143D"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 17,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 67,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"canal.samaran_vis_calc_wc_success\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -275.5999755859375,
+          "y": 613.5999755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "!(Variable[\"canal.samaran_vis_calc_wc_success\"])",
+          "Articy Id": "0x0100005A00001436",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "OutputId": "0x0100004D000039C8"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 18,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 51,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"canal.samaran_vis_calc_wc_success\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -275.5999755859375,
+          "y": 613.5999755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "Variable[\"coast.sunken_dialogue_done\"]",
+          "Articy Id": "0x010000060001734E",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "InputId": "0x0100005A00007E6B"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 19,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 19,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3301.999755859375,
+          "y": 2456,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Variable[\"coast.sunken_dialogue_done\"]",
+          "Articy Id": "0x010000060001734E",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"coast.sunken_dialogue_done\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2146.2998046875,
+          "y": 1596.39990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "!(Variable[\"coast.sunken_dialogue_done\"])",
+          "Articy Id": "0x010000060001734E",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "OutputId": "0x0100005A00007E65"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 21,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 65,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"coast.sunken_dialogue_done\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2146.2998046875,
+          "y": 1596.39990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "You: \"Attempt to reconstruct what happene...\"",
+          "Dialogue Text": "Attempt to reconstruct what happened here.",
+          "Articy Id": "0x0100004D00003A03",
+          "DialogueEntryType": "DialogueFragment",
+          "Forced": "False",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x0000000000000000",
+          "FlagName": "canal.samaran_vis_calc_white_check",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000A0000001E",
+          "DifficultyWhite": "10",
+          "modifier1": "-2",
+          "variable1": "Variable[\"coast.sunken_dialogue_done\"]",
+          "tooltip1": "Found sunken motor carriage.",
+          "modifier2": "-1",
+          "variable2": "Variable[\"canal.waterlock_guy_mentioned_tire_tracks\"]",
+          "tooltip2": "Ominous daredevil feeling.",
+          "modifier3": "-1",
+          "variable3": "CheckItem(\"superstar_dice\")",
+          "tooltip3": "Magnetic Dice Set.",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "265",
+          "InputId": "0x0100004D000039CF",
+          "OutputId": "0x0100004D00003A03-FORK"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 22,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 961,
+          "y": 1061,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "Variable[\"canal.samaran_vis_calc_white_check\"]",
+          "Articy Id": "0x0100004D00003A03-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "265",
+          "InputId": "0x0100004D00003A03"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 23,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 23,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1037.923095703125,
+          "y": 1137.923095703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "Variable[\"canal.samaran_vis_calc_white_check\"]",
+          "Articy Id": "0x0100004D00003A03-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "265",
+          "OutputId": "0x0100004D00003A0C"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 24,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"canal.samaran_vis_calc_white_check\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 674.6499633789062,
+          "y": 739.6499633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "!(Variable[\"canal.samaran_vis_calc_white_check\"])",
+          "Articy Id": "0x0100004D00003A03-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "265",
+          "OutputId": "0x0100004D00003A0C"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 25,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"canal.samaran_vis_calc_white_check\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 674.6499633789062,
+          "y": 739.6499633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "You: \"Why the Coupris 40?\"",
+          "Dialogue Text": "Why the Coupris 40?",
+          "Articy Id": "0x0100004D00003BCB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "265",
+          "OutputId": "0x0100004D00003BD7",
+          "InputId": "0x0100004D00003BC5"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 26,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 83,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3865.000244140625,
+          "y": 1295,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Visual Calculus: \"Still speeding, the vehicle made a...\"",
+          "Dialogue Text": "Still speeding, the vehicle made a loop and vanished into the fog along the coast.",
+          "Articy Id": "0x0100004D00003C44",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "OutputId": "0x0100004D00003C4B",
+          "InputId": "0x0100004D00003BA2"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 27,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 84,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"canal.samaran_vis_calc_bank\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3265,
+          "y": 1270,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "You: \"\"Yup -- *I* did this.\"\"",
+          "Dialogue Text": "\"Yup -- *I* did this.\"",
+          "Articy Id": "0x0100000600017357",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "265",
+          "OutputId": "0x010000060001735E",
+          "InputId": "0x0100004D00003A25"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 28,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"village.sunken_sadly_you_did\"]  and  IsKimHere() == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2975,
+          "y": 2084,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Clearly, yes. Dwelling on it longe...\"",
+          "Dialogue Text": "\"Clearly, yes. Dwelling on it longer only makes it worse.\"",
+          "Articy Id": "0x0100000600017365",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100000600017376",
+          "InputId": "0x0100000600017345"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 29,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "DamageVolition(1);\nXPPicoSetBool(\"XP.butter_sign_i_did_this\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3276.999755859375,
+          "y": 1800.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "Encyclopedia: \"Goat milk butter. The Samaran terra...\"",
+          "Dialogue Text": "Goat milk butter. The Samaran terrain makes it easier to raise goats than cows, and the local goat farmers produce high-quality meat and dairy staples that add variety to other nations' diets.",
+          "Articy Id": "0x0100004D000039EE",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "399",
+          "Conversant": "396",
+          "OutputId": "0x0100004D000039E9",
+          "InputId": "0x0100004D000039DB"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 30,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 76,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"canal.samaran_encyc_butter\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1537,
+          "y": -14,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "Conceptualization: \"Within the past 72 hours.\"",
+          "Dialogue Text": "Within the past 72 hours.",
+          "Articy Id": "0x0100004D00003C0F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "397",
+          "Conversant": "396",
+          "OutputId": "0x010000070000980E",
+          "InputId": "0x0100004D00003C09"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 31,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4782,
+          "y": 759,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "Visual Calculus: \"Clearly. The motor carriage in ques...\"",
+          "Dialogue Text": "Clearly. The motor carriage in question was a Coupris 40 -- mere minutes before it took a final voyage into the ocean.",
+          "Articy Id": "0x010000060001735E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "InputId": "0x0100000600017357",
+          "OutputId": "0x0100000600017376"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 32,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "DamageVolition(1);\nXPPicoSetBool(\"XP.butter_sign_i_did_this\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3283,
+          "y": 2080,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "Jump to: [viscalc hub]",
+          "Articy Id": "0x010000070000980E",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100004D00003C0F"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 33,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 79,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5053,
+          "y": 785,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "Perception (Taste): \"It's an acquired taste.\"",
+          "Dialogue Text": "It's an acquired taste.",
+          "Articy Id": "0x0100004D000039F8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "423",
+          "Conversant": "396",
+          "OutputId": "0x0100004D000039F4",
+          "InputId": "0x0100004D000039E9"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 34,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2162,
+          "y": -114,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Title": "Visual Calculus: \"There are two good candidates: the...\"",
+          "Dialogue Text": "There are two good candidates: the Coupris 40 and the Linnea G22.",
+          "Articy Id": "0x0100004D00003BBF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "OutputId": "0x0100004D00003BC5",
+          "InputId": "0x0100004D00003BA8"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 35,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"canal.samaran_vis_calc_vehicle\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3265,
+          "y": 1520,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "Visual Calculus: \"Very sturdy but light motor carriag...\"",
+          "Dialogue Text": "Very sturdy but light motor carriage. More likely than most to survive that jump.",
+          "Articy Id": "0x0100004D00003BDD",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "OutputId": "0x0100004D00003C63",
+          "InputId": "0x0100004D00003BD1"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 36,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 43,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4165,
+          "y": 1520,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "Visual Calculus: \"The black marks on the roof indicat...\"",
+          "Dialogue Text": "The black marks on the roof indicate that the vehicle *vaulted* from the crater to the roof of the shack.",
+          "Articy Id": "0x0100004D00003C15",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "InputId": "0x0100004D00003A31",
+          "OutputId": "0x0100004D00003C4B"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 37,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 84,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"canal.samaran_vis_calc_roofing\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3265,
+          "y": 245.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "Visual Calculus: \"Side slip marks indicate that the v...\"",
+          "Dialogue Text": "Side slip marks indicate that the vehicle was travelling up the crater at 35 km/h.",
+          "Articy Id": "0x0100004D00003C1D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "OutputId": "0x0100004D00003C4B",
+          "InputId": "0x0100004D00003A2B"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 38,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 84,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"canal.samaran_vis_calc_crater\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3265,
+          "y": -5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Title": "Jump to: [viscalc hub]",
+          "Articy Id": "0x010000070000980A",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100004D00004896"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 39,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 79,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4466,
+          "y": 1043,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Title": "Jump to: [butterhub]",
+          "Articy Id": "0x0100004D00003A1F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100004D00003A12"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 40,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1875.0001220703125,
+          "y": 1300,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "You: \"Why the Linnea G22?\"",
+          "Dialogue Text": "Why the Linnea G22?",
+          "Articy Id": "0x0100004D00003BD1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "265",
+          "OutputId": "0x0100004D00003BDD",
+          "InputId": "0x0100004D00003BC5"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 41,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3865.000244140625,
+          "y": 1520,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Title": "Visual Calculus: \"These match the tyre tracks you saw...\"",
+          "Dialogue Text": "These match the tyre tracks you saw earlier -- *your* tyre tracks.",
+          "Articy Id": "0x01000007000097FF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "OutputId": "0x0100004D00003A25",
+          "InputId": "0x01000007000097F8"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 42,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 79,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2150,
+          "y": 592,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Title": "Encyclopedia: \"The Linnea G22 is not a particularl...\"",
+          "Dialogue Text": "The Linnea G22 is not a particularly popular model due to its peculiar proportions, which the manufacturer's design team probably thought about for too long.",
+          "Articy Id": "0x0100004D00003C63",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "399",
+          "Conversant": "396",
+          "InputId": "0x0100004D00003BDD",
+          "OutputId": "0x0100004D00003C6C"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 43,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 56,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4465,
+          "y": 1520,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 44,
+        "fields": {
+          "Title": "Jump to: [viscalc hub]",
+          "Articy Id": "0x0100004D00003C04",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100002F000100C0"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 44,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 79,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4465,
+          "y": 1770.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 45,
+        "fields": {
+          "Title": "Variable[\"canal.samaran_vis_calc_white_check\"]",
+          "Articy Id": "0x0100004D00003A0C",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "InputId": "0x0100004D00003A03-FORK"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 45,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 46,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 45,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1261,
+          "y": 1111,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 46,
+        "fields": {
+          "Title": "Variable[\"canal.samaran_vis_calc_white_check\"]",
+          "Articy Id": "0x0100004D00003A0C",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "OutputId": "0x0100004D00003A18"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 46,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"canal.samaran_vis_calc_white_check\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 819.6499633789062,
+          "y": 722.1499633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 47,
+        "fields": {
+          "Title": "!(Variable[\"canal.samaran_vis_calc_white_check\"])",
+          "Articy Id": "0x0100004D00003A0C",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "OutputId": "0x0100004D00003A12"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 47,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 62,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"canal.samaran_vis_calc_white_check\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 819.6499633789062,
+          "y": 722.1499633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 48,
+        "fields": {
+          "Title": "You: \"Nothing more to see here. [Leave.]\"",
+          "Dialogue Text": "Nothing more to see here. [Leave.]",
+          "Articy Id": "0x0100004D00003BAE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "265",
+          "InputId": "0x0100004D000039CF",
+          "OutputId": "0x0100004D00003BB2"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 950.0000610351562,
+          "y": 1550,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 49,
+        "fields": {
+          "Title": "You: \"Blink. [Leave.]\"",
+          "Dialogue Text": "Blink. [Leave.]",
+          "Articy Id": "0x0100004D00003BEF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "265",
+          "OutputId": "0x0100005A00007E6B",
+          "InputId": "0x0100004D00003A25"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 49,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"canal.samaran_vis_cal_clicked\", true) ;\nHideVisCal(\"VisCal-SamaranButter\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2998,
+          "y": 2581,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 50,
+        "fields": {
+          "Title": "Visual Calculus: \"The vehicle soared through the air,...\"",
+          "Dialogue Text": "The vehicle soared through the air, hitting the billboard and upsetting the posts. Then it continued its flight, taking the billboard with it.",
+          "Articy Id": "0x0100004D00003C23",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "InputId": "0x0100004D00003A37",
+          "OutputId": "0x0100004D00003C4B"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 50,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 84,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"canal.samaran_vis_calc_posts\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3265,
+          "y": 745,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 51,
+        "fields": {
+          "Title": "Perception (Sight): \"A crumpled billboard reading \"SAMAR...\"",
+          "Dialogue Text": "A crumpled billboard reading \"SAMARAN BUTTER\" soaks in the canal. Two ugly lines mar the bright countenance of the blond boy depicted.",
+          "Articy Id": "0x0100004D000039C8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "424",
+          "Conversant": "396",
+          "InputId": "0x0100005A00001436",
+          "OutputId": "0x0100000600017589"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 51,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 61,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"canal.samaran_you_visited_the_butter_sign\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -373,
+          "y": 1173,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 52,
+        "fields": {
+          "Title": "vehiclehub",
+          "Articy Id": "0x0100004D00003BC5",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100004D00003BBF",
+          "OutputId": "0x0100004D00003BF7"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 52,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 52,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 52,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 80,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3565.000244140625,
+          "y": 1595,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 53,
+        "fields": {
+          "Title": "Perception (Sight): \"Whatever it is, the boy on the bill...\"",
+          "Dialogue Text": "Whatever it is, the boy on the billboard seems very happy about it.",
+          "Articy Id": "0x0100004D000039DB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "424",
+          "Conversant": "396",
+          "OutputId": "0x0100004D000039EE",
+          "InputId": "0x0100004D000039D5"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 53,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1237,
+          "y": 11,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 54,
+        "fields": {
+          "Title": "You: \"Look at the crater.\"",
+          "Dialogue Text": "Look at the crater.",
+          "Articy Id": "0x0100004D00003A2B",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "FocusCamera(SamaranViscal0);",
+          "Actor": "396",
+          "Conversant": "265",
+          "OutputId": "0x0100004D00003C1D",
+          "InputId": "0x0100004D00003A25"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 54,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2965,
+          "y": -5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 56,
+        "fields": {
+          "Title": "Jump to: [vehiclehub]",
+          "Articy Id": "0x0100004D00003C6C",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100004D00003C5D"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 56,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4865,
+          "y": 1395,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 57,
+        "fields": {
+          "Title": "You: \"\"Yup -- *I* did this.\"\"",
+          "Dialogue Text": "\"Yup -- *I* did this.\"",
+          "Articy Id": "0x0100000600017345",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "265",
+          "OutputId": "0x0100000600017365",
+          "InputId": "0x0100004D00003A25"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 57,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"village.sunken_sadly_you_did\"]  and  IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2976,
+          "y": 1800.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 58,
+        "fields": {
+          "Title": "Visual Calculus: \"These look like the same tyre track...\"",
+          "Dialogue Text": "These look like the same tyre tracks I saw earlier -- in front of the Whirling-in-Rags.",
+          "Articy Id": "0x0100002F00010082",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "OutputId": "0x0100004D00003A25",
+          "InputId": "0x01000007000097F8"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 58,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 79,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2151,
+          "y": 805,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 59,
+        "fields": {
+          "Title": "You: \"What is Samaran Butter?\"",
+          "Dialogue Text": "What is Samaran Butter?",
+          "Articy Id": "0x0100004D000039D5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "265",
+          "InputId": "0x0100004D000039CF",
+          "OutputId": "0x0100004D000039DB"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 59,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 53,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 937,
+          "y": 11,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 60,
+        "fields": {
+          "Title": "Visual Calculus: \"The sign broke the vehicle's fall i...\"",
+          "Dialogue Text": "The sign broke the vehicle's fall into the canal.",
+          "Articy Id": "0x0100004D00003C29",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "InputId": "0x0100004D00003A3D",
+          "OutputId": "0x0100000700009814"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 60,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 71,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"canal.samaran_vis_calc_sign\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3265,
+          "y": 1020.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 61,
+        "fields": {
+          "Title": "Interfacing: \"The sign billboard has fallen on th...\"",
+          "Dialogue Text": "The sign billboard has fallen on the water lock, keeping it open -- and thus out of order.",
+          "Articy Id": "0x0100000600017589",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"short_description\": \"Master machines. Pick locks and pockets.\",\n  \"long_description\": \"COOL FOR: MACHINISTS. TINKERERS. INSTRUMENT PLAYERS.\\n\\nInterfacing wants you to connect to machines: to use and improve them, because that makes you a better human organism. It enables you to understand interactions with machines – be that how to repair the motor of a Kineema motor carriage, how to analyze the way a suspect used a pen, or how to re-figure electrical circuits. It even lets you steal keys off a keyring without being noticed.\\n\\nAt high levels, Interfacing will isolate you from society – why bother with people when you can talk to machines? And why bother with things like money when you can just pocket that display sandwich? At low levels, however, you will have a crucial part of the world cut off from you. People use machines to commit crimes all the time – if you can’t understand how a crime was accomplished, how can you solve it?\",\n  \"color\": 5\n}",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "418",
+          "Conversant": "396",
+          "InputId": "0x0100004D000039C8",
+          "OutputId": "0x0100004D000039CF"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 61,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -59,
+          "y": 1178,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 62,
+        "fields": {
+          "Title": "Visual Calculus: \"Just some tasteless advertising at...\"",
+          "Dialogue Text": "Just some tasteless advertising at the bottom of a canal. No use rubbernecking now.",
+          "Articy Id": "0x0100004D00003A12",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "InputId": "0x0100004D00003A0C",
+          "OutputId": "0x0100004D00003A1F"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 62,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1575,
+          "y": 1275,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 63,
+        "fields": {
+          "Title": "You: \"How recently?\"",
+          "Dialogue Text": "How recently?",
+          "Articy Id": "0x0100004D00003C09",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "265",
+          "OutputId": "0x0100004D00003C0F",
+          "InputId": "0x0100004D00004896"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 63,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4482,
+          "y": 759,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 64,
+        "fields": {
+          "Title": "Visual Calculus: \"The panel served as a take-off ramp...\"",
+          "Dialogue Text": "The panel served as a take-off ramp.",
+          "Articy Id": "0x0100004D00003C38",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "OutputId": "0x0100004D00003C4B",
+          "InputId": "0x0100004D00003C32"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 64,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 84,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"canal.samaran_vis_calc_panel\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3265,
+          "y": 495.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 65,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"The lieutenant looks on, waiting fo...\"",
+          "Dialogue Text": "The lieutenant looks on, waiting for you to wrap up your analysis.",
+          "Articy Id": "0x0100005A00007E65",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x010000060001734E",
+          "OutputId": "0x0100004D00003BB2"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"kimswitch.samaran_buttern_vis_calc_question\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3629,
+          "y": 2429,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 66,
+        "fields": {
+          "Title": "Encyclopedia: \"The Coupris 40 is a very popular mo...\"",
+          "Dialogue Text": "The Coupris 40 is a very popular model with bank clerks, topping-pie delivery drivers, secondary school teachers, cops, strippers dressed as cops, undressed strippers...",
+          "Articy Id": "0x0100004D00003C5D",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "399",
+          "Conversant": "396",
+          "OutputId": "0x0100004D00003C6C",
+          "InputId": "0x0100004D00003BD7"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 66,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 56,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4465,
+          "y": 1270,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 67,
+        "fields": {
+          "Title": "Perception (Sight): \"The crumpled SAMARAN BUTTER billboa...\"",
+          "Dialogue Text": "The crumpled SAMARAN BUTTER billboard still soaks in the canal, marked by tyre tracks.",
+          "Articy Id": "0x0100005A0000143D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "424",
+          "Conversant": "396",
+          "InputId": "0x0100005A00001436",
+          "OutputId": "0x0100004D00003A25"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 67,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 79,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "ShowVisCal(\"VisCal-SamaranButter\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -71,
+          "y": 743,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 68,
+        "fields": {
+          "Title": "Variable[\"village.sunken_sadly_you_did\"]",
+          "Articy Id": "0x01000007000097F8",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "InputId": "0x0100002F0001007B"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 68,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 69,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 68,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 70,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1839,
+          "y": 757,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 69,
+        "fields": {
+          "Title": "Variable[\"village.sunken_sadly_you_did\"]",
+          "Articy Id": "0x01000007000097F8",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "OutputId": "0x01000007000097FF"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 69,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 42,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"village.sunken_sadly_you_did\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1195.3499755859375,
+          "y": 492.04998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 70,
+        "fields": {
+          "Title": "!(Variable[\"village.sunken_sadly_you_did\"])",
+          "Articy Id": "0x01000007000097F8",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "OutputId": "0x0100002F00010082"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 70,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 58,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"village.sunken_sadly_you_did\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1195.3499755859375,
+          "y": 492.04998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 71,
+        "fields": {
+          "Title": "Variable[\"village.sunken_sadly_you_did\"]",
+          "Articy Id": "0x0100000700009814",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "InputId": "0x0100004D00003C29"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 71,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 72,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 71,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 73,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3548,
+          "y": 1064,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 72,
+        "fields": {
+          "Title": "Variable[\"village.sunken_sadly_you_did\"]",
+          "Articy Id": "0x0100000700009814",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "OutputId": "0x010000070000980A"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 72,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"village.sunken_sadly_you_did\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2306.199951171875,
+          "y": 691.5999755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 73,
+        "fields": {
+          "Title": "!(Variable[\"village.sunken_sadly_you_did\"])",
+          "Articy Id": "0x0100000700009814",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "OutputId": "0x0100004D000038D7"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 73,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"village.sunken_sadly_you_did\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2306.199951171875,
+          "y": 691.5999755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 74,
+        "fields": {
+          "Title": "You: \"Look at the opposite bank.\"",
+          "Dialogue Text": "Look at the opposite bank.",
+          "Articy Id": "0x0100004D00003BA2",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "FocusCamera(SamaranViscal5);",
+          "Actor": "396",
+          "Conversant": "265",
+          "OutputId": "0x0100004D00003C44",
+          "InputId": "0x0100004D00003A25"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 74,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2965,
+          "y": 1270,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 75,
+        "fields": {
+          "Title": "Visual Calculus: \"Now? You'd have to follow the track...\"",
+          "Dialogue Text": "Now? You'd have to follow the tracks to be sure.",
+          "Articy Id": "0x0100002F000100C0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "OutputId": "0x0100004D00003C04",
+          "InputId": "0x0100004D00003BF7"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 75,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 44,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4165,
+          "y": 1745.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 76,
+        "fields": {
+          "Title": "Variable[\"canal.samaran_encyc_butter\"]",
+          "Articy Id": "0x0100004D000039E9",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "InputId": "0x0100004D000039EE"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 76,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 77,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 76,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 78,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1862,
+          "y": 61,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 77,
+        "fields": {
+          "Title": "Variable[\"canal.samaran_encyc_butter\"]",
+          "Articy Id": "0x0100004D000039E9",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "OutputId": "0x0100004D000039F8"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 77,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"canal.samaran_encyc_butter\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1210.2999267578125,
+          "y": 39.64999771118164,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 78,
+        "fields": {
+          "Title": "!(Variable[\"canal.samaran_encyc_butter\"])",
+          "Articy Id": "0x0100004D000039E9",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "OutputId": "0x0100004D000039F4"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 78,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"canal.samaran_encyc_butter\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1210.2999267578125,
+          "y": 39.64999771118164,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 79,
+        "fields": {
+          "Title": "viscalc hub",
+          "Articy Id": "0x0100004D00003A25",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100005A0000143D",
+          "OutputId": "0x0100004D00003BEF"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 79,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 54,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 79,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 79,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 81,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 79,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 79,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 79,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 74,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 79,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 82,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 79,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 57,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 79,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 79,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 49,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2475,
+          "y": 1125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 80,
+        "fields": {
+          "Title": "You: \"What now?\"",
+          "Dialogue Text": "What now?",
+          "Articy Id": "0x0100004D00003BF7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "265",
+          "InputId": "0x0100004D00003BC5",
+          "OutputId": "0x0100002F000100C0"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 80,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 75,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3865.000244140625,
+          "y": 1745.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 81,
+        "fields": {
+          "Title": "You: \"Look at the sloping metal roof pane...\"",
+          "Dialogue Text": "Look at the sloping metal roof panel.",
+          "Articy Id": "0x0100004D00003C32",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "FocusCamera(SamaranViscal2);",
+          "Actor": "396",
+          "Conversant": "265",
+          "InputId": "0x0100004D00003A25",
+          "OutputId": "0x0100004D00003C38"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 81,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 64,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2965,
+          "y": 495.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 82,
+        "fields": {
+          "Title": "You: \"What was the model of this phantom...\"",
+          "Dialogue Text": "What was the model of this phantom vehicle?",
+          "Articy Id": "0x0100004D00003BA8",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "ResetCamera();",
+          "Actor": "396",
+          "Conversant": "265",
+          "InputId": "0x0100004D00003A25",
+          "OutputId": "0x0100004D00003BBF"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 82,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"canal.samaran_vis_calc_crater\"] == true  and  Variable[\"canal.samaran_vis_calc_roofing\"] == true  and  Variable[\"canal.samaran_vis_calc_panel\"] == true  and  Variable[\"canal.samaran_vis_calc_posts\"] == true  and  Variable[\"canal.samaran_vis_calc_sign\"] == true  and  Variable[\"canal.samaran_vis_calc_bank\"] == true  and  Variable[\"village.sunken_encyclo_coupris_forty\"] == false  and  Variable[\"village.sunken_model_coupris_40_established\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2965,
+          "y": 1520,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 83,
+        "fields": {
+          "Title": "Visual Calculus: \"It's about the right size, and the...\"",
+          "Dialogue Text": "It's about the right size, and the tyre marks look like they came from the skinny tyres frequently found on that motor carriage.",
+          "Articy Id": "0x0100004D00003BD7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "396",
+          "InputId": "0x0100004D00003BCB",
+          "OutputId": "0x0100004D00003C5D"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 83,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4165,
+          "y": 1270,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 84,
+        "fields": {
+          "Title": "Jump to: [viscalc hub]",
+          "Articy Id": "0x0100004D00003C4B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100004D00003C38"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 84,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 79,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3638,
+          "y": 534,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 85,
+        "fields": {
+          "Title": "Variable[\"canal.samaran_vis_calc_concept_recent\"]",
+          "Articy Id": "0x0100004D00004896",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "InputId": "0x0100004D000038D7"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 85,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 86,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 826,
+            "originDialogueID": 85,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 87,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4157,
+          "y": 934,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 86,
+        "fields": {
+          "Title": "Variable[\"canal.samaran_vis_calc_concept_recent\"]",
+          "Articy Id": "0x0100004D00004896",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "OutputId": "0x0100004D00003C09"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 86,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 63,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"canal.samaran_vis_calc_concept_recent\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2702.0498046875,
+          "y": 607.0999755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 87,
+        "fields": {
+          "Title": "!(Variable[\"canal.samaran_vis_calc_concept_recent\"])",
+          "Articy Id": "0x0100004D00004896",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "265",
+          "Conversant": "396",
+          "OutputId": "0x010000070000980A"
+        },
+        "conversationID": 826,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 826,
+            "originDialogueID": 87,
+            "destinationConversationID": 826,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"canal.samaran_vis_calc_concept_recent\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2702.0498046875,
+          "y": 607.0999755859375,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

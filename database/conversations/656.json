@@ -1,0 +1,1506 @@
+[
+  {
+    "id": 656,
+    "fields": {
+      "Title": "WHIRLING ROOF ORB / handeye catch",
+      "Articy Id": "0x010000450000E73F",
+      "AlternateOrbText": "",
+      "CheckType": "23",
+      "Condition": "Variable[\"whirling.sense_may_bells_clicked\"]  and  Variable[\"whirling.orb_caught_flower_done\"] == false",
+      "Description": "hand eye coordination bubble to catch the wildflowers",
+      "Instruction": "SetVariableValue(\"whirling.sense_may_bells_he_catch_activated\", true) --[[ Variable[ ]]",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "1",
+      "Actor": "396",
+      "Conversant": "415"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000450000E73F",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 0,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x010000450000E740",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x010000450000EC06"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 1,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"The lieutenant gives you an acknowl...\"",
+          "Dialogue Text": "The lieutenant gives you an acknowledging little nod.",
+          "Articy Id": "0x010000450000EC50",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x010000450000ECB7",
+          "InputId": "0x010000450000EC3B"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 2,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2730,
+          "y": 220.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "You: \"Move your hand, fast!\"",
+          "Dialogue Text": "Move your hand, fast!",
+          "Articy Id": "0x010000040001574D",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x0000000000000000",
+          "FlagName": "whirling.klaasje_flower_red_check_grab",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000A0000002A",
+          "DifficultyRed": "2",
+          "modifier1": "-2",
+          "variable1": "CheckEquipped(\"neck_bowtie\")  and  CheckEquipped(\"shirt_interisolar\")  and  (CheckEquipped(\"pants_interisolar\")  or  CheckEquipped(\"pants_rcm\"))",
+          "tooltip1": "Dresscode: Man of charms.",
+          "modifier2": "",
+          "variable2": "",
+          "tooltip2": "",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "415",
+          "OutputId": "0x010000040001574D-FORK",
+          "InputId": "0x010000450000EC06"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 3,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 700,
+          "y": 211.99998474121094,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Variable[\"whirling.klaasje_flower_red_check_grab\"]",
+          "Articy Id": "0x010000040001574D-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "415",
+          "InputId": "0x010000040001574D"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 4,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 656,
+            "originDialogueID": 4,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 776.9230346679688,
+          "y": 288.9230651855469,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Variable[\"whirling.klaasje_flower_red_check_grab\"]",
+          "Articy Id": "0x010000040001574D-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "415",
+          "OutputId": "0x0100000400015755"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 5,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"whirling.klaasje_flower_red_check_grab\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 504.9999694824219,
+          "y": 187.79998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "!(Variable[\"whirling.klaasje_flower_red_check_grab\"])",
+          "Articy Id": "0x010000040001574D-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "415",
+          "OutputId": "0x0100000400015755"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 6,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"whirling.klaasje_flower_red_check_grab\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 504.9999694824219,
+          "y": 187.79998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "You: \"[Discard chance.]\"",
+          "Dialogue Text": "[Discard chance.]",
+          "Articy Id": "0x010000450000EC13",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "415",
+          "OutputId": "0x010000450000EC17",
+          "InputId": "0x010000450000EC06"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.orb_caught_flower_done\", true) ;\nSetVariableValue(\"whirling.orb_maybells_wind_picked_it\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 708,
+          "y": 687,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Hand/Eye Coordination: \"You catch a single white flower bet...\"",
+          "Dialogue Text": "You catch a single white flower between your fingers. The rest fly off into the wind. It's a may bell!",
+          "Articy Id": "0x010000450000EC1B",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "AudioPlay(whirling_roof_orb/handeye_catch/catching-something-01,1)@1;LuaRun(GainItem(\"dried_may_bells\"))@1;PostFX(camtinkle, true)@1;",
+          "Actor": "415",
+          "Conversant": "396",
+          "OutputId": "0x0100006B0000ACBD",
+          "InputId": "0x0100000400015755"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 8,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.orb_caught_flower_done\", true) --[[ Variable[ ]];",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1519,
+          "y": 52,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Hand/Eye Coordination: \"Your 9mm semiautomatic finger pisto...\"",
+          "Dialogue Text": "Your 9mm semiautomatic finger pistols produce a satisfying snap. (Strange for such a low calibre finger-gun to sound so chunky.) The flower in your hand is impressed. So is Kim.",
+          "Articy Id": "0x010000450000ECE2",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "TravelTo(Tequila Sunset,FingerGunPos)->Message(fire);PlayAnimation(Tequila Sunset, fgun)@Message(fire); PlayAnimation(Tequila Sunset, end)@Message(fire);FocusCamera(TequFireReturnCam);Release();",
+          "Actor": "415",
+          "Conversant": "396",
+          "OutputId": "0x010000450000ECF3",
+          "InputId": "0x010000450000ECC0"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 9,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3620.000244140625,
+          "y": -413.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "IsTHCPresent(\"finger_pistols\")",
+          "Articy Id": "0x010000450000ECB7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "415",
+          "Conversant": "396",
+          "InputId": "0x010000450000EC50"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 10,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 656,
+            "originDialogueID": 10,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3030,
+          "y": 270,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "IsTHCPresent(\"finger_pistols\")",
+          "Articy Id": "0x010000450000ECB7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "415",
+          "Conversant": "396",
+          "OutputId": "0x010000450000ECCE"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 11,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 656,
+            "originDialogueID": 11,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 656,
+            "originDialogueID": 11,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsTHCPresent(\"finger_pistols\")",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1969.4998779296875,
+          "y": 175.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "!(IsTHCPresent(\"finger_pistols\"))",
+          "Articy Id": "0x010000450000ECB7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "415",
+          "Conversant": "396"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "(IsTHCPresent(\"finger_pistols\")) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1969.4998779296875,
+          "y": 175.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Variable[\"whirling.klaasje_flower_red_check_grab\"] == true",
+          "Articy Id": "0x0100000400015755",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "415",
+          "Conversant": "396",
+          "InputId": "0x010000040001574D-FORK"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 13,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 656,
+            "originDialogueID": 13,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1069,
+          "y": 264,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Variable[\"whirling.klaasje_flower_red_check_grab\"] == true",
+          "Articy Id": "0x0100000400015755",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "415",
+          "Conversant": "396",
+          "OutputId": "0x010000450000EC1B"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 14,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"whirling.klaasje_flower_red_check_grab\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 694.8499755859375,
+          "y": 171.59999084472656,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "!(Variable[\"whirling.klaasje_flower_red_check_grab\"] == true)",
+          "Articy Id": "0x0100000400015755",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "415",
+          "Conversant": "396",
+          "OutputId": "0x0100000400015747"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 15,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"whirling.klaasje_flower_red_check_grab\"] == true) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 694.8499755859375,
+          "y": 171.59999084472656,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x010000450000EC3B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "415",
+          "Conversant": "396",
+          "InputId": "0x0100006B0000ACBD"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 16,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 656,
+            "originDialogueID": 16,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2430,
+          "y": 420.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x010000450000EC3B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "415",
+          "Conversant": "396",
+          "OutputId": "0x010000450000EC50"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 17,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1579.5,
+          "y": 273,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x010000450000EC3B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "415",
+          "Conversant": "396"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1579.5,
+          "y": 273,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "Hand/Eye Coordination: \"Probably for the best -- your 9mm s...\"",
+          "Dialogue Text": "Probably for the best -- your 9mm semiautomatic finger pistols are not a toy to be waved around.",
+          "Articy Id": "0x010000450000ECD5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "415",
+          "Conversant": "396",
+          "OutputId": "0x010000450000EC17",
+          "InputId": "0x010000450000ECCE"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3624,
+          "y": 84,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Hand/Eye Coordination: \"Your 9mm semiautomatic finger pisto...\"",
+          "Dialogue Text": "Your 9mm semiautomatic finger pistols make two satisfying snaps. (Strange for such a small calibre of finger pistol to sound so chunky.) The flower in your hand is impressed. So is she.",
+          "Articy Id": "0x010000450000ECDC",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "TravelTo(Tequila Sunset,FingerGunPos)->Message(fire);PlayAnimation(Tequila Sunset, fgun)@Message(fire); PlayAnimation(Tequila Sunset, end)@Message(fire);FocusCamera(TequFireReturnCam);Release();",
+          "Actor": "415",
+          "Conversant": "396",
+          "OutputId": "0x010000450000ECED",
+          "InputId": "0x010000450000ECC6"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 20,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3621.999755859375,
+          "y": -168,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "You: \"Don't snap finger pistols at all.\"",
+          "Dialogue Text": "Don't snap finger pistols at all.",
+          "Articy Id": "0x010000450000ECCE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "415",
+          "InputId": "0x010000450000ECB7",
+          "OutputId": "0x010000450000ECD5"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 21,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3330.000244140625,
+          "y": 95,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Klaasje (Miss Oranje Disco Dancer): \"That's not actually true -- she's l...\"",
+          "Dialogue Text": "That's not actually true -- she's looking toward the yard and doesn't notice them. Which is probably for the best, because didn't someone mention she's a rape victim?",
+          "Articy Id": "0x010000450000ECED",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "382",
+          "Conversant": "396",
+          "InputId": "0x010000450000ECDC",
+          "OutputId": "0x010000450000EC17"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3931,
+          "y": -189,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"That's not entirely true, the lieut...\"",
+          "Dialogue Text": "That's not entirely true, the lieutenant is looking at the door to the east and mostly misses them.",
+          "Articy Id": "0x010000450000ECF3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x010000450000ECE2",
+          "OutputId": "0x010000450000EC17"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3938,
+          "y": -406,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "Hand/Eye Coordination: \"...the wind brushes them off the ro...\"",
+          "Dialogue Text": "...the wind brushes them off the roof. They're gone.",
+          "Articy Id": "0x0100000400015747",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "415",
+          "Conversant": "396",
+          "InputId": "0x0100000400015755",
+          "OutputId": "0x010000450000EC17"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.orb_caught_flower_done\", true) ;\nSetVariableValue(\"whirling.orb_maybells_wind_picked_it\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1614,
+          "y": 716,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "You: \"Snap your finger pistols at the you...\"",
+          "Dialogue Text": "Snap your finger pistols at the young woman.",
+          "Articy Id": "0x010000450000ECC6",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold();",
+          "Actor": "396",
+          "Conversant": "415",
+          "InputId": "0x010000450000ECB7",
+          "OutputId": "0x010000450000ECDC"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 26,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"TASK.arrest_klaasje_done\"] == false  and  Variable[\"TASK.report_to_the_tribunal_done\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3330.000244140625,
+          "y": -155,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Hand/Eye Coordination: \"Just as you look at the flowers, a...\"",
+          "Dialogue Text": "Just as you look at the flowers, a gust of wind raises them from the roof, picking them up in the air...",
+          "Articy Id": "0x010000450000EC06",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "TravelTo(Kim Kitsuragi,KimGunsPos,0,true);",
+          "Actor": "415",
+          "Conversant": "396",
+          "InputId": "0x010000450000E740",
+          "OutputId": "0x010000450000EC13"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 27,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 656,
+            "originDialogueID": 27,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 286,
+          "y": 415,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "Klaasje (Miss Oranje Disco Dancer): \"The young woman looks at the may be...\"",
+          "Dialogue Text": "The young woman looks at the may bell in your hand -- just a glance -- then takes a drag of her cigarette.",
+          "Articy Id": "0x010000450000EC41",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "382",
+          "Conversant": "396",
+          "OutputId": "0x010000450000EC3B",
+          "InputId": "0x0100006B0000ACBD"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 28,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2130,
+          "y": 470.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "You: \"Snap your finger pistols at him.\"",
+          "Dialogue Text": "Snap your finger pistols at him.",
+          "Articy Id": "0x010000450000ECC0",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold();",
+          "Actor": "396",
+          "Conversant": "415",
+          "InputId": "0x010000450000ECB7",
+          "OutputId": "0x010000450000ECE2"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 29,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3330.000244140625,
+          "y": -380,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "Variable[\"TASK.arrest_klaasje_done\"]  or  Variable[\"TASK.report_to_the_tribunal_done\"]",
+          "Articy Id": "0x0100006B0000ACBD",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "415",
+          "Conversant": "396",
+          "InputId": "0x010000450000EC1B"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 30,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 656,
+            "originDialogueID": 30,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1830.0001220703125,
+          "y": 420.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "Variable[\"TASK.arrest_klaasje_done\"]  or  Variable[\"TASK.report_to_the_tribunal_done\"]",
+          "Articy Id": "0x0100006B0000ACBD",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "415",
+          "Conversant": "396",
+          "OutputId": "0x010000450000EC3B"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 31,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"TASK.arrest_klaasje_done\"]  or  Variable[\"TASK.report_to_the_tribunal_done\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1189.5,
+          "y": 273,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "!(Variable[\"TASK.arrest_klaasje_done\"]  or  Variable[\"TASK.report_to_the_tribunal_done\"])",
+          "Articy Id": "0x0100006B0000ACBD",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "415",
+          "Conversant": "396",
+          "OutputId": "0x010000450000EC41"
+        },
+        "conversationID": 656,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 656,
+            "originDialogueID": 32,
+            "destinationConversationID": 656,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"TASK.arrest_klaasje_done\"]  or  Variable[\"TASK.report_to_the_tribunal_done\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1189.5,
+          "y": 273,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

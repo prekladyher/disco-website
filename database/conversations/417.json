@@ -1,0 +1,585 @@
+[
+  {
+    "id": 417,
+    "fields": {
+      "Title": "WHIRLING F1 ORB / royalism theme",
+      "Articy Id": "0x0100002700000F10",
+      "AlternateOrbText": "",
+      "CheckType": "2",
+      "Condition": "Variable[\"whirling.sense_pinball_clicked\"]  and  Variable[\"whirling.sense_trivia_royalism_done\"] == false",
+      "Description": "royalism themed afterthought",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Around the pinball machine in the corner of Whirling downstairs\n",
+      "Difficulty": "3",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100002700000F10",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 417,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 417,
+            "originDialogueID": 0,
+            "destinationConversationID": 417,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100002700000F13",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100002700000F1B"
+        },
+        "conversationID": 417,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 417,
+            "originDialogueID": 1,
+            "destinationConversationID": 417,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "You: \"[Discard thought.]\"",
+          "Dialogue Text": "[Discard thought.]",
+          "Articy Id": "0x0100002700000F28",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100002700000F2C",
+          "InputId": "0x0100002700000F1B"
+        },
+        "conversationID": 417,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.sense_trivia_royalism_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 750,
+          "y": 525,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Encyclopedia: \"Clinging to a picture-book version...\"",
+          "Dialogue Text": "Clinging to a picture-book version of the past century, waiting for the King to come back and cast out all the profiteers and homo-sexuals. Basically, imagine a yellow plastic crown with a liquor brand emblazoned on it.",
+          "Articy Id": "0x0100002700000F30",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "399",
+          "Conversant": "0",
+          "OutputId": "0x0100002700000F43",
+          "InputId": "0x0100002700000F22"
+        },
+        "conversationID": 417,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 417,
+            "originDialogueID": 3,
+            "destinationConversationID": 417,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 417,
+            "originDialogueID": 3,
+            "destinationConversationID": 417,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 417,
+            "originDialogueID": 3,
+            "destinationConversationID": 417,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1050,
+          "y": 250.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "You: \"I'd rather know more about the worl...\"",
+          "Dialogue Text": "I'd rather know more about the world of today.",
+          "Articy Id": "0x0100002700000F43",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100002700000F55",
+          "OutputId": "0x0100002700000F5D"
+        },
+        "conversationID": 417,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 417,
+            "originDialogueID": 4,
+            "destinationConversationID": 417,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1350,
+          "y": 525,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "You: \"What are its hallmarks?\"",
+          "Dialogue Text": "What are its hallmarks?",
+          "Articy Id": "0x0100002700000F22",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100002700000F30",
+          "InputId": "0x0100002700000F1B"
+        },
+        "conversationID": 417,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 417,
+            "originDialogueID": 6,
+            "destinationConversationID": 417,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 750,
+          "y": 275,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Encyclopedia: \"The theme on that pinball machine i...\"",
+          "Dialogue Text": "The theme on that pinball machine is a standard *royalist* theme -- used on everything from pinball cabinets to full-flavour cigarettes.",
+          "Articy Id": "0x0100002700000F1B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "399",
+          "Conversant": "0",
+          "InputId": "0x0100002700000F13",
+          "OutputId": "0x0100002700000F28"
+        },
+        "conversationID": 417,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 417,
+            "originDialogueID": 7,
+            "destinationConversationID": 417,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 417,
+            "originDialogueID": 7,
+            "destinationConversationID": 417,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 450.0000305175781,
+          "y": 376,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "You: \"The idea of a king and a century go...\"",
+          "Dialogue Text": "The idea of a king and a century gone is pretty fascinating.",
+          "Articy Id": "0x0100002700000F3D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100002700000F55",
+          "OutputId": "0x0100002700000F4E"
+        },
+        "conversationID": 417,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 417,
+            "originDialogueID": 8,
+            "destinationConversationID": 417,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "ReputationGrows(\"revacholian_nationhood\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1350,
+          "y": 275,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "You: \"Wait! Where do I get such a crown?\"",
+          "Dialogue Text": "Wait! Where do I get such a crown?",
+          "Articy Id": "0x0100002700000F37",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100002700000F30",
+          "OutputId": "0x0100002700000F55"
+        },
+        "conversationID": 417,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 417,
+            "originDialogueID": 9,
+            "destinationConversationID": 417,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1350,
+          "y": 25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Encyclopedia: \"The sentiment is called *antecenten...\"",
+          "Dialogue Text": "The sentiment is called *antecentennial nostalgia* -- pining for a time before the turn of the century. It's common even now, after 50 years.",
+          "Articy Id": "0x0100002700000F4E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "399",
+          "Conversant": "0",
+          "InputId": "0x0100002700000F3D",
+          "OutputId": "0x0100002700000F2C"
+        },
+        "conversationID": 417,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.sense_trivia_royalism_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1650,
+          "y": 250.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Encyclopedia: \"It comes free with a six-pack of Ve...\"",
+          "Dialogue Text": "It comes free with a six-pack of Vermillon 'Roi d'Or.' The words 'ROI D'OR' are stamped into the crown's plastic.",
+          "Articy Id": "0x0100002700000F55",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "399",
+          "Conversant": "0",
+          "InputId": "0x0100002700000F37",
+          "OutputId": "0x0100002700000F43"
+        },
+        "conversationID": 417,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 417,
+            "originDialogueID": 11,
+            "destinationConversationID": 417,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 417,
+            "originDialogueID": 11,
+            "destinationConversationID": 417,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1650,
+          "y": 10,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "Encyclopedia: \"The contemporary period stands stil...\"",
+          "Dialogue Text": "The contemporary period stands still. The fated Carousel of Progress that doomed the royalists is itself winding down. Our time is decelerating -- into what, no one knows.",
+          "Articy Id": "0x0100002700000F5D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "399",
+          "Conversant": "0",
+          "InputId": "0x0100002700000F43",
+          "OutputId": "0x0100002700000F2C"
+        },
+        "conversationID": 417,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.sense_trivia_royalism_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1650,
+          "y": 500.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

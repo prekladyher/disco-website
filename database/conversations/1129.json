@@ -1,0 +1,256 @@
+[
+  {
+    "id": 1129,
+    "fields": {
+      "Title": "INITIATION / cannot pay game over",
+      "Articy Id": "0x0100006B00003BE8",
+      "AlternateOrbText": "",
+      "CheckType": "7",
+      "Condition": "Variable[\"character.orb_cannot_pay_trigger\"] == true  and  Variable[\"whirling.orb_nopay_done\"] == false",
+      "Description": "orbital that pops up if you, the player, try to BREAK the system by spending *all* of the money you can get *anywhere* in Martinaise so you cannot pay Garte for the room at all. oh, believe me, we will take this into account and you will get a game over.",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100006B00003BE8",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1129,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1129,
+            "originDialogueID": 0,
+            "destinationConversationID": 1129,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100006B00003BEB",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100006B00003BF1"
+        },
+        "conversationID": 1129,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1129,
+            "originDialogueID": 1,
+            "destinationConversationID": 1129,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "You: \"What is it?\"",
+          "Dialogue Text": "What is it?",
+          "Articy Id": "0x0100006B00003BF7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100006B00003BFC",
+          "InputId": "0x0100006B00003BF1"
+        },
+        "conversationID": 1129,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1129,
+            "originDialogueID": 2,
+            "destinationConversationID": 1129,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 925.0000610351562,
+          "y": 375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Inland Empire: \"Go... to the trash container...\"",
+          "Dialogue Text": "Go... to the trash container...",
+          "Articy Id": "0x0100006B00003BFC",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "404",
+          "Conversant": "0",
+          "InputId": "0x0100006B00003BF7",
+          "OutputId": "0x0100006B00003BFE"
+        },
+        "conversationID": 1129,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.orb_nopay_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1225,
+          "y": 375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Inland Empire: \"You did it. You fucked up now. No m...\"",
+          "Dialogue Text": "You did it. You fucked up now. No money, no way to pay Garte. There's only one option left...",
+          "Articy Id": "0x0100006B00003BF1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "404",
+          "Conversant": "0",
+          "InputId": "0x0100006B00003BEB",
+          "OutputId": "0x0100006B00003BF7"
+        },
+        "conversationID": 1129,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1129,
+            "originDialogueID": 4,
+            "destinationConversationID": 1129,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 625,
+          "y": 375,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

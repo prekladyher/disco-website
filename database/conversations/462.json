@@ -1,0 +1,4233 @@
+[
+  {
+    "id": 462,
+    "fields": {
+      "Title": "DOOMED / BREAKER BOX",
+      "Articy Id": "0x0100002B00083391",
+      "OnUse": "",
+      "OverrideDialogueCondition": "",
+      "AlternateOrbText": "",
+      "CheckType": "15",
+      "Condition": "",
+      "Description": "Doomed cellar, breaker box. DONE. \n\nGet task finished for locate a fridge if you need to plug the fridge back in.",
+      "Instruction": "",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "232",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100002B00083391",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 0,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100002B00083394",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x01000057000237B9"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 1,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Jump to: [breaker hub]",
+          "Articy Id": "0x0100005700003ACE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100005700003AC3"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 2,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4541,
+          "y": 1735.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x010000580000ABBB",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "InputId": "0x010000580000ABC9"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 3,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 3,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2531,
+          "y": 685,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x010000580000ABBB",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x010000580000ABC1"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 4,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1645.14990234375,
+          "y": 445.2499694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x010000580000ABBB",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x0100005700003AD2"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 5,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1645.14990234375,
+          "y": 445.2499694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Variable[\"doomed.breakerbox_black_wire_plugged_out\"]",
+          "Articy Id": "0x01000057000237B9",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "InputId": "0x0100002B00083394"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 6,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 6,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -852.9999389648438,
+          "y": -423,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Variable[\"doomed.breakerbox_black_wire_plugged_out\"]",
+          "Articy Id": "0x01000057000237B9",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x01000057000237C3"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 7,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 88,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.breakerbox_black_wire_plugged_out\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -554.449951171875,
+          "y": -274.9499816894531,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "!(Variable[\"doomed.breakerbox_black_wire_plugged_out\"])",
+          "Articy Id": "0x01000057000237B9",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x01000057000237BE"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 8,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"doomed.breakerbox_black_wire_plugged_out\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -554.449951171875,
+          "y": -274.9499816894531,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Great. The owners of this building...\"",
+          "Dialogue Text": "\"Great. The owners of this building will just have to keep paying for the electricity sucked up by this monstrosity a little longer. Let's return to the fridge.\"",
+          "Articy Id": "0x01000005000022A1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "232",
+          "OutputId": "0x0100005700003AD2",
+          "InputId": "0x010000050000229B"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 9,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2783,
+          "y": 273,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "IsTaskActive(\"TASK.help_revachol_ice_city_cut_losses\")--[[ Variable[ ]]",
+          "Articy Id": "0x010000570000AEFE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "InputId": "0x01000005000022AA"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 10,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 10,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1865.0001220703125,
+          "y": 16,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "IsTaskActive(\"TASK.help_revachol_ice_city_cut_losses\")--[[ Variable[ ]]",
+          "Articy Id": "0x010000570000AEFE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x0100002B00085AF9"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 11,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 84,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsTaskActive(\"TASK.help_revachol_ice_city_cut_losses\")--[[ Variable[ ]]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1212.25,
+          "y": 10.399999618530273,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "!(IsTaskActive(\"TASK.help_revachol_ice_city_cut_losses\")--[[ Variable[ ]])",
+          "Articy Id": "0x010000570000AEFE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x010000570002379E"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 12,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 83,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsTaskActive(\"TASK.help_revachol_ice_city_cut_losses\")--[[ Variable[ ]]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1212.25,
+          "y": 10.399999618530273,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Half Light: \"Rip the red one out! Look how giant...\"",
+          "Dialogue Text": "Rip the red one out! Look how giant and red and inviting it is...",
+          "Articy Id": "0x0100002B00085B0B",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "414",
+          "Conversant": "232",
+          "OutputId": "0x0100005700003AAF",
+          "InputId": "0x0100002B000833BF"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 14,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 61,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 438.9999694824219,
+          "y": 668,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "Breaker Box: \"Two cables are plugged into the bre...\"",
+          "Dialogue Text": "Two cables are plugged into the breaker box. The red one leads off into the darkness, while the black one seems to be feeding a buzzing little fridge-like thing in the corner.",
+          "Articy Id": "0x01000057000001B7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "232",
+          "Conversant": "0",
+          "OutputId": "0x0100002B00085B0B",
+          "InputId": "0x01000057000001CF"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 15,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 61,
+          "y": 867.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "Variable[\"doomed.icebear_main_hub_reached\"]",
+          "Articy Id": "0x01000057000001BD",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "InputId": "0x01000057000237BE"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 16,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 16,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -584,
+          "y": 508,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "Variable[\"doomed.icebear_main_hub_reached\"]",
+          "Articy Id": "0x01000057000001BD",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x01000057000001C9"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 17,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.icebear_main_hub_reached\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -379.5999755859375,
+          "y": 330.1999816894531,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "!(Variable[\"doomed.icebear_main_hub_reached\"])",
+          "Articy Id": "0x01000057000001BD",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x01000057000001CF"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 18,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"doomed.icebear_main_hub_reached\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -379.5999755859375,
+          "y": 330.1999816894531,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "Variable[\"doomed.icecreammaker_whitecheck_open_the_fridge\"]",
+          "Articy Id": "0x010000570000AEAA",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "InputId": "0x0100005700003AC9"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 19,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 19,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2297,
+          "y": 1550,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Variable[\"doomed.icecreammaker_whitecheck_open_the_fridge\"]",
+          "Articy Id": "0x010000570000AEAA",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x0100005700003ACE"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 20,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.icecreammaker_whitecheck_open_the_fridge\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1493.0499267578125,
+          "y": 1007.4999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "!(Variable[\"doomed.icecreammaker_whitecheck_open_the_fridge\"])",
+          "Articy Id": "0x010000570000AEAA",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x010000210000058D"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 21,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"doomed.icecreammaker_whitecheck_open_the_fridge\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1493.0499267578125,
+          "y": 1007.4999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Variable[\"TASK.get_frozen_ice_cream_maker_open\"]",
+          "Articy Id": "0x010000210000058D",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "InputId": "0x010000570000AEAA"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 22,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 22,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2459,
+          "y": 1713,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "Variable[\"TASK.get_frozen_ice_cream_maker_open\"]",
+          "Articy Id": "0x010000210000058D",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x0100009200001367"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 23,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 55,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"TASK.get_frozen_ice_cream_maker_open\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1598.3499755859375,
+          "y": 1113.449951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "!(Variable[\"TASK.get_frozen_ice_cream_maker_open\"])",
+          "Articy Id": "0x010000210000058D",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x0100005700003AC3"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 24,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 85,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"TASK.get_frozen_ice_cream_maker_open\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1598.3499755859375,
+          "y": 1113.449951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "Breaker Box: \"Two cables are plugged into the bre...\"",
+          "Dialogue Text": "Two cables are plugged into the breaker box. The red one leads to the ice bear fridge and the black one to some kind of a buzzing fridge-like thing nearby.",
+          "Articy Id": "0x01000057000001DD",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "232",
+          "Conversant": "0",
+          "OutputId": "0x0100002B00085ADD",
+          "InputId": "0x01000057000001C9"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 25,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 62.999996185302734,
+          "y": 382,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"The lieutenant raises his brows, bu...\"",
+          "Dialogue Text": "The lieutenant raises his brows, but doesn't say anything. The electric distribution board now has one cable missing.",
+          "Articy Id": "0x0100005700003AFC",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "Variable[\"doomed.icecreammaker_tried_opening_with_prybar\"]",
+          "Alternate1": "\"Okay. That still doesn't mean you can open the ice cream maker, you know? I bet it's still pretty much impossible...\"",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "395",
+          "Conversant": "232",
+          "OutputId": "0x0100005700003ACE",
+          "InputId": "0x0100005700003AEB"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 26,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3824,
+          "y": 1865.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Great. The owners of this building...\"",
+          "Dialogue Text": "\"Great. The owners of this building will just have to keep paying for the electricity sucked up by this monstrosity a little longer.\"",
+          "Articy Id": "0x010000580000ABC1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "232",
+          "InputId": "0x010000580000ABBB",
+          "OutputId": "0x0100005700003AD2"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 27,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2844,
+          "y": 593,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "Breaker Box: \"Somewhere in the dark, a giant elec...\"",
+          "Dialogue Text": "Somewhere in the dark, a giant electric mammal stirs to life...",
+          "Articy Id": "0x0100002B00085AFF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "232",
+          "Conversant": "0",
+          "OutputId": "0x0100005700003AD2",
+          "InputId": "0x0100007800009A8A"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 28,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2229,
+          "y": 971,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "Variable[\"doomed.orb_noticed_frozen_ice_cream_maker\"]  or  Variable[\"doomed.orb_noticed_melting_ice_cream_maker\"]",
+          "Articy Id": "0x01000057000001CF",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "InputId": "0x01000057000001BD"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 29,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 29,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -236,
+          "y": 645,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "Variable[\"doomed.orb_noticed_frozen_ice_cream_maker\"]  or  Variable[\"doomed.orb_noticed_melting_ice_cream_maker\"]",
+          "Articy Id": "0x01000057000001CF",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x0100002B000833BF"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 30,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 70,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.orb_noticed_frozen_ice_cream_maker\"]  or  Variable[\"doomed.orb_noticed_melting_ice_cream_maker\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -153.39999389648438,
+          "y": 419.2499694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "!(Variable[\"doomed.orb_noticed_frozen_ice_cream_maker\"]  or  Variable[\"doomed.orb_noticed_melting_ice_cream_maker\"])",
+          "Articy Id": "0x01000057000001CF",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x01000057000001B7"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 31,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"doomed.orb_noticed_frozen_ice_cream_maker\"]  or  Variable[\"doomed.orb_noticed_melting_ice_cream_maker\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -153.39999389648438,
+          "y": 419.2499694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "Jump to: [breaker hub]",
+          "Articy Id": "0x0100005700003AD2",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100002B00085AF9"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 32,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3618,
+          "y": 443.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Very smart. Opening the lid should...\"",
+          "Dialogue Text": "\"Very smart. Opening the lid should be much easier after the ice cream maker has defrosted. But we're still going to need a proper prybar.\"",
+          "Articy Id": "0x010000920000135A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "232",
+          "OutputId": "0x0100005700003ACE",
+          "InputId": "0x0100009200001367"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 33,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3161.999755859375,
+          "y": 1452,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "IsTaskActive(\"TASK.plug_in_the_fridge\")--[[ Variable[ ]]",
+          "Articy Id": "0x010000050000228D",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "InputId": "0x0100002B00085AF0"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 34,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 34,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1697,
+          "y": 656,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Title": "IsTaskActive(\"TASK.plug_in_the_fridge\")--[[ Variable[ ]]",
+          "Articy Id": "0x010000050000228D",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x0100000500002294"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 35,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsTaskActive(\"TASK.plug_in_the_fridge\")--[[ Variable[ ]]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1103.0499267578125,
+          "y": 426.3999938964844,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "!(IsTaskActive(\"TASK.plug_in_the_fridge\")--[[ Variable[ ]])",
+          "Articy Id": "0x010000050000228D",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x0100007800009A8A"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 36,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsTaskActive(\"TASK.plug_in_the_fridge\")--[[ Variable[ ]]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1103.0499267578125,
+          "y": 426.3999938964844,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x01000005000022B5",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "InputId": "0x01000005000022AA"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 37,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 37,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1824,
+          "y": -397,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x01000005000022B5",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x01000005000022B0"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 38,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 75,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1185.5999755859375,
+          "y": -258.04998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x01000005000022B5",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x010000570000AEFE"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 39,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1185.5999755859375,
+          "y": -258.04998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Title": "You: \"\"It's black, it's not like it's the...\"",
+          "Dialogue Text": "\"It's black, it's not like it's the red one.\"",
+          "Articy Id": "0x0100005700003AE5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "232",
+          "OutputId": "0x0100005700003AFC",
+          "InputId": "0x0100005700003ADE"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 40,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3513,
+          "y": 1644,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "Variable[\"doomed.breakerbox_red_wire_plugged_out\"]",
+          "Articy Id": "0x01000057000237BE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "InputId": "0x01000057000237B9"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 41,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 42,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 41,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 43,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -377,
+          "y": -331,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Title": "Variable[\"doomed.breakerbox_red_wire_plugged_out\"]",
+          "Articy Id": "0x01000057000237BE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x01000057000237B3"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 42,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 46,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.breakerbox_red_wire_plugged_out\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -245.04998779296875,
+          "y": -215.14999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Title": "!(Variable[\"doomed.breakerbox_red_wire_plugged_out\"])",
+          "Articy Id": "0x01000057000237BE",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x01000057000001BD"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 43,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"doomed.breakerbox_red_wire_plugged_out\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -245.04998779296875,
+          "y": -215.14999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 44,
+        "fields": {
+          "Title": "You: \"Unplug the giant red cable.\"",
+          "Dialogue Text": "Unplug the giant red cable.",
+          "Articy Id": "0x0100002B00085AE3",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "LuaRun(SetAreaState(\"POWER_PLUG_RED\", \"off\"));",
+          "Actor": "396",
+          "Conversant": "232",
+          "OutputId": "0x01000005000022AA",
+          "InputId": "0x0100002B00085ADD"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 44,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 63,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.breakerbox_red_wire_plugged_out\"] == false",
+        "userScript": "SetVariableValue(\"doomed.breakerbox_red_wire_plugged_out\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1412,
+          "y": -230.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 45,
+        "fields": {
+          "Title": "Breaker Box: \"Two cables are plugged into the bre...\"",
+          "Dialogue Text": "Two cables are plugged into the breaker box. The red one leads to the ice bear fridge and the black one to the ice cream maker nearby.",
+          "Articy Id": "0x01000057000001D7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "232",
+          "Conversant": "0",
+          "OutputId": "0x0100002B00085ADD",
+          "InputId": "0x01000057000001C9"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 45,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 69,
+          "y": 137,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 46,
+        "fields": {
+          "Title": "Breaker Box: \"Only the black cable is plugged int...\"",
+          "Dialogue Text": "Only the black cable is plugged into the breaker box, while the red one lies neglected on the floor.",
+          "Articy Id": "0x01000057000237B3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "232",
+          "Conversant": "0",
+          "InputId": "0x01000057000237BE",
+          "OutputId": "0x0100002B00085ADD"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 46,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 62,
+          "y": -224,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 47,
+        "fields": {
+          "Title": "Breaker Box: \"A giant electric mammal awakens. Th...\"",
+          "Dialogue Text": "A giant electric mammal awakens. The dead body is going to be safe in the embrace of its cold innards.",
+          "Articy Id": "0x0100000500002294",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "232",
+          "Conversant": "0",
+          "InputId": "0x010000050000228D",
+          "OutputId": "0x010000050000229B"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 47,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 72,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "FinishTask(\"TASK.plug_in_the_fridge_done\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2218,
+          "y": 413.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 48,
+        "fields": {
+          "Title": "Variable[\"doomed.orb_noticed_frozen_ice_cream_maker\"]  or  Variable[\"doomed.orb_noticed_melting_ice_cream_maker\"]",
+          "Articy Id": "0x01000057000001C9",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "InputId": "0x01000057000001BD"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 48,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 49,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 48,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 50,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -251,
+          "y": 326,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 49,
+        "fields": {
+          "Title": "Variable[\"doomed.orb_noticed_frozen_ice_cream_maker\"]  or  Variable[\"doomed.orb_noticed_melting_ice_cream_maker\"]",
+          "Articy Id": "0x01000057000001C9",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x01000057000001D7"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 49,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.orb_noticed_frozen_ice_cream_maker\"]  or  Variable[\"doomed.orb_noticed_melting_ice_cream_maker\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -163.14999389648438,
+          "y": 211.89999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 50,
+        "fields": {
+          "Title": "!(Variable[\"doomed.orb_noticed_frozen_ice_cream_maker\"]  or  Variable[\"doomed.orb_noticed_melting_ice_cream_maker\"])",
+          "Articy Id": "0x01000057000001C9",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x01000057000001DD"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 50,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"doomed.orb_noticed_frozen_ice_cream_maker\"]  or  Variable[\"doomed.orb_noticed_melting_ice_cream_maker\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -163.14999389648438,
+          "y": 211.89999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 51,
+        "fields": {
+          "Title": "Breaker Box: \"Only the red cable is plugged into...\"",
+          "Dialogue Text": "Only the red cable is plugged into the breaker box, while the black one lies neglected on the floor.",
+          "Articy Id": "0x01000057000237AD",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "232",
+          "Conversant": "0",
+          "OutputId": "0x0100002B00085ADD",
+          "InputId": "0x01000057000237C3"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 51,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 57,
+          "y": -488,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 52,
+        "fields": {
+          "Title": "Variable[\"doomed.kim_body_in_fridge_plug_in\"]",
+          "Articy Id": "0x0100007800009A8A",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "InputId": "0x010000050000228D"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 52,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 53,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 52,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 54,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1824,
+          "y": 801,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 53,
+        "fields": {
+          "Title": "Variable[\"doomed.kim_body_in_fridge_plug_in\"]",
+          "Articy Id": "0x0100007800009A8A",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x010000580000ABC9"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 53,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 80,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.kim_body_in_fridge_plug_in\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1185.5999755859375,
+          "y": 520.6499633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 54,
+        "fields": {
+          "Title": "!(Variable[\"doomed.kim_body_in_fridge_plug_in\"])",
+          "Articy Id": "0x0100007800009A8A",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x0100002B00085AFF"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 54,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"doomed.kim_body_in_fridge_plug_in\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1185.5999755859375,
+          "y": 520.6499633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 55,
+        "fields": {
+          "Title": "CheckItem(\"kvalsund_multitool\")",
+          "Articy Id": "0x0100009200001367",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "InputId": "0x010000210000058D"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 55,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 56,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 55,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 57,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2773,
+          "y": 1446,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 56,
+        "fields": {
+          "Title": "CheckItem(\"kvalsund_multitool\")",
+          "Articy Id": "0x0100009200001367",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x0100005700003AD7"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 56,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 60,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "CheckItem(\"kvalsund_multitool\")",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1802.449951171875,
+          "y": 939.8999633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 57,
+        "fields": {
+          "Title": "!(CheckItem(\"kvalsund_multitool\"))",
+          "Articy Id": "0x0100009200001367",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x010000920000135A"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 57,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(CheckItem(\"kvalsund_multitool\")) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1802.449951171875,
+          "y": 939.8999633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 58,
+        "fields": {
+          "Title": "You: \"Plug in the giant red cable.\"",
+          "Dialogue Text": "Plug in the giant red cable.",
+          "Articy Id": "0x0100002B00085AF0",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "LuaRun(SetAreaState(\"POWER_PLUG_RED\", \"on\"));",
+          "Actor": "396",
+          "Conversant": "232",
+          "OutputId": "0x010000050000228D",
+          "InputId": "0x0100002B00085ADD"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 58,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.breakerbox_red_wire_plugged_out\"] == true",
+        "userScript": "SetVariableValue(\"doomed.breakerbox_red_wire_plugged_out\", false) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1421,
+          "y": 609,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 59,
+        "fields": {
+          "Title": "Breaker Box: \"Somewhere a machine hums along with...\"",
+          "Dialogue Text": "Somewhere a machine hums along with the current, happy and contented.",
+          "Articy Id": "0x0100002B00086357",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "232",
+          "Conversant": "0",
+          "OutputId": "0x0100005700003AD2",
+          "InputId": "0x0100002B0008634F"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 59,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1694,
+          "y": 2005.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 60,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Very smart. Opening the lid should...\"",
+          "Dialogue Text": "\"Very smart. Opening the lid should be much easier after the ice cream maker has defrosted.\"",
+          "Articy Id": "0x0100005700003AD7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "232",
+          "InputId": "0x0100009200001367",
+          "OutputId": "0x0100005700003ACE"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 60,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3161,
+          "y": 1197,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 61,
+        "fields": {
+          "Title": "Inland Empire: \"Don't rip the red one out -- you'll...\"",
+          "Dialogue Text": "Don't rip the red one out -- you'll awaken the ghosts!",
+          "Articy Id": "0x0100005700003AAF",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "404",
+          "Conversant": "232",
+          "InputId": "0x0100002B00085B0B",
+          "OutputId": "0x0100002B00085ADD"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 61,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 759,
+          "y": 674,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 62,
+        "fields": {
+          "Title": "You: \"\"I don't know why I unplugged it, I...\"",
+          "Dialogue Text": "\"I don't know why I unplugged it, I do things without any reason.\"",
+          "Articy Id": "0x0100005700003AF1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "232",
+          "OutputId": "0x0100005700003AFC",
+          "InputId": "0x0100005700003ADE"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 62,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3515.000244140625,
+          "y": 2123,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 63,
+        "fields": {
+          "Title": "Variable[\"TASK.fridge_victims_body\"]  and  Variable[\"doomed.icebear_main_hub_reached\"]  and  Variable[\"TASK.send_corpse_to_processing_done\"] == false",
+          "Articy Id": "0x01000005000022AA",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "InputId": "0x0100002B00085AE3"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 63,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 64,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 63,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 65,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1700.9998779296875,
+          "y": -187,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 64,
+        "fields": {
+          "Title": "Variable[\"TASK.fridge_victims_body\"]  and  Variable[\"doomed.icebear_main_hub_reached\"]  and  Variable[\"TASK.send_corpse_to_processing_done\"] == false",
+          "Articy Id": "0x01000005000022AA",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x01000005000022B5"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 64,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"TASK.fridge_victims_body\"]  and  Variable[\"doomed.icebear_main_hub_reached\"]  and  Variable[\"TASK.send_corpse_to_processing_done\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1105.64990234375,
+          "y": -121.54999542236328,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 65,
+        "fields": {
+          "Title": "!(Variable[\"TASK.fridge_victims_body\"]  and  Variable[\"doomed.icebear_main_hub_reached\"]  and  Variable[\"TASK.send_corpse_to_processing_done\"] == false)",
+          "Articy Id": "0x01000005000022AA",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x010000570000AEFE"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 65,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"TASK.fridge_victims_body\"]  and  Variable[\"doomed.icebear_main_hub_reached\"]  and  Variable[\"TASK.send_corpse_to_processing_done\"] == false) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1105.64990234375,
+          "y": -121.54999542236328,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 66,
+        "fields": {
+          "Title": "breaker hub",
+          "Articy Id": "0x0100002B00085ADD",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x01000057000237A7",
+          "OutputId": "0x0100002B00085AE9"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 66,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 44,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 66,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 58,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 66,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 76,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 66,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 69,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 66,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 81,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"doomed.breakerbox_greeting_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1059,
+          "y": 463,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 67,
+        "fields": {
+          "Title": "You: \"\"Because it's black, the colour of...\"",
+          "Dialogue Text": "\"Because it's black, the colour of immeasurable cosmos.\"",
+          "Articy Id": "0x0100005700003AEB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "232",
+          "OutputId": "0x0100005700003AFC",
+          "InputId": "0x0100005700003ADE"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 67,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3515.000244140625,
+          "y": 1875.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 68,
+        "fields": {
+          "Title": "Breaker Box: \"Both cables are unplugged from the...\"",
+          "Dialogue Text": "Both cables are unplugged from the breaker box.",
+          "Articy Id": "0x01000057000237A7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "232",
+          "Conversant": "0",
+          "OutputId": "0x0100002B00085ADD",
+          "InputId": "0x01000057000237C3"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 68,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 47,
+          "y": -741,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 69,
+        "fields": {
+          "Title": "You: \"Plug in the black cable.\"",
+          "Dialogue Text": "Plug in the black cable.",
+          "Articy Id": "0x0100002B0008634F",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "LuaRun(SetAreaState(\"POWER_PLUG_BLACK\", \"on\"));",
+          "Actor": "396",
+          "Conversant": "232",
+          "InputId": "0x0100002B00085ADD",
+          "OutputId": "0x0100002B00086357"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 69,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 59,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.breakerbox_black_wire_plugged_out\"] == true",
+        "userScript": "SetVariableValue(\"doomed.breakerbox_black_wire_plugged_out\", false) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1398,
+          "y": 2007,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 70,
+        "fields": {
+          "Title": "Breaker Box: \"Two cables are plugged into the bre...\"",
+          "Dialogue Text": "Two cables are plugged into the breaker box. The red one leads off into the darkness and the black one to the ice cream maker nearby.",
+          "Articy Id": "0x0100002B000833BF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "232",
+          "Conversant": "0",
+          "InputId": "0x01000057000001CF",
+          "OutputId": "0x0100002B00085B0B"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 70,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 71,
+          "y": 626,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 71,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Why did you do that?\"\"",
+          "Dialogue Text": "\"Why did you do that?\"",
+          "Articy Id": "0x0100005700003ADE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "232",
+          "OutputId": "0x0100005700003AF1",
+          "InputId": "0x0100005700003AC3"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 71,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 71,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 67,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 71,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 62,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3188,
+          "y": 1875.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 72,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x010000050000229B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "InputId": "0x0100000500002294"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 72,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 73,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 72,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 74,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2490,
+          "y": 435.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 73,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x010000050000229B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x01000005000022A1"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 73,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1618.5,
+          "y": 282.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 74,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x010000050000229B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x0100005700003AD2"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 74,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1618.5,
+          "y": 282.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 75,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Uh, what are you doing? We need th...\"",
+          "Dialogue Text": "\"Uh, what are you doing? We need the fridge for the body, you can't just unplug it.\" He takes the cable and plugs it back in.",
+          "Articy Id": "0x01000005000022B0",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "LuaRun(SetAreaState(\"POWER_PLUG_RED\", \"on\"));",
+          "Actor": "395",
+          "Conversant": "232",
+          "InputId": "0x01000005000022B5",
+          "OutputId": "0x0100005700003AD2"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 75,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"doomed.breakerbox_red_wire_plugged_out\", false) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2217,
+          "y": -531,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 76,
+        "fields": {
+          "Title": "You: \"Unplug the black cable.\"",
+          "Dialogue Text": "Unplug the black cable.",
+          "Articy Id": "0x0100002B00086349",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "LuaRun(SetAreaState(\"POWER_PLUG_BLACK\", \"off\"));",
+          "Actor": "396",
+          "Conversant": "232",
+          "InputId": "0x0100002B00085ADD",
+          "OutputId": "0x0100002B0008635D"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 76,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 82,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.breakerbox_black_wire_plugged_out\"] == false",
+        "userScript": "SetVariableValue(\"doomed.breakerbox_black_wire_plugged_out\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1382,
+          "y": 1505,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 77,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100005700003AC9",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "InputId": "0x0100002B0008635D"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 77,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 78,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 77,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 79,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1990.9998779296875,
+          "y": 1549,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 78,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100005700003AC9",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x010000570000AEAA"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 78,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1294.14990234375,
+          "y": 1006.8499755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 79,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x0100005700003AC9",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x0100005700003AD2"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 79,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1294.14990234375,
+          "y": 1006.8499755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 80,
+        "fields": {
+          "Title": "Breaker Box: \"A giant electric mammal awakens. Th...\"",
+          "Dialogue Text": "A giant electric mammal awakens. The dead body is now safe in the embrace of its cold innards.",
+          "Articy Id": "0x010000580000ABC9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "232",
+          "Conversant": "0",
+          "InputId": "0x0100007800009A8A",
+          "OutputId": "0x010000580000ABBB"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 80,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2220,
+          "y": 640,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 81,
+        "fields": {
+          "Title": "You: \"[Leave.]\"",
+          "Dialogue Text": "[Leave.]",
+          "Articy Id": "0x0100002B00085AE9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "232",
+          "InputId": "0x0100002B00085ADD",
+          "OutputId": "0x0100002B00085AED"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1411,
+          "y": 2400,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 82,
+        "fields": {
+          "Title": "Breaker Box: \"Something close to you dies with a...\"",
+          "Dialogue Text": "Something close to you dies with a soft electric purr.",
+          "Articy Id": "0x0100002B0008635D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "232",
+          "Conversant": "0",
+          "InputId": "0x0100002B00086349",
+          "OutputId": "0x0100005700003AC9"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 82,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 77,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1682,
+          "y": 1505,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 83,
+        "fields": {
+          "Title": "Breaker Box: \"An electric sizzle! The room is sli...\"",
+          "Dialogue Text": "An electric sizzle! The room is slightly quieter now.",
+          "Articy Id": "0x010000570002379E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "232",
+          "Conversant": "0",
+          "InputId": "0x010000570000AEFE",
+          "OutputId": "0x0100005700003AD2"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 83,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2218,
+          "y": 69,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 84,
+        "fields": {
+          "Title": "Breaker Box: \"An electric sizzle! The room is sli...\"",
+          "Dialogue Text": "An electric sizzle! The room is slightly quieter now.",
+          "Articy Id": "0x0100002B00085AF9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "232",
+          "Conversant": "0",
+          "InputId": "0x010000570000AEFE",
+          "OutputId": "0x0100005700003AD2"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 84,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "FinishTask(\"TASK.help_revachol_ice_city_cut_losses_done\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2219,
+          "y": -163,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 85,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100005700003AC3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "InputId": "0x010000210000058D"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 85,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 86,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 85,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 87,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2869,
+          "y": 2025.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 86,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100005700003AC3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x0100005700003ADE"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 86,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 71,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1864.8499755859375,
+          "y": 1316.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 87,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x0100005700003AC3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x0100005700003ACE"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 87,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1864.8499755859375,
+          "y": 1316.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 88,
+        "fields": {
+          "Title": "Variable[\"doomed.breakerbox_red_wire_plugged_out\"]",
+          "Articy Id": "0x01000057000237C3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "InputId": "0x01000057000237B9"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 88,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 89,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 462,
+            "originDialogueID": 88,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 90,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -386,
+          "y": -558,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 89,
+        "fields": {
+          "Title": "Variable[\"doomed.breakerbox_red_wire_plugged_out\"]",
+          "Articy Id": "0x01000057000237C3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x01000057000237A7"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 89,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 68,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.breakerbox_red_wire_plugged_out\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -250.89999389648438,
+          "y": -362.6999816894531,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 90,
+        "fields": {
+          "Title": "!(Variable[\"doomed.breakerbox_red_wire_plugged_out\"])",
+          "Articy Id": "0x01000057000237C3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "232",
+          "OutputId": "0x01000057000237AD"
+        },
+        "conversationID": 462,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 462,
+            "originDialogueID": 90,
+            "destinationConversationID": 462,
+            "destinationDialogueID": 51,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"doomed.breakerbox_red_wire_plugged_out\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -250.89999389648438,
+          "y": -362.6999816894531,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

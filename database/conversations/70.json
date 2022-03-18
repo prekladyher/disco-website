@@ -1,0 +1,1986 @@
+[
+  {
+    "id": 70,
+    "fields": {
+      "Title": "BACKYARD ORB / painting the wall",
+      "Articy Id": "0x0100000400010F89",
+      "AlternateOrbText": "",
+      "CheckType": "5",
+      "Condition": "CheckItem(\"cindys_brush\")  and  CheckItem(\"fuel_canister_rcm\")  and  Variable[\"TASK.add_even_more_beauty_to_the_wall\"] == true  and  Variable[\"TASK.add_even_more_beauty_to_the_wall_done\"] == false",
+      "Description": "FinishTask(\"TASK.add_even_more_beauty_to_the_wall_done\")",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100000400010F89",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 0,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100000400010F8C",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100002100001055"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 1,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"But why? We work twelve-hour shift...\"",
+          "Dialogue Text": "\"But why? We work twelve-hour shifts. We get shot at, spat on...\"",
+          "Articy Id": "0x0100001100001679",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x0100001100001689",
+          "InputId": "0x010000110000166B"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 2,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2111,
+          "y": 1183,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "You: \"\"THIS IS REALLY A MIRROR\"\"",
+          "Dialogue Text": "\"THIS IS REALLY A MIRROR\"",
+          "Articy Id": "0x01000016000034D7",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "BanishInterface(true);SetTriggerAnimation(Tequila Sunset, Paintbrush, true);FadeToBlack(false)@3.2;AudioPlay(backyard_orb/painting_the_wall/painting,1)@4;LuaRun(SetAreaState(\"WALL_GRAFFITO\", \"really_a_mirror\"))@7;SetTriggerAnimation(Tequila Sunset, Interrupt, false)@8.9; HideOverlay()@9;Release()@12;BanishInterface(false)@12;",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100000400011093"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"whirling.mirror_stopped_expression\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 508.9999694824219,
+          "y": -383,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Hmh...\" Just a hum. No reply.\"",
+          "Dialogue Text": "\"Hmh...\" Just a hum. No reply.",
+          "Articy Id": "0x010000060001DD3F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x01000011000016B4",
+          "InputId": "0x0100001100001697"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 4,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2654,
+          "y": 371,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "You: \"\"But what do we work on? KEEPING EV...\"",
+          "Dialogue Text": "\"But what do we work on? KEEPING EVERYTHING THE WAY IT IS.\"",
+          "Articy Id": "0x0100001100001697",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000060001DD3F",
+          "InputId": "0x01000011000016A3"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 5,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2374,
+          "y": 376,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "You: \"Keep it to yourself.\"",
+          "Dialogue Text": "Keep it to yourself.",
+          "Articy Id": "0x010000110000169D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x01000011000016B4",
+          "InputId": "0x01000011000016A3"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 6,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2376,
+          "y": 613,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "whattopainhub",
+          "Articy Id": "0x0100005800001419",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x010000040001108F",
+          "InputId": "0x010000040001100F"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 7,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 70,
+            "originDialogueID": 7,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 70,
+            "originDialogueID": 7,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 70,
+            "originDialogueID": 7,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 70,
+            "originDialogueID": 7,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 70,
+            "originDialogueID": 7,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 70,
+            "originDialogueID": 7,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 70,
+            "originDialogueID": 7,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 70,
+            "originDialogueID": 7,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1075,
+          "y": 475.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100001100001646",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000110000163F"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 8,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 70,
+            "originDialogueID": 8,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 906,
+          "y": 1454,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100001100001646",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100001100001655"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 9,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 588.8999633789062,
+          "y": 945.0999755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x0100001100001646",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100002D0000963C"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 10,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 588.8999633789062,
+          "y": 945.0999755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"The lieutenant raises his eyebrows,...\"",
+          "Dialogue Text": "The lieutenant raises his eyebrows, then sighs.",
+          "Articy Id": "0x0100001100001680",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x010000110000168F",
+          "InputId": "0x0100001100001671"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 11,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2103,
+          "y": 1715.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "Conceptualization: \"You've spoken. The wall will now si...\"",
+          "Dialogue Text": "You've spoken. The wall will now silently repeat the message. For a decade or so, until the sea air degrades the paint, adding another layer of *detritus* to the city.",
+          "Articy Id": "0x0100002D0000963C",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "BanishInterface(true);SetTriggerAnimation(Tequila Sunset, Paintbrush, true);FadeToBlack(false)@3.2;AddGraphito()@7;AudioPlay(backyard_orb/painting_the_wall/painting,1)@4;SetTriggerAnimation(Tequila Sunset, Interrupt, false)@8.9; HideOverlay()@9;Release()@12;BanishInterface(false)@12;",
+          "Actor": "397",
+          "Conversant": "0",
+          "InputId": "0x0100001100001646",
+          "OutputId": "0x010000060001DD2F"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 12,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "LoseItem(\"cindys_brush\");\nLoseItem(\"fuel_canister_rcm\");\nFinishTask(\"TASK.add_even_more_beauty_to_the_wall_done\");\nReputationGrows(\"art_cop\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1700.0001220703125,
+          "y": 221,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "You: \"\"Yeah -- fuck us.\"\"",
+          "Dialogue Text": "\"Yeah -- fuck us.\"",
+          "Articy Id": "0x010000110000166B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100001100001679",
+          "InputId": "0x0100001100001663"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 14,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1815.9998779296875,
+          "y": 1183,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "Variable[\"backyard.orb_wall_paint_rhetoric\"]",
+          "Articy Id": "0x01000011000016A3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100001100001689"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 15,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 70,
+            "originDialogueID": 15,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2069,
+          "y": 872,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "Variable[\"backyard.orb_wall_paint_rhetoric\"]",
+          "Articy Id": "0x01000011000016A3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000110000169D"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 16,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 70,
+            "originDialogueID": 16,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"backyard.orb_wall_paint_rhetoric\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1344.8499755859375,
+          "y": 566.7999877929688,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "!(Variable[\"backyard.orb_wall_paint_rhetoric\"])",
+          "Articy Id": "0x01000011000016A3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x01000011000016B4"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 17,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"backyard.orb_wall_paint_rhetoric\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1344.8499755859375,
+          "y": 566.7999877929688,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x010000060001DD2F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000580000B577"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 18,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 70,
+            "originDialogueID": 18,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1998,
+          "y": -80,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x010000060001DD2F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000060001DD35"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 19,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1298.699951171875,
+          "y": -52,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x010000060001DD2F",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1298.699951171875,
+          "y": -52,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"But we *are* the police...\"\"",
+          "Dialogue Text": "\"But we *are* the police...\"",
+          "Articy Id": "0x0100001100001663",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x0100001100001671",
+          "InputId": "0x0100001100001655"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 21,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 70,
+            "originDialogueID": 21,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1503,
+          "y": 1438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "You: \"\"NO PARKING\"\"",
+          "Dialogue Text": "\"NO PARKING\"",
+          "Articy Id": "0x01000081000022EB",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "BanishInterface(true);SetTriggerAnimation(Tequila Sunset, Paintbrush, true);FadeToBlack(false)@3.2;AudioPlay(backyard_orb/painting_the_wall/painting,1)@4;LuaRun(SetAreaState(\"WALL_GRAFFITO\", \"no_parking\"))@7;SetTriggerAnimation(Tequila Sunset, Interrupt, false)@8.9; HideOverlay()@9;Release()@12;BanishInterface(false)@12;",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005800001419",
+          "OutputId": "0x010000580000B577"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 22,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 498,
+          "y": 1376,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "You: \"Let the wall remain blank. For now....\"",
+          "Dialogue Text": "Let the wall remain blank. For now. [Leave.]",
+          "Articy Id": "0x010000040001108F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005800001419",
+          "OutputId": "0x0100000400011093"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 490.0000305175781,
+          "y": 1669,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "Conceptualization: \"You've spoken. The wall will now si...\"",
+          "Dialogue Text": "You've spoken. The wall will now silently repeat the message. For a decade or so, until the sea air degrades the paint, adding another layer of *detritus* to the city.",
+          "Articy Id": "0x010000580000B577",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "397",
+          "Conversant": "0",
+          "InputId": "0x01000004000110D1",
+          "OutputId": "0x010000060001DD2F"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 24,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "LoseItem(\"cindys_brush\");\nLoseItem(\"fuel_canister_rcm\");\nFinishTask(\"TASK.add_even_more_beauty_to_the_wall_done\");\nReputationGrows(\"art_cop\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1700.0001220703125,
+          "y": -144,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "You: \"\"I LOVE YOU CUNO\"\"",
+          "Dialogue Text": "\"I LOVE YOU CUNO\"",
+          "Articy Id": "0x010000580000B531",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "BanishInterface(true);SetTriggerAnimation(Tequila Sunset, Paintbrush, true);FadeToBlack(false)@3.2;AudioPlay(backyard_orb/painting_the_wall/painting,1)@4;LuaRun(SetAreaState(\"WALL_GRAFFITO\", \"love_cuno\"))@7;SetTriggerAnimation(Tequila Sunset, Interrupt, false)@8.9; HideOverlay()@9;Release()@12;BanishInterface(false)@12;",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005800001419",
+          "OutputId": "0x010000580000B577"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 25,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"yard.cuno_wc_empathy_get_cuno_alone\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 500.0000305175781,
+          "y": -140,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Rhetoric: \"Hah! Maybe there's a *reason* for t...\"",
+          "Dialogue Text": "Hah! Maybe there's a *reason* for that!",
+          "Articy Id": "0x0100001100001689",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "10",
+          "Actor": "400",
+          "Conversant": "0",
+          "InputId": "0x0100001100001679",
+          "OutputId": "0x01000011000016A3"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 26,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"backyard.orb_wall_paint_rhetoric\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2408,
+          "y": 1180,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Conceptualization: \"You've spoken. The wall will now si...\"",
+          "Dialogue Text": "You've spoken. The wall will now silently repeat the message -- for a decade or so, until the sea air degrades the paint.",
+          "Articy Id": "0x01000011000016B4",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "397",
+          "Conversant": "0",
+          "InputId": "0x01000011000016A3",
+          "OutputId": "0x0100000400011093"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "FinishTask(\"TASK.add_even_more_beauty_to_the_wall_done\");\nReputationGrows(\"art_cop\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2865,
+          "y": 643,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "Conceptualization: \"The paintbrush in your hand is like...\"",
+          "Dialogue Text": "The paintbrush in your hand is like a loaded revolver. What will it be, desperado? Quite a few things come to mind...",
+          "Articy Id": "0x010000040001100F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "397",
+          "Conversant": "0",
+          "OutputId": "0x0100005800001419",
+          "InputId": "0x0100002100001055"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 28,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1375,
+          "y": 375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "Conceptualization: \"The wall towers over you with its i...\"",
+          "Dialogue Text": "The wall towers over you with its indelible message.",
+          "Articy Id": "0x010000110000168F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "397",
+          "Conversant": "0",
+          "InputId": "0x0100001100001680",
+          "OutputId": "0x0100000400011093"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "LoseItem(\"cindys_brush\");\nFinishTask(\"TASK.add_even_more_beauty_to_the_wall_done\");\nReputationGrows(\"art_cop\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2411,
+          "y": 1715.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "You: \"\"SOMETHING BEAUTIFUL IS GOING TO HA...\"",
+          "Dialogue Text": "\"SOMETHING BEAUTIFUL IS GOING TO HAPPEN\"",
+          "Articy Id": "0x010000580000B55A",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "BanishInterface(true);SetTriggerAnimation(Tequila Sunset, Paintbrush, true);FadeToBlack(false)@3.2;AudioPlay(backyard_orb/painting_the_wall/painting,1)@4;LuaRun(SetAreaState(\"WALL_GRAFFITO\", \"something_beautiful\"))@7;SetTriggerAnimation(Tequila Sunset, Interrupt, false)@8.9; HideOverlay()@9;Release()@12;BanishInterface(false)@12;",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005800001419",
+          "OutputId": "0x010000580000B577"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 30,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 498,
+          "y": 1126,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "You: \"\"MOTHER OF ALL WALLS\"\"",
+          "Dialogue Text": "\"MOTHER OF ALL WALLS\"",
+          "Articy Id": "0x010000040001101C",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "BanishInterface(true);SetTriggerAnimation(Tequila Sunset, Paintbrush, true);FadeToBlack(false)@3.2;AudioPlay(backyard_orb/painting_the_wall/painting,1)@4;LuaRun(SetAreaState(\"WALL_GRAFFITO\", \"mother_of_all_walls\"))@7;SetTriggerAnimation(Tequila Sunset, Interrupt, false)@8.9; HideOverlay()@9;Release()@12;BanishInterface(false)@12;",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005800001419",
+          "OutputId": "0x010000580000B577"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 31,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 500.0000305175781,
+          "y": 125.00000762939453,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "You: \"(Draw a 3,500 year old pictogram of...\"",
+          "Dialogue Text": "(Draw a 3,500 year old pictogram of a human being.)",
+          "Articy Id": "0x010000580000B538",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "BanishInterface(true);SetTriggerAnimation(Tequila Sunset, Paintbrush, true);FadeToBlack(false)@3.2;AudioPlay(backyard_orb/painting_the_wall/painting,1)@4;LuaRun(SetAreaState(\"WALL_GRAFFITO\", \"stickman\"))@7;SetTriggerAnimation(Tequila Sunset, Interrupt, false)@8.9; HideOverlay()@9;Release()@12;BanishInterface(false)@12;",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005800001419",
+          "OutputId": "0x010000580000B577"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 32,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 500.0000305175781,
+          "y": 625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "You: \"\"RENE LIVES!\"\"",
+          "Dialogue Text": "\"RENE LIVES!\"",
+          "Articy Id": "0x0100000400011028",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "BanishInterface(true);SetTriggerAnimation(Tequila Sunset, Paintbrush, true);FadeToBlack(false)@3.2;AudioPlay(backyard_orb/painting_the_wall/painting,1)@4;LuaRun(SetAreaState(\"WALL_GRAFFITO\", \"rene_lives\"))@7;SetTriggerAnimation(Tequila Sunset, Interrupt, false)@8.9; HideOverlay()@9;Release()@12;BanishInterface(false)@12;",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005800001419",
+          "OutputId": "0x010000580000B577"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 33,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"plaza.met_rene\"]  and  Variable[\"plaza.rene_know_dead\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 498.9999694824219,
+          "y": 872.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "You: \"\"FUCK THE POLICE\"\"",
+          "Dialogue Text": "\"FUCK THE POLICE\"",
+          "Articy Id": "0x010000110000163F",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "Hold()",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005800001419",
+          "OutputId": "0x0100001100001646"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 34,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"backyard.wall_painted_ftp\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 511,
+          "y": -629,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Title": "You: \"\"You're right, you're right. Is it...\"",
+          "Dialogue Text": "\"You're right, you're right. Is it too late to change it?\"",
+          "Articy Id": "0x0100001100001671",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100001100001663",
+          "OutputId": "0x0100001100001680"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 35,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1805.0001220703125,
+          "y": 1718,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "Conceptualization: \"Paintbrush -- check, heavy fuel oil...\"",
+          "Dialogue Text": "Paintbrush -- check, heavy fuel oil -- check... Now the only thing left to do is paint the wall.",
+          "Articy Id": "0x010000210000105A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "397",
+          "Conversant": "0",
+          "OutputId": "0x010000040001100F",
+          "InputId": "0x0100002100001055"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 36,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "FinishTask(\"TASK.find_heavy_fuel_oil_done\");\nGainTask(\"TASK.use_fuel_oil_to_paint_wall\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1834,
+          "y": 195,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "You: \"\"WHAT SHADOW LIES THERE, BENEATH TH...\"",
+          "Dialogue Text": "\"WHAT SHADOW LIES THERE, BENEATH THE BRIGHT GLEAM\"",
+          "Articy Id": "0x01000004000110D1",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "BanishInterface(true);SetTriggerAnimation(Tequila Sunset, Paintbrush, true);FadeToBlack(false)@3.2;AudioPlay(backyard_orb/painting_the_wall/painting,1)@4;LuaRun(SetAreaState(\"WALL_GRAFFITO\", \"what_shadow\"))@7;SetTriggerAnimation(Tequila Sunset, Interrupt, false)@8.9; HideOverlay()@9;Release()@12;BanishInterface(false)@12;",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005800001419",
+          "OutputId": "0x010000580000B577"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 37,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 500.0000305175781,
+          "y": 375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"The lieutenant looks at the wall in...\"",
+          "Dialogue Text": "The lieutenant looks at the wall in dismay:",
+          "Articy Id": "0x0100001100001655",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "BanishInterface(true);SetTriggerAnimation(Tequila Sunset, Paintbrush, true);FadeToBlack(false)@3.2;AddGraphito()@7;AudioPlay(backyard_orb/painting_the_wall/painting,1)@4;SetTriggerAnimation(Tequila Sunset, Interrupt, false)@8.9; HideOverlay()@9;Release()@12;BanishInterface(false)@12;",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x0100001100001646",
+          "OutputId": "0x0100001100001663"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 38,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "LoseItem(\"cindys_brush\");\nLoseItem(\"fuel_canister_rcm\");\n",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1221,
+          "y": 1439,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Very poetic.\" The lieutenant nods...\"",
+          "Dialogue Text": "\"Very poetic.\" The lieutenant nods in appreciation -- it doesn't sound sincere. \"Real poetry. Should we return to our murder investigation? I hear there's a really *bad* one we're supposed to solve.\"",
+          "Articy Id": "0x010000060001DD35",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x010000060001DD2F",
+          "OutputId": "0x0100000400011093"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2309,
+          "y": -228,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Title": "IsTaskActive(\"TASK.find_heavy_fuel_oil\")--[[ Variable[ ]]",
+          "Articy Id": "0x0100002100001055",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100000400010F8C"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 40,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 70,
+            "originDialogueID": 40,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 42,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -2193,
+          "y": 443,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "IsTaskActive(\"TASK.find_heavy_fuel_oil\")--[[ Variable[ ]]",
+          "Articy Id": "0x0100002100001055",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000210000105A"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 41,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsTaskActive(\"TASK.find_heavy_fuel_oil\")--[[ Variable[ ]]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1425.449951171875,
+          "y": 287.9499816894531,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Title": "!(IsTaskActive(\"TASK.find_heavy_fuel_oil\")--[[ Variable[ ]])",
+          "Articy Id": "0x0100002100001055",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000040001100F"
+        },
+        "conversationID": 70,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 70,
+            "originDialogueID": 42,
+            "destinationConversationID": 70,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsTaskActive(\"TASK.find_heavy_fuel_oil\")--[[ Variable[ ]]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1425.449951171875,
+          "y": 287.9499816894531,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

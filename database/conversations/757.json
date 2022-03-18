@@ -1,0 +1,1306 @@
+[
+  {
+    "id": 757,
+    "fields": {
+      "Title": "SEAFORT ORB / walk into water",
+      "Articy Id": "0x010000450001D3A6",
+      "AlternateOrbText": "",
+      "CheckType": "7",
+      "Condition": "Variable[\"seafort.orb_walk_into_water_done\"] == false",
+      "Description": "(walk into water dialogue, foreshadowing for dream)",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "1",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000450001D3A6",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 0,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x010000450001D3A7",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x010000450001D3C8"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 1,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Inland Empire: \"A strange feeling... looking at the...\"",
+          "Dialogue Text": "A strange feeling... looking at the water. Maybe you should just wander off into the sea? Leave it all and walk in...",
+          "Articy Id": "0x010000450001D3C8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "404",
+          "Conversant": "0",
+          "InputId": "0x010000450001D3A7",
+          "OutputId": "0x010000450001D46D"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 2,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 150,
+          "y": 300,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "You: \"[Shake your head.]\"",
+          "Dialogue Text": "[Shake your head.]",
+          "Articy Id": "0x010000450001D3E5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000450001D3E9",
+          "InputId": "0x010000450001D426"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"seafort.orb_walk_into_water_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1000.0000610351562,
+          "y": 975.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Jump to: [walkintowater]",
+          "Articy Id": "0x010000450001D45A",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000450001D41F"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 4,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2590,
+          "y": 265,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "You: \"A bottle in my hand?\"",
+          "Dialogue Text": "A bottle in my hand?",
+          "Articy Id": "0x010000450001D467",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000450001D475",
+          "InputId": "0x010000450001D426"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 5,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"seafort.sense_inland_waterwalk_elchem_bottle\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1000.0000610351562,
+          "y": -325,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Electrochemistry: \"Always.\"",
+          "Dialogue Text": "Always.",
+          "Articy Id": "0x010000450001D475",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "413",
+          "Conversant": "0",
+          "InputId": "0x010000450001D467",
+          "OutputId": "0x010000450001D47D"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 6,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1300,
+          "y": -325,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Inland Empire: \"Islets and posts like stepping ston...\"",
+          "Dialogue Text": "Islets and posts like stepping stones lead into the water in front of you. Go. Step in... it's been too long.",
+          "Articy Id": "0x010000450001D492",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "404",
+          "Conversant": "0",
+          "OutputId": "0x010000450001D48E",
+          "InputId": "0x010000450001D437"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 7,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1600,
+          "y": 675,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "walkintowater",
+          "Articy Id": "0x010000450001D426",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x010000450001D3E5",
+          "InputId": "0x010000450001D46D"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 8,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 757,
+            "originDialogueID": 8,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 757,
+            "originDialogueID": 8,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 757,
+            "originDialogueID": 8,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 757,
+            "originDialogueID": 8,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"seafort.sense_inland_waterwalk_idea\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 750,
+          "y": 375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "You: \"Why?\"",
+          "Dialogue Text": "Why?",
+          "Articy Id": "0x010000450001D3D9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000450001D426",
+          "OutputId": "0x010000450001D40A"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 9,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1000.0000610351562,
+          "y": -75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Electrochemistry: \"With a bottle in your hand.\"",
+          "Dialogue Text": "With a bottle in your hand.",
+          "Articy Id": "0x010000450001D46D",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "413",
+          "Conversant": "0",
+          "InputId": "0x010000450001D3C8",
+          "OutputId": "0x010000450001D426"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 10,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"seafort.sense_inland_waterwalk_elchem_bottle\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 450.0000305175781,
+          "y": 300,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Perception (Smell): \"Smelling of Tutti Frutti and betray...\"",
+          "Dialogue Text": "Smelling of Tutti Frutti and betrayal.",
+          "Articy Id": "0x010000450001D724",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "3",
+          "Actor": "421",
+          "Conversant": "0",
+          "OutputId": "0x010000450001D41F",
+          "InputId": "0x010000450001D418"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 11,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2194,
+          "y": -74,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Inland Empire: \"Perhaps there's someone there? Unde...\"",
+          "Dialogue Text": "Perhaps there's someone there? Under the water. Waiting for you.",
+          "Articy Id": "0x010000450001D40A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "404",
+          "Conversant": "0",
+          "InputId": "0x010000450001D3D9",
+          "OutputId": "0x010000450001D411"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 13,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1300,
+          "y": -75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Jump to: [walkintowater]",
+          "Articy Id": "0x010000450001D47D",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000450001D475"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 14,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1600,
+          "y": -300,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "Conceptualization: \"Where it has always been.\"",
+          "Dialogue Text": "Where it has always been.",
+          "Articy Id": "0x010000450001D411",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "10",
+          "Actor": "397",
+          "Conversant": "0",
+          "InputId": "0x010000450001D40A",
+          "OutputId": "0x010000450001D418"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 15,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1600,
+          "y": -75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "Jump to: [walkintowater]",
+          "Articy Id": "0x010000450001D48E",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000450001D492"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 16,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1900.0001220703125,
+          "y": 700,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "Inland Empire: \"Yes -- cold and still. But love is...\"",
+          "Dialogue Text": "Yes -- cold and still. But love is warm, like the inside of her mouth.",
+          "Articy Id": "0x010000450001D403",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "404",
+          "Conversant": "0",
+          "OutputId": "0x010000450001D444",
+          "InputId": "0x010000450001D3DF"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 17,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 757,
+            "originDialogueID": 17,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1300,
+          "y": 300,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Inland Empire: \"In the still mirror of the bay you...\"",
+          "Dialogue Text": "In the still mirror of the bay you see Martinaise, reflected. Tall edifices of ruins reach into the water, like shimmering towers. And the shacks too. Pine trees and motor lorries, upside down...",
+          "Articy Id": "0x010000450001D437",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "Variable[\"auto.is_raining\"]",
+          "Alternate1": "In the rain-mirror of the bay you see Martinaise, reflected. Tall edifices of ruins reach into the water, like shimmering towers. And the shacks too. Pine trees and motor lorries, upside down...",
+          "Condition2": "Variable[\"auto.is_snowing\"]",
+          "Alternate2": "In the snowing mirror of the bay you see Martinaise, reflected. Tall edifices of ruins reach into the water, like shimmering towers. And the shacks too. Pine trees and motor lorries, upside down...",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "404",
+          "Conversant": "0",
+          "OutputId": "0x010000450001D492",
+          "InputId": "0x010000450001D486"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 18,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1300,
+          "y": 650,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "Inland Empire: \"Yes, yes, yes, yes.\"",
+          "Dialogue Text": "Yes, yes, yes, yes.",
+          "Articy Id": "0x010000450001D452",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "404",
+          "Conversant": "0",
+          "OutputId": "0x010000060001EF68",
+          "InputId": "0x010000450001D444"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 19,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1900.0001220703125,
+          "y": 400,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Volition: \"No-no, we're not starting with that...\"",
+          "Dialogue Text": "No-no, we're not starting with that. Not now. Not this time. This thought is over.",
+          "Articy Id": "0x010000060001EF68",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "405",
+          "Conversant": "0",
+          "InputId": "0x010000450001D44C",
+          "OutputId": "0x010000450001D45A"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 20,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2215,
+          "y": 229,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "You: \"No-no-no-no...\"",
+          "Dialogue Text": "No-no-no-no...",
+          "Articy Id": "0x010000450001D444",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000450001D403",
+          "OutputId": "0x010000450001D452"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 21,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1600,
+          "y": 400,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Shivers: \"In front of the video rental on the...\"",
+          "Dialogue Text": "In front of the video rental on the corner. At the crossing...",
+          "Articy Id": "0x010000450001D418",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "3",
+          "Actor": "411",
+          "Conversant": "0",
+          "InputId": "0x010000450001D411",
+          "OutputId": "0x010000450001D724"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 22,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1900.0001220703125,
+          "y": -75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "You: \"But it's cold...\"",
+          "Dialogue Text": "But it's cold...",
+          "Articy Id": "0x010000450001D3DF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000450001D426",
+          "OutputId": "0x010000450001D403"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 23,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1000.0000610351562,
+          "y": 300,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "Inland Empire: \"Oh *fuck* yes. Go there in your hea...\"",
+          "Dialogue Text": "Oh *fuck* yes. Go there in your head. It's been days since you've thought about her. A week...",
+          "Articy Id": "0x010000450001D44C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "404",
+          "Conversant": "0",
+          "OutputId": "0x010000060001EF68",
+          "InputId": "0x010000450001D43E"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 24,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1900.0001220703125,
+          "y": 175,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "You: \"Yes, please...\"",
+          "Dialogue Text": "Yes, please...",
+          "Articy Id": "0x010000450001D43E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000450001D403",
+          "OutputId": "0x010000450001D44C"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 25,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1600,
+          "y": 175,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "You: \"Raise your sight.\"",
+          "Dialogue Text": "Raise your sight.",
+          "Articy Id": "0x010000450001D486",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000450001D426",
+          "OutputId": "0x010000450001D437"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 26,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1000.0000610351562,
+          "y": 675,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Pain Threshold: \"Baby, you know it's going to hurt.\"",
+          "Dialogue Text": "Baby, you know it's going to hurt.",
+          "Articy Id": "0x010000450001D41F",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "412",
+          "Conversant": "0",
+          "InputId": "0x010000450001D724",
+          "OutputId": "0x010000450001D45A"
+        },
+        "conversationID": 757,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 757,
+            "originDialogueID": 27,
+            "destinationConversationID": 757,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2485,
+          "y": -73,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

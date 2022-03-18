@@ -1,0 +1,305 @@
+[
+  {
+    "id": 405,
+    "fields": {
+      "Title": "WHIRLING F2 ORB / dialogue pants",
+      "Articy Id": "0x010000270000070A",
+      "AlternateOrbText": "",
+      "CheckType": "17",
+      "Condition": "Variable[\"whirling.sense_keys_done\"] == false",
+      "Description": "These are your sleek pants. Put them on and find THE KEY to get out of your room.",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "THe trashed room upstairs, both rooms (living room and bathroom)\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000270000070A",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 405,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 405,
+            "originDialogueID": 0,
+            "destinationConversationID": 405,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x010000270000070D",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100002700000719"
+        },
+        "conversationID": 405,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 405,
+            "originDialogueID": 1,
+            "destinationConversationID": 405,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "You: \"Fish them out.\"",
+          "Dialogue Text": "Fish them out.",
+          "Articy Id": "0x0100002700000720",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100002600000485",
+          "InputId": "0x0100002700000719"
+        },
+        "conversationID": 405,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 405,
+            "originDialogueID": 3,
+            "destinationConversationID": 405,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "PlaySoundGroup(\"item\",\"key_jingle\", 1);\nGainItem(\"key_whirling_tequila\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 850.0000610351562,
+          "y": 300,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Perception (Hearing): \"You hear a jingle! Keys are clinkin...\"",
+          "Dialogue Text": "You hear a jingle! Keys are clinking in the pocket of your flare-cut pants.",
+          "Articy Id": "0x0100002700000719",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "PlaySound(passive, MOT, 1);",
+          "Actor": "422",
+          "Conversant": "0",
+          "InputId": "0x010000270000070D",
+          "OutputId": "0x0100002700000720"
+        },
+        "conversationID": 405,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 405,
+            "originDialogueID": 4,
+            "destinationConversationID": 405,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 550,
+          "y": 300,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Encyclopedia: \"The \"Whirling-in-Rags\" is a hostel-...\"",
+          "Dialogue Text": "The \"Whirling-in-Rags\" is a hostel-cafeteria on the urban coast, frequented by dockworkers.",
+          "Articy Id": "0x010000270000073D",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "3",
+          "Actor": "399",
+          "Conversant": "0",
+          "OutputId": "0x0100002700000741",
+          "InputId": "0x0100002600000485"
+        },
+        "conversationID": 405,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.encyc_coast_dockworkers\", true) ;\nSetVariableValue(\"tc.whirling_by_the_sea\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1450,
+          "y": 300,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Perception (Sight): \"It says \"Whirling-in-Rags\" on the a...\"",
+          "Dialogue Text": "It says \"Whirling-in-Rags\" on the aluminium keyring. There is a single key on the ring, the number #1 is etched on it. It should open the door.",
+          "Articy Id": "0x0100002600000485",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "424",
+          "Conversant": "0",
+          "InputId": "0x0100002700000720",
+          "OutputId": "0x010000270000073D"
+        },
+        "conversationID": 405,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 405,
+            "originDialogueID": 6,
+            "destinationConversationID": 405,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.sense_keys_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1150,
+          "y": 299,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]
