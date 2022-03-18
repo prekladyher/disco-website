@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useConversationStore, type ConversationModel } from "@/stores/conversation";
-import { definePath, useDialogueGraphStore } from "@/stores/dialogueGraph";
+import { definePaths, useDialogueGraphStore } from "@/stores/dialogueGraph";
 import { debounce } from "@/utils";
 import { storeToRefs } from "pinia";
 import type { EventHandlers, VNetworkGraphInstance } from "v-network-graph";
@@ -73,11 +73,8 @@ watch(currentEntry, async (newEntry, oldEntry) => {
 });
 
 watch(activePath, entries => {
-  if (!entries.length) {
-    delete paths.value.highlight;
-  } else {
-    paths.value.highlight = definePath(entries);
-  }
+  Object.keys(paths.value).forEach(key => delete paths.value[key]);
+  definePaths(entries).forEach((path, idx) => paths.value["" + idx] = path);
 });
 </script>
 

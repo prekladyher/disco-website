@@ -127,9 +127,9 @@ function fixStartPosition(conversation: ConversationModel) {
 }
 
 /**
- * Define graph path for the given dialogue entry path.
+ * Define graph paths for the given dialogue entry path.
  */
-export function definePath(entries: DialogueEntryType[]): Path {
+export function definePaths(entries: DialogueEntryType[]): Path[] {
   const edgeIds = [];
   for (let i = 0; i < entries.length - 1; i++) {
     const entry = entries[i];
@@ -142,7 +142,7 @@ export function definePath(entries: DialogueEntryType[]): Path {
     });
     edgeIds.push(`${entry.id}_${nextIdx}`);
   }
-  return { edges: edgeIds };
+  return [{ edges: edgeIds }];
 }
 
 export const useDialogueGraphStore = defineStore({
