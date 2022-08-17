@@ -99,7 +99,6 @@ watch(activePath, entries => {
 
 <style scoped>
 .wrapper {
-  min-height: 180px;
   overflow: hidden;
 }
 </style>

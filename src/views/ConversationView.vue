@@ -54,6 +54,7 @@ watch(currentEntry, entry => {
 <template>
   <main>
     <DialogueGraph
+      class="dialogue-graph"
       ref="dialogueGraph"
       :conversation="conversation"
     />
@@ -71,16 +72,16 @@ watch(currentEntry, entry => {
 <style scoped>
 main {
   display: grid;
+  position: relative;
+  overflow: hidden;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  overflow-y: scroll;
 }
 .dialogue-pane {
   color: #eeeeee;
   background: #333333;
   box-shadow: rgba(0, 0, 0, 0.4) 0px -1px 2px;
-  min-height: 300px;
-  height: max-content;
+  overflow-y: scroll;
 }
 .dialogue-pane::before {
   position: absolute;
@@ -90,5 +91,8 @@ main {
   height: 100%;
   background: url("/logo.png") center center no-repeat;
   filter: grayscale() opacity(0.1);
+}
+.dialogue-pane > .dialogue-flow {
+  min-height: 300px;
 }
 </style>
