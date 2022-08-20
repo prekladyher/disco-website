@@ -53,7 +53,7 @@ watch(highlightPath, path => {
 <template>
   <section class="dialogue-flow">
     <DialogueFlowEntry v-if="entry" :entry="entry" />
-    <div v-for="path in paths" class="flow-path">
+    <div v-for="(path, index) in paths" class="flow-path" :key="path.origin.id + '_' + index">
       <router-link
         :to="createLink(path.destination)"
         @mouseover="highlightPath = path"
