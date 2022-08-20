@@ -2,10 +2,16 @@ import type { DialogueDatabase } from "@/types";
 import { defineStore } from "pinia";
 import { ref } from "vue";
 
+/**
+ * Index items with idenfier provided by the given callback.
+ */
 function createIndex<T, R>(list: T[], resolveKey: (item: T) => R) {
   return new Map(list.map(item => [resolveKey(item), item]));
 }
 
+/**
+ * Fetch database data.
+ */
 export function fetchDatabase(): Promise<DialogueDatabase> {
   function doFetch(type: string) {
     return fetch(`${import.meta.env.BASE_URL}/database/${type}.json`).then(res => res.json());
@@ -26,6 +32,9 @@ export function fetchDatabase(): Promise<DialogueDatabase> {
   });
 }
 
+/**
+ * Use central database store.
+ */
 export const useDatabaseStore = defineStore({
   id: "database",
   state: () => {
@@ -36,8 +45,17 @@ export const useDatabaseStore = defineStore({
     });
 
     return {
+
+      /**
+       * Database loading promise.
+       */
       loading,
+
+      /**
+       * Loaded database data.
+       */
       database
+
     };
   }
 });

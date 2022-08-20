@@ -3,37 +3,100 @@ import { defineStore } from "pinia";
 import type { Layouts, Path, VNetworkGraphInstance } from "v-network-graph";
 import type { ConversationModel } from "./conversation";
 
+/**
+ * Dialogue graph node type.
+ */
 export interface NodeType {
-  id: string,
-  type?: string,
-  name: string,
-  parent: boolean,
-  selected: boolean,
-  external: boolean
+
+  /**
+   * Node identifier.
+   */
+  id: string;
+
+  /**
+   * Dialogue entry type.
+   */
+  type?: string;
+
+  /**
+   * Short node title.
+   */
+  name: string;
+
+  /**
+   * Flag indicating the node represents parent entry.
+   */
+  parent: boolean;
+
+  /**
+   * Flag indicating the node is in selected state.
+   */
+  selected: boolean;
+
+  /**
+   * Flag indicating node represents jump to a different conversation.
+   */
+  external: boolean;
+
 }
 
+/**
+ * Dialogue graph edge type.
+ */
 export interface EdgeType {
-  id: string,
-  source: string,
-  target: string
+
+  /**
+   * Unique edge identifier.
+   */
+  id: string;
+
+  /**
+   * Source node identifier.
+   */
+  source: string;
+
+  /**
+   * Target node identifier.
+   */
+  target: string;
+
 }
 
+/**
+ * Graph canvas view box.
+ */
 export interface ViewBox {
-  x: number,
-  y: number,
-  width: number,
-  height: number
+  x: number;
+  y: number;
+  width: number;
+  height: number;
 }
 
+/**
+ * Check if the dialogue entry is parent to have child nodes.
+ */
 function isParentEntry(entry: DialogueEntryType): boolean {
-  return entry.id === 0 || entry.fields?.DialogueEntryType === "Fork" && !!entry.fields?.InputId;
+  if (entry.id === 0) {
+    return true; // START node is parent for input entry
+  }
+  // Fork entry with input port is parent for fork output entries
+  return entry.fields?.DialogueEntryType === "Fork" && !!entry.fields?.InputId;
 }
 
+/**
+ * Check if the dialogue entry is supposed to be child node.
+ */
 function isChildEntry(entry: DialogueEntryType): boolean {
-  return entry.id === 1 && entry.fields?.Title === "input"
-    || entry.fields?.DialogueEntryType === "Fork" && !entry.fields?.InputId;
+  if (entry.id === 1 && entry.fields?.Title === "input") {
+    return true; // Conversation input is child of START node
+  }
+  // Fork output entries are children of fork input entry
+  return entry.fields?.DialogueEntryType === "Fork" && !entry.fields?.InputId;
 }
 
+/**
+ * Check if the dialogue link leads to a different conversation.
+ */
 function isInternalLink(link: DialogueLinkType): boolean {
   return link.destinationConversationID === link.originConversationID;
 }
@@ -81,6 +144,9 @@ function defineEdges(conversation: ConversationModel, entry: DialogueEntryType, 
   return Object.fromEntries(edges.map(edge => [edge.id, edge]));
 }
 
+/**
+ * Fix position of START node (it is originally not positioned in the graph).
+ */
 function fixStartPosition(conversation: ConversationModel) {
   const targets = conversation.entriesById.get(1)?.outgoingLinks
     ?.filter(isInternalLink)
@@ -145,23 +211,63 @@ export function definePaths(entries: DialogueEntryType[]): Path[] {
   return [{ edges: edgeIds }];
 }
 
+/**
+ * Use dialogue graph store.
+ */
 export const useDialogueGraphStore = defineStore({
   id: "dialogueGraph",
   state: () => {
     return {
+
+      /**
+       * Flag indicating that the graph data is being loaded.
+       */
       loading: false,
+
+      /**
+       * Identifier of the currently loaded conversation.
+       */
       id: undefined as number|undefined,
+
+      /**
+       * Graph node data.
+       */
       nodes: {} as Record<string, NodeType>,
+
+      /**
+       * Graph edge data.
+       */
       edges: {} as Record<string, EdgeType>,
+
+      /**
+       * Graph layout data.
+       */
       layouts: {
         nodes: {}
       } as Layouts,
+
+      /**
+       * Graph path data.
+       */
       paths: {} as Record<string, Path>,
+
+      /**
+       * Current graph zoom level.
+       */
       zoomLevel: 0.75,
+
+      /**
+       * Current graph view box (in graph coordinates).
+       */
       viewBox: undefined as ViewBox|undefined,
+
     };
   },
   actions: {
+
+    /**
+     * Load graph data for the given conversation or unload the current data.
+     */
     loadConversation(conversation?: ConversationModel) {
       this.id = undefined;
       Object.keys(this.nodes).forEach(id => delete this.nodes[id]);
@@ -176,6 +282,10 @@ export const useDialogueGraphStore = defineStore({
         Object.assign(this.layouts.nodes, graphModel.layouts.nodes);
       }
     },
+
+    /**
+     * Update view box data based on the given graph instance.
+     */
     updateViewBox(graph: VNetworkGraphInstance|undefined) {
       if (!graph || !graph.svgPanZoom) {
         this.viewBox = undefined;
@@ -189,5 +299,6 @@ export const useDialogueGraphStore = defineStore({
         };
       }
     }
+
   }
 });

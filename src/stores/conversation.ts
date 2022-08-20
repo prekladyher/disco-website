@@ -2,11 +2,31 @@ import type { ConversationType, DialogueEntryType, DialogueLinkType } from "@/ty
 import { defineStore } from "pinia";
 import { unref } from "vue";
 
+/**
+ * Loaded conversation model.
+ */
 export interface ConversationModel {
-  id: number,
-  fields: Record<string, any>,
-  entriesById: Map<number, DialogueEntryType>
-  linksById: Map<string, DialogueLinkType>
+
+  /**
+   * Conversation identifier.
+   */
+  id: number;
+
+  /**
+   * Conversation attributes.
+   */
+  fields: Record<string, any>;
+
+  /**
+   * Dialogue entry index.
+   */
+  entriesById: Map<number, DialogueEntryType>;
+
+  /**
+   * Entry link index.
+   */
+  linksById: Map<string, DialogueLinkType>;
+
 }
 
 /**
@@ -60,19 +80,46 @@ export function fetchConversation(id: number) {
     .reduce((result, entry) => result.canvasRect.x < entry.canvasRect.x ? result : entry);
 }
 
-
+/**
+ * Use conversation store.
+ */
 export const useConversationStore = defineStore({
   id: "conversation",
   state: () => {
     return {
+
+      /**
+       * Flag indicating that the conversation data is being loaded.
+       */
       loading: false,
+
+      /**
+       * Flag indicating whether to show additional debug information.
+       */
       debug: false,
+
+      /**
+       * Conversation data mode.
+       */
       conversation: undefined as ConversationModel|undefined,
+
+      /**
+       * Currently active (focused) conversation entry.
+       */
       currentEntry: undefined as DialogueEntryType|undefined,
+
+      /**
+       * Currently active (focused) conversation path.
+       */
       activePath: [] as DialogueEntryType[]
+
     };
   },
   actions: {
+
+    /**
+     * Load data for conversation with the given identifier.
+     */
     async loadConversation(id: number|null) {
       this.loading = true;
       try {
@@ -83,11 +130,20 @@ export const useConversationStore = defineStore({
         this.loading = false
       }
     },
+
+    /**
+     * Switch currently active entry.
+     */
     updateCurrentEntry(entry: DialogueEntryType|undefined) {
       this.currentEntry = entry;
     },
+
+   /**
+    * Switch currently active entry path.
+    */
     updateActivePath(path: DialogueEntryType[]) {
       this.activePath = path;
     }
+
   }
 });

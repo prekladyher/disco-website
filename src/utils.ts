@@ -1,6 +1,5 @@
 import { ref } from "vue";
 
-
 /**
  * Simple debounce function wrapper.
  */
