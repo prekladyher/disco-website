@@ -19,6 +19,8 @@ const NODE_STYLE: RecursivePartial<NodeConfig> = {
     width: 70,
     height: 70,
     borderRadius: 4,
+    strokeWidth: 0,
+    strokeColor: "#ffffff",
     color: getNodeColor
   }
 };
@@ -38,7 +40,6 @@ export const configs = defineConfigs({
     },
     selected: {
       ...NODE_STYLE.normal,
-
     },
     hover: {
       ...NODE_STYLE.normal

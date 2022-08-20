@@ -71,17 +71,21 @@ watch(currentEntry, entry => {
 
 <style scoped>
 main {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   position: relative;
   overflow: hidden;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
+}
+.dialogue-graph {
+  flex: 1;
 }
 .dialogue-pane {
   color: #eeeeee;
   background: #333333;
   box-shadow: rgba(0, 0, 0, 0.4) 0px -1px 2px;
   overflow-y: scroll;
+  max-height: 50%;
+  min-height: min(300px, 50%);
 }
 .dialogue-pane::before {
   position: absolute;
@@ -91,8 +95,5 @@ main {
   height: 100%;
   background: url("/logo.png") center center no-repeat;
   filter: grayscale() opacity(0.1);
-}
-.dialogue-pane > .dialogue-flow {
-  min-height: 300px;
 }
 </style>
