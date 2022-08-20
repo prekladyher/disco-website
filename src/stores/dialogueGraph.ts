@@ -202,6 +202,10 @@ export function definePaths(entries: DialogueEntryType[]): Path[] {
     if (isParentEntry(entry)) {
       continue; // parents don't have outgoing links
     }
+    if (entry.fields?.DialogueEntryType === "Jump") {
+      // Split path on jump entry
+      return [{ edges: edgeIds }, ...definePaths(entries.slice(i + 1))];
+    }
     const nextIdx = entry.outgoingLinks?.findIndex(it => {
       return it.destinationConversationID == entry.conversationID
           && it.destinationDialogueID == entries[i + 1].id;

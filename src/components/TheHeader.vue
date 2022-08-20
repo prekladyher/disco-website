@@ -3,8 +3,7 @@ import { IconHome } from "@/components/icons";
 import { useConversationStore } from "@/stores/conversation";
 import { storeToRefs } from "pinia";
 
-const { conversation, loading } = storeToRefs(useConversationStore());
-const { debug } = storeToRefs(useConversationStore());
+const { conversation, debug, loading } = storeToRefs(useConversationStore());
 </script>
 
 <template>

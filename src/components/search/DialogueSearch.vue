@@ -83,7 +83,7 @@ function prevMatch() {
 }
 
 const { handler: handleSearch, pending: searchDebounce } = debounce(performSearch, 500);
-watch (searchText, handleSearch);
+watch(searchText, handleSearch);
 </script>
 
 <template>
