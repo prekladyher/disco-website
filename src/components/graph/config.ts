@@ -16,8 +16,8 @@ const NODE_STYLE: RecursivePartial<NodeConfig> = {
   normal: {
     type: (node: Node) => node.type ? "rect" : "circle",
     radius: 35,
-    width: 70,
-    height: 70,
+    width: (node: Node) => node.width,
+    height: (node: Node) => node.height,
     borderRadius: 4,
     strokeWidth: 0,
     strokeColor: "#ffffff",
@@ -51,6 +51,7 @@ export const configs = defineConfigs({
       color: "#ed1a00"
     },
     label: {
+      visible: false,
       fontSize: 15
     }
   },
@@ -81,7 +82,7 @@ export const configs = defineConfigs({
     normal: {
       color: "#ff0000aa",
       animate: true,
-      dasharray: ""
+      dasharray: "10"
     }
   }
 });

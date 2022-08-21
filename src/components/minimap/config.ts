@@ -18,10 +18,6 @@ export const configs = defineConfigs({
     },
     label: {
       visible: false
-    },
-    zOrder: {
-      enabled: true,
-      zIndex: node => node.selected ? 1 : 0
     }
   },
   edge: {

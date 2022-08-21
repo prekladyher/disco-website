@@ -24,6 +24,16 @@ export interface NodeType {
   name: string;
 
   /**
+   * Node width.
+   */
+  width: number;
+
+  /**
+   * Node height.
+   */
+  height: number;
+
+  /**
    * Flag indicating the node represents parent entry.
    */
   parent: boolean;
@@ -110,6 +120,8 @@ function defineNode(entry: DialogueEntryType): NodeType {
     id: "" + entry.id,
     type: fields.DialogueEntryType,
     name: fields.Title || fields.annotation_title || fields.annotation_text || "",
+    width: 200,
+    height: 100,
     parent: isParentEntry(entry),
     selected: false,
     external: entry.outgoingLinks?.some(it => it.destinationConversationID !== entry.conversationID) || false

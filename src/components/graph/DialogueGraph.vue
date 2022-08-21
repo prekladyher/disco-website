@@ -4,15 +4,14 @@ import { definePaths, useDialogueGraphStore } from "@/stores/dialogueGraph";
 import { debounce } from "@/utils";
 import { storeToRefs } from "pinia";
 import type { EventHandlers, VNetworkGraphInstance } from "v-network-graph";
-import { reactive, ref, watch, type PropType } from "vue";
+import { reactive, ref, watch } from "vue";
 import { configs } from "./config";
+import DialogueGraphNode from "./DialogueGraphNode.vue";
 import { focusNodeAsync, updateCurrentEntry } from "./utils";
 
-const props = defineProps({
-  conversation: {
-    type: Object as PropType<ConversationModel>
-  }
-});
+const props = defineProps<{
+  conversation?: ConversationModel
+}>();
 
 const { currentEntry, activePath } = storeToRefs(useConversationStore());
 
@@ -93,6 +92,9 @@ watch(activePath, entries => {
       :paths="paths"
       :event-handlers="eventHandlers"
     >
+      <template #override-node="nodeProps">
+        <DialogueGraphNode v-bind="nodeProps"></DialogueGraphNode>
+      </template>
     </v-network-graph>
   </section>
 </template>
