@@ -112,6 +112,28 @@ function isInternalLink(link: DialogueLinkType): boolean {
 }
 
 /**
+ * Calculate preferred node width.
+ */
+ function calcNodeWidth(entry: DialogueEntryType) {
+  const type = entry.fields.DialogueEntryType;
+  return type === 'Hub' ? 160 : 240;
+}
+
+/**
+ * Calculate preferred node height.
+ */
+function calcNodeHeight(entry: DialogueEntryType) {
+  const type = entry.fields.DialogueEntryType;
+  if (type === 'Hub') {
+    return 50;
+  } else if (type === 'Jump') {
+    return 80;
+  }
+  const text = entry.fields['Dialogue Text'];
+  return text ? 50 + (text.length / 30 * 18)|0 : 100;
+}
+
+/**
  * Define graph node based on the given dialogue entry.
  */
 function defineNode(entry: DialogueEntryType): NodeType {
@@ -120,8 +142,8 @@ function defineNode(entry: DialogueEntryType): NodeType {
     id: "" + entry.id,
     type: fields.DialogueEntryType,
     name: fields.Title || fields.annotation_title || fields.annotation_text || "",
-    width: 200,
-    height: 100,
+    width: calcNodeWidth(entry),
+    height: calcNodeHeight(entry),
     parent: isParentEntry(entry),
     selected: false,
     external: entry.outgoingLinks?.some(it => it.destinationConversationID !== entry.conversationID) || false
@@ -289,7 +311,7 @@ export const useDialogueGraphStore = defineStore({
       Object.keys(this.nodes).forEach(id => delete this.nodes[id]);
       Object.keys(this.edges).forEach(id => delete this.edges[id]);
       Object.keys(this.layouts.nodes).forEach(id => delete this.layouts.nodes[id]);
-      this.zoomLevel = 0.75;
+      this.zoomLevel = 0.8;
       if (conversation) {
         this.id = conversation.id;
         const graphModel = defineGraph(conversation);
