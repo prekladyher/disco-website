@@ -130,7 +130,14 @@ function calcNodeHeight(entry: DialogueEntryType) {
     return 80;
   }
   const text = entry.fields['Dialogue Text'];
-  return text ? 50 + (text.length / 30 * 18)|0 : 100;
+  if (text) {
+    return 0
+      + /* BORDER */ 6
+      + /* HEADER */ 25
+      + /* PADDING */ 10
+      + /* LINE */ 18 * Math.ceil(text.length / 30);
+  }
+  return 100;
 }
 
 /**

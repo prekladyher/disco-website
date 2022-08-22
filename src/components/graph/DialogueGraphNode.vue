@@ -5,6 +5,7 @@ import type { AnyShapeStyle } from 'v-network-graph';
 import DialogueGraphFork from './DialogueGraphFork.vue';
 import DialogueGraphHub from './DialogueGraphHub.vue';
 import DialogueGraphJump from './DialogueGraphJump.vue';
+import DialogueGraphScript from './DialogueGraphScript.vue';
 import DialogueGraphStart from './DialogueGraphStart.vue';
 import DialogueGraphText from './DialogueGraphText.vue';
 
@@ -44,6 +45,11 @@ const node = nodes[props.nodeId];
     />
     <DialogueGraphFork
       v-else-if="entry?.fields.DialogueEntryType === 'Fork'"
+      :entry="entry"
+      class="node-frame"
+    />
+    <DialogueGraphScript
+      v-else-if="entry?.fields.DialogueEntryType === 'Instruction'"
       :entry="entry"
       class="node-frame"
     />
