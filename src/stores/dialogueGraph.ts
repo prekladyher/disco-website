@@ -135,7 +135,7 @@ function calcNodeHeight(entry: DialogueEntryType) {
       + /* BORDER */ 6
       + /* HEADER */ 25
       + /* PADDING */ 10
-      + /* LINE */ 18 * Math.ceil(text.length / 30);
+      + /* LINE */ 18 * Math.ceil(text.length / 30 + 0.25);
   }
   return 100;
 }
