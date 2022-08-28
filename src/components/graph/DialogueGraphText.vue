@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useDatabaseStore } from '@/stores/database';
 import type { DialogueEntryType } from '@/types';
+import L10n from '../l10n/L10n.vue';
 
 const props = defineProps<{
   entry: DialogueEntryType
@@ -18,7 +19,10 @@ const actor = actorId !== undefined ? database?.actorsById.get(+actorId) : undef
       {{actor?.fields.Name}}
     </div>
     <div class="text">
-      {{entry.fields['Dialogue Text']}}
+      <L10n
+        :lookup="`Dialogue Text/${entry.fields['Articy Id']}`"
+        :fallback="entry.fields['Dialogue Text']"
+      />
     </div>
   </div>
 </template>

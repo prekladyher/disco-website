@@ -2,6 +2,7 @@
 import { useDatabaseStore } from '@/stores/database';
 import type { ActorType, DialogueEntryType } from '@/types';
 import { ref, watch } from 'vue';
+import L10n from '../l10n/L10n.vue';
 
 const props = defineProps<{
   entry: DialogueEntryType
@@ -39,7 +40,10 @@ watch(() => props.entry, entry => {
         <!-- /annotation type entry -->
       </div>
       <div v-if="entry.fields['Dialogue Text']" class="entry-text" tooltip="dialogue text">
-        {{ entry.fields['Dialogue Text'] }}
+        <L10n
+          :lookup="`Dialogue Text/${entry.fields['Articy Id']}`"
+          :fallback="entry.fields['Dialogue Text']"
+        />
       </div>
       <div v-if="entry.fields.DialogueEntryType !== 'DialogueFragment'" class="badge" title="title">
         {{ entry.fields.Title }}
@@ -53,7 +57,10 @@ watch(() => props.entry, entry => {
             </code>
           </div>
           <div class="entry-text" title="alternate text">
-            {{ entry.fields?.['Alternate' + idx] }}
+            <L10n
+              :lookup="`Alternate${idx}/${entry.fields['Articy Id']}`"
+              :fallback="entry.fields?.['Alternate' + idx]"
+            />
           </div>
         </div>
       </template>

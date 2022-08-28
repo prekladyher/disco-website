@@ -1,13 +1,29 @@
 <script setup lang="ts">
-import { IconHome } from "@/components/icons";
-import { useConversationStore } from "@/stores/conversation";
-import { storeToRefs } from "pinia";
+import { IconHome } from '@/components/icons';
+import { useConversationStore } from '@/stores/conversation';
+import { useLanguageStore } from '@/stores/language';
+import { storeToRefs } from 'pinia';
+import { ref } from 'vue';
 
 const { conversation, debug, loading } = storeToRefs(useConversationStore());
+
+const languageStore = useLanguageStore();
+
+const activeDrop = ref(false);
+
+async function onDrop(event: DragEvent) {
+  activeDrop.value = false;
+  languageStore.loadFiles(Array.from(event.dataTransfer?.files || []));
+}
 </script>
 
 <template>
-  <header>
+  <header
+    :class="{ dropzone: activeDrop }"
+    @dragover.prevent="activeDrop=true"
+    @dragleave="activeDrop=false"
+    @drop.prevent="onDrop"
+  >
     <nav>
       <router-link to="/"><IconHome class="icon" /></router-link>
       <div v-if="conversation && !loading" class="title">
@@ -23,11 +39,28 @@ const { conversation, debug, loading } = storeToRefs(useConversationStore());
           <input type="checkbox" v-model="debug">
         </label>
       </div>
+      <div class="switch">
+        <label>
+          L10n
+          <input type="checkbox" v-model="languageStore.show">
+        </label>
+      </div>
     </nav>
   </header>
 </template>
 
 <style scoped>
+.dropzone::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;;
+  border: 3px solid #cc0000;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -54,6 +87,7 @@ nav > .glue {
 
 .switch {
   margin: 1em;
+  user-select: none;
 }
 
 .switch * {

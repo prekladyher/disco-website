@@ -14,7 +14,10 @@ jobs:
       with:
         node-version: '17'
         cache: 'npm'
+        registry-url: 'https://npm.pkg.github.com'
     - run: npm install
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - run: npm run build
     - run: |
         git config --global user.name 'prekladyher'
