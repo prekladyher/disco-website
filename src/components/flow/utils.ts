@@ -14,10 +14,6 @@ export function isDestinationEntry(entry: DialogueEntryType) {
   if (entry.fields.DialogueEntryType === "DialogueFragment") {
     return true;
   }
-  // Hub entries are valid destinations
-  // if (entry.fields.DialogueEntryType === "Hub") {
-  //   return true;
-  // }
   return false;
 }
 

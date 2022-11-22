@@ -1,18 +1,10 @@
 <script setup lang="ts">
-import { useDatabaseStore } from '@/stores/database';
-import { watch } from 'vue';
-import DialogueFlowEntry from './DialogueFlowEntry.vue';
-import type { DialoguePathType } from './types';
+import DialogueFlowEntry from "./DialogueFlowEntry.vue";
+import type { DialoguePathType } from "./types";
 
 const props = defineProps<{
   path: DialoguePathType
 }>();
-
-const { database } = useDatabaseStore();
-
-watch(() => props.path, path => {
-
-}, { immediate: true });
 </script>
 
 <template>

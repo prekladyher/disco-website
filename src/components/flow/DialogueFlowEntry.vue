@@ -1,20 +1,25 @@
 <script setup lang="ts">
-import { useDatabaseStore } from '@/stores/database';
-import type { ActorType, DialogueEntryType } from '@/types';
-import { ref, watch } from 'vue';
-import L10n from '../l10n/L10n.vue';
+import DialogueL10n from "@/components/l10n/DialogueL10n.vue";
+import { useDatabaseStore } from "@/stores/database";
+import type { DialogueEntryType } from "@/types";
+import { computed } from "vue";
 
 const props = defineProps<{
   entry: DialogueEntryType
 }>();
 
 const { database } = useDatabaseStore();
-const actor = ref<ActorType>();
 
-watch(() => props.entry, entry => {
-  const actorId = entry?.fields.Actor;
-  actor.value = actorId ? database?.actorsById.get(+actorId) : undefined;
-}, { immediate: true });
+const alternates = computed(() => [1, 2, 3, 4].map(i => ({
+  kind: 'Alternate' + i,
+  text: props.entry.fields['Alternate' + i],
+  condition: props.entry.fields['Condition' + i]
+})).filter(it => !!it.text));
+
+const actor = computed(() => {
+  const actorId = props.entry?.fields.Actor;
+  return actorId ? database?.actorsById.get(+actorId) : undefined;
+});
 </script>
 
 <template>
@@ -40,27 +45,21 @@ watch(() => props.entry, entry => {
         <!-- /annotation type entry -->
       </div>
       <div v-if="entry.fields['Dialogue Text']" class="entry-text" tooltip="dialogue text">
-        <L10n
-          :lookup="`Dialogue Text/${entry.fields['Articy Id']}`"
-          :fallback="entry.fields['Dialogue Text']"
-        />
+        <DialogueL10n :entry="entry" kind="Dialogue Text" />
       </div>
       <div v-if="entry.fields.DialogueEntryType !== 'DialogueFragment'" class="badge" title="title">
         {{ entry.fields.Title }}
       </div>
       <!-- alternate text -->
-      <template v-for="idx in [1, 2, 3, 4]">
-        <div v-if="entry.fields?.['Alternate' + idx]" class="alternate">
+      <template v-for="alternate in alternates">
+        <div class="alternate">
           <div class="steps">
             <code class="badge badge-condition" title="alternate condition">
-              {{ entry.fields?.['Condition' + idx] }}
+              {{ alternate.condition }}
             </code>
           </div>
           <div class="entry-text" title="alternate text">
-            <L10n
-              :lookup="`Alternate${idx}/${entry.fields['Articy Id']}`"
-              :fallback="entry.fields?.['Alternate' + idx]"
-            />
+            <DialogueL10n :entry="entry" :kind="alternate.kind" />
           </div>
         </div>
       </template>

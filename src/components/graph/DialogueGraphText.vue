@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { useDatabaseStore } from '@/stores/database';
-import type { DialogueEntryType } from '@/types';
-import L10n from '../l10n/L10n.vue';
+import DialogueL10n from "@/components/l10n/DialogueL10n.vue";
+import { useDatabaseStore } from "@/stores/database";
+import type { DialogueEntryType } from "@/types";
+import { computed } from "@vue/reactivity";
 
 const props = defineProps<{
   entry: DialogueEntryType
@@ -9,8 +10,10 @@ const props = defineProps<{
 
 const { database } = useDatabaseStore();
 
-const actorId = props.entry.fields.Actor;
-const actor = actorId !== undefined ? database?.actorsById.get(+actorId) : undefined;
+const actor = computed(() => {
+  const actorId = props.entry.fields.Actor;
+  return actorId !== undefined ? database?.actorsById.get(+actorId) : undefined;
+});
 </script>
 
 <template>
@@ -19,10 +22,7 @@ const actor = actorId !== undefined ? database?.actorsById.get(+actorId) : undef
       {{actor?.fields.Name}}
     </div>
     <div class="text">
-      <L10n
-        :lookup="`Dialogue Text/${entry.fields['Articy Id']}`"
-        :fallback="entry.fields['Dialogue Text']"
-      />
+      <DialogueL10n :entry="entry" kind="Dialogue Text" />
     </div>
   </div>
 </template>

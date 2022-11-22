@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { useConversationStore } from '@/stores/conversation';
-import { useDialogueGraphStore } from '@/stores/dialogueGraph';
-import type { AnyShapeStyle } from 'v-network-graph';
-import DialogueGraphFork from './DialogueGraphFork.vue';
-import DialogueGraphHub from './DialogueGraphHub.vue';
-import DialogueGraphJump from './DialogueGraphJump.vue';
-import DialogueGraphScript from './DialogueGraphScript.vue';
-import DialogueGraphStart from './DialogueGraphStart.vue';
-import DialogueGraphText from './DialogueGraphText.vue';
+import { useConversationStore } from "@/stores/conversation";
+import { useDialogueGraphStore } from "@/stores/dialogueGraph";
+import type { AnyShapeStyle } from "v-network-graph";
+import DialogueGraphFork from "./DialogueGraphFork.vue";
+import DialogueGraphHub from "./DialogueGraphHub.vue";
+import DialogueGraphJump from "./DialogueGraphJump.vue";
+import DialogueGraphScript from "./DialogueGraphScript.vue";
+import DialogueGraphStart from "./DialogueGraphStart.vue";
+import DialogueGraphText from "./DialogueGraphText.vue";
 
 const props = defineProps<{
   nodeId: string,

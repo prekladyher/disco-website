@@ -1,6 +1,6 @@
 # Disco Website
 
-Welcome to interactive dialogue graph browser loaded with dialogues from Disco Elysium.
+Welcome to interactive dialogue graph browser with dialogues from Disco Elysium.
 The main purpose of this tool is to provide help with the game localization.
 
 

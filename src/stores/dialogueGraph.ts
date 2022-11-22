@@ -116,7 +116,7 @@ function isInternalLink(link: DialogueLinkType): boolean {
  */
  function calcNodeWidth(entry: DialogueEntryType) {
   const type = entry.fields.DialogueEntryType;
-  return type === 'Hub' ? 160 : 240;
+  return type === "Hub" ? 160 : 240;
 }
 
 /**
@@ -124,12 +124,12 @@ function isInternalLink(link: DialogueLinkType): boolean {
  */
 function calcNodeHeight(entry: DialogueEntryType) {
   const type = entry.fields.DialogueEntryType;
-  if (type === 'Hub') {
+  if (type === "Hub") {
     return 50;
-  } else if (type === 'Jump') {
+  } else if (type === "Jump") {
     return 80;
   }
-  const text = entry.fields['Dialogue Text'];
+  const text = entry.fields["Dialogue Text"];
   if (text) {
     return 0
       + /* BORDER */ 6

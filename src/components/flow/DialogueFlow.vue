@@ -1,11 +1,11 @@
 <script setup lang="ts">
+import DialogueFlowEntry from "@/components/flow/DialogueFlowEntry.vue";
+import DialogueFlowPath from "@/components/flow/DialogueFlowPath.vue";
 import { IconNext } from "@/components/icons";
 import { useConversationStore } from "@/stores/conversation";
 import type { DialogueEntryType } from "@/types";
 import { storeToRefs } from "pinia";
 import { ref, watch } from "vue";
-import DialogueFlowEntry from "./DialogueFlowEntry.vue";
-import DialogueFlowPath from "./DialogueFlowPath.vue";
 import type { DialoguePathType, DialogueStepType } from "./types";
 import { resolvePaths } from "./utils";
 

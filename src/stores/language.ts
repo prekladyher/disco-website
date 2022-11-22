@@ -1,4 +1,4 @@
-import { decodeEntries } from '@prekladyher/l10n-gettext';
+import { decodeEntries } from "@prekladyher/l10n-gettext";
 import { defineStore } from "pinia";
 
 /**
@@ -12,28 +12,50 @@ export interface LanguageString {
   key: string;
 
   /**
-   * Translated value.
+   * Source string.
    */
-  string: string;
+  source: string;
+
+  /**
+   * Translated string.
+   */
+  target?: string;
 
 }
 
+
 /**
- * Load PO file content as translation strings.
+ * Parse PO file header.
  */
-async function loadStrings(files: File[]) {
-  const strings = {} as Record<string, LanguageString>;
-  for (const file of files) {
-    for (const entry of decodeEntries(await file.text())) {
-      if (entry.msgid !== '' && entry.msgctxt && entry.msgstr) {
-        strings[entry.msgctxt] = {
-          key: entry.msgctxt,
-          string: entry.msgstr
-        };
-      }
+function parseHeader(value: string) {
+  const header: Record<string, string> = {};
+  for (const line of value.trim().split("\n")) {
+    const split = line.indexOf(": ");
+    if (split >= 0) {
+      header[line.substring(0, split)] = line.substring(split + 2);
     }
   }
-  return strings;
+  return header;
+}
+
+/**
+ * Read PO file contents.
+ */
+async function readFile(file: File) {
+  const header: Record<string, string> = {};
+  const strings: Record<string, LanguageString> = {};
+  for (const entry of decodeEntries(await file.text())) {
+    if (entry.msgid === "") {
+      Object.assign(header, parseHeader(entry.msgstr || ""));
+    } else if (entry.msgctxt) {
+      strings[entry.msgctxt] = {
+        key: entry.msgctxt,
+        source: entry.msgid,
+        target: entry.msgstr
+      };
+    }
+  }
+  return { header, strings };
 }
 
 /**
@@ -45,35 +67,69 @@ export const useLanguageStore = defineStore({
     return {
 
       /**
-       * Whether to show translated strings.
+       * Currently active locale.
        */
-      show: true,
+      activeLocale: "",
 
       /**
        * Currently loaded files.
        */
-      files: [] as File[],
+      loadedFiles: {} as Record<string, File>,
 
       /**
-       * Translation strings.
+       * Loaded translation strings.
        */
-      strings: {} as Record<string, LanguageString>
+      stringTables: {} as Record<string, Record<string, LanguageString>>,
 
     };
   },
+  getters: {
+
+    /**
+     * All available locales.
+     */
+    availableLocales: state => Object.keys(state.stringTables),
+
+    /**
+     * Currently active language strings.
+     */
+    activeStrings: state => {
+      return state.stringTables[state.activeLocale];
+    }
+
+  },
   actions: {
 
+    /**
+     * Load strings from the given PO files.
+     */
     async loadFiles(files: File[]) {
-      this.files = files;
-      this.loadStrings();
+      for (const file of files) {
+        this.loadFile(file);
+      }
     },
 
-    async loadStrings() {
-      this.strings = this.files ? await loadStrings(this.files) : {};
+    /**
+     * Load strings from the given PO file.
+     */
+    async loadFile(file: File) {
+      try {
+        const { header, strings } = await readFile(file);
+        this.loadStrings(header.Language || "", strings);
+        this.loadedFiles[file.name] = file;
+      } catch (error) {
+        console.error(`Error loading file ${file.name}:`, error);
+      }
     },
 
-    async toggleShow() {
-      this.show = !this.show;
+    /**
+     * Load language strings for the given locale.
+     */
+    loadStrings(locale: string, strings: Record<string, LanguageString>) {
+      if (!this.stringTables[locale]) {
+        this.stringTables[locale] = {};
+      }
+      Object.assign(this.stringTables[locale], strings);
     }
 
   }

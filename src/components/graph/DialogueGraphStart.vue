@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { CircleShapeStyle } from 'v-network-graph';
+import type { CircleShapeStyle } from "v-network-graph";
 
 const props = defineProps<{
   config: CircleShapeStyle

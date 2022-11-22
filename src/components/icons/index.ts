@@ -1,5 +1,6 @@
 
 export { default as IconClose } from "./IconClose.vue";
+export { default as IconDebug } from "./IconDebug.vue";
 export { default as IconDown } from "./IconDown.vue";
 export { default as IconHome } from "./IconHome.vue";
 export { default as IconMap } from "./IconMap.vue";

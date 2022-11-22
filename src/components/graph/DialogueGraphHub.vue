@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { DialogueEntryType } from '@/types';
+import type { DialogueEntryType } from "@/types";
 
 const props = defineProps<{
   entry: DialogueEntryType
