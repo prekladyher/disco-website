@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import DialogueBadgeCondition from "./DialogueBadgeCondition.vue";
+import DialogueBadgeScript from "./DialogueBadgeScript.vue";
 import DialogueFlowEntry from "./DialogueFlowEntry.vue";
 import type { DialoguePathType } from "./types";
 
@@ -13,13 +15,9 @@ const props = defineProps<{
       <code v-if="path.steps.length" class="badge badge-priority" title="priority">
         {{ path.steps[0]?.entry?.conditionPriority }}
       </code>
-      <template v-for="step in path.steps">
-        <code v-if="step.entry?.conditionsString" class="badge badge-condition" title="condition">
-          {{ step.entry?.conditionsString }}
-        </code>
-        <code v-if="step.entry?.userScript" class="badge badge-script" title="script">
-          {{ step.entry?.userScript }}
-        </code>
+      <template v-for="{ entry } in path.steps">
+        <DialogueBadgeCondition v-if="entry?.conditionsString" :condition="entry.conditionsString" />
+        <DialogueBadgeScript v-if="entry?.userScript" :script="entry?.userScript" />
       </template>
     </div>
     <DialogueFlowEntry v-if="path.destination.entry" :entry="path.destination.entry" />

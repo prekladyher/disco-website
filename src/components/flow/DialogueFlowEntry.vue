@@ -3,6 +3,8 @@ import DialogueL10n from "@/components/l10n/DialogueL10n.vue";
 import { useDatabaseStore } from "@/stores/database";
 import type { DialogueEntryType } from "@/types";
 import { computed } from "vue";
+import DialogueBadgeCondition from "./DialogueBadgeCondition.vue";
+import DialogueBadgeScript from "./DialogueBadgeScript.vue";
 
 const props = defineProps<{
   entry: DialogueEntryType
@@ -32,9 +34,7 @@ const actor = computed(() => {
         <code class="badge badge-priority" title="entry priority">
           {{ entry.conditionPriority }}
         </code>
-        <code v-if="entry.conditionsString" class="badge badge-condition" title="entry condition">
-          {{ entry.conditionsString }}
-        </code>
+        <DialogueBadgeCondition v-if="entry.conditionsString" :condition="entry.conditionsString" />
         <!-- annotation type entry -->
         <code v-if="entry.fields?.annotation_title" class="badge" title="annotation title">
           {{ entry.fields?.annotation_title }}
@@ -64,9 +64,7 @@ const actor = computed(() => {
         </div>
       </template>
       <!-- /alternate text -->
-      <code v-if="entry.userScript" class="badge badge-script" title="script">
-        {{ entry.userScript }}
-      </code>
+      <DialogueBadgeScript v-if="entry.userScript" :script="entry.userScript" />
     </div>
   </div>
 </template>
