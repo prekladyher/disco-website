@@ -15,7 +15,7 @@ const missing = computed(() => {
   <div>
     <div class="source">
       {{source}}
-  </div>
+    </div>
     <div
       class="target"
       :class=" { missing }"
