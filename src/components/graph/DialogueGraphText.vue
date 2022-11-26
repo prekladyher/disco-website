@@ -38,7 +38,6 @@ const actor = computed(() => {
   }
   .title {
     color: white;
-    font-weight: bold;
     padding: 5px 4px;
     line-height: 1;
     white-space: nowrap;

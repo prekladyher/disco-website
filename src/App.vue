@@ -27,6 +27,7 @@ async function onDrop(event: DragEvent) {
 </template>
 
 <style>
+@import "@fontsource/inter";
 @import "@/assets/base.css";
 @import "v-network-graph/lib/style.css";
 
