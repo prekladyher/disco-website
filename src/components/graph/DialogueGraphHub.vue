@@ -20,9 +20,12 @@ const props = defineProps<{
     align-items: center;
     justify-content: center;
     background-color: #888888;
+    border-radius: 5px;
+    line-height: 1.2;
   }
   .title {
     font-weight: bold;
     color: #dddddd;
+    padding: 5px 8px;
   }
 </style>

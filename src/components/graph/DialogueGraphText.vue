@@ -17,7 +17,7 @@ const actor = computed(() => {
 </script>
 
 <template>
-  <div xmlns="http://www.w3.org/1999/xhtml" class="frame">
+  <div class="frame">
     <div class="title">
       {{actor?.fields.Name}}
     </div>
@@ -32,9 +32,12 @@ const actor = computed(() => {
     display: flex;
     flex-direction: column;
     border: 3px solid #666666;
+    border-radius: 5px;
     background-color: #666666;
+    line-height: 1.2;
   }
   .title {
+    color: white;
     font-weight: bold;
     padding: 5px 4px;
     line-height: 1;
@@ -45,9 +48,8 @@ const actor = computed(() => {
   .text {
     flex-grow: 1;
     background: #eeeeee;
+    border-radius: 3px;
     padding: 5px;
     color: black;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 </style>

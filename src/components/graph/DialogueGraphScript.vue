@@ -20,6 +20,8 @@ const props = defineProps<{
     flex-direction: column;
     border: 3px solid #aa8888;
     background-color: #aa8888;
+    border-radius: 5px;
+    line-height: 1.2;
   }
   .text {
     flex-grow: 1;

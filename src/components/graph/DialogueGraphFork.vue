@@ -20,10 +20,12 @@ const props = defineProps<{
     flex-direction: column;
     border: 3px solid #8888aa;
     background-color: #8888aa;
+    border-radius: 5px;
+    line-height: 1.2;
   }
   .text {
     flex-grow: 1;
-    padding: 5px;
+    padding: 5px 8px;
     color: black;
     overflow-wrap: break-word;
     background-color: #ddddff;

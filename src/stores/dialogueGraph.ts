@@ -116,7 +116,7 @@ function isInternalLink(link: DialogueLinkType): boolean {
  */
  function calcNodeWidth(entry: DialogueEntryType) {
   const type = entry.fields.DialogueEntryType;
-  return type === "Hub" ? 160 : 240;
+  return type === "Hub" ? 160 : 250;
 }
 
 /**

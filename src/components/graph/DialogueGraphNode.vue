@@ -2,12 +2,15 @@
 import { useConversationStore } from "@/stores/conversation";
 import { useDialogueGraphStore } from "@/stores/dialogueGraph";
 import type { AnyShapeStyle } from "v-network-graph";
+import { ref } from "vue";
 import DialogueGraphFork from "./DialogueGraphFork.vue";
 import DialogueGraphHub from "./DialogueGraphHub.vue";
 import DialogueGraphJump from "./DialogueGraphJump.vue";
 import DialogueGraphScript from "./DialogueGraphScript.vue";
 import DialogueGraphStart from "./DialogueGraphStart.vue";
 import DialogueGraphText from "./DialogueGraphText.vue";
+
+import { useResizeObserver } from "@vueuse/core";
 
 const props = defineProps<{
   nodeId: string,
@@ -19,6 +22,13 @@ const entry = conversation?.entriesById.get(parseInt(props.nodeId));
 
 const { nodes } = useDialogueGraphStore();
 const node = nodes[props.nodeId];
+
+const content = ref(null);
+useResizeObserver(content, (entries) => {
+  const entry = entries[0];
+  node.width = entry.contentRect.width;
+  node.height = entry.contentRect.height;
+}, { box: "border-box" });
 </script>
 
 <template>
@@ -33,41 +43,28 @@ const node = nodes[props.nodeId];
     :width="node.width"
     :height="node.height"
   >
-    <DialogueGraphHub
-      v-if="entry?.fields.DialogueEntryType === 'Hub'"
-      :entry="entry"
-      class="node-frame"
-    />
-    <DialogueGraphText
-      v-else-if="entry?.fields.DialogueEntryType === 'DialogueFragment'"
-      :entry="entry"
-      class="node-frame"
-    />
-    <DialogueGraphFork
-      v-else-if="entry?.fields.DialogueEntryType === 'Fork'"
-      :entry="entry"
-      class="node-frame"
-    />
-    <DialogueGraphScript
-      v-else-if="entry?.fields.DialogueEntryType === 'Instruction'"
-      :entry="entry"
-      class="node-frame"
-    />
-    <DialogueGraphJump
-      v-else-if="entry?.fields.DialogueEntryType === 'Jump'"
-      :entry="entry"
-      class="node-frame"
-    />
+    <div xmlns="http://www.w3.org/1999/xhtml" ref="content">
+      <DialogueGraphHub
+        v-if="entry?.fields.DialogueEntryType === 'Hub'"
+        :entry="entry"
+      />
+      <DialogueGraphText
+        v-else-if="entry?.fields.DialogueEntryType === 'DialogueFragment'"
+        ref="content"
+        :entry="entry"
+      />
+      <DialogueGraphFork
+        v-else-if="entry?.fields.DialogueEntryType === 'Fork'"
+        :entry="entry"
+      />
+      <DialogueGraphScript
+        v-else-if="entry?.fields.DialogueEntryType === 'Instruction'"
+        :entry="entry"
+      />
+      <DialogueGraphJump
+        v-else-if="entry?.fields.DialogueEntryType === 'Jump'"
+        :entry="entry"
+      />
+    </div>
   </foreignObject>
 </template>
-
-<style scoped>
-  .node-frame {
-    height: 100%;
-    color: #ffffff;
-    line-height: 1.2;
-    font-size: 15px;
-    font-family: sans-serif;
-    border-radius: 5px;
-  }
-</style>
