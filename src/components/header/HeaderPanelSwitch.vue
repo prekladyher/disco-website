@@ -15,6 +15,7 @@
   position: relative;
   width: 32px;
   height: 32px;
+  padding: 0;
   text-align: center;
   border: 0;
   border-radius: 50%;

@@ -23,8 +23,8 @@ const entry = conversation?.entriesById.get(parseInt(props.nodeId));
 const { nodes } = useDialogueGraphStore();
 const node = nodes[props.nodeId];
 
-const content = ref(null);
-useResizeObserver(content, (entries) => {
+const contentRef = ref(null);
+useResizeObserver(contentRef, (entries) => {
   const entry = entries[0];
   node.width = entry.contentRect.width;
   node.height = entry.contentRect.height;
@@ -43,14 +43,13 @@ useResizeObserver(content, (entries) => {
     :width="node.width"
     :height="node.height"
   >
-    <div xmlns="http://www.w3.org/1999/xhtml" ref="content">
+    <div xmlns="http://www.w3.org/1999/xhtml" ref="contentRef">
       <DialogueGraphHub
         v-if="entry?.fields.DialogueEntryType === 'Hub'"
         :entry="entry"
       />
       <DialogueGraphText
         v-else-if="entry?.fields.DialogueEntryType === 'DialogueFragment'"
-        ref="content"
         :entry="entry"
       />
       <DialogueGraphFork

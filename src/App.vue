@@ -1,25 +1,22 @@
 <script setup lang="ts">
 import HeaderPanel from "@/components/header/HeaderPanel.vue";
+import { useDropZone } from "@vueuse/core";
 import { ref } from "vue";
 import { useLanguageStore } from "./stores/language";
 
 const languageStore = useLanguageStore();
 
-const activeDrop = ref(false);
-
-async function onDrop(event: DragEvent) {
-  activeDrop.value = false;
-  languageStore.loadFiles(Array.from(event.dataTransfer?.files || []));
-}
+const dropZoneRef = ref<HTMLDivElement>()
+const { isOverDropZone } = useDropZone(dropZoneRef, files => {
+  languageStore.loadFiles(files || []);
+});
 </script>
 
 <template>
   <div 
     id="app-root"
-    :class="{ dropzone: activeDrop }"
-    @dragover.prevent="activeDrop=true"
-    @dragleave="activeDrop=false"
-    @drop.prevent="onDrop"
+    ref="dropZoneRef"
+    :class="{ dropzone: isOverDropZone }"
   >
     <HeaderPanel />
     <router-view />
