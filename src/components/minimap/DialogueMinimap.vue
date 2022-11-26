@@ -91,8 +91,8 @@ const layers: Layers = {
       >
         <template #viewport>
           <path
-            fill="#eeeeee"
-            fill-opacity="0.7"
+            fill="currentColor"
+            fill-opacity="0.75"
             pointer-events="all"
             :d="viewport.viewport"
           />
@@ -119,8 +119,8 @@ const layers: Layers = {
   position: absolute;
   top: 12px;
   right: 12px;
-  border: 2px solid #cccccc;
-  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid var(--color-border);
+  background: var(--color-background-soft);
   border-radius: 18px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 2px;
   overflow: hidden;
@@ -139,6 +139,7 @@ const layers: Layers = {
 
 .minimap > .v-network-graph {
   opacity: 0;
+  color: var(--color-background);
 }
 
 .active > .minimap > .v-network-graph {

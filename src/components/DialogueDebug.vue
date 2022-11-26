@@ -32,7 +32,8 @@ watch(debug, updateText, { immediate: true });
 <style scoped>
 .tooltip {
   position: absolute;
-  background: rgba(255, 255, 255, 0.9);
+  color: var(--color-heading);
+  background: var(--color-background-soft);
   border-radius: 5px;
   border: 1px solid black;
   top: 4rem;
