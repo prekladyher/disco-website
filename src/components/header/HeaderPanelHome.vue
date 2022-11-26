@@ -3,7 +3,7 @@ import IconHome from "@/components/icons/IconHome.vue";
 </script>
 
 <template>
-  <router-link to="/" class="link">
+  <router-link to="/" class="link" title="home">
     <IconHome class="icon" />
   </router-link>
 </template>

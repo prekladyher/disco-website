@@ -88,7 +88,11 @@ watch(searchText, handleSearch);
 
 <template>
   <div class="search-wrapper" :class="{ active: searchActive }">
-    <a class="action-icon" @click="toggleSearch()">
+    <a
+      class="action-icon"
+      @click="toggleSearch()"
+      title="toggle search"
+    >
       <IconSearch v-if="!searchActive" />
       <IconClose v-if="searchActive" />
     </a>
@@ -102,10 +106,20 @@ watch(searchText, handleSearch);
           @keypress.enter.shift="prevMatch"
           @keydown.esc="toggleSearch(false)"
         >
-        <button class="action-icon" :disabled="!searchResult.length" @click="prevMatch()">
+        <button
+          class="action-icon"
+          :disabled="!searchResult.length"
+          @click="prevMatch()"
+          title="previous result"
+        >
           <IconUp />
         </button>
-        <button class="action-icon" :disabled="!searchResult.length" @click="nextMatch()">
+        <button 
+          class="action-icon"
+          :disabled="!searchResult.length"
+          @click="nextMatch()"
+          title="next result"
+        >
           <IconDown />
         </button>
         <div class="search-result">

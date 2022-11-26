@@ -103,7 +103,11 @@ const layers: Layers = {
         </template>
       </v-network-graph>
     </div>
-    <a class="action-icon" @click="toggleMinimap()">
+    <a
+      class="action-icon"
+      @click="toggleMinimap()"
+      title="toggle minimap"
+    >
       <IconMap v-if="!minimapActive" />
       <IconClose v-if="minimapActive" />
     </a>
