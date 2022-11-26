@@ -30,8 +30,6 @@ const props = defineProps<{
 @import "@/assets/flow.css";
 
 .path-entry {
-  border: 1px solid #222;
-  padding: 4px 3px;
   flex: 1;
 }
 

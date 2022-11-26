@@ -77,13 +77,14 @@ watch(highlightPath, path => {
   gap: 5px;
 }
 .flow-next {
-  background: #4978aa;
+  color: var(--color-background-soft);
+  background: var(--color-link);
   display: flex;
   align-items: center;
   padding: 0 10px;
   border-radius: 5px;
 }
 .flow-next:hover {
-  background: #6892be;
+  background: var(--color-link-hover);
 }
 </style>

@@ -58,7 +58,7 @@ watch(currentEntry, entry => {
       ref="dialogueGraph"
       :conversation="conversation"
     />
-    <section class="dialogue-pane">
+    <section class="dialogue-pane" :class="{ empty: !currentEntry }">
       <DialogueFlow />
     </section>
     <DialogueMinimap
@@ -80,14 +80,13 @@ main {
   flex: 1;
 }
 .dialogue-pane {
-  color: #eeeeee;
-  background: #333333;
+  background: var(--color-background-soft);
   box-shadow: rgba(0, 0, 0, 0.4) 0px -1px 2px;
   overflow-y: scroll;
   max-height: 50%;
   min-height: min(300px, 50%);
 }
-.dialogue-pane::before {
+.dialogue-pane.empty::before {
   position: absolute;
   display: block;
   content: "";

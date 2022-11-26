@@ -25,7 +25,7 @@ const props = defineProps<{
   }
   .text {
     flex-grow: 1;
-    padding: 5px 8px;
+    padding: 8px 5px;
     color: black;
     overflow-wrap: break-word;
     background-color: #ddddff;

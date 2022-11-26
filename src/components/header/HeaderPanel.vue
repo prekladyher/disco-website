@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import HeaderPanelDark from "./HeaderPanelDark.vue";
 import HeaderPanelDebug from "./HeaderPanelDebug.vue";
 import HeaderPanelHome from "./HeaderPanelHome.vue";
 import HeaderPanelLocale from "./HeaderPanelLocale.vue";
@@ -12,6 +13,7 @@ import HeaderPanelTitle from "./HeaderPanelTitle.vue";
       <HeaderPanelTitle />
       <div class="glue"></div>
       <HeaderPanelDebug />
+      <HeaderPanelDark />
       <HeaderPanelLocale />
     </nav>
   </header>

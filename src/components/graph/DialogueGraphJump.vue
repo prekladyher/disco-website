@@ -25,6 +25,6 @@ const props = defineProps<{
   }
   .title {
     color: #ffffff;
-    padding: 5px 8px;
+    padding: 8px 5px;
   }
 </style>

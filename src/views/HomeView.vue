@@ -9,7 +9,7 @@ const { database } = storeToRefs(useDatabaseStore());
   <main>
     <ul v-if="database">
       <li v-for="[id, conversation] in database.conversationsById">
-        <router-link :to="`/conversations/${id}`">
+        <router-link :to="`/conversations/${id}`" class="link">
           {{id}} &ndash; {{ conversation.fields.Title }}
         </router-link>
       </li>
@@ -27,9 +27,12 @@ ul {
   margin: 0;
 }
 ul > li {
-  padding: 0 10px;
+  padding: 2px 10px;
 }
 ul > li + li {
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border-hover);
+}
+.link {
+  text-decoration: none;
 }
 </style>

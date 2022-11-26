@@ -80,15 +80,18 @@ const actor = computed(() => {
   line-height: 1.2;
 }
 .header {
+  display: flex;
   flex-basis: 12rem;
   align-self: stretch;
+  justify-content: center;
   padding: 0 5px;
-  background: #222222;
+  background: var(--color-border);
   border-radius: 5px
 }
+
+
 .actor {
-  font-weight: 600;
-  color: #f4af04;
+  align-self: center;
 }
 
 .content {
