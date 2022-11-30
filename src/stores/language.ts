@@ -112,7 +112,6 @@ export const useLanguageStore = defineStore({
      * Reload loaded files.
      */
     async reloadFiles() {
-      console.log('reload');
       await this.loadFiles(Object.values(this.loadedFiles));
     },
 

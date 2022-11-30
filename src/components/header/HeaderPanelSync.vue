@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useLanguageStore } from "@/stores/language";
 import { useIntervalFn } from "@vueuse/shared";
-import { ref } from "vue";
+import { ref, watch } from "vue";
 import { IconSync } from "../icons";
 import HeaderPanelSwitch from "./HeaderPanelSwitch.vue";
 
@@ -24,12 +24,18 @@ const { pause, resume, isActive: active } = useIntervalFn(async () => {
   immediate: false,
   immediateCallback: true
 });
+
+const animate = ref(false);
+watch(pending, () => {
+  animate.value = true;
+  setTimeout(() => animate.value = false, 500)
+});
 </script>
 
 <template>
   <HeaderPanelSwitch
     title="toggle file sync"
-    :class="{ active, pending }"
+    :class="{ active, pending: animate }"
     @click="active ? pause() : resume()"
   >
     <IconSync class="spinner" />
@@ -37,12 +43,8 @@ const { pause, resume, isActive: active } = useIntervalFn(async () => {
 </template>
 
 <style scoped>
-.spinner {
-  rotate: 0deg;
-  transition: rotate 1s linear;
-}
 .pending > .spinner  {
-  rotate: 180deg;
-  transition: none;
+  rotate: -360deg;
+  transition: rotate 0.5s;
 }
 </style>
