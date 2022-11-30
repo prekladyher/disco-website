@@ -3,6 +3,7 @@ import HeaderPanelDark from "./HeaderPanelDark.vue";
 import HeaderPanelDebug from "./HeaderPanelDebug.vue";
 import HeaderPanelHome from "./HeaderPanelHome.vue";
 import HeaderPanelLocale from "./HeaderPanelLocale.vue";
+import HeaderPanelSync from "./HeaderPanelSync.vue";
 import HeaderPanelTitle from "./HeaderPanelTitle.vue";
 </script>
 
@@ -14,6 +15,7 @@ import HeaderPanelTitle from "./HeaderPanelTitle.vue";
       <div class="glue"></div>
       <HeaderPanelDebug />
       <HeaderPanelDark />
+      <HeaderPanelSync />
       <HeaderPanelLocale />
     </nav>
   </header>

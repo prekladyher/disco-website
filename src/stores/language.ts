@@ -101,11 +101,27 @@ export const useLanguageStore = defineStore({
   actions: {
 
     /**
+     * Clear stored strings and file references.
+     */
+    clear() {
+      this.loadedFiles = {};
+      this.stringTables = {};
+    },
+
+    /**
+     * Reload loaded files.
+     */
+    async reloadFiles() {
+      console.log('reload');
+      await this.loadFiles(Object.values(this.loadedFiles));
+    },
+
+    /**
      * Load strings from the given PO files.
      */
     async loadFiles(files: File[]) {
       for (const file of files) {
-        this.loadFile(file);
+        await this.loadFile(file);
       }
     },
 

@@ -8,6 +8,7 @@ const languageStore = useLanguageStore();
 
 const dropZoneRef = ref<HTMLDivElement>()
 const { isOverDropZone } = useDropZone(dropZoneRef, files => {
+  languageStore.clear();
   languageStore.loadFiles(files || []);
 });
 </script>

@@ -8,5 +8,6 @@ export { default as IconMoon } from "./IconMoon.vue";
 export { default as IconNext } from "./IconNext.vue";
 export { default as IconPrev } from "./IconPrev.vue";
 export { default as IconSearch } from "./IconSearch.vue";
+export { default as IconSync } from "./IconSync.vue";
 export { default as IconUp } from "./IconUp.vue";
 
