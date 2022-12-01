@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import HeaderPanel from "@/components/header/HeaderPanel.vue";
-import { useDropZone } from "@vueuse/core";
+import { useDropZone } from "@/composables/useDropZone";
 import { ref } from "vue";
 import { useLanguageStore } from "./stores/language";
 
 const languageStore = useLanguageStore();
 
 const dropZoneRef = ref<HTMLDivElement>()
-const { isOverDropZone } = useDropZone(dropZoneRef, files => {
+const { isOverDropZone } = useDropZone(dropZoneRef, async entries => {
   languageStore.clear();
-  languageStore.loadFiles(files || []);
+  languageStore.loadFiles(entries);
 });
 </script>
 

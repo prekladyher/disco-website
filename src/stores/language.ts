@@ -59,6 +59,20 @@ async function readFile(file: File) {
 }
 
 /**
+ * Read file system entry as file.
+ */
+function entryToFile(entry: FileSystemFileEntry) {
+  return new Promise<File>((resolve, reject) => entry.file(resolve, reject));
+}
+
+/**
+ * List child file system entries of the given directory entry.
+ */
+function listChildEntries(entry: FileSystemDirectoryEntry) {
+  return new Promise<FileSystemEntry[]>((resolve, reject) => entry.createReader().readEntries(resolve, reject));
+}
+
+/**
  * Use language translation store.
  */
 export const useLanguageStore = defineStore({
@@ -74,7 +88,7 @@ export const useLanguageStore = defineStore({
       /**
        * Currently loaded files.
        */
-      loadedFiles: {} as Record<string, File>,
+      loadedFiles: {} as Record<string, FileSystemFileEntry>,
 
       /**
        * Loaded translation strings.
@@ -84,6 +98,11 @@ export const useLanguageStore = defineStore({
     };
   },
   getters: {
+
+    /**
+     * Number of currently loaded files.
+     */
+    loadedCount: state => Object.keys(state.loadedFiles).length,
 
     /**
      * All available locales.
@@ -112,28 +131,43 @@ export const useLanguageStore = defineStore({
      * Reload loaded files.
      */
     async reloadFiles() {
-      await this.loadFiles(Object.values(this.loadedFiles));
+      await Promise.all(Object.values(this.loadedFiles).map(entry => this.loadFile(entry)));
     },
 
     /**
-     * Load strings from the given PO files.
+     * Load strings from PO files contained in the given FS entries.
      */
-    async loadFiles(files: File[]) {
-      for (const file of files) {
-        await this.loadFile(file);
+    async loadFiles(entries: FileSystemEntry[], limit = 10) {
+      for (const entry of entries) {
+        if (entry.isDirectory) {
+          if (limit === 0) {
+            console.error(`Directory traversal limit reached: ${entry.fullPath}`);
+          } else {
+            await this.loadFiles(await listChildEntries(entry as FileSystemDirectoryEntry), limit - 1);
+          }
+        } else if (entry.isFile) {
+          await this.loadFile(entry as FileSystemFileEntry);
+        } else {
+          console.error(`Unknown entry type: ${entry.fullPath}`);
+        }
       }
     },
 
     /**
-     * Load strings from the given PO file.
+     * Load strings from the given PO file entry.
      */
-    async loadFile(file: File) {
+    async loadFile(entry: FileSystemFileEntry) {
       try {
+        const file = await entryToFile(entry);
+        if (!file.name.endsWith(`.po`)) {
+          console.error(`Ignoring invalid filename extension: ${file.name}`);
+          return;
+        }
         const { header, strings } = await readFile(file);
         this.loadStrings(header.Language || "", strings);
-        this.loadedFiles[file.name] = file;
+        this.loadedFiles[entry.fullPath] = entry;
       } catch (error) {
-        console.error(`Error loading file ${file.name}:`, error);
+        console.error(`Error loading file ${entry.fullPath}:`, error);
       }
     },
 

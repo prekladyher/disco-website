@@ -35,16 +35,36 @@ watch(pending, () => {
 <template>
   <HeaderPanelSwitch
     title="toggle file sync"
+    class="switch"
     :class="{ active, pending: animate }"
     @click="active ? pause() : resume()"
   >
     <IconSync class="spinner" />
+    <span
+      class="count"
+    >{{ languageStore.loadedCount }}</span>
   </HeaderPanelSwitch>
 </template>
 
 <style scoped>
+.switch {
+  position: relative;
+}
+
 .pending > .spinner  {
   rotate: -360deg;
   transition: rotate 0.5s;
+}
+
+.count {
+  position: absolute;
+  font-size: 10px;
+  color: var(--color-text);
+  bottom: -2px;
+  right: -2px;
+  line-height: 1;
+  padding: 1px 3px;
+  background: var(--color-background-soft);
+  border-radius: 5px;
 }
 </style>
