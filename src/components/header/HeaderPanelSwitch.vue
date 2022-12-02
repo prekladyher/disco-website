@@ -22,6 +22,7 @@
   color: var(--color-link);
   background: none;
   cursor: pointer;
+  line-height: 1;
 }
 
 .switch:hover {

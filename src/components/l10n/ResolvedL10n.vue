@@ -27,17 +27,13 @@ const missing = computed(() => {
 </template>
 
 <style scoped>
-.source::before {
+.source::before, .target::before {
   content: "⬤";
-  color: #888888;
-  margin-right: 8px;
-}
-
-.source::before {
-  content: "⬤";
+  display: inline-block;
   font-style: normal;
+  line-height: 1;
   color: #888888;
-  margin-right: 8px;
+  margin-right: 4px;
 }
 
 .target {
@@ -45,14 +41,10 @@ const missing = computed(() => {
 }
 
 .target::before {
-  content: "⬤";
-  font-style: normal;
   color: #008800;
-  margin-right: 8px;
 }
 
 .missing::before {
-  content: "⬤";
   color: #880000;
 }
 </style>
