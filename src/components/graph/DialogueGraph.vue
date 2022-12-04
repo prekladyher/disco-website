@@ -93,7 +93,10 @@ watch(activePath, entries => {
       :event-handlers="eventHandlers"
     >
       <template #override-node="nodeProps">
-        <DialogueGraphNode v-bind="nodeProps"></DialogueGraphNode>
+        <DialogueGraphNode
+          :key="conversation?.id + '_' + nodeProps.nodeId"
+          v-bind="nodeProps"
+        ></DialogueGraphNode>
       </template>
     </v-network-graph>
   </section>

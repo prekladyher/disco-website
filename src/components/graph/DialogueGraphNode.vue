@@ -10,24 +10,28 @@ import DialogueGraphScript from "./DialogueGraphScript.vue";
 import DialogueGraphStart from "./DialogueGraphStart.vue";
 import DialogueGraphText from "./DialogueGraphText.vue";
 
+import { computed } from "@vue/reactivity";
 import { useResizeObserver } from "@vueuse/core";
+import { storeToRefs } from "pinia";
 
 const props = defineProps<{
   nodeId: string,
   config: AnyShapeStyle
 }>();
 
-const { conversation } = useConversationStore();
-const entry = conversation?.entriesById.get(parseInt(props.nodeId));
+const { conversation } = storeToRefs(useConversationStore());
+const entry = computed(() => conversation.value?.entriesById.get(parseInt(props.nodeId)));
 
-const { nodes } = useDialogueGraphStore();
-const node = nodes[props.nodeId];
+const { nodes } = storeToRefs(useDialogueGraphStore());
+const node = computed(() => nodes.value[props.nodeId]);
 
 const contentRef = ref(null);
 useResizeObserver(contentRef, (entries) => {
   const entry = entries[0];
-  node.width = entry.contentRect.width;
-  node.height = entry.contentRect.height;
+  if (node) {
+    node.value.width = entry.contentRect.width;
+    node.value.height = entry.contentRect.height;
+  }
 }, { box: "border-box" });
 </script>
 

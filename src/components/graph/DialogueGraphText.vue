@@ -3,16 +3,17 @@ import DialogueL10n from "@/components/l10n/DialogueL10n.vue";
 import { useDatabaseStore } from "@/stores/database";
 import type { DialogueEntryType } from "@/types";
 import { computed } from "@vue/reactivity";
+import { storeToRefs } from "pinia";
 
 const props = defineProps<{
   entry: DialogueEntryType
 }>();
 
-const { database } = useDatabaseStore();
+const { database } = storeToRefs(useDatabaseStore());
 
 const actor = computed(() => {
   const actorId = props.entry.fields.Actor;
-  return actorId !== undefined ? database?.actorsById.get(+actorId) : undefined;
+  return actorId !== undefined ? database.value?.actorsById.get(+actorId) : undefined;
 });
 </script>
 
