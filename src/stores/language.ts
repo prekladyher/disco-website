@@ -1,4 +1,4 @@
-import { decodeEntries } from "@prekladyher/l10n-gettext";
+import { decodeEntries } from "@prekladyher/l10n-toolbox-gettext";
 import { defineStore } from "pinia";
 
 /**
