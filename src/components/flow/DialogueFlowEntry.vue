@@ -3,8 +3,7 @@ import DialogueL10n from "@/components/l10n/DialogueL10n.vue";
 import { useDatabaseStore } from "@/stores/database";
 import type { DialogueEntryType } from "@/types";
 import { computed } from "vue";
-import DialogueBadgeCondition from "./DialogueBadgeCondition.vue";
-import DialogueBadgeScript from "./DialogueBadgeScript.vue";
+import DialogueFlowBadge from "./DialogueFlowBadge.vue";
 
 const props = defineProps<{
   entry: DialogueEntryType
@@ -13,9 +12,9 @@ const props = defineProps<{
 const { database } = useDatabaseStore();
 
 const alternates = computed(() => [1, 2, 3, 4].map(i => ({
-  kind: 'Alternate' + i,
-  text: props.entry.fields['Alternate' + i],
-  condition: props.entry.fields['Condition' + i]
+  kind: "Alternate" + i,
+  text: props.entry.fields["Alternate" + i],
+  condition: props.entry.fields["Condition" + i]
 })).filter(it => !!it.text));
 
 const actor = computed(() => {
@@ -34,7 +33,7 @@ const actor = computed(() => {
         <code class="badge badge-priority" title="entry priority">
           {{ entry.conditionPriority }}
         </code>
-        <DialogueBadgeCondition v-if="entry.conditionsString" :condition="entry.conditionsString" />
+        <DialogueFlowBadge :value="entry.conditionsString" :type="'condition'" />
         <!-- annotation type entry -->
         <code v-if="entry.fields?.annotation_title" class="badge" title="annotation title">
           {{ entry.fields?.annotation_title }}
@@ -54,9 +53,7 @@ const actor = computed(() => {
       <template v-for="alternate in alternates">
         <div class="alternate">
           <div class="steps">
-            <code class="badge badge-condition" title="alternate condition">
-              {{ alternate.condition }}
-            </code>
+            <DialogueFlowBadge :value="alternate.condition" :type="'condition'" :title="'alternate condition'" />
           </div>
           <div class="entry-text" title="alternate text">
             <DialogueL10n :entry="entry" :kind="alternate.kind" />
@@ -64,7 +61,7 @@ const actor = computed(() => {
         </div>
       </template>
       <!-- /alternate text -->
-      <DialogueBadgeScript v-if="entry.userScript" :script="entry.userScript" />
+      <DialogueFlowBadge :value="entry.userScript" :type="'script'" />
     </div>
   </div>
 </template>
