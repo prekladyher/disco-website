@@ -30,17 +30,18 @@ export function focusPointAsync(
   })
 }
 
-export function updateCurrentEntry(nodes: Ref<string[]>, edges: Ref<string[]>) {
+export function useUpdateCurrentEntry(nodes: Ref<string[]>, edges: Ref<string[]>) {
   const conversationStore = useConversationStore();
-  if (nodes.value.length && !edges.value.length) {
-    const entry = conversationStore.conversation?.entriesById.get(+nodes.value[0]);
-    conversationStore.updateCurrentEntry(entry);
-  } else if (edges.value.length && !nodes.value.length) {
-    const entryId = edges.value[0].split("_")[0];
-    const entry = conversationStore.conversation?.entriesById.get(+entryId);
-    conversationStore.updateCurrentEntry(entry);
-  } else if (!edges.value.length && !nodes.value.length) {
-    conversationStore.updateCurrentEntry(undefined);
+  return () => {
+    if (nodes.value.length && !edges.value.length) {
+      const entry = conversationStore.conversation?.entriesById.get(+nodes.value[0]);
+      conversationStore.updateCurrentEntry(entry);
+    } else if (edges.value.length && !nodes.value.length) {
+      const entryId = edges.value[0].split("_")[0];
+      const entry = conversationStore.conversation?.entriesById.get(+entryId);
+      conversationStore.updateCurrentEntry(entry);
+    } else if (!edges.value.length && !nodes.value.length) {
+      conversationStore.updateCurrentEntry(undefined);
+    }
   }
 }
-

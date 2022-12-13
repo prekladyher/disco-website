@@ -7,7 +7,7 @@ import type { EventHandlers, VNetworkGraphInstance } from "v-network-graph";
 import { reactive, ref, toRaw, watch } from "vue";
 import { configs } from "./config";
 import DialogueGraphNode from "./DialogueGraphNode.vue";
-import { focusPointAsync, updateCurrentEntry } from "./utils";
+import { focusPointAsync, useUpdateCurrentEntry } from "./utils";
 
 const props = defineProps<{
   conversation?: ConversationModel
@@ -27,9 +27,10 @@ defineExpose({
 const selectedNodes = ref<string[]>([]);
 const selectedEdges = ref<string[]>([]);
 
+const updateCurrentEntry = useUpdateCurrentEntry(selectedNodes, selectedEdges);
+watch([selectedNodes, selectedEdges], updateCurrentEntry, { flush: 'post' });
+
 const eventHandlers: EventHandlers = reactive({});
-eventHandlers["node:select"] = () => updateCurrentEntry(selectedNodes, selectedEdges);
-eventHandlers["edge:select"] = () => updateCurrentEntry(selectedNodes, selectedEdges);
 
 const { handler: updateViewBox } = debounce(() => dialogueGraphStore.updateViewBox(nodeGraph.value));
 eventHandlers["view:pan"] = updateViewBox;
