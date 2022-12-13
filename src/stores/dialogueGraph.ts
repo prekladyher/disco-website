@@ -299,7 +299,7 @@ export const useDialogueGraphStore = defineStore({
       /**
        * Current graph zoom level.
        */
-      zoomLevel: 0.75,
+      zoomLevel: 0.8,
 
       /**
        * Current graph view box (in graph coordinates).
@@ -332,15 +332,15 @@ export const useDialogueGraphStore = defineStore({
      * Update view box data based on the given graph instance.
      */
     updateViewBox(graph: VNetworkGraphInstance|undefined) {
-      if (!graph || !graph.svgPanZoom) {
+      const viewArea = graph?.getViewBox();
+      if (!viewArea) {
         this.viewBox = undefined;
       } else {
-        const viewArea = graph.svgPanZoom.getViewArea();
         this.viewBox = {
-          x: -viewArea.box.left,
-          y: -viewArea.box.top,
-          width: viewArea.box.right - viewArea.box.left,
-          height: viewArea.box.bottom - viewArea.box.top
+          x: -viewArea.left,
+          y: -viewArea.top,
+          width: viewArea.right - viewArea.left,
+          height: viewArea.bottom - viewArea.top
         };
       }
     }

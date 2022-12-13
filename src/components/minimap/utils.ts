@@ -1,13 +1,13 @@
-import type { ViewBox } from "@/stores/dialogueGraph";
+import { useDialogueGraphStore, type ViewBox } from "@/stores/dialogueGraph";
+import { storeToRefs } from "pinia";
 import type { VNetworkGraphInstance } from "v-network-graph";
+import type { Box } from "v-network-graph/lib/modules/svg-pan-zoom-ex";
 import type { Ref } from "vue";
 
-export function getViewportPath(viewBox: ViewBox, minimap: VNetworkGraphInstance) {
-  const svgPanZoom = minimap.svgPanZoom;
-  if (!svgPanZoom) {
+export function getViewportPath(viewBox: ViewBox, viewArea: Box|undefined) {
+  if (!viewArea) {
     return "";
   }
-  const viewArea = svgPanZoom.getViewArea().box;
   let backdrop =
     `M${viewArea.left},${viewArea.top}` +
     `h${viewArea.right - viewArea.left} v${viewArea.bottom - viewArea.top} h${viewArea.left - viewArea.right} z`;
@@ -22,6 +22,7 @@ export function useViewportMove(
     wrapper: Ref<Element|undefined>,
     minimap: Ref<VNetworkGraphInstance|undefined>,
     graph: Ref<VNetworkGraphInstance|undefined>) {
+  const { zoomLevel } = storeToRefs(useDialogueGraphStore());
   const handleMove = (event: Event) => {
     if (!wrapper.value || !minimap.value || !graph.value) {
       return;
@@ -41,8 +42,8 @@ export function useViewportMove(
       y: nodeGraph.getSizes().height / 2
     });
     nodeGraph.panBy({
-      x: (focusPoint.x - coords.x) * nodeGraph.zoomLevel,
-      y: (focusPoint.y - coords.y) * nodeGraph.zoomLevel
+      x: (focusPoint.x - coords.x) * zoomLevel.value,
+      y: (focusPoint.y - coords.y) * zoomLevel.value
     });
   };
   return { handleMove };

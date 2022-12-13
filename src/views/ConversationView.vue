@@ -14,6 +14,8 @@ const router = useRouter();
 const route = useRoute();
 
 const conversationStore = useConversationStore();
+conversationStore.$reset(); // Always reset the store
+
 const { conversation, currentEntry } = storeToRefs(conversationStore);
 
 const dialogueGraph = ref<InstanceType<typeof DialogueGraph>|null>(null);

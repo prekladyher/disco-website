@@ -28,7 +28,7 @@ function updateViewport() {
   if (!viewBox.value || !minimap.value) {
     return;
   }
-  Object.assign(viewport, getViewportPath(viewBox.value, minimap.value));
+  Object.assign(viewport, getViewportPath(viewBox.value, minimap.value.getViewBox()));
 }
 watch(viewBox, updateViewport);
 

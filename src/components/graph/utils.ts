@@ -2,26 +2,29 @@ import { useConversationStore } from "@/stores/conversation";
 import type { FixablePosition, VNetworkGraphInstance } from "v-network-graph";
 import type { Ref } from "vue";
 
-export function focusNode(graph: VNetworkGraphInstance|undefined, id: string|undefined) {
-  if (!graph || !id || !graph.layouts?.nodes?.[id]) {
+export function focusPoint(graph: VNetworkGraphInstance|undefined, zoomLevel: number, point: FixablePosition) {
+  if (!graph) {
     return;
   }
-  const { x, y } = graph.layouts.nodes[id] as FixablePosition;
   const sizes = graph.getSizes();
-  const focusPoint = graph.translateFromDomToSvgCoordinates({
+  const shift = graph.translateFromDomToSvgCoordinates({
     x: sizes.width / 4,
     y: sizes.height / 2
   });
   graph.panBy({
-    x: graph.zoomLevel * (focusPoint.x - x),
-    y: graph.zoomLevel * (focusPoint.y - y)
+    x: zoomLevel * (shift.x - point.x),
+    y: zoomLevel * (shift.y - point.y)
   });
 }
 
-export function focusNodeAsync(graph: VNetworkGraphInstance|undefined, id: string|undefined): Promise<undefined> {
+export function focusPointAsync(
+  graph: Ref<VNetworkGraphInstance|undefined>,
+  zoomLevel: Ref<number>,
+  point: FixablePosition
+): Promise<undefined> {
   return new Promise(resolve => {
     setTimeout(() => {
-      focusNode(graph, id);
+      focusPoint(graph.value, zoomLevel.value, point);
       resolve(undefined);
     });
   })
@@ -40,3 +43,4 @@ export function updateCurrentEntry(nodes: Ref<string[]>, edges: Ref<string[]>) {
     conversationStore.updateCurrentEntry(undefined);
   }
 }
+

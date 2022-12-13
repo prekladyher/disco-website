@@ -4,10 +4,10 @@ import { definePaths, useDialogueGraphStore } from "@/stores/dialogueGraph";
 import { debounce } from "@/utils";
 import { storeToRefs } from "pinia";
 import type { EventHandlers, VNetworkGraphInstance } from "v-network-graph";
-import { reactive, ref, watch } from "vue";
+import { reactive, ref, toRaw, watch } from "vue";
 import { configs } from "./config";
 import DialogueGraphNode from "./DialogueGraphNode.vue";
-import { focusNodeAsync, updateCurrentEntry } from "./utils";
+import { focusPointAsync, updateCurrentEntry } from "./utils";
 
 const props = defineProps<{
   conversation?: ConversationModel
@@ -36,7 +36,7 @@ eventHandlers["view:pan"] = updateViewBox;
 eventHandlers["view:zoom"] = updateViewBox;
 
 async function gotoNode(id: string) {
-  await focusNodeAsync(nodeGraph.value, id);
+  await focusPointAsync(nodeGraph, zoomLevel, toRaw(layouts.value.nodes[id]));
   selectedNodes.value = [id];
   selectedEdges.value = [];
 }
