@@ -3,6 +3,7 @@ import HeaderPanel from "@/components/header/HeaderPanel.vue";
 import { useDropZone } from "@/composables/useDropZone";
 import { ref } from "vue";
 import { useLanguageStore } from "./stores/language";
+import { useLayoutStore } from "./stores/layout";
 
 const languageStore = useLanguageStore();
 
@@ -13,6 +14,8 @@ const { isOverDropZone } = useDropZone(dropZoneRef, async entries => {
     languageStore.loadFiles(entries);
   }
 });
+
+const layoutStore = useLayoutStore();
 </script>
 
 <template>
@@ -21,8 +24,9 @@ const { isOverDropZone } = useDropZone(dropZoneRef, async entries => {
     ref="dropZoneRef"
     :class="{ dropzone: isOverDropZone }"
   >
-    <HeaderPanel />
+    <HeaderPanel @click="layoutStore.showFiles = true" />
     <router-view />
+    <!-- <FileModalView /> -->
   </div>
 </template>
 
