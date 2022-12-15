@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { useConversationStore } from "@/stores/conversation";
 import { useDialogueGraphStore } from "@/stores/dialogueGraph";
+import { watchOnce } from "@vueuse/shared";
 import { storeToRefs } from "pinia";
-import type { EventHandlers, Layers, VNetworkGraphInstance } from "v-network-graph";
-import { computed, reactive, ref, watch } from "vue";
+import type { Layers, VNetworkGraphInstance } from "v-network-graph";
+import { computed, ref } from "vue";
 import type DialogueGraph from "../graph/DialogueGraph.vue";
 import IconClose from "../icons/IconClose.vue";
 import IconMap from "../icons/IconMap.vue";
 import { configs } from "./config";
-import { getViewportPath, useViewportMove } from "./utils";
+import { getViewportPath, useFitOnLoad, useViewportMove } from "./utils";
 
 
 const props = defineProps<{
@@ -20,17 +20,9 @@ const { nodes, edges, paths, layouts, viewBox } = storeToRefs(useDialogueGraphSt
 const wrapper = ref<Element>();
 const minimap = ref<VNetworkGraphInstance>();
 
-const viewport = reactive({
-  backdrop: "",
-  viewport: ""
+const viewportPath = computed(() => {
+  return viewBox.value ? getViewportPath(viewBox.value) : ""
 });
-function updateViewport() {
-  if (!viewBox.value || !minimap.value) {
-    return;
-  }
-  Object.assign(viewport, getViewportPath(viewBox.value, minimap.value.getViewBox()));
-}
-watch(viewBox, updateViewport);
 
 const moving = ref(false);
 const { handleMove } = useViewportMove(
@@ -38,7 +30,7 @@ const { handleMove } = useViewportMove(
   minimap,
   computed(() => props.graph?.nodeGraph )
 );
-watch(wrapper, (element) => {
+watchOnce(wrapper, (element) => {
   element?.addEventListener("pointermove", event => moving.value && handleMove(event));
   element?.addEventListener("pointerdown", (event) => {
     moving.value = true;
@@ -47,23 +39,7 @@ watch(wrapper, (element) => {
   element?.addEventListener("pointerout", () => moving.value = false);
 });
 
-const eventHandlers: EventHandlers = {
-  "view:fit": updateViewport,
-};
-
-const { conversation } = storeToRefs(useConversationStore());
-
-const loadTimer = ref(0);
-watch(conversation, () => {
-  if (loadTimer.value) {
-    clearTimeout(loadTimer.value);
-  }
-  loadTimer.value = setTimeout(() => {
-    minimap.value?.panToCenter();
-    minimap.value?.fitToContents();
-    loadTimer.value = 0;
-  });
-}, { immediate: true });
+useFitOnLoad(minimap);
 
 const minimapActive = ref(false);
 function toggleMinimap() {
@@ -71,7 +47,7 @@ function toggleMinimap() {
 }
 
 const layers: Layers = {
-  viewport: "paths"
+  viewport: "background"
 };
 </script>
 
@@ -80,28 +56,22 @@ const layers: Layers = {
     <div class="minimap" ref="wrapper">
       <v-network-graph
         ref="minimap"
-        :class="{ loaded: loadTimer === 0 }"
+        :class="{ loaded: true }"
         :configs="configs"
         :nodes="nodes"
         :layouts="layouts"
         :edges="edges"
         :paths="paths"
-        :event-handlers="eventHandlers"
         :layers="layers"
       >
         <template #viewport>
           <path
             fill="currentColor"
-            fill-opacity="0.75"
-            pointer-events="all"
-            :d="viewport.viewport"
-          />
-          <path
-            fill-opacity="0"
-            :d="viewport.backdrop"
+            :d="viewportPath"
           />
         </template>
       </v-network-graph>
+      <div class="overlay" ref="overlay"></div>
     </div>
     <a
       class="action-icon"
@@ -139,7 +109,7 @@ const layers: Layers = {
 
 .minimap > .v-network-graph {
   opacity: 0;
-  color: var(--color-background);
+  color: var(--color-border);
 }
 
 .active > .minimap > .v-network-graph {
@@ -150,6 +120,14 @@ const layers: Layers = {
   width: 400px;
   aspect-ratio: 16 / 9;
   max-width: 80vw;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .action-icon {

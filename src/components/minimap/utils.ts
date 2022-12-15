@@ -1,23 +1,21 @@
 import { useDialogueGraphStore, type ViewBox } from "@/stores/dialogueGraph";
 import { storeToRefs } from "pinia";
 import type { VNetworkGraphInstance } from "v-network-graph";
-import type { Box } from "v-network-graph/lib/modules/svg-pan-zoom-ex";
-import type { Ref } from "vue";
+import { watchEffect, type Ref } from "vue";
 
-export function getViewportPath(viewBox: ViewBox, viewArea: Box|undefined) {
-  if (!viewArea) {
-    return "";
-  }
-  let backdrop =
-    `M${viewArea.left},${viewArea.top}` +
-    `h${viewArea.right - viewArea.left} v${viewArea.bottom - viewArea.top} h${viewArea.left - viewArea.right} z`;
-  let visible = `M${-viewBox.x},${-viewBox.y} v${viewBox.height} h${viewBox.width} v${-viewBox.height} z`;
-  return {
-    backdrop,
-    viewport: backdrop + " " + visible
-  };
+
+/**
+ * Calculate viewport (i.e. dialogue graph view area) path.
+ * @param viewBox Current dialogue graph view box.
+ * @return Viewport path to dialogue graph draw view area in the minimap.
+ */
+export function getViewportPath(viewBox: ViewBox) {
+  return `M${-viewBox.x},${-viewBox.y} v${viewBox.height} h${viewBox.width} v${-viewBox.height} z`
 }
 
+/**
+ * Use minimap pointer events to move the viewport.
+ */
 export function useViewportMove(
     wrapper: Ref<Element|undefined>,
     minimap: Ref<VNetworkGraphInstance|undefined>,
@@ -47,4 +45,21 @@ export function useViewportMove(
     });
   };
   return { handleMove };
+}
+
+/**
+ * Fit minimap after new graph is loaded.
+ */
+export function useFitOnLoad(minimap: Ref<VNetworkGraphInstance|undefined>) {
+  const { id: loadedId } = storeToRefs(useDialogueGraphStore());
+  let activeId: number|undefined = undefined;
+  return watchEffect(() => {
+    // Minimap not yet loaded or already loaded
+    if (!minimap.value || activeId === loadedId.value) {
+      return;
+    }
+    minimap.value.panToCenter();
+    minimap.value.fitToContents();
+    activeId = loadedId.value;
+  }, { flush: "post" });
 }

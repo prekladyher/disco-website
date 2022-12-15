@@ -2,12 +2,12 @@ import { defineConfigs } from "v-network-graph";
 
 export const configs = defineConfigs({
   view: {
-    fit: true,
     panEnabled: false,
     zoomEnabled: false,
     maxZoomLevel: 1,
     minZoomLevel: 0.001,
-    doubleClickZoomEnabled: false
+    doubleClickZoomEnabled: false,
+    autoPanAndZoomOnLoad: false
   },
   node: {
     selectable: 0,
