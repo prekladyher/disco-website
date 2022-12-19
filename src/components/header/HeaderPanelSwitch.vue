@@ -1,34 +1,19 @@
+<script setup lang="ts">
+import ActionIcon from "../shared/ActionIcon.vue";
+
+</script>
+
 <template>
-  <button
+  <ActionIcon
     class="switch"
-    type="button"
     role="switch"
     title="toggle debug"
   >
     <slot></slot>
-  </button>
+  </ActionIcon>
 </template>
 
 <style scoped>
-.switch {
-  display: block;
-  position: relative;
-  width: 32px;
-  height: 32px;
-  padding: 0;
-  text-align: center;
-  border: 0;
-  border-radius: 50%;
-  color: var(--color-link);
-  background: none;
-  cursor: pointer;
-  line-height: 1;
-}
-
-.switch:hover {
-  color: var(--color-link-hover);
-}
-
 .switch::before {
   position: absolute;
   display: block;

@@ -5,6 +5,8 @@ import type { DialogueEntryType } from "@/types";
 import { debounce } from "@/utils";
 import { storeToRefs } from "pinia";
 import { ref, watch } from "vue";
+import ActionIcon from "../shared/ActionIcon.vue";
+import ToggleIcon from "../shared/ToggleIcon.vue";
 
 const SEARCH_FIELDS = [
   "Articy Id",
@@ -18,12 +20,9 @@ const conversationStore = useConversationStore();
 const { conversation } = storeToRefs(conversationStore);
 
 const searchActive = ref(false);
-function toggleSearch(activate?: boolean) {
-  searchActive.value = activate !== undefined ? activate : !searchActive.value;
-  if (!searchActive.value) {
-    searchText.value = ""; // reset search on deactivation
-  }
-}
+watch(searchActive, () => {
+  searchText.value = "";
+});
 
 const searchInput = ref<HTMLElement>();
 const searchText = ref("");
@@ -88,14 +87,11 @@ watch(searchText, handleSearch);
 
 <template>
   <div class="search-wrapper" :class="{ active: searchActive }">
-    <a
-      class="action-icon"
-      @click="toggleSearch()"
-      title="toggle search"
-    >
+    <ToggleIcon v-model="searchActive" title="toggle search">
+
       <IconSearch v-if="!searchActive" />
       <IconClose v-if="searchActive" />
-    </a>
+    </ToggleIcon>
     <Transition>
       <div class="search-form" v-if="searchActive">
         <input
@@ -104,24 +100,22 @@ watch(searchText, handleSearch);
           placeholder="enter search text"
           @keypress.enter.exact="nextMatch"
           @keypress.enter.shift="prevMatch"
-          @keydown.esc="toggleSearch(false)"
+          @keydown.esc="searchActive = false"
         >
-        <button
-          class="action-icon"
+        <ActionIcon
           :disabled="!searchResult.length"
           @click="prevMatch()"
           title="previous result"
         >
           <IconUp />
-        </button>
-        <button 
-          class="action-icon"
+        </ActionIcon>
+        <ActionIcon
           :disabled="!searchResult.length"
           @click="nextMatch()"
           title="next result"
         >
           <IconDown />
-        </button>
+        </ActionIcon>
         <div class="search-result">
           <template v-if="searchDebounce">
             ? / ?
@@ -150,31 +144,6 @@ watch(searchText, handleSearch);
 }
 .search-wrapper.active {
   border-radius: 32px 0 0 32px;
-}
-
-.action-icon {
-  display: flex;
-  height: 32px;
-  width: 32px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-button.action-icon {
-  background: none;
-  border: none;
-  color: var(--color-link);
-}
-
-button.action-icon:hover:not([disabled]) {
-  background: none;
-  border: none;
-  color: var(--color-link-hover);
-}
-
-button.action-icon[disabled] {
-  color: #888888;
 }
 
 .search-form {

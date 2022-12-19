@@ -7,6 +7,7 @@ import { computed, ref } from "vue";
 import type DialogueGraph from "../graph/DialogueGraph.vue";
 import IconClose from "../icons/IconClose.vue";
 import IconMap from "../icons/IconMap.vue";
+import ToggleIcon from "../shared/ToggleIcon.vue";
 import { configs } from "./config";
 import { getViewportPath, useFitOnLoad, useViewportMove } from "./utils";
 
@@ -42,9 +43,6 @@ watchOnce(wrapper, (element) => {
 useFitOnLoad(minimap);
 
 const minimapActive = ref(false);
-function toggleMinimap() {
-  minimapActive.value = !minimapActive.value;
-}
 
 const layers: Layers = {
   viewport: "background"
@@ -73,14 +71,10 @@ const layers: Layers = {
       </v-network-graph>
       <div class="overlay" ref="overlay"></div>
     </div>
-    <a
-      class="action-icon"
-      @click="toggleMinimap()"
-      title="toggle minimap"
-    >
+    <ToggleIcon v-model="minimapActive" title="toggle minimap" class="toggle-minimap">
       <IconMap v-if="!minimapActive" />
       <IconClose v-if="minimapActive" />
-    </a>
+    </ToggleIcon>
   </div>
 </template>
 
@@ -130,15 +124,9 @@ const layers: Layers = {
   right: 0;
 }
 
-.action-icon {
+.toggle-minimap {
   position: absolute;
   top: 0;
   right: 0;
-  display: flex;
-  height: 32px;
-  width: 32px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
 }
 </style>
