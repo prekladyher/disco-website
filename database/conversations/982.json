@@ -1,0 +1,2463 @@
+[
+  {
+    "id": 982,
+    "fields": {
+      "Title": "LAIR ORB / shot viscal",
+      "Articy Id": "0x010000580000DD97",
+      "AlternateOrbText": "",
+      "CheckType": "26",
+      "Condition": "Variable[\"TASK.check_boardwalk_cancelled\"] == false  and  Variable[\"TASK.check_boardwalk\"]  and  Variable[\"boardwalk.bunker_pamphlets\"]  and  Variable[\"boardwalk.feld_slit_window_seen_inside\"]  and  Variable[\"boardwalk.orb_where_shot_came_viscal_done\"] == false",
+      "Description": "You decide that the shot that killed the merc couldn't have come from this bunker.",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000580000DD97",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 0,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x010000580000DD9A",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x010000580000DE45"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 1,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 46,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Visual Calculus: \"The lights of Martinaise shine cool...\"",
+          "Dialogue Text": "The lights of Martinaise shine coolly in the clear night.",
+          "Articy Id": "0x0100005800010B3D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010B0D",
+          "InputId": "0x0100005800010ABD"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 2,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 305,
+          "y": 880.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"It's a great place to hide, certai...\"",
+          "Dialogue Text": "\"It's a great place to hide, certainly, but there hasn't been anyone in here for ages.\"",
+          "Articy Id": "0x0100005800010BD7",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "Variable[\"boardwalk.mazov_mainhub_reached\"]",
+          "Alternate1": "\"It is a great place to hide, and Mazovianism and killing are certainly not mutually exclusive. But there hasn't been anyone here in ages.\"",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010BF5",
+          "InputId": "0x0100005800010BCB"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 3,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2825,
+          "y": 450.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Visual Calculus: \"Outside the window -- the day is cl...\"",
+          "Dialogue Text": "Outside the window -- the day is clear, and as mild as can be in early spring.",
+          "Articy Id": "0x0100005800010B2B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010B0D",
+          "InputId": "0x0100005800010AB7"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 4,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 305,
+          "y": 205,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Hand/Eye Coordination: \"This does look like an *embrasure*,...\"",
+          "Dialogue Text": "This does look like an *embrasure*, a slit made for shooting out of.",
+          "Articy Id": "0x0100005800010B07",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "415",
+          "Conversant": "0",
+          "OutputId": "0x0100001600009B96",
+          "InputId": "0x010000580000DE45"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 5,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.bunker_viscal_encyc_window\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1428,
+          "y": 764,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Visual Calculus: \"No, it's not. No matter how you cra...\"",
+          "Dialogue Text": "No, it's not. No matter how you crane your neck, you can't see the whole of the Whirling-in-Rags, and certainly not the relevant segment of the top floor.",
+          "Articy Id": "0x0100005800010BB2",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010BB6",
+          "InputId": "0x0100005800010C0C"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "FinishTask(\"TASK.check_boardwalk_done\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2200,
+          "y": 1471,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Authority: \"The lieutenant's voice betrays a sl...\"",
+          "Dialogue Text": "The lieutenant's voice betrays a slight disappointment, which he glosses over by reasserting control.",
+          "Articy Id": "0x0100005800010C25",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "406",
+          "Conversant": "0",
+          "OutputId": "0x0100000600014FF6",
+          "InputId": "0x0100005800010C1D"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 7,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2482,
+          "y": 1724,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Variable[\"auto.is_raining\"]",
+          "Articy Id": "0x0100005800010AC2",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005800010AAB"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 8,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 982,
+            "originDialogueID": 8,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5,
+          "y": 580,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Variable[\"auto.is_raining\"]",
+          "Articy Id": "0x0100005800010AC2",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010B31"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 9,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"auto.is_raining\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3.25,
+          "y": 377,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "!(Variable[\"auto.is_raining\"])",
+          "Articy Id": "0x0100005800010AC2",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010ABD"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 10,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"auto.is_raining\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3.25,
+          "y": 377,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Indeed. No one could get a clear v...\"",
+          "Dialogue Text": "\"Indeed. No one could get a clear view. Well, at least we've been thorough. I like thorough.\"",
+          "Articy Id": "0x0100005800010C1D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010C25",
+          "InputId": "0x0100005800010C13"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 11,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "FinishTask(\"TASK.check_boardwalk_done\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2200,
+          "y": 1725.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "shotviscalhub",
+          "Articy Id": "0x0100005800010B0D",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100005800010B31",
+          "OutputId": "0x0100005800010C13"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 12,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 982,
+            "originDialogueID": 12,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 982,
+            "originDialogueID": 12,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.orb_where_shot_came_viscal_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1485,
+          "y": 720,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Variable[\"boardwalk.bunker_bed\"]",
+          "Articy Id": "0x0100005800010BCB",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005800010B82"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 13,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 982,
+            "originDialogueID": 13,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2525,
+          "y": 400,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Variable[\"boardwalk.bunker_bed\"]",
+          "Articy Id": "0x0100005800010BCB",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010BD1"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 14,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.bunker_bed\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1641.25,
+          "y": 260,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "!(Variable[\"boardwalk.bunker_bed\"])",
+          "Articy Id": "0x0100005800010BCB",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010BD7"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 15,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"boardwalk.bunker_bed\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1641.25,
+          "y": 260,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"It's a great place to hide, certai...\"",
+          "Dialogue Text": "\"It's a great place to hide, certainly, but there hasn't been anyone here in ages.\"",
+          "Articy Id": "0x0100005800010BD1",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "Variable[\"boardwalk.mazov_mainhub_reached\"]",
+          "Alternate1": "\"It's a great place to hide, and Mazovianism and murder are certainly not mutually exclusive. But there hasn't been anyone here in ages.\"",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x0100005800010BCB",
+          "OutputId": "0x0100005800010BF5"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 16,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2831,
+          "y": 211,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"In fact -- I think we're done with...\"",
+          "Dialogue Text": "\"In fact -- I think we're done with this bunker.\" He looks to the exit. \"After you, officer.\"",
+          "Articy Id": "0x0100000600015003",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010BB6",
+          "InputId": "0x0100000600014FF6"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2812,
+          "y": 1512,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Untitled hub (03)",
+          "Articy Id": "0x0100001600009B96",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100005800010B07",
+          "OutputId": "0x0100005800010B13"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 18,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1102,
+          "y": 869,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "Visual Calculus: \"In the darkness, you can barely mak...\"",
+          "Dialogue Text": "In the darkness, you can barely make out the falling snow. It settles, making the night still quieter.",
+          "Articy Id": "0x0100005800010B37",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010B0D",
+          "InputId": "0x0100005800010ABD"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 19,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 305,
+          "y": 655,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Variable[\"boardwalk.mazov_mainhub_reached\"]",
+          "Articy Id": "0x0100000600014FF6",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005800010C25"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 20,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 982,
+            "originDialogueID": 20,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2757,
+          "y": 1773,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "Variable[\"boardwalk.mazov_mainhub_reached\"]",
+          "Articy Id": "0x0100000600014FF6",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100000600015003"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 21,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.mazov_mainhub_reached\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1792.0499267578125,
+          "y": 1152.449951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "!(Variable[\"boardwalk.mazov_mainhub_reached\"])",
+          "Articy Id": "0x0100000600014FF6",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "(Variable[\"boardwalk.mazov_mainhub_reached\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1792.0499267578125,
+          "y": 1152.449951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "IsDaytime()",
+          "Articy Id": "0x0100005800010AAB",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005800010B13"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 23,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 982,
+            "originDialogueID": 23,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -295,
+          "y": 555,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "IsDaytime()",
+          "Articy Id": "0x0100005800010AAB",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010AB1"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 24,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsDaytime()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -191.75,
+          "y": 360.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "!(IsDaytime())",
+          "Articy Id": "0x0100005800010AAB",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010AC2"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 25,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsDaytime()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -191.75,
+          "y": 360.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Visual Calculus: \"Outside the window -- another day....\"",
+          "Dialogue Text": "Outside the window -- another day. The beach sand soaks up the drizzling rain, growing darker and darker.",
+          "Articy Id": "0x0100005800010B1F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010B0D",
+          "InputId": "0x0100005800010AB1"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 26,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 305,
+          "y": -270,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Jump to: [shotviscalhub]",
+          "Articy Id": "0x0100005800010BF5",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100005800010BDD"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 27,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3125,
+          "y": 600,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "Variable[\"auto.is_raining\"]",
+          "Articy Id": "0x0100005800010AB1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005800010AAB"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 28,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 982,
+            "originDialogueID": 28,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5,
+          "y": -120.00000762939453,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "Variable[\"auto.is_raining\"]",
+          "Articy Id": "0x0100005800010AB1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010B1F"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 29,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"auto.is_raining\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3.25,
+          "y": -78,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "!(Variable[\"auto.is_raining\"])",
+          "Articy Id": "0x0100005800010AB1",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010AB7"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 30,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"auto.is_raining\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3.25,
+          "y": -78,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "Visual Calculus: \"It's definitely a good place to hid...\"",
+          "Dialogue Text": "It's definitely a good place to hide. You barely found it yourself.",
+          "Articy Id": "0x0100005800010BE3",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "Variable[\"boardwalk.mazov_mainhub_reached\"]",
+          "Alternate1": "It's definitely a good place to hide. Mazovians know how to lay low.",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "402",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010BF5",
+          "InputId": "0x0100005800010BB8"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 31,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2825,
+          "y": 900.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "Visual Calculus: \"Outside the window -- desolation. S...\"",
+          "Dialogue Text": "Outside the window -- desolation. Snow falls softly onto the coastal sand, where it melts almost instantly. On rooftops, it lingers.",
+          "Articy Id": "0x0100005800010B25",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010B0D",
+          "InputId": "0x0100005800010AB7"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 32,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 305,
+          "y": -45,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "Variable[\"auto.is_snowing\"]",
+          "Articy Id": "0x0100005800010ABD",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005800010AC2"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 33,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 982,
+            "originDialogueID": 33,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5,
+          "y": 830,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "Variable[\"auto.is_snowing\"]",
+          "Articy Id": "0x0100005800010ABD",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010B37"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 34,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"auto.is_snowing\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3.25,
+          "y": 539.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Title": "!(Variable[\"auto.is_snowing\"])",
+          "Articy Id": "0x0100005800010ABD",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010B3D"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 35,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"auto.is_snowing\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3.25,
+          "y": 539.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "You: \"Peek out.\"",
+          "Dialogue Text": "Peek out.",
+          "Articy Id": "0x0100005800010B13",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100001600009B96",
+          "OutputId": "0x0100005800010AAB"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 36,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.bunker_viscal_look\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -595,
+          "y": 505.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "Visual Calculus: \"You hear the rain's susurration acr...\"",
+          "Dialogue Text": "You hear the rain's susurration across the sea water. The night shudders.",
+          "Articy Id": "0x0100005800010B31",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "0",
+          "InputId": "0x0100005800010AC2",
+          "OutputId": "0x0100005800010B0D"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 37,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 305,
+          "y": 430.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "You: \"\"Kim, I can't see the Whirling-in-R...\"",
+          "Dialogue Text": "\"Kim, I can't see the Whirling-in-Rags... The shot didn't come from here.\" (Conclude.)",
+          "Articy Id": "0x0100005800010C13",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005800010B0D",
+          "OutputId": "0x0100005800010C1D"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 38,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.bunker_viscal_hideout\"]  and  IsKimHere() == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1900.0001220703125,
+          "y": 1725.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Title": "You: \"Would this have been a good hideout...\"",
+          "Dialogue Text": "Would this have been a good hideout for a sniper?",
+          "Articy Id": "0x0100005800010B73",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "IsKimHere()",
+          "Alternate1": "(Turn to Kim.) \"Could the killer have used this as a hideout?\"",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005800010B0D",
+          "OutputId": "0x0100005800010B82"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 39,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 42,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.bunker_viscal_hideout\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1900.0001220703125,
+          "y": 525,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "Visual Calculus: \"It's a good place to hide, but does...\"",
+          "Dialogue Text": "It's a good place to hide, but doesn't look like anyone has stayed here in a while.",
+          "Articy Id": "0x0100005800010BDD",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "Variable[\"boardwalk.mazov_mainhub_reached\"]",
+          "Alternate1": "It's a good place to hide, but doesn't look like anyone -- Mazovian or murderer -- has stayed here in a while.",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "402",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010BF5",
+          "InputId": "0x0100005800010BB8"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 41,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2825,
+          "y": 675,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100005800010B82",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005800010B73"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 42,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 43,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 982,
+            "originDialogueID": 42,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 44,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2200,
+          "y": 575,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100005800010B82",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010BCB"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 43,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1430,
+          "y": 373.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 44,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x0100005800010B82",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010BB8"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 44,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 50,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1430,
+          "y": 373.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 45,
+        "fields": {
+          "Title": "You: \"Is it feasible to hit a target in t...\"",
+          "Dialogue Text": "Is it feasible to hit a target in the Whirling-in-Rags from this window? (Conclude.)",
+          "Articy Id": "0x0100005800010C0C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100005800010B0D",
+          "OutputId": "0x0100005800010BB2"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 45,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.bunker_viscal_hideout\"]  and  IsKimHere() == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1899,
+          "y": 1484,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 46,
+        "fields": {
+          "Title": "Visual Calculus: \"Could this have been the killer's h...\"",
+          "Dialogue Text": "Could this have been the killer's hideout, and this narrow window -- the point of origin of the shot that killed the mercenary?",
+          "Articy Id": "0x010000580000DE45",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "0",
+          "InputId": "0x010000580000DD9A",
+          "OutputId": "0x0100005800010B07"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 46,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1725.9998779296875,
+          "y": 779,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 47,
+        "fields": {
+          "Title": "Variable[\"auto.is_snowing\"]",
+          "Articy Id": "0x0100005800010AB7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005800010AB1"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 47,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 982,
+            "originDialogueID": 47,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 49,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5,
+          "y": 130,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 48,
+        "fields": {
+          "Title": "Variable[\"auto.is_snowing\"]",
+          "Articy Id": "0x0100005800010AB7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010B25"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 48,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"auto.is_snowing\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3.25,
+          "y": 84.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 49,
+        "fields": {
+          "Title": "!(Variable[\"auto.is_snowing\"])",
+          "Articy Id": "0x0100005800010AB7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010B2B"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 49,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"auto.is_snowing\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3.25,
+          "y": 84.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 50,
+        "fields": {
+          "Title": "Variable[\"boardwalk.bunker_bed\"]",
+          "Articy Id": "0x0100005800010BB8",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100005800010B82"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 50,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 51,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 982,
+            "originDialogueID": 50,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2525,
+          "y": 825,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 51,
+        "fields": {
+          "Title": "Variable[\"boardwalk.bunker_bed\"]",
+          "Articy Id": "0x0100005800010BB8",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010BDD"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 51,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.bunker_bed\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1641.25,
+          "y": 536.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 52,
+        "fields": {
+          "Title": "!(Variable[\"boardwalk.bunker_bed\"])",
+          "Articy Id": "0x0100005800010BB8",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100005800010BE3"
+        },
+        "conversationID": 982,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 982,
+            "originDialogueID": 52,
+            "destinationConversationID": 982,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"boardwalk.bunker_bed\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1641.25,
+          "y": 536.25,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

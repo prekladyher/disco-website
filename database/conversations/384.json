@@ -1,0 +1,435 @@
+[
+  {
+    "id": 384,
+    "fields": {
+      "Title": "PLAZA ORB / gaston cheating",
+      "Articy Id": "0x0100001600002BA6",
+      "AlternateOrbText": "",
+      "CheckType": "18",
+      "Condition": "Variable[\"plaza.sense_gaston_sniveling\"] == true  and  Variable[\"plaza.orb_gaston_cheating_done\"] == false  and  IsDaytime()  and  IsDayUntil(5)",
+      "Description": "Cheating!",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "In and around the crater on the plaza where the old play petanque, centered on Gaston\n",
+      "Difficulty": "11",
+      "Actor": "396",
+      "Conversant": "58"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100001600002BA6",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 384,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 384,
+            "originDialogueID": 0,
+            "destinationConversationID": 384,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100001600002BA9",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x010000310000090B"
+        },
+        "conversationID": 384,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 384,
+            "originDialogueID": 1,
+            "destinationConversationID": 384,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "You: \"Take a closer look.\"",
+          "Dialogue Text": "Take a closer look.",
+          "Articy Id": "0x010000040000AB65",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "58",
+          "OutputId": "0x0100003100000912",
+          "InputId": "0x010000310000090B"
+        },
+        "conversationID": 384,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 384,
+            "originDialogueID": 2,
+            "destinationConversationID": 384,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1650,
+          "y": 975.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "René Arnoux: \"Despite his limp, the man in the un...\"",
+          "Dialogue Text": "Despite his limp, the man in the uniform moves with efficient grace. His motions are measured and precise.",
+          "Articy Id": "0x0100003100000912",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "57",
+          "Conversant": "396",
+          "InputId": "0x010000040000AB65",
+          "OutputId": "0x0100003100000919"
+        },
+        "conversationID": 384,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 384,
+            "originDialogueID": 3,
+            "destinationConversationID": 384,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1373,
+          "y": 970.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Gaston Martin: \"...then suddenly he leans forward a...\"",
+          "Dialogue Text": "...then suddenly he leans forward and uses the 0-end of the measuring tape to nudge his opponent's balls further from the small brown sphere in the pit. As he does this, he complains about his back.",
+          "Articy Id": "0x0100002F00009F57",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "58",
+          "Conversant": "396",
+          "OutputId": "0x0100006400000619",
+          "InputId": "0x0100003100000919"
+        },
+        "conversationID": 384,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 384,
+            "originDialogueID": 5,
+            "destinationConversationID": 384,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"plaza.gaston_perc_cheating\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -819,
+          "y": 957,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Gaston Martin: \"The jolly-looking man in the checke...\"",
+          "Dialogue Text": "The jolly-looking man in the checkered jacket moves lazily. Like a giant tomcat stretched out in the sun...",
+          "Articy Id": "0x0100003100000919",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "58",
+          "Conversant": "396",
+          "InputId": "0x0100003100000912",
+          "OutputId": "0x0100002F00009F57"
+        },
+        "conversationID": 384,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 384,
+            "originDialogueID": 6,
+            "destinationConversationID": 384,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1103,
+          "y": 971,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Composure: \"*Something* isn't right about this...\"",
+          "Dialogue Text": "*Something* isn't right about this game.",
+          "Articy Id": "0x010000310000090B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "419",
+          "Conversant": "396",
+          "InputId": "0x0100001600002BA9",
+          "OutputId": "0x010000040000AB6B"
+        },
+        "conversationID": 384,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 384,
+            "originDialogueID": 7,
+            "destinationConversationID": 384,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 384,
+            "originDialogueID": 7,
+            "destinationConversationID": 384,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1950.0001220703125,
+          "y": 1100,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "You: \"That's none of my concern. [Discard...\"",
+          "Dialogue Text": "That's none of my concern. [Discard thought.]",
+          "Articy Id": "0x010000040000AB6B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "58",
+          "InputId": "0x010000310000090B",
+          "OutputId": "0x010000040000AB6F"
+        },
+        "conversationID": 384,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"plaza.orb_gaston_cheating_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -1650,
+          "y": 1200,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "René Arnoux: \"Apparently oblivious to his partner...\"",
+          "Dialogue Text": "Apparently oblivious to his partner's treachery, the uniformed man grabs a ball and takes aim again.",
+          "Articy Id": "0x0100006400000619",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "57",
+          "Conversant": "396",
+          "InputId": "0x0100002F00009F57",
+          "OutputId": "0x010000040000AB6F"
+        },
+        "conversationID": 384,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"plaza.sense_drama_gaston_subterfuge\", true) ;\nSetVariableValue(\"plaza.orb_gaston_cheating_done\", true) ;\nGainTask(\"TASK.confront_gaston_about_cheating\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -529,
+          "y": 979,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

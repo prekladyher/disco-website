@@ -1,0 +1,377 @@
+[
+  {
+    "id": 564,
+    "fields": {
+      "Title": "VILLAGE / JOYCE barks",
+      "Articy Id": "0x0100002F00010276",
+      "Description": "Joyce barks for when she's in the village.\n\nI dared not to move it to her actual folder, cause it's already been inputted and I didn't wanna fuck it up.",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100002F00010276",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 564,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 564,
+            "originDialogueID": 0,
+            "destinationConversationID": 564,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100002F00010279",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100000700019991"
+        },
+        "conversationID": 564,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 564,
+            "originDialogueID": 1,
+            "destinationConversationID": 564,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 564,
+            "originDialogueID": 1,
+            "destinationConversationID": 564,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 564,
+            "originDialogueID": 1,
+            "destinationConversationID": 564,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 564,
+            "originDialogueID": 1,
+            "destinationConversationID": 564,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 564,
+            "originDialogueID": 1,
+            "destinationConversationID": 564,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 564,
+            "originDialogueID": 1,
+            "destinationConversationID": 564,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Joyce Messier: \"\"The board is not gonna like it.\"\"",
+          "Dialogue Text": "\"The board is not gonna like it.\"",
+          "Articy Id": "0x010000070001998A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "380",
+          "Conversant": "0",
+          "InputId": "0x0100002F00010279",
+          "OutputId": "0x0100002F0001029D"
+        },
+        "conversationID": 564,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"village.joyce_stops_roping\"] == true  and  Variable[\"TASK.ask_about_ruby_in_village\"] == true  and  Variable[\"TASK.report_to_the_tribunal_done\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 674,
+          "y": -90,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Joyce Messier: \"\"Familiar faces.\"\"",
+          "Dialogue Text": "\"Familiar faces.\"",
+          "Articy Id": "0x0100000700019983",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "380",
+          "Conversant": "0",
+          "InputId": "0x0100002F00010279",
+          "OutputId": "0x0100002F0001029D"
+        },
+        "conversationID": 564,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"village.joyce_stops_roping\"] == true  and  Variable[\"TASK.ask_about_ruby_in_village\"] == true  and  Variable[\"TASK.report_to_the_tribunal_done\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 673,
+          "y": -305,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Joyce Messier: \"\"To think I even used to go dancing...\"",
+          "Dialogue Text": "\"To think I even used to go dancing here.\"",
+          "Articy Id": "0x0100000700019991",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "380",
+          "Conversant": "0",
+          "InputId": "0x0100002F00010279",
+          "OutputId": "0x0100002F0001029D"
+        },
+        "conversationID": 564,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"village.joyce_stops_roping\"] == true  and  Variable[\"TASK.ask_about_ruby_in_village\"] == true  and  Variable[\"TASK.report_to_the_tribunal_done\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 677,
+          "y": 796,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Joyce Messier: \"\"God, I was so young... and stupid.\"\"",
+          "Dialogue Text": "\"God, I was so young... and stupid.\"",
+          "Articy Id": "0x0100002F0001029E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "380",
+          "Conversant": "0",
+          "InputId": "0x0100002F00010279",
+          "OutputId": "0x0100002F0001029D"
+        },
+        "conversationID": 564,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"village.joyce_stops_roping\"] == true  and  Variable[\"TASK.ask_about_ruby_in_village\"] == true  and  Variable[\"TASK.report_to_the_tribunal_done\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 682,
+          "y": 571,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Joyce Messier: \"\"Silly nostalgia...\"\"",
+          "Dialogue Text": "\"Silly nostalgia...\"",
+          "Articy Id": "0x0100002F00010299",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "380",
+          "Conversant": "0",
+          "InputId": "0x0100002F00010279",
+          "OutputId": "0x0100002F0001029D"
+        },
+        "conversationID": 564,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"village.joyce_stops_roping\"] == true  and  Variable[\"TASK.ask_about_ruby_in_village\"] == true  and  Variable[\"TASK.report_to_the_tribunal_done\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 679,
+          "y": 353,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Joyce Messier: \"\"This place hasn't changed at all.\"\"",
+          "Dialogue Text": "\"This place hasn't changed at all.\"",
+          "Articy Id": "0x0100002F000102A3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "380",
+          "Conversant": "0",
+          "InputId": "0x0100002F00010279",
+          "OutputId": "0x0100002F0001029D"
+        },
+        "conversationID": 564,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"village.joyce_stops_roping\"] == true  and  Variable[\"TASK.ask_about_ruby_in_village\"] == true  and  Variable[\"TASK.report_to_the_tribunal_done\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 677,
+          "y": 133,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

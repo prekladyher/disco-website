@@ -1,0 +1,377 @@
+[
+  {
+    "id": 298,
+    "fields": {
+      "Title": "ICE / NOID barks",
+      "Articy Id": "0x010000070001A52F",
+      "Description": "Things Noid says inside the church.",
+      "Actor": "15",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000070001A52F",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 298,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 298,
+            "originDialogueID": 0,
+            "destinationConversationID": 298,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x010000070001A568",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x010000070001A727"
+        },
+        "conversationID": 298,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 298,
+            "originDialogueID": 1,
+            "destinationConversationID": 298,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 298,
+            "originDialogueID": 1,
+            "destinationConversationID": 298,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 298,
+            "originDialogueID": 1,
+            "destinationConversationID": 298,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 298,
+            "originDialogueID": 1,
+            "destinationConversationID": 298,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 298,
+            "originDialogueID": 1,
+            "destinationConversationID": 298,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 298,
+            "originDialogueID": 1,
+            "destinationConversationID": 298,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Noid: \"\"No one can find us here.\"\"",
+          "Dialogue Text": "\"No one can find us here.\"",
+          "Articy Id": "0x010000070001A530",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "15",
+          "Conversant": "0",
+          "InputId": "0x010000070001A568",
+          "OutputId": "0x010000070001A532"
+        },
+        "conversationID": 298,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"church.ravers_inside_church\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 782,
+          "y": 427,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Noid: \"\"This is *our* little utopia.\"\"",
+          "Dialogue Text": "\"This is *our* little utopia.\"",
+          "Articy Id": "0x010000070001A536",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "15",
+          "Conversant": "0",
+          "InputId": "0x010000070001A568",
+          "OutputId": "0x010000070001A532"
+        },
+        "conversationID": 298,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"church.ravers_inside_church\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 780,
+          "y": 674,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Noid: \"\"The carpentry in here is magnifice...\"",
+          "Dialogue Text": "\"The carpentry in here is magnificent.\"",
+          "Articy Id": "0x010000070001A712",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "15",
+          "Conversant": "0",
+          "InputId": "0x010000070001A568",
+          "OutputId": "0x010000070001A532"
+        },
+        "conversationID": 298,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"church.ravers_inside_church\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 780,
+          "y": 909,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Noid: \"\"Are they really gonna let us have...\"",
+          "Dialogue Text": "\"Are they really gonna let us have this?\"",
+          "Articy Id": "0x010000070001A719",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "15",
+          "Conversant": "0",
+          "InputId": "0x010000070001A568",
+          "OutputId": "0x010000070001A532"
+        },
+        "conversationID": 298,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"church.ravers_inside_church\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 789,
+          "y": 1145,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Noid: \"\"New sines, new ideas, new beginnin...\"",
+          "Dialogue Text": "\"New sines, new ideas, new beginning.\"",
+          "Articy Id": "0x010000070001A727",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "15",
+          "Conversant": "0",
+          "InputId": "0x010000070001A568",
+          "OutputId": "0x010000070001A532"
+        },
+        "conversationID": 298,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"church.ravers_inside_church\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 794,
+          "y": 1627,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Noid: \"\"Whatever it takes, man... whatever...\"",
+          "Dialogue Text": "\"Whatever it takes, man... whatever it takes.\"",
+          "Articy Id": "0x010000070001A720",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "15",
+          "Conversant": "0",
+          "InputId": "0x010000070001A568",
+          "OutputId": "0x010000070001A532"
+        },
+        "conversationID": 298,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"church.ravers_inside_church\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 790,
+          "y": 1386,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

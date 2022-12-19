@@ -1,0 +1,496 @@
+[
+  {
+    "id": 1457,
+    "fields": {
+      "Title": "Helen - EasterEggs / Pleasure Wheel / Flow – PLAZA ORB / viscal pleasure wheel intro",
+      "Articy Id": "dowywkzx260ow_dp",
+      "_threshold_text": "Legendary (14)",
+      "CheckType": "26",
+      "Condition": "Variable[\"plaza.orb_viscal_pleasure_wheel_intro_done\"] == false  and  Variable[\"TASK.report_corpse_wo_taking_main_task_done\"]",
+      "Description": "Viscal intro after WCW quest not taken",
+      "Instruction": "",
+      "Difficulty": "4",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "dowywkzx260ow_dp",
+          "Sequence": "Continue()",
+          "InputId": "0n21744fms6pp7zj"
+        },
+        "conversationID": 1457,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1457,
+            "originDialogueID": 0,
+            "destinationConversationID": 1457,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "dowywkzx260ow_dp-start",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "7tobcb1x24b7kgyq"
+        },
+        "conversationID": 1457,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1457,
+            "originDialogueID": 1,
+            "destinationConversationID": 1457,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "You should return to the boardwalk once the body has been taken away. There's something you need to see.",
+          "Articy Id": "7tobcb1x24b7kgyq",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"short_description\": \"Reconstruct crime scenes. Make laws of physics work for the Law.\",\n  \"long_description\": \"COOL FOR: FORENSIC SCIENTISTS. TACTICAL FIGHTERS. MATH-MINDED PEOPLE.\\n\\nVisual Calculus verses you not only in the laws of the state, but the laws of nature. It enables you to create virtual crime-scene models in your mind’s eye. You’ll see how a bullet shattered the glass, and from that trace its trajectory with mathematical precision. You’ll also count so many footprints – and at a glance discern shoe size and design; as well as the height, weight, and gender of the one who wore them.\\n\\nAt high levels, Visual Calculus makes the world reveal its secrets to you – but you may be so absorbed by your mind-diorama, you don’t notice as crooks steal your pants. However, at low levels, your mind’s eye will be blind. Reconstructing crime scenes will be difficult without outside help.\",\n  \"color\": 2\n}",
+          "Actor": "402",
+          "Conversant": "0",
+          "InputId": "dowywkzx260ow_dp-start",
+          "OutputId": "jz3ekpwbmap6ycce"
+        },
+        "conversationID": 1457,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1457,
+            "originDialogueID": 2,
+            "destinationConversationID": 1457,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1457,
+            "originDialogueID": 2,
+            "destinationConversationID": 1457,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetFlag(\"plaza.orb_viscal_pleasure_wheel_intro_done\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 109.23077392578125,
+          "y": -88.46154022216797,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Let's call it an apparition from the past.",
+          "Articy Id": "g5vty3jvf20ro3xx",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"short_description\": \"Hunches and gut feelings. Dreams in waking life.\",\n  \"long_description\": \"COOL FOR: DREAMERS. PARA-NATURAL INVESTIGATORS. MENTAL CREATORS.\\n\\nInland Empire is the unfiltered wellspring of imagination, emotion, and foreboding. It enables you to grope your way through invisible dimensions of reality, gaining insight into that which sight can’t see. What’s really going? What do these enigmatic riddles mean for the world-fate?\\n\\nAt high levels, Inland Empire animates the inanimate. You’ll have conversations with your clothing, conversations that may change the course of the investigation if you’re not thrown in the loony bin first. With low Inland Empire, however, you’ll be void of imagination – and character. And then how will you shape the cosmos?\",\n  \"color\": 3\n}",
+          "DifficultyPass": "2",
+          "Actor": "404",
+          "Conversant": "0",
+          "OutputId": "8ns3msinlwi32k4k",
+          "InputId": "h1rmg1zpiqxnw4b8"
+        },
+        "conversationID": 1457,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1457,
+            "originDialogueID": 3,
+            "destinationConversationID": 1457,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1076.923095703125,
+          "y": 10.769230842590332,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Say no more! I'll go -- shrouded in total mystery.",
+          "Articy Id": "40rdubi2d98pm36g",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "7tobcb1x24b7kgyq",
+          "OutputId": "whow9o3lirntmf7b"
+        },
+        "conversationID": 1457,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1457,
+            "originDialogueID": 4,
+            "destinationConversationID": 1457,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 450.0000305175781,
+          "y": -270,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "It's waiting for you there.",
+          "Articy Id": "whow9o3lirntmf7b",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"short_description\": \"Reconstruct crime scenes. Make laws of physics work for the Law.\",\n  \"long_description\": \"COOL FOR: FORENSIC SCIENTISTS. TACTICAL FIGHTERS. MATH-MINDED PEOPLE.\\n\\nVisual Calculus verses you not only in the laws of the state, but the laws of nature. It enables you to create virtual crime-scene models in your mind’s eye. You’ll see how a bullet shattered the glass, and from that trace its trajectory with mathematical precision. You’ll also count so many footprints – and at a glance discern shoe size and design; as well as the height, weight, and gender of the one who wore them.\\n\\nAt high levels, Visual Calculus makes the world reveal its secrets to you – but you may be so absorbed by your mind-diorama, you don’t notice as crooks steal your pants. However, at low levels, your mind’s eye will be blind. Reconstructing crime scenes will be difficult without outside help.\",\n  \"color\": 2\n}",
+          "Actor": "402",
+          "Conversant": "0",
+          "InputId": "40rdubi2d98pm36g",
+          "OutputId": "cdzoz6q5vsghzqnv"
+        },
+        "conversationID": 1457,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1457,
+            "originDialogueID": 5,
+            "destinationConversationID": 1457,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 763.0769653320312,
+          "y": -269.23077392578125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "You can just stop by whenever you're close. It should be quick enough.",
+          "Articy Id": "cdzoz6q5vsghzqnv",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"short_description\": \"Wield raw intellectual power. Deduce the world.\",\n  \"long_description\": \"COOL FOR: ANALYSTS. PURE RATIONALISTS. OBVIOUSLY LOGICIANS.\\n\\nLogic urges you to analyze the living daylights out of the case. It enables you to piece evidence together, detect inconsistencies in statements, and impress everyone with your astonishing conclusions. It's the bread and butter of many a detective.\\n\\nAt high levels, Logic will be able to solve even the most complicated puzzle. You will be very proud, and thus susceptible to intellectual flattery; for those blinded by their own brilliance often miss important clues. With low levels of Logic, you’re going to have a hard time solving even the simplest puzzle. Even if you find the pieces, good luck putting them together.\",\n  \"color\": 2\n}",
+          "DifficultyPass": "2",
+          "Actor": "398",
+          "Conversant": "0",
+          "InputId": "8ns3msinlwi32k4k",
+          "OutputId": "dowywkzx260ow_dp-end"
+        },
+        "conversationID": 1457,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1392.3077392578125,
+          "y": -266.923095703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Oh no, it's one of those 'show, don't tell' things, isn't it?",
+          "Articy Id": "8ns3msinlwi32k4k",
+          "DialogueEntryType": "DialogueFragment",
+          "character_alternative_name": "",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"short_description\": \"Understand creativity. See Art in the world.\",\n  \"long_description\": \"COOL FOR: CREATIVES. PSYCHEDELIC FANCIERS. CRITICS.\\n\\nConceptualization has a special role it wants you to play in this world – not the role of cop, but of Art Cop. It enables you to make fresh associations, to delve into world-concepts from Jan Kaarp’s postmodernist karperie, to Revachol’s arabesque architectural style dideridada, and even the concept of HARDCORE – and then, importantly, to add your own contribution to these works.\\n\\nAt high levels, Conceptualization makes you go big – perhaps too big. It is ostentatious, demanding grand displays. Why live life when you can throw yourself into a live volcano? At low levels, however, you will be unable to see the world in a creative light. You’ll be unable to contribute to conversations in an art gallery. Only boring people will invite you to their dust parties.\",\n  \"color\": 2\n}",
+          "DifficultyPass": "2",
+          "Actor": "397",
+          "Conversant": "0",
+          "InputId": "g5vty3jvf20ro3xx",
+          "OutputId": "cdzoz6q5vsghzqnv"
+        },
+        "conversationID": 1457,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1457,
+            "originDialogueID": 8,
+            "destinationConversationID": 1457,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1398.4615478515625,
+          "y": 13.84615421295166,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "Come on, I'm going to need more here.",
+          "Articy Id": "jz3ekpwbmap6ycce",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "7tobcb1x24b7kgyq",
+          "OutputId": "h1rmg1zpiqxnw4b8"
+        },
+        "conversationID": 1457,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1457,
+            "originDialogueID": 9,
+            "destinationConversationID": 1457,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 446.923095703125,
+          "y": 6.92307710647583,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "",
+          "Dialogue Text": "A little something that your visual cortex has put together while you were busy solving the case.",
+          "Articy Id": "h1rmg1zpiqxnw4b8",
+          "DialogueEntryType": "DialogueFragment",
+          "character_game_data": "{\n  \"is_npc\": true,\n  \"short_description\": \"Reconstruct crime scenes. Make laws of physics work for the Law.\",\n  \"long_description\": \"COOL FOR: FORENSIC SCIENTISTS. TACTICAL FIGHTERS. MATH-MINDED PEOPLE.\\n\\nVisual Calculus verses you not only in the laws of the state, but the laws of nature. It enables you to create virtual crime-scene models in your mind’s eye. You’ll see how a bullet shattered the glass, and from that trace its trajectory with mathematical precision. You’ll also count so many footprints – and at a glance discern shoe size and design; as well as the height, weight, and gender of the one who wore them.\\n\\nAt high levels, Visual Calculus makes the world reveal its secrets to you – but you may be so absorbed by your mind-diorama, you don’t notice as crooks steal your pants. However, at low levels, your mind’s eye will be blind. Reconstructing crime scenes will be difficult without outside help.\",\n  \"color\": 2\n}",
+          "Actor": "402",
+          "Conversant": "0",
+          "InputId": "jz3ekpwbmap6ycce",
+          "OutputId": "g5vty3jvf20ro3xx"
+        },
+        "conversationID": 1457,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1457,
+            "originDialogueID": 10,
+            "destinationConversationID": 1457,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 756.923095703125,
+          "y": 8.461538314819336,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

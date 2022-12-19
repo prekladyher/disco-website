@@ -1,0 +1,1089 @@
+[
+  {
+    "id": 279,
+    "fields": {
+      "Title": "VILLAGE / LILLY SANDCASTLE",
+      "Articy Id": "0x010000070001206C",
+      "Description": "This is the interaction dialogue with Lilly's Little Sandcastle, where she hid the gloves.",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000070001206C",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 0,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x010000070001206F",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x01000007000120DD"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 1,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "You: \"Leave the sandcastle alone. [Leave....\"",
+          "Dialogue Text": "Leave the sandcastle alone. [Leave.]",
+          "Articy Id": "0x0100000700012089",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000070001208D",
+          "InputId": "0x01000007000120C2"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 891,
+          "y": 787.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Variable[\"village.sandcastle_hub_reached\"]",
+          "Articy Id": "0x01000007000120DD",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000070001206F"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 3,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 279,
+            "originDialogueID": 3,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -357,
+          "y": 567,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Variable[\"village.sandcastle_hub_reached\"]",
+          "Articy Id": "0x01000007000120DD",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x01000007000120E4"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 4,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"village.sandcastle_hub_reached\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -232.04998779296875,
+          "y": 368.54998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "!(Variable[\"village.sandcastle_hub_reached\"])",
+          "Articy Id": "0x01000007000120DD",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100000700012077"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 5,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"village.sandcastle_hub_reached\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -232.04998779296875,
+          "y": 368.54998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "You: \"Reach in the catacombs and pull out...\"",
+          "Dialogue Text": "Reach in the catacombs and pull out the shiny object.",
+          "Articy Id": "0x0100000700012083",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x01000007000120CB",
+          "InputId": "0x01000007000120C2"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 6,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 891,
+          "y": 538,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x010000060001DE84",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x01000007000120CB"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 8,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 279,
+            "originDialogueID": 8,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1490,
+          "y": 598,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x010000060001DE84",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000060001DE89"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 9,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 968.4999389648438,
+          "y": 388.6999816894531,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x010000060001DE84",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 968.4999389648438,
+          "y": 388.6999816894531,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Sandcastle: \"A gush of wind disintegrates anothe...\"",
+          "Dialogue Text": "A gush of wind disintegrates another piece of the cellar ceiling, exposing more of the mysterious glimmer underneath. The shithole's about to collapse.",
+          "Articy Id": "0x01000007000120A1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "364",
+          "Conversant": "0",
+          "OutputId": "0x01000007000120B6",
+          "InputId": "0x0100000700012092"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 11,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1537,
+          "y": 240.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "Half Light: \"The building's coming down on you,...\"",
+          "Dialogue Text": "The building's coming down on you, you need to get out of here!",
+          "Articy Id": "0x01000007000120B6",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "414",
+          "Conversant": "0",
+          "InputId": "0x01000007000120A1",
+          "OutputId": "0x01000007000120C2"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 12,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1840.9998779296875,
+          "y": 262,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Congratulations -- that's the gaun...\"",
+          "Dialogue Text": "\"Congratulations -- that's the gauntlets down, then. We're doing good on the armour collection front.\"",
+          "Articy Id": "0x010000060001DE89",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x010000060001DE84",
+          "OutputId": "0x010000070001208D"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1829,
+          "y": 506,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"The little castle?\" The lieutenant...\"",
+          "Dialogue Text": "\"The little castle?\" The lieutenant smiles a little. \"The reigning lord must have come upon some really tough times to let it slip in such decrepitude.\"",
+          "Articy Id": "0x0100000700012098",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x0100000700012089",
+          "InputId": "0x0100000700012092"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 14,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 279,
+            "originDialogueID": 14,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1528,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100000700012092",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000070001207D"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 15,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 279,
+            "originDialogueID": 15,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1177,
+          "y": 214,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100000700012092",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100000700012098"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 16,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 765.0499877929688,
+          "y": 139.09999084472656,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x0100000700012092",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x01000007000120A1"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 17,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 765.0499877929688,
+          "y": 139.09999084472656,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Sandcastle: \"The walls and floors give way to th...\"",
+          "Dialogue Text": "The walls and floors give way to the giant's greed, collapse and present you with a pair of ceramic gauntlets.",
+          "Articy Id": "0x01000007000120CB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "364",
+          "Conversant": "0",
+          "InputId": "0x0100000700012083",
+          "OutputId": "0x010000060001DE84"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 18,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "GainItem(\"gloves_t500\");\nFinishTask(\"TASK.get_the_armoured_gloves_from_lillys_sandcastle_done\");\nFinishTask(\"TASK.find_the_armoured_gloves_done\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1160,
+          "y": 531,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "Sandcastle: \"The fortress is still defiantly sta...\"",
+          "Dialogue Text": "The fortress is still defiantly standing. There's an inviting gleam of *something* coming from the depths of the deepest cellars.",
+          "Articy Id": "0x01000007000120E4",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "364",
+          "Conversant": "0",
+          "InputId": "0x01000007000120DD",
+          "OutputId": "0x01000007000120D3"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 19,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 80,
+          "y": 331,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Untitled hub",
+          "Articy Id": "0x01000007000120D3",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100000700012077",
+          "OutputId": "0x0100000700012089"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 20,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 279,
+            "originDialogueID": 20,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 279,
+            "originDialogueID": 20,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"village.sandcastle_hub_reached\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 425.0000305175781,
+          "y": 587,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "Sandcastle: \"Weather has not been kind to Lily's...\"",
+          "Dialogue Text": "Weather has not been kind to Lily's little sandcastle. The once mighty towers are quickly eroding away. You can see something shining back to you from what must have been a vast underground catacomb network.",
+          "Articy Id": "0x0100000700012077",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "364",
+          "Conversant": "0",
+          "InputId": "0x01000007000120DD",
+          "OutputId": "0x01000007000120D3"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 21,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 81,
+          "y": 599,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Visual Calculus: \"Smooth reflective surface... are th...\"",
+          "Dialogue Text": "Smooth reflective surface... are these the gloves you're looking for?",
+          "Articy Id": "0x01000007000120C2",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "402",
+          "Conversant": "0",
+          "InputId": "0x01000007000120B6",
+          "OutputId": "0x0100000700012089"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 22,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 279,
+            "originDialogueID": 22,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2135,
+          "y": 261,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "You: \"\"Broken...\"\"",
+          "Dialogue Text": "\"Broken...\"",
+          "Articy Id": "0x010000070001207D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x01000007000120D3",
+          "OutputId": "0x0100000700012092"
+        },
+        "conversationID": 279,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 279,
+            "originDialogueID": 23,
+            "destinationConversationID": 279,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"village.sandcastle_shithole_said\"] == false",
+        "userScript": "SetVariableValue(\"village.sandcastle_shithole_said\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 895.0000610351562,
+          "y": 167,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

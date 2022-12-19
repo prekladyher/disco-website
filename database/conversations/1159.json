@@ -1,0 +1,1620 @@
+[
+  {
+    "id": 1159,
+    "fields": {
+      "Title": "THOUGHT / SOBRIETY DAY ONE",
+      "Articy Id": "0x010000710000060B",
+      "AlternateOrbText": "",
+      "CheckType": "11",
+      "Condition": "Variable[\"character.sobriety_one_done\"] == false  and  DayCount() == 3  and  SubstanceUsedOnce(\"alcohol\") == false  and  SubstanceUsedOnce(\"speed\") == false  and  SubstanceUsedOnce(\"pyrholidon\") == false",
+      "Description": "Endurance -- about staying clean. Not an initiation dialogue, but UPON FIXING thought?",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000710000060B",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 0,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x010000710000060E",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100006B0000A234"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 1,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "You: \"My wedding anniversary?\"",
+          "Dialogue Text": "My wedding anniversary?",
+          "Articy Id": "0x0100000200000EC8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100000200000EEB",
+          "InputId": "0x0100009400000E3C"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 2,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsTHCPresent(\"caustic_echo\")  or  Variable[\"inventory.ledger_caustic_echo\"])  or  IsTHCPresent(\"white_mourning\")  or  Variable[\"inventory.ledger_white_mourning\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 925.0000610351562,
+          "y": -1075,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "You: \"Reality... (Look around.)\"",
+          "Dialogue Text": "Reality... (Look around.)",
+          "Articy Id": "0x0100000200000F39",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100000200000F32",
+          "InputId": "0x0100000200000F1D"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 3,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2850,
+          "y": -625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "You: \"What?! I've been sober for *over tw...\"",
+          "Dialogue Text": "What?! I've been sober for *over two days* already!",
+          "Articy Id": "0x0100000200000F0A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100000200000F1D",
+          "InputId": "0x0100000200000F04"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 4,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2250,
+          "y": -625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "You: \"I don't know how I feel about this...\"",
+          "Dialogue Text": "I don't know how I feel about this yet...",
+          "Articy Id": "0x0100000200000F4D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100000200000F65",
+          "InputId": "0x0100000200000F8B"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 5,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3775.000244140625,
+          "y": -875.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "You: \"I give up.\"",
+          "Dialogue Text": "I give up.",
+          "Articy Id": "0x0100000200000ED4",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100000200000EF9",
+          "InputId": "0x0100009400000E3C"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 6,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 925.0000610351562,
+          "y": -575,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Endurance: \"Yes, you're beginning to see the wo...\"",
+          "Dialogue Text": "Yes, you're beginning to see the world for what it is, even through the mental fog. And yourself, too -- what you've made yourself into.",
+          "Articy Id": "0x0100000200000F32",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "409",
+          "Conversant": "0",
+          "InputId": "0x0100000200000F9E",
+          "OutputId": "0x0100000200000F8B"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 7,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3150,
+          "y": -650,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Endurance: \"Don't get too excited. Clarity is s...\"",
+          "Dialogue Text": "Don't get too excited. Clarity is still many months away for you -- difficult, confusing, very emotional months. Shall we keep going?",
+          "Articy Id": "0x0100000200000F59",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "409",
+          "Conversant": "0",
+          "OutputId": "0x0100000200000F6B",
+          "InputId": "0x0100000200000F41"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 8,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4075.000244140625,
+          "y": -625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "You: \"Huh?\"",
+          "Dialogue Text": "Huh?",
+          "Articy Id": "0x0100009400000E28",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100000200000EE0",
+          "InputId": "0x0100006B0000A234"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 9,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 325,
+          "y": -75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Endurance: \"No. Well, it might be, but you don'...\"",
+          "Dialogue Text": "No. Well, it might be, but you don't have your badge, so how would you know? Try again.",
+          "Articy Id": "0x0100009400000E3C",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "CheckItem(\"badge\") == true",
+          "Alternate1": "No. Check your badge. Is it your birthday? No, it's not. Try again.",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "409",
+          "Conversant": "0",
+          "OutputId": "0x0100000200000ED4",
+          "InputId": "0x0100009400000E33"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 10,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 10,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 10,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 625,
+          "y": -575,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Endurance: \"You've shown you can get through tw...\"",
+          "Dialogue Text": "You've shown you can get through two days of detox. You can certainly endure a little more...",
+          "Articy Id": "0x0100000200000F53",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "409",
+          "Conversant": "0",
+          "OutputId": "0x0100000200000F6B",
+          "InputId": "0x0100000200000F47"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 11,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4075.000244140625,
+          "y": -375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "Endurance: \"You're going to feel all kinds of c...\"",
+          "Dialogue Text": "You're going to feel all kinds of contradictory, confusing things for months to come. But don't get discouraged -- you just have to keep going, right foot in front of left, left foot in front of right...",
+          "Articy Id": "0x0100000200000F65",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "409",
+          "Conversant": "0",
+          "InputId": "0x0100000200000F4D",
+          "OutputId": "0x0100000200000F6B"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 12,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4075.000244140625,
+          "y": -925.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Endurance: \"Do you know what today is?\"",
+          "Dialogue Text": "Do you know what today is?",
+          "Articy Id": "0x0100006B0000A234",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "409",
+          "Conversant": "0",
+          "InputId": "0x010000710000060E",
+          "OutputId": "0x0100009400000E28"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 13,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 13,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 13,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"character.sobriety_one_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 25,
+          "y": -325,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "You: \"The day I'll solve this case?\"",
+          "Dialogue Text": "The day I'll solve this case?",
+          "Articy Id": "0x0100000200000ECE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100009400000E3C",
+          "OutputId": "0x0100000200000EF2"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 14,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 925.0000610351562,
+          "y": -825,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "You: \"How did I let it come to this? I ne...\"",
+          "Dialogue Text": "How did I let it come to this? I need to get my buzz on *immediately*.",
+          "Articy Id": "0x0100000200000F10",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100000200000F2B",
+          "InputId": "0x0100000200000F04"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 15,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2250,
+          "y": -125.00000762939453,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "You: \"Reality... (Study your surroundings...\"",
+          "Dialogue Text": "Reality... (Study your surroundings with your newly sober eyes.)",
+          "Articy Id": "0x0100000200000F9E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100000200000F32",
+          "InputId": "0x0100000200000F2B"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 16,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2850,
+          "y": -125.00000762939453,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "Untitled hub (03)",
+          "Articy Id": "0x0100000200000F8B",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100000200000F32",
+          "OutputId": "0x0100000200000F47"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 17,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 17,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 17,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3475.000244140625,
+          "y": -550,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Endurance: \"No, believe it or not, this isn't a...\"",
+          "Dialogue Text": "No, believe it or not, this isn't about *her*. Well, not exactly...",
+          "Articy Id": "0x0100000200000EEB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "409",
+          "Conversant": "0",
+          "InputId": "0x0100000200000EC8",
+          "OutputId": "0x0100000200000EF9"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 18,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1225,
+          "y": -1075,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "You: \"Oh, how I've missed this clarity!\"",
+          "Dialogue Text": "Oh, how I've missed this clarity!",
+          "Articy Id": "0x0100000200000F41",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100000200000F8B",
+          "OutputId": "0x0100000200000F59"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 19,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3775.000244140625,
+          "y": -625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "You: \"No, I can't handle this, I'm done....\"",
+          "Dialogue Text": "No, I can't handle this, I'm done. I'm going to find a drink *right now*. [Discard thought.]",
+          "Articy Id": "0x0100000200000F79",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100000200000F7D",
+          "InputId": "0x0100000200000F6B"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4650,
+          "y": -500.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "You: \"I'm done with my old life. One foot...\"",
+          "Dialogue Text": "I'm done with my old life. One foot after the other, I will go on...",
+          "Articy Id": "0x0100000200000F73",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100000200000F96",
+          "InputId": "0x0100000200000F6B"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 21,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4650,
+          "y": -750,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "Endurance: \"Let's hope so. It's beginning to se...\"",
+          "Dialogue Text": "Let's hope so. It's beginning to seem possible that you *will* solve it.",
+          "Articy Id": "0x0100000200000EF2",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "409",
+          "Conversant": "0",
+          "InputId": "0x0100000200000ECE",
+          "OutputId": "0x0100000200000EF9"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 23,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1225,
+          "y": -825,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "Endurance: \"No, you don't. You're well into det...\"",
+          "Dialogue Text": "No, you don't. You're well into detoxing now. *Reality* is beginning to come into focus -- just look around.",
+          "Articy Id": "0x0100000200000F2B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "409",
+          "Conversant": "0",
+          "InputId": "0x0100000200000F10",
+          "OutputId": "0x0100000200000F9E"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 24,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2550,
+          "y": -125.00000762939453,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "Endurance: \"No, you don't. It's been too long s...\"",
+          "Dialogue Text": "No, you don't. It's been too long since this has happened for you to recognize the feeling.",
+          "Articy Id": "0x0100000200000EDA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "409",
+          "Conversant": "0",
+          "OutputId": "0x0100000200000EF9",
+          "InputId": "0x0100009400000E2D"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 25,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 625,
+          "y": -325,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Untitled hub",
+          "Articy Id": "0x0100000200000F04",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x0100000200000F10",
+          "InputId": "0x0100000200000EF9"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 26,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 26,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2000.0001220703125,
+          "y": -275,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "You: \"Everything is terrible. I want off...\"",
+          "Dialogue Text": "Everything is terrible. I want off the sobriety train.",
+          "Articy Id": "0x0100000200000F47",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100000200000F8B",
+          "OutputId": "0x0100000200000F53"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 27,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3775.000244140625,
+          "y": -375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "You: \"(Lie.) Yes.\"",
+          "Dialogue Text": "(Lie.) Yes.",
+          "Articy Id": "0x0100009400000E2D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100006B0000A234",
+          "OutputId": "0x0100000200000EDA"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 28,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 326,
+          "y": -329,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "You: \"My birthday?\"",
+          "Dialogue Text": "My birthday?",
+          "Articy Id": "0x0100009400000E33",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100006B0000A234",
+          "OutputId": "0x0100009400000E3C"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 29,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 325,
+          "y": -575,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "Endurance: \"It's your first day sober.\"",
+          "Dialogue Text": "It's your first day sober.",
+          "Articy Id": "0x0100000200000EF9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "409",
+          "Conversant": "0",
+          "InputId": "0x0100000200000EE0",
+          "OutputId": "0x0100000200000F04"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 30,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1700.0001220703125,
+          "y": -350,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "Endurance: \"It takes a while for that shit to g...\"",
+          "Dialogue Text": "It takes a while for that shit to get out of your system, and for reality to come back into focus.",
+          "Articy Id": "0x0100000200000F1D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "409",
+          "Conversant": "0",
+          "InputId": "0x0100000200000F0A",
+          "OutputId": "0x0100000200000F39"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 31,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2550,
+          "y": -625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "Untitled hub (02)",
+          "Articy Id": "0x0100000200000F6B",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100000200000F65",
+          "OutputId": "0x0100000200000F79"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 32,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 32,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4400,
+          "y": -550,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "Endurance: \"Of course. It's been too long since...\"",
+          "Dialogue Text": "Of course. It's been too long since this has happened for you to recognize the feeling.",
+          "Articy Id": "0x0100000200000EE0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "409",
+          "Conversant": "0",
+          "InputId": "0x0100009400000E28",
+          "OutputId": "0x0100000200000EF9"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1159,
+            "originDialogueID": 33,
+            "destinationConversationID": 1159,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 625,
+          "y": -75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "Endurance: \"...and together we will walk the wa...\"",
+          "Dialogue Text": "...and together we will walk the waste land of reality. Because even if you haven't had your last drink or your last line, you will never really, truly enjoy either again.",
+          "Articy Id": "0x0100000200000F96",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "409",
+          "Conversant": "0",
+          "InputId": "0x0100000200000F73",
+          "OutputId": "0x0100000200000F7D"
+        },
+        "conversationID": 1159,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "GainThought(\"the_waste_land_of_reality\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4950,
+          "y": -800,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

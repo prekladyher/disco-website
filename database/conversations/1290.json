@@ -1,0 +1,705 @@
+[
+  {
+    "id": 1290,
+    "fields": {
+      "Title": "PIER ORB / bustedupwalkwaythought",
+      "Articy Id": "0x0100008F00000F84",
+      "AlternateOrbText": "",
+      "CheckType": "26",
+      "Condition": "Variable[\"pier.orb_walkway_viscal_done\"] == false",
+      "Description": "One wrong step is death, right? Probably death. (This is a conversation with VisCalc on the state of the ruin.)",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "3",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100008F00000F84",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1290,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1290,
+            "originDialogueID": 0,
+            "destinationConversationID": 1290,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100008F00000F87",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100008F000012DB"
+        },
+        "conversationID": 1290,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1290,
+            "originDialogueID": 1,
+            "destinationConversationID": 1290,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "You: \"Guess I'll have to take my chances.\"",
+          "Dialogue Text": "Guess I'll have to take my chances.",
+          "Articy Id": "0x0100008F000012F7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100008F0000235B",
+          "InputId": "0x0100008F000012E9"
+        },
+        "conversationID": 1290,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1290,
+            "originDialogueID": 2,
+            "destinationConversationID": 1290,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"pier.orb_walkway_viscal_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 359,
+          "y": -671,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Visual Calculus: \"Woah! What have we here?\"",
+          "Dialogue Text": "Woah! What have we here?",
+          "Articy Id": "0x0100008F000012DB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "0",
+          "InputId": "0x0100008F00000F87",
+          "OutputId": "0x0100008F000012E1"
+        },
+        "conversationID": 1290,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1290,
+            "originDialogueID": 4,
+            "destinationConversationID": 1290,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -575,
+          "y": -925.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Endurance: \"You can take those sharp rocks!\"",
+          "Dialogue Text": "You can take those sharp rocks!",
+          "Articy Id": "0x0100008F00002353",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "409",
+          "Conversant": "0",
+          "OutputId": "0x0100008F0000234A",
+          "InputId": "0x0100008F0000234C"
+        },
+        "conversationID": 1290,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 932,
+          "y": -1173,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"The lieutenant looks around. \"True,...\"",
+          "Dialogue Text": "The lieutenant looks around. \"True, they never cleaned up the war damage... The rest of Revachol looks better, though.\"",
+          "Articy Id": "0x0100008F00002362",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x0100000400014FCB",
+          "InputId": "0x0100008F00002338"
+        },
+        "conversationID": 1290,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1290,
+            "originDialogueID": 6,
+            "destinationConversationID": 1290,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 649,
+          "y": -925.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "You: \"Whatever. Let death come. I'm a Rev...\"",
+          "Dialogue Text": "Whatever. Let death come. I'm a Revacholian badass.",
+          "Articy Id": "0x0100008F0000233F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100008F0000234C",
+          "InputId": "0x0100008F000012E9"
+        },
+        "conversationID": 1290,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1290,
+            "originDialogueID": 7,
+            "destinationConversationID": 1290,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1290,
+            "originDialogueID": 7,
+            "destinationConversationID": 1290,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"pier.orb_walkway_viscal_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 364,
+          "y": -1173,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Visual Calculus: \"A bridge with loose nails and rot-i...\"",
+          "Dialogue Text": "A bridge with loose nails and rot-infested wood that creaks in the wind. A construction code violation if there ever was one!",
+          "Articy Id": "0x0100008F000012E9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "0",
+          "OutputId": "0x0100008F000012F7",
+          "InputId": "0x0100008F000012E1"
+        },
+        "conversationID": 1290,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1290,
+            "originDialogueID": 8,
+            "destinationConversationID": 1290,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1290,
+            "originDialogueID": 8,
+            "destinationConversationID": 1290,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1290,
+            "originDialogueID": 8,
+            "destinationConversationID": 1290,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 25,
+          "y": -925.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "You: \"\"Kim, it looks like we've got a con...\"",
+          "Dialogue Text": "\"Kim, it looks like we've got a construction code violation.\"",
+          "Articy Id": "0x0100008F00002338",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008F000012E9",
+          "OutputId": "0x0100008F00002362"
+        },
+        "conversationID": 1290,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1290,
+            "originDialogueID": 9,
+            "destinationConversationID": 1290,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "ReputationGrows(\"boring_cop\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 361,
+          "y": -914,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Visual Calculus: \"...\"",
+          "Articy Id": "0x0100008F00002346",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "0",
+          "InputId": "0x0100008F0000233F",
+          "OutputId": "0x0100008F0000234A"
+        },
+        "conversationID": 1290,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 651,
+          "y": -1173,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"The bridge is fine enough. Locals...\"",
+          "Dialogue Text": "\"The bridge is fine enough. Locals use it all the time, after all. It's nothing to worry about.\" He adjusts his glasses. \"Shall we?\"",
+          "Articy Id": "0x0100008F00002369",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x0100008F0000234A",
+          "InputId": "0x0100000400014FCB"
+        },
+        "conversationID": 1290,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"pier.orb_walkway_viscal_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1246,
+          "y": -942.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "You: \"\"But lieutenant, think about the sp...\"",
+          "Dialogue Text": "\"But lieutenant, think about the splinters!\"",
+          "Articy Id": "0x0100000400014FCB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008F00002362",
+          "OutputId": "0x0100008F00002369"
+        },
+        "conversationID": 1290,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1290,
+            "originDialogueID": 12,
+            "destinationConversationID": 1290,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 967.9999389648438,
+          "y": -915.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Visual Calculus: \"Guess so. Just be careful out there...\"",
+          "Dialogue Text": "Guess so. Just be careful out there! One false step could cost you dearly!",
+          "Articy Id": "0x0100008F0000235B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "0",
+          "InputId": "0x0100008F000012F7",
+          "OutputId": "0x0100008F0000234A"
+        },
+        "conversationID": 1290,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 646,
+          "y": -671,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "You: \"A bridge?\"",
+          "Dialogue Text": "A bridge?",
+          "Articy Id": "0x0100008F000012E1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008F000012DB",
+          "OutputId": "0x0100008F000012E9"
+        },
+        "conversationID": 1290,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1290,
+            "originDialogueID": 14,
+            "destinationConversationID": 1290,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -275,
+          "y": -925.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "Visual Calculus: \"Oh, pardon me then. I forgot just h...\"",
+          "Dialogue Text": "Oh, pardon me then. I forgot just how *cool* you were.",
+          "Articy Id": "0x0100008F0000234C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "402",
+          "Conversant": "0",
+          "InputId": "0x0100008F0000233F",
+          "OutputId": "0x0100008F00002353"
+        },
+        "conversationID": 1290,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1290,
+            "originDialogueID": 15,
+            "destinationConversationID": 1290,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 651,
+          "y": -1173,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

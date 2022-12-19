@@ -1,0 +1,3933 @@
+[
+  {
+    "id": 743,
+    "fields": {
+      "Title": "SEAFORT INT / BLAST DOOR",
+      "Articy Id": "0x010000450001C82C",
+      "OnUse": "",
+      "OverrideDialogueCondition": "",
+      "AlternateOrbText": "",
+      "CheckType": "15",
+      "Condition": "Variable[\"TASK.open_blast_door_done\"] == false",
+      "Description": "blast door interactable dialogue. (this is closed, no way to open, open from console if has fuel in)",
+      "Instruction": "",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000450001C82C",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 0,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x010000450001C82D",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x010000450001D882"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 1,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Cuno: \"\"What do you think that shit's for?...\"",
+          "Dialogue Text": "\"What do you think that shit's for? Let's press some buttons.\" He points to the console at the other end of the room.",
+          "Articy Id": "0x0100006B00001809",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "OutputId": "0x0100008900000DFF",
+          "InputId": "0x0100006B00001803"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 2,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 51,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2792,
+          "y": -1171,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Jump to: [blast_door_main]",
+          "Articy Id": "0x0100008900000E40",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100008900000E3A"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 3,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3575.000244140625,
+          "y": 1025,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "blast_door_main",
+          "Articy Id": "0x010000450001CE4A",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x010000450001CE5C",
+          "InputId": "0x010000450001CE43"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 4,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 4,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 72,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 4,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"seafort.blast_hub_reached\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1150,
+          "y": -475.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "IsCunoInParty()",
+          "Articy Id": "0x010000450001CE91",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000450001CE70"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 5,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 5,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2075,
+          "y": 1425,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "IsCunoInParty()",
+          "Articy Id": "0x010000450001CE91",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100006B000017FD"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 6,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 70,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsCunoInParty()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1348.75,
+          "y": 926.2499389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "!(IsCunoInParty())",
+          "Articy Id": "0x010000450001CE91",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000450001CE97"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 7,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 55,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsCunoInParty()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1348.75,
+          "y": 926.2499389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Jump to: [blast_door_main]",
+          "Articy Id": "0x010000450001CEF3",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000060000E8EC"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 8,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3601.999755859375,
+          "y": -100,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Variable[\"seafort.blast_hub_reached\"]",
+          "Articy Id": "0x010000450001D882",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000450001C82D"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 9,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 9,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 550,
+          "y": -500.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Variable[\"seafort.blast_hub_reached\"]",
+          "Articy Id": "0x010000450001D882",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000450001D889"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 10,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"seafort.blast_hub_reached\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 357.5,
+          "y": -325,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "!(Variable[\"seafort.blast_hub_reached\"])",
+          "Articy Id": "0x010000450001D882",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000450001CE43"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 11,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 79,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"seafort.blast_hub_reached\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 357.5,
+          "y": -325,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "You: \"What's on the other side?\"",
+          "Dialogue Text": "What's on the other side?",
+          "Articy Id": "0x010000450001CE50",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "IsKimHere()  or  IsCunoInParty()",
+          "Alternate1": "\"What's on the other side?\"",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000450001CE4A",
+          "OutputId": "0x010000450001CE63"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 12,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1475,
+          "y": -2250,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "You: \"\"You're right. We open the big one...\"",
+          "Dialogue Text": "\"You're right. We open the big one -- do you see controls somewhere?\"",
+          "Articy Id": "0x0100008900000E17",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100008900000E3A",
+          "InputId": "0x0100008900000E10"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 13,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"seafort.blast_interfacing_open_big_one\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2975,
+          "y": 725,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "IsCunoInParty()",
+          "Articy Id": "0x010000450001CEDC",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000450001CE63"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 14,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 14,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1775.0001220703125,
+          "y": -2050,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "IsCunoInParty()",
+          "Articy Id": "0x010000450001CEDC",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100006B000017ED"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 15,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 73,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsCunoInParty()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1153.75,
+          "y": -1332.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "!(IsCunoInParty())",
+          "Articy Id": "0x010000450001CEDC",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000450001CE68"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 16,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 77,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsCunoInParty()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1153.75,
+          "y": -1332.5,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "Small Blast Door: \"The heavy metal door stands as it d...\"",
+          "Dialogue Text": "The heavy metal door stands as it did, firmly rusted shut into its big brother.",
+          "Articy Id": "0x010000450001D889",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "315",
+          "Conversant": "0",
+          "InputId": "0x010000450001D882",
+          "OutputId": "0x010000450001CE4A"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 17,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 846,
+          "y": -671,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Small Blast Door: \"Fuel --> generator --> console. See...\"",
+          "Dialogue Text": "Fuel --> generator --> console. Seems like an obvious path, now that the power is on.",
+          "Articy Id": "0x0100008900000DF3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "315",
+          "Conversant": "0",
+          "OutputId": "0x0100008900000E05",
+          "InputId": "0x0100008900000DED"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 18,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2792,
+          "y": -946,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "Interfacing: \"He's right. It would be better to o...\"",
+          "Dialogue Text": "He's right. It would be better to open its *big brother*. A powerful engine hangs beneath the ceiling -- it must control the blast door.",
+          "Articy Id": "0x0100008900000E10",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "418",
+          "Conversant": "0",
+          "OutputId": "0x0100008900000E23",
+          "InputId": "0x0100006B000017FD"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 19,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 19,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 56,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 19,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 19,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 19,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 68,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"seafort.blast_interfacing_open_big_one\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2653,
+          "y": 1158,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "Jump to: [blast_door_main]",
+          "Articy Id": "0x0100008900000E05",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100008900000DF3"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 21,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3113,
+          "y": -917.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "You: \"[Leave.]\"",
+          "Dialogue Text": "[Leave.]",
+          "Articy Id": "0x010000450001CE5C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000450001CE4A",
+          "OutputId": "0x010000450001CE60"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1475,
+          "y": 1450,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x010000450001CE63",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000450001CE50"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 23,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 23,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1775.0001220703125,
+          "y": -2200,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x010000450001CE63",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000450001CECF"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 24,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1153.75,
+          "y": -1430,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x010000450001CE63",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000450001CEDC"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 25,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1153.75,
+          "y": -1430,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Maybe this is one of the doors we...\"",
+          "Dialogue Text": "\"Maybe this is one of the doors we *don't* open?\" He looks at the door, then at its bigger brother, then at the lock…",
+          "Articy Id": "0x010000450001CE76",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x010000450001CF50",
+          "InputId": "0x010000450001CE70"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 26,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2370,
+          "y": -22,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"All right.\" The lieutenant knocks...\"",
+          "Dialogue Text": "\"All right.\" The lieutenant knocks on the metal. \"I retract my statement. It was naive. Let's look around and get it open.\"",
+          "Articy Id": "0x010000450001CE7D",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "AudioPlay(seafort_int/blast_door/metal-door-knocking-01,1)",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x010000450001CEF3",
+          "InputId": "0x010000450001CEA6"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 27,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "GainTask(\"TASK.open_blast_door\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3276.999755859375,
+          "y": 125.00000762939453,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "Interfacing: \"He's right. It would be better to o...\"",
+          "Dialogue Text": "He's right. It would be better to open its *big brother*. A powerful engine hangs under the ceiling -- it must control the blast door.",
+          "Articy Id": "0x010000450001CF50",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "418",
+          "Conversant": "0",
+          "InputId": "0x010000450001CE76",
+          "OutputId": "0x010000450001CEBA"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 28,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 64,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 28,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 28,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 69,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 28,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"seafort.blast_interfacing_open_big_one\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2653,
+          "y": -36,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "You: \"\"No, this isn't 'One More Door'. We...\"",
+          "Dialogue Text": "\"No, this isn't 'One More Door'. We're opening it.\"",
+          "Articy Id": "0x010000450001CEA0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000450001CF50",
+          "OutputId": "0x010000450001CE7D"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 29,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsTHCPresent(\"one_more_door\")",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2977,
+          "y": -225.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "Jump to: [blast_door_main]",
+          "Articy Id": "0x010000450001D974",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000450001D978"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 30,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3092,
+          "y": -1870.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "Small Blast Door: \"Fuel --> generator --> console. See...\"",
+          "Dialogue Text": "Fuel --> generator --> console. Seems like the obvious path.",
+          "Articy Id": "0x0100008900000DF8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "315",
+          "Conversant": "0",
+          "OutputId": "0x01000002000015B9",
+          "InputId": "0x0100008900000DED"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 31,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 57,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2792,
+          "y": -721,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "You: \"\"I find that highly unlikely.\"\"",
+          "Dialogue Text": "\"I find that highly unlikely.\"",
+          "Articy Id": "0x0100008900000E29",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008900000E10",
+          "OutputId": "0x0100008900000E35"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 32,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2975,
+          "y": 1175,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x010000450001CE70",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000450001D93C"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 33,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 33,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2060,
+          "y": 93,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x010000450001CE70",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000450001CE76"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 34,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1339,
+          "y": 60.44999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x010000450001CE70",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000450001CE91"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 35,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1339,
+          "y": 60.44999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "You: \"\"One of the *very few doors*? Perha...\"",
+          "Dialogue Text": "\"One of the *very few doors*? Perhaps...\"",
+          "Articy Id": "0x0100008900000E2F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008900000E10",
+          "OutputId": "0x0100008900000E35"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 36,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2975,
+          "y": 1400,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "Cuno: \"\"Fuckin' A, let's get this shit ope...\"",
+          "Dialogue Text": "\"Fuckin' A, let's get this shit open. Get to the secrets behind. Secret style.\" He stares at the large doors looming above him.",
+          "Articy Id": "0x0100008900000E35",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "InputId": "0x0100008900000E23",
+          "OutputId": "0x0100008900000E40"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 37,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "GainTask(\"TASK.open_blast_door\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3275,
+          "y": 1300,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Fuel -- generator -- console. That...\"",
+          "Dialogue Text": "\"Fuel -- generator -- console. That's our best chance.\" He points to the console at the other end of the room. \"That there could open it, now that the power's on.\"",
+          "Articy Id": "0x010000450001D978",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x010000450001D974",
+          "InputId": "0x010000450001D961"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 38,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2784,
+          "y": -1940.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Title": "Cuno: \"\"Yeah, the console over there?\" He...\"",
+          "Dialogue Text": "\"Yeah, the console over there?\" He points to the southeast. \"Yeah. Yeah. Let's get this big shit open.\"",
+          "Articy Id": "0x0100008900000E3A",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "Variable[\"seafort.console_hub_reached\"]",
+          "Alternate1": "\"Yeah, the console over there. Remember?\" He points to the southeast. \"Buttons and shit. Yeah. Yeah. Let's get this big shit open, seems like the best plan.\"",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "5",
+          "Conversant": "0",
+          "InputId": "0x0100008900000E17",
+          "OutputId": "0x0100008900000E40"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 39,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "GainTask(\"TASK.open_blast_door\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3275,
+          "y": 725,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Another part of the island probabl...\"",
+          "Dialogue Text": "\"Another part of the island probably.\" The lieutenant looks into the keyhole. \"The lock looks like it could still be usable.\"",
+          "Articy Id": "0x010000450001CECF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x010000450001CE63",
+          "OutputId": "0x010000450001CED6"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 40,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2075,
+          "y": -2441,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "Jump to: [blast_door_main]",
+          "Articy Id": "0x010000450001CED6",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000450001CE68"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 41,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2796,
+          "y": -2191,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Title": "Interfacing: \"Perhaps you could open its *big bro...\"",
+          "Dialogue Text": "Perhaps you could open its *big brother*? A powerful engine hangs beneath the ceiling -- it must control the blast door. There must be controls somewhere...",
+          "Articy Id": "0x010000450001CF56",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "3",
+          "Actor": "418",
+          "Conversant": "0",
+          "OutputId": "0x010000450001CEF8",
+          "InputId": "0x010000450001CE97"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 42,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 49,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"seafort.blast_interfacing_open_big_one\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2675,
+          "y": 1825.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Title": "Variable[\"TASK.open_blast_door\"]",
+          "Articy Id": "0x010000450001D93C",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000450001CE56"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 43,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 44,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 43,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1750.0001220703125,
+          "y": -500.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 44,
+        "fields": {
+          "Title": "Variable[\"TASK.open_blast_door\"]",
+          "Articy Id": "0x010000450001D93C",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000450001D943"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 44,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 46,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"TASK.open_blast_door\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1137.5,
+          "y": -325,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 45,
+        "fields": {
+          "Title": "!(Variable[\"TASK.open_blast_door\"])",
+          "Articy Id": "0x010000450001D93C",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000450001CE70"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 45,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"TASK.open_blast_door\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1137.5,
+          "y": -325,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 46,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x010000450001D943",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000450001D93C"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 46,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 46,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2124,
+          "y": -1508,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 47,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x010000450001D943",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000450001D961"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 47,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 65,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1380.5999755859375,
+          "y": -980.199951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 48,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x010000450001D943",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000450001D94A"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 48,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 80,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1380.5999755859375,
+          "y": -980.199951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 49,
+        "fields": {
+          "Title": "Jump to: [blast_door_main]",
+          "Articy Id": "0x010000450001CEF8",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x010000450001CF56"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 49,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2975,
+          "y": 1875.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 50,
+        "fields": {
+          "Title": "Cuno: \"\"We fuelled the generator, didn't w...\"",
+          "Dialogue Text": "\"We fuelled the generator, didn't we?\" He points to the console at the other end of the room. \"What do you think that shit's for? Let's press some buttons.\"",
+          "Articy Id": "0x0100006B000017F7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "OutputId": "0x0100008900000DFF",
+          "InputId": "0x0100006B00001803"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 50,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 51,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2792,
+          "y": -1421,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 51,
+        "fields": {
+          "Title": "Jump to: [blast_door_main]",
+          "Articy Id": "0x0100008900000DFF",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100006B000017F7"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 51,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3092,
+          "y": -1246,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 52,
+        "fields": {
+          "Title": "You: \"\"Sure, you're right. We won't have...\"",
+          "Dialogue Text": "\"Sure, you're right. We won't have to open it.\"",
+          "Articy Id": "0x010000450001CEBA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000450001CF50",
+          "OutputId": "0x010000060000E8EC"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 52,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 63,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2975,
+          "y": 235.00001525878906,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 53,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"I think there's a console just sou...\"",
+          "Dialogue Text": "\"I think there's a console just southeast...\"  He shuffles his feet to stay warm. \"Let's look around. Getting the blast door open seems like the best plan.\"",
+          "Articy Id": "0x010000450001CF69",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "Variable[\"seafort.console_hub_reached\"]",
+          "Alternate1": "\"Yeah -- on the console just southeast of here. Remember?\" He points to it, then shuffles his feet to stay warm. \"Let's look around. Getting the blast door open seems like the best plan.\"",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x010000450001CEF3",
+          "InputId": "0x010000450001CF62"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 53,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "GainTask(\"TASK.open_blast_door\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3259,
+          "y": -460.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 54,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Fuel -- generator -- console. That...\"",
+          "Dialogue Text": "\"Fuel -- generator -- console. That's our best chance.\" He points to the console at the other end of the room. \"That there could open it, once we've put some fuel in the generator.\"",
+          "Articy Id": "0x010000450001D951",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "0",
+          "OutputId": "0x01000002000015B9",
+          "InputId": "0x010000450001D961"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 54,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 57,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2791,
+          "y": -1674,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 55,
+        "fields": {
+          "Title": "Small Blast Door: \"How indeed? Finding the key seems u...\"",
+          "Dialogue Text": "How indeed? Finding the key seems unlikely...",
+          "Articy Id": "0x010000450001CE97",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "315",
+          "Conversant": "0",
+          "InputId": "0x010000450001CE91",
+          "OutputId": "0x010000450001CF56"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 55,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 42,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "GainTask(\"TASK.open_blast_door\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2375,
+          "y": 1850.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 56,
+        "fields": {
+          "Title": "You: \"\"No. This is the titular *One More...\"",
+          "Dialogue Text": "\"No. This is the titular *One More Door*. We're opening it.\"",
+          "Articy Id": "0x0100008900000E1D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008900000E10",
+          "OutputId": "0x0100008900000E35"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 56,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsTHCPresent(\"one_more_door\")",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2975,
+          "y": 950.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 57,
+        "fields": {
+          "Title": "Variable[\"TASK.fuel_the_generator\"]",
+          "Articy Id": "0x01000002000015B9",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000450001D951"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 57,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 58,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 57,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 59,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3526.999755859375,
+          "y": -1269,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 58,
+        "fields": {
+          "Title": "Variable[\"TASK.fuel_the_generator\"]",
+          "Articy Id": "0x01000002000015B9",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000450001D958"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 58,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 83,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"TASK.fuel_the_generator\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2292.5498046875,
+          "y": -824.8499755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 59,
+        "fields": {
+          "Title": "!(Variable[\"TASK.fuel_the_generator\"])",
+          "Articy Id": "0x01000002000015B9",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x01000002000015C0"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 59,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 78,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"TASK.fuel_the_generator\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2292.5498046875,
+          "y": -824.8499755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 60,
+        "fields": {
+          "Title": "Variable[\"TASK.fuel_the_generator_done\"]",
+          "Articy Id": "0x0100006B00001803",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000450001D94A"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 60,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 61,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 60,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 62,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2492,
+          "y": -1221,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 61,
+        "fields": {
+          "Title": "Variable[\"TASK.fuel_the_generator_done\"]",
+          "Articy Id": "0x0100006B00001803",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100006B000017F7"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 61,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 50,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"TASK.fuel_the_generator_done\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1619.7999267578125,
+          "y": -793.6499633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 62,
+        "fields": {
+          "Title": "!(Variable[\"TASK.fuel_the_generator_done\"])",
+          "Articy Id": "0x0100006B00001803",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100006B00001809"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 62,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"TASK.fuel_the_generator_done\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1619.7999267578125,
+          "y": -793.6499633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 63,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"The lieutenant knocks on the metal....\"",
+          "Dialogue Text": "The lieutenant knocks on the metal. \"I retract my statement. It was naive. Let's look around and get it open.\"",
+          "Articy Id": "0x010000060000E8EC",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "AudioPlay(seafort_int/blast_door/metal-door-knocking-01,1)",
+          "Actor": "395",
+          "Conversant": "0",
+          "InputId": "0x010000450001CEBA",
+          "OutputId": "0x010000450001CEF3"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 63,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "GainTask(\"TASK.open_blast_door\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3276.999755859375,
+          "y": 383,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 64,
+        "fields": {
+          "Title": "You: \"\"You're right. We open the big one...\"",
+          "Dialogue Text": "\"You're right. We open the big one -- do you see controls anywhere?\"",
+          "Articy Id": "0x010000450001CF62",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000450001CF50",
+          "OutputId": "0x010000450001CF69"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 64,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 53,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"seafort.blast_interfacing_open_big_one\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2977,
+          "y": -450.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 65,
+        "fields": {
+          "Title": "Variable[\"TASK.fuel_the_generator_done\"]",
+          "Articy Id": "0x010000450001D961",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000450001D943"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 65,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 65,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 67,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2492,
+          "y": -1720.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 66,
+        "fields": {
+          "Title": "Variable[\"TASK.fuel_the_generator_done\"]",
+          "Articy Id": "0x010000450001D961",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000450001D978"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 66,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"TASK.fuel_the_generator_done\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1619.7999267578125,
+          "y": -1118.64990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 67,
+        "fields": {
+          "Title": "!(Variable[\"TASK.fuel_the_generator_done\"])",
+          "Articy Id": "0x010000450001D961",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x010000450001D951"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 67,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 54,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"TASK.fuel_the_generator_done\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1619.7999267578125,
+          "y": -1118.64990234375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 68,
+        "fields": {
+          "Title": "You: \"\"Sure, you're right. We won't have...\"",
+          "Dialogue Text": "\"Sure, you're right. We won't have to open it.\"",
+          "Articy Id": "0x0100008900000E23",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100008900000E10",
+          "OutputId": "0x0100008900000E35"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 68,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2975,
+          "y": 1625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 69,
+        "fields": {
+          "Title": "You: \"\"I find us not opening it highly un...\"",
+          "Dialogue Text": "\"I find us not opening it highly unlikely.\"",
+          "Articy Id": "0x010000450001CEA6",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000450001CF50",
+          "OutputId": "0x010000450001CE7D"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 69,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2977,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 70,
+        "fields": {
+          "Title": "Cuno: \"\"Cuno don't know how to pick this l...\"",
+          "Dialogue Text": "\"Cuno don't know how to pick this lock. This one's... military shit.\" He looks at the door, then at its bigger brother, then at the lock.",
+          "Articy Id": "0x0100006B000017FD",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "InputId": "0x010000450001CE91",
+          "OutputId": "0x0100008900000E10"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 70,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2370,
+          "y": 1171,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 71,
+        "fields": {
+          "Title": "Logic: \"The chances of there being 'importa...\"",
+          "Dialogue Text": "The chances of there being 'important shit' there are rather high, yes.",
+          "Articy Id": "0x010000060001EF37",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "3",
+          "Actor": "398",
+          "Conversant": "0",
+          "OutputId": "0x010000450001CED6",
+          "InputId": "0x0100006B000017ED"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 71,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2355,
+          "y": -2207,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 72,
+        "fields": {
+          "Title": "You: \"How do I open this?\"",
+          "Dialogue Text": "How do I open this?",
+          "Articy Id": "0x010000450001CE56",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "IsKimHere()  or  IsCunoInParty()",
+          "Alternate1": "\"How do we open this?\"",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000450001CE4A",
+          "OutputId": "0x010000450001D93C"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 72,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 43,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1450,
+          "y": -550,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 73,
+        "fields": {
+          "Title": "Cuno: \"\"Another part of Death Island? Some...\"",
+          "Dialogue Text": "\"Another part of Death Island? Some secret hidden shit, Cuno thinks. Important shit...\"",
+          "Articy Id": "0x0100006B000017ED",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "5",
+          "Conversant": "0",
+          "InputId": "0x010000450001CEDC",
+          "OutputId": "0x010000060001EF37"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 73,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 71,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2075,
+          "y": -2200,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 74,
+        "fields": {
+          "Title": "Variable[\"TASK.fuel_the_generator_done\"]",
+          "Articy Id": "0x0100008900000DED",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000450001D94A"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 74,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 75,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 74,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 76,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2492,
+          "y": -796,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 75,
+        "fields": {
+          "Title": "Variable[\"TASK.fuel_the_generator_done\"]",
+          "Articy Id": "0x0100008900000DED",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100008900000DF3"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 75,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"TASK.fuel_the_generator_done\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1619.7999267578125,
+          "y": -517.3999633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 76,
+        "fields": {
+          "Title": "!(Variable[\"TASK.fuel_the_generator_done\"])",
+          "Articy Id": "0x0100008900000DED",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100008900000DF8"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 76,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"TASK.fuel_the_generator_done\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1619.7999267578125,
+          "y": -517.3999633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 77,
+        "fields": {
+          "Title": "Small Blast Door: \"The door is mute, cold as ice. The...\"",
+          "Dialogue Text": "The door is mute, cold as ice. The lock looks like it may have seen recent use, but it's impossible to tell.",
+          "Articy Id": "0x010000450001CE68",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "315",
+          "Conversant": "0",
+          "InputId": "0x010000450001CEDC",
+          "OutputId": "0x010000450001CED6"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 77,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2075,
+          "y": -1975.0001220703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 78,
+        "fields": {
+          "Title": "GainTask(\"TASK.fuel_generator\")--[[ Variable[ ]]",
+          "Articy Id": "0x01000002000015C0",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Instruction",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x01000002000015B9",
+          "OutputId": "0x010000450001D958"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 78,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 83,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "GainTask(\"TASK.fuel_generator\")--[[ Variable[ ]];",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3845.000244140625,
+          "y": -1174,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 79,
+        "fields": {
+          "Title": "Small Blast Door: \"You see a small metal door nested i...\"",
+          "Dialogue Text": "You see a small metal door nested inside a larger one -- a heavy steel blast door. There is a conventional keyhole above the handle. It's very small.",
+          "Articy Id": "0x010000450001CE43",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "315",
+          "Conversant": "0",
+          "InputId": "0x010000450001D882",
+          "OutputId": "0x010000450001CE4A"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 79,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 844,
+          "y": -450.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 80,
+        "fields": {
+          "Title": "IsCunoInParty()",
+          "Articy Id": "0x010000450001D94A",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x010000450001D943"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 80,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 81,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 743,
+            "originDialogueID": 80,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 82,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2192,
+          "y": -1021,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 81,
+        "fields": {
+          "Title": "IsCunoInParty()",
+          "Articy Id": "0x010000450001D94A",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100006B00001803"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 81,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 60,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsCunoInParty()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1424.7999267578125,
+          "y": -663.6499633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 82,
+        "fields": {
+          "Title": "!(IsCunoInParty())",
+          "Articy Id": "0x010000450001D94A",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100008900000DED"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 82,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 74,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsCunoInParty()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1424.7999267578125,
+          "y": -663.6499633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 83,
+        "fields": {
+          "Title": "Jump to: [blast_door_main]",
+          "Articy Id": "0x010000450001D958",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x01000002000015C0"
+        },
+        "conversationID": 743,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 743,
+            "originDialogueID": 83,
+            "destinationConversationID": 743,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4066,
+          "y": -1417,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

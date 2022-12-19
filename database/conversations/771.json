@@ -1,0 +1,539 @@
+[
+  {
+    "id": 771,
+    "fields": {
+      "Title": "WHIRLING F2 ORB / dialogue both shoes",
+      "Articy Id": "0x010000450001FD31",
+      "AlternateOrbText": "",
+      "CheckType": "18",
+      "Condition": "Variable[\"whirling.orb_shoe_found_done\"] == false",
+      "Description": "both shoes on, finishes task",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000450001FD31",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 771,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 771,
+            "originDialogueID": 0,
+            "destinationConversationID": 771,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x010000450001FD34",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x010000450001FD39"
+        },
+        "conversationID": 771,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 771,
+            "originDialogueID": 1,
+            "destinationConversationID": 771,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Composure: \"Go ahead, just as long as you don't...\"",
+          "Dialogue Text": "Go ahead, just as long as you don't discard those crocodile babies.",
+          "Articy Id": "0x010000450001FD4D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "419",
+          "Conversant": "0",
+          "OutputId": "0x010000450001FD51",
+          "InputId": "0x010000450001FD46"
+        },
+        "conversationID": 771,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"whirling.orb_shoe_found_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1362,
+          "y": 601,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Conceptualization: \"Like two baby crocodiles.\"",
+          "Dialogue Text": "Like two baby crocodiles.",
+          "Articy Id": "0x010000450001FD55",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "397",
+          "Conversant": "0",
+          "OutputId": "0x010000450001FD46",
+          "InputId": "0x010000450001FD39"
+        },
+        "conversationID": 771,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 771,
+            "originDialogueID": 4,
+            "destinationConversationID": 771,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 771,
+            "originDialogueID": 4,
+            "destinationConversationID": 771,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 771,
+            "originDialogueID": 4,
+            "destinationConversationID": 771,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 750,
+          "y": 375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Electrochemistry: \"You may be what they call a *big di...\"",
+          "Dialogue Text": "You may be what they call a *big dick cop*.",
+          "Articy Id": "0x010000450001FD73",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "3",
+          "Actor": "413",
+          "Conversant": "0",
+          "OutputId": "0x010000450001FD40",
+          "InputId": "0x010000450001FD6D"
+        },
+        "conversationID": 771,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 771,
+            "originDialogueID": 5,
+            "destinationConversationID": 771,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1650,
+          "y": 75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Composure: \"There they both are -- two identica...\"",
+          "Dialogue Text": "There they both are -- two identical shoes, both *copiously* green and *indiscriminately* snake-skin. Reunited on your feet!",
+          "Articy Id": "0x010000450001FD39",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "419",
+          "Conversant": "0",
+          "InputId": "0x010000450001FD34",
+          "OutputId": "0x010000450001FD55"
+        },
+        "conversationID": 771,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 771,
+            "originDialogueID": 6,
+            "destinationConversationID": 771,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "FinishTask(\"TASK.find_your_other_shoe_done\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 450.0000305175781,
+          "y": 375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "You: \"Wait, these do not look like normal...\"",
+          "Dialogue Text": "Wait, these do not look like normal cop shoes...",
+          "Articy Id": "0x010000450001FD66",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000450001FD55",
+          "OutputId": "0x010000450001FD6D"
+        },
+        "conversationID": 771,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 771,
+            "originDialogueID": 7,
+            "destinationConversationID": 771,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"tc.you_are_cop\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1050,
+          "y": 75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Composure: \"It's pretty clear a *normal cop* is...\"",
+          "Dialogue Text": "It's pretty clear a *normal cop* is not what you are.",
+          "Articy Id": "0x010000450001FD6D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "419",
+          "Conversant": "0",
+          "InputId": "0x010000450001FD66",
+          "OutputId": "0x010000450001FD73"
+        },
+        "conversationID": 771,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 771,
+            "originDialogueID": 8,
+            "destinationConversationID": 771,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1350,
+          "y": 75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "You: \"[Discard thought.]\"",
+          "Dialogue Text": "[Discard thought.]",
+          "Articy Id": "0x010000450001FD46",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000450001FD55",
+          "OutputId": "0x010000450001FD4D"
+        },
+        "conversationID": 771,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 771,
+            "originDialogueID": 9,
+            "destinationConversationID": 771,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1050,
+          "y": 600,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "You: \"How do they fit?\"",
+          "Dialogue Text": "How do they fit?",
+          "Articy Id": "0x010000450001FD40",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000450001FD73",
+          "OutputId": "0x010000450001FD5F"
+        },
+        "conversationID": 771,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 771,
+            "originDialogueID": 10,
+            "destinationConversationID": 771,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1050,
+          "y": 375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Composure: \"Good. They're balanced. Comfy. Feel...\"",
+          "Dialogue Text": "Good. They're balanced. Comfy. Feels like the only good thing about you right now, truth be told.",
+          "Articy Id": "0x010000450001FD5F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "419",
+          "Conversant": "0",
+          "InputId": "0x010000450001FD40",
+          "OutputId": "0x010000450001FD51"
+        },
+        "conversationID": 771,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "HealVolition(1);\nSetVariableValue(\"whirling.orb_shoe_found_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1350,
+          "y": 370,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

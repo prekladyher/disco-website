@@ -1,0 +1,465 @@
+[
+  {
+    "id": 490,
+    "fields": {
+      "Title": "GATES / ANOTHERBABE barks",
+      "Articy Id": "0x0100002F00008EC4",
+      "Description": "One of Measurehead's awesomely hot companions who barks mocking stuff at you (on clicking).",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100002F00008EC4",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 490,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 490,
+            "originDialogueID": 0,
+            "destinationConversationID": 490,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100002F00008EC5",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100002F00009A19"
+        },
+        "conversationID": 490,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 490,
+            "originDialogueID": 1,
+            "destinationConversationID": 490,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 490,
+            "originDialogueID": 1,
+            "destinationConversationID": 490,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 490,
+            "originDialogueID": 1,
+            "destinationConversationID": 490,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 490,
+            "originDialogueID": 1,
+            "destinationConversationID": 490,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 490,
+            "originDialogueID": 1,
+            "destinationConversationID": 490,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 490,
+            "originDialogueID": 1,
+            "destinationConversationID": 490,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 490,
+            "originDialogueID": 1,
+            "destinationConversationID": 490,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 490,
+            "originDialogueID": 1,
+            "destinationConversationID": 490,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Measurehead's Babe: \"\"Oh, Measurehead!\"\"",
+          "Dialogue Text": "\"Oh, Measurehead!\"",
+          "Articy Id": "0x0100002F000099FC",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "51",
+          "Conversant": "0",
+          "InputId": "0x0100002F00008EC5",
+          "OutputId": "0x0100002F000099EB"
+        },
+        "conversationID": 490,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"gates.mhead_fight_success\"] == false  or  Variable[\"gates.mhead_is_back_up_after_lights_out\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 378,
+          "y": -373,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Measurehead's Babe: \"\"Measurehead is *law*.\"\"",
+          "Dialogue Text": "\"Measurehead is *law*.\"",
+          "Articy Id": "0x0100002F00009A06",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "51",
+          "Conversant": "0",
+          "InputId": "0x0100002F00008EC5",
+          "OutputId": "0x0100002F000099EB"
+        },
+        "conversationID": 490,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"gates.mhead_fight_success\"] == false  or  Variable[\"gates.mhead_is_back_up_after_lights_out\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 375,
+          "y": 975.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Measurehead's Babe: \"\"Everyone should try to be more lik...\"",
+          "Dialogue Text": "\"Everyone should try to be more like Measurehead.\"",
+          "Articy Id": "0x0100002F00009A19",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "51",
+          "Conversant": "0",
+          "InputId": "0x0100002F00008EC5",
+          "OutputId": "0x0100002F000099EB"
+        },
+        "conversationID": 490,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"gates.mhead_fight_success\"] == false  or  Variable[\"gates.mhead_is_back_up_after_lights_out\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 375,
+          "y": 1200,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Measurehead's Babe: \"\"No one will get past you!\"\"",
+          "Dialogue Text": "\"No one will get past you!\"",
+          "Articy Id": "0x0100002F000099F7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "51",
+          "Conversant": "0",
+          "InputId": "0x0100002F00008EC5",
+          "OutputId": "0x0100002F000099EB"
+        },
+        "conversationID": 490,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"gates.mhead_fight_success\"] == false  or  Variable[\"gates.mhead_is_back_up_after_lights_out\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 375,
+          "y": -150,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Measurehead's Babe: \"\"Just look at him, the wonderful hu...\"",
+          "Dialogue Text": "\"Just look at him, the wonderful hunk.\"",
+          "Articy Id": "0x0100002F000099F2",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "51",
+          "Conversant": "0",
+          "InputId": "0x0100002F00008EC5",
+          "OutputId": "0x0100002F000099EB"
+        },
+        "conversationID": 490,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"gates.mhead_fight_success\"] == false  or  Variable[\"gates.mhead_is_back_up_after_lights_out\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 375,
+          "y": 525,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Measurehead's Babe: \"\"Not soft and weak like other men.\"\"",
+          "Dialogue Text": "\"Not soft and weak like other men.\"",
+          "Articy Id": "0x0100002F00009A01",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "51",
+          "Conversant": "0",
+          "InputId": "0x0100002F00008EC5",
+          "OutputId": "0x0100002F000099EB"
+        },
+        "conversationID": 490,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"gates.mhead_fight_success\"] == false  or  Variable[\"gates.mhead_is_back_up_after_lights_out\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 375,
+          "y": 750,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Measurehead's Babe: \"\"Measurehead's amazing!\"\"",
+          "Dialogue Text": "\"Measurehead's amazing!\"",
+          "Articy Id": "0x0100002F000099ED",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "51",
+          "Conversant": "0",
+          "InputId": "0x0100002F00008EC5",
+          "OutputId": "0x0100002F000099EB"
+        },
+        "conversationID": 490,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"gates.mhead_fight_success\"] == false  or  Variable[\"gates.mhead_is_back_up_after_lights_out\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 375,
+          "y": 300,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Measurehead's Babe: \"\"I dream about you all the time.\"\"",
+          "Dialogue Text": "\"I dream about you all the time.\"",
+          "Articy Id": "0x0100002F000099E7",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "51",
+          "Conversant": "0",
+          "InputId": "0x0100002F00008EC5",
+          "OutputId": "0x0100002F000099EB"
+        },
+        "conversationID": 490,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"gates.mhead_fight_success\"] == false  or  Variable[\"gates.mhead_is_back_up_after_lights_out\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 375,
+          "y": 75,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

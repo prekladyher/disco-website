@@ -1,0 +1,1394 @@
+[
+  {
+    "id": 1205,
+    "fields": {
+      "Title": "SEAFORT ORB / fairweather t500 helmet",
+      "Articy Id": "0x0100008100005A6E",
+      "AlternateOrbText": "",
+      "CheckType": "11",
+      "Condition": "Variable[\"seafort.orb_helmet_pickup_done\"] == false  and  CheckItem(\"shoes_t500\")  and  CheckItem(\"shirt_t500\")  and  CheckItem(\"gloves_t500\")  and  CheckItem(\"hat_t500\")  and  Variable[\"TASK.find_all_armour\"] == true",
+      "Description": "Orb that checks how much armour you've collected after you pick up the helmet.",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area: around the phasmid nest\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100008100005A6E",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 0,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100008100005A71",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100008100005A7B"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 1,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "You: \"Hey, at least I've got this cool he...\"",
+          "Dialogue Text": "Hey, at least I've got this cool helmet *now*. I can wear it into the next battle.",
+          "Articy Id": "0x010000160000314F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100001600003173",
+          "InputId": "0x010000160000313D"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 2,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 802.9999389648438,
+          "y": 1833,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "You: \"I'll make do. [Leave.]\"",
+          "Dialogue Text": "I'll make do. [Leave.]",
+          "Articy Id": "0x0100001600003191",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100008100005A93",
+          "InputId": "0x0100001600003189"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"seafort.orb_helmet_pickup_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1710.9998779296875,
+          "y": 1142,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Physical Instrument: \"That's a good attitude to take. I l...\"",
+          "Dialogue Text": "That's a good attitude to take. I like it. Keep it up, and keep the helmet handy.",
+          "Articy Id": "0x01000016000031F2",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "410",
+          "Conversant": "0",
+          "OutputId": "0x0100008100005A93",
+          "InputId": "0x01000016000031E5"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"seafort.orb_helmet_pickup_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1670.9998779296875,
+          "y": 740,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Physical Instrument: \"I'm liking the positive attitude. K...\"",
+          "Dialogue Text": "I'm liking the positive attitude. Keep it up, champ.",
+          "Articy Id": "0x0100001600003173",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "410",
+          "Conversant": "0",
+          "InputId": "0x010000160000314F",
+          "OutputId": "0x0100001600003209"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 5,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1108,
+          "y": 1835.9998779296875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "You: \"[Leave.]\"",
+          "Dialogue Text": "[Leave.]",
+          "Articy Id": "0x0100001600003209",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100001600003173",
+          "OutputId": "0x0100008100005A93"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"seafort.orb_helmet_pickup_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1409,
+          "y": 1837,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Untitled hub (03)",
+          "Articy Id": "0x010000160000313D",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x010000160000314F",
+          "InputId": "0x0100008100005A87"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 7,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 7,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 7,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 508,
+          "y": 871,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Physical Instrument: \"Yeah, sure, but you would have beco...\"",
+          "Dialogue Text": "Yeah, sure, but you would have become nearly invincible.",
+          "Articy Id": "0x010000160000316D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "410",
+          "Conversant": "0",
+          "OutputId": "0x0100001600003189",
+          "InputId": "0x0100001600003149"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 8,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1109,
+          "y": 1298,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "You: \"At least my collector's impulse has...\"",
+          "Dialogue Text": "At least my collector's impulse has been satisfied.",
+          "Articy Id": "0x0100001600003131",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x010000160000315B",
+          "InputId": "0x0100001600003125"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 9,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 755,
+          "y": -145,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "You: \"I never cared about collecting the...\"",
+          "Dialogue Text": "I never cared about collecting the full set. I'm not the collector type.",
+          "Articy Id": "0x0100001600003149",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000160000313D",
+          "OutputId": "0x010000160000316D"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 10,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 792.9999389648438,
+          "y": 1300,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Physical Instrument: \"Future use for a future armour. Agr...\"",
+          "Dialogue Text": "Future use for a future armour. Agreed. Gear up, heavy porcelain man. It's a violent world.",
+          "Articy Id": "0x0100001600003161",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "410",
+          "Conversant": "0",
+          "OutputId": "0x0100008100005A93",
+          "InputId": "0x0100001600003137"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"seafort.orb_helmet_pickup_done\", true) ;\nSetVariableValue(\"inventory.armour_achievement_full_set\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1052,
+          "y": 109,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "Untitled hub (05)",
+          "Articy Id": "0x0100001600003189",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x010000160000316D",
+          "OutputId": "0x0100008100005A8F"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 12,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 12,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1405,
+          "y": 1374,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "Physical Instrument: \"Exactly. But no use crying over spi...\"",
+          "Dialogue Text": "Exactly. But no use crying over spilt milk. Keep up the pace. Only forward.",
+          "Articy Id": "0x01000016000031FA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "410",
+          "Conversant": "0",
+          "OutputId": "0x0100008100005A93",
+          "InputId": "0x01000016000031EB"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"seafort.orb_helmet_pickup_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1684,
+          "y": 452,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "You: \"Don't think this helmet would have...\"",
+          "Dialogue Text": "Don't think this helmet would have helped me anyway. (Look down at your wound.)",
+          "Articy Id": "0x010000160000312B",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "Variable[\"plaza.tribunal_shoulder_wound_suffered\"]",
+          "Alternate1": "Don't think this helmet would have helped me anyway. (Look down at your wounds.)",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100001600003155",
+          "InputId": "0x0100001600003125"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 14,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 756,
+          "y": -508.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "Physical Instrument: \"It would have looked very impressiv...\"",
+          "Dialogue Text": "It would have looked very impressive... Still. You found it all. Now your mortal coil is  *completely* protected. Few cops are this futuristic.",
+          "Articy Id": "0x0100001600003155",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "410",
+          "Conversant": "0",
+          "InputId": "0x010000160000312B",
+          "OutputId": "0x0100001600003182"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 15,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"inventory.armour_achievement_full_set\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1054,
+          "y": -528,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "You: \"Don't think this helmet would have...\"",
+          "Dialogue Text": "Don't think this helmet would have helped me anyway. (Look down at your wound.)",
+          "Articy Id": "0x01000016000031D7",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "Variable[\"plaza.tribunal_shoulder_wound_suffered\"]",
+          "Alternate1": "Don't think this helmet would have helped me anyway. (Look down at your wounds.)",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000160000313D",
+          "OutputId": "0x01000016000031D1"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 16,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 751,
+          "y": 551,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "You: \"And maybe scared the enemy combatan...\"",
+          "Dialogue Text": "And maybe scared the enemy combatants...",
+          "Articy Id": "0x01000016000031EB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x01000016000031FA",
+          "InputId": "0x01000016000031D1"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 17,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1385,
+          "y": 452,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "You: \"Damn. Perhaps another day. [Leave.]\"",
+          "Dialogue Text": "Damn. Perhaps another day. [Leave.]",
+          "Articy Id": "0x0100008100005A8F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100001600003189",
+          "OutputId": "0x0100008100005A93"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"seafort.orb_helmet_pickup_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1714,
+          "y": 1396,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "You: \"At least now I am truly invincible....\"",
+          "Dialogue Text": "At least now I am truly invincible. [Leave.]",
+          "Articy Id": "0x0100001600003182",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x010000160000315B",
+          "OutputId": "0x0100008100005A93"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"seafort.orb_helmet_pickup_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1415,
+          "y": -276,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Untitled hub (02)",
+          "Articy Id": "0x0100001600003125",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x0100001600003137",
+          "InputId": "0x0100008100005A81"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 20,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 20,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 20,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 513,
+          "y": 88,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "You: \"Can't do anything about it now.\"",
+          "Dialogue Text": "Can't do anything about it now.",
+          "Articy Id": "0x01000016000031E5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x01000016000031F2",
+          "InputId": "0x01000016000031D1"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 21,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1384,
+          "y": 740,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Physical Instrument: \"Indeed. You found it all. Now your...\"",
+          "Dialogue Text": "Indeed. You found it all. Now your mortal coil is  *completely* protected. Few cops are this futuristic.",
+          "Articy Id": "0x010000160000315B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "410",
+          "Conversant": "0",
+          "InputId": "0x0100001600003131",
+          "OutputId": "0x0100001600003182"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 22,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"inventory.armour_achievement_full_set\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1059,
+          "y": -145,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "CheckItem(\"shoes_t500\")  and  CheckItem(\"shirt_t500\")  and  CheckItem(\"gloves_t500\")",
+          "Articy Id": "0x0100008100005A7B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "InputId": "0x0100008100005A71"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 23,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 23,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -231.99998474121094,
+          "y": 428.9999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "CheckItem(\"shoes_t500\")  and  CheckItem(\"shirt_t500\")  and  CheckItem(\"gloves_t500\")",
+          "Articy Id": "0x0100008100005A7B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100008100005A81"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 24,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "CheckItem(\"shoes_t500\")  and  CheckItem(\"shirt_t500\")  and  CheckItem(\"gloves_t500\")",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -150.79998779296875,
+          "y": 278.8499755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "!(CheckItem(\"shoes_t500\")  and  CheckItem(\"shirt_t500\")  and  CheckItem(\"gloves_t500\"))",
+          "Articy Id": "0x0100008100005A7B",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "0",
+          "Conversant": "0",
+          "OutputId": "0x0100008100005A87"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 25,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(CheckItem(\"shoes_t500\")  and  CheckItem(\"shirt_t500\")  and  CheckItem(\"gloves_t500\")) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -150.79998779296875,
+          "y": 278.8499755859375,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Endurance: \"Brother, you've managed to collect...\"",
+          "Dialogue Text": "Brother, you've managed to collect all the armour pieces. Too bad it's too late for the big showdown.",
+          "Articy Id": "0x0100008100005A81",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "409",
+          "Conversant": "0",
+          "InputId": "0x0100008100005A7B",
+          "OutputId": "0x0100001600003125"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 26,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "FinishTask(\"TASK.find_all_armour_done\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 208,
+          "y": 6,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Physical Instrument: \"Son, you found another piece of the...\"",
+          "Dialogue Text": "Son, you found another piece of the armour puzzle. Too bad it's too late for the big showdown. And also too late to collect all of them and have a full set.",
+          "Articy Id": "0x0100008100005A87",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "410",
+          "Conversant": "0",
+          "InputId": "0x0100008100005A7B",
+          "OutputId": "0x010000160000313D"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 27,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "CancelTask(\"TASK.find_all_armour_cancelled\");\nFinishTask(\"TASK.find_one_armour_piece_done\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 216.99998474121094,
+          "y": 771,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "You: \"I'm sure I'll have a use for this a...\"",
+          "Dialogue Text": "I'm sure I'll have a use for this armour in the future.",
+          "Articy Id": "0x0100001600003137",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x0100001600003125",
+          "OutputId": "0x0100001600003161"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 29,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 755,
+          "y": 109,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "Physical Instrument: \"But it would have looked really imp...\"",
+          "Dialogue Text": "But it would have looked really impressive.",
+          "Articy Id": "0x01000016000031D1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "410",
+          "Conversant": "0",
+          "InputId": "0x01000016000031D7",
+          "OutputId": "0x01000016000031E5"
+        },
+        "conversationID": 1205,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 30,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1205,
+            "originDialogueID": 30,
+            "destinationConversationID": 1205,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1067,
+          "y": 551,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

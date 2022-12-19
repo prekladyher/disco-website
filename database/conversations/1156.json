@@ -1,0 +1,550 @@
+[
+  {
+    "id": 1156,
+    "fields": {
+      "Title": "THOUGHT / WHAT LIES BENEATH",
+      "Articy Id": "0x010000710000053F",
+      "AlternateOrbText": "",
+      "CheckType": "25",
+      "Condition": "Variable[\"character.trigger_master_investigator_thought\"] == true  and  Variable[\"character.investigator_thought_done\"] == false",
+      "Description": "Broke into Cuno's parents' room and communist apartment and Gary's apartment and church – counter. Global thought after 2.",
+      "Instruction": "",
+      "orbSoundGroup": "",
+      "orbSoundVariation": "",
+      "orbSoundVolume": "100",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "1",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x010000710000053F",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1156,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1156,
+            "originDialogueID": 0,
+            "destinationConversationID": 1156,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100007100000542",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x01000089000012FA"
+        },
+        "conversationID": 1156,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1156,
+            "originDialogueID": 1,
+            "destinationConversationID": 1156,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Savoir Faire: \"Attaboy! The world's secrets were m...\"",
+          "Dialogue Text": "Attaboy! The world's secrets were made for you. They wait patiently for you to uncover them...",
+          "Articy Id": "0x0100008900001320",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "417",
+          "Conversant": "0",
+          "OutputId": "0x0100008900001322",
+          "InputId": "0x0100008900001309"
+        },
+        "conversationID": 1156,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "GainThought(\"master_investigator\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1125,
+          "y": 650,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "You: \"Hey! I am not some sort of a... pee...\"",
+          "Dialogue Text": "Hey! I am not some sort of a... peeper.",
+          "Articy Id": "0x0100008900001331",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100008900001339",
+          "InputId": "0x0100008900001312"
+        },
+        "conversationID": 1156,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1156,
+            "originDialogueID": 3,
+            "destinationConversationID": 1156,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 825,
+          "y": 875.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "You: \"It is my duty as a cop to investiga...\"",
+          "Dialogue Text": "It is my duty as a cop to investigate every square inch of this world.",
+          "Articy Id": "0x0100008900001309",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "IsTHCPresent(\"honour\")",
+          "Alternate1": "I am honour-bound to investigate every square inch of this world.\n",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100008900001320",
+          "InputId": "0x0100008900001312"
+        },
+        "conversationID": 1156,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1156,
+            "originDialogueID": 4,
+            "destinationConversationID": 1156,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 825,
+          "y": 650,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Savoir Faire: \"Master Investigator! You just can't...\"",
+          "Dialogue Text": "Master Investigator! You just can't keep yourself away from locked and hidden places, can you?",
+          "Articy Id": "0x01000089000012FA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "417",
+          "Conversant": "0",
+          "InputId": "0x0100007100000542",
+          "OutputId": "0x0100008900001331"
+        },
+        "conversationID": 1156,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1156,
+            "originDialogueID": 5,
+            "destinationConversationID": 1156,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1156,
+            "originDialogueID": 5,
+            "destinationConversationID": 1156,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1156,
+            "originDialogueID": 5,
+            "destinationConversationID": 1156,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"character.investigator_thought_done\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 525,
+          "y": 650,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Savoir Faire: \"Yes, that's what it is... a quick p...\"",
+          "Dialogue Text": "Yes, that's what it is... a quick peek here, a short glance there. It is all quite... delectable.",
+          "Articy Id": "0x0100008900001326",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "417",
+          "Conversant": "0",
+          "OutputId": "0x0100008900001322",
+          "InputId": "0x0100008900001318"
+        },
+        "conversationID": 1156,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "GainThought(\"master_investigator\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1725.0001220703125,
+          "y": 425.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "You: \"What do you mean?\"",
+          "Dialogue Text": "What do you mean?",
+          "Articy Id": "0x0100008900001304",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "InputId": "0x01000089000012FA",
+          "OutputId": "0x0100008900001312"
+        },
+        "conversationID": 1156,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1156,
+            "originDialogueID": 8,
+            "destinationConversationID": 1156,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 825,
+          "y": 425.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "You: \"I'm just browsing...\"",
+          "Dialogue Text": "I'm just browsing...",
+          "Articy Id": "0x0100008900001318",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "0",
+          "OutputId": "0x0100008900001326",
+          "InputId": "0x0100008900001312"
+        },
+        "conversationID": 1156,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1156,
+            "originDialogueID": 9,
+            "destinationConversationID": 1156,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1425,
+          "y": 425.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Savoir Faire: \"Sure, friend. This is nothing sordi...\"",
+          "Dialogue Text": "Sure, friend. This is nothing sordid, nothing inappropriate. You just *have* to do this... it's your duty.",
+          "Articy Id": "0x0100008900001339",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "417",
+          "Conversant": "0",
+          "InputId": "0x0100008900001331",
+          "OutputId": "0x0100008900001322"
+        },
+        "conversationID": 1156,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "GainThought(\"master_investigator\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1125,
+          "y": 875.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Savoir Faire: \"Nothing. Nothing! You're right -- g...\"",
+          "Dialogue Text": "Nothing. Nothing! You're right -- get in there... deep. Invade every personal space, break every lock...",
+          "Articy Id": "0x0100008900001312",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "417",
+          "Conversant": "0",
+          "InputId": "0x0100008900001304",
+          "OutputId": "0x0100008900001331"
+        },
+        "conversationID": 1156,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1156,
+            "originDialogueID": 11,
+            "destinationConversationID": 1156,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1156,
+            "originDialogueID": 11,
+            "destinationConversationID": 1156,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1156,
+            "originDialogueID": 11,
+            "destinationConversationID": 1156,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1125,
+          "y": 425.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

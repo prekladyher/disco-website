@@ -1,0 +1,289 @@
+[
+  {
+    "id": 844,
+    "fields": {
+      "Title": "CANAL / BARRY barks",
+      "Articy Id": "0x0100004D00003A49",
+      "Description": "Barry the Butcher barks.",
+      "Actor": "0",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100004D00003A49",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 844,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 844,
+            "originDialogueID": 0,
+            "destinationConversationID": 844,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100004D00003A4A",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100004D00003B8A"
+        },
+        "conversationID": 844,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 844,
+            "originDialogueID": 1,
+            "destinationConversationID": 844,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 844,
+            "originDialogueID": 1,
+            "destinationConversationID": 844,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 844,
+            "originDialogueID": 1,
+            "destinationConversationID": 844,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 844,
+            "originDialogueID": 1,
+            "destinationConversationID": 844,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Barry the Butcher: \"\"Can't wait till Wednesday, I got m...\"",
+          "Dialogue Text": "\"Can't wait till Wednesday, I got meat to sell.\"",
+          "Articy Id": "0x0100005400000332",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "120",
+          "Conversant": "0",
+          "InputId": "0x0100004D00003A4A",
+          "OutputId": "0x0100004D00003B8E"
+        },
+        "conversationID": 844,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"canal.water_lock_greeting_done\"] == false  and  DayCount() < 3",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 700,
+          "y": 900.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Barry the Butcher: \"“How am I supposed to get across no...\"",
+          "Dialogue Text": "“How am I supposed to get across now?\"",
+          "Articy Id": "0x0100004D00003B96",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "120",
+          "Conversant": "0",
+          "InputId": "0x0100004D00003A4A",
+          "OutputId": "0x0100004D00003B8E"
+        },
+        "conversationID": 844,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"canal.water_lock_greeting_done\"] == false  and  DayCount() < 3",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 700,
+          "y": 650,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Barry the Butcher: \"\"This is outrageous.\"\"",
+          "Dialogue Text": "\"This is outrageous.\"",
+          "Articy Id": "0x01000007000199A5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "120",
+          "Conversant": "0",
+          "InputId": "0x0100004D00003A4A",
+          "OutputId": "0x0100004D00003B8E"
+        },
+        "conversationID": 844,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"canal.water_lock_greeting_done\"] == false  and  DayCount() < 3",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 699,
+          "y": 396,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Barry the Butcher: \"\"If I ever get my hands on the idio...\"",
+          "Dialogue Text": "\"If I ever get my hands on the idiot who broke that sign...\"",
+          "Articy Id": "0x0100004D00003B8A",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "120",
+          "Conversant": "0",
+          "InputId": "0x0100004D00003A4A",
+          "OutputId": "0x0100004D00003B8E"
+        },
+        "conversationID": 844,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "Variable[\"canal.water_lock_greeting_done\"] == false  and  DayCount() < 3",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 700,
+          "y": 1150,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

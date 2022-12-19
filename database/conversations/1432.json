@@ -1,0 +1,3182 @@
+[
+  {
+    "id": 1432,
+    "fields": {
+      "Title": "LAIR / DRAINAGE PIPE",
+      "Articy Id": "0x0100009700004CF3",
+      "OnUse": "",
+      "OverrideDialogueCondition": "Variable[\"boardwalk.drainage_wc\"] == true",
+      "AlternateOrbText": "",
+      "CheckType": "15",
+      "Condition": "Variable[\"TASK.climb_ladder\"]  and  Variable[\"TASK.climb_ladder_done\"] == false",
+      "Description": "Alternate path into Feld building.",
+      "Instruction": "",
+      "Placement": "Area: Coast/FELD building\nDetails: Outline should be on the drainage pipe that's next to the door into the FELD basement.\n",
+      "Difficulty": "1",
+      "Actor": "396",
+      "Conversant": "352"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100009700004CF3",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 0,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100009700004CF6",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100000600014EC4"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 1,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "You: \"Try to pull the door apart.\"",
+          "Dialogue Text": "Try to pull the door apart.",
+          "Articy Id": "0x0100009700004D45",
+          "DialogueEntryType": "DialogueFragment",
+          "Forced": "False",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x0000000000000000",
+          "FlagName": "boardwalk.drainage_wc",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000400000B11",
+          "DifficultyWhite": "12",
+          "modifier1": "10",
+          "variable1": "IsKimHere() == false",
+          "tooltip1": "A double door for a team of two.",
+          "modifier2": "-1",
+          "variable2": "IsTHCPresent(\"one_more_door\")",
+          "tooltip2": "One More Door.",
+          "modifier3": "-1",
+          "variable3": "Variable[\"apt.cuno_dad_door_interfacing_white_check_succeeded\"]",
+          "tooltip3": "Broke into Cuno's apt.",
+          "modifier4": "-1",
+          "variable4": "Variable[\"apt.padlock_interfacing_wc\"]",
+          "tooltip4": "Broke into communist apt.",
+          "modifier5": "-1",
+          "variable5": "Variable[\"doomed.bookstore_backdoor_redcheck_smash\"]",
+          "tooltip5": "Broke bookstore door.",
+          "modifier6": "-1",
+          "variable6": "CheckItem(\"apocalypse_die\")",
+          "tooltip6": "Cursed Iilmaraan die.",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "352",
+          "OutputId": "0x0100009700004D45-FORK",
+          "InputId": "0x0100009700004D1F"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 2,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()  and  Variable[\"boardwalk.drainage_found_door\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2548,
+          "y": 781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Variable[\"boardwalk.drainage_wc\"]",
+          "Articy Id": "0x0100009700004D45-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "352",
+          "InputId": "0x0100009700004D45"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 3,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 3,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2624.923095703125,
+          "y": 857.9231567382812,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Variable[\"boardwalk.drainage_wc\"]",
+          "Articy Id": "0x0100009700004D45-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "352",
+          "OutputId": "0x0100009700004D73"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 4,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.drainage_wc\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1706.199951171875,
+          "y": 557.6500244140625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "!(Variable[\"boardwalk.drainage_wc\"])",
+          "Articy Id": "0x0100009700004D45-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "352",
+          "OutputId": "0x0100009700004D73"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 5,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"boardwalk.drainage_wc\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1706.199951171875,
+          "y": 557.6500244140625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Inland Empire: \"This isn't gonna work without the l...\"",
+          "Dialogue Text": "This isn't gonna work without the lieutenant here. What if you *do* find a way in and it's a *trap*? Kitsuragi needs to be here, covering you.",
+          "Articy Id": "0x0100000600014ED2",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "0",
+          "Actor": "404",
+          "Conversant": "396",
+          "OutputId": "0x0100009700004D1F",
+          "InputId": "0x0100009700004D0D"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 6,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1740.0001220703125,
+          "y": 422,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "You: \"Okay. What *else*?\"",
+          "Dialogue Text": "Okay. What *else*?",
+          "Articy Id": "0x0100001600009A7E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "352",
+          "OutputId": "0x0100009700004DF8",
+          "InputId": "0x0100009700004D8F"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 7,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 62,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3096,
+          "y": -685,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "Visual Calculus: \"He means: the pipe must be coming f...\"",
+          "Dialogue Text": "He means: the pipe must be coming from *somewhere* in the building.",
+          "Articy Id": "0x0100009700004E65",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "3",
+          "Actor": "402",
+          "Conversant": "396",
+          "OutputId": "0x0100009700004E6C",
+          "InputId": "0x0100009700004DA0"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 8,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3401,
+          "y": -66,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Untitled hub",
+          "Articy Id": "0x0100009700004D1F",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100009700004D13",
+          "OutputId": "0x0100009700004D38"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 9,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 9,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 59,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 9,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 9,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 9,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.drainage_hub_reached\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2090,
+          "y": 302,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Physical Instrument: \"You can't seem to pry the doors apa...\"",
+          "Dialogue Text": "You can't seem to pry the doors apart for long enough to slip through. A second pair of hands would be really useful here.",
+          "Articy Id": "0x0100009700004DFF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "410",
+          "Conversant": "396",
+          "OutputId": "0x0100009700004E18",
+          "InputId": "0x0100009700004E05"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 10,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.drainage_tried_once\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3590.000244140625,
+          "y": 1474,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100009700004D0D",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "352",
+          "Conversant": "396",
+          "InputId": "0x0100009700004D6C"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 11,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 11,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1398,
+          "y": 369,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100009700004D0D",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "352",
+          "Conversant": "396",
+          "OutputId": "0x0100009700004D13"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 12,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 908.699951171875,
+          "y": 239.84999084472656,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x0100009700004D0D",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "352",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014ED2"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 13,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 908.699951171875,
+          "y": 239.84999084472656,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100009700004E05",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "352",
+          "Conversant": "396",
+          "InputId": "0x0100000600014EFF"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 15,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 15,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 17,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3266,
+          "y": 1393,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100009700004E05",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "352",
+          "Conversant": "396",
+          "OutputId": "0x0100009700004E0C"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 16,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2122.89990234375,
+          "y": 905.449951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x0100009700004E05",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "352",
+          "Conversant": "396",
+          "OutputId": "0x0100009700004DFF"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 17,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2122.89990234375,
+          "y": 905.449951171875,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "You: \"What's in there?\"",
+          "Dialogue Text": "What's in there?",
+          "Articy Id": "0x0100009700004D26",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "352",
+          "InputId": "0x0100009700004D1F",
+          "OutputId": "0x0100009700004D8F"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 18,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 58,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2521,
+          "y": -684,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "Drainage Pipe: \"And? And nothing. Broken glass from...\"",
+          "Dialogue Text": "And? And nothing. Broken glass from bottles thrown against the walls of the pipe. A syringe...",
+          "Articy Id": "0x0100009700004E42",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "352",
+          "Conversant": "396",
+          "OutputId": "0x0100009700004E4F",
+          "InputId": "0x0100009700004E48"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 19,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3991,
+          "y": -695,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Perception (Smell): \"A very, very faint smell of stale l...\"",
+          "Dialogue Text": "A very, very faint smell of stale liquor still lingers -- or is it just your imagination?",
+          "Articy Id": "0x0100009700004E4F",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "5",
+          "Actor": "421",
+          "Conversant": "396",
+          "InputId": "0x0100009700004E42",
+          "OutputId": "0x0100000600014EBC"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 20,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 60,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4280,
+          "y": -688,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "Physical Instrument: \"It looks too exhausting to even try...\"",
+          "Dialogue Text": "It looks too exhausting to even try. You'd only bloody your fingers on the rust.",
+          "Articy Id": "0x0100000600014F06",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "410",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014F0D",
+          "InputId": "0x0100000600014EFF"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 21,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 56,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "DamageVolition(1)",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3171.999755859375,
+          "y": 987,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Variable[\"boardwalk.drainage_hub_reached\"]",
+          "Articy Id": "0x0100000600014EC4",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "352",
+          "Conversant": "396",
+          "InputId": "0x0100009700004CF6"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 22,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 22,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -341,
+          "y": -62.999996185302734,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "Variable[\"boardwalk.drainage_hub_reached\"]",
+          "Articy Id": "0x0100000600014EC4",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "352",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014ECB"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 23,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.drainage_hub_reached\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -221.64999389648438,
+          "y": -40.94999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "!(Variable[\"boardwalk.drainage_hub_reached\"])",
+          "Articy Id": "0x0100000600014EC4",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "352",
+          "Conversant": "396",
+          "OutputId": "0x0100009700004CFD"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 24,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"boardwalk.drainage_hub_reached\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -221.64999389648438,
+          "y": -40.94999694824219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "Drainage Pipe: \"Behind the pipe -- the maintenance...\"",
+          "Dialogue Text": "Behind the pipe -- the maintenance door, rusted shut and half-sunken in sand.",
+          "Articy Id": "0x0100000600014ECB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "352",
+          "Conversant": "396",
+          "InputId": "0x0100000600014EC4",
+          "OutputId": "0x0100000600014EE0"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 25,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 46,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 22,
+          "y": -144,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Jump to: [Untitled hub]",
+          "Articy Id": "0x0100000600014EE7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100000600014EDA"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 26,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 792,
+          "y": -195,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"The lieutenant looks over your shou...\"",
+          "Dialogue Text": "The lieutenant looks over your shoulder.",
+          "Articy Id": "0x0100009700004D13",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100009700004D0D",
+          "OutputId": "0x0100009700004D1F"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 27,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1633,
+          "y": 68,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "Jump to: [Untitled hub]",
+          "Articy Id": "0x0100009700004E18",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100009700004E12"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 28,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4508,
+          "y": 1426,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "You: \"And?\"",
+          "Dialogue Text": "And?",
+          "Articy Id": "0x0100009700004E48",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "352",
+          "OutputId": "0x0100009700004E42",
+          "InputId": "0x0100009700004DF8"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 29,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3691,
+          "y": -693,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"I see. Another stop on your crusad...\"",
+          "Dialogue Text": "\"I see. Another stop on your crusade against narcomania. I *was* hoping we were in pursuit of a murder suspect...\"",
+          "Articy Id": "0x0100001600009A74",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014EB8",
+          "InputId": "0x0100009700004DE1"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 30,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2840,
+          "y": -389,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "Drainage Pipe: \"An old pipe peeks out from beneath...\"",
+          "Dialogue Text": "An old pipe peeks out from beneath the rotting boards of the boardwalk. Could this be an alternative path into the Feld building?",
+          "Articy Id": "0x0100009700004CFD",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "352",
+          "Conversant": "396",
+          "InputId": "0x0100000600014EC4",
+          "OutputId": "0x0100009700004D07"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 31,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 49,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"coast.drainage_pipe_first_card_seen\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": -216.99998474121094,
+          "y": 481,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"The lieutenant leans back against t...\"",
+          "Dialogue Text": "The lieutenant leans back against the door, panting. \"Let's take a breather and try this again later? It's... very tough.\"",
+          "Articy Id": "0x0100009700004E12",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "OutputId": "0x0100009700004E18",
+          "InputId": "0x0100009700004E0C"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 32,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.drainage_strength_mentioned\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3889,
+          "y": 1181,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "Logic: \"Oh, duh, why didn't you think of th...\"",
+          "Dialogue Text": "Oh, duh, why didn't you think of that?",
+          "Articy Id": "0x0100009700004E6C",
+          "DialogueEntryType": "DialogueFragment",
+          "Antipassive": "True",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "1",
+          "Actor": "398",
+          "Conversant": "396",
+          "InputId": "0x0100009700004E65",
+          "OutputId": "0x0100009700004DAB"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 33,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3691,
+          "y": -62,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "Physical Instrument: \"The metal doors are heavy, and very...\"",
+          "Dialogue Text": "The metal doors are heavy, and very awkward to open on your own, but you just manage to slide them open wide enough for you to slide yourself between them...",
+          "Articy Id": "0x0100009700004E99",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "IsKimHere()",
+          "Alternate1": "The metal doors are heavy and the flaking rust hurts your palms, but, together with the lieutenant, you manage to slide them open just enough to squeeze in.",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "410",
+          "Conversant": "396",
+          "OutputId": "0x0100009700004E31",
+          "InputId": "0x0100009700004D73"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 34,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 67,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.drainage_door_opened\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3171.999755859375,
+          "y": 595,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Title": "Interfacing: \"It's jammed shut. The subtle approa...\"",
+          "Dialogue Text": "It's jammed shut. The subtle approach isn't going to work on this one.",
+          "Articy Id": "0x0100000600014EEF",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "3",
+          "Actor": "418",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014EF5",
+          "InputId": "0x0100009700004E76"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 35,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 64,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4553,
+          "y": -69,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "Physical Instrument: \"You and the lieutenant lean all you...\"",
+          "Dialogue Text": "You and the lieutenant lean all your weight into pushing the doors apart, but you're not quite synchronized in your efforts. They slam shut again before you can enter.",
+          "Articy Id": "0x0100009700004E0C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "410",
+          "Conversant": "396",
+          "InputId": "0x0100009700004E05",
+          "OutputId": "0x0100009700004E12"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 36,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.drainage_tried_once\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3586,
+          "y": 1179,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "You: \"[Leave.]\"",
+          "Dialogue Text": "[Leave.]",
+          "Articy Id": "0x0100009700004D38",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "352",
+          "InputId": "0x0100009700004D1F",
+          "OutputId": "0x0100009700004D3C"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2646,
+          "y": 1764,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "You: \"Come closer and look in.\"",
+          "Dialogue Text": "Come closer and look in.",
+          "Articy Id": "0x0100009700004D65",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "352",
+          "OutputId": "0x0100009700004D6C",
+          "InputId": "0x0100009700004D5D"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 38,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 57,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 806,
+          "y": 315,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Title": "Jump to: [Untitled hub]",
+          "Articy Id": "0x0100000600014EB8",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100001600009A74"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 39,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3117,
+          "y": -340,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Title": "You: \"Could I get into the Feld building...\"",
+          "Dialogue Text": "Could I get into the Feld building through this pipe?",
+          "Articy Id": "0x0100009700004D4B",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "IsKimHere()",
+          "Alternate1": "\"Could we get into the Feld building through this pipe?\"",
+          "Condition2": "",
+          "Alternate2": "",
+          "Condition3": "",
+          "Alternate3": "",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "396",
+          "Conversant": "352",
+          "InputId": "0x0100009700004D1F",
+          "OutputId": "0x0100009700004D57"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 40,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 50,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()  and  Variable[\"boardwalk.drainage_found_door\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2510,
+          "y": -59,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "Variable[\"boardwalk.drainage_wc\"]",
+          "Articy Id": "0x0100009700004D73",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "352",
+          "Conversant": "396",
+          "InputId": "0x0100009700004D45-FORK"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 41,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 42,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 41,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 43,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2837,
+          "y": 835.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Title": "Variable[\"boardwalk.drainage_wc\"]",
+          "Articy Id": "0x0100009700004D73",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "352",
+          "Conversant": "396",
+          "OutputId": "0x0100009700004E99"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 42,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.drainage_wc\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1844.0499267578125,
+          "y": 542.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Title": "!(Variable[\"boardwalk.drainage_wc\"])",
+          "Articy Id": "0x0100009700004D73",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "352",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014EFF"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 43,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 52,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"boardwalk.drainage_wc\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1844.0499267578125,
+          "y": 542.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 44,
+        "fields": {
+          "Title": "You: \"[Leave.]\"",
+          "Dialogue Text": "[Leave.]",
+          "Articy Id": "0x0100009700004D87",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "352",
+          "OutputId": "0x0100009700004D3C",
+          "InputId": "0x0100009700004D5D"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 777,
+          "y": 792.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 45,
+        "fields": {
+          "Title": "Suggestion: \"The lieutenant's face lights up. He...\"",
+          "Dialogue Text": "The lieutenant's face lights up. He doesn't usually notice these little things.",
+          "Articy Id": "0x0100009700004DAB",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "10",
+          "Actor": "407",
+          "Conversant": "396",
+          "InputId": "0x0100009700004E6C",
+          "OutputId": "0x0100009700004E76"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 45,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 63,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3976.999755859375,
+          "y": -69,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 46,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100000600014EE0",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "352",
+          "Conversant": "396",
+          "InputId": "0x0100000600014ECB"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 46,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 47,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 46,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 48,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 374,
+          "y": -336,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 47,
+        "fields": {
+          "Title": "IsKimHere()",
+          "Articy Id": "0x0100000600014EE0",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "352",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014EE7"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 47,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsKimHere()",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 243.09999084472656,
+          "y": -218.39999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 48,
+        "fields": {
+          "Title": "!(IsKimHere())",
+          "Articy Id": "0x0100000600014EE0",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "352",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014EDA"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 48,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 65,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(IsKimHere()) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 243.09999084472656,
+          "y": -218.39999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 49,
+        "fields": {
+          "Title": "Visual Calculus: \"A building like this must have mult...\"",
+          "Dialogue Text": "A building like this must have multiple doors serving various functions. Perhaps a basement access?",
+          "Articy Id": "0x0100009700004D07",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "402",
+          "Conversant": "396",
+          "InputId": "0x0100009700004CFD",
+          "OutputId": "0x0100009700004D5D"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 49,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 66,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 120.00000762939453,
+          "y": 482,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 50,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Given that this isn't a martial ar...\"",
+          "Dialogue Text": "\"Given that this isn't a martial arts thriller,\" a grin flickers across his face, \"it's highly unlikely -- and not without risk to our health either.\"",
+          "Articy Id": "0x0100009700004D57",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100009700004D4B",
+          "OutputId": "0x0100009700004DA0"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 50,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 61,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"boardwalk.drainage_found_door\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2801,
+          "y": -73,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 51,
+        "fields": {
+          "Title": "Jump to: [Untitled hub]",
+          "Articy Id": "0x0100009700004DA7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100000600014EF5"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 51,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 5124,
+          "y": -40,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 52,
+        "fields": {
+          "Title": "Variable[\"boardwalk.drainage_tried_once\"]",
+          "Articy Id": "0x0100000600014EFF",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "352",
+          "Conversant": "396",
+          "InputId": "0x0100009700004D73"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 52,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 53,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 52,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 54,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2762,
+          "y": 1176,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 53,
+        "fields": {
+          "Title": "Variable[\"boardwalk.drainage_tried_once\"]",
+          "Articy Id": "0x0100000600014EFF",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "352",
+          "Conversant": "396",
+          "OutputId": "0x0100000600014F06"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 53,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"boardwalk.drainage_tried_once\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1795.2999267578125,
+          "y": 764.3999633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 54,
+        "fields": {
+          "Title": "!(Variable[\"boardwalk.drainage_tried_once\"])",
+          "Articy Id": "0x0100000600014EFF",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "352",
+          "Conversant": "396",
+          "OutputId": "0x0100009700004E05"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 54,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"boardwalk.drainage_tried_once\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1795.2999267578125,
+          "y": 764.3999633789062,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 55,
+        "fields": {
+          "Title": "You: \"[Go in.]\"",
+          "Dialogue Text": "[Go in.]",
+          "Articy Id": "0x0100009700004E37",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "352",
+          "OutputId": "0x0100009700004D3C",
+          "InputId": "0x0100009700004E31"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "SetAreaState(\"INSTIGATOR_STEEL_DOOR\",\"open\");\nGoTo(\"Instigators-lair-int\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3800.000244140625,
+          "y": 618,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 56,
+        "fields": {
+          "Title": "Jump to: [Untitled hub]",
+          "Articy Id": "0x0100000600014F0D",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100000600014F06"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 56,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3460.000244140625,
+          "y": 1007.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 57,
+        "fields": {
+          "Title": "Drainage Pipe: \"Your eyes slowly begin to adjust to...\"",
+          "Dialogue Text": "Your eyes slowly begin to adjust to the darkness inside the drainage pipe.",
+          "Articy Id": "0x0100009700004D6C",
+          "DialogueEntryType": "DialogueFragment",
+          "Sequence": "SemiBlack(true, 1);",
+          "Actor": "352",
+          "Conversant": "396",
+          "InputId": "0x0100009700004D65",
+          "OutputId": "0x0100009700004D0D"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 57,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1109,
+          "y": 316,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 58,
+        "fields": {
+          "Title": "Drainage Pipe: \"An ordinary drainage pipe. Darkness...\"",
+          "Dialogue Text": "An ordinary drainage pipe. Darkness.",
+          "Articy Id": "0x0100009700004D8F",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Condition1": "IsNighttime()",
+          "Alternate1": "At first, you can't make anything out in the darkness at all.",
+          "Condition2": "Variable[\"auto.is_raining\"]",
+          "Alternate2": "The pipe is sleek with rain.",
+          "Condition3": "Variable[\"auto.is_snowing\"]",
+          "Alternate3": "A thin layer of snow gleams inside the pipe.",
+          "Condition4": "",
+          "Alternate4": "",
+          "Actor": "352",
+          "Conversant": "396",
+          "InputId": "0x0100009700004D26",
+          "OutputId": "0x0100001600009A7E"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 58,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2808,
+          "y": -684,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 59,
+        "fields": {
+          "Title": "You: \"\"This looks like a great place to s...\"",
+          "Dialogue Text": "\"This looks like a great place to stash narcotics. I want to make sure there's nothing hidden in there that children might pick up.\"",
+          "Articy Id": "0x0100009700004DE1",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "352",
+          "InputId": "0x0100009700004D1F",
+          "OutputId": "0x0100001600009A74"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 59,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "IsTHCPresent(\"narcomania\")  and  Variable[\"boardwalk.drainage_narcomania_said\"] == false",
+        "userScript": "SetVariableValue(\"boardwalk.drainage_narcomania_said\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2521,
+          "y": -383,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 60,
+        "fields": {
+          "Title": "Jump to: [Untitled hub]",
+          "Articy Id": "0x0100000600014EBC",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100009700004E4F"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 60,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4602,
+          "y": -636,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 61,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"However, the pipe suggests there m...\"",
+          "Dialogue Text": "\"However, the pipe suggests there may be an entrance to the basement around...\" The lieutenant pushes aside the reeds and looks around.",
+          "Articy Id": "0x0100009700004DA0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100009700004D57",
+          "OutputId": "0x0100009700004E65"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 61,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3100,
+          "y": -80,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 62,
+        "fields": {
+          "Title": "Drainage Pipe: \"As your eyes adjust, you see some t...\"",
+          "Dialogue Text": "As your eyes adjust, you see some trash -- crumpled up newspapers, cigarette butts. Someone has half-heartedly spray-painted 'SKULLS' on the right side.",
+          "Articy Id": "0x0100009700004DF8",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "352",
+          "Conversant": "396",
+          "InputId": "0x0100001600009A7E",
+          "OutputId": "0x0100009700004E48"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 62,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3385.000244140625,
+          "y": -708,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 63,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"...and it's right here! A maintena...\"",
+          "Dialogue Text": "\"...and it's right here! A maintenance door.\" He points to a rusted metal double door to the right of the pipe, obscured by the reeds.",
+          "Articy Id": "0x0100009700004E76",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100009700004DAB",
+          "OutputId": "0x0100000600014EEF"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 63,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4264,
+          "y": -75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 64,
+        "fields": {
+          "Title": "Endurance: \"Oh yeah... *big boy time*. This nee...\"",
+          "Dialogue Text": "Oh yeah... *big boy time*. This needs you to put your BACK into it.",
+          "Articy Id": "0x0100000600014EF5",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "409",
+          "Conversant": "396",
+          "InputId": "0x0100000600014EEF",
+          "OutputId": "0x0100009700004DA7"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 64,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 51,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 4842,
+          "y": -69,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 65,
+        "fields": {
+          "Title": "Inland Empire: \"This isn't gonna work without the l...\"",
+          "Dialogue Text": "This isn't gonna work without the lieutenant here. What if you *do* find a way in and it's a *trap*? Kitsuragi needs to be here, covering you.",
+          "Articy Id": "0x0100000600014EDA",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "0",
+          "Actor": "404",
+          "Conversant": "396",
+          "InputId": "0x0100000600014EE0",
+          "OutputId": "0x0100000600014EE7"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 65,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 421,
+          "y": -140,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 66,
+        "fields": {
+          "Title": "Untitled hub (02)",
+          "Articy Id": "0x0100009700004D5D",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "InputId": "0x0100009700004D07",
+          "OutputId": "0x0100009700004D87"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 66,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 66,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 44,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 450.0000305175781,
+          "y": 572,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 67,
+        "fields": {
+          "Title": "Kim Kitsuragi: \"\"Good work.\" The lieutenant nods to...\"",
+          "Dialogue Text": "\"Good work.\" The lieutenant nods toward the impenetrable darkness inside. \"Shall we?\"",
+          "Articy Id": "0x0100009700004E31",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "395",
+          "Conversant": "396",
+          "InputId": "0x0100009700004E99",
+          "OutputId": "0x0100009700004E37"
+        },
+        "conversationID": 1432,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 1432,
+            "originDialogueID": 67,
+            "destinationConversationID": 1432,
+            "destinationDialogueID": 55,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "FinishTask(\"TASK.climb_ladder_done\");\nGainTask(\"TASK.explore_the_passages\")--[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3493,
+          "y": 617,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

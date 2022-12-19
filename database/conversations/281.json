@@ -1,0 +1,289 @@
+[
+  {
+    "id": 281,
+    "fields": {
+      "Title": "WHIRLING / LENA DAY 2 BARKS",
+      "Articy Id": "0x01000007000194ED",
+      "Description": "Lena's barks for when it's Day 2 or later and the player hasn't gotten the TASK.get_morell_back_to_lena",
+      "Actor": "383",
+      "Conversant": "0"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x01000007000194ED",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 281,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 281,
+            "originDialogueID": 0,
+            "destinationConversationID": 281,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x01000007000194F0",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100000700019504"
+        },
+        "conversationID": 281,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 281,
+            "originDialogueID": 1,
+            "destinationConversationID": 281,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 281,
+            "originDialogueID": 1,
+            "destinationConversationID": 281,
+            "destinationDialogueID": 4,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 281,
+            "originDialogueID": 1,
+            "destinationConversationID": 281,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 281,
+            "originDialogueID": 1,
+            "destinationConversationID": 281,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Lena, the Cryptozoologist's wife: \"\"Just my luck, the phone line is no...\"",
+          "Dialogue Text": "\"Just my luck, the phone line is not working...\"",
+          "Articy Id": "0x0100000700019504",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "383",
+          "Conversant": "0",
+          "InputId": "0x01000007000194F0",
+          "OutputId": "0x01000007000194F9"
+        },
+        "conversationID": 281,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "IsDayFrom(2)  and  Variable[\"TASK.get_morell_back_to_lena\"] == false  and  Variable[\"whirling.lena_intro_done\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 692,
+          "y": 1219,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Lena, the Cryptozoologist's wife: \"\"Where could he be...\"\"",
+          "Dialogue Text": "\"Where could he be...\"",
+          "Articy Id": "0x01000007000194F5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "383",
+          "Conversant": "0",
+          "InputId": "0x01000007000194F0",
+          "OutputId": "0x01000007000194F9"
+        },
+        "conversationID": 281,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "IsDayFrom(2)  and  Variable[\"TASK.get_morell_back_to_lena\"] == false  and  Variable[\"whirling.lena_intro_done\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 681,
+          "y": 455.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 4,
+        "fields": {
+          "Title": "Lena, the Cryptozoologist's wife: \"\"I'm worried.\"\"",
+          "Dialogue Text": "\"I'm worried.\"",
+          "Articy Id": "0x01000007000194FA",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "383",
+          "Conversant": "0",
+          "InputId": "0x01000007000194F0",
+          "OutputId": "0x01000007000194F9"
+        },
+        "conversationID": 281,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "IsDayFrom(2)  and  Variable[\"TASK.get_morell_back_to_lena\"] == false  and  Variable[\"whirling.lena_intro_done\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 687,
+          "y": 698,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "Lena, the Cryptozoologist's wife: \"\"He should be back by now.\"\"",
+          "Dialogue Text": "\"He should be back by now.\"",
+          "Articy Id": "0x01000007000194FF",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "383",
+          "Conversant": "0",
+          "InputId": "0x01000007000194F0",
+          "OutputId": "0x01000007000194F9"
+        },
+        "conversationID": 281,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "IsDayFrom(2)  and  Variable[\"TASK.get_morell_back_to_lena\"] == false  and  Variable[\"whirling.lena_intro_done\"] == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 692,
+          "y": 955.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]

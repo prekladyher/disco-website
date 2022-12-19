@@ -1,0 +1,2162 @@
+[
+  {
+    "id": 574,
+    "fields": {
+      "Title": "BOOKSTORE / ROMANCE",
+      "Articy Id": "0x0100002F0001181A",
+      "OnUse": "",
+      "OverrideDialogueCondition": "",
+      "AlternateOrbText": "",
+      "CheckType": "15",
+      "Condition": "",
+      "Description": "Shelf of romance books.",
+      "Instruction": "",
+      "Placement": "Area:\nDetails:\n",
+      "Difficulty": "0",
+      "Actor": "396",
+      "Conversant": "278"
+    },
+    "overrideSettings": {
+      "useOverrides": 0,
+      "overrideSubtitleSettings": 0,
+      "showNPCSubtitlesDuringLine": 1,
+      "showNPCSubtitlesWithResponses": 1,
+      "showPCSubtitlesDuringLine": 0,
+      "skipPCSubtitleAfterResponseMenu": 0,
+      "subtitleCharsPerSecond": 30,
+      "minSubtitleSeconds": 2,
+      "continueButton": 0,
+      "overrideSequenceSettings": 0,
+      "defaultSequence": "",
+      "defaultPlayerSequence": "",
+      "defaultResponseMenuSequence": "",
+      "overrideInputSettings": 0,
+      "alwaysForceResponseMenu": 1,
+      "includeInvalidEntries": 0,
+      "responseTimeout": 0
+    },
+    "nodeColor": "",
+    "dialogueEntries": [
+      {
+        "id": 0,
+        "fields": {
+          "Title": "START",
+          "Articy Id": "0x0100002F0001181A",
+          "Sequence": "Continue()"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 0,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 1,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 1,
+        "fields": {
+          "Title": "input",
+          "Articy Id": "0x0100002F0001181B",
+          "Sequence": "Continue()",
+          "Actor": "0",
+          "OutputId": "0x0100002F00011A98"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 1,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 30
+        }
+      },
+      {
+        "id": 2,
+        "fields": {
+          "Title": "Shelf of Romance Stories: \"You'd have to buy the book to be su...\"",
+          "Dialogue Text": "You'd have to buy the book to be sure. But the book cover is a wall of concrete buildings, with a black-and-white rainbow covering them. It's written by someone from a country where even the rainbows are black-and-white. So it does seem like it'll be a downer.",
+          "Articy Id": "0x0100004B00002A9D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "278",
+          "Conversant": "396",
+          "OutputId": "0x0100004B00002AA9",
+          "InputId": "0x0100006B00000D94"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 2,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 3,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"doomed.book_found_bad_romance\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2886,
+          "y": 364,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 3,
+        "fields": {
+          "Title": "Jump to: [romcom]",
+          "Articy Id": "0x0100004B00002AA9",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100004B00002A9D"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 3,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 3180,
+          "y": 425.0000305175781,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 5,
+        "fields": {
+          "Title": "You: \"Does anything more real, more *you*...\"",
+          "Dialogue Text": "Does anything more real, more *you* stand out?",
+          "Articy Id": "0x0100002F00011AB5",
+          "DialogueEntryType": "DialogueFragment",
+          "Forced": "False",
+          "AlwaysPlayVoice": "False",
+          "check_target": "0x0000000000000000",
+          "FlagName": "doomed.book_whitech_pain_threshold_romance",
+          "PlayVoiceInPsychologicalMode": "False",
+          "SkillType": "0x0100000A00000022",
+          "DifficultyWhite": "2",
+          "modifier1": "-2",
+          "variable1": "Variable[\"plaza.annette_bad_romances\"]",
+          "tooltip1": "Your interest in tales of real woe is well known.",
+          "modifier2": "",
+          "variable2": "",
+          "tooltip2": "",
+          "modifier3": "",
+          "variable3": "",
+          "tooltip3": "",
+          "modifier4": "",
+          "variable4": "",
+          "tooltip4": "",
+          "modifier5": "",
+          "variable5": "",
+          "tooltip5": "",
+          "modifier6": "",
+          "variable6": "",
+          "tooltip6": "",
+          "modifier7": "",
+          "variable7": "",
+          "tooltip7": "",
+          "modifier8": "",
+          "variable8": "",
+          "tooltip8": "",
+          "modifier9": "",
+          "variable9": "",
+          "tooltip9": "",
+          "modifier10": "",
+          "variable10": "",
+          "tooltip10": "",
+          "Actor": "396",
+          "Conversant": "278",
+          "OutputId": "0x0100002F00011AB5-FORK",
+          "InputId": "0x0100002F00011A9E"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 5,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 6,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.book_wc_trigger_bad_romance\"] == true",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1100,
+          "y": 575,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 6,
+        "fields": {
+          "Title": "Variable[\"doomed.book_whitech_pain_threshold_romance\"]",
+          "Articy Id": "0x0100002F00011AB5-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "278",
+          "InputId": "0x0100002F00011AB5"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 6,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 7,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 574,
+            "originDialogueID": 6,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 8,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1176.923095703125,
+          "y": 651.923095703125,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 7,
+        "fields": {
+          "Title": "Variable[\"doomed.book_whitech_pain_threshold_romance\"]",
+          "Articy Id": "0x0100002F00011AB5-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "278",
+          "OutputId": "0x0100006B00000A93"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 7,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.book_whitech_pain_threshold_romance\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 765,
+          "y": 423.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 8,
+        "fields": {
+          "Title": "!(Variable[\"doomed.book_whitech_pain_threshold_romance\"])",
+          "Articy Id": "0x0100002F00011AB5-FORK",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "396",
+          "Conversant": "278",
+          "OutputId": "0x0100006B00000A93"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 8,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 23,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"doomed.book_whitech_pain_threshold_romance\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 765,
+          "y": 423.75,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 9,
+        "fields": {
+          "Title": "Shelf of Romance Stories: \"Being a rough, *hard-boiled* detect...\"",
+          "Dialogue Text": "Being a rough, *hard-boiled* detective, you can only be pleased by something more real, more *authentic*.",
+          "Articy Id": "0x0100006B00000B1B",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "278",
+          "Conversant": "396",
+          "OutputId": "0x0100006B00000D76",
+          "InputId": "0x0100006B00000D68"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 9,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"doomed.book_wc_trigger_bad_romance\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2300,
+          "y": -525,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 10,
+        "fields": {
+          "Title": "Volition: \"Turn away, this is a bad idea.\"",
+          "Dialogue Text": "Turn away, this is a bad idea.",
+          "Articy Id": "0x0100006B00000DAC",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "DifficultyPass": "2",
+          "Actor": "405",
+          "Conversant": "396",
+          "OutputId": "0x0100006B00000D9D",
+          "InputId": "0x0100006B00000D88"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 10,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 39,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 574,
+            "originDialogueID": 10,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 574,
+            "originDialogueID": 10,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"doomed.book_sdoa_volition_help\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2290,
+          "y": 400,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 11,
+        "fields": {
+          "Title": "Pain Threshold: \"You focus on the overwhelming mass...\"",
+          "Dialogue Text": "You focus on the overwhelming mass of colourful novels to find anything of note, but it only ends up with your eyes aching from the strain.",
+          "Articy Id": "0x0100006B00000A9E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "396",
+          "OutputId": "0x0100006B00000B21",
+          "InputId": "0x0100006B00000A93"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 11,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 34,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1700.0001220703125,
+          "y": 675,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 12,
+        "fields": {
+          "Title": "Pain Threshold: \"As you focus on the overwhelming ma...\"",
+          "Dialogue Text": "As you focus on the overwhelming mass of colourful novels, a discrepancy catches your eye -- one of the books is not like the others.",
+          "Articy Id": "0x0100006B00000AC0",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "396",
+          "OutputId": "0x0100006B00000D88",
+          "InputId": "0x0100006B00000A93"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 12,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 42,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1697,
+          "y": 389,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 13,
+        "fields": {
+          "Title": "You: \"What's this all about?\"",
+          "Dialogue Text": "What's this all about?",
+          "Articy Id": "0x0100006B00000D94",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "278",
+          "InputId": "0x0100006B00000A99",
+          "OutputId": "0x0100004B00002A9D"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 13,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 2,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2600,
+          "y": 400,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 14,
+        "fields": {
+          "Title": "You: \"[Leave.]\"",
+          "Dialogue Text": "[Leave.]",
+          "Articy Id": "0x0100002F00011AA3",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "278",
+          "OutputId": "0x0100002F00011AA5",
+          "InputId": "0x0100002F00011A9E"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1100,
+          "y": 1300,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 15,
+        "fields": {
+          "Title": "You: \"\"I want buy the 'Sixteen Days of Co...\"",
+          "Dialogue Text": "\"I want buy the 'Sixteen Days of Coldest April' book.\"",
+          "Articy Id": "0x0100002F00011AC1",
+          "DialogueEntryType": "DialogueFragment",
+          "AlwaysPlayVoice": "False",
+          "ClickCost": "1100",
+          "HiddenNotEnough": "False",
+          "CostOnce": "False",
+          "PlayVoiceInPsychologicalMode": "False",
+          "Actor": "396",
+          "Conversant": "278",
+          "OutputId": "0x0100006B00000AAE",
+          "InputId": "0x0100002F00011A9E"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 15,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 21,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.book_found_bad_romance\"] == true  and  CheckItem(\"book_sixteen_days_in_coldest_april\") == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1100,
+          "y": 1000.0000610351562,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 16,
+        "fields": {
+          "Title": "You: \"I think I'd enjoy reading a few of...\"",
+          "Dialogue Text": "I think I'd enjoy reading a few of these.",
+          "Articy Id": "0x0100006B00000D6E",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "278",
+          "OutputId": "0x0100006B00000D7C",
+          "InputId": "0x0100006B00000AE5"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 16,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 26,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2000.0001220703125,
+          "y": -750,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 17,
+        "fields": {
+          "Title": "Shelf of Romance Stories: \"On the cover of the book there's a...\"",
+          "Dialogue Text": "On the cover of the book there's a wall of concrete buildings, with a black-and-white rainbow over them. It's written by someone from a country where even rainbows are black and white.",
+          "Articy Id": "0x0100006B00000AD4",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "278",
+          "Conversant": "396",
+          "OutputId": "0x0100006B00000DF5"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 17,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 44,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"doomed.book_found_bad_romance\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 6546,
+          "y": 1155,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 18,
+        "fields": {
+          "Title": "Shelf of Romance Stories: \"You see a foamy mass of pinks and r...\"",
+          "Dialogue Text": "You see a foamy mass of pinks and reds... colourful covers filled with risqué imagery. These books are most oft adorned by women in skimpy clothes, thighs revealed... a few roses and sometimes even some pistols.",
+          "Articy Id": "0x0100006B00000D60",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "278",
+          "Conversant": "396",
+          "OutputId": "0x0100006B00000AE5",
+          "InputId": "0x0100002F00011ABB"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 18,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 33,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1400,
+          "y": -625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 19,
+        "fields": {
+          "Title": "romcom",
+          "Articy Id": "0x0100002F00011A9E",
+          "DialogueEntryType": "Hub",
+          "Actor": "0",
+          "OutputId": "0x0100002F00011AA3",
+          "InputId": "0x0100002F00011A98"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 19,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 41,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 574,
+            "originDialogueID": 19,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 27,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 574,
+            "originDialogueID": 19,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 5,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 574,
+            "originDialogueID": 19,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 15,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 574,
+            "originDialogueID": 19,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 14,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"doomed.bookstore_browsed_items\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 800,
+          "y": 400,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 20,
+        "fields": {
+          "Title": "Jump to: [romcom]",
+          "Articy Id": "0x0100006B00000AF9",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100006B00000A8D"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 20,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2000.0001220703125,
+          "y": -50,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 21,
+        "fields": {
+          "Title": "Plaisance: \"\"Huh, it's in the wrong shelf... An...\"",
+          "Dialogue Text": "\"Huh, it's in the wrong shelf... Annette's been moving things around again, has she! That girl...\" She shakes her head. \"No matter, I hope you enjoy... this.\"",
+          "Articy Id": "0x0100006B00000AAE",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "17",
+          "Conversant": "396",
+          "InputId": "0x0100002F00011AC1",
+          "OutputId": "0x0100006B00000AB5"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 21,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 32,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "GainItem(\"book_sixteen_days_in_coldest_april\")",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1385,
+          "y": 987.9999389648438,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 22,
+        "fields": {
+          "Title": "Jump to: [romcom]",
+          "Articy Id": "0x0100006B00000D76",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100006B00000D7C"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 22,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2600,
+          "y": -625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 23,
+        "fields": {
+          "Title": "Variable[\"doomed.book_whitech_pain_threshold_romance\"]",
+          "Articy Id": "0x0100006B00000A93",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "278",
+          "Conversant": "396",
+          "InputId": "0x0100002F00011AB5-FORK"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 23,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 24,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 574,
+            "originDialogueID": 23,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 25,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1400,
+          "y": 625,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 24,
+        "fields": {
+          "Title": "Variable[\"doomed.book_whitech_pain_threshold_romance\"]",
+          "Articy Id": "0x0100006B00000A93",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "278",
+          "Conversant": "396",
+          "OutputId": "0x0100006B00000AC0"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 24,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 12,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.book_whitech_pain_threshold_romance\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 909.9999389648438,
+          "y": 406.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 25,
+        "fields": {
+          "Title": "!(Variable[\"doomed.book_whitech_pain_threshold_romance\"])",
+          "Articy Id": "0x0100006B00000A93",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "278",
+          "Conversant": "396",
+          "OutputId": "0x0100006B00000A9E"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 25,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 11,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"doomed.book_whitech_pain_threshold_romance\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 909.9999389648438,
+          "y": 406.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 26,
+        "fields": {
+          "Title": "Shelf of Romance Stories: \"No, you wouldn't. Being a rough, *h...\"",
+          "Dialogue Text": "No, you wouldn't. Being a rough, *hard-boiled* detective, you hope for something more real... more *authentic*.",
+          "Articy Id": "0x0100006B00000D7C",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "278",
+          "Conversant": "396",
+          "InputId": "0x0100006B00000D6E",
+          "OutputId": "0x0100006B00000D76"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 26,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 22,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "SetVariableValue(\"doomed.book_wc_trigger_bad_romance\", true) --[[ Variable[ ]]",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2300,
+          "y": -775,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 27,
+        "fields": {
+          "Title": "You: \"\"Storekeep, what's on this shelf?\"\"",
+          "Dialogue Text": "\"Storekeep, what's on this shelf?\"",
+          "Articy Id": "0x0100002F00011AA9",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "278",
+          "InputId": "0x0100002F00011A9E",
+          "OutputId": "0x0100006B00000A80"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 27,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 37,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1100,
+          "y": -175,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 28,
+        "fields": {
+          "Title": "You: \"\"To be honest, I'm looking for some...\"",
+          "Dialogue Text": "\"To be honest, I'm looking for something more *real*.\"",
+          "Articy Id": "0x0100006B00000A87",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "278",
+          "OutputId": "0x0100006B00000A8D",
+          "InputId": "0x0100006B00000AEC"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 28,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 43,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2000.0001220703125,
+          "y": -275,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 29,
+        "fields": {
+          "Title": "Variable[\"doomed.book_wc_trigger_bad_romance\"]",
+          "Articy Id": "0x0100006B00000AEC",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "278",
+          "Conversant": "396",
+          "InputId": "0x0100006B00000A80"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 29,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 30,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 574,
+            "originDialogueID": 29,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 31,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1700.0001220703125,
+          "y": -125.00000762939453,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 30,
+        "fields": {
+          "Title": "Variable[\"doomed.book_wc_trigger_bad_romance\"]",
+          "Articy Id": "0x0100006B00000AEC",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "278",
+          "Conversant": "396",
+          "OutputId": "0x0100006B00000A87"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 30,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 28,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.book_wc_trigger_bad_romance\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1105,
+          "y": -81.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 31,
+        "fields": {
+          "Title": "!(Variable[\"doomed.book_wc_trigger_bad_romance\"])",
+          "Articy Id": "0x0100006B00000AEC",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Fork",
+          "Actor": "278",
+          "Conversant": "396",
+          "OutputId": "0x0100006B00000AF9"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 31,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "(Variable[\"doomed.book_wc_trigger_bad_romance\"]) == false",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1105,
+          "y": -81.25,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 32,
+        "fields": {
+          "Title": "Jump to: [romcom]",
+          "Articy Id": "0x0100006B00000AB5",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100006B00000AAE"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 32,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1669,
+          "y": 1025,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 33,
+        "fields": {
+          "Title": "Shelf of Romance Stories: \"They also tend to feature chisel-ja...\"",
+          "Dialogue Text": "They also tend to feature chisel-jawed men in dark suits. It's all such... glitzy garbage.",
+          "Articy Id": "0x0100006B00000AE5",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "278",
+          "Conversant": "396",
+          "InputId": "0x0100006B00000D60",
+          "OutputId": "0x0100006B00000D68"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 33,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 16,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 574,
+            "originDialogueID": 33,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 38,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1700.0001220703125,
+          "y": -600,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 34,
+        "fields": {
+          "Title": "Jump to: [romcom]",
+          "Articy Id": "0x0100006B00000B21",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100006B00000A9E"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 34,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1983,
+          "y": 712,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 35,
+        "fields": {
+          "Title": "Jump to: [Shelf of Romance Stories: \"The shelves are littered with roman...\"]",
+          "Articy Id": "0x0100006B00000DA7",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100006B00000D9D"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 35,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 36,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2900,
+          "y": 700,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 36,
+        "fields": {
+          "Title": "Shelf of Romance Stories: \"The shelves are littered with roman...\"",
+          "Dialogue Text": "The shelves are littered with romantic tales from across time and space.",
+          "Articy Id": "0x0100002F00011A98",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "278",
+          "Conversant": "396",
+          "InputId": "0x0100002F0001181B",
+          "OutputId": "0x0100002F00011A9E"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 36,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 500.0000305175781,
+          "y": 325,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 37,
+        "fields": {
+          "Title": "Plaisance: \"\"Oh, such wonderful, beautiful stor...\"",
+          "Dialogue Text": "\"Oh, such wonderful, beautiful stories. Stories of love!\" She sighs wistfully. \"You should definitely buy these.\"",
+          "Articy Id": "0x0100006B00000A80",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "17",
+          "Conversant": "396",
+          "InputId": "0x0100002F00011AA9",
+          "OutputId": "0x0100006B00000AEC"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 37,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 29,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1400,
+          "y": -175,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 38,
+        "fields": {
+          "Title": "You: \"Is there anything here that calls o...\"",
+          "Dialogue Text": "Is there anything here that calls out to me?",
+          "Articy Id": "0x0100006B00000D68",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "278",
+          "InputId": "0x0100006B00000AE5",
+          "OutputId": "0x0100006B00000B1B"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 38,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 9,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2000.0001220703125,
+          "y": -525,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 39,
+        "fields": {
+          "Title": "You: \"Why is it out of place?\"",
+          "Dialogue Text": "Why is it out of place?",
+          "Articy Id": "0x0100006B00000D8F",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "278",
+          "InputId": "0x0100006B00000DAC",
+          "OutputId": "0x0100006B00000A99"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 39,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 45,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2590,
+          "y": 105.00000762939453,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 40,
+        "fields": {
+          "Title": "You: \"Help, I don't want to do this...\"",
+          "Dialogue Text": "Help, I don't want to do this...",
+          "Articy Id": "0x0100006B00000D9D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "278",
+          "InputId": "0x0100006B00000A99",
+          "OutputId": "0x0100006B00000DA7"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 40,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 35,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "Variable[\"doomed.book_sdoa_volition_help\"]",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2600,
+          "y": 675,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 41,
+        "fields": {
+          "Title": "You: \"Look through the display of books.\"",
+          "Dialogue Text": "Look through the display of books.",
+          "Articy Id": "0x0100002F00011ABB",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "396",
+          "Conversant": "278",
+          "InputId": "0x0100002F00011A9E",
+          "OutputId": "0x0100006B00000D60"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 41,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 18,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 1100,
+          "y": -600,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 42,
+        "fields": {
+          "Title": "Shelf of Romance Stories: \"A grey book has lost itself between...\"",
+          "Dialogue Text": "A grey book has lost itself between all the romance. The title reads: 'Sixteen Days of Coldest April.'",
+          "Articy Id": "0x0100006B00000D88",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "278",
+          "Conversant": "396",
+          "InputId": "0x0100006B00000AC0",
+          "OutputId": "0x0100006B00000DAC"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 42,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 10,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2000.0001220703125,
+          "y": 400,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 43,
+        "fields": {
+          "Title": "Plaisance: \"\"No-no, sir, you don't want that. T...\"",
+          "Dialogue Text": "\"No-no, sir, you don't want that. That's not proper romance... romance is about overcoming adversity and finding that *single millionaire* who wants to take care of you until the end of days.\"",
+          "Articy Id": "0x0100006B00000A8D",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "17",
+          "Conversant": "396",
+          "InputId": "0x0100006B00000A87",
+          "OutputId": "0x0100006B00000AF9"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 43,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 20,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2300,
+          "y": -300,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 44,
+        "fields": {
+          "Title": "Jump to: [romcom]",
+          "Articy Id": "0x0100006B00000DF5",
+          "Sequence": "Continue()",
+          "DialogueEntryType": "Jump",
+          "Actor": "0",
+          "InputId": "0x0100006B00000AD4"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 1,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 44,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 19,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 6810.00048828125,
+          "y": 1115,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "id": 45,
+        "fields": {
+          "Title": "Pain Threshold: \"Someone thought this was a romance...\"",
+          "Dialogue Text": "Someone thought this was a romance story, but it's actually a thoroughly excruciating work of psychological realism.",
+          "Articy Id": "0x0100006B00000A99",
+          "DialogueEntryType": "DialogueFragment",
+          "Actor": "412",
+          "Conversant": "396",
+          "InputId": "0x0100006B00000D8F",
+          "OutputId": "0x0100006B00000D9D"
+        },
+        "conversationID": 574,
+        "isRoot": 0,
+        "isGroup": 0,
+        "nodeColor": "",
+        "delaySimStatus": 0,
+        "falseConditionAction": "",
+        "conditionPriority": 2,
+        "outgoingLinks": [
+          {
+            "originConversationID": 574,
+            "originDialogueID": 45,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 13,
+            "isConnector": 0,
+            "priority": 2
+          },
+          {
+            "originConversationID": 574,
+            "originDialogueID": 45,
+            "destinationConversationID": 574,
+            "destinationDialogueID": 40,
+            "isConnector": 0,
+            "priority": 2
+          }
+        ],
+        "conditionsString": "",
+        "userScript": "",
+        "onExecute": {
+          "m_PersistentCalls": {
+            "m_Calls": {
+              "size": 0
+            }
+          }
+        },
+        "canvasRect": {
+          "x": 2889,
+          "y": 98,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ],
+    "canvasScrollPosition": {
+      "x": 0,
+      "y": 0
+    },
+    "canvasZoom": 1
+  }
+]
