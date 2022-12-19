@@ -2,8 +2,10 @@
 import DialogueDebug from "@/components/DialogueDebug.vue";
 import DialogueFlow from "@/components/flow/DialogueFlow.vue";
 import DialogueGraph from "@/components/graph/DialogueGraph.vue";
+import { IconList } from "@/components/icons";
 import DialogueMinimap from "@/components/minimap/DialogueMinimap.vue";
 import DialogueSearch from "@/components/search/DialogueSearch.vue";
+import ToggleIcon from "@/components/shared/ToggleIcon.vue";
 import { findStartEntry, useConversationStore } from "@/stores/conversation";
 import { useDatabaseStore } from "@/stores/database";
 import { storeToRefs } from "pinia";
@@ -51,22 +53,34 @@ watch(currentEntry, entry => {
     router.push({ ...route, query: { entryId: entry.id }});
   }
 });
+
+const showDialogue = ref(true);
 </script>
 
 <template>
   <main>
-    <DialogueGraph
-      class="dialogue-graph"
-      ref="dialogueGraph"
-      :conversation="conversation"
-    />
-    <section class="dialogue-pane" :class="{ empty: !currentEntry }">
-      <DialogueFlow />
+    <section class="dialogue-graph">
+      <DialogueGraph
+        ref="dialogueGraph"
+        :conversation="conversation"
+      />
+      <div class="toggle-dialogue">
+        <ToggleIcon v-model="showDialogue" title="toggle dialogue">
+          <IconList />
+        </ToggleIcon>
+      </div>
     </section>
-    <DialogueMinimap
-      :graph="dialogueGraph"
-    />
+    <Transition name="pane">
+      <section
+        v-if="showDialogue"
+        class="dialogue-pane"
+        :class="{ empty: !currentEntry }"
+      >
+        <DialogueFlow />
+      </section>
+    </Transition>
     <DialogueSearch />
+    <DialogueMinimap :graph="dialogueGraph" />
   </main>
   <DialogueDebug />
 </template>
@@ -78,15 +92,21 @@ main {
   position: relative;
   overflow: hidden;
 }
+
 .dialogue-graph {
+  display: flex;
   flex: 1;
 }
+.dialogue-graph > :first-child {
+  flex: 1;
+}
+
 .dialogue-pane {
   background: var(--color-background-soft);
   box-shadow: rgba(0, 0, 0, 0.4) 0px -1px 2px;
   overflow-y: scroll;
   max-height: 50%;
-  min-height: min(300px, 50%);
+  flex-basis: min(300px, 50%);
 }
 .dialogue-pane.empty::before {
   position: absolute;
@@ -96,5 +116,27 @@ main {
   height: 100%;
   background: url("/logo.png") center center no-repeat;
   filter: grayscale() opacity(0.1);
+}
+
+.toggle-dialogue {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  border: 2px solid var(--color-border);
+  border-radius: 18px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 2px;
+  background: var(--color-background-soft);
+}
+
+.pane-enter-active,
+.pane-leave-active {
+  overflow: hidden;
+  transition: flex-basis 200ms ease-in-out;
+}
+
+.pane-enter-from,
+.pane-leave-to {
+  overflow: hidden;
+  flex-basis: 0;
 }
 </style>

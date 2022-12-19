@@ -34,7 +34,7 @@ watch(currentEntry, () => {
   } else {
     paths.value = [];
   }
-});
+}, { immediate: true });
 
 const highlightPath = ref<DialoguePathType>();
 watch(highlightPath, path => {
