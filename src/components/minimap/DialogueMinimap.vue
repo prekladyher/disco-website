@@ -8,7 +8,7 @@ import type DialogueGraph from "../graph/DialogueGraph.vue";
 import IconClose from "../icons/IconClose.vue";
 import IconMap from "../icons/IconMap.vue";
 import ToggleIcon from "../shared/ToggleIcon.vue";
-import { configs } from "./config";
+import { useMinimapConfigs } from "./config";
 import { getViewportPath, useFitOnLoad, useViewportMove } from "./utils";
 
 
@@ -17,6 +17,8 @@ const props = defineProps<{
 }>();
 
 const { nodes, edges, paths, layouts, viewBox } = storeToRefs(useDialogueGraphStore());
+
+const configs = useMinimapConfigs();
 
 const wrapper = ref<Element>();
 const minimap = ref<VNetworkGraphInstance>();
